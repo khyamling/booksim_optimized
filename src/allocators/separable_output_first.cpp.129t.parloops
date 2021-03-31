@@ -1,0 +1,1620 @@
+
+;; Function std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_get_insert_hint_unique_pos(std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::const_iterator, const key_type&) [with _Key = int; _Val = std::pair<const int, Allocator::sRequest>; _KeyOfValue = std::_Select1st<std::pair<const int, Allocator::sRequest> >; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, Allocator::sRequest> >; std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::const_iterator = std::_Rb_tree_const_iterator<std::pair<const int, Allocator::sRequest> >; std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::key_type = int] (_ZNSt8_Rb_treeIiSt4pairIKiN9Allocator8sRequestEESt10_Select1stIS4_ESt4lessIiESaIS4_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS4_ERS1_, funcdef_no=1812, decl_uid=39290, cgraph_uid=515, symbol_order=516)
+
+Trying loop 1 as candidate
+loop 1 is innermost
+loop is not parallel according to graphite
+Trying loop 2 as candidate
+loop 2 is innermost
+loop is not parallel according to graphite
+Trying loop 3 as candidate
+loop 3 is innermost
+loop is not parallel according to graphite
+std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_get_insert_hint_unique_pos(std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::const_iterator, const key_type&) [with _Key = int; _Val = std::pair<const int, Allocator::sRequest>; _KeyOfValue = std::_Select1st<std::pair<const int, Allocator::sRequest> >; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, Allocator::sRequest> >; std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::const_iterator = std::_Rb_tree_const_iterator<std::pair<const int, Allocator::sRequest> >; std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::key_type = int] (struct _Rb_tree * const this, struct const_iterator __position, const key_type & __k)
+{
+  struct _Rb_tree_node_base * SR.214;
+  struct _Rb_tree_node_base * SR.213;
+  struct _Rb_tree_node_base * SR.212;
+  struct _Rb_tree_node_base * SR.211;
+  struct _Rb_tree_node_base * SR.210;
+  struct _Rb_tree_node_base * SR.209;
+  struct pair D.42324;
+  bool __comp;
+  struct _Rb_tree_node_base * const __j$_M_node;
+  struct pair D.42297;
+  bool __comp;
+  struct _Rb_tree_node_base * const __j$_M_node;
+  struct pair D.42270;
+  bool __comp;
+  struct _Rb_tree_node_base * const __j$_M_node;
+  struct pair D.40911;
+  struct _Rb_tree_node_base * _5;
+  struct _Rb_tree_node_base * _7;
+  struct _Rb_tree_node_base * _9;
+  const int pretmp_10;
+  struct _Rb_tree_node_base * _13;
+  struct _Rb_tree_node_base * _17;
+  const struct _Rb_tree_node_base * _20;
+  const int _26;
+  const int _27;
+  const int _28;
+  const int _29;
+  const int _30;
+  const int _31;
+  struct _Rb_tree_node_base * _32;
+  struct _Rb_tree_node_base * _33;
+  const size_type _34;
+  struct _Rb_tree_node_base * _35;
+  struct _Rb_tree_node_base * _36;
+  struct _Rb_tree_node_base * _42;
+  struct _Rb_tree_node_base * const _43;
+  const int _45;
+  const int _46;
+  const int _47;
+  struct _Rb_tree_node_base * _48;
+  struct _Rb_tree_node_base * _49;
+  struct _Rb_tree_node_base * _51;
+  const int _56;
+  struct _Rb_tree_node_base * const _57;
+  const int _63;
+  const int pretmp_64;
+  struct _Rb_tree_node_base * _65;
+  struct _Rb_tree_node_base * _66;
+  struct _Rb_tree_node_base * const _68;
+  const int _80;
+  const int prephitmp_81;
+  struct _Rb_tree_node_base * _82;
+  struct _Rb_tree_node_base * _83;
+  struct _Rb_tree_node_base * _85;
+  const int prephitmp_97;
+  const int pretmp_98;
+  const int prephitmp_106;
+  const int pretmp_108;
+  const int prephitmp_109;
+  const int pretmp_110;
+
+  <bb 2>:
+  # DEBUG this => &__position
+  _20 = __position._M_node;
+  # DEBUG this => NULL
+  # DEBUG __x => _20
+  # DEBUG __pos => _20
+  # DEBUG this => this_4(D)
+  __j$_M_node_21 = &this_4(D)->_M_impl._M_header;
+  if (_20 == __j$_M_node_21)
+    goto <bb 3>;
+  else
+    goto <bb 16>;
+
+  <bb 3>:
+  _34 = MEM[(long unsigned int *)this_4(D) + 40B];
+  # DEBUG D#28 => this_4(D)
+  # DEBUG this => D#28
+  if (_34 != 0)
+    goto <bb 4>;
+  else
+    goto <bb 59>;
+
+  <bb 4>:
+  # DEBUG this => this_4(D)
+  _5 = MEM[(struct _Rb_tree_node_base * &)this_4(D) + 32];
+  # DEBUG __x => _5
+  # DEBUG __x => _5
+  # DEBUG this => _5
+  # DEBUG D#29 => &MEM[(const struct _Rb_tree_node *)_5]._M_value_field
+  # DEBUG __r => D#29
+  # DEBUG __x => D#29
+  # DEBUG this => D#21
+  # DEBUG D#35 => &MEM[(const struct pair &)_5 + 32].first
+  # DEBUG D#45 => &this_4(D)->_M_impl._M_key_compare
+  # DEBUG D#5 => D#45
+  _26 = MEM[(const int &)_5 + 32];
+  # DEBUG D#6 => D#35
+  _27 = MEM[(const int &)__k_6(D)];
+  # DEBUG D#7 => __k_6(D)
+  # DEBUG this => D#5
+  # DEBUG __x => D#6
+  # DEBUG __y => D#7
+  if (_26 < _27)
+    goto <bb 58>;
+  else
+    goto <bb 59>;
+
+  <bb 5>:
+  # _57 = PHI <_48(8), _49(9)>
+  # DEBUG __comp => D#112 < _46
+  # DEBUG __y => __j$_M_node_77
+  # DEBUG __x => _57
+  if (_57 == 0B)
+    goto <bb 10>;
+  else
+    goto <bb 6>;
+
+  <bb 6>:
+
+  <bb 7>:
+  # __j$_M_node_77 = PHI <_42(60), _57(6)>
+  # DEBUG __comp => 1
+  # DEBUG __x => __j$_M_node_77
+  # DEBUG __y => __j$_M_node_77
+  # DEBUG __x => __j$_M_node_77
+  # DEBUG __x => __j$_M_node_77
+  # DEBUG this => __j$_M_node_77
+  # DEBUG D#22 => &MEM[(const struct _Rb_tree_node *)__j$_M_node_77]._M_value_field
+  # DEBUG __r => D#22
+  # DEBUG __x => D#22
+  # DEBUG this => D#21
+  # DEBUG D#30 => &MEM[(const struct pair &)__j$_M_node_77 + 32].first
+  # DEBUG D#34 => &this_4(D)->_M_impl._M_key_compare
+  # DEBUG D#5 => D#34
+  # DEBUG D#112 => MEM[(const int &)__k_6(D)]
+  # DEBUG D#6 => __k_6(D)
+  _46 = MEM[(const int &)__j$_M_node_77 + 32];
+  # DEBUG D#7 => D#30
+  # DEBUG this => D#5
+  # DEBUG __x => D#6
+  # DEBUG __y => D#7
+  # DEBUG __comp => NULL
+  if (_46 > pretmp_108)
+    goto <bb 8>;
+  else
+    goto <bb 9>;
+
+  <bb 8>:
+  _48 = MEM[(struct _Rb_tree_node_base * *)__j$_M_node_77 + 16B];
+  # DEBUG D#19 => __j$_M_node_77
+  # DEBUG __x => D#19
+  goto <bb 5>;
+
+  <bb 9>:
+  _49 = MEM[(struct _Rb_tree_node_base * *)__j$_M_node_77 + 24B];
+  # DEBUG D#20 => __j$_M_node_77
+  # DEBUG __x => D#20
+  goto <bb 5>;
+
+  <bb 10>:
+  # _47 = PHI <_46(5)>
+  # __j$_M_node_55 = PHI <__j$_M_node_77(5)>
+
+  <bb 61>:
+  # DEBUG this => &__j
+  # DEBUG __x => __j$_M_node_55
+  # DEBUG __j$_M_node => __j$_M_node_55
+  if (_47 > pretmp_108)
+    goto <bb 11>;
+  else
+    goto <bb 13>;
+
+  <bb 11>:
+  # __j$_M_node_133 = PHI <__j$_M_node_55(61), _20(59)>
+  # DEBUG this => &__j
+  # DEBUG __x => __j$_M_node_133
+  # DEBUG __j$_M_node => __j$_M_node_133
+  _51 = MEM[(struct _Rb_tree_node_base * *)this_4(D) + 24B];
+  # DEBUG D#11 => this_4(D)
+  # DEBUG this => D#11
+  # DEBUG this => NULL
+  # DEBUG __x => _51
+  # DEBUG this => &__j
+  # DEBUG __x => NULL
+  if (_51 == __j$_M_node_133)
+    goto <bb 71>;
+  else
+    goto <bb 12>;
+
+  <bb 12>:
+  # DEBUG this => &__j
+  __j$_M_node_53 = std::_Rb_tree_decrement (__j$_M_node_133);
+  # DEBUG __j$_M_node => __j$_M_node_53
+  pretmp_110 = MEM[(const int &)__k_6(D)];
+  pretmp_98 = MEM[(const int &)__j$_M_node_53 + 32];
+
+  <bb 13>:
+  # __j$_M_node_54 = PHI <__j$_M_node_55(61), __j$_M_node_53(12)>
+  # __j$_M_node_139 = PHI <__j$_M_node_55(61), __j$_M_node_133(12)>
+  # prephitmp_109 = PHI <pretmp_108(61), pretmp_110(12)>
+  # prephitmp_97 = PHI <_47(61), pretmp_98(12)>
+
+  <bb 65>:
+  # DEBUG __j$_M_node => __j$_M_node_54
+  # DEBUG __x => __j$_M_node_54
+  # DEBUG __x => __j$_M_node_54
+  # DEBUG this => __j$_M_node_54
+  # DEBUG D#29 => &MEM[(const struct _Rb_tree_node *)__j$_M_node_54]._M_value_field
+  # DEBUG __r => D#29
+  # DEBUG __x => D#29
+  # DEBUG this => D#21
+  # DEBUG D#31 => &MEM[(const struct pair &)__j$_M_node_54 + 32].first
+  # DEBUG D#33 => &this_4(D)->_M_impl._M_key_compare
+  # DEBUG D#5 => D#33
+  # DEBUG D#6 => D#31
+  # DEBUG D#7 => __k_6(D)
+  # DEBUG this => D#5
+  # DEBUG __x => D#6
+  # DEBUG __y => D#7
+  if (prephitmp_97 < prephitmp_109)
+    goto <bb 15>;
+  else
+    goto <bb 14>;
+
+  <bb 14>:
+
+  <bb 15>:
+  # SR.209_105 = PHI <__j$_M_node_54(14), 0B(65)>
+  # SR.210_100 = PHI <0B(14), __j$_M_node_139(65)>
+
+  <bb 71>:
+  # SR.209_116 = PHI <SR.209_105(15), 0B(11)>
+  # SR.210_115 = PHI <SR.210_100(15), _51(11)>
+
+  <bb 64>:
+  # DEBUG D#32 => {CLOBBER}
+  # DEBUG __j$_M_node => D#32
+  MEM[(struct pair *)&D.40911] = SR.209_116;
+  MEM[(struct pair *)&D.40911 + 8B] = SR.210_115;
+  goto <bb 57>;
+
+  <bb 16>:
+  # DEBUG __x => _20
+  # DEBUG __x => _20
+  # DEBUG this => _20
+  # DEBUG D#29 => &MEM[(const struct _Rb_tree_node *)_20]._M_value_field
+  # DEBUG __r => D#29
+  # DEBUG __x => D#29
+  # DEBUG this => D#21
+  # DEBUG D#36 => &MEM[(const struct pair &)_20 + 32].first
+  # DEBUG D#47 => &this_4(D)->_M_impl._M_key_compare
+  # DEBUG D#5 => D#47
+  _28 = MEM[(const int &)__k_6(D)];
+  # DEBUG D#6 => __k_6(D)
+  _29 = MEM[(const int &)_20 + 32];
+  # DEBUG D#7 => D#36
+  # DEBUG this => D#5
+  # DEBUG __x => D#6
+  # DEBUG __y => D#7
+  if (_28 < _29)
+    goto <bb 17>;
+  else
+    goto <bb 36>;
+
+  <bb 17>:
+  # DEBUG __before => _20
+  # DEBUG this => this_4(D)
+  _9 = MEM[(struct _Rb_tree_node_base * &)this_4(D) + 24];
+  if (_9 == _20)
+    goto <bb 18>;
+  else
+    goto <bb 19>;
+
+  <bb 18>:
+  # DEBUG this => this_4(D)
+  # DEBUG this => this_4(D)
+  # DEBUG this => &D.40437
+  # DEBUG __a => NULL
+  # DEBUG __b => NULL
+  MEM[(struct pair *)&D.40911] = _9;
+  MEM[(struct pair *)&D.40911 + 8B] = _9;
+  goto <bb 57>;
+
+  <bb 19>:
+  # DEBUG this => &__before
+  _35 = std::_Rb_tree_decrement (_20);
+  # DEBUG __before => _35
+  # DEBUG __x => _35
+  # DEBUG __x => _35
+  # DEBUG this => _35
+  # DEBUG D#29 => &MEM[(const struct _Rb_tree_node *)_35]._M_value_field
+  # DEBUG __r => D#29
+  # DEBUG __x => D#29
+  # DEBUG this => D#21
+  # DEBUG D#37 => &MEM[(const struct pair &)_35 + 32].first
+  # DEBUG D#44 => &this_4(D)->_M_impl._M_key_compare
+  # DEBUG D#5 => D#44
+  _30 = MEM[(const int &)_35 + 32];
+  # DEBUG D#6 => D#37
+  # DEBUG D#7 => __k_6(D)
+  # DEBUG this => D#5
+  # DEBUG __x => D#6
+  # DEBUG __y => D#7
+  if (_28 > _30)
+    goto <bb 20>;
+  else
+    goto <bb 23>;
+
+  <bb 20>:
+  _32 = MEM[(struct _Rb_tree_node_base * *)_35 + 24B];
+  # DEBUG D#20 => _35
+  # DEBUG __x => D#20
+  if (_32 == 0B)
+    goto <bb 21>;
+  else
+    goto <bb 22>;
+
+  <bb 21>:
+  # DEBUG this => &D.40439
+  # DEBUG __a => &D.40438
+  # DEBUG __b => &__before._M_node
+  MEM[(struct pair *)&D.40911] = 0B;
+  MEM[(struct pair *)&D.40911 + 8B] = _35;
+  goto <bb 57>;
+
+  <bb 22>:
+  # DEBUG this => &D.40440
+  # DEBUG __a => &__pos._M_node
+  # DEBUG __b => &__pos._M_node
+  MEM[(struct pair *)&D.40911] = _20;
+  MEM[(struct pair *)&D.40911 + 8B] = _20;
+  goto <bb 57>;
+
+  <bb 23>:
+  # DEBUG this => this_4(D)
+  # DEBUG __k => __k_6(D)
+  _7 = MEM[(struct _Rb_tree_node_base * *)this_4(D) + 16B];
+  # DEBUG D#18 => this_4(D)
+  # DEBUG this => D#18
+  # DEBUG __x => NULL
+  # DEBUG this => this_4(D)
+  # DEBUG __y => NULL
+  # DEBUG __comp => 1
+  # DEBUG __comp => 1
+  # DEBUG __y => __j$_M_node_21
+  # DEBUG __x => _7
+  if (_7 == 0B)
+    goto <bb 31>;
+  else
+    goto <bb 26>;
+
+  <bb 24>:
+  # _43 = PHI <_65(28), _66(29)>
+  # DEBUG __comp => _28 < _63
+  # DEBUG __y => __j$_M_node_157
+  # DEBUG __x => _43
+  if (_43 == 0B)
+    goto <bb 30>;
+  else
+    goto <bb 25>;
+
+  <bb 25>:
+  goto <bb 27>;
+
+  <bb 26>:
+
+  <bb 27>:
+  # __j$_M_node_157 = PHI <_7(26), _43(25)>
+  # DEBUG __comp => 1
+  # DEBUG __x => __j$_M_node_157
+  # DEBUG __y => __j$_M_node_157
+  # DEBUG __x => __j$_M_node_157
+  # DEBUG __x => __j$_M_node_157
+  # DEBUG this => __j$_M_node_157
+  # DEBUG D#22 => &MEM[(const struct _Rb_tree_node *)__j$_M_node_157]._M_value_field
+  # DEBUG __r => D#22
+  # DEBUG __x => D#22
+  # DEBUG this => D#21
+  # DEBUG D#30 => &MEM[(const struct pair &)__j$_M_node_157 + 32].first
+  # DEBUG D#34 => &this_4(D)->_M_impl._M_key_compare
+  # DEBUG D#5 => D#34
+  # DEBUG D#6 => __k_6(D)
+  _63 = MEM[(const int &)__j$_M_node_157 + 32];
+  # DEBUG D#7 => D#30
+  # DEBUG this => D#5
+  # DEBUG __x => D#6
+  # DEBUG __y => D#7
+  # DEBUG __comp => NULL
+  if (_28 < _63)
+    goto <bb 28>;
+  else
+    goto <bb 29>;
+
+  <bb 28>:
+  _65 = MEM[(struct _Rb_tree_node_base * *)__j$_M_node_157 + 16B];
+  # DEBUG D#19 => __j$_M_node_157
+  # DEBUG __x => D#19
+  goto <bb 24>;
+
+  <bb 29>:
+  _66 = MEM[(struct _Rb_tree_node_base * *)__j$_M_node_157 + 24B];
+  # DEBUG D#20 => __j$_M_node_157
+  # DEBUG __x => D#20
+  goto <bb 24>;
+
+  <bb 30>:
+  # _45 = PHI <_63(24)>
+  # __j$_M_node_72 = PHI <__j$_M_node_157(24)>
+
+  <bb 62>:
+  # DEBUG this => &__j
+  # DEBUG __x => __j$_M_node_72
+  # DEBUG __j$_M_node => __j$_M_node_72
+  if (_28 < _45)
+    goto <bb 31>;
+  else
+    goto <bb 33>;
+
+  <bb 31>:
+  # __j$_M_node_153 = PHI <__j$_M_node_72(62), __j$_M_node_21(23)>
+  # DEBUG this => &__j
+  # DEBUG __x => __j$_M_node_153
+  # DEBUG __j$_M_node => __j$_M_node_153
+  # DEBUG D#11 => this_4(D)
+  # DEBUG this => D#11
+  # DEBUG this => NULL
+  # DEBUG __x => _9
+  # DEBUG this => &__j
+  # DEBUG __x => NULL
+  if (_9 == __j$_M_node_153)
+    goto <bb 72>;
+  else
+    goto <bb 32>;
+
+  <bb 32>:
+  # DEBUG this => &__j
+  __j$_M_node_70 = std::_Rb_tree_decrement (__j$_M_node_153);
+  # DEBUG __j$_M_node => __j$_M_node_70
+  pretmp_10 = MEM[(const int &)__j$_M_node_70 + 32];
+
+  <bb 33>:
+  # __j$_M_node_71 = PHI <__j$_M_node_72(62), __j$_M_node_70(32)>
+  # __j$_M_node_152 = PHI <__j$_M_node_72(62), __j$_M_node_153(32)>
+  # prephitmp_106 = PHI <_45(62), pretmp_10(32)>
+
+  <bb 67>:
+  # DEBUG __j$_M_node => __j$_M_node_71
+  # DEBUG __x => __j$_M_node_71
+  # DEBUG __x => __j$_M_node_71
+  # DEBUG this => __j$_M_node_71
+  # DEBUG D#29 => &MEM[(const struct _Rb_tree_node *)__j$_M_node_71]._M_value_field
+  # DEBUG __r => D#29
+  # DEBUG __x => D#29
+  # DEBUG this => D#21
+  # DEBUG D#31 => &MEM[(const struct pair &)__j$_M_node_71 + 32].first
+  # DEBUG D#33 => &this_4(D)->_M_impl._M_key_compare
+  # DEBUG D#5 => D#33
+  # DEBUG D#6 => D#31
+  # DEBUG D#7 => __k_6(D)
+  # DEBUG this => D#5
+  # DEBUG __x => D#6
+  # DEBUG __y => D#7
+  if (_28 > prephitmp_106)
+    goto <bb 35>;
+  else
+    goto <bb 34>;
+
+  <bb 34>:
+
+  <bb 35>:
+  # SR.211_89 = PHI <__j$_M_node_71(34), 0B(67)>
+  # SR.212_99 = PHI <0B(34), __j$_M_node_152(67)>
+
+  <bb 72>:
+  # SR.211_114 = PHI <SR.211_89(35), 0B(31)>
+  # SR.212_113 = PHI <SR.212_99(35), _9(31)>
+
+  <bb 66>:
+  # DEBUG D#32 => {CLOBBER}
+  # DEBUG __j$_M_node => D#32
+  MEM[(struct pair *)&D.40911] = SR.211_114;
+  MEM[(struct pair *)&D.40911 + 8B] = SR.212_113;
+  goto <bb 57>;
+
+  <bb 36>:
+  # DEBUG __x => _20
+  # DEBUG __x => _20
+  # DEBUG this => _20
+  # DEBUG D#29 => &MEM[(const struct _Rb_tree_node *)_20]._M_value_field
+  # DEBUG __r => D#29
+  # DEBUG __x => D#29
+  # DEBUG this => D#21
+  # DEBUG D#38 => &MEM[(const struct pair &)_20 + 32].first
+  # DEBUG D#46 => &this_4(D)->_M_impl._M_key_compare
+  # DEBUG D#5 => D#46
+  # DEBUG D#6 => D#38
+  # DEBUG D#7 => __k_6(D)
+  # DEBUG this => D#5
+  # DEBUG __x => D#6
+  # DEBUG __y => D#7
+  if (_28 > _29)
+    goto <bb 37>;
+  else
+    goto <bb 56>;
+
+  <bb 37>:
+  # DEBUG __after => _20
+  # DEBUG this => this_4(D)
+  _17 = MEM[(struct _Rb_tree_node_base * &)this_4(D) + 32];
+  if (_17 == _20)
+    goto <bb 38>;
+  else
+    goto <bb 39>;
+
+  <bb 38>:
+  # DEBUG this => this_4(D)
+  # DEBUG this => &D.40445
+  # DEBUG __a => &D.40444
+  # DEBUG __b => NULL
+  MEM[(struct pair *)&D.40911] = 0B;
+  MEM[(struct pair *)&D.40911 + 8B] = _17;
+  goto <bb 57>;
+
+  <bb 39>:
+  # DEBUG this => &__after
+  _36 = std::_Rb_tree_increment (_20);
+  # DEBUG __after => _36
+  # DEBUG __x => _36
+  # DEBUG __x => _36
+  # DEBUG this => _36
+  # DEBUG D#29 => &MEM[(const struct _Rb_tree_node *)_36]._M_value_field
+  # DEBUG __r => D#29
+  # DEBUG __x => D#29
+  # DEBUG this => D#21
+  # DEBUG D#39 => &MEM[(const struct pair &)_36 + 32].first
+  # DEBUG D#43 => &this_4(D)->_M_impl._M_key_compare
+  # DEBUG D#5 => D#43
+  # DEBUG D#6 => __k_6(D)
+  _31 = MEM[(const int &)_36 + 32];
+  # DEBUG D#7 => D#39
+  # DEBUG this => D#5
+  # DEBUG __x => D#6
+  # DEBUG __y => D#7
+  if (_28 < _31)
+    goto <bb 40>;
+  else
+    goto <bb 43>;
+
+  <bb 40>:
+  _33 = MEM[(struct _Rb_tree_node_base * *)_20 + 24B];
+  # DEBUG D#20 => _20
+  # DEBUG __x => D#20
+  if (_33 == 0B)
+    goto <bb 41>;
+  else
+    goto <bb 42>;
+
+  <bb 41>:
+  # DEBUG this => &D.40447
+  # DEBUG __a => &D.40446
+  # DEBUG __b => &__pos._M_node
+  MEM[(struct pair *)&D.40911] = 0B;
+  MEM[(struct pair *)&D.40911 + 8B] = _20;
+  goto <bb 57>;
+
+  <bb 42>:
+  # DEBUG this => &D.40448
+  # DEBUG __a => &__after._M_node
+  # DEBUG __b => &__after._M_node
+  MEM[(struct pair *)&D.40911] = _36;
+  MEM[(struct pair *)&D.40911 + 8B] = _36;
+  goto <bb 57>;
+
+  <bb 43>:
+  # DEBUG this => this_4(D)
+  # DEBUG __k => __k_6(D)
+  _13 = MEM[(struct _Rb_tree_node_base * *)this_4(D) + 16B];
+  # DEBUG D#18 => this_4(D)
+  # DEBUG this => D#18
+  # DEBUG __x => NULL
+  # DEBUG this => this_4(D)
+  # DEBUG __y => NULL
+  # DEBUG __comp => 1
+  # DEBUG __comp => 1
+  # DEBUG __y => __j$_M_node_21
+  # DEBUG __x => _13
+  if (_13 == 0B)
+    goto <bb 51>;
+  else
+    goto <bb 46>;
+
+  <bb 44>:
+  # _68 = PHI <_82(48), _83(49)>
+  # DEBUG __comp => _28 < _80
+  # DEBUG __y => __j$_M_node_59
+  # DEBUG __x => _68
+  if (_68 == 0B)
+    goto <bb 50>;
+  else
+    goto <bb 45>;
+
+  <bb 45>:
+  goto <bb 47>;
+
+  <bb 46>:
+
+  <bb 47>:
+  # __j$_M_node_59 = PHI <_13(46), _68(45)>
+  # DEBUG __comp => 1
+  # DEBUG __x => __j$_M_node_59
+  # DEBUG __y => __j$_M_node_59
+  # DEBUG __x => __j$_M_node_59
+  # DEBUG __x => __j$_M_node_59
+  # DEBUG this => __j$_M_node_59
+  # DEBUG D#22 => &MEM[(const struct _Rb_tree_node *)__j$_M_node_59]._M_value_field
+  # DEBUG __r => D#22
+  # DEBUG __x => D#22
+  # DEBUG this => D#21
+  # DEBUG D#30 => &MEM[(const struct pair &)__j$_M_node_59 + 32].first
+  # DEBUG D#34 => &this_4(D)->_M_impl._M_key_compare
+  # DEBUG D#5 => D#34
+  # DEBUG D#6 => __k_6(D)
+  _80 = MEM[(const int &)__j$_M_node_59 + 32];
+  # DEBUG D#7 => D#30
+  # DEBUG this => D#5
+  # DEBUG __x => D#6
+  # DEBUG __y => D#7
+  # DEBUG __comp => NULL
+  if (_28 < _80)
+    goto <bb 48>;
+  else
+    goto <bb 49>;
+
+  <bb 48>:
+  _82 = MEM[(struct _Rb_tree_node_base * *)__j$_M_node_59 + 16B];
+  # DEBUG D#19 => __j$_M_node_59
+  # DEBUG __x => D#19
+  goto <bb 44>;
+
+  <bb 49>:
+  _83 = MEM[(struct _Rb_tree_node_base * *)__j$_M_node_59 + 24B];
+  # DEBUG D#20 => __j$_M_node_59
+  # DEBUG __x => D#20
+  goto <bb 44>;
+
+  <bb 50>:
+  # __j$_M_node_107 = PHI <__j$_M_node_59(44)>
+  # _56 = PHI <_80(44)>
+
+  <bb 63>:
+  # DEBUG this => &__j
+  # DEBUG __x => __j$_M_node_107
+  # DEBUG __j$_M_node => __j$_M_node_107
+  if (_28 < _56)
+    goto <bb 51>;
+  else
+    goto <bb 53>;
+
+  <bb 51>:
+  # __j$_M_node_156 = PHI <__j$_M_node_107(63), __j$_M_node_21(43)>
+  # DEBUG this => &__j
+  # DEBUG __x => __j$_M_node_156
+  # DEBUG __j$_M_node => __j$_M_node_156
+  _85 = MEM[(struct _Rb_tree_node_base * *)this_4(D) + 24B];
+  # DEBUG D#11 => this_4(D)
+  # DEBUG this => D#11
+  # DEBUG this => NULL
+  # DEBUG __x => _85
+  # DEBUG this => &__j
+  # DEBUG __x => NULL
+  if (_85 == __j$_M_node_156)
+    goto <bb 73>;
+  else
+    goto <bb 52>;
+
+  <bb 52>:
+  # DEBUG this => &__j
+  __j$_M_node_87 = std::_Rb_tree_decrement (__j$_M_node_156);
+  # DEBUG __j$_M_node => __j$_M_node_87
+  pretmp_64 = MEM[(const int &)__j$_M_node_87 + 32];
+
+  <bb 53>:
+  # __j$_M_node_88 = PHI <__j$_M_node_107(63), __j$_M_node_87(52)>
+  # __j$_M_node_154 = PHI <__j$_M_node_107(63), __j$_M_node_156(52)>
+  # prephitmp_81 = PHI <_56(63), pretmp_64(52)>
+
+  <bb 69>:
+  # DEBUG __j$_M_node => __j$_M_node_88
+  # DEBUG __x => __j$_M_node_88
+  # DEBUG __x => __j$_M_node_88
+  # DEBUG this => __j$_M_node_88
+  # DEBUG D#29 => &MEM[(const struct _Rb_tree_node *)__j$_M_node_88]._M_value_field
+  # DEBUG __r => D#29
+  # DEBUG __x => D#29
+  # DEBUG this => D#21
+  # DEBUG D#31 => &MEM[(const struct pair &)__j$_M_node_88 + 32].first
+  # DEBUG D#33 => &this_4(D)->_M_impl._M_key_compare
+  # DEBUG D#5 => D#33
+  # DEBUG D#6 => D#31
+  # DEBUG D#7 => __k_6(D)
+  # DEBUG this => D#5
+  # DEBUG __x => D#6
+  # DEBUG __y => D#7
+  if (_28 > prephitmp_81)
+    goto <bb 55>;
+  else
+    goto <bb 54>;
+
+  <bb 54>:
+
+  <bb 55>:
+  # SR.213_102 = PHI <__j$_M_node_88(54), 0B(69)>
+  # SR.214_101 = PHI <0B(54), __j$_M_node_154(69)>
+
+  <bb 73>:
+  # SR.213_112 = PHI <SR.213_102(55), 0B(51)>
+  # SR.214_111 = PHI <SR.214_101(55), _85(51)>
+
+  <bb 68>:
+  # DEBUG D#32 => {CLOBBER}
+  # DEBUG __j$_M_node => D#32
+  MEM[(struct pair *)&D.40911] = SR.213_112;
+  MEM[(struct pair *)&D.40911 + 8B] = SR.214_111;
+  goto <bb 57>;
+
+  <bb 56>:
+  # DEBUG this => &D.40451
+  # DEBUG __a => &__pos._M_node
+  # DEBUG __b => &D.40450
+  MEM[(struct pair *)&D.40911] = _20;
+  MEM[(struct pair *)&D.40911 + 8B] = 0B;
+
+  <bb 57>:
+
+  <bb 70>:
+  # DEBUG D#42 => {CLOBBER}
+  # DEBUG __pos => D#42
+  return D.40911;
+
+  <bb 58>:
+  # DEBUG this => this_4(D)
+  # DEBUG this => &D.40433
+  # DEBUG __a => &D.40432
+  # DEBUG __b => NULL
+  MEM[(struct pair *)&D.40911] = 0B;
+  MEM[(struct pair *)&D.40911 + 8B] = _5;
+  goto <bb 57>;
+
+  <bb 59>:
+  # DEBUG this => this_4(D)
+  # DEBUG __k => __k_6(D)
+  _42 = MEM[(struct _Rb_tree_node_base * *)this_4(D) + 16B];
+  # DEBUG D#18 => this_4(D)
+  # DEBUG this => D#18
+  # DEBUG __x => NULL
+  # DEBUG this => this_4(D)
+  # DEBUG __y => NULL
+  # DEBUG __comp => 1
+  # DEBUG __comp => 1
+  # DEBUG __y => _20
+  # DEBUG __x => _42
+  if (_42 == 0B)
+    goto <bb 11>;
+  else
+    goto <bb 60>;
+
+  <bb 60>:
+  pretmp_108 = MEM[(const int &)__k_6(D)];
+  goto <bb 7>;
+
+}
+
+
+
+;; Function virtual void SeparableOutputFirstAllocator::Allocate() (_ZN29SeparableOutputFirstAllocator8AllocateEv, funcdef_no=1710, decl_uid=37720, cgraph_uid=413, symbol_order=414)
+
+Trying loop 2 as candidate
+loop 2 is innermost
+loop is not parallel according to graphite
+Trying loop 1 as candidate
+loop 1 is not innermost
+loop is not parallel according to graphite
+Trying loop 4 as candidate
+loop 4 is innermost
+loop is not parallel according to graphite
+Trying loop 3 as candidate
+loop 3 is innermost
+loop is not parallel according to graphite
+virtual void SeparableOutputFirstAllocator::Allocate() (struct SeparableOutputFirstAllocator * const this)
+{
+  struct _Rb_tree_node_base * SR.220;
+  struct _Rb_tree_node_base * SR.219;
+  struct _Rb_tree_node_base * SR.218;
+  const struct _Rb_tree_node_base * __pos;
+  struct _Rb_tree_node * D.42402;
+  bool __insert_left;
+  struct iterator D.42385;
+  struct iterator D.42374;
+  struct pair __res;
+  struct _Rb_tree_node_base * __res$first;
+  struct _Rb_tree_node_base * __res$second;
+  struct const_iterator __position;
+  struct value_type D.42364;
+  struct _Rb_tree_node * __y;
+  struct iterator D.42363;
+  struct const_iterator __pos;
+  struct _Rb_tree_node_base * const __i$_M_node;
+  struct _Rb_tree_node_base * SR.179;
+  struct mapped_type & D.42360;
+  const struct _Rb_tree_node_base * const req_iter$_M_node;
+  const struct _Rb_tree_node_base * const port_iter$_M_node;
+  int label;
+  static const char __PRETTY_FUNCTION__[55] = "virtual void SeparableOutputFirstAllocator::Allocate()";
+  int _7;
+  long unsigned int _8;
+  struct Arbiter * & _9;
+  int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  struct _Rb_tree_node_base * _14;
+  struct map & _15;
+  long unsigned int _16;
+  struct Arbiter * _17;
+  int (*__vtbl_ptr_type) () * _18;
+  int (*__vtbl_ptr_type) () _19;
+  int _20;
+  int _21;
+  int _22;
+  struct Arbiter * _25;
+  int (*__vtbl_ptr_type) () * _26;
+  int (*__vtbl_ptr_type) () _27;
+  const int _29;
+  long unsigned int _30;
+  int _33;
+  int _35;
+  int label.2_36;
+  struct Arbiter * _37;
+  int (*__vtbl_ptr_type) () * _38;
+  int (*__vtbl_ptr_type) () _39;
+  int _40;
+  int _49;
+  long unsigned int _50;
+  struct Arbiter * _51;
+  int (*__vtbl_ptr_type) () * _52;
+  int (*__vtbl_ptr_type) () _53;
+  const int _55;
+  int _56;
+  long unsigned int _57;
+  struct map & _58;
+  int _59;
+  long unsigned int _60;
+  long unsigned int _61;
+  int _62;
+  int _65;
+  int _67;
+  long unsigned int _68;
+  struct Arbiter * _69;
+  int (*__vtbl_ptr_type) () * _70;
+  int (*__vtbl_ptr_type) () _71;
+  struct Arbiter * _74;
+  int (*__vtbl_ptr_type) () * _75;
+  int (*__vtbl_ptr_type) () _76;
+  struct map * _81;
+  struct map * _82;
+  struct map * _83;
+  struct Arbiter * * _84;
+  struct Arbiter * * _85;
+  struct Arbiter * * _86;
+  struct Arbiter * * _87;
+  struct Arbiter * * _88;
+  struct Arbiter * * _89;
+  int * _90;
+  int * _91;
+  long unsigned int _93;
+  struct Arbiter * & _94;
+  long unsigned int _95;
+  struct map & _96;
+  long unsigned int _97;
+  struct Arbiter * & _98;
+  long unsigned int _101;
+  struct Arbiter * & _102;
+  long unsigned int _103;
+  int & _104;
+  long unsigned int _105;
+  int & _106;
+  long unsigned int _107;
+  struct Arbiter * & _108;
+  long unsigned int _109;
+  struct Arbiter * & _110;
+  const int _116;
+  const int _122;
+  struct _Rep_type * _125;
+  bool _133;
+  const int _134;
+  const int _135;
+  bool _137;
+  long unsigned int _140;
+  long unsigned int _141;
+  struct _Rb_tree_node * _142;
+  const struct _Rb_tree_node_base * _144;
+  const struct _Rb_tree_node_base * _170;
+  bool _171;
+  long unsigned int _177;
+  struct _Rb_tree_node_base * _191;
+  long unsigned int _194;
+  long unsigned int _228;
+  const int pretmp_236;
+  const int prephitmp_237;
+  int pretmp_238;
+  int prephitmp_239;
+  const int pretmp_240;
+  const int prephitmp_241;
+  const int pretmp_242;
+
+  <bb 2>:
+  # DEBUG D#88 => &this_5(D)->D.37748.D.37705._out_occ
+  # DEBUG this => D#88
+  # DEBUG D#9 => &MEM[(const struct set *)D#88]._M_t
+  port_iter$_M_node_73 = MEM[(struct _Rb_tree_node_base * *)this_5(D) + 232B];
+  # DEBUG D#8 => D#9
+  # DEBUG this => D#8
+  # DEBUG this => NULL
+  # DEBUG __x => port_iter$_M_node_73
+  # DEBUG port_iter$_M_node => port_iter$_M_node_73
+  # DEBUG port_iter$_M_node => port_iter$_M_node_73
+  # DEBUG D#97 => &this_5(D)->D.37748.D.37705._out_occ
+  # DEBUG this => D#97
+  # DEBUG D#10 => &MEM[(const struct set *)D#97]._M_t
+  # DEBUG this => D#10
+  _170 = &MEM[(const struct _Rb_tree *)this_5(D) + 208B]._M_impl._M_header;
+  # DEBUG this => NULL
+  # DEBUG __x => _170
+  # DEBUG this => &port_iter
+  # DEBUG __x => &D.38753
+  if (port_iter$_M_node_73 != _170)
+    goto <bb 4>;
+  else
+    goto <bb 3>;
+
+  <bb 3>:
+  # DEBUG D#98 => &this_5(D)->D.37748.D.37705._in_occ
+  # DEBUG this => D#98
+  # DEBUG D#9 => &MEM[(const struct set *)D#98]._M_t
+  port_iter$_M_node_42 = MEM[(struct _Rb_tree_node_base * *)this_5(D) + 184B];
+  # DEBUG D#8 => D#9
+  # DEBUG this => D#8
+  # DEBUG this => NULL
+  # DEBUG __x => port_iter$_M_node_42
+  # DEBUG port_iter$_M_node => port_iter$_M_node_42
+  # DEBUG port_iter$_M_node => port_iter$_M_node_42
+  # DEBUG D#107 => &this_5(D)->D.37748.D.37705._in_occ
+  # DEBUG this => D#107
+  # DEBUG D#10 => &MEM[(const struct set *)D#107]._M_t
+  # DEBUG this => D#10
+  _144 = &MEM[(const struct _Rb_tree *)this_5(D) + 160B]._M_impl._M_header;
+  # DEBUG this => NULL
+  # DEBUG __x => _144
+  # DEBUG this => &port_iter
+  # DEBUG __x => &D.39998
+  if (port_iter$_M_node_42 != _144)
+    goto <bb 31>;
+  else
+    goto <bb 30>;
+
+  <bb 4>:
+
+  <bb 5>:
+  # port_iter$_M_node_184 = PHI <port_iter$_M_node_73(4), port_iter$_M_node_99(29)>
+  # DEBUG port_iter$_M_node => port_iter$_M_node_184
+  # DEBUG D#97 => &this_5(D)->D.37748.D.37705._out_occ
+  # DEBUG this => D#97
+  # DEBUG D#10 => &MEM[(const struct set *)D#97]._M_t
+  # DEBUG this => D#10
+  # DEBUG this => NULL
+  # DEBUG __x => _170
+  # DEBUG this => &port_iter
+  # DEBUG __x => &D.38753
+  # DEBUG this => &port_iter
+  # DEBUG this => port_iter$_M_node_184
+  # DEBUG D#115 => &MEM[(const struct _Rb_tree_node *)port_iter$_M_node_184]._M_value_field
+  # DEBUG __r => D#115
+  # DEBUG output => D#115
+  _7 = MEM[(const int &)port_iter$_M_node_184 + 32];
+  _8 = (long unsigned int) _7;
+  # DEBUG D#89 => &this_5(D)->D.37748.D.37705._out_req
+  _81 = MEM[(struct map * *)this_5(D) + 280B];
+  # DEBUG D#2 => D#89
+  # DEBUG __n => _8
+  # DEBUG this => D#2
+  _61 = _8 * 48;
+  _58 = _81 + _61;
+  # DEBUG this => NULL
+  req_iter$_M_node_10 = MEM[(struct _Rb_tree_node_base * *)_58 + 24B];
+  # DEBUG D#11 => D#12
+  # DEBUG this => D#11
+  # DEBUG this => NULL
+  # DEBUG __x => req_iter$_M_node_10
+  # DEBUG this => &req_iter
+  # DEBUG __it => &D.39923
+  # DEBUG req_iter$_M_node => req_iter$_M_node_10
+  # DEBUG req_iter$_M_node => req_iter$_M_node_10
+  # DEBUG D#93 => &this_5(D)->D.37748.D.37705._out_req
+  # DEBUG D#2 => D#93
+  # DEBUG __n => _8
+  # DEBUG this => D#2
+  # DEBUG this => NULL
+  # DEBUG this => D#13
+  _191 = &MEM[(struct _Rb_tree *)_58]._M_impl._M_header;
+  # DEBUG this => NULL
+  # DEBUG __x => _191
+  # DEBUG this => &D.39988
+  # DEBUG __it => &D.39934
+  # DEBUG this => &req_iter
+  # DEBUG __x => &D.39988
+  if (req_iter$_M_node_10 != _191)
+    goto <bb 6>;
+  else
+    goto <bb 10>;
+
+  <bb 6>:
+
+  <bb 7>:
+  # _177 = PHI <_8(6), _12(9)>
+  # req_iter$_M_node_193 = PHI <req_iter$_M_node_10(6), req_iter$_M_node_92(9)>
+  # DEBUG req_iter$_M_node => req_iter$_M_node_193
+  # DEBUG D#93 => &this_5(D)->D.37748.D.37705._out_req
+  # DEBUG D#2 => D#93
+  # DEBUG __n => _177
+  # DEBUG this => D#2
+  # DEBUG this => NULL
+  # DEBUG this => D#13
+  # DEBUG this => NULL
+  # DEBUG __x => _191
+  # DEBUG this => &D.39988
+  # DEBUG __it => &D.39934
+  # DEBUG this => &req_iter
+  # DEBUG __x => &D.39988
+  # DEBUG this => &req_iter
+  # DEBUG this => req_iter$_M_node_193
+  # DEBUG D#90 => &MEM[(const struct _Rb_tree_node *)req_iter$_M_node_193]._M_value_field
+  # DEBUG __r => D#90
+  # DEBUG D#91 => &MEM[(const struct pair *)req_iter$_M_node_193 + 32B].second
+  # DEBUG req => D#91
+  # DEBUG D#92 => &this_5(D)->D.37748._output_arb
+  _84 = MEM[(struct Arbiter * * *)this_5(D) + 328B];
+  # DEBUG D#3 => D#92
+  # DEBUG __n => _177
+  # DEBUG this => D#3
+  _13 = _177 * 8;
+  _9 = _84 + _13;
+  _17 = *_9;
+  _18 = _17->D.38560._vptr.Module;
+  _19 = MEM[(int (*__vtbl_ptr_type) () *)_18 + 32B];
+  _20 = MEM[(const struct sRequest &)req_iter$_M_node_193 + 36].out_pri;
+  _21 = MEM[(const struct sRequest &)req_iter$_M_node_193 + 36].label;
+  _22 = MEM[(const struct sRequest &)req_iter$_M_node_193 + 36].port;
+  OBJ_TYPE_REF(_19;(struct Arbiter)_17->4) (_17, _22, _21, _20);
+  # DEBUG this => &req_iter
+  req_iter$_M_node_92 = std::_Rb_tree_increment (req_iter$_M_node_193);
+  # DEBUG req_iter$_M_node => req_iter$_M_node_92
+  # DEBUG req_iter$_M_node => req_iter$_M_node_92
+  _11 = MEM[(const int &)port_iter$_M_node_184 + 32];
+  _12 = (long unsigned int) _11;
+  # DEBUG D#93 => &this_5(D)->D.37748.D.37705._out_req
+  _82 = MEM[(struct map * *)this_5(D) + 280B];
+  # DEBUG D#2 => D#93
+  # DEBUG __n => _12
+  # DEBUG this => D#2
+  _16 = _12 * 48;
+  _15 = _82 + _16;
+  # DEBUG this => NULL
+  # DEBUG this => D#13
+  _14 = &MEM[(struct _Rb_tree *)_15]._M_impl._M_header;
+  # DEBUG this => NULL
+  # DEBUG __x => _14
+  # DEBUG this => &D.39988
+  # DEBUG __it => &D.39934
+  # DEBUG this => &req_iter
+  # DEBUG __x => &D.39988
+  if (_14 != req_iter$_M_node_92)
+    goto <bb 9>;
+  else
+    goto <bb 8>;
+
+  <bb 8>:
+  # _228 = PHI <_12(7)>
+
+  <bb 42>:
+  goto <bb 10>;
+
+  <bb 9>:
+  goto <bb 7>;
+
+  <bb 10>:
+  # _194 = PHI <_228(42), _8(5)>
+  label = -1;
+  # DEBUG D#94 => &this_5(D)->D.37748._output_arb
+  _85 = MEM[(struct Arbiter * * *)this_5(D) + 328B];
+  # DEBUG D#3 => D#94
+  # DEBUG __n => _194
+  # DEBUG this => D#3
+  _93 = _194 * 8;
+  _94 = _85 + _93;
+  _25 = *_94;
+  _26 = _25->D.38560._vptr.Module;
+  _27 = MEM[(int (*__vtbl_ptr_type) () *)_26 + 48B];
+  _29 = OBJ_TYPE_REF(_27;(struct Arbiter)_25->6) (_25, &label, 0B);
+  # DEBUG input => _29
+  if (_29 < 0)
+    goto <bb 11>;
+  else
+    goto <bb 12>;
+
+  <bb 11>:
+  __assert_fail ("input > -1", "allocators/separable_output_first.cpp", 73, &__PRETTY_FUNCTION__);
+
+  <bb 12>:
+  _30 = (long unsigned int) _29;
+  # DEBUG D#95 => &this_5(D)->D.37748.D.37705._in_req
+  _83 = MEM[(struct map * *)this_5(D) + 256B];
+  # DEBUG D#2 => D#95
+  # DEBUG __n => _30
+  # DEBUG this => D#2
+  _95 = _30 * 48;
+  _96 = _83 + _95;
+  # DEBUG this => _96
+  # DEBUG __k => D#115
+  # DEBUG this => _96
+  # DEBUG __x => D#115
+  # DEBUG D#27 => &_96->_M_t
+  # DEBUG this => D#27
+  # DEBUG __k => D#115
+  # DEBUG this => D#27
+  __pos_113 = &MEM[(struct _Rb_tree *)_96]._M_impl._M_header;
+  __pos_114 = MEM[(struct _Rb_tree_node_base * *)_96 + 16B];
+  # DEBUG D#18 => D#27
+  # DEBUG this => D#18
+  # DEBUG D#26 => D#27
+  # DEBUG __x => NULL
+  # DEBUG __y => NULL
+  # DEBUG __k => D#115
+  # DEBUG __y => __pos_113
+  # DEBUG __x => __pos_114
+  if (__pos_114 == 0B)
+    goto <bb 39>;
+  else
+    goto <bb 13>;
+
+  <bb 13>:
+  pretmp_242 = MEM[(const int &)port_iter$_M_node_184 + 32];
+  goto <bb 16>;
+
+  <bb 14>:
+  # __pos_130 = PHI <__pos_118(17), __pos_119(18)>
+  # __pos_129 = PHI <__pos_187(17), __pos_186(18)>
+  # DEBUG __y => __pos_129
+  # DEBUG __x => __pos_130
+  if (__pos_130 == 0B)
+    goto <bb 19>;
+  else
+    goto <bb 15>;
+
+  <bb 15>:
+
+  <bb 16>:
+  # __pos_187 = PHI <__pos_114(13), __pos_130(15)>
+  # __pos_186 = PHI <__pos_113(13), __pos_129(15)>
+  # DEBUG __y => __pos_186
+  # DEBUG __x => __pos_187
+  # DEBUG __x => __pos_187
+  # DEBUG __x => __pos_187
+  # DEBUG this => __pos_187
+  # DEBUG D#22 => &MEM[(const struct _Rb_tree_node *)__pos_187]._M_value_field
+  # DEBUG __r => D#22
+  # DEBUG __x => D#22
+  # DEBUG this => D#21
+  # DEBUG D#23 => &MEM[(const struct pair &)__pos_187 + 32].first
+  # DEBUG D#24 => &D#25->_M_impl._M_key_compare
+  # DEBUG D#5 => D#24
+  _116 = MEM[(const int &)__pos_187 + 32];
+  # DEBUG D#6 => D#23
+  # DEBUG D#7 => D#115
+  # DEBUG this => D#5
+  # DEBUG __x => D#6
+  # DEBUG __y => D#7
+  if (_116 >= pretmp_242)
+    goto <bb 17>;
+  else
+    goto <bb 18>;
+
+  <bb 17>:
+  # DEBUG __y => __pos_187
+  __pos_118 = MEM[(struct _Rb_tree_node_base * *)__pos_187 + 16B];
+  # DEBUG D#19 => __pos_187
+  # DEBUG __x => D#19
+  # DEBUG __x => NULL
+  goto <bb 14>;
+
+  <bb 18>:
+  __pos_119 = MEM[(struct _Rb_tree_node_base * *)__pos_187 + 24B];
+  # DEBUG D#20 => __pos_187
+  # DEBUG __x => D#20
+  # DEBUG __x => NULL
+  goto <bb 14>;
+
+  <bb 19>:
+  # __pos_227 = PHI <__pos_129(14)>
+
+  <bb 41>:
+  # DEBUG this => NULL
+  # DEBUG __x => __pos_227
+  # DEBUG __i$_M_node => __pos_227
+  # DEBUG this => _96
+  # DEBUG D#13 => &_96->_M_t
+  # DEBUG this => D#13
+  # DEBUG this => NULL
+  # DEBUG __x => __pos_113
+  # DEBUG this => &__i
+  # DEBUG __x => NULL
+  if (__pos_113 == __pos_227)
+    goto <bb 40>;
+  else
+    goto <bb 20>;
+
+  <bb 20>:
+  # DEBUG this => &__i
+  # DEBUG this => __pos_227
+  # DEBUG D#83 => &MEM[(struct _Rb_tree_node *)__pos_227]._M_value_field
+  # DEBUG __r => D#83
+  # DEBUG D#84 => &MEM[(struct pair &)__pos_227 + 32].first
+  # DEBUG D#17 => _96
+  # DEBUG this => D#17
+  # DEBUG D#16 => D#17
+  # DEBUG D#15 => &D#16->_M_t
+  # DEBUG D#14 => D#15
+  # DEBUG this => D#14
+  # DEBUG D#6 => D#115
+  _122 = MEM[(const int &)__pos_227 + 32];
+  # DEBUG D#7 => D#84
+  # DEBUG this => D#5
+  # DEBUG __x => D#6
+  # DEBUG __y => D#7
+  if (_122 > pretmp_242)
+    goto <bb 40>;
+  else
+    goto <bb 25>;
+
+  <bb 21>:
+  # DEBUG D#76 => D#81
+  # DEBUG this => _125
+  # DEBUG __x => __res$first_131
+  # DEBUG __p => __res$second_132
+  # DEBUG __v => &D.42364
+  # DEBUG __node_gen => D#76
+  # DEBUG D#75 => D#76
+  # DEBUG this => _125
+  _133 = __pos_113 == __res$second_132;
+  _137 = __res$first_131 != 0B;
+  _171 = _133 | _137;
+  if (_171 != 0)
+    goto <bb 23>;
+  else
+    goto <bb 22>;
+
+  <bb 22>:
+  # DEBUG __x => __res$second_132
+  # DEBUG __x => __res$second_132
+  # DEBUG this => __res$second_132
+  # DEBUG D#29 => &MEM[(const struct _Rb_tree_node *)__res$second_132]._M_value_field
+  # DEBUG __r => D#29
+  # DEBUG __x => D#29
+  # DEBUG this => D#21
+  # DEBUG D#73 => &MEM[(const struct pair &)__res$second_132 + 32].first
+  # DEBUG __x => &D.42364
+  # DEBUG this => D#21
+  # DEBUG D#74 => &MEM[(struct _Rb_tree *)_125]._M_impl._M_key_compare
+  # DEBUG D#5 => D#74
+  _134 = MEM[(const int &)&D.42364];
+  _135 = MEM[(const int &)__res$second_132 + 32];
+  # DEBUG D#7 => D#73
+  # DEBUG this => D#5
+  # DEBUG __x => D#6
+  # DEBUG __y => D#7
+  __insert_left_172 = _134 < _135;
+  pretmp_238 = (int) __insert_left_172;
+
+  <bb 23>:
+  # prephitmp_239 = PHI <pretmp_238(22), 1(21)>
+  # DEBUG __insert_left => NULL
+  # DEBUG D#72 => D#75
+  # DEBUG __arg => &D.42364
+  # DEBUG this => D#72
+  # DEBUG D#71 => D#72
+  # DEBUG D#70 => D#71->_M_t
+  # DEBUG D#69 => D#70
+  # DEBUG __x => &D.42364
+  # DEBUG this => D#69
+  # DEBUG D#68 => D#69
+  # DEBUG D#67 => D#69
+  # DEBUG D#56 => D#67
+  # DEBUG this => D#56
+  # DEBUG D#55 => D#56
+  # DEBUG this => D#55
+  # DEBUG __n => 1
+  # DEBUG __a => D#54
+  # DEBUG D#53 => D#54
+  # DEBUG D#51 => D#53
+  # DEBUG D#52 => 0B
+  # DEBUG __n => 1
+  # DEBUG this => D#51
+  # DEBUG D.42393 => D#52
+  # DEBUG D#50 => D#51
+  # DEBUG D#49 => D#50
+  # DEBUG this => D#49
+  _142 = operator new (56);
+  # DEBUG __tmp => _142
+  # DEBUG D#66 => D#68
+  # DEBUG __node => _142
+  # DEBUG __x => &D.42364
+  # DEBUG this => D#66
+  # DEBUG D#65 => D#66
+  # DEBUG this => _142
+  # DEBUG D#116 => &_142->_M_value_field
+  # DEBUG __r => D#116
+  # DEBUG D#58 => D#65
+  # DEBUG this => D#58
+  # DEBUG D#57 => D#58
+  # DEBUG this => D#57
+  # DEBUG this => NULL
+  # DEBUG D.41823 => NULL
+  # DEBUG this => NULL
+  # DEBUG __p => D#116
+  # DEBUG __val => &D.42364
+  # DEBUG this => D#48
+  # DEBUG D#1 => 20
+  # DEBUG __p => D#116
+  # DEBUG D.41746 => D#1
+  MEM[(struct pair *)_142 + 32B] = D.42364;
+  # DEBUG this => NULL
+  # DEBUG this => NULL
+  # DEBUG __z => NULL
+  std::_Rb_tree_insert_and_rebalance (prephitmp_239, _142, __res$second_132, __pos_113);
+  _140 = MEM[(struct _Rb_tree *)_96]._M_impl._M_node_count;
+  _141 = _140 + 1;
+  MEM[(struct _Rb_tree *)_96]._M_impl._M_node_count = _141;
+  # DEBUG this => NULL
+  # DEBUG __x => NULL
+
+  <bb 24>:
+  # SR.219_152 = PHI <_142(23), __res$first_131(40)>
+  # DEBUG D#79 => {CLOBBER}
+  # DEBUG __res$first => D#79
+  # DEBUG D#80 => {CLOBBER}
+  # DEBUG __res$second => D#80
+  # DEBUG __i$_M_node => SR.219_152
+  D.42364 ={v} {CLOBBER};
+  pretmp_240 = MEM[(const int &)port_iter$_M_node_184 + 32];
+
+  <bb 25>:
+  # __pos_127 = PHI <__pos_227(20), SR.219_152(24)>
+  # prephitmp_241 = PHI <pretmp_242(20), pretmp_240(24)>
+  # DEBUG __i$_M_node => __pos_127
+  # DEBUG this => &__i
+  # DEBUG this => __pos_127
+  # DEBUG D#85 => &MEM[(struct _Rb_tree_node *)__pos_127]._M_value_field
+  # DEBUG __r => D#85
+  # DEBUG D#87 => {CLOBBER}
+  # DEBUG __i$_M_node => D#87
+  # DEBUG req => NULL
+  _33 = MEM[(const struct sRequest &)__pos_127 + 36].port;
+  if (_33 != prephitmp_241)
+    goto <bb 27>;
+  else
+    goto <bb 26>;
+
+  <bb 26>:
+  _35 = MEM[(const struct sRequest &)__pos_127 + 36].label;
+  label.2_36 = label;
+  if (_35 != label.2_36)
+    goto <bb 27>;
+  else
+    goto <bb 28>;
+
+  <bb 27>:
+  __assert_fail ("(req.port == output) && (req.label == label)", "allocators/separable_output_first.cpp", 76, &__PRETTY_FUNCTION__);
+
+  <bb 28>:
+  # DEBUG D#96 => &this_5(D)->D.37748._input_arb
+  _86 = MEM[(struct Arbiter * * *)this_5(D) + 304B];
+  # DEBUG D#3 => D#96
+  # DEBUG __n => _30
+  # DEBUG this => D#3
+  _97 = _30 * 8;
+  _98 = _86 + _97;
+  _37 = *_98;
+  _38 = _37->D.38560._vptr.Module;
+  _39 = MEM[(int (*__vtbl_ptr_type) () *)_38 + 32B];
+  _40 = MEM[(const struct sRequest &)__pos_127 + 36].in_pri;
+  OBJ_TYPE_REF(_39;(struct Arbiter)_37->4) (_37, _33, _35, _40);
+  # DEBUG this => &port_iter
+  port_iter$_M_node_99 = std::_Rb_tree_increment (port_iter$_M_node_184);
+  # DEBUG port_iter$_M_node => port_iter$_M_node_99
+  # DEBUG D#108 => {CLOBBER}
+  # DEBUG req_iter$_M_node => D#108
+  label ={v} {CLOBBER};
+  # DEBUG port_iter$_M_node => port_iter$_M_node_99
+  # DEBUG D#97 => &this_5(D)->D.37748.D.37705._out_occ
+  # DEBUG this => D#97
+  # DEBUG D#10 => &MEM[(const struct set *)D#97]._M_t
+  # DEBUG this => D#10
+  # DEBUG this => NULL
+  # DEBUG __x => _170
+  # DEBUG this => &port_iter
+  # DEBUG __x => &D.38753
+  if (port_iter$_M_node_99 != _170)
+    goto <bb 29>;
+  else
+    goto <bb 3>;
+
+  <bb 29>:
+  goto <bb 5>;
+
+  <bb 30>:
+
+  <bb 43>:
+  # DEBUG D#110 => {CLOBBER}
+  # DEBUG port_iter$_M_node => D#110
+  return;
+
+  <bb 31>:
+
+  <bb 32>:
+  # port_iter$_M_node_185 = PHI <port_iter$_M_node_42(31), port_iter$_M_node_111(38)>
+  # DEBUG port_iter$_M_node => port_iter$_M_node_185
+  # DEBUG D#107 => &this_5(D)->D.37748.D.37705._in_occ
+  # DEBUG this => D#107
+  # DEBUG D#10 => &MEM[(const struct set *)D#107]._M_t
+  # DEBUG this => D#10
+  # DEBUG this => NULL
+  # DEBUG __x => _144
+  # DEBUG this => &port_iter
+  # DEBUG __x => &D.39998
+  # DEBUG this => &port_iter
+  # DEBUG this => port_iter$_M_node_185
+  # DEBUG D#99 => &MEM[(const struct _Rb_tree_node *)port_iter$_M_node_185]._M_value_field
+  # DEBUG __r => D#99
+  # DEBUG input => D#99
+  _49 = MEM[(const int &)port_iter$_M_node_185 + 32];
+  _50 = (long unsigned int) _49;
+  # DEBUG D#100 => &this_5(D)->D.37748._input_arb
+  _87 = MEM[(struct Arbiter * * *)this_5(D) + 304B];
+  # DEBUG D#3 => D#100
+  # DEBUG __n => _50
+  # DEBUG this => D#3
+  _101 = _50 * 8;
+  _102 = _87 + _101;
+  _51 = *_102;
+  _52 = _51->D.38560._vptr.Module;
+  _53 = MEM[(int (*__vtbl_ptr_type) () *)_52 + 48B];
+  _55 = OBJ_TYPE_REF(_53;(struct Arbiter)_51->6) (_51, 0B, 0B);
+  # DEBUG output => _55
+  if (_55 >= 0)
+    goto <bb 33>;
+  else
+    goto <bb 37>;
+
+  <bb 33>:
+  _56 = MEM[(const int &)port_iter$_M_node_185 + 32];
+  _57 = (long unsigned int) _56;
+  # DEBUG D#101 => &this_5(D)->D.37748.D.37705.D.36911._inmatch
+  _90 = MEM[(int * *)this_5(D) + 112B];
+  # DEBUG D#4 => D#101
+  # DEBUG __n => _57
+  # DEBUG this => D#4
+  _103 = _57 * 4;
+  _104 = _90 + _103;
+  _59 = *_104;
+  if (_59 != -1)
+    goto <bb 35>;
+  else
+    goto <bb 34>;
+
+  <bb 34>:
+  _60 = (long unsigned int) _55;
+  # DEBUG D#102 => &this_5(D)->D.37748.D.37705.D.36911._outmatch
+  _91 = MEM[(int * *)this_5(D) + 136B];
+  # DEBUG D#4 => D#102
+  # DEBUG __n => _60
+  # DEBUG this => D#4
+  _105 = _60 * 4;
+  _106 = _91 + _105;
+  _62 = *_106;
+  if (_62 != -1)
+    goto <bb 35>;
+  else
+    goto <bb 36>;
+
+  <bb 35>:
+  __assert_fail ("(_inmatch[input] == -1) && (_outmatch[output] == -1)", "allocators/separable_output_first.cpp", 93, &__PRETTY_FUNCTION__);
+
+  <bb 36>:
+  # DEBUG D#103 => &this_5(D)->D.37748.D.37705.D.36911._inmatch
+  # DEBUG D#4 => D#103
+  # DEBUG __n => _57
+  # DEBUG this => D#4
+  *_104 = _55;
+  # DEBUG D#104 => &this_5(D)->D.37748.D.37705.D.36911._outmatch
+  # DEBUG D#4 => D#104
+  # DEBUG __n => _60
+  # DEBUG this => D#4
+  _65 = MEM[(const int &)port_iter$_M_node_185 + 32];
+  *_106 = _65;
+  _67 = MEM[(const int &)port_iter$_M_node_185 + 32];
+  _68 = (long unsigned int) _67;
+  # DEBUG D#105 => &this_5(D)->D.37748._input_arb
+  _88 = MEM[(struct Arbiter * * *)this_5(D) + 304B];
+  # DEBUG D#3 => D#105
+  # DEBUG __n => _68
+  # DEBUG this => D#3
+  _107 = _68 * 8;
+  _108 = _88 + _107;
+  _69 = *_108;
+  _70 = _69->D.38560._vptr.Module;
+  _71 = MEM[(int (*__vtbl_ptr_type) () *)_70 + 40B];
+  OBJ_TYPE_REF(_71;(struct Arbiter)_69->5) (_69);
+  # DEBUG D#106 => &this_5(D)->D.37748._output_arb
+  _89 = MEM[(struct Arbiter * * *)this_5(D) + 328B];
+  # DEBUG D#3 => D#106
+  # DEBUG __n => _60
+  # DEBUG this => D#3
+  _109 = _60 * 8;
+  _110 = _89 + _109;
+  _74 = *_110;
+  _75 = _74->D.38560._vptr.Module;
+  _76 = MEM[(int (*__vtbl_ptr_type) () *)_75 + 40B];
+  OBJ_TYPE_REF(_76;(struct Arbiter)_74->5) (_74);
+
+  <bb 37>:
+  # DEBUG this => &port_iter
+  port_iter$_M_node_111 = std::_Rb_tree_increment (port_iter$_M_node_185);
+  # DEBUG port_iter$_M_node => port_iter$_M_node_111
+  # DEBUG port_iter$_M_node => port_iter$_M_node_111
+  # DEBUG D#107 => &this_5(D)->D.37748.D.37705._in_occ
+  # DEBUG this => D#107
+  # DEBUG D#10 => &MEM[(const struct set *)D#107]._M_t
+  # DEBUG this => D#10
+  # DEBUG this => NULL
+  # DEBUG __x => _144
+  # DEBUG this => &port_iter
+  # DEBUG __x => &D.39998
+  if (port_iter$_M_node_111 != _144)
+    goto <bb 38>;
+  else
+    goto <bb 30>;
+
+  <bb 38>:
+  goto <bb 32>;
+
+  <bb 39>:
+  pretmp_236 = MEM[(const int &)port_iter$_M_node_184 + 32];
+
+  <bb 40>:
+  # __pos_2 = PHI <__pos_227(20), __pos_227(41), __pos_113(39)>
+  # prephitmp_237 = PHI <pretmp_242(20), pretmp_242(41), pretmp_236(39)>
+  # DEBUG this => &D.42364
+  # DEBUG __a => D#115
+  # DEBUG __b => NULL
+  D.42364.first = prephitmp_237;
+  MEM[(struct pair *)&D.42364 + 4B] = 0;
+  MEM[(struct pair *)&D.42364 + 8B] = 0;
+  MEM[(struct pair *)&D.42364 + 12B] = 0;
+  MEM[(struct pair *)&D.42364 + 16B] = 0;
+  # DEBUG this => _96
+  # DEBUG __position$_M_node => __pos_2
+  # DEBUG __x => &D.42364
+  # DEBUG this => NULL
+  # DEBUG __it => &__position
+  _125 = &_96->_M_t;
+  # DEBUG this => _125
+  # DEBUG __pos => __pos_2
+  # DEBUG __x => &D.42364
+  # DEBUG this => &__an
+  # DEBUG __t => _125
+  # DEBUG __an$_M_t => _125
+  # DEBUG D#82 => &__an
+  # DEBUG this => _125
+  MEM[(struct _Rb_tree_const_iterator *)&__position] = __pos_2;
+  # DEBUG __v => &D.42364
+  # DEBUG __node_gen => D#82
+  # DEBUG D#81 => D#82
+  # DEBUG __x => &D.42364
+  # DEBUG this => D#21
+  __res = std::_Rb_tree<int, std::pair<const int, Allocator::sRequest>, std::_Select1st<std::pair<const int, Allocator::sRequest> >, std::less<int>, std::allocator<std::pair<const int, Allocator::sRequest> > >::_M_get_insert_hint_unique_pos (_125, __position, &D.42364.first);
+  __res$first_131 = MEM[(struct pair *)&__res];
+  # DEBUG __res$first => __res$first_131
+  __res$second_132 = MEM[(struct pair *)&__res + 8B];
+  # DEBUG __res$second => __res$second_132
+  if (__res$second_132 != 0B)
+    goto <bb 21>;
+  else
+    goto <bb 24>;
+
+}
+
+

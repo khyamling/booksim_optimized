@@ -1,0 +1,2 @@
+Pin 2.14 kit 71293
+E:  Unable to load /home/khyam/opt/pin-2.14-71313-gcc.4.4.7-linux/source/tools/MemTrace/obj-intel64/memtrace.so: /home/khyam/opt/pin-2.14-71313-gcc.4.4.7-linux/source/tools/MemTrace/obj-intel64/memtrace.so: undefined symbol: _ZN10LEVEL_BASE9StringDecB5cxx11Emjc

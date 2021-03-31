@@ -1,0 +1,1098 @@
+
+;; Function std::stack<PacketReplyInfo*>::~stack() (_ZNSt5stackIP15PacketReplyInfoSt5dequeIS1_SaIS1_EEED2Ev, funcdef_no=1719, decl_uid=30957, cgraph_uid=526, symbol_order=555)
+
+Trying loop 1 as candidate
+loop 1 is innermost
+loop is not parallel according to graphite
+std::stack<PacketReplyInfo*>::~stack() (struct stack * const this)
+{
+  struct PacketReplyInfo * * * __nstart;
+  struct PacketReplyInfo * * * _7;
+  struct PacketReplyInfo * * * _8;
+  struct PacketReplyInfo * * * _9;
+  struct PacketReplyInfo * * _12;
+  struct PacketReplyInfo * * * pretmp_18;
+  struct PacketReplyInfo * * * prephitmp_19;
+
+  <bb 2>:
+  # DEBUG D#71 => &this_1(D)->c
+  # DEBUG this => D#71
+  # DEBUG D#62 => &D#71->D.29688
+  # DEBUG this => D#62
+  # DEBUG this => D#71
+  # DEBUG D#2 => &D#71->D.29688._M_impl._M_finish
+  # DEBUG this => NULL
+  # DEBUG __x => D#2
+  # DEBUG D#70 => MEM[(const struct iterator &)D#71 + 48]._M_cur
+  # DEBUG D.32028 => D#70
+  # DEBUG D#69 => MEM[(const struct iterator &)D#71 + 48]._M_first
+  # DEBUG D.32029 => D#69
+  # DEBUG D#68 => MEM[(const struct iterator &)D#71 + 48]._M_last
+  # DEBUG D.32030 => D#68
+  # DEBUG D#67 => MEM[(const struct iterator &)D#71 + 48]._M_node
+  # DEBUG D.32031 => D#67
+  # DEBUG this => D#71
+  # DEBUG D#3 => &D#71->D.29688._M_impl._M_start
+  # DEBUG this => NULL
+  # DEBUG __x => D#3
+  # DEBUG D#66 => MEM[(const struct iterator &)D#71 + 16]._M_cur
+  # DEBUG D.32024 => D#66
+  # DEBUG D#65 => MEM[(const struct iterator &)D#71 + 16]._M_first
+  # DEBUG D.32025 => D#65
+  # DEBUG D#64 => MEM[(const struct iterator &)D#71 + 16]._M_last
+  # DEBUG D.32026 => D#64
+  # DEBUG D#63 => MEM[(const struct iterator &)D#71 + 16]._M_node
+  # DEBUG D.32027 => D#63
+  # DEBUG D#4 => D#71
+  # DEBUG this => D#4
+  # DEBUG __first => D#5
+  # DEBUG __last => D#6
+  # DEBUG D.32012 => D#7
+  # DEBUG D#115 => &MEM[(struct deque *)this_1(D)].D.29688
+  # DEBUG this => D#115
+  _7 = MEM[(struct _Deque_base *)this_1(D)]._M_impl._M_map;
+  if (_7 != 0B)
+    goto <bb 3>;
+  else
+    goto <bb 9>;
+
+  <bb 3>:
+  _8 = MEM[(struct _Deque_base *)this_1(D)]._M_impl._M_finish._M_node;
+  _9 = _8 + 8;
+  __nstart_10 = MEM[(struct _Deque_base *)this_1(D)]._M_impl._M_start._M_node;
+  # DEBUG D#53 => D#115
+  # DEBUG __nstart => __nstart_10
+  # DEBUG __nfinish => _9
+  # DEBUG this => D#53
+  # DEBUG __n => __nstart_10
+  if (_9 <= __nstart_10)
+    goto <bb 8>;
+  else
+    goto <bb 4>;
+
+  <bb 4>:
+
+  <bb 5>:
+  # __nstart_22 = PHI <__nstart_10(4), __nstart_13(6)>
+  # DEBUG __n => __nstart_22
+  _12 = *__nstart_22;
+  # DEBUG this => D#51
+  # DEBUG __p => _12
+  # DEBUG __size => 8
+  # DEBUG D#44 => &D#52->_M_impl
+  # DEBUG D#42 => D#44
+  # DEBUG __p => _12
+  # DEBUG __a => D#42
+  # DEBUG __n => D#43
+  # DEBUG D#41 => D#43
+  # DEBUG D#40 => D#42
+  # DEBUG D#38 => D#40
+  # DEBUG D#39 => D#41
+  # DEBUG __p => _12
+  # DEBUG this => D#38
+  # DEBUG D.32789 => D#39
+  operator delete (_12);
+  __nstart_13 = __nstart_22 + 8;
+  # DEBUG __n => __nstart_13
+  # DEBUG __n => __nstart_13
+  if (_9 <= __nstart_13)
+    goto <bb 7>;
+  else
+    goto <bb 6>;
+
+  <bb 6>:
+  goto <bb 5>;
+
+  <bb 7>:
+
+  <bb 10>:
+  pretmp_18 = MEM[(struct _Deque_base *)this_1(D)]._M_impl._M_map;
+
+  <bb 8>:
+  # prephitmp_19 = PHI <pretmp_18(10), _7(3)>
+  # DEBUG D#60 => D#115->_M_impl._M_map_size
+  # DEBUG D#116 => MEM[(struct _Deque_base *)this_1(D)]._M_impl._M_map
+  # DEBUG D#58 => D#115
+  # DEBUG D#59 => D#60
+  # DEBUG __p => D#116
+  # DEBUG this => D#58
+  # DEBUG __n => D#59
+  # DEBUG D#57 => D#59
+  # DEBUG D#56 => D#58
+  # DEBUG D#55 => D#56
+  # DEBUG this => D#55
+  # DEBUG D#54 => D#55
+  # DEBUG this => D#54
+  # DEBUG this => NULL
+  # DEBUG D.31946 => NULL
+  # DEBUG this => NULL
+  # DEBUG D#36 => &__map_alloc
+  # DEBUG D#37 => D#57
+  # DEBUG __p => D#116
+  # DEBUG __a => D#36
+  # DEBUG __n => D#37
+  # DEBUG D#35 => D#37
+  # DEBUG D#34 => D#36
+  # DEBUG D#32 => D#34
+  # DEBUG D#33 => D#35
+  # DEBUG __p => D#116
+  # DEBUG this => D#32
+  # DEBUG D.32799 => D#33
+  operator delete (prephitmp_19);
+  # DEBUG this => &__map_alloc
+  # DEBUG this => &__map_alloc
+
+  <bb 9>:
+  # DEBUG D#61 => &D#115->_M_impl
+  # DEBUG this => D#61
+  # DEBUG this => D#61
+  # DEBUG this => D#61
+  MEM[(struct  &)this_1(D)] ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function static void PacketReplyInfo::FreeAll() (_ZN15PacketReplyInfo7FreeAllEv, funcdef_no=1512, decl_uid=28735, cgraph_uid=320, symbol_order=323)
+
+Trying loop 1 as candidate
+loop 1 is innermost
+loop is not parallel according to graphite
+static void PacketReplyInfo::FreeAll() ()
+{
+  struct PacketReplyInfo * * __tmp$_M_cur;
+  struct PacketReplyInfo * * const _4;
+  struct PacketReplyInfo * _6;
+  struct PacketReplyInfo * * _8;
+  struct PacketReplyInfo * * * _9;
+  struct PacketReplyInfo * * _10;
+  struct PacketReplyInfo * * _17;
+  struct PacketReplyInfo * * * _18;
+  struct PacketReplyInfo * * * _19;
+  struct PacketReplyInfo * * _20;
+  struct PacketReplyInfo * * _21;
+  struct PacketReplyInfo * * _22;
+  struct PacketReplyInfo * * pretmp_31;
+  struct PacketReplyInfo * * prephitmp_35;
+  struct PacketReplyInfo * * pretmp_36;
+  struct PacketReplyInfo * * prephitmp_37;
+  struct PacketReplyInfo * * const prephitmp_38;
+  struct PacketReplyInfo * * const pretmp_39;
+  struct PacketReplyInfo * * const prephitmp_40;
+
+  <bb 2>:
+  pretmp_39 = MEM[(struct PacketReplyInfo * * *)&_all + 48B];
+  goto <bb 4>;
+
+  <bb 3>:
+  # prephitmp_38 = PHI <_22(11), _17(10)>
+
+  <bb 14>:
+
+  <bb 4>:
+  # prephitmp_40 = PHI <prephitmp_38(14), pretmp_39(2)>
+  # DEBUG this => &_all
+  # DEBUG D#12 => &_all.c
+  # DEBUG this => D#12
+  # DEBUG D#10 => &D#12->D.29688._M_impl._M_start
+  # DEBUG D#11 => &D#12->D.29688._M_impl._M_finish
+  # DEBUG D#120 => MEM[(struct PacketReplyInfo * * *)&_all + 48B]
+  # DEBUG D#8 => D#11
+  _4 = MEM[(struct PacketReplyInfo * * *)&_all + 16B];
+  # DEBUG D#9 => D#10
+  # DEBUG __x => D#8
+  # DEBUG __y => D#9
+  if (_4 != prephitmp_40)
+    goto <bb 5>;
+  else
+    goto <bb 12>;
+
+  <bb 5>:
+  # DEBUG this => &_all
+  # DEBUG D#29 => &_all.c
+  # DEBUG this => D#29
+  # DEBUG this => D#29
+  # DEBUG D#2 => &D#29->D.29688._M_impl._M_finish
+  # DEBUG this => &__tmp
+  # DEBUG __x => D#2
+  # DEBUG __tmp$_M_cur => D#120
+  _8 = MEM[(const struct iterator &)&_all + 48]._M_first;
+  # DEBUG __tmp$_M_first => _8
+  # DEBUG D#28 => MEM[(const struct iterator &)D#29 + 48]._M_last
+  # DEBUG __tmp$_M_last => D#28
+  # DEBUG D#121 => MEM[(const struct iterator &)&_all + 48]._M_node
+  # DEBUG __tmp$_M_node => D#121
+  # DEBUG this => &__tmp
+  if (_8 == prephitmp_40)
+    goto <bb 6>;
+  else
+    goto <bb 7>;
+
+  <bb 6>:
+  _9 = MEM[(const struct iterator &)&_all + 48]._M_node;
+  # DEBUG D#27 => D#121 + 18446744073709551608
+  # DEBUG this => &__tmp
+  # DEBUG __new_node => D#27
+  # DEBUG __tmp$_M_node => D#27
+  _10 = MEM[(struct PacketReplyInfo * * *)_9 + -8B];
+  # DEBUG __tmp$_M_first => _10
+  # DEBUG __size => 8
+  __tmp$_M_cur_11 = _10 + 512;
+  # DEBUG __tmp$_M_last => __tmp$_M_cur_11
+  # DEBUG __tmp$_M_cur => __tmp$_M_cur_11
+
+  <bb 7>:
+  # __tmp$_M_cur_12 = PHI <prephitmp_40(5), __tmp$_M_cur_11(6)>
+  # DEBUG __tmp$_M_cur => __tmp$_M_cur_12
+  # DEBUG __tmp$_M_cur => __tmp$_M_cur_12 + 18446744073709551608
+  # DEBUG D#13 => &__tmp
+  # DEBUG this => D#13
+  _6 = MEM[(struct PacketReplyInfo * &)__tmp$_M_cur_12 + 18446744073709551608];
+  if (_6 != 0B)
+    goto <bb 8>;
+  else
+    goto <bb 9>;
+
+  <bb 8>:
+  # DEBUG this => _6
+  MEM[(struct  &)_6] ={v} {CLOBBER};
+  operator delete (_6);
+  pretmp_31 = MEM[(struct deque *)&_all].D.29688._M_impl._M_finish._M_cur;
+  pretmp_36 = MEM[(struct deque *)&_all].D.29688._M_impl._M_finish._M_first;
+
+  <bb 9>:
+  # prephitmp_35 = PHI <prephitmp_40(7), pretmp_31(8)>
+  # prephitmp_37 = PHI <_8(7), pretmp_36(8)>
+  # DEBUG this => &_all
+  # DEBUG this => &_all.c
+  # DEBUG D#119 => MEM[(struct deque *)&_all].D.29688._M_impl._M_finish._M_cur
+  if (prephitmp_35 != prephitmp_37)
+    goto <bb 10>;
+  else
+    goto <bb 11>;
+
+  <bb 10>:
+  _17 = prephitmp_35 + 18446744073709551608;
+  MEM[(struct deque *)&_all].D.29688._M_impl._M_finish._M_cur = _17;
+  # DEBUG D#50 => MEM[(struct deque *)&_all].D.29688._M_impl._M_finish._M_cur
+  # DEBUG D#49 => &MEM[(struct deque *)&_all].D.29688._M_impl
+  # DEBUG D#23 => D#49
+  # DEBUG D#24 => D#50
+  # DEBUG __a => D#23
+  # DEBUG __p => D#24
+  goto <bb 3>;
+
+  <bb 11>:
+  # DEBUG this => &_all.c
+  # DEBUG D#48 => &MEM[(struct deque *)&_all].D.29688
+  # DEBUG this => D#48
+  # DEBUG __p => D#119
+  # DEBUG __size => 8
+  # DEBUG D#44 => &D#48->_M_impl
+  # DEBUG D#42 => D#44
+  # DEBUG __p => D#119
+  # DEBUG __a => D#42
+  # DEBUG __n => D#43
+  # DEBUG D#41 => D#43
+  # DEBUG D#40 => D#42
+  # DEBUG D#38 => D#40
+  # DEBUG D#39 => D#41
+  # DEBUG __p => D#119
+  # DEBUG this => D#38
+  # DEBUG D.32943 => D#39
+  operator delete (prephitmp_35);
+  _18 = MEM[(struct deque *)&_all].D.29688._M_impl._M_finish._M_node;
+  _19 = _18 + 18446744073709551608;
+  # DEBUG D#47 => &MEM[(struct deque *)&_all].D.29688._M_impl._M_finish
+  # DEBUG this => D#47
+  # DEBUG __new_node => _19
+  MEM[(struct _Deque_iterator *)&_all + 48B]._M_node = _19;
+  _20 = MEM[(struct PacketReplyInfo * * *)_18 + -8B];
+  MEM[(struct _Deque_iterator *)&_all + 48B]._M_first = _20;
+  # DEBUG __size => 8
+  _21 = _20 + 512;
+  MEM[(struct _Deque_iterator *)&_all + 48B]._M_last = _21;
+  _22 = &MEM[(void *)_20 + 504B];
+  MEM[(struct deque *)&_all].D.29688._M_impl._M_finish._M_cur = _22;
+  # DEBUG D#46 => MEM[(struct deque *)&_all].D.29688._M_impl._M_finish._M_cur
+  # DEBUG D#45 => &MEM[(struct deque *)&_all].D.29688
+  # DEBUG this => D#45
+  # DEBUG D#24 => D#46
+  # DEBUG __a => D#23
+  # DEBUG __p => D#24
+  # DEBUG D#22 => D#24
+  # DEBUG D#21 => D#23
+  # DEBUG D#19 => D#21
+  # DEBUG D#20 => D#22
+  # DEBUG this => D#19
+  # DEBUG __p => D#20
+  goto <bb 3>;
+
+  <bb 12>:
+
+  <bb 13>:
+  return;
+
+}
+
+
+
+;; Function std::_Deque_base<_Tp, _Alloc>::~_Deque_base() [with _Tp = PacketReplyInfo*; _Alloc = std::allocator<PacketReplyInfo*>] (_ZNSt11_Deque_baseIP15PacketReplyInfoSaIS1_EED2Ev, funcdef_no=1544, decl_uid=29194, cgraph_uid=352, symbol_order=355)
+
+Trying loop 1 as candidate
+loop 1 is innermost
+loop is not parallel according to graphite
+std::_Deque_base<_Tp, _Alloc>::~_Deque_base() [with _Tp = PacketReplyInfo*; _Alloc = std::allocator<PacketReplyInfo*>] (struct _Deque_base * const this)
+{
+  struct PacketReplyInfo * * * __nstart;
+  struct PacketReplyInfo * * * _4;
+  struct PacketReplyInfo * * * _5;
+  struct PacketReplyInfo * * * _6;
+  struct PacketReplyInfo * * _13;
+  struct PacketReplyInfo * * * pretmp_16;
+  struct PacketReplyInfo * * * prephitmp_17;
+
+  <bb 2>:
+  _4 = this_3(D)->_M_impl._M_map;
+  if (_4 != 0B)
+    goto <bb 3>;
+  else
+    goto <bb 9>;
+
+  <bb 3>:
+  _5 = this_3(D)->_M_impl._M_finish._M_node;
+  _6 = _5 + 8;
+  __nstart_7 = this_3(D)->_M_impl._M_start._M_node;
+  # DEBUG D#53 => this_3(D)
+  # DEBUG __nstart => __nstart_7
+  # DEBUG __nfinish => _6
+  # DEBUG this => D#53
+  # DEBUG __n => __nstart_7
+  if (_6 <= __nstart_7)
+    goto <bb 8>;
+  else
+    goto <bb 4>;
+
+  <bb 4>:
+
+  <bb 5>:
+  # __nstart_20 = PHI <__nstart_7(4), __nstart_14(6)>
+  # DEBUG __n => __nstart_20
+  _13 = *__nstart_20;
+  # DEBUG this => D#51
+  # DEBUG __p => _13
+  # DEBUG __size => 8
+  # DEBUG D#44 => &D#52->_M_impl
+  # DEBUG D#42 => D#44
+  # DEBUG __p => _13
+  # DEBUG __a => D#42
+  # DEBUG __n => D#43
+  # DEBUG D#41 => D#43
+  # DEBUG D#40 => D#42
+  # DEBUG D#38 => D#40
+  # DEBUG D#39 => D#41
+  # DEBUG __p => _13
+  # DEBUG this => D#38
+  # DEBUG D.32006 => D#39
+  operator delete (_13);
+  __nstart_14 = __nstart_20 + 8;
+  # DEBUG __n => __nstart_14
+  # DEBUG __n => __nstart_14
+  if (_6 <= __nstart_14)
+    goto <bb 7>;
+  else
+    goto <bb 6>;
+
+  <bb 6>:
+  goto <bb 5>;
+
+  <bb 7>:
+
+  <bb 10>:
+  pretmp_16 = this_3(D)->_M_impl._M_map;
+
+  <bb 8>:
+  # prephitmp_17 = PHI <pretmp_16(10), _4(3)>
+  # DEBUG D#60 => this_3(D)->_M_impl._M_map_size
+  # DEBUG D#123 => this_3(D)->_M_impl._M_map
+  # DEBUG D#58 => this_3(D)
+  # DEBUG D#59 => D#60
+  # DEBUG __p => D#123
+  # DEBUG this => D#58
+  # DEBUG __n => D#59
+  # DEBUG D#57 => D#59
+  # DEBUG D#56 => D#58
+  # DEBUG D#55 => D#56
+  # DEBUG this => D#55
+  # DEBUG D#54 => D#55
+  # DEBUG this => D#54
+  # DEBUG this => NULL
+  # DEBUG D.31946 => NULL
+  # DEBUG this => NULL
+  # DEBUG D#36 => &__map_alloc
+  # DEBUG D#37 => D#57
+  # DEBUG __p => D#123
+  # DEBUG __a => D#36
+  # DEBUG __n => D#37
+  # DEBUG D#35 => D#37
+  # DEBUG D#34 => D#36
+  # DEBUG D#32 => D#34
+  # DEBUG D#33 => D#35
+  # DEBUG __p => D#123
+  # DEBUG this => D#32
+  # DEBUG D.31993 => D#33
+  operator delete (prephitmp_17);
+  # DEBUG this => &__map_alloc
+  # DEBUG this => &__map_alloc
+
+  <bb 9>:
+  # DEBUG D#61 => &this_3(D)->_M_impl
+  # DEBUG this => D#61
+  # DEBUG this => D#61
+  # DEBUG this => D#61
+  MEM[(struct  &)this_3(D)] ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function void std::_Deque_base<_Tp, _Alloc>::_M_initialize_map(std::size_t) [with _Tp = PacketReplyInfo*; _Alloc = std::allocator<PacketReplyInfo*>; std::size_t = long unsigned int] (_ZNSt11_Deque_baseIP15PacketReplyInfoSaIS1_EE17_M_initialize_mapEm, funcdef_no=1572, decl_uid=29126, cgraph_uid=380, symbol_order=383)
+
+Trying loop 1 as candidate
+loop 1 is innermost
+loop is not parallel according to graphite
+Trying loop 2 as candidate
+loop 2 is innermost
+loop is not parallel according to graphite
+void std::_Deque_base<_Tp, _Alloc>::_M_initialize_map(std::size_t) [with _Tp = PacketReplyInfo*; _Alloc = std::allocator<PacketReplyInfo*>; std::size_t = long unsigned int] (struct _Deque_base * const this, size_t __num_elements)
+{
+  struct PacketReplyInfo * * * __nstart;
+  struct PacketReplyInfo * * * __nfinish;
+  struct PacketReplyInfo * * * __nstart;
+  const size_t __num_nodes;
+  const long unsigned int D.30111;
+  const long unsigned int D.30112;
+  long unsigned int _3;
+  struct PacketReplyInfo * * * _8;
+  long unsigned int _15;
+  long unsigned int _16;
+  long unsigned int _17;
+  long unsigned int _18;
+  long unsigned int _20;
+  struct PacketReplyInfo * * * _23;
+  struct PacketReplyInfo * * _24;
+  long unsigned int _26;
+  long unsigned int _27;
+  long unsigned int _28;
+  struct PacketReplyInfo * * _29;
+  void * _31;
+  struct PacketReplyInfo * * * _33;
+  struct PacketReplyInfo * * _40;
+  struct PacketReplyInfo * * _41;
+  struct PacketReplyInfo * * _42;
+  struct PacketReplyInfo * * _52;
+  void * _54;
+  struct PacketReplyInfo * * _56;
+  long unsigned int _65;
+
+  <bb 2>:
+  # DEBUG __size => 8
+  _3 = __num_elements_2(D) >> 6;
+  __num_nodes_4 = _3 + 1;
+  # DEBUG __num_nodes => __num_nodes_4
+  _5 = _3 + 3;
+  # DEBUG __a => &D.30111
+  # DEBUG __b => &D.30112
+  _65 = MAX_EXPR <_5, 8>;
+  this_10(D)->_M_impl._M_map_size = _65;
+  # DEBUG D#81 => this_10(D)
+  # DEBUG __n => D#125
+  # DEBUG this => D#81
+  # DEBUG D#80 => D#81
+  # DEBUG D#55 => D#80
+  # DEBUG this => D#55
+  # DEBUG D#54 => D#55
+  # DEBUG this => D#54
+  # DEBUG this => NULL
+  # DEBUG D.31946 => NULL
+  # DEBUG this => NULL
+  # DEBUG D#79 => &__map_alloc
+  # DEBUG __n => D#125
+  # DEBUG __a => D#79
+  # DEBUG D#78 => D#79
+  # DEBUG D#76 => D#78
+  # DEBUG D#77 => 0B
+  # DEBUG __n => D#125
+  # DEBUG this => D#76
+  # DEBUG D.32229 => D#77
+  # DEBUG D#75 => D#76
+  # DEBUG D#74 => D#75
+  # DEBUG this => D#74
+  _26 = _65 * 8;
+  _8 = operator new (_26);
+  # DEBUG this => &__map_alloc
+  # DEBUG this => &__map_alloc
+  this_10(D)->_M_impl._M_map = _8;
+  _15 = this_10(D)->_M_impl._M_map_size;
+  _16 = _15 - __num_nodes_4;
+  _17 = _16 >> 1;
+  _18 = _17 * 8;
+  __nstart_19 = _8 + _18;
+  # DEBUG __nstart => __nstart_19
+  _20 = __num_nodes_4 * 8;
+  __nfinish_21 = __nstart_19 + _20;
+  # DEBUG __nfinish => __nfinish_21
+  # DEBUG D#93 => this_10(D)
+  # DEBUG __nstart => __nstart_19
+  # DEBUG __nfinish => __nfinish_21
+  # DEBUG this => D#93
+  # DEBUG __cur => __nstart_19
+  if (__nstart_19 >= __nfinish_21)
+    goto <bb 13>;
+  else
+    goto <bb 3>;
+
+  <bb 3>:
+
+  <bb 4>:
+  # __nstart_75 = PHI <__nstart_19(3), __nstart_53(6)>
+  # DEBUG __cur => __nstart_75
+  # DEBUG D#90 => D#91
+  # DEBUG this => D#90
+  # DEBUG D#89 => D#90
+  # DEBUG __size => 8
+  # DEBUG D#88 => &D#89->_M_impl
+  # DEBUG D#87 => D#88
+  # DEBUG __n => NULL
+  # DEBUG __a => D#87
+  # DEBUG D#86 => D#87
+  # DEBUG D#84 => D#86
+  # DEBUG D#85 => 0B
+  # DEBUG __n => NULL
+  # DEBUG this => D#84
+  # DEBUG D.32986 => D#85
+  # DEBUG D#83 => D#84
+  # DEBUG D#82 => D#83
+  # DEBUG this => D#82
+  _52 = operator new (512);
+
+  <bb 5>:
+  *__nstart_75 = _52;
+  __nstart_53 = __nstart_75 + 8;
+  # DEBUG __cur => __nstart_53
+  # DEBUG __cur => __nstart_53
+  if (__nfinish_21 <= __nstart_53)
+    goto <bb 13>;
+  else
+    goto <bb 6>;
+
+  <bb 6>:
+  goto <bb 4>;
+
+  # __nstart_13 = PHI <__nstart_75(4)>
+<L3>:
+  _54 = __builtin_eh_pointer (6);
+  __cxa_begin_catch (_54);
+  # DEBUG D#53 => D#92
+  # DEBUG __nstart => __nstart_19
+  # DEBUG __nfinish => __nstart_13
+  # DEBUG this => D#53
+  # DEBUG __n => __nstart_19
+  if (__nstart_19 >= __nstart_13)
+    goto <bb 8>;
+  else
+    goto <bb 9>;
+
+  <bb 8>:
+  __cxa_rethrow ();
+
+  <bb 9>:
+
+  <bb 10>:
+  # __nstart_72 = PHI <__nstart_19(9), __nstart_57(11)>
+  # DEBUG __n => __nstart_72
+  _56 = *__nstart_72;
+  # DEBUG this => D#51
+  # DEBUG __p => _56
+  # DEBUG __size => 8
+  # DEBUG D#44 => &D#52->_M_impl
+  # DEBUG D#42 => D#44
+  # DEBUG __p => _56
+  # DEBUG __a => D#42
+  # DEBUG __n => D#43
+  # DEBUG D#41 => D#43
+  # DEBUG D#40 => D#42
+  # DEBUG D#38 => D#40
+  # DEBUG D#39 => D#41
+  # DEBUG __p => _56
+  # DEBUG this => D#38
+  # DEBUG D.32979 => D#39
+  operator delete (_56);
+  __nstart_57 = __nstart_72 + 8;
+  # DEBUG __n => __nstart_57
+  # DEBUG __n => __nstart_57
+  if (__nstart_57 >= __nstart_13)
+    goto <bb 8>;
+  else
+    goto <bb 11>;
+
+  <bb 11>:
+  goto <bb 10>;
+
+<L5>:
+  __cxa_end_catch ();
+  resx 7
+
+  <bb 13>:
+  # DEBUG D#96 => &this_10(D)->_M_impl._M_start
+  # DEBUG this => D#96
+  # DEBUG __new_node => __nstart_19
+  MEM[(struct _Deque_iterator *)this_10(D) + 16B]._M_node = __nstart_19;
+  _24 = *__nstart_19;
+  MEM[(struct _Deque_iterator *)this_10(D) + 16B]._M_first = _24;
+  # DEBUG __size => 8
+  _42 = _24 + 512;
+  MEM[(struct _Deque_iterator *)this_10(D) + 16B]._M_last = _42;
+  _23 = __nfinish_21 + 18446744073709551608;
+  # DEBUG D#95 => &this_10(D)->_M_impl._M_finish
+  # DEBUG this => D#95
+  # DEBUG __new_node => _23
+  MEM[(struct _Deque_iterator *)this_10(D) + 48B]._M_node = _23;
+  _40 = MEM[(struct PacketReplyInfo * * *)__nfinish_21 + -8B];
+  MEM[(struct _Deque_iterator *)this_10(D) + 48B]._M_first = _40;
+  # DEBUG __size => 8
+  _41 = _40 + 512;
+  MEM[(struct _Deque_iterator *)this_10(D) + 48B]._M_last = _41;
+  this_10(D)->_M_impl._M_start._M_cur = _24;
+  # DEBUG __size => 8
+  _27 = __num_elements_2(D) & 63;
+  _28 = _27 * 8;
+  _29 = _40 + _28;
+  this_10(D)->_M_impl._M_finish._M_cur = _29;
+  return;
+
+<L0>:
+  _31 = __builtin_eh_pointer (3);
+  __cxa_begin_catch (_31);
+  # DEBUG D#94 => this_10(D)->_M_impl._M_map_size
+  _33 = this_10(D)->_M_impl._M_map;
+  # DEBUG D#58 => this_10(D)
+  # DEBUG D#59 => D#94
+  # DEBUG __p => _33
+  # DEBUG this => D#58
+  # DEBUG __n => D#59
+  # DEBUG D#57 => D#59
+  # DEBUG D#56 => D#58
+  # DEBUG D#55 => D#56
+  # DEBUG this => D#55
+  # DEBUG D#54 => D#55
+  # DEBUG this => D#54
+  # DEBUG this => NULL
+  # DEBUG D.31946 => NULL
+  # DEBUG this => NULL
+  # DEBUG D#36 => &__map_alloc
+  # DEBUG D#37 => D#57
+  # DEBUG __p => _33
+  # DEBUG __a => D#36
+  # DEBUG __n => D#37
+  # DEBUG D#35 => D#37
+  # DEBUG D#34 => D#36
+  # DEBUG D#32 => D#34
+  # DEBUG D#33 => D#35
+  # DEBUG __p => _33
+  # DEBUG this => D#32
+  # DEBUG D.32251 => D#33
+  operator delete (_33);
+  # DEBUG this => &__map_alloc
+  # DEBUG this => &__map_alloc
+  this_10(D)->_M_impl._M_map = 0B;
+  this_10(D)->_M_impl._M_map_size = 0;
+  __cxa_rethrow ();
+
+<L2>:
+  __cxa_end_catch ();
+  resx 4
+
+}
+
+
+
+;; Function std::deque<_Tp, _Alloc>::deque(const std::deque<_Tp, _Alloc>&) [with _Tp = PacketReplyInfo*; _Alloc = std::allocator<PacketReplyInfo*>] (_ZNSt5dequeIP15PacketReplyInfoSaIS1_EEC2ERKS3_, funcdef_no=1554, decl_uid=29659, cgraph_uid=362, symbol_order=365)
+
+Trying loop 1 as candidate
+loop 1 is innermost
+loop is not parallel according to graphite
+std::deque<_Tp, _Alloc>::deque(const std::deque<_Tp, _Alloc>&) [with _Tp = PacketReplyInfo*; _Alloc = std::allocator<PacketReplyInfo*>] (struct deque * const this, const struct deque & __x)
+{
+  struct PacketReplyInfo * * * __first$_M_node;
+  struct PacketReplyInfo * * __first$_M_last;
+  struct PacketReplyInfo * * const __first;
+  struct PacketReplyInfo * * * SR.222;
+  struct PacketReplyInfo * * SR.221;
+  struct PacketReplyInfo * * SR.220;
+  struct PacketReplyInfo * * * __first$24;
+  struct PacketReplyInfo * * __first$16;
+  struct PacketReplyInfo * * __first$8;
+  struct PacketReplyInfo * * __first;
+  _Distance __n;
+  struct _Deque_iterator __first;
+  struct _Deque_iterator __last;
+  struct _Deque_iterator __last;
+  struct _Deque_iterator __first;
+  struct _Deque_iterator D.33081;
+  struct PacketReplyInfo * * __it;
+  struct PacketReplyInfo * * __it$8;
+  struct PacketReplyInfo * * __it$16;
+  struct PacketReplyInfo * * * __it$24;
+  struct PacketReplyInfo * * __it;
+  struct PacketReplyInfo * * __it$8;
+  struct PacketReplyInfo * * __it$16;
+  struct PacketReplyInfo * * * __it$24;
+  struct _Deque_iterator __first;
+  struct _Deque_iterator __last;
+  struct _Deque_iterator D.33056;
+  struct _Deque_iterator D.33055;
+  struct _Deque_iterator D.33054;
+  struct PacketReplyInfo * * __it;
+  struct PacketReplyInfo * * __it$8;
+  struct PacketReplyInfo * * __it$16;
+  struct PacketReplyInfo * * * __it$24;
+  struct PacketReplyInfo * * __it;
+  struct PacketReplyInfo * * __it$8;
+  struct PacketReplyInfo * * __it$16;
+  struct PacketReplyInfo * * * __it$24;
+  struct _Deque_iterator __first;
+  struct _Deque_iterator __last;
+  struct _Deque_iterator __last;
+  struct _Deque_iterator __first;
+  struct _Deque_iterator D.33036;
+  struct _Deque_iterator __first;
+  struct _Deque_iterator __last;
+  struct _Deque_iterator D.33022;
+  struct _Deque_iterator D.33021;
+  struct _Deque_iterator __first;
+  struct _Deque_iterator __last;
+  struct _Deque_iterator D.31339;
+  struct _Deque_iterator D.31338;
+  struct _Deque_iterator D.30067;
+  struct _Deque_base * _7;
+  struct PacketReplyInfo * * _9;
+  struct PacketReplyInfo * * _10;
+  struct PacketReplyInfo * * _13;
+  struct PacketReplyInfo * * * _15;
+  struct PacketReplyInfo * * _17;
+  struct PacketReplyInfo * * * _18;
+  struct PacketReplyInfo * * * _19;
+  long int _20;
+  struct PacketReplyInfo * * * _21;
+  long int _22;
+  long int _23;
+  long int _24;
+  long int _25;
+  long int _26;
+  struct PacketReplyInfo * * _27;
+  long int _28;
+  struct PacketReplyInfo * * _29;
+  long int _30;
+  long int _31;
+  long int _32;
+  long int _33;
+  struct PacketReplyInfo * * _34;
+  long int _35;
+  struct PacketReplyInfo * * _36;
+  long int _37;
+  long int _38;
+  long int _39;
+  difference_type _40;
+  size_type _41;
+  long int _97;
+  long int _99;
+  long int _100;
+  long int _101;
+  long int _102;
+  long int _103;
+  long int _105;
+  long int _107;
+  long int _108;
+  long int _109;
+  long int _110;
+  long int _112;
+  long int _114;
+  long int _115;
+  long int _116;
+  struct PacketReplyInfo * _121;
+  struct PacketReplyInfo * * _126;
+  struct PacketReplyInfo * * * _138;
+  struct PacketReplyInfo * * _139;
+  struct PacketReplyInfo * * _140;
+
+  <bb 2>:
+  # DEBUG this => __x_2(D)
+  # DEBUG D#30 => &__x_2(D)->D.29688._M_impl._M_start
+  # DEBUG D#31 => &__x_2(D)->D.29688._M_impl._M_finish
+  # DEBUG __x => D#31
+  # DEBUG __y => D#30
+  # DEBUG __size => 8
+  _19 = MEM[(const struct _Deque_iterator &)__x_2(D) + 48]._M_node;
+  _20 = (long int) _19;
+  _21 = MEM[(const struct _Deque_iterator &)__x_2(D) + 16]._M_node;
+  _22 = (long int) _21;
+  _23 = _20 - _22;
+  _24 = _23 /[ex] 8;
+  _25 = _24 + -1;
+  _26 = _25 * 64;
+  _27 = MEM[(const struct _Deque_iterator &)__x_2(D) + 48]._M_cur;
+  _28 = (long int) _27;
+  _29 = MEM[(const struct _Deque_iterator &)__x_2(D) + 48]._M_first;
+  _30 = (long int) _29;
+  _31 = _28 - _30;
+  _32 = _31 /[ex] 8;
+  _33 = _26 + _32;
+  _34 = MEM[(const struct _Deque_iterator &)__x_2(D) + 16]._M_last;
+  _35 = (long int) _34;
+  _36 = MEM[(const struct _Deque_iterator &)__x_2(D) + 16]._M_cur;
+  _37 = (long int) _36;
+  _38 = _35 - _37;
+  _39 = _38 /[ex] 8;
+  _40 = _33 + _39;
+  _41 = (size_type) _40;
+  # DEBUG D#112 => &__x_2(D)->D.29688
+  # DEBUG this => D#112
+  # DEBUG __a => NULL
+  _7 = &this_6(D)->D.29688;
+  # DEBUG this => _7
+  # DEBUG __a => NULL
+  # DEBUG __num_elements => _41
+  # DEBUG D#100 => &_7->_M_impl
+  # DEBUG this => D#100
+  # DEBUG __a => NULL
+  # DEBUG this => D#100
+  # DEBUG __a => NULL
+  # DEBUG this => D#100
+  # DEBUG D.32037 => NULL
+  MEM[(struct _Deque_impl *)this_6(D)]._M_map = 0B;
+  MEM[(struct _Deque_impl *)this_6(D)]._M_map_size = 0;
+  # DEBUG D#73 => &D#100->_M_start
+  # DEBUG this => D#73
+  MEM[(struct _Deque_iterator *)this_6(D) + 16B]._M_cur = 0B;
+  MEM[(struct _Deque_iterator *)this_6(D) + 16B]._M_first = 0B;
+  MEM[(struct _Deque_iterator *)this_6(D) + 16B]._M_last = 0B;
+  MEM[(struct _Deque_iterator *)this_6(D) + 16B]._M_node = 0B;
+  # DEBUG D#72 => &D#100->_M_finish
+  # DEBUG this => D#72
+  MEM[(struct _Deque_iterator *)this_6(D) + 48B]._M_cur = 0B;
+  MEM[(struct _Deque_iterator *)this_6(D) + 48B]._M_first = 0B;
+  MEM[(struct _Deque_iterator *)this_6(D) + 48B]._M_last = 0B;
+  MEM[(struct _Deque_iterator *)this_6(D) + 48B]._M_node = 0B;
+  std::_Deque_base<PacketReplyInfo*, std::allocator<PacketReplyInfo*> >::_M_initialize_map (_7, _41);
+  # DEBUG D#113 => &this_6(D)->D.29688
+  # DEBUG this => D#113
+  # DEBUG D#114 => &this_6(D)->D.29688._M_impl._M_start
+  # DEBUG this => &D.30067
+  # DEBUG __x => D#114
+  _9 = MEM[(const struct iterator &)this_6(D) + 16]._M_cur;
+  _17 = MEM[(const struct iterator &)this_6(D) + 16]._M_last;
+  _18 = MEM[(const struct iterator &)this_6(D) + 16]._M_node;
+  # DEBUG this => __x_2(D)
+  # DEBUG D#14 => &__x_2(D)->D.29688._M_impl._M_finish
+  # DEBUG this => &D.31338
+  # DEBUG __x => D#14
+  _10 = MEM[(const struct iterator &)__x_2(D) + 48]._M_cur;
+  _13 = MEM[(const struct iterator &)__x_2(D) + 48]._M_first;
+  # DEBUG D#126 => MEM[(const struct iterator &)__x_2(D) + 48]._M_last
+  _15 = MEM[(const struct iterator &)__x_2(D) + 48]._M_node;
+  # DEBUG this => __x_2(D)
+  # DEBUG D#15 => &__x_2(D)->D.29688._M_impl._M_start
+  # DEBUG this => &D.31339
+  # DEBUG __x => D#15
+  __first_8 = MEM[(const struct iterator &)__x_2(D) + 16]._M_cur;
+  # DEBUG D#127 => MEM[(const struct iterator &)__x_2(D) + 16]._M_first
+  __first$_M_last_4 = MEM[(const struct iterator &)__x_2(D) + 16]._M_last;
+  __first$_M_node_3 = MEM[(const struct iterator &)__x_2(D) + 16]._M_node;
+  # DEBUG __result => &D.30067
+  # DEBUG D.33018 => D#111
+  # DEBUG this => &D.33022
+  # DEBUG __x => &D.30067
+  # DEBUG __result => &D.33022
+  # DEBUG __assignable => 1
+  # DEBUG this => NULL
+  # DEBUG __x => &D.33022
+  # DEBUG __result => NULL
+  # DEBUG this => &D.33036
+  # DEBUG __x => NULL
+  # DEBUG __result => &D.33036
+  # DEBUG this => &D.33056
+  # DEBUG __x => &D.33036
+  # DEBUG __it => _10
+  # DEBUG __it$8 => _13
+  # DEBUG __it$16 => D#126
+  # DEBUG __it$24 => _15
+  # DEBUG __it$_M_cur => _10
+  # DEBUG __it$_M_first => _13
+  # DEBUG __it$_M_last => D#126
+  # DEBUG __it$_M_node => _15
+  # DEBUG __it => __first_8
+  # DEBUG __it$8 => D#127
+  # DEBUG __it$16 => __first$_M_last_4
+  # DEBUG __it$24 => __first$_M_node_3
+  # DEBUG __it$_M_cur => __first_8
+  # DEBUG __it$_M_first => D#127
+  # DEBUG __it$_M_last => __first$_M_last_4
+  # DEBUG __it$_M_node => __first$_M_node_3
+  # DEBUG __result => &D.33056
+  # DEBUG this => NULL
+  # DEBUG __x => &D.33056
+  # DEBUG __it => NULL
+  # DEBUG this => NULL
+  # DEBUG __x => NULL
+  # DEBUG __it => NULL
+  # DEBUG this => NULL
+  # DEBUG __x => NULL
+  # DEBUG __it => _10
+  # DEBUG __it$8 => _13
+  # DEBUG __it$16 => D#126
+  # DEBUG __it$24 => _15
+  # DEBUG __it$_M_cur => _10
+  # DEBUG __it$_M_first => _13
+  # DEBUG __it$_M_last => D#126
+  # DEBUG __it$_M_node => _15
+  # DEBUG __it => __first_8
+  # DEBUG __it$8 => D#127
+  # DEBUG __it$16 => __first$_M_last_4
+  # DEBUG __it$24 => __first$_M_node_3
+  # DEBUG __it$_M_cur => __first_8
+  # DEBUG __it$_M_first => D#127
+  # DEBUG __it$_M_last => __first$_M_last_4
+  # DEBUG __it$_M_node => __first$_M_node_3
+  # DEBUG __first => __first_8
+  # DEBUG __first$8 => D#127
+  # DEBUG __first$16 => __first$_M_last_4
+  # DEBUG __first$24 => __first$_M_node_3
+  # DEBUG __result => NULL
+  # DEBUG __simple => 0
+  # DEBUG this => &D.33081
+  # DEBUG __x => NULL
+  # DEBUG __first => __first_8
+  # DEBUG __first$_M_first => D#127
+  # DEBUG __first$_M_last => __first$_M_last_4
+  # DEBUG __first$_M_node => __first$_M_node_3
+  # DEBUG __result => &D.33081
+  # DEBUG __x => &__last
+  # DEBUG __y => &__first
+  # DEBUG __size => 8
+  _97 = (long int) _15;
+  _99 = (long int) __first$_M_node_3;
+  _100 = _97 - _99;
+  _101 = _100 /[ex] 8;
+  _102 = _101 + -1;
+  _103 = _102 * 64;
+  _105 = (long int) _10;
+  _107 = (long int) _13;
+  _108 = _105 - _107;
+  _109 = _108 /[ex] 8;
+  _110 = _103 + _109;
+  _112 = (long int) __first$_M_last_4;
+  _114 = (long int) __first_8;
+  _115 = _112 - _114;
+  _116 = _115 /[ex] 8;
+  __n_117 = _110 + _116;
+  # DEBUG __n => __n_117
+  # DEBUG __n => __n_117
+  if (__n_117 <= 0)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  # DEBUG this => &D.33021
+  # DEBUG __x => &D.33081
+  D.33081 ={v} {CLOBBER};
+  D.33056 ={v} {CLOBBER};
+  D.33036 ={v} {CLOBBER};
+  D.33022 ={v} {CLOBBER};
+  D.30067 ={v} {CLOBBER};
+  return;
+
+  <bb 4>:
+
+  <bb 5>:
+  # __n_54 = PHI <__n_117(4), __n_128(10)>
+  # SR.220_198 = PHI <_9(4), SR.220_197(10)>
+  # SR.221_195 = PHI <_17(4), SR.221_194(10)>
+  # SR.222_193 = PHI <_18(4), SR.222_192(10)>
+  # __first_190 = PHI <__first_8(4), __first_189(10)>
+  # __first$_M_last_186 = PHI <__first$_M_last_4(4), __first$_M_last_185(10)>
+  # __first$_M_node_184 = PHI <__first$_M_node_3(4), __first$_M_node_182(10)>
+  # DEBUG __first$_M_node => __first$_M_node_184
+  # DEBUG __first$_M_last => __first$_M_last_186
+  # DEBUG __first => __first_190
+  # DEBUG __n => __n_54
+  # DEBUG D#13 => &D.33081
+  # DEBUG this => D#13
+  # DEBUG D#110 => &__first
+  # DEBUG this => D#110
+  _121 = MEM[(struct PacketReplyInfo * const &)__first_190];
+  *SR.220_198 = _121;
+  # DEBUG this => &__first
+  __first_123 = __first_190 + 8;
+  # DEBUG __first => __first_123
+  if (__first_123 == __first$_M_last_186)
+    goto <bb 6>;
+  else
+    goto <bb 7>;
+
+  <bb 6>:
+  # DEBUG this => &__first
+  __first$_M_node_134 = __first$_M_node_184 + 8;
+  # DEBUG this => &__first
+  # DEBUG __new_node => __first$_M_node_134
+  # DEBUG __first$_M_node => __first$_M_node_134
+  __first_135 = MEM[(struct PacketReplyInfo * * *)__first$_M_node_184 + 8B];
+  # DEBUG __size => 8
+  __first$_M_last_136 = __first_135 + 512;
+  # DEBUG __first$_M_last => __first$_M_last_136
+  # DEBUG __first => __first_135
+
+  <bb 7>:
+  # __first_189 = PHI <__first_123(5), __first_135(6)>
+  # __first$_M_last_185 = PHI <__first$_M_last_186(5), __first$_M_last_136(6)>
+  # __first$_M_node_182 = PHI <__first$_M_node_184(5), __first$_M_node_134(6)>
+  # DEBUG __first$_M_node => __first$_M_node_182
+  # DEBUG __first$_M_last => __first$_M_last_185
+  # DEBUG __first => __first_189
+  # DEBUG this => &D.33081
+  _126 = SR.220_198 + 8;
+  if (_126 == SR.221_195)
+    goto <bb 8>;
+  else
+    goto <bb 9>;
+
+  <bb 8>:
+  # DEBUG this => &D.33081
+  _138 = SR.222_193 + 8;
+  # DEBUG this => &D.33081
+  # DEBUG __new_node => _138
+  _139 = MEM[(struct PacketReplyInfo * * *)SR.222_193 + 8B];
+  # DEBUG __size => 8
+  _140 = _139 + 512;
+
+  <bb 9>:
+  # SR.220_197 = PHI <_126(7), _139(8)>
+  # SR.221_194 = PHI <SR.221_195(7), _140(8)>
+  # SR.222_192 = PHI <SR.222_193(7), _138(8)>
+  __n_128 = __n_54 + -1;
+  # DEBUG __n => __n_128
+  # DEBUG __n => __n_128
+  if (__n_128 <= 0)
+    goto <bb 3>;
+  else
+    goto <bb 10>;
+
+  <bb 10>:
+  goto <bb 5>;
+
+}
+
+

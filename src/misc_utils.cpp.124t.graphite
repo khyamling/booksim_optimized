@@ -1,0 +1,1071 @@
+
+;; Function int powi(int, int) (_Z4powiii, funcdef_no=675, decl_uid=14416, cgraph_uid=201, symbol_order=201)
+
+
+Pass statistics:
+----------------
+
+int powi(int, int) (intD.9 xD.14417, intD.9 yD.14418)
+{
+  intD.9 iD.14422;
+  intD.9 rD.14421;
+
+;;   basic block 2, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 0, next block 3, flags: (NEW, REACHABLE)
+;;    pred:       ENTRY [100.0%]  (FALLTHRU,EXECUTABLE)
+  # DEBUG rD.14421 => 1
+  # DEBUG iD.14422 => 0
+  # DEBUG iD.14422 => 0
+  # DEBUG rD.14421 => 1
+  if (y_3(D) <= 0)
+    goto <bb 7>;
+  else
+    goto <bb 3>;
+;;    succ:       7 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                3 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 3, loop depth 0, count 0, freq 819, maybe hot
+;;    prev block 2, next block 4, flags: (NEW)
+;;    pred:       2 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+;;    succ:       4 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 4, loop depth 1, count 0, freq 9100, maybe hot
+;;    prev block 3, next block 5, flags: (NEW)
+;;    pred:       3 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                5 [100.0%]  (FALLTHRU,DFS_BACK,EXECUTABLE)
+  # r_10 = PHI <1(3), r_5(5)>
+  # i_12 = PHI <0(3), i_6(5)>
+  # DEBUG iD.14422 => i_12
+  # DEBUG rD.14421 => r_10
+  r_5 = x_4(D) * r_10;
+  # DEBUG rD.14421 => r_5
+  i_6 = i_12 + 1;
+  # DEBUG iD.14422 => i_6
+  # DEBUG iD.14422 => i_6
+  # DEBUG rD.14421 => r_5
+  if (y_3(D) <= i_6)
+    goto <bb 6>;
+  else
+    goto <bb 5>;
+;;    succ:       6 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                5 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 5, loop depth 1, count 0, freq 8281, maybe hot
+;;    prev block 4, next block 6, flags: (NEW)
+;;    pred:       4 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+  goto <bb 4>;
+;;    succ:       4 [100.0%]  (FALLTHRU,DFS_BACK,EXECUTABLE)
+
+;;   basic block 6, loop depth 0, count 0, freq 819, maybe hot
+;;    prev block 5, next block 7, flags: (NEW)
+;;    pred:       4 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+  # r_2 = PHI <r_5(4)>
+;;    succ:       7 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 7, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 6, next block 1, flags: (NEW, REACHABLE)
+;;    pred:       6 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                2 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+  # r_11 = PHI <r_2(6), 1(2)>
+  # VUSE <.MEM_7(D)>
+  return r_11;
+;;    succ:       EXIT [100.0%] 
+
+}
+
+
+Analyzing # of iterations of loop 1
+  exit condition [1, + , 1](no_overflow) < y_3(D)
+  bounds on difference of bases: 0 ... 2147483646
+  result:
+    # of iterations (unsigned int) y_3(D) + 4294967295, bounded by 2147483646
+Analyzing # of iterations of loop 1
+  exit condition [1, + , 1](no_overflow) < y_3(D)
+  bounds on difference of bases: 0 ... 2147483646
+  result:
+    # of iterations (unsigned int) y_3(D) + 4294967295, bounded by 2147483646
+
+Before limit_scops SCoP statistics (BBS:7, LOOPS:1, CONDITIONS:2, STMTS:15)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+number of SCoPs: 1
+
+SCoP statistics (BBS:3, LOOPS:1, CONDITIONS:1, STMTS:9)
+
+SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Global statistics (BBS:9, LOOPS:1, CONDITIONS:2, STMTS:15)
+
+Global profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+Creating dr for phi_out_of_ssa.4[0]
+analyze_innermost: success.
+	base_address: &phi_out_of_ssa.4
+	offset from base address: 0
+	constant offset from base address: 0
+	step: 0
+	aligned to: 256
+	base_object: phi_out_of_ssa.4
+	Access function 0: 0
+Creating dr for phi_out_of_ssa.4[0]
+analyze_innermost: success.
+	base_address: &phi_out_of_ssa.4
+	offset from base address: 0
+	constant offset from base address: 0
+	step: 0
+	aligned to: 256
+	base_object: phi_out_of_ssa.4
+	Access function 0: 0
+Creating dr for Close_Phi.5[0]
+analyze_innermost: success.
+	base_address: &Close_Phi.5
+	offset from base address: 0
+	constant offset from base address: 0
+	step: 0
+	aligned to: 256
+	base_object: Close_Phi.5
+	Access function 0: 0
+Creating dr for Close_Phi.5[0]
+analyze_innermost: success.
+	base_address: &Close_Phi.5
+	offset from base address: 0
+	constant offset from base address: 0
+	step: 0
+	aligned to: 256
+	base_object: Close_Phi.5
+	Access function 0: 0
+
+Updating SSA:
+creating PHI node in block #4 for .MEM
+creating PHI node in block #7 for .MEM
+Registering new PHI nodes in block #0
+Registering new PHI nodes in block #2
+Registering new PHI nodes in block #3
+Updating SSA information for statement phi_out_of_ssa.4[0] = 1;
+Registering new PHI nodes in block #4
+Updating SSA information for statement r_10 = phi_out_of_ssa.4[0];
+Updating SSA information for statement Close_Phi.5[0] = r_5;
+Updating SSA information for statement phi_out_of_ssa.4[0] = r_5;
+Registering new PHI nodes in block #5
+Registering new PHI nodes in block #6
+Updating SSA information for statement r_2 = Close_Phi.5[0];
+Registering new PHI nodes in block #8
+Registering new PHI nodes in block #7
+Updating SSA information for statement return r_11;
+
+DFA Statistics for int powi(int, int)
+
+---------------------------------------------------------
+                                Number of        Memory
+                                instances         used 
+---------------------------------------------------------
+USE operands                             15        120b
+DEF operands                              4         32b
+VUSE operands                             6         48b
+VDEF operands                             3         24b
+PHI nodes                                 4        416b
+PHI arguments                             8        384b
+---------------------------------------------------------
+Total memory used by DFA/SSA data                 1024b
+---------------------------------------------------------
+
+Average number of arguments per PHI node: 2.0 (max: 2)
+
+
+Hash table statistics:
+    var_infos:   size 61, 1 elements, 0.000000 collision/search ratio
+
+
+Symbols to be put in SSA form
+{ D.14440 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 9
+Number of blocks to update: 8 ( 89%)
+Affected blocks: 0 2 3 4 5 6 7 8
+
+
+Creating dr for Cross_BB_scalar_dependence.6[0]
+analyze_innermost: success.
+	base_address: &Cross_BB_scalar_dependence.6
+	offset from base address: 0
+	constant offset from base address: 0
+	step: 0
+	aligned to: 256
+	base_object: Cross_BB_scalar_dependence.6
+	Access function 0: 0
+
+Updating SSA:
+Registering new PHI nodes in block #0
+Registering new PHI nodes in block #2
+Registering new PHI nodes in block #3
+Updating SSA information for statement phi_out_of_ssa.4[0] = 1;
+Registering new PHI nodes in block #4
+Updating SSA information for statement r_10 = phi_out_of_ssa.4[0];
+Updating SSA information for statement Close_Phi.5[0] = r_5;
+Updating SSA information for statement phi_out_of_ssa.4[0] = r_5;
+Registering new PHI nodes in block #5
+Registering new PHI nodes in block #6
+Updating SSA information for statement r_2 = Close_Phi.5[0];
+Updating SSA information for statement Cross_BB_scalar_dependence.6[0] = r_2;
+Registering new PHI nodes in block #9
+Updating SSA information for statement r_18 = Cross_BB_scalar_dependence.6[0];
+Registering new PHI nodes in block #8
+Registering new PHI nodes in block #7
+Updating SSA information for statement return r_11;
+
+DFA Statistics for int powi(int, int)
+
+---------------------------------------------------------
+                                Number of        Memory
+                                instances         used 
+---------------------------------------------------------
+USE operands                             17        136b
+DEF operands                              6         48b
+VUSE operands                             8         64b
+VDEF operands                             4         32b
+PHI nodes                                 4        416b
+PHI arguments                             8        384b
+---------------------------------------------------------
+Total memory used by DFA/SSA data                 1080b
+---------------------------------------------------------
+
+Average number of arguments per PHI node: 2.0 (max: 2)
+
+
+Hash table statistics:
+    var_infos:   size 61, 1 elements, 0.000000 collision/search ratio
+
+
+Symbols to be put in SSA form
+{ D.14440 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 10
+Number of blocks to update: 9 ( 90%)
+Affected blocks: 0 2 3 4 5 6 7 8 9
+
+
+
+ISL AST generated by ISL: 
+{
+  for (int c1 = 0; c1 < y; c1 += 1)
+    S_4(c1);
+  S_6();
+}
+
+
+Removing basic block 14
+basic block 14, loop depth 0
+ pred:      
+goto <bb 12>;
+ succ:       12
+
+
+
+Updating SSA:
+Registering new PHI nodes in block #2
+Registering new PHI nodes in block #3
+Registering new PHI nodes in block #11
+Registering new PHI nodes in block #13
+Registering new PHI nodes in block #4
+Registering new PHI nodes in block #5
+Registering new PHI nodes in block #6
+Updating SSA information for statement Cross_BB_scalar_dependence.6[0] = r_2;
+Registering new PHI nodes in block #12
+Registering new PHI nodes in block #10
+Registering new PHI nodes in block #9
+Updating SSA information for statement r_18 = Cross_BB_scalar_dependence.6[0];
+Registering new PHI nodes in block #8
+Registering new PHI nodes in block #7
+
+DFA Statistics for int powi(int, int)
+
+---------------------------------------------------------
+                                Number of        Memory
+                                instances         used 
+---------------------------------------------------------
+USE operands                             17        136b
+DEF operands                              6         48b
+VUSE operands                             8         64b
+VDEF operands                             4         32b
+PHI nodes                                 5        520b
+PHI arguments                            10        480b
+---------------------------------------------------------
+Total memory used by DFA/SSA data                 1280b
+---------------------------------------------------------
+
+Average number of arguments per PHI node: 2.0 (max: 2)
+
+
+SSA replacement table
+N_i -> { O_1 ... O_j } means that N_i replaces O_1, ..., O_j
+
+.MEM_20 -> { .MEM_19 }
+Incremental SSA update started at block: 2
+Number of blocks in CFG: 15
+Number of blocks to update: 6 ( 40%)
+Affected blocks: 6 7 8 9 12 13
+
+
+Applying pattern match.pd:491, generic-match.c:3721
+Applying pattern match.pd:49, generic-match.c:3223
+
+Updating SSA:
+creating PHI node in block #16 for .MEM
+creating PHI node in block #19 for .MEM
+Registering new PHI nodes in block #0
+Registering new PHI nodes in block #2
+Registering new PHI nodes in block #3
+Updating SSA information for statement phi_out_of_ssa.4[0] = 1;
+Registering new PHI nodes in block #11
+Registering new PHI nodes in block #15
+Registering new PHI nodes in block #21
+Registering new PHI nodes in block #19
+Registering new PHI nodes in block #24
+Updating SSA information for statement r_26 = phi_out_of_ssa.4[0];
+Updating SSA information for statement r_27 = x_4(D) * r_26;
+Updating SSA information for statement Close_Phi.5[0] = r_27;
+Updating SSA information for statement phi_out_of_ssa.4[0] = r_27;
+Registering new PHI nodes in block #22
+Registering new PHI nodes in block #20
+Registering new PHI nodes in block #23
+Registering new PHI nodes in block #17
+Registering new PHI nodes in block #18
+Registering new PHI nodes in block #16
+Registering new PHI nodes in block #13
+Registering new PHI nodes in block #4
+Updating SSA information for statement r_10 = phi_out_of_ssa.4[0];
+Updating SSA information for statement # DEBUG r => r_10
+Updating SSA information for statement r_5 = x_4(D) * r_10;
+Updating SSA information for statement Close_Phi.5[0] = r_5;
+Updating SSA information for statement phi_out_of_ssa.4[0] = r_5;
+Updating SSA information for statement # DEBUG r => r_5
+Updating SSA information for statement # DEBUG r => r_5
+Registering new PHI nodes in block #5
+Registering new PHI nodes in block #6
+Updating SSA information for statement r_2 = Close_Phi.5[0];
+Updating SSA information for statement Cross_BB_scalar_dependence.6[0] = r_2;
+Registering new PHI nodes in block #12
+Registering new PHI nodes in block #10
+Registering new PHI nodes in block #9
+Updating SSA information for statement r_18 = Cross_BB_scalar_dependence.6[0];
+Registering new PHI nodes in block #8
+Registering new PHI nodes in block #7
+Updating SSA information for statement return r_11;
+
+DFA Statistics for int powi(int, int)
+
+---------------------------------------------------------
+                                Number of        Memory
+                                instances         used 
+---------------------------------------------------------
+USE operands                             28        224b
+DEF operands                             12         96b
+VUSE operands                            11         88b
+VDEF operands                             6         48b
+PHI nodes                                 8        832b
+PHI arguments                            16        768b
+---------------------------------------------------------
+Total memory used by DFA/SSA data                 2056b
+---------------------------------------------------------
+
+Average number of arguments per PHI node: 2.0 (max: 2)
+
+
+Hash table statistics:
+    var_infos:   size 61, 1 elements, 0.000000 collision/search ratio
+
+
+SSA replacement table
+N_i -> { O_1 ... O_j } means that N_i replaces O_1, ..., O_j
+
+r_26 -> { r_10 }
+r_27 -> { r_5 }
+.MEM_28 -> { .MEM_13 }
+.MEM_29 -> { .MEM_14 }
+
+Symbols to be put in SSA form
+{ D.14440 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 25
+Number of blocks to update: 23 ( 92%)
+Affected blocks: 0 2 3 4 5 6 7 8 9 10 11 12 13 15 16 17 18 19 20 21 22 23 24
+
+
+
+Updating SSA:
+Registering new PHI nodes in block #0
+Registering new PHI nodes in block #2
+Registering new PHI nodes in block #3
+Updating SSA information for statement phi_out_of_ssa.4[0] = 1;
+Registering new PHI nodes in block #11
+Registering new PHI nodes in block #15
+Registering new PHI nodes in block #21
+Registering new PHI nodes in block #19
+Registering new PHI nodes in block #24
+Updating SSA information for statement r_26 = phi_out_of_ssa.4[0];
+Updating SSA information for statement Close_Phi.5[0] = r_27;
+Updating SSA information for statement phi_out_of_ssa.4[0] = r_27;
+Registering new PHI nodes in block #22
+Registering new PHI nodes in block #20
+Registering new PHI nodes in block #23
+Registering new PHI nodes in block #17
+Registering new PHI nodes in block #18
+Registering new PHI nodes in block #16
+Registering new PHI nodes in block #25
+Updating SSA information for statement r_32 = Close_Phi.5[0];
+Updating SSA information for statement Cross_BB_scalar_dependence.6[0] = r_32;
+Registering new PHI nodes in block #13
+Registering new PHI nodes in block #4
+Updating SSA information for statement r_10 = phi_out_of_ssa.4[0];
+Updating SSA information for statement Close_Phi.5[0] = r_5;
+Updating SSA information for statement phi_out_of_ssa.4[0] = r_5;
+Registering new PHI nodes in block #5
+Registering new PHI nodes in block #6
+Updating SSA information for statement r_2 = Close_Phi.5[0];
+Updating SSA information for statement Cross_BB_scalar_dependence.6[0] = r_2;
+Registering new PHI nodes in block #12
+Registering new PHI nodes in block #10
+Registering new PHI nodes in block #9
+Updating SSA information for statement r_18 = Cross_BB_scalar_dependence.6[0];
+Registering new PHI nodes in block #8
+Registering new PHI nodes in block #7
+Updating SSA information for statement return r_11;
+
+DFA Statistics for int powi(int, int)
+
+---------------------------------------------------------
+                                Number of        Memory
+                                instances         used 
+---------------------------------------------------------
+USE operands                             29        232b
+DEF operands                             13        104b
+VUSE operands                            13        104b
+VDEF operands                             7         56b
+PHI nodes                                 8        832b
+PHI arguments                            16        768b
+---------------------------------------------------------
+Total memory used by DFA/SSA data                 2096b
+---------------------------------------------------------
+
+Average number of arguments per PHI node: 2.0 (max: 2)
+
+
+Hash table statistics:
+    var_infos:   size 61, 1 elements, 0.000000 collision/search ratio
+
+
+SSA replacement table
+N_i -> { O_1 ... O_j } means that N_i replaces O_1, ..., O_j
+
+r_32 -> { r_2 }
+.MEM_33 -> { .MEM_19 }
+
+Symbols to be put in SSA form
+{ D.14440 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 26
+Number of blocks to update: 24 ( 92%)
+Affected blocks: 0 2 3 4 5 6 7 8 9 10 11 12 13 15 16 17 18 19 20 21 22 23 24 25
+
+
+
+0 loops carried no dependency.
+Merging blocks 3 and 11
+Removing basic block 8
+basic block 8, loop depth 0
+ pred:      
+ succ:       7
+
+
+Removing basic block 10
+basic block 10, loop depth 0
+ pred:      
+goto <bb 9>;
+ succ:       9
+
+
+Merging blocks 12 and 9
+Removing basic block 13
+basic block 13, loop depth 0
+ pred:      
+ succ:       12
+
+
+Merging blocks 16 and 25
+Removing basic block 17
+basic block 17, loop depth 0
+ pred:      
+ succ:       16
+
+
+Removing basic block 18
+basic block 18, loop depth 0
+ pred:      
+goto <bb 16>;
+ succ:       16
+
+
+Merging blocks 19 and 24
+Removing basic block 23
+basic block 23, loop depth 0
+ pred:      
+ succ:       16
+
+
+Removing basic block 5
+basic block 5, loop depth 1
+ pred:       4
+goto <bb 4>;
+ succ:       4
+
+
+Removing basic block 6
+basic block 6, loop depth 0
+ pred:       4
+r_2 = Close_Phi.5[0];
+Cross_BB_scalar_dependence.6[0] = r_2;
+goto <bb 12>;
+ succ:       12
+
+
+Removing basic block 4
+basic block 4, loop depth 1
+ pred:       3
+# i_12 = PHI <0(3)>
+r_10 = phi_out_of_ssa.4[0];
+# DEBUG i => i_12
+# DEBUG r => r_10
+r_5 = x_4(D) * r_10;
+Close_Phi.5[0] = r_5;
+phi_out_of_ssa.4[0] = r_5;
+# DEBUG r => r_5
+i_6 = i_12 + 1;
+# DEBUG i => i_6
+# DEBUG i => i_6
+# DEBUG r => r_5
+if (y_3(D) <= i_6)
+ succ:      
+
+
+Merging blocks 3 and 15
+Merging blocks 16 and 12
+Merging blocks 19 and 22
+fix_loop_structure: removing loop 1
+Analyzing # of iterations of loop 2
+  exit condition [0, + , 1](no_overflow) < (signed long) y_3(D) + -1
+  bounds on difference of bases: -9223372036854775808 ... 9223372036854775806
+Applying pattern match.pd:49, generic-match.c:4253
+  result:
+    zero if y_3(D) <= 0
+    # of iterations (unsigned long) ((signed long) y_3(D) + -1), bounded by 9223372036854775806
+Analyzing # of iterations of loop 2
+  exit condition [0, + , 1](no_overflow) < (signed long) y_3(D) + -1
+  bounds on difference of bases: -9223372036854775808 ... 9223372036854775806
+Applying pattern match.pd:49, generic-match.c:4253
+  result:
+    zero if y_3(D) <= 0
+    # of iterations (unsigned long) ((signed long) y_3(D) + -1), bounded by 9223372036854775806
+Analyzing # of iterations of loop 2
+  exit condition [0, + , 1](no_overflow) < (signed long) y_3(D) + -1
+  bounds on difference of bases: -9223372036854775808 ... 9223372036854775806
+Applying pattern match.pd:49, generic-match.c:4253
+  result:
+    zero if y_3(D) <= 0
+    # of iterations (unsigned long) ((signed long) y_3(D) + -1), bounded by 9223372036854775806
+Statement (exit)if (graphite_IV.7_24 < _23)
+ is executed at most (unsigned long) ((signed long) y_3(D) + -1) (bounded by 9223372036854775806) + 1 times in loop 2.
+Induction variable (signed long) 1 + 1 * iteration does not wrap in statement graphite_IV.7_25 = graphite_IV.7_24 + 1;
+ in loop 2.
+Statement graphite_IV.7_25 = graphite_IV.7_24 + 1;
+ is executed at most 9223372036854775806 (bounded by 9223372036854775806) + 1 times in loop 2.
+Predictions for bb 2
+  DS theory heuristics: 19.1%
+  first match heuristics (ignored): 27.0%
+  combined heuristics: 19.1%
+  opcode values positive (on trees) heuristics: 27.0%
+  early return (on trees) heuristics: 39.0%
+Predictions for bb 3
+  no prediction heuristics: 50.0%
+  combined heuristics: 50.0%
+1 edges in bb 4 predicted to even probabilities
+Predictions for bb 5
+  DS theory heuristics (ignored): 91.0%
+  first match heuristics: 91.0%
+  combined heuristics: 91.0%
+  loop exit heuristics: 91.0%
+1 edges in bb 6 predicted to even probabilities
+1 edges in bb 7 predicted to even probabilities
+1 edges in bb 8 predicted to even probabilities
+loop_0 (header = 0, latch = 1, niter = )
+{
+  bb_2 (preds = {bb_0 }, succs = {bb_8 bb_3 })
+  {
+    <bb 2>:
+    # DEBUG r => 1
+    # DEBUG i => 0
+    # DEBUG i => 0
+    # DEBUG r => 1
+    if (y_3(D) <= 0)
+      goto <bb 8>;
+    else
+      goto <bb 3>;
+
+  }
+  bb_3 (preds = {bb_2 }, succs = {bb_4 bb_7 })
+  {
+    <bb 3>:
+    # .MEM_8 = VDEF <.MEM_7(D)>
+    phi_out_of_ssa.4[0] = 1;
+    _21 = y_3(D) > 0;
+    if (_21 != 0)
+      goto <bb 4>;
+    else
+      goto <bb 7>;
+
+  }
+  bb_4 (preds = {bb_3 }, succs = {bb_5 })
+  {
+    <bb 4>:
+    _22 = (signed long) y_3(D);
+    _23 = _22 + -1;
+
+  }
+  bb_7 (preds = {bb_5 bb_3 }, succs = {bb_8 })
+  {
+    <bb 7>:
+    # .MEM_30 = PHI <.MEM_29(5), .MEM_8(3)>
+    # VUSE <.MEM_30>
+    r_32 = Close_Phi.5[0];
+    # .MEM_33 = VDEF <.MEM_30>
+    Cross_BB_scalar_dependence.6[0] = r_32;
+    # VUSE <.MEM_33>
+    r_18 = Cross_BB_scalar_dependence.6[0];
+    _17 = r_18;
+
+  }
+  bb_8 (preds = {bb_7 bb_2 }, succs = {bb_1 })
+  {
+    <bb 8>:
+    # r_11 = PHI <_17(7), 1(2)>
+    # .MEM_9 = PHI <.MEM_33(7), .MEM_7(D)(2)>
+    # VUSE <.MEM_9>
+    return r_11;
+
+  }
+  loop_2 (header = 5, latch = 6, niter = (unsigned long) ((signed long) y_3(D) + -1), upper_bound = 9223372036854775806)
+  {
+    bb_5 (preds = {bb_4 bb_6 }, succs = {bb_6 bb_7 })
+    {
+      <bb 5>:
+      # graphite_IV.7_24 = PHI <0(4), graphite_IV.7_25(6)>
+      # .MEM_31 = PHI <.MEM_8(4), .MEM_29(6)>
+      # VUSE <.MEM_31>
+      r_26 = phi_out_of_ssa.4[0];
+      # DEBUG i => NULL
+      # DEBUG r => NULL
+      r_27 = x_4(D) * r_26;
+      # .MEM_28 = VDEF <.MEM_31>
+      Close_Phi.5[0] = r_27;
+      # .MEM_29 = VDEF <.MEM_28>
+      phi_out_of_ssa.4[0] = r_27;
+      # DEBUG r => NULL
+      # DEBUG i => NULL
+      # DEBUG i => NULL
+      # DEBUG r => NULL
+      graphite_IV.7_25 = graphite_IV.7_24 + 1;
+      if (graphite_IV.7_24 < _23)
+        goto <bb 6>;
+      else
+        goto <bb 7>;
+
+    }
+    bb_6 (preds = {bb_5 }, succs = {bb_5 })
+    {
+      <bb 6>:
+      goto <bb 5>;
+
+    }
+  }
+}
+
+Pass statistics:
+----------------
+
+int powi(int, int) (intD.9 xD.14417, intD.9 yD.14418)
+{
+  signed long graphite_IV.7D.14452;
+  intD.9 Cross_BB_scalar_dependence.6D.14451[1];
+  intD.9 D.14450;
+  intD.9 D.14449;
+  intD.9 D.14448;
+  intD.9 Close_Phi.5D.14447[1];
+  intD.9 phi_out_of_ssa.4D.14446[1];
+  intD.9 iD.14422;
+  intD.9 rD.14421;
+  boolD.2757 _21;
+  signed long _22;
+  signed long _23;
+
+;;   basic block 2, loop depth 0, count 0, freq 2226, maybe hot
+;;    prev block 0, next block 3, flags: (NEW, REACHABLE)
+;;    pred:       ENTRY [100.0%]  (FALLTHRU,EXECUTABLE)
+  # DEBUG rD.14421 => 1
+  # DEBUG iD.14422 => 0
+  # DEBUG iD.14422 => 0
+  # DEBUG rD.14421 => 1
+  if (y_3(D) <= 0)
+    goto <bb 8>;
+  else
+    goto <bb 3>;
+;;    succ:       8 [19.1%]  (TRUE_VALUE,EXECUTABLE)
+;;                3 [80.9%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 3, loop depth 0, count 0, freq 1800, maybe hot
+;;    prev block 2, next block 4, flags: (NEW)
+;;    pred:       2 [80.9%]  (FALSE_VALUE,EXECUTABLE)
+  # .MEM_8 = VDEF <.MEM_7(D)>
+  phi_out_of_ssa.4D.14446[0] = 1;
+  _21 = y_3(D) > 0;
+  if (_21 != 0)
+    goto <bb 4>;
+  else
+    goto <bb 7>;
+;;    succ:       4 [50.0%]  (TRUE_VALUE)
+;;                7 [50.0%]  (FALSE_VALUE)
+
+;;   basic block 4, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 3, next block 5, flags: (NEW)
+;;    pred:       3 [50.0%]  (TRUE_VALUE)
+  _22 = (signed long) y_3(D);
+  _23 = _22 + -1;
+;;    succ:       5 [100.0%]  (FALLTHRU)
+
+;;   basic block 5, loop depth 1, count 0, freq 10000, maybe hot
+;;    prev block 4, next block 6, flags: (NEW)
+;;    pred:       4 [100.0%]  (FALLTHRU)
+;;                6 [100.0%]  (FALLTHRU,DFS_BACK)
+  # graphite_IV.7_24 = PHI <0(4), graphite_IV.7_25(6)>
+  # .MEM_31 = PHI <.MEM_8(4), .MEM_29(6)>
+  # VUSE <.MEM_31>
+  r_26 = phi_out_of_ssa.4D.14446[0];
+  # DEBUG iD.14422 => NULL
+  # DEBUG rD.14421 => NULL
+  r_27 = x_4(D) * r_26;
+  # .MEM_28 = VDEF <.MEM_31>
+  Close_Phi.5D.14447[0] = r_27;
+  # .MEM_29 = VDEF <.MEM_28>
+  phi_out_of_ssa.4D.14446[0] = r_27;
+  # DEBUG rD.14421 => NULL
+  # DEBUG iD.14422 => NULL
+  # DEBUG iD.14422 => NULL
+  # DEBUG rD.14421 => NULL
+  graphite_IV.7_25 = graphite_IV.7_24 + 1;
+  if (graphite_IV.7_24 < _23)
+    goto <bb 6>;
+  else
+    goto <bb 7>;
+;;    succ:       6 [91.0%]  (TRUE_VALUE)
+;;                7 [9.0%]  (FALSE_VALUE,LOOP_EXIT)
+
+;;   basic block 6, loop depth 1, count 0, freq 9100, maybe hot
+;;    prev block 5, next block 7, flags: (NEW)
+;;    pred:       5 [91.0%]  (TRUE_VALUE)
+  goto <bb 5>;
+;;    succ:       5 [100.0%]  (FALLTHRU,DFS_BACK)
+
+;;   basic block 7, loop depth 0, count 0, freq 1800, maybe hot
+;;    prev block 6, next block 8, flags: (NEW)
+;;    pred:       5 [9.0%]  (FALSE_VALUE,LOOP_EXIT)
+;;                3 [50.0%]  (FALSE_VALUE)
+  # .MEM_30 = PHI <.MEM_29(5), .MEM_8(3)>
+  # VUSE <.MEM_30>
+  r_32 = Close_Phi.5D.14447[0];
+  # .MEM_33 = VDEF <.MEM_30>
+  Cross_BB_scalar_dependence.6D.14451[0] = r_32;
+  # VUSE <.MEM_33>
+  r_18 = Cross_BB_scalar_dependence.6D.14451[0];
+  _17 = r_18;
+;;    succ:       8 [100.0%]  (FALLTHRU)
+
+;;   basic block 8, loop depth 0, count 0, freq 2226, maybe hot
+;;    prev block 7, next block 1, flags: (NEW, REACHABLE)
+;;    pred:       7 [100.0%]  (FALLTHRU)
+;;                2 [19.1%]  (TRUE_VALUE,EXECUTABLE)
+  # r_11 = PHI <_17(7), 1(2)>
+  # .MEM_9 = PHI <.MEM_33(7), .MEM_7(D)(2)>
+  # VUSE <.MEM_9>
+  return r_11;
+;;    succ:       EXIT [100.0%] 
+
+}
+
+
+
+;; Function int log_two(int) (_Z7log_twoi, funcdef_no=676, decl_uid=14413, cgraph_uid=202, symbol_order=202)
+
+
+Pass statistics:
+----------------
+
+int log_two(int) (intD.9 xD.14425)
+{
+  intD.9 rD.14428;
+
+;;   basic block 2, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 0, next block 3, flags: (NEW, REACHABLE)
+;;    pred:       ENTRY [100.0%]  (FALLTHRU,EXECUTABLE)
+  # DEBUG rD.14428 => 0
+  # RANGE [-1073741824, 1073741823]
+  x_4 = x_3(D) >> 1;
+  # DEBUG xD.14425 => x_4
+  # DEBUG rD.14428 => 0
+  # DEBUG xD.14425 => x_4
+  if (x_4 == 0)
+    goto <bb 7>;
+  else
+    goto <bb 3>;
+;;    succ:       7 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                3 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 3, loop depth 0, count 0, freq 819, maybe hot
+;;    prev block 2, next block 4, flags: (NEW)
+;;    pred:       2 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+;;    succ:       4 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 4, loop depth 1, count 0, freq 9100, maybe hot
+;;    prev block 3, next block 5, flags: (NEW)
+;;    pred:       3 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                5 [100.0%]  (FALLTHRU,DFS_BACK,EXECUTABLE)
+  # RANGE [-1073741824, 1073741823]
+  # x_10 = PHI <x_4(3), x_6(5)>
+  # RANGE [0, 2147483647] NONZERO 2147483647
+  # r_11 = PHI <0(3), r_5(5)>
+  # DEBUG rD.14428 => r_11
+  # DEBUG xD.14425 => x_10
+  # RANGE [1, 2147483647] NONZERO 2147483647
+  r_5 = r_11 + 1;
+  # DEBUG rD.14428 => r_5
+  # RANGE [-536870912, 536870911]
+  x_6 = x_10 >> 1;
+  # DEBUG xD.14425 => x_6
+  # DEBUG rD.14428 => r_5
+  # DEBUG xD.14425 => x_6
+  if (x_6 == 0)
+    goto <bb 6>;
+  else
+    goto <bb 5>;
+;;    succ:       6 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                5 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 5, loop depth 1, count 0, freq 8281, maybe hot
+;;    prev block 4, next block 6, flags: (NEW)
+;;    pred:       4 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+  goto <bb 4>;
+;;    succ:       4 [100.0%]  (FALLTHRU,DFS_BACK,EXECUTABLE)
+
+;;   basic block 6, loop depth 0, count 0, freq 819, maybe hot
+;;    prev block 5, next block 7, flags: (NEW)
+;;    pred:       4 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+  # RANGE [1, 2147483647] NONZERO 2147483647
+  # r_2 = PHI <r_5(4)>
+;;    succ:       7 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 7, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 6, next block 1, flags: (NEW, REACHABLE)
+;;    pred:       6 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                2 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+  # RANGE [0, 2147483647] NONZERO 2147483647
+  # r_12 = PHI <r_2(6), 0(2)>
+  # VUSE <.MEM_7(D)>
+  return r_12;
+;;    succ:       EXIT [100.0%] 
+
+}
+
+
+
+Before limit_scops SCoP statistics (BBS:1, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP statistics (BBS:1, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP statistics (BBS:2, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP statistics (BBS:1, LOOPS:0, CONDITIONS:0, STMTS:1)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+number of SCoPs: 0
+
+Global statistics (BBS:10, LOOPS:1, CONDITIONS:2, STMTS:16)
+
+Global profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+loop_0 (header = 0, latch = 1, niter = )
+{
+  bb_2 (preds = {bb_0 }, succs = {bb_7 bb_3 })
+  {
+    <bb 2>:
+    # DEBUG r => 0
+    x_4 = x_3(D) >> 1;
+    # DEBUG x => x_4
+    # DEBUG r => 0
+    # DEBUG x => x_4
+    if (x_4 == 0)
+      goto <bb 7>;
+    else
+      goto <bb 3>;
+
+  }
+  bb_3 (preds = {bb_2 }, succs = {bb_4 })
+  {
+    <bb 3>:
+
+  }
+  bb_6 (preds = {bb_4 }, succs = {bb_8 })
+  {
+    <bb 6>:
+    # r_2 = PHI <r_5(4)>
+
+  }
+  bb_8 (preds = {bb_6 }, succs = {bb_7 })
+  {
+    <bb 8>:
+
+  }
+  bb_7 (preds = {bb_8 bb_2 }, succs = {bb_9 })
+  {
+    <bb 7>:
+    # r_12 = PHI <r_2(8), 0(2)>
+
+  }
+  bb_9 (preds = {bb_7 }, succs = {bb_1 })
+  {
+    <bb 9>:
+    # VUSE <.MEM_7(D)>
+    return r_12;
+
+  }
+  loop_1 (header = 4, latch = 5, niter = , upper_bound = 2147483646)
+  {
+    bb_4 (preds = {bb_3 bb_5 }, succs = {bb_6 bb_5 })
+    {
+      <bb 4>:
+      # x_10 = PHI <x_4(3), x_6(5)>
+      # r_11 = PHI <0(3), r_5(5)>
+      # DEBUG r => r_11
+      # DEBUG x => x_10
+      r_5 = r_11 + 1;
+      # DEBUG r => r_5
+      x_6 = x_10 >> 1;
+      # DEBUG x => x_6
+      # DEBUG r => r_5
+      # DEBUG x => x_6
+      if (x_6 == 0)
+        goto <bb 6>;
+      else
+        goto <bb 5>;
+
+    }
+    bb_5 (preds = {bb_4 }, succs = {bb_4 })
+    {
+      <bb 5>:
+      goto <bb 4>;
+
+    }
+  }
+}
+
+Pass statistics:
+----------------
+
+int log_two(int) (intD.9 xD.14425)
+{
+  intD.9 rD.14428;
+
+;;   basic block 2, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 0, next block 3, flags: (NEW, REACHABLE)
+;;    pred:       ENTRY [100.0%]  (FALLTHRU,EXECUTABLE)
+  # DEBUG rD.14428 => 0
+  # RANGE [-1073741824, 1073741823]
+  x_4 = x_3(D) >> 1;
+  # DEBUG xD.14425 => x_4
+  # DEBUG rD.14428 => 0
+  # DEBUG xD.14425 => x_4
+  if (x_4 == 0)
+    goto <bb 7>;
+  else
+    goto <bb 3>;
+;;    succ:       7 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                3 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 3, loop depth 0, count 0, freq 819, maybe hot
+;;    prev block 2, next block 4, flags: (NEW)
+;;    pred:       2 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+;;    succ:       4 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 4, loop depth 1, count 0, freq 9100, maybe hot
+;;    prev block 3, next block 5, flags: (NEW)
+;;    pred:       3 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                5 [100.0%]  (FALLTHRU,DFS_BACK,EXECUTABLE)
+  # RANGE [-1073741824, 1073741823]
+  # x_10 = PHI <x_4(3), x_6(5)>
+  # RANGE [0, 2147483647] NONZERO 2147483647
+  # r_11 = PHI <0(3), r_5(5)>
+  # DEBUG rD.14428 => r_11
+  # DEBUG xD.14425 => x_10
+  # RANGE [1, 2147483647] NONZERO 2147483647
+  r_5 = r_11 + 1;
+  # DEBUG rD.14428 => r_5
+  # RANGE [-536870912, 536870911]
+  x_6 = x_10 >> 1;
+  # DEBUG xD.14425 => x_6
+  # DEBUG rD.14428 => r_5
+  # DEBUG xD.14425 => x_6
+  if (x_6 == 0)
+    goto <bb 6>;
+  else
+    goto <bb 5>;
+;;    succ:       6 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                5 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 5, loop depth 1, count 0, freq 8281, maybe hot
+;;    prev block 4, next block 6, flags: (NEW)
+;;    pred:       4 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+  goto <bb 4>;
+;;    succ:       4 [100.0%]  (FALLTHRU,DFS_BACK,EXECUTABLE)
+
+;;   basic block 6, loop depth 0, count 0, freq 819, maybe hot
+;;    prev block 5, next block 8, flags: (NEW)
+;;    pred:       4 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+  # RANGE [1, 2147483647] NONZERO 2147483647
+  # r_2 = PHI <r_5(4)>
+;;    succ:       8 [100.0%]  (FALLTHRU)
+
+;;   basic block 8, loop depth 0, count 0, freq 819, maybe hot
+;;    prev block 6, next block 7, flags: (NEW)
+;;    pred:       6 [100.0%]  (FALLTHRU)
+;;    succ:       7 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 7, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 8, next block 9, flags: (NEW, REACHABLE)
+;;    pred:       8 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                2 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+  # RANGE [0, 2147483647] NONZERO 2147483647
+  # r_12 = PHI <r_2(8), 0(2)>
+;;    succ:       9 [100.0%]  (FALLTHRU)
+
+;;   basic block 9, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 7, next block 1, flags: (NEW)
+;;    pred:       7 [100.0%]  (FALLTHRU)
+  # VUSE <.MEM_7(D)>
+  return r_12;
+;;    succ:       EXIT [100.0%] 
+
+}
+
+

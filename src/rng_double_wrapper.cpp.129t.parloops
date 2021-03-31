@@ -1,0 +1,2591 @@
+
+;; Function void ranf_array(double*, int) (_Z10ranf_arrayPdi.constprop.0, funcdef_no=36, decl_uid=3862, cgraph_uid=35, symbol_order=43)
+
+Trying loop 7 as candidate
+loop 7 is innermost
+loop is not parallel according to graphite
+Trying loop 6 as candidate
+loop 6 is innermost
+Analyzing # of iterations of loop 6
+  exit condition [36, + , 18446744073709551615] != 0
+  bounds on difference of bases: -36 ... -36
+  result:
+    # of iterations 36, bounded by 36
+rng-double.c:27:6: note: === vect_analyze_loop_form ===
+rng-double.c:27:6: note: === get_loop_niters ===
+Analyzing # of iterations of loop 6
+  exit condition [36, + , 18446744073709551615] != 0
+  bounds on difference of bases: -36 ... -36
+  result:
+    # of iterations 36, bounded by 36
+parallelizing inner loop 9
+
+loop at rng-double.c:37: 
+Updating SSA:
+creating PHI node in block #11 for .MEM_57
+Registering new PHI nodes in block #17
+Registering new PHI nodes in block #18
+Registering new PHI nodes in block #9
+Updating SSA information for statement _75 = (sizetype) graphite_IV.15_78;
+Updating SSA information for statement _74 = _75 + 909;
+Updating SSA information for statement _73 = _74 * 8;
+Updating SSA information for statement _72 = aa_4(D) + _73;
+Updating SSA information for statement _76 = *_72;
+Updating SSA information for statement _70 = (sizetype) graphite_IV.15_78;
+Updating SSA information for statement _69 = _70 + 972;
+Updating SSA information for statement _68 = _69 * 8;
+Updating SSA information for statement _62 = aa_4(D) + _68;
+Updating SSA information for statement _71 = *_62;
+Updating SSA information for statement _61 = _71 + _76;
+Updating SSA information for statement _60 = (int) _61;
+Updating SSA information for statement _59 = (double) _60;
+Updating SSA information for statement _58 = _61 - _59;
+Updating SSA information for statement _56 = (int) graphite_IV.15_78;
+Updating SSA information for statement ran_u[_56] = _58;
+Updating SSA information for statement graphite_IV.15_77 = graphite_IV.15_78 + 1;
+Updating SSA information for statement ivtmp_154 = ivtmp_97 - 1;
+Updating SSA information for statement if (ivtmp_154 != 0)
+Registering new PHI nodes in block #10
+Registering new PHI nodes in block #19
+Registering new PHI nodes in block #15
+Updating SSA information for statement _3 = (sizetype) graphite_IV.15_78;
+Updating SSA information for statement _5 = _75 + 909;
+Updating SSA information for statement _6 = _74 * 8;
+Updating SSA information for statement _64 = aa_4(D) + _73;
+Updating SSA information for statement _7 = *_72;
+Updating SSA information for statement _90 = (sizetype) graphite_IV.15_78;
+Updating SSA information for statement _86 = _70 + 972;
+Updating SSA information for statement _85 = _69 * 8;
+Updating SSA information for statement _41 = aa_4(D) + _68;
+Updating SSA information for statement _42 = *_62;
+Updating SSA information for statement _43 = _71 + _76;
+Updating SSA information for statement _44 = (int) _61;
+Updating SSA information for statement _45 = (double) _60;
+Updating SSA information for statement _46 = _61 - _59;
+Updating SSA information for statement _47 = (int) graphite_IV.15_78;
+Updating SSA information for statement ran_u[_56] = _58;
+Updating SSA information for statement graphite_IV.15_49 = graphite_IV.15_78 + 1;
+Updating SSA information for statement ivtmp_50 = ivtmp_97 - 1;
+Updating SSA information for statement if (ivtmp_154 != 0)
+Registering new PHI nodes in block #16
+Registering new PHI nodes in block #11
+Registering new PHI nodes in block #12
+Registering new PHI nodes in block #13
+Registering new PHI nodes in block #14
+
+SSA replacement table
+N_i -> { O_1 ... O_j } means that N_i replaces O_1, ..., O_j
+
+ivtmp_2 -> { ivtmp_97 }
+_3 -> { _75 }
+_5 -> { _74 }
+_6 -> { _73 }
+_7 -> { _76 }
+_41 -> { _62 }
+_42 -> { _71 }
+_43 -> { _61 }
+_44 -> { _60 }
+_45 -> { _59 }
+_46 -> { _58 }
+_47 -> { _56 }
+.MEM_48 -> { .MEM_57 }
+graphite_IV.15_49 -> { graphite_IV.15_77 }
+ivtmp_50 -> { ivtmp_154 }
+.MEM_51 -> { .MEM_57 }
+_64 -> { _72 }
+.MEM_81 -> { .MEM_54 }
+_85 -> { _68 }
+_86 -> { _69 }
+graphite_IV.15_87 -> { graphite_IV.15_78 }
+_90 -> { _70 }
+Incremental SSA update started at block: 17
+Number of blocks in CFG: 20
+Number of blocks to update: 8 ( 40%)
+Affected blocks: 9 10 11 12 15 16 18 19
+
+
+Applying pattern match.pd:114, generic-match.c:6953
+Applying pattern match.pd:49, generic-match.c:3223
+Applying pattern match.pd:822, generic-match.c:7035
+Applying pattern match.pd:439, generic-match.c:3611
+Applying pattern match.pd:625, generic-match.c:1309
+
+Updating SSA:
+Registering new PHI nodes in block #17
+Registering new PHI nodes in block #18
+Registering new PHI nodes in block #9
+Registering new PHI nodes in block #20
+Updating SSA information for statement graphite_IV.15_78 = (signed long) ivtmp_67;
+Updating SSA information for statement ivtmp_97 = 37 - ivtmp_67;
+Updating SSA information for statement _75 = (sizetype) graphite_IV.15_78;
+Updating SSA information for statement _74 = _75 + 909;
+Updating SSA information for statement _73 = _74 * 8;
+Updating SSA information for statement _72 = aa_4(D) + _73;
+Updating SSA information for statement _76 = *_72;
+Updating SSA information for statement _70 = (sizetype) graphite_IV.15_78;
+Updating SSA information for statement _69 = _70 + 972;
+Updating SSA information for statement _68 = _69 * 8;
+Updating SSA information for statement _62 = aa_4(D) + _68;
+Updating SSA information for statement _71 = *_62;
+Updating SSA information for statement _61 = _71 + _76;
+Updating SSA information for statement _60 = (int) _61;
+Updating SSA information for statement _59 = (double) _60;
+Updating SSA information for statement _58 = _61 - _59;
+Updating SSA information for statement _56 = (int) graphite_IV.15_78;
+Updating SSA information for statement ran_u[_56] = _58;
+Updating SSA information for statement graphite_IV.15_77 = graphite_IV.15_78 + 1;
+Updating SSA information for statement ivtmp_154 = ivtmp_97 - 1;
+Registering new PHI nodes in block #10
+Updating SSA information for statement ivtmp_52 = ivtmp_67 + 1;
+Registering new PHI nodes in block #21
+Updating SSA information for statement graphite_IV.15_25 = (signed long) ivtmp_67;
+Updating SSA information for statement ivtmp_26 = 37 - ivtmp_67;
+Updating SSA information for statement _27 = (sizetype) graphite_IV.15_78;
+Updating SSA information for statement _28 = _75 + 909;
+Updating SSA information for statement _29 = _74 * 8;
+Updating SSA information for statement _30 = aa_4(D) + _73;
+Updating SSA information for statement _31 = *_72;
+Updating SSA information for statement _32 = (sizetype) graphite_IV.15_78;
+Updating SSA information for statement _33 = _70 + 972;
+Updating SSA information for statement _34 = _69 * 8;
+Updating SSA information for statement _35 = aa_4(D) + _68;
+Updating SSA information for statement _36 = *_62;
+Updating SSA information for statement _66 = _71 + _76;
+Updating SSA information for statement _37 = (int) _61;
+Updating SSA information for statement _38 = (double) _60;
+Updating SSA information for statement _88 = _61 - _59;
+Updating SSA information for statement _82 = (int) graphite_IV.15_78;
+Updating SSA information for statement ran_u[_56] = _58;
+Updating SSA information for statement graphite_IV.15_10 = graphite_IV.15_78 + 1;
+Updating SSA information for statement ivtmp_11 = ivtmp_97 - 1;
+Registering new PHI nodes in block #19
+Registering new PHI nodes in block #15
+Registering new PHI nodes in block #16
+Registering new PHI nodes in block #11
+Registering new PHI nodes in block #12
+Registering new PHI nodes in block #13
+Registering new PHI nodes in block #14
+
+SSA replacement table
+N_i -> { O_1 ... O_j } means that N_i replaces O_1, ..., O_j
+
+.MEM_9 -> { .MEM_57 }
+graphite_IV.15_10 -> { graphite_IV.15_77 }
+ivtmp_11 -> { ivtmp_154 }
+graphite_IV.15_25 -> { graphite_IV.15_78 }
+ivtmp_26 -> { ivtmp_97 }
+_27 -> { _75 }
+_28 -> { _74 }
+_29 -> { _73 }
+_30 -> { _72 }
+_31 -> { _76 }
+_32 -> { _70 }
+_33 -> { _69 }
+_34 -> { _68 }
+_35 -> { _62 }
+_36 -> { _71 }
+_37 -> { _60 }
+_38 -> { _59 }
+_66 -> { _61 }
+_82 -> { _56 }
+ivtmp_83 -> { ivtmp_67 }
+.MEM_84 -> { .MEM_54 }
+_88 -> { _58 }
+Incremental SSA update started at block: 17
+Number of blocks in CFG: 22
+Number of blocks to update: 5 ( 23%)
+Affected blocks: 9 10 11 20 21
+
+
+Trying loop 5 as candidate
+loop 5 is innermost
+loop is not parallel according to graphite
+Trying loop 8 as candidate
+loop 8 is innermost
+loop is not parallel according to graphite
+
+Updating SSA:
+Registering new PHI nodes in block #0
+Registering new PHI nodes in block #2
+Registering new PHI nodes in block #3
+Updating SSA information for statement _148 = ran_u[_149];
+Updating SSA information for statement *_153 = _148;
+Registering new PHI nodes in block #4
+Registering new PHI nodes in block #5
+Registering new PHI nodes in block #6
+Updating SSA information for statement _115 = *_112;
+Updating SSA information for statement _111 = *_107;
+Updating SSA information for statement *_98 = _103;
+Registering new PHI nodes in block #7
+Registering new PHI nodes in block #8
+Registering new PHI nodes in block #17
+Registering new PHI nodes in block #18
+Updating SSA information for statement .paral_data_store.21.aa = aa_4(D);
+Updating SSA information for statement .paral_data_store.21.ran_u = ran_u_12;
+Registering new PHI nodes in block #22
+Updating SSA information for statement aa.19_13 = .paral_data_load.22_15->aa;
+Updating SSA information for statement ran_u_14 = .paral_data_load.22_15->ran_u;
+Registering new PHI nodes in block #24
+Registering new PHI nodes in block #9
+Registering new PHI nodes in block #20
+Updating SSA information for statement _76 = *_72;
+Updating SSA information for statement _71 = *_62;
+Updating SSA information for statement *ran_u_14[_56] = _58;
+Registering new PHI nodes in block #10
+Registering new PHI nodes in block #25
+Registering new PHI nodes in block #23
+Registering new PHI nodes in block #21
+Updating SSA information for statement _31 = *_30;
+Updating SSA information for statement _36 = *_35;
+Updating SSA information for statement ran_u[_82] = _88;
+Registering new PHI nodes in block #19
+Registering new PHI nodes in block #15
+Updating SSA information for statement _7 = *_64;
+Updating SSA information for statement _42 = *_41;
+Updating SSA information for statement ran_u[_47] = _46;
+Registering new PHI nodes in block #16
+Registering new PHI nodes in block #11
+Registering new PHI nodes in block #12
+Updating SSA information for statement _139 = *_135;
+Updating SSA information for statement _134 = ran_u[_133];
+Updating SSA information for statement ran_u[_126] = _129;
+Registering new PHI nodes in block #13
+Registering new PHI nodes in block #14
+Updating SSA information for statement return;
+
+Symbols to be put in SSA form
+{ D.3870 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 26
+Number of blocks to update: 25 ( 96%)
+Affected blocks: 0 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
+
+
+void ranf_array(double*, int) (double * aa)
+{
+  struct  * .paral_data_load.22;
+  struct  .paral_data_store.21;
+  double * aa.19;
+  signed long graphite_IV.18;
+  signed long graphite_IV.17;
+  double D.3899;
+  signed long graphite_IV.16;
+  double D.3897;
+  double D.3896;
+  int D.3895;
+  double D.3894;
+  double D.3893;
+  double D.3892;
+  signed long graphite_IV.15;
+  double D.3890;
+  double D.3889;
+  int D.3888;
+  double D.3887;
+  double D.3886;
+  double D.3885;
+  signed long graphite_IV.14;
+  double D.3883;
+  double D.3882;
+  int D.3881;
+  double D.3880;
+  double D.3879;
+  double D.3878;
+  register int i;
+  register int j;
+  int n;
+  unsigned long ivtmp_2;
+  sizetype _3;
+  sizetype _5;
+  sizetype _6;
+  double _7;
+  unsigned long ivtmp_11;
+  double[100] * ran_u_12;
+  double[100] * ran_u_14;
+  unsigned long ivtmp_18;
+  unsigned long ivtmp_26;
+  sizetype _27;
+  sizetype _28;
+  sizetype _29;
+  double * _30;
+  double _31;
+  sizetype _32;
+  sizetype _33;
+  sizetype _34;
+  double * _35;
+  double _36;
+  int _37;
+  double _38;
+  double * _41;
+  double _42;
+  double _43;
+  int _44;
+  double _45;
+  double _46;
+  int _47;
+  unsigned long ivtmp_50;
+  unsigned long ivtmp_52;
+  unsigned long ivtmp_55;
+  int _56;
+  double _58;
+  double _59;
+  int _60;
+  double _61;
+  double * _62;
+  double * _64;
+  double _66;
+  unsigned long ivtmp_67;
+  sizetype _68;
+  sizetype _69;
+  sizetype _70;
+  double _71;
+  double * _72;
+  sizetype _73;
+  sizetype _74;
+  sizetype _75;
+  double _76;
+  unsigned long ivtmp_79;
+  int _82;
+  unsigned long ivtmp_83;
+  sizetype _85;
+  sizetype _86;
+  double _88;
+  unsigned long ivtmp_89;
+  sizetype _90;
+  unsigned long ivtmp_97;
+  double * _98;
+  sizetype _99;
+  sizetype _100;
+  sizetype _101;
+  double _103;
+  double _104;
+  int _105;
+  double _106;
+  double * _107;
+  sizetype _108;
+  sizetype _109;
+  sizetype _110;
+  double _111;
+  double * _112;
+  sizetype _113;
+  sizetype _114;
+  double _115;
+  unsigned long ivtmp_118;
+  unsigned long ivtmp_123;
+  int _126;
+  int _127;
+  double _129;
+  double _130;
+  int _131;
+  double _132;
+  int _133;
+  double _134;
+  double * _135;
+  sizetype _136;
+  sizetype _137;
+  sizetype _138;
+  double _139;
+  unsigned long ivtmp_144;
+  unsigned long ivtmp_145;
+  double _148;
+  int _149;
+  sizetype _151;
+  sizetype _152;
+  double * _153;
+  unsigned long ivtmp_154;
+
+  <bb 2>:
+  # DEBUG n => 1009
+  # DEBUG j => 0
+
+  <bb 3>:
+  # graphite_IV.17_146 = PHI <0(2), graphite_IV.17_147(4)>
+  # ivtmp_79 = PHI <100(2), ivtmp_118(4)>
+  # DEBUG j => NULL
+  _149 = (int) graphite_IV.17_146;
+  _148 = ran_u[_149];
+  _151 = (sizetype) graphite_IV.17_146;
+  _152 = _151 * 8;
+  _153 = aa_4(D) + _152;
+  *_153 = _148;
+  # DEBUG j => NULL
+  # DEBUG j => NULL
+  graphite_IV.17_147 = graphite_IV.17_146 + 1;
+  ivtmp_118 = ivtmp_79 - 1;
+  if (ivtmp_118 != 0)
+    goto <bb 4>;
+  else
+    goto <bb 5>;
+
+  <bb 4>:
+  goto <bb 3>;
+
+  <bb 5>:
+
+  <bb 6>:
+  # graphite_IV.14_117 = PHI <0(5), graphite_IV.14_116(7)>
+  # ivtmp_145 = PHI <909(5), ivtmp_144(7)>
+  # DEBUG j => NULL
+  _114 = (sizetype) graphite_IV.14_117;
+  _113 = _114 * 8;
+  _112 = aa_4(D) + _113;
+  _115 = *_112;
+  _110 = (sizetype) graphite_IV.14_117;
+  _109 = _110 + 63;
+  _108 = _109 * 8;
+  _107 = aa_4(D) + _108;
+  _111 = *_107;
+  _106 = _111 + _115;
+  _105 = (int) _106;
+  _104 = (double) _105;
+  _103 = _106 - _104;
+  _101 = (sizetype) graphite_IV.14_117;
+  _100 = _101 + 100;
+  _99 = _100 * 8;
+  _98 = aa_4(D) + _99;
+  *_98 = _103;
+  # DEBUG j => NULL
+  # DEBUG j => NULL
+  graphite_IV.14_116 = graphite_IV.14_117 + 1;
+  ivtmp_144 = ivtmp_145 - 1;
+  if (ivtmp_144 != 0)
+    goto <bb 7>;
+  else
+    goto <bb 8>;
+
+  <bb 7>:
+  goto <bb 6>;
+
+  <bb 8>:
+
+  <bb 17>:
+  if (0 != 0)
+    goto <bb 18>;
+  else
+    goto <bb 19>;
+
+  <bb 18>:
+  ran_u_12 = &ran_u;
+  .paral_data_store.21.aa = aa_4(D);
+  .paral_data_store.21.ran_u = ran_u_12;
+  #pragma omp parallel num_threads(6) [child fn: void_ranf_array_double___int_._loopfn.0 (.paral_data_store.21)]
+
+  <bb 22>:
+  .paral_data_param_16 = &.paral_data_store.21;
+  .paral_data_load.22_15 = (struct  *) .paral_data_param_16;
+  aa.19_13 = .paral_data_load.22_15->aa;
+  ran_u_14 = .paral_data_load.22_15->ran_u;
+
+  <bb 24>:
+  #pragma omp for schedule(static)
+  for (ivtmp_18 = 0; ivtmp_18 < 36; ivtmp_18 =  + 1)
+
+  <bb 9>:
+  # ivtmp_89 = PHI <ivtmp_18(24), ivtmp_52(10)>
+
+  <bb 20>:
+  # ivtmp_67 = PHI <ivtmp_89(9)>
+  graphite_IV.18_78 = (signed long) ivtmp_67;
+  ivtmp_97 = 37 - ivtmp_67;
+  _75 = (sizetype) graphite_IV.18_78;
+  _74 = _75 + 909;
+  _73 = _74 * 8;
+  _72 = aa.19_13 + _73;
+  _76 = *_72;
+  _70 = (sizetype) graphite_IV.18_78;
+  _69 = _70 + 972;
+  _68 = _69 * 8;
+  _62 = aa.19_13 + _68;
+  _71 = *_62;
+  _61 = _71 + _76;
+  _60 = (int) _61;
+  _59 = (double) _60;
+  _58 = _61 - _59;
+  _56 = (int) graphite_IV.18_78;
+  *ran_u_14[_56] = _58;
+  graphite_IV.18_77 = graphite_IV.18_78 + 1;
+  ivtmp_154 = ivtmp_97 - 1;
+
+  <bb 10>:
+  #pragma omp continue (ivtmp_52, ivtmp_89)
+  goto <bb 25>;
+
+  <bb 19>:
+
+  <bb 15>:
+  # graphite_IV.15_87 = PHI <0(19), graphite_IV.15_49(16)>
+  # ivtmp_2 = PHI <37(19), ivtmp_50(16)>
+  # DEBUG j => NULL
+  # DEBUG i => NULL
+  _3 = (sizetype) graphite_IV.15_87;
+  _5 = _3 + 909;
+  _6 = _5 * 8;
+  _64 = aa_4(D) + _6;
+  _7 = *_64;
+  _90 = (sizetype) graphite_IV.15_87;
+  _86 = _90 + 972;
+  _85 = _86 * 8;
+  _41 = aa_4(D) + _85;
+  _42 = *_41;
+  _43 = _42 + _7;
+  _44 = (int) _43;
+  _45 = (double) _44;
+  _46 = _43 - _45;
+  _47 = (int) graphite_IV.15_87;
+  ran_u[_47] = _46;
+  # DEBUG i => NULL
+  # DEBUG j => NULL
+  # DEBUG j => NULL
+  # DEBUG i => NULL
+  graphite_IV.15_49 = graphite_IV.15_87 + 1;
+  ivtmp_50 = ivtmp_2 - 1;
+  if (ivtmp_50 != 0)
+    goto <bb 16>;
+  else
+    goto <bb 11>;
+
+  <bb 16>:
+  goto <bb 15>;
+
+  <bb 25>:
+  #pragma omp return(nowait)
+
+  <bb 23>:
+  #pragma omp return
+
+  <bb 21>:
+  ivtmp_83 = 36;
+  graphite_IV.15_25 = (signed long) ivtmp_83;
+  ivtmp_26 = 37 - ivtmp_83;
+  # DEBUG j => NULL
+  # DEBUG i => NULL
+  _27 = (sizetype) graphite_IV.15_25;
+  _28 = _27 + 909;
+  _29 = _28 * 8;
+  _30 = aa_4(D) + _29;
+  _31 = *_30;
+  _32 = (sizetype) graphite_IV.15_25;
+  _33 = _32 + 972;
+  _34 = _33 * 8;
+  _35 = aa_4(D) + _34;
+  _36 = *_35;
+  _66 = _36 + _31;
+  _37 = (int) _66;
+  _38 = (double) _37;
+  _88 = _66 - _38;
+  _82 = (int) graphite_IV.15_25;
+  ran_u[_82] = _88;
+  # DEBUG i => NULL
+  # DEBUG j => NULL
+  # DEBUG j => NULL
+  # DEBUG i => NULL
+  graphite_IV.15_10 = graphite_IV.15_25 + 1;
+  ivtmp_11 = ivtmp_26 - 1;
+
+  <bb 11>:
+
+  <bb 12>:
+  # graphite_IV.16_143 = PHI <0(11), graphite_IV.16_142(13)>
+  # ivtmp_123 = PHI <63(11), ivtmp_55(13)>
+  # DEBUG j => NULL
+  # DEBUG i => NULL
+  _138 = (sizetype) graphite_IV.16_143;
+  _137 = _138 + 946;
+  _136 = _137 * 8;
+  _135 = aa_4(D) + _136;
+  _139 = *_135;
+  _133 = (int) graphite_IV.16_143;
+  _134 = ran_u[_133];
+  _132 = _134 + _139;
+  _131 = (int) _132;
+  _130 = (double) _131;
+  _129 = _132 - _130;
+  _127 = (int) graphite_IV.16_143;
+  _126 = _127 + 37;
+  ran_u[_126] = _129;
+  # DEBUG i => NULL
+  # DEBUG j => NULL
+  # DEBUG j => NULL
+  # DEBUG i => NULL
+  graphite_IV.16_142 = graphite_IV.16_143 + 1;
+  ivtmp_55 = ivtmp_123 - 1;
+  if (ivtmp_55 != 0)
+    goto <bb 13>;
+  else
+    goto <bb 14>;
+
+  <bb 13>:
+  goto <bb 12>;
+
+  <bb 14>:
+  return;
+
+}
+
+
+
+;; Function void ranf_array(double*, int) (_Z10ranf_arrayPdi, funcdef_no=0, decl_uid=2903, cgraph_uid=0, symbol_order=1)
+
+Trying loop 8 as candidate
+loop 8 is innermost
+loop is not parallel according to graphite
+Trying loop 7 as candidate
+loop 7 is innermost
+Analyzing # of iterations of loop 7
+  exit condition [36, + , 18446744073709551615] != 0
+  bounds on difference of bases: -36 ... -36
+  result:
+    # of iterations 36, bounded by 36
+rng-double.c:39:1: note: === vect_analyze_loop_form ===
+rng-double.c:39:1: note: === get_loop_niters ===
+Analyzing # of iterations of loop 7
+  exit condition [36, + , 18446744073709551615] != 0
+  bounds on difference of bases: -36 ... -36
+  result:
+    # of iterations 36, bounded by 36
+parallelizing inner loop 12
+
+loop at rng-double.c:37: 
+Updating SSA:
+creating PHI node in block #14 for .MEM_71
+Registering new PHI nodes in block #20
+Registering new PHI nodes in block #21
+Registering new PHI nodes in block #12
+Updating SSA information for statement _98 = (sizetype) j_1;
+Updating SSA information for statement _97 = (sizetype) graphite_IV.140_101;
+Updating SSA information for statement _96 = _97 + _98;
+Updating SSA information for statement _95 = _96 * 8;
+Updating SSA information for statement _94 = _95 + 18446744073709550816;
+Updating SSA information for statement _93 = aa_14(D) + _94;
+Updating SSA information for statement _99 = *_93;
+Updating SSA information for statement _91 = (sizetype) j_1;
+Updating SSA information for statement _90 = (sizetype) graphite_IV.140_101;
+Updating SSA information for statement _89 = _90 + _91;
+Updating SSA information for statement _88 = _89 * 8;
+Updating SSA information for statement _79 = _88 + 18446744073709551320;
+Updating SSA information for statement _77 = aa_14(D) + _79;
+Updating SSA information for statement _92 = *_77;
+Updating SSA information for statement _76 = _92 + _99;
+Updating SSA information for statement _75 = (int) _76;
+Updating SSA information for statement _74 = (double) _75;
+Updating SSA information for statement _72 = _76 - _74;
+Updating SSA information for statement _70 = (int) graphite_IV.140_101;
+Updating SSA information for statement ran_u[_70] = _72;
+Updating SSA information for statement graphite_IV.140_100 = graphite_IV.140_101 + 1;
+Updating SSA information for statement ivtmp_8 = ivtmp_173 - 1;
+Updating SSA information for statement if (ivtmp_8 != 0)
+Registering new PHI nodes in block #13
+Registering new PHI nodes in block #22
+Registering new PHI nodes in block #18
+Updating SSA information for statement _40 = (sizetype) j_1;
+Updating SSA information for statement _41 = (sizetype) graphite_IV.140_101;
+Updating SSA information for statement _42 = _97 + _98;
+Updating SSA information for statement _43 = _96 * 8;
+Updating SSA information for statement _44 = _95 + 18446744073709550816;
+Updating SSA information for statement _45 = aa_14(D) + _94;
+Updating SSA information for statement _46 = *_93;
+Updating SSA information for statement _47 = (sizetype) j_1;
+Updating SSA information for statement _48 = (sizetype) graphite_IV.140_101;
+Updating SSA information for statement _49 = _90 + _91;
+Updating SSA information for statement _50 = _89 * 8;
+Updating SSA information for statement _51 = _88 + 18446744073709551320;
+Updating SSA information for statement _52 = aa_14(D) + _79;
+Updating SSA information for statement _53 = *_77;
+Updating SSA information for statement _54 = _92 + _99;
+Updating SSA information for statement _85 = (int) _76;
+Updating SSA information for statement _82 = (double) _75;
+Updating SSA information for statement _12 = _76 - _74;
+Updating SSA information for statement _13 = (int) graphite_IV.140_101;
+Updating SSA information for statement ran_u[_70] = _72;
+Updating SSA information for statement graphite_IV.140_16 = graphite_IV.140_101 + 1;
+Updating SSA information for statement ivtmp_17 = ivtmp_173 - 1;
+Updating SSA information for statement if (ivtmp_8 != 0)
+Registering new PHI nodes in block #19
+Registering new PHI nodes in block #14
+Registering new PHI nodes in block #15
+Registering new PHI nodes in block #16
+Registering new PHI nodes in block #17
+
+SSA replacement table
+N_i -> { O_1 ... O_j } means that N_i replaces O_1, ..., O_j
+
+_12 -> { _72 }
+_13 -> { _70 }
+.MEM_15 -> { .MEM_71 }
+graphite_IV.140_16 -> { graphite_IV.140_100 }
+ivtmp_17 -> { ivtmp_8 }
+.MEM_18 -> { .MEM_71 }
+_40 -> { _98 }
+_41 -> { _97 }
+_42 -> { _96 }
+_43 -> { _95 }
+_44 -> { _94 }
+_45 -> { _93 }
+_46 -> { _99 }
+_47 -> { _91 }
+_48 -> { _90 }
+_49 -> { _89 }
+_50 -> { _88 }
+_51 -> { _79 }
+_52 -> { _77 }
+_53 -> { _92 }
+_54 -> { _76 }
+ivtmp_80 -> { ivtmp_173 }
+_82 -> { _74 }
+.MEM_83 -> { .MEM_33 }
+_85 -> { _75 }
+graphite_IV.140_86 -> { graphite_IV.140_101 }
+Incremental SSA update started at block: 20
+Number of blocks in CFG: 23
+Number of blocks to update: 8 ( 35%)
+Affected blocks: 12 13 14 15 18 19 21 22
+
+
+Applying pattern match.pd:114, generic-match.c:6953
+Applying pattern match.pd:49, generic-match.c:3223
+Applying pattern match.pd:822, generic-match.c:7035
+Applying pattern match.pd:439, generic-match.c:3611
+Applying pattern match.pd:625, generic-match.c:1309
+
+Updating SSA:
+Registering new PHI nodes in block #20
+Registering new PHI nodes in block #21
+Registering new PHI nodes in block #12
+Registering new PHI nodes in block #23
+Updating SSA information for statement graphite_IV.140_101 = (signed long) ivtmp_87;
+Updating SSA information for statement ivtmp_173 = 37 - ivtmp_87;
+Updating SSA information for statement _98 = (sizetype) j_1;
+Updating SSA information for statement _97 = (sizetype) graphite_IV.140_101;
+Updating SSA information for statement _96 = _97 + _98;
+Updating SSA information for statement _95 = _96 * 8;
+Updating SSA information for statement _94 = _95 + 18446744073709550816;
+Updating SSA information for statement _93 = aa_14(D) + _94;
+Updating SSA information for statement _99 = *_93;
+Updating SSA information for statement _91 = (sizetype) j_1;
+Updating SSA information for statement _90 = (sizetype) graphite_IV.140_101;
+Updating SSA information for statement _89 = _90 + _91;
+Updating SSA information for statement _88 = _89 * 8;
+Updating SSA information for statement _79 = _88 + 18446744073709551320;
+Updating SSA information for statement _77 = aa_14(D) + _79;
+Updating SSA information for statement _92 = *_77;
+Updating SSA information for statement _76 = _92 + _99;
+Updating SSA information for statement _75 = (int) _76;
+Updating SSA information for statement _74 = (double) _75;
+Updating SSA information for statement _72 = _76 - _74;
+Updating SSA information for statement _70 = (int) graphite_IV.140_101;
+Updating SSA information for statement ran_u[_70] = _72;
+Updating SSA information for statement graphite_IV.140_100 = graphite_IV.140_101 + 1;
+Updating SSA information for statement ivtmp_8 = ivtmp_173 - 1;
+Registering new PHI nodes in block #13
+Updating SSA information for statement ivtmp_84 = ivtmp_87 + 1;
+Registering new PHI nodes in block #24
+Updating SSA information for statement graphite_IV.140_58 = (signed long) ivtmp_87;
+Updating SSA information for statement ivtmp_59 = 37 - ivtmp_87;
+Updating SSA information for statement _60 = (sizetype) j_1;
+Updating SSA information for statement _61 = (sizetype) graphite_IV.140_101;
+Updating SSA information for statement _62 = _97 + _98;
+Updating SSA information for statement _63 = _96 * 8;
+Updating SSA information for statement _64 = _95 + 18446744073709550816;
+Updating SSA information for statement _65 = aa_14(D) + _94;
+Updating SSA information for statement _66 = *_93;
+Updating SSA information for statement _67 = (sizetype) j_1;
+Updating SSA information for statement _68 = (sizetype) graphite_IV.140_101;
+Updating SSA information for statement _134 = _90 + _91;
+Updating SSA information for statement _3 = _89 * 8;
+Updating SSA information for statement _78 = _88 + 18446744073709551320;
+Updating SSA information for statement _20 = aa_14(D) + _79;
+Updating SSA information for statement _21 = *_77;
+Updating SSA information for statement _22 = _92 + _99;
+Updating SSA information for statement _25 = (int) _76;
+Updating SSA information for statement _26 = (double) _75;
+Updating SSA information for statement _27 = _76 - _74;
+Updating SSA information for statement _29 = (int) graphite_IV.140_101;
+Updating SSA information for statement ran_u[_70] = _72;
+Updating SSA information for statement graphite_IV.140_31 = graphite_IV.140_101 + 1;
+Updating SSA information for statement ivtmp_34 = ivtmp_173 - 1;
+Registering new PHI nodes in block #22
+Registering new PHI nodes in block #18
+Registering new PHI nodes in block #19
+Registering new PHI nodes in block #14
+Registering new PHI nodes in block #15
+Registering new PHI nodes in block #16
+Registering new PHI nodes in block #17
+
+SSA replacement table
+N_i -> { O_1 ... O_j } means that N_i replaces O_1, ..., O_j
+
+_3 -> { _88 }
+_20 -> { _77 }
+_21 -> { _92 }
+_22 -> { _76 }
+_25 -> { _75 }
+_26 -> { _74 }
+_27 -> { _72 }
+_29 -> { _70 }
+.MEM_30 -> { .MEM_71 }
+graphite_IV.140_31 -> { graphite_IV.140_100 }
+ivtmp_34 -> { ivtmp_8 }
+.MEM_56 -> { .MEM_33 }
+ivtmp_57 -> { ivtmp_87 }
+graphite_IV.140_58 -> { graphite_IV.140_101 }
+ivtmp_59 -> { ivtmp_173 }
+_60 -> { _98 }
+_61 -> { _97 }
+_62 -> { _96 }
+_63 -> { _95 }
+_64 -> { _94 }
+_65 -> { _93 }
+_66 -> { _99 }
+_67 -> { _91 }
+_68 -> { _90 }
+_78 -> { _79 }
+_134 -> { _89 }
+Incremental SSA update started at block: 20
+Number of blocks in CFG: 25
+Number of blocks to update: 5 ( 20%)
+Affected blocks: 12 13 14 23 24
+
+
+Trying loop 6 as candidate
+loop 6 is innermost
+loop is not parallel according to graphite
+Trying loop 5 as candidate
+loop 5 is innermost
+loop is not parallel according to graphite
+
+Updating SSA:
+Registering new PHI nodes in block #0
+Registering new PHI nodes in block #2
+Registering new PHI nodes in block #3
+Updating SSA information for statement _154 = ran_u[_156];
+Updating SSA information for statement *_174 = _154;
+Registering new PHI nodes in block #4
+Registering new PHI nodes in block #5
+Registering new PHI nodes in block #6
+Registering new PHI nodes in block #7
+Registering new PHI nodes in block #8
+Updating SSA information for statement _128 = *_125;
+Updating SSA information for statement _124 = *_120;
+Updating SSA information for statement *_111 = _116;
+Registering new PHI nodes in block #9
+Registering new PHI nodes in block #10
+Registering new PHI nodes in block #11
+Registering new PHI nodes in block #20
+Registering new PHI nodes in block #21
+Updating SSA information for statement .paral_data_store.146.j = j_1;
+Updating SSA information for statement .paral_data_store.146.aa = aa_14(D);
+Updating SSA information for statement .paral_data_store.146.ran_u = ran_u_35;
+Registering new PHI nodes in block #25
+Updating SSA information for statement j.143_36 = .paral_data_load.147_39->j;
+Updating SSA information for statement aa.144_37 = .paral_data_load.147_39->aa;
+Updating SSA information for statement ran_u_38 = .paral_data_load.147_39->ran_u;
+Registering new PHI nodes in block #27
+Registering new PHI nodes in block #12
+Registering new PHI nodes in block #23
+Updating SSA information for statement _99 = *_93;
+Updating SSA information for statement _92 = *_77;
+Updating SSA information for statement *ran_u_38[_70] = _72;
+Registering new PHI nodes in block #13
+Registering new PHI nodes in block #28
+Registering new PHI nodes in block #26
+Registering new PHI nodes in block #24
+Updating SSA information for statement _66 = *_65;
+Updating SSA information for statement _21 = *_20;
+Updating SSA information for statement ran_u[_29] = _27;
+Registering new PHI nodes in block #22
+Registering new PHI nodes in block #18
+Updating SSA information for statement _46 = *_45;
+Updating SSA information for statement _53 = *_52;
+Updating SSA information for statement ran_u[_13] = _12;
+Registering new PHI nodes in block #19
+Registering new PHI nodes in block #14
+Registering new PHI nodes in block #15
+Updating SSA information for statement _5 = *_188;
+Updating SSA information for statement _187 = ran_u[_186];
+Updating SSA information for statement ran_u[_179] = _182;
+Registering new PHI nodes in block #16
+Registering new PHI nodes in block #17
+Updating SSA information for statement return;
+
+Symbols to be put in SSA form
+{ D.3846 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 29
+Number of blocks to update: 28 ( 97%)
+Affected blocks: 0 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+
+
+void ranf_array(double*, int) (double * aa, int n)
+{
+  struct  * .paral_data_load.147;
+  struct  .paral_data_store.146;
+  double * aa.144;
+  int j.143;
+  signed long graphite_IV.142;
+  signed long graphite_IV.141;
+  double D.4060;
+  double D.4059;
+  int D.4058;
+  double D.4057;
+  double D.4056;
+  double D.4055;
+  signed long graphite_IV.140;
+  double D.4053;
+  double D.4052;
+  int D.4051;
+  double D.4050;
+  double D.4049;
+  double D.4048;
+  signed long graphite_IV.139;
+  double D.4046;
+  double D.4045;
+  int D.4044;
+  double D.4043;
+  double D.4042;
+  double D.4041;
+  signed long graphite_IV.138;
+  double D.4039;
+  register int j;
+  register int i;
+  sizetype _2;
+  sizetype _3;
+  sizetype _4;
+  double _5;
+  unsigned long ivtmp_8;
+  double _12;
+  int _13;
+  unsigned long ivtmp_17;
+  double * _20;
+  double _21;
+  double _22;
+  int _25;
+  double _26;
+  double _27;
+  int _29;
+  unsigned long ivtmp_34;
+  double[100] * ran_u_35;
+  double[100] * ran_u_38;
+  sizetype _40;
+  sizetype _41;
+  sizetype _42;
+  sizetype _43;
+  sizetype _44;
+  double * _45;
+  double _46;
+  sizetype _47;
+  sizetype _48;
+  sizetype _49;
+  sizetype _50;
+  sizetype _51;
+  double * _52;
+  double _53;
+  double _54;
+  unsigned long ivtmp_55;
+  unsigned long ivtmp_57;
+  unsigned long ivtmp_59;
+  sizetype _60;
+  sizetype _61;
+  sizetype _62;
+  sizetype _63;
+  sizetype _64;
+  double * _65;
+  double _66;
+  sizetype _67;
+  sizetype _68;
+  unsigned long ivtmp_69;
+  int _70;
+  double _72;
+  double _74;
+  int _75;
+  double _76;
+  double * _77;
+  sizetype _78;
+  sizetype _79;
+  unsigned long ivtmp_80;
+  double _82;
+  unsigned long ivtmp_84;
+  int _85;
+  unsigned long ivtmp_87;
+  sizetype _88;
+  sizetype _89;
+  sizetype _90;
+  sizetype _91;
+  double _92;
+  double * _93;
+  sizetype _94;
+  sizetype _95;
+  sizetype _96;
+  sizetype _97;
+  sizetype _98;
+  double _99;
+  unsigned long ivtmp_102;
+  double * _111;
+  sizetype _112;
+  sizetype _113;
+  sizetype _114;
+  double _116;
+  double _117;
+  int _118;
+  double _119;
+  double * _120;
+  sizetype _121;
+  sizetype _122;
+  sizetype _123;
+  double _124;
+  double * _125;
+  sizetype _126;
+  sizetype _127;
+  double _128;
+  signed long _131;
+  signed long _132;
+  bool _133;
+  sizetype _134;
+  unsigned long ivtmp_148;
+  double _154;
+  int _156;
+  sizetype _160;
+  unsigned long ivtmp_173;
+  double * _174;
+  sizetype _175;
+  unsigned long ivtmp_176;
+  unsigned long ivtmp_178;
+  int _179;
+  int _180;
+  double _182;
+  double _183;
+  int _184;
+  double _185;
+  int _186;
+  double _187;
+  double * _188;
+  sizetype _189;
+  sizetype _190;
+  sizetype _191;
+
+  <bb 2>:
+  # DEBUG j => 0
+  # DEBUG j => 0
+
+  <bb 3>:
+  # graphite_IV.138_150 = PHI <0(2), graphite_IV.138_152(4)>
+  # ivtmp_102 = PHI <100(2), ivtmp_148(4)>
+  # DEBUG j => NULL
+  _156 = (int) graphite_IV.138_150;
+  _154 = ran_u[_156];
+  _160 = (sizetype) graphite_IV.138_150;
+  _175 = _160 * 8;
+  _174 = aa_14(D) + _175;
+  *_174 = _154;
+  # DEBUG j => NULL
+  # DEBUG j => NULL
+  graphite_IV.138_152 = graphite_IV.138_150 + 1;
+  ivtmp_148 = ivtmp_102 - 1;
+  if (ivtmp_148 != 0)
+    goto <bb 4>;
+  else
+    goto <bb 5>;
+
+  <bb 4>:
+  goto <bb 3>;
+
+  <bb 5>:
+  # DEBUG j => 100
+  if (n_19(D) <= 100)
+    goto <bb 11>;
+  else
+    goto <bb 6>;
+
+  <bb 6>:
+  _133 = n_19(D) > 100;
+  if (_133 != 0)
+    goto <bb 7>;
+  else
+    goto <bb 10>;
+
+  <bb 7>:
+  _132 = (signed long) n_19(D);
+  _131 = _132 + -101;
+
+  <bb 8>:
+  # graphite_IV.139_130 = PHI <0(7), graphite_IV.139_129(9)>
+  # DEBUG j => NULL
+  _127 = (sizetype) graphite_IV.139_130;
+  _126 = _127 * 8;
+  _125 = aa_14(D) + _126;
+  _128 = *_125;
+  _123 = (sizetype) graphite_IV.139_130;
+  _122 = _123 + 63;
+  _121 = _122 * 8;
+  _120 = aa_14(D) + _121;
+  _124 = *_120;
+  _119 = _124 + _128;
+  _118 = (int) _119;
+  _117 = (double) _118;
+  _116 = _119 - _117;
+  _114 = (sizetype) graphite_IV.139_130;
+  _113 = _114 + 100;
+  _112 = _113 * 8;
+  _111 = aa_14(D) + _112;
+  *_111 = _116;
+  # DEBUG j => NULL
+  # DEBUG j => NULL
+  graphite_IV.139_129 = graphite_IV.139_130 + 1;
+  if (graphite_IV.139_130 < _131)
+    goto <bb 9>;
+  else
+    goto <bb 10>;
+
+  <bb 9>:
+  goto <bb 8>;
+
+  <bb 10>:
+
+  <bb 11>:
+  # j_1 = PHI <n_19(D)(10), 100(5)>
+
+  <bb 20>:
+  if (0 != 0)
+    goto <bb 21>;
+  else
+    goto <bb 22>;
+
+  <bb 21>:
+  ran_u_35 = &ran_u;
+  .paral_data_store.146.j = j_1;
+  .paral_data_store.146.aa = aa_14(D);
+  .paral_data_store.146.ran_u = ran_u_35;
+  #pragma omp parallel num_threads(6) [child fn: void_ranf_array_double___int_._loopfn.1 (.paral_data_store.146)]
+
+  <bb 25>:
+  .paral_data_param_144 = &.paral_data_store.146;
+  .paral_data_load.147_39 = (struct  *) .paral_data_param_144;
+  j.143_36 = .paral_data_load.147_39->j;
+  aa.144_37 = .paral_data_load.147_39->aa;
+  ran_u_38 = .paral_data_load.147_39->ran_u;
+
+  <bb 27>:
+  #pragma omp for schedule(static)
+  for (ivtmp_176 = 0; ivtmp_176 < 36; ivtmp_176 =  + 1)
+
+  <bb 12>:
+  # ivtmp_55 = PHI <ivtmp_176(27), ivtmp_84(13)>
+
+  <bb 23>:
+  # ivtmp_87 = PHI <ivtmp_55(12)>
+  graphite_IV.142_101 = (signed long) ivtmp_87;
+  ivtmp_173 = 37 - ivtmp_87;
+  # DEBUG j.143 => NULL
+  _98 = (sizetype) j.143_36;
+  _97 = (sizetype) graphite_IV.142_101;
+  _96 = _97 + _98;
+  _95 = _96 * 8;
+  _94 = _95 + 18446744073709550816;
+  _93 = aa.144_37 + _94;
+  _99 = *_93;
+  _91 = (sizetype) j.143_36;
+  _90 = (sizetype) graphite_IV.142_101;
+  _89 = _90 + _91;
+  _88 = _89 * 8;
+  _79 = _88 + 18446744073709551320;
+  _77 = aa.144_37 + _79;
+  _92 = *_77;
+  _76 = _92 + _99;
+  _75 = (int) _76;
+  _74 = (double) _75;
+  _72 = _76 - _74;
+  _70 = (int) graphite_IV.142_101;
+  *ran_u_38[_70] = _72;
+  # DEBUG j.143 => NULL
+  # DEBUG j.143 => NULL
+  graphite_IV.142_100 = graphite_IV.142_101 + 1;
+  ivtmp_8 = ivtmp_173 - 1;
+
+  <bb 13>:
+  #pragma omp continue (ivtmp_84, ivtmp_55)
+  goto <bb 28>;
+
+  <bb 22>:
+
+  <bb 18>:
+  # graphite_IV.140_86 = PHI <0(22), graphite_IV.140_16(19)>
+  # ivtmp_80 = PHI <37(22), ivtmp_17(19)>
+  # DEBUG j => NULL
+  # DEBUG i => NULL
+  _40 = (sizetype) j_1;
+  _41 = (sizetype) graphite_IV.140_86;
+  _42 = _41 + _40;
+  _43 = _42 * 8;
+  _44 = _43 + 18446744073709550816;
+  _45 = aa_14(D) + _44;
+  _46 = *_45;
+  _47 = (sizetype) j_1;
+  _48 = (sizetype) graphite_IV.140_86;
+  _49 = _48 + _47;
+  _50 = _49 * 8;
+  _51 = _50 + 18446744073709551320;
+  _52 = aa_14(D) + _51;
+  _53 = *_52;
+  _54 = _53 + _46;
+  _85 = (int) _54;
+  _82 = (double) _85;
+  _12 = _54 - _82;
+  _13 = (int) graphite_IV.140_86;
+  ran_u[_13] = _12;
+  # DEBUG i => NULL
+  # DEBUG j => NULL
+  # DEBUG j => NULL
+  # DEBUG i => NULL
+  graphite_IV.140_16 = graphite_IV.140_86 + 1;
+  ivtmp_17 = ivtmp_80 - 1;
+  if (ivtmp_17 != 0)
+    goto <bb 19>;
+  else
+    goto <bb 14>;
+
+  <bb 19>:
+  goto <bb 18>;
+
+  <bb 28>:
+  #pragma omp return(nowait)
+
+  <bb 26>:
+  #pragma omp return
+
+  <bb 24>:
+  ivtmp_57 = 36;
+  graphite_IV.140_58 = (signed long) ivtmp_57;
+  ivtmp_59 = 37 - ivtmp_57;
+  # DEBUG j => NULL
+  # DEBUG i => NULL
+  _60 = (sizetype) j_1;
+  _61 = (sizetype) graphite_IV.140_58;
+  _62 = _61 + _60;
+  _63 = _62 * 8;
+  _64 = _63 + 18446744073709550816;
+  _65 = aa_14(D) + _64;
+  _66 = *_65;
+  _67 = (sizetype) j_1;
+  _68 = (sizetype) graphite_IV.140_58;
+  _134 = _68 + _67;
+  _3 = _134 * 8;
+  _78 = _3 + 18446744073709551320;
+  _20 = aa_14(D) + _78;
+  _21 = *_20;
+  _22 = _21 + _66;
+  _25 = (int) _22;
+  _26 = (double) _25;
+  _27 = _22 - _26;
+  _29 = (int) graphite_IV.140_58;
+  ran_u[_29] = _27;
+  # DEBUG i => NULL
+  # DEBUG j => NULL
+  # DEBUG j => NULL
+  # DEBUG i => NULL
+  graphite_IV.140_31 = graphite_IV.140_58 + 1;
+  ivtmp_34 = ivtmp_59 - 1;
+
+  <bb 14>:
+  j_192 = j_1 + 37;
+
+  <bb 15>:
+  # graphite_IV.141_7 = PHI <0(14), graphite_IV.141_6(16)>
+  # ivtmp_178 = PHI <63(14), ivtmp_69(16)>
+  # DEBUG j => NULL
+  # DEBUG i => NULL
+  _4 = (sizetype) j_192;
+  _2 = (sizetype) graphite_IV.141_7;
+  _191 = _2 + _4;
+  _190 = _191 * 8;
+  _189 = _190 + 18446744073709550816;
+  _188 = aa_14(D) + _189;
+  _5 = *_188;
+  _186 = (int) graphite_IV.141_7;
+  _187 = ran_u[_186];
+  _185 = _5 + _187;
+  _184 = (int) _185;
+  _183 = (double) _184;
+  _182 = _185 - _183;
+  _180 = (int) graphite_IV.141_7;
+  _179 = _180 + 37;
+  ran_u[_179] = _182;
+  # DEBUG i => NULL
+  # DEBUG j => NULL
+  # DEBUG j => NULL
+  # DEBUG i => NULL
+  graphite_IV.141_6 = graphite_IV.141_7 + 1;
+  ivtmp_69 = ivtmp_178 - 1;
+  if (ivtmp_69 != 0)
+    goto <bb 16>;
+  else
+    goto <bb 17>;
+
+  <bb 16>:
+  goto <bb 15>;
+
+  <bb 17>:
+  return;
+
+}
+
+
+
+;; Function void ranf_start(long int) (_Z10ranf_startl, funcdef_no=1, decl_uid=2920, cgraph_uid=1, symbol_order=6)
+
+Trying loop 8 as candidate
+loop 8 is innermost
+loop is not parallel according to graphite
+Trying loop 2 as candidate
+loop 2 is not innermost
+loop is not parallel according to graphite
+Trying loop 10 as candidate
+loop 10 is innermost
+loop is not parallel according to graphite
+Trying loop 9 as candidate
+loop 9 is innermost
+loop is not parallel according to graphite
+Trying loop 1 as candidate
+loop 1 is innermost
+loop is not parallel according to graphite
+void ranf_start(long int) (long int seed)
+{
+  signed long graphite_IV.264;
+  double D.4218;
+  double D.4217;
+  int D.4216;
+  double D.4215;
+  double D.4214;
+  double D.4213;
+  double D.4212;
+  double D.4211;
+  int D.4210;
+  double D.4209;
+  double D.4208;
+  double D.4207;
+  signed long graphite_IV.263;
+  double D.4205;
+  double ss;
+  double u[199];
+  register int j;
+  register int s;
+  register int t;
+  int _1;
+  double _3;
+  int _10;
+  int _16;
+  double _17;
+  double _18;
+  double _19;
+  double _20;
+  unsigned int ivtmp_21;
+  long int _23;
+  long int _24;
+  double _25;
+  double _33;
+  double _34;
+  int _36;
+  unsigned int ivtmp_45;
+  unsigned int ivtmp_46;
+  int _65;
+  int _66;
+  int _67;
+  double _70;
+  double _72;
+  int _73;
+  double _74;
+  int _75;
+  double _76;
+  double _77;
+  double _81;
+  int _82;
+  int _83;
+  unsigned long ivtmp_87;
+  double _93;
+  int _94;
+  double _95;
+  double _96;
+  int _100;
+  double _102;
+  int _103;
+  unsigned int ivtmp_107;
+  int _108;
+  double _109;
+  int _110;
+  int _112;
+  int _114;
+  unsigned long ivtmp_115;
+  double[199] * _116;
+  unsigned long ivtmp_121;
+  int _122;
+  unsigned long ivtmp_130;
+  double[100] * _131;
+  double[199] * _133;
+
+  <bb 2>:
+  # DEBUG ulp => 2.220446049250313080847263336181640625e-16
+  _23 = seed_22(D) & 1073741823;
+  _24 = _23 + 2;
+  _25 = (double) _24;
+  ss_26 = _25 * 4.44089209850062616169452667236328125e-16;
+  # DEBUG ss => ss_26
+  # DEBUG j => 0
+  # DEBUG ss => ss_26
+  # DEBUG j => 0
+
+  <bb 3>:
+  # j_119 = PHI <j_32(6), 0(2)>
+  # ss_126 = PHI <ss_11(6), ss_26(2)>
+  # ivtmp_45 = PHI <ivtmp_46(6), 100(2)>
+  # DEBUG ss => ss_126
+  # DEBUG j => j_119
+  u[j_119] = ss_126;
+  ss_30 = ss_126 * 2.0e+0;
+  # DEBUG ss => ss_30
+  if (ss_30 >= 1.0e+0)
+    goto <bb 4>;
+  else
+    goto <bb 5>;
+
+  <bb 4>:
+  ss_31 = ss_30 - 9.99999999999999555910790149937383830547332763671875e-1;
+  # DEBUG ss => ss_31
+
+  <bb 5>:
+  # ss_11 = PHI <ss_30(3), ss_31(4)>
+  # DEBUG ss => ss_11
+  j_32 = j_119 + 1;
+  # DEBUG j => j_32
+  # DEBUG ss => ss_11
+  # DEBUG j => j_32
+  ivtmp_46 = ivtmp_45 - 1;
+  if (ivtmp_46 == 0)
+    goto <bb 7>;
+  else
+    goto <bb 6>;
+
+  <bb 6>:
+  goto <bb 3>;
+
+  <bb 7>:
+  _33 = u[1];
+  _34 = _33 + 2.220446049250313080847263336181640625e-16;
+  u[1] = _34;
+  _36 = (int) seed_22(D);
+  s_37 = _36 & 1073741823;
+  # DEBUG s => s_37
+  # DEBUG t => 69
+  # DEBUG s => s_37
+  # DEBUG t => 69
+  goto <bb 10>;
+
+  <bb 8>:
+  # t_48 = PHI <t_79(20), t_99(19)>
+  # s_41 = PHI <0(20), s_80(19)>
+  # DEBUG s => s_41
+  # DEBUG t => t_48
+  if (t_48 == 0)
+    goto <bb 21>;
+  else
+    goto <bb 9>;
+
+  <bb 9>:
+
+  <bb 10>:
+  # t_99 = PHI <t_48(9), 69(7)>
+  # s_58 = PHI <s_41(9), s_37(7)>
+  # DEBUG s => s_58
+  # DEBUG t => t_99
+  # DEBUG j => 99
+
+  <bb 11>:
+  # graphite_IV.263_88 = PHI <0(10), graphite_IV.263_123(12)>
+  # ivtmp_130 = PHI <99(10), ivtmp_121(12)>
+  # DEBUG j => NULL
+  _82 = (int) graphite_IV.263_88;
+  _83 = 99 - _82;
+  _81 = u[_83];
+  _122 = (int) graphite_IV.263_88;
+  _66 = 99 - _122;
+  _67 = _66 * 2;
+  u[_67] = _81;
+  _114 = (int) graphite_IV.263_88;
+  _112 = _114 * -2;
+  _110 = _112 + 197;
+  u[_110] = 0.0;
+  # DEBUG j => NULL
+  # DEBUG j => NULL
+  graphite_IV.263_123 = graphite_IV.263_88 + 1;
+  ivtmp_121 = ivtmp_130 - 1;
+  if (ivtmp_121 != 0)
+    goto <bb 12>;
+  else
+    goto <bb 13>;
+
+  <bb 12>:
+  goto <bb 11>;
+
+  <bb 13>:
+
+  <bb 14>:
+  # graphite_IV.264_113 = PHI <0(13), graphite_IV.264_111(15)>
+  # ivtmp_115 = PHI <99(13), ivtmp_87(15)>
+  # DEBUG j => NULL
+  _108 = (int) graphite_IV.264_113;
+  _103 = 135 - _108;
+  _109 = u[_103];
+  _100 = (int) graphite_IV.264_113;
+  _10 = 198 - _100;
+  _102 = u[_10];
+  _3 = _102 + _109;
+  _1 = (int) _3;
+  _20 = (double) _1;
+  _96 = _3 - _20;
+  u[_103] = _96;
+  _73 = (int) graphite_IV.264_113;
+  _94 = 98 - _73;
+  _19 = u[_94];
+  _18 = u[_10];
+  _17 = _18 + _19;
+  _16 = (int) _17;
+  _93 = (double) _16;
+  _95 = _17 - _93;
+  u[_94] = _95;
+  # DEBUG j => NULL
+  # DEBUG j => NULL
+  graphite_IV.264_111 = graphite_IV.264_113 + 1;
+  ivtmp_87 = ivtmp_115 - 1;
+  if (ivtmp_87 != 0)
+    goto <bb 15>;
+  else
+    goto <bb 16>;
+
+  <bb 15>:
+  goto <bb 14>;
+
+  <bb 16>:
+  _65 = s_58 & 1;
+  if (_65 != 0)
+    goto <bb 17>;
+  else
+    goto <bb 18>;
+
+  <bb 17>:
+  _116 = &u + 8;
+  __builtin_memmove (_116, &u, 800);
+  _70 = u[100];
+  u[0] = _70;
+  _72 = u[37];
+  _74 = _70 + _72;
+  _75 = (int) _74;
+  _76 = (double) _75;
+  _77 = _74 - _76;
+  u[37] = _77;
+  goto <bb 19>;
+
+  <bb 18>:
+  if (s_58 != 0)
+    goto <bb 19>;
+  else
+    goto <bb 20>;
+
+  <bb 19>:
+  s_80 = s_58 >> 1;
+  # DEBUG s => s_80
+  goto <bb 8>;
+
+  <bb 20>:
+  t_79 = t_99 + -1;
+  # DEBUG t => t_79
+  goto <bb 8>;
+
+  <bb 21>:
+  _131 = &ran_u + 504;
+  __builtin_memcpy (_131, &u, 296);
+  _133 = &u + 296;
+  __builtin_memcpy (&ran_u, _133, 504);
+
+  <bb 22>:
+  # j_125 = PHI <0(21), j_90(23)>
+  # ivtmp_21 = PHI <10(21), ivtmp_107(23)>
+  # DEBUG j => j_125
+  ranf_array (&u, 199);
+  j_90 = j_125 + 1;
+  # DEBUG j => j_90
+  # DEBUG j => j_90
+  ivtmp_107 = ivtmp_21 - 1;
+  if (ivtmp_107 == 0)
+    goto <bb 24>;
+  else
+    goto <bb 23>;
+
+  <bb 23>:
+  goto <bb 22>;
+
+  <bb 24>:
+  ranf_arr_ptr = &ranf_arr_started;
+  u ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function int rng_double_main() (_Z15rng_double_mainv, funcdef_no=33, decl_uid=3717, cgraph_uid=33, symbol_order=38)
+
+Trying loop 2 as candidate
+loop 2 is not innermost
+loop is not parallel according to graphite
+Trying loop 8 as candidate
+loop 8 is innermost
+loop is not parallel according to graphite
+Trying loop 7 as candidate
+loop 7 is innermost
+Analyzing # of iterations of loop 7
+  exit condition [36, + , 18446744073709551615] != 0
+  bounds on difference of bases: -36 ... -36
+  result:
+    # of iterations 36, bounded by 36
+rng-double.c:94:35: note: === vect_analyze_loop_form ===
+rng-double.c:94:35: note: === get_loop_niters ===
+Analyzing # of iterations of loop 7
+  exit condition [36, + , 18446744073709551615] != 0
+  bounds on difference of bases: -36 ... -36
+  result:
+    # of iterations 36, bounded by 36
+parallelizing inner loop 10
+
+loop at rng-double.c:37: 
+Updating SSA:
+creating PHI node in block #12 for .MEM_129
+Registering new PHI nodes in block #20
+Registering new PHI nodes in block #21
+Registering new PHI nodes in block #10
+Updating SSA information for statement _164 = (sizetype) graphite_IV.307_167;
+Updating SSA information for statement _163 = _164 + 1909;
+Updating SSA information for statement _162 = _163 * 8;
+Updating SSA information for statement _161 = &a + _162;
+Updating SSA information for statement _165 = *_161;
+Updating SSA information for statement _158 = (sizetype) graphite_IV.307_167;
+Updating SSA information for statement _142 = _158 + 1972;
+Updating SSA information for statement _141 = _142 * 8;
+Updating SSA information for statement _134 = &a + _141;
+Updating SSA information for statement _159 = *_134;
+Updating SSA information for statement _133 = _159 + _165;
+Updating SSA information for statement _132 = (int) _133;
+Updating SSA information for statement _131 = (double) _132;
+Updating SSA information for statement _130 = _133 - _131;
+Updating SSA information for statement _128 = (int) graphite_IV.307_167;
+Updating SSA information for statement ran_u[_128] = _130;
+Updating SSA information for statement graphite_IV.307_166 = graphite_IV.307_167 + 1;
+Updating SSA information for statement ivtmp_82 = ivtmp_160 - 1;
+Updating SSA information for statement if (ivtmp_82 != 0)
+Registering new PHI nodes in block #11
+Registering new PHI nodes in block #22
+Registering new PHI nodes in block #18
+Updating SSA information for statement _29 = (sizetype) graphite_IV.307_167;
+Updating SSA information for statement _30 = _164 + 1909;
+Updating SSA information for statement _31 = _163 * 8;
+Updating SSA information for statement _32 = &a + _162;
+Updating SSA information for statement _33 = *_161;
+Updating SSA information for statement _34 = (sizetype) graphite_IV.307_167;
+Updating SSA information for statement _35 = _158 + 1972;
+Updating SSA information for statement _36 = _142 * 8;
+Updating SSA information for statement _78 = &a + _141;
+Updating SSA information for statement _37 = *_134;
+Updating SSA information for statement _111 = _159 + _165;
+Updating SSA information for statement _108 = (int) _133;
+Updating SSA information for statement _107 = (double) _132;
+Updating SSA information for statement _56 = _133 - _131;
+Updating SSA information for statement _57 = (int) graphite_IV.307_167;
+Updating SSA information for statement ran_u[_128] = _130;
+Updating SSA information for statement graphite_IV.307_59 = graphite_IV.307_167 + 1;
+Updating SSA information for statement ivtmp_60 = ivtmp_160 - 1;
+Updating SSA information for statement if (ivtmp_82 != 0)
+Registering new PHI nodes in block #19
+Registering new PHI nodes in block #12
+Registering new PHI nodes in block #13
+Registering new PHI nodes in block #14
+Registering new PHI nodes in block #15
+Registering new PHI nodes in block #16
+Registering new PHI nodes in block #17
+
+SSA replacement table
+N_i -> { O_1 ... O_j } means that N_i replaces O_1, ..., O_j
+
+graphite_IV.307_26 -> { graphite_IV.307_167 }
+.MEM_27 -> { .MEM_126 }
+ivtmp_28 -> { ivtmp_160 }
+_29 -> { _164 }
+_30 -> { _163 }
+_31 -> { _162 }
+_32 -> { _161 }
+_33 -> { _165 }
+_34 -> { _158 }
+_35 -> { _142 }
+_36 -> { _141 }
+_37 -> { _159 }
+_56 -> { _130 }
+_57 -> { _128 }
+.MEM_58 -> { .MEM_129 }
+graphite_IV.307_59 -> { graphite_IV.307_166 }
+ivtmp_60 -> { ivtmp_82 }
+.MEM_61 -> { .MEM_129 }
+_78 -> { _134 }
+_107 -> { _131 }
+_108 -> { _132 }
+_111 -> { _133 }
+Incremental SSA update started at block: 20
+Number of blocks in CFG: 23
+Number of blocks to update: 8 ( 35%)
+Affected blocks: 10 11 12 13 18 19 21 22
+
+
+Applying pattern match.pd:114, generic-match.c:6953
+Applying pattern match.pd:49, generic-match.c:3223
+Applying pattern match.pd:822, generic-match.c:7035
+Applying pattern match.pd:439, generic-match.c:3611
+Applying pattern match.pd:625, generic-match.c:1309
+
+Updating SSA:
+Registering new PHI nodes in block #20
+Registering new PHI nodes in block #21
+Registering new PHI nodes in block #10
+Registering new PHI nodes in block #23
+Updating SSA information for statement graphite_IV.307_167 = (signed long) ivtmp_62;
+Updating SSA information for statement ivtmp_160 = 37 - ivtmp_62;
+Updating SSA information for statement _164 = (sizetype) graphite_IV.307_167;
+Updating SSA information for statement _163 = _164 + 1909;
+Updating SSA information for statement _162 = _163 * 8;
+Updating SSA information for statement _161 = &a + _162;
+Updating SSA information for statement _165 = *_161;
+Updating SSA information for statement _158 = (sizetype) graphite_IV.307_167;
+Updating SSA information for statement _142 = _158 + 1972;
+Updating SSA information for statement _141 = _142 * 8;
+Updating SSA information for statement _134 = &a + _141;
+Updating SSA information for statement _159 = *_134;
+Updating SSA information for statement _133 = _159 + _165;
+Updating SSA information for statement _132 = (int) _133;
+Updating SSA information for statement _131 = (double) _132;
+Updating SSA information for statement _130 = _133 - _131;
+Updating SSA information for statement _128 = (int) graphite_IV.307_167;
+Updating SSA information for statement ran_u[_128] = _130;
+Updating SSA information for statement graphite_IV.307_166 = graphite_IV.307_167 + 1;
+Updating SSA information for statement ivtmp_82 = ivtmp_160 - 1;
+Registering new PHI nodes in block #11
+Updating SSA information for statement ivtmp_63 = ivtmp_62 + 1;
+Registering new PHI nodes in block #24
+Updating SSA information for statement graphite_IV.307_67 = (signed long) ivtmp_62;
+Updating SSA information for statement ivtmp_68 = 37 - ivtmp_62;
+Updating SSA information for statement _110 = (sizetype) graphite_IV.307_167;
+Updating SSA information for statement _106 = _164 + 1909;
+Updating SSA information for statement _105 = _163 * 8;
+Updating SSA information for statement _40 = &a + _162;
+Updating SSA information for statement _41 = *_161;
+Updating SSA information for statement _42 = (sizetype) graphite_IV.307_167;
+Updating SSA information for statement _43 = _158 + 1972;
+Updating SSA information for statement _44 = _142 * 8;
+Updating SSA information for statement _45 = &a + _141;
+Updating SSA information for statement _46 = *_134;
+Updating SSA information for statement _47 = _159 + _165;
+Updating SSA information for statement _48 = (int) _133;
+Updating SSA information for statement _49 = (double) _132;
+Updating SSA information for statement _50 = _133 - _131;
+Updating SSA information for statement _51 = (int) graphite_IV.307_167;
+Updating SSA information for statement ran_u[_128] = _130;
+Updating SSA information for statement graphite_IV.307_52 = graphite_IV.307_167 + 1;
+Updating SSA information for statement ivtmp_53 = ivtmp_160 - 1;
+Registering new PHI nodes in block #22
+Registering new PHI nodes in block #18
+Registering new PHI nodes in block #19
+Registering new PHI nodes in block #12
+Registering new PHI nodes in block #13
+Registering new PHI nodes in block #14
+Registering new PHI nodes in block #15
+Registering new PHI nodes in block #16
+Registering new PHI nodes in block #17
+
+SSA replacement table
+N_i -> { O_1 ... O_j } means that N_i replaces O_1, ..., O_j
+
+_40 -> { _161 }
+_41 -> { _165 }
+_42 -> { _158 }
+_43 -> { _142 }
+_44 -> { _141 }
+_45 -> { _134 }
+_46 -> { _159 }
+_47 -> { _133 }
+_48 -> { _132 }
+_49 -> { _131 }
+_50 -> { _130 }
+_51 -> { _128 }
+graphite_IV.307_52 -> { graphite_IV.307_166 }
+ivtmp_53 -> { ivtmp_82 }
+.MEM_66 -> { .MEM_126 }
+graphite_IV.307_67 -> { graphite_IV.307_167 }
+ivtmp_68 -> { ivtmp_160 }
+.MEM_79 -> { .MEM_129 }
+ivtmp_80 -> { ivtmp_62 }
+_105 -> { _162 }
+_106 -> { _163 }
+_110 -> { _164 }
+Incremental SSA update started at block: 20
+Number of blocks in CFG: 25
+Number of blocks to update: 5 ( 20%)
+Affected blocks: 10 11 12 23 24
+
+
+Trying loop 9 as candidate
+loop 9 is innermost
+loop is not parallel according to graphite
+Trying loop 1 as candidate
+loop 1 is innermost
+loop is not parallel according to graphite
+
+Updating SSA:
+Registering new PHI nodes in block #0
+Registering new PHI nodes in block #2
+Updating SSA information for statement ranf_start (310952);
+Registering new PHI nodes in block #3
+Updating SSA information for statement ranf_array.constprop (&a);
+Registering new PHI nodes in block #4
+Registering new PHI nodes in block #5
+Updating SSA information for statement _9 = ran_u[0];
+Updating SSA information for statement __printf_chk (1, "%.20f\n", _9);
+Updating SSA information for statement ranf_start (310952);
+Registering new PHI nodes in block #6
+Updating SSA information for statement __builtin_memcpy (&a, &ran_u, 800);
+Registering new PHI nodes in block #7
+Updating SSA information for statement _75 = MEM[(double *)_72];
+Updating SSA information for statement _70 = *_38;
+Updating SSA information for statement *_168 = _4;
+Registering new PHI nodes in block #8
+Registering new PHI nodes in block #9
+Registering new PHI nodes in block #20
+Registering new PHI nodes in block #21
+Updating SSA information for statement .paral_data_store.312.a = a_156;
+Updating SSA information for statement .paral_data_store.312.ran_u = ran_u_155;
+Registering new PHI nodes in block #25
+Updating SSA information for statement a_154 = .paral_data_load.313_152->a;
+Updating SSA information for statement ran_u_153 = .paral_data_load.313_152->ran_u;
+Registering new PHI nodes in block #27
+Registering new PHI nodes in block #10
+Registering new PHI nodes in block #23
+Updating SSA information for statement _165 = *_161;
+Updating SSA information for statement _159 = *_134;
+Updating SSA information for statement *ran_u_153[_128] = _130;
+Registering new PHI nodes in block #11
+Registering new PHI nodes in block #28
+Registering new PHI nodes in block #26
+Registering new PHI nodes in block #24
+Updating SSA information for statement _41 = *_40;
+Updating SSA information for statement _46 = *_45;
+Updating SSA information for statement ran_u[_51] = _50;
+Registering new PHI nodes in block #22
+Registering new PHI nodes in block #18
+Updating SSA information for statement _33 = *_32;
+Updating SSA information for statement _37 = *_78;
+Updating SSA information for statement ran_u[_57] = _56;
+Registering new PHI nodes in block #19
+Registering new PHI nodes in block #12
+Registering new PHI nodes in block #13
+Updating SSA information for statement _116 = *_112;
+Updating SSA information for statement _99 = ran_u[_98];
+Updating SSA information for statement ran_u[_91] = _94;
+Registering new PHI nodes in block #14
+Registering new PHI nodes in block #15
+Registering new PHI nodes in block #16
+Registering new PHI nodes in block #17
+Updating SSA information for statement _13 = ran_u[0];
+Updating SSA information for statement __printf_chk (1, "%.20f\n", _13);
+Updating SSA information for statement a ={v} {CLOBBER};
+Updating SSA information for statement return 0;
+
+Symbols to be put in SSA form
+{ D.3849 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 29
+Number of blocks to update: 28 ( 97%)
+Affected blocks: 0 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+
+
+int rng_double_main() ()
+{
+  struct  * .paral_data_load.313;
+  struct  .paral_data_store.312;
+  signed long graphite_IV.310;
+  signed long graphite_IV.309;
+  double D.4306;
+  double D.4305;
+  int D.4304;
+  double D.4303;
+  double D.4302;
+  double D.4301;
+  signed long graphite_IV.308;
+  double D.4299;
+  double D.4298;
+  int D.4297;
+  double D.4296;
+  double D.4295;
+  double D.4294;
+  signed long graphite_IV.307;
+  double D.4292;
+  double D.4291;
+  int D.4290;
+  double D.4289;
+  double D.4288;
+  double D.4287;
+  register int j;
+  register int i;
+  double a[2009];
+  register int m;
+  sizetype _1;
+  sizetype _2;
+  double _4;
+  double _9;
+  double _11;
+  double _13;
+  int _17;
+  unsigned long ivtmp_22;
+  double _23;
+  unsigned int ivtmp_24;
+  unsigned int ivtmp_25;
+  unsigned long ivtmp_28;
+  sizetype _29;
+  sizetype _30;
+  sizetype _31;
+  double * _32;
+  double _33;
+  sizetype _34;
+  sizetype _35;
+  sizetype _36;
+  double _37;
+  double * _38;
+  sizetype _39;
+  double * _40;
+  double _41;
+  sizetype _42;
+  sizetype _43;
+  sizetype _44;
+  double * _45;
+  double _46;
+  double _47;
+  int _48;
+  double _49;
+  double _50;
+  int _51;
+  unsigned long ivtmp_53;
+  sizetype _54;
+  sizetype _55;
+  double _56;
+  int _57;
+  unsigned long ivtmp_60;
+  unsigned long ivtmp_62;
+  unsigned long ivtmp_63;
+  unsigned long ivtmp_65;
+  unsigned long ivtmp_68;
+  double _70;
+  double[2009] * _72;
+  sizetype _73;
+  sizetype _74;
+  double _75;
+  double * _78;
+  unsigned long ivtmp_80;
+  unsigned long ivtmp_82;
+  unsigned long ivtmp_90;
+  int _91;
+  int _92;
+  double _94;
+  double _95;
+  int _96;
+  double _97;
+  int _98;
+  double _99;
+  unsigned int ivtmp_104;
+  sizetype _105;
+  sizetype _106;
+  double _107;
+  int _108;
+  unsigned int ivtmp_109;
+  sizetype _110;
+  double _111;
+  double * _112;
+  sizetype _113;
+  sizetype _114;
+  sizetype _115;
+  double _116;
+  unsigned long ivtmp_119;
+  unsigned long ivtmp_127;
+  int _128;
+  double _130;
+  double _131;
+  int _132;
+  double _133;
+  double * _134;
+  sizetype _141;
+  sizetype _142;
+  unsigned long ivtmp_149;
+  double[100] * ran_u_153;
+  double[2009] * a_154;
+  double[100] * ran_u_155;
+  double[2009] * a_156;
+  sizetype _158;
+  double _159;
+  unsigned long ivtmp_160;
+  double * _161;
+  sizetype _162;
+  sizetype _163;
+  sizetype _164;
+  double _165;
+  double * _168;
+  sizetype _169;
+
+  <bb 2>:
+  ranf_start (310952);
+  # DEBUG m => 0
+  # DEBUG m => 0
+
+  <bb 3>:
+  # m_71 = PHI <m_8(4), 0(2)>
+  # ivtmp_24 = PHI <ivtmp_25(4), 2009(2)>
+  # DEBUG m => m_71
+  ranf_array.constprop (&a);
+  m_8 = m_71 + 1;
+  # DEBUG m => m_8
+  # DEBUG m => m_8
+  ivtmp_25 = ivtmp_24 - 1;
+  if (ivtmp_25 == 0)
+    goto <bb 5>;
+  else
+    goto <bb 4>;
+
+  <bb 4>:
+  goto <bb 3>;
+
+  <bb 5>:
+  _9 = ran_u[0];
+  # DEBUG __fmt => "%.20f\n"
+  __printf_chk (1, "%.20f\n", _9);
+  ranf_start (310952);
+  # DEBUG m => 0
+  # DEBUG m => 0
+
+  <bb 6>:
+  # m_69 = PHI <m_12(16), 0(5)>
+  # ivtmp_109 = PHI <ivtmp_104(16), 1009(5)>
+  # DEBUG m => m_69
+  # DEBUG j => 0
+  __builtin_memcpy (&a, &ran_u, 800);
+
+  <bb 7>:
+  # graphite_IV.309_81 = PHI <0(6), graphite_IV.309_76(8)>
+  # ivtmp_119 = PHI <1909(6), ivtmp_22(8)>
+  # DEBUG j => NULL
+  _74 = (sizetype) graphite_IV.309_81;
+  _73 = _74 * 8;
+  _72 = &a + _73;
+  _75 = MEM[(double *)_72];
+  _55 = (sizetype) graphite_IV.309_81;
+  _54 = _55 + 63;
+  _39 = _54 * 8;
+  _38 = &a + _39;
+  _70 = *_38;
+  _23 = _70 + _75;
+  _17 = (int) _23;
+  _11 = (double) _17;
+  _4 = _23 - _11;
+  _2 = (sizetype) graphite_IV.309_81;
+  _1 = _2 + 100;
+  _169 = _1 * 8;
+  _168 = &a + _169;
+  *_168 = _4;
+  # DEBUG j => NULL
+  # DEBUG j => NULL
+  graphite_IV.309_76 = graphite_IV.309_81 + 1;
+  ivtmp_22 = ivtmp_119 - 1;
+  if (ivtmp_22 != 0)
+    goto <bb 8>;
+  else
+    goto <bb 9>;
+
+  <bb 8>:
+  goto <bb 7>;
+
+  <bb 9>:
+
+  <bb 20>:
+  if (0 != 0)
+    goto <bb 21>;
+  else
+    goto <bb 22>;
+
+  <bb 21>:
+  a_156 = &a;
+  ran_u_155 = &ran_u;
+  .paral_data_store.312.a = a_156;
+  .paral_data_store.312.ran_u = ran_u_155;
+  #pragma omp parallel num_threads(6) [child fn: int_rng_double_main__._loopfn.2 (.paral_data_store.312)]
+
+  <bb 25>:
+  .paral_data_param_151 = &.paral_data_store.312;
+  .paral_data_load.313_152 = (struct  *) .paral_data_param_151;
+  a_154 = .paral_data_load.313_152->a;
+  ran_u_153 = .paral_data_load.313_152->ran_u;
+
+  <bb 27>:
+  #pragma omp for schedule(static)
+  for (ivtmp_149 = 0; ivtmp_149 < 36; ivtmp_149 =  + 1)
+
+  <bb 10>:
+  # ivtmp_65 = PHI <ivtmp_149(27), ivtmp_63(11)>
+
+  <bb 23>:
+  # ivtmp_62 = PHI <ivtmp_65(10)>
+  graphite_IV.310_167 = (signed long) ivtmp_62;
+  ivtmp_160 = 37 - ivtmp_62;
+  _164 = (sizetype) graphite_IV.310_167;
+  _163 = _164 + 1909;
+  _162 = _163 * 8;
+  _161 = a_154 + _162;
+  _165 = *_161;
+  _158 = (sizetype) graphite_IV.310_167;
+  _142 = _158 + 1972;
+  _141 = _142 * 8;
+  _134 = a_154 + _141;
+  _159 = *_134;
+  _133 = _159 + _165;
+  _132 = (int) _133;
+  _131 = (double) _132;
+  _130 = _133 - _131;
+  _128 = (int) graphite_IV.310_167;
+  *ran_u_153[_128] = _130;
+  graphite_IV.310_166 = graphite_IV.310_167 + 1;
+  ivtmp_82 = ivtmp_160 - 1;
+
+  <bb 11>:
+  #pragma omp continue (ivtmp_63, ivtmp_65)
+  goto <bb 28>;
+
+  <bb 22>:
+
+  <bb 18>:
+  # graphite_IV.307_26 = PHI <0(22), graphite_IV.307_59(19)>
+  # ivtmp_28 = PHI <37(22), ivtmp_60(19)>
+  # DEBUG j => NULL
+  # DEBUG i => NULL
+  _29 = (sizetype) graphite_IV.307_26;
+  _30 = _29 + 1909;
+  _31 = _30 * 8;
+  _32 = &a + _31;
+  _33 = *_32;
+  _34 = (sizetype) graphite_IV.307_26;
+  _35 = _34 + 1972;
+  _36 = _35 * 8;
+  _78 = &a + _36;
+  _37 = *_78;
+  _111 = _37 + _33;
+  _108 = (int) _111;
+  _107 = (double) _108;
+  _56 = _111 - _107;
+  _57 = (int) graphite_IV.307_26;
+  ran_u[_57] = _56;
+  # DEBUG i => NULL
+  # DEBUG j => NULL
+  # DEBUG j => NULL
+  # DEBUG i => NULL
+  graphite_IV.307_59 = graphite_IV.307_26 + 1;
+  ivtmp_60 = ivtmp_28 - 1;
+  if (ivtmp_60 != 0)
+    goto <bb 19>;
+  else
+    goto <bb 12>;
+
+  <bb 19>:
+  goto <bb 18>;
+
+  <bb 28>:
+  #pragma omp return(nowait)
+
+  <bb 26>:
+  #pragma omp return
+
+  <bb 24>:
+  ivtmp_80 = 36;
+  graphite_IV.307_67 = (signed long) ivtmp_80;
+  ivtmp_68 = 37 - ivtmp_80;
+  # DEBUG j => NULL
+  # DEBUG i => NULL
+  _110 = (sizetype) graphite_IV.307_67;
+  _106 = _110 + 1909;
+  _105 = _106 * 8;
+  _40 = &a + _105;
+  _41 = *_40;
+  _42 = (sizetype) graphite_IV.307_67;
+  _43 = _42 + 1972;
+  _44 = _43 * 8;
+  _45 = &a + _44;
+  _46 = *_45;
+  _47 = _46 + _41;
+  _48 = (int) _47;
+  _49 = (double) _48;
+  _50 = _47 - _49;
+  _51 = (int) graphite_IV.307_67;
+  ran_u[_51] = _50;
+  # DEBUG i => NULL
+  # DEBUG j => NULL
+  # DEBUG j => NULL
+  # DEBUG i => NULL
+  graphite_IV.307_52 = graphite_IV.307_67 + 1;
+  ivtmp_53 = ivtmp_68 - 1;
+
+  <bb 12>:
+
+  <bb 13>:
+  # graphite_IV.308_118 = PHI <0(12), graphite_IV.308_117(14)>
+  # ivtmp_90 = PHI <63(12), ivtmp_127(14)>
+  # DEBUG j => NULL
+  # DEBUG i => NULL
+  _115 = (sizetype) graphite_IV.308_118;
+  _114 = _115 + 1946;
+  _113 = _114 * 8;
+  _112 = &a + _113;
+  _116 = *_112;
+  _98 = (int) graphite_IV.308_118;
+  _99 = ran_u[_98];
+  _97 = _99 + _116;
+  _96 = (int) _97;
+  _95 = (double) _96;
+  _94 = _97 - _95;
+  _92 = (int) graphite_IV.308_118;
+  _91 = _92 + 37;
+  ran_u[_91] = _94;
+  # DEBUG i => NULL
+  # DEBUG j => NULL
+  # DEBUG j => NULL
+  # DEBUG i => NULL
+  graphite_IV.308_117 = graphite_IV.308_118 + 1;
+  ivtmp_127 = ivtmp_90 - 1;
+  if (ivtmp_127 != 0)
+    goto <bb 14>;
+  else
+    goto <bb 15>;
+
+  <bb 14>:
+  goto <bb 13>;
+
+  <bb 15>:
+  m_12 = m_69 + 1;
+  # DEBUG m => m_12
+  # DEBUG m => m_12
+  ivtmp_104 = ivtmp_109 - 1;
+  if (ivtmp_104 == 0)
+    goto <bb 17>;
+  else
+    goto <bb 16>;
+
+  <bb 16>:
+  goto <bb 6>;
+
+  <bb 17>:
+  _13 = ran_u[0];
+  # DEBUG __fmt => "%.20f\n"
+  __printf_chk (1, "%.20f\n", _13);
+  a ={v} {CLOBBER};
+  return 0;
+
+}
+
+
+
+;; Function <built-in> (void_ranf_array_double___int_._loopfn.0, funcdef_no=37, decl_uid=3908, cgraph_uid=4, symbol_order=46)
+
+<built-in> (void * .paral_data_param)
+{
+  signed long graphite_IV.18;
+  unsigned long tt.24;
+  unsigned long q.23;
+  double * aa.19;
+  struct  * .paral_data_load.22;
+  double[100] * ran_u_5;
+  int _6;
+  unsigned long _7;
+  int _8;
+  unsigned long _9;
+  unsigned long _16;
+  unsigned long _17;
+  unsigned long _18;
+  unsigned long ivtmp_20;
+  unsigned long ivtmp_21;
+  sizetype _26;
+  sizetype _27;
+  double * _28;
+  double _29;
+  sizetype _31;
+  sizetype _32;
+  double * _33;
+  double _34;
+  double _35;
+  int _36;
+  double _37;
+  double _38;
+  int _39;
+
+  <bb 2>:
+  aa.19_4 = MEM[(struct  *).paral_data_param_1(D)].aa;
+  ran_u_5 = MEM[(struct  *).paral_data_param_1(D)].ran_u;
+  _6 = __builtin_omp_get_num_threads ();
+  _7 = (unsigned long) _6;
+  _8 = __builtin_omp_get_thread_num ();
+  _9 = (unsigned long) _8;
+  q.23_10 = 36 / _7;
+  tt.24_11 = 36 % _7;
+  if (_9 < tt.24_11)
+    goto <bb 8>;
+  else
+    goto <bb 3>;
+
+  <bb 3>:
+  # q.23_12 = PHI <q.23_13(8), q.23_10(2)>
+  # tt.24_14 = PHI <0(8), tt.24_11(2)>
+  _16 = _9 * q.23_12;
+  _17 = tt.24_14 + _16;
+  _18 = q.23_12 + _17;
+  if (_17 >= _18)
+    goto <bb 4>;
+  else
+    goto <bb 5>;
+
+  <bb 4>:
+  return;
+
+  <bb 5>:
+
+  <bb 6>:
+  # ivtmp_20 = PHI <_17(5), ivtmp_21(7)>
+  _26 = ivtmp_20 + 909;
+  _27 = _26 * 8;
+  _28 = aa.19_4 + _27;
+  _29 = *_28;
+  _31 = ivtmp_20 + 972;
+  _32 = _31 * 8;
+  _33 = aa.19_4 + _32;
+  _34 = *_33;
+  _35 = _29 + _34;
+  _36 = (int) _35;
+  _37 = (double) _36;
+  _38 = _35 - _37;
+  _39 = (int) ivtmp_20;
+  *ran_u_5[_39] = _38;
+  ivtmp_21 = ivtmp_20 + 1;
+  if (_18 > ivtmp_21)
+    goto <bb 7>;
+  else
+    goto <bb 4>;
+
+  <bb 7>:
+  goto <bb 6>;
+
+  <bb 8>:
+  q.23_13 = q.23_10 + 1;
+  goto <bb 3>;
+
+}
+
+
+
+;; Function <built-in> (void_ranf_array_double___int_._loopfn.1, funcdef_no=38, decl_uid=4071, cgraph_uid=7, symbol_order=49)
+
+<built-in> (void * .paral_data_param)
+{
+  signed long graphite_IV.142;
+  unsigned long tt.149;
+  unsigned long q.148;
+  double * aa.144;
+  int j.143;
+  struct  * .paral_data_load.147;
+  double[100] * ran_u_6;
+  int _7;
+  unsigned long _8;
+  int _9;
+  unsigned long _10;
+  unsigned long _17;
+  unsigned long _18;
+  unsigned long _19;
+  unsigned long ivtmp_21;
+  unsigned long ivtmp_22;
+  sizetype _28;
+  sizetype _29;
+  sizetype _30;
+  double * _31;
+  double _32;
+  sizetype _37;
+  double * _38;
+  double _39;
+  double _40;
+  int _41;
+  double _42;
+  double _43;
+  int _44;
+  sizetype pretmp_74;
+
+  <bb 2>:
+  j.143_4 = MEM[(struct  *).paral_data_param_1(D)].j;
+  aa.144_5 = MEM[(struct  *).paral_data_param_1(D)].aa;
+  ran_u_6 = MEM[(struct  *).paral_data_param_1(D)].ran_u;
+  _7 = __builtin_omp_get_num_threads ();
+  _8 = (unsigned long) _7;
+  _9 = __builtin_omp_get_thread_num ();
+  _10 = (unsigned long) _9;
+  q.148_11 = 36 / _8;
+  tt.149_12 = 36 % _8;
+  if (_10 < tt.149_12)
+    goto <bb 8>;
+  else
+    goto <bb 3>;
+
+  <bb 3>:
+  # q.148_13 = PHI <q.148_14(8), q.148_11(2)>
+  # tt.149_15 = PHI <0(8), tt.149_12(2)>
+  _17 = _10 * q.148_13;
+  _18 = tt.149_15 + _17;
+  _19 = q.148_13 + _18;
+  if (_18 >= _19)
+    goto <bb 4>;
+  else
+    goto <bb 5>;
+
+  <bb 4>:
+  return;
+
+  <bb 5>:
+  pretmp_74 = (sizetype) j.143_4;
+
+  <bb 6>:
+  # ivtmp_21 = PHI <_18(5), ivtmp_22(7)>
+  # DEBUG j.143 => NULL
+  _28 = ivtmp_21 + pretmp_74;
+  _29 = _28 * 8;
+  _30 = _29 + 18446744073709550816;
+  _31 = aa.144_5 + _30;
+  _32 = *_31;
+  _37 = _29 + 18446744073709551320;
+  _38 = aa.144_5 + _37;
+  _39 = *_38;
+  _40 = _32 + _39;
+  _41 = (int) _40;
+  _42 = (double) _41;
+  _43 = _40 - _42;
+  _44 = (int) ivtmp_21;
+  *ran_u_6[_44] = _43;
+  # DEBUG j.143 => NULL
+  # DEBUG j.143 => NULL
+  ivtmp_22 = ivtmp_21 + 1;
+  if (_19 > ivtmp_22)
+    goto <bb 7>;
+  else
+    goto <bb 4>;
+
+  <bb 7>:
+  goto <bb 6>;
+
+  <bb 8>:
+  q.148_14 = q.148_11 + 1;
+  goto <bb 3>;
+
+}
+
+
+
+;; Function <built-in> (int_rng_double_main__._loopfn.2, funcdef_no=40, decl_uid=4314, cgraph_uid=3, symbol_order=52)
+
+<built-in> (void * .paral_data_param)
+{
+  signed long graphite_IV.310;
+  unsigned long tt.315;
+  unsigned long q.314;
+  struct  * .paral_data_load.313;
+  double[2009] * a_4;
+  double[100] * ran_u_5;
+  int _6;
+  unsigned long _7;
+  int _8;
+  unsigned long _9;
+  unsigned long _16;
+  unsigned long _17;
+  unsigned long _18;
+  unsigned long ivtmp_20;
+  unsigned long ivtmp_21;
+  sizetype _26;
+  sizetype _27;
+  double * _28;
+  double _29;
+  sizetype _31;
+  sizetype _32;
+  double * _33;
+  double _34;
+  double _35;
+  int _36;
+  double _37;
+  double _38;
+  int _39;
+
+  <bb 2>:
+  a_4 = MEM[(struct  *).paral_data_param_1(D)].a;
+  ran_u_5 = MEM[(struct  *).paral_data_param_1(D)].ran_u;
+  _6 = __builtin_omp_get_num_threads ();
+  _7 = (unsigned long) _6;
+  _8 = __builtin_omp_get_thread_num ();
+  _9 = (unsigned long) _8;
+  q.314_10 = 36 / _7;
+  tt.315_11 = 36 % _7;
+  if (_9 < tt.315_11)
+    goto <bb 8>;
+  else
+    goto <bb 3>;
+
+  <bb 3>:
+  # q.314_12 = PHI <q.314_13(8), q.314_10(2)>
+  # tt.315_14 = PHI <0(8), tt.315_11(2)>
+  _16 = _9 * q.314_12;
+  _17 = tt.315_14 + _16;
+  _18 = q.314_12 + _17;
+  if (_17 >= _18)
+    goto <bb 4>;
+  else
+    goto <bb 5>;
+
+  <bb 4>:
+  return;
+
+  <bb 5>:
+
+  <bb 6>:
+  # ivtmp_20 = PHI <_17(5), ivtmp_21(7)>
+  _26 = ivtmp_20 + 1909;
+  _27 = _26 * 8;
+  _28 = a_4 + _27;
+  _29 = *_28;
+  _31 = ivtmp_20 + 1972;
+  _32 = _31 * 8;
+  _33 = a_4 + _32;
+  _34 = *_33;
+  _35 = _29 + _34;
+  _36 = (int) _35;
+  _37 = (double) _36;
+  _38 = _35 - _37;
+  _39 = (int) ivtmp_20;
+  *ran_u_5[_39] = _38;
+  ivtmp_21 = ivtmp_20 + 1;
+  if (_18 > ivtmp_21)
+    goto <bb 7>;
+  else
+    goto <bb 4>;
+
+  <bb 7>:
+  goto <bb 6>;
+
+  <bb 8>:
+  q.314_13 = q.314_10 + 1;
+  goto <bb 3>;
+
+}
+
+

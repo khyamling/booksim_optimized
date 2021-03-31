@@ -1,0 +1,1270 @@
+
+;; Function virtual PriorityArbiter::~PriorityArbiter() (_ZN15PriorityArbiterD0Ev, funcdef_no=1876, decl_uid=34708, cgraph_uid=548, symbol_order=550)
+
+Trying loop 1 as candidate
+loop 1 is innermost
+loop is not parallel according to graphite
+virtual PriorityArbiter::~PriorityArbiter() (struct PriorityArbiter * const this)
+{
+  struct _Node * __tmp;
+  struct Module * * _3;
+  char * const _10;
+  const char * _11;
+  char * const _12;
+  const char * _13;
+  struct _List_node_base * _48;
+
+  <bb 2>:
+  # DEBUG this => this_2(D)
+  this_2(D)->D.34729._vptr.Module = &MEM[(void *)&_ZTV15PriorityArbiter + 16B];
+  # DEBUG D#79 => &this_2(D)->_requests
+  # DEBUG this => D#79
+  # DEBUG D#78 => &D#79->D.34669
+  # DEBUG this => D#78
+  # DEBUG this => D#78
+  __tmp_5 = MEM[(struct _List_base *)this_2(D) + 104B]._M_impl._M_node.D.14630._M_next;
+  # DEBUG __cur => __tmp_5
+  # DEBUG __cur => __tmp_5
+  _48 = &MEM[(struct _List_base *)this_2(D) + 104B]._M_impl._M_node.D.14630;
+  if (__tmp_5 == _48)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  # DEBUG D#77 => &D#78->_M_impl
+  # DEBUG this => D#77
+  # DEBUG this => D#77
+  # DEBUG this => D#77
+  MEM[(struct  &)this_2(D) + 104] ={v} {CLOBBER};
+  # DEBUG D#118 => &this_2(D)->D.34729
+  # DEBUG this => D#118
+  MEM[(struct Module *)this_2(D)]._vptr.Module = &MEM[(void *)&_ZTV6Module + 16B];
+  # DEBUG D#70 => &D#118->_children
+  # DEBUG this => D#70
+  # DEBUG D#64 => &D#70->D.27711
+  # DEBUG this => D#64
+  # DEBUG D#67 => D#70->D.27711._M_impl._M_finish
+  # DEBUG D#66 => D#70->D.27711._M_impl._M_start
+  # DEBUG D#30 => D#66
+  # DEBUG D#31 => D#67
+  # DEBUG __first => D#30
+  # DEBUG __last => D#31
+  # DEBUG D.36175 => D#32
+  # DEBUG D#29 => D#31
+  # DEBUG D#28 => D#30
+  # DEBUG D#26 => D#28
+  # DEBUG D#27 => D#29
+  # DEBUG __first => D#26
+  # DEBUG __last => D#27
+  # DEBUG D#25 => D#27
+  # DEBUG D#24 => D#26
+  # DEBUG D#22 => D#24
+  # DEBUG D#23 => D#25
+  # DEBUG D.35980 => D#22
+  # DEBUG D.35979 => D#23
+  # DEBUG D#65 => &D#70->D.27711
+  # DEBUG this => D#65
+  # DEBUG D#63 => D#65->_M_impl._M_end_of_storage
+  # DEBUG D#62 => (long int) D#63
+  _3 = MEM[(struct _Vector_base *)this_2(D) + 72B]._M_impl._M_start;
+  # DEBUG D#61 => (long int) _3
+  # DEBUG D#60 => D#62 - D#61
+  # DEBUG D#59 => D#60 /[ex] 8
+  # DEBUG D#56 => D#65
+  # DEBUG D#57 => (long unsigned int) D#59
+  # DEBUG __p => _3
+  # DEBUG this => D#56
+  # DEBUG __n => D#57
+  # DEBUG D#55 => D#57
+  # DEBUG D#54 => D#56
+  if (_3 != 0B)
+    goto <bb 7>;
+  else
+    goto <bb 8>;
+
+  <bb 4>:
+
+  <bb 5>:
+  # __tmp_45 = PHI <__tmp_5(4), __tmp_8(6)>
+  # DEBUG __cur => __tmp_45
+  # DEBUG __tmp => __tmp_45
+  __tmp_8 = __tmp_45->D.35073._M_next;
+  # DEBUG __cur => __tmp_8
+  # DEBUG D#76 => &__tmp_45->_M_data
+  # DEBUG __r => D#76
+  # DEBUG D#75 => D#78
+  # DEBUG this => D#75
+  # DEBUG D#74 => D#75
+  # DEBUG this => D#74
+  # DEBUG this => NULL
+  # DEBUG D.36251 => NULL
+  # DEBUG this => NULL
+  # DEBUG this => D#17
+  # DEBUG __p => D#18
+  # DEBUG this => NULL
+  # DEBUG this => NULL
+  # DEBUG this => D#78
+  # DEBUG __p => __tmp_45
+  # DEBUG D#35 => &D#78->_M_impl
+  # DEBUG D#33 => D#35
+  # DEBUG D#34 => 1
+  # DEBUG __p => __tmp_45
+  # DEBUG this => D#33
+  # DEBUG D.36602 => D#34
+  operator delete (__tmp_45);
+  # DEBUG __cur => __tmp_8
+  if (__tmp_8 == _48)
+    goto <bb 3>;
+  else
+    goto <bb 6>;
+
+  <bb 6>:
+  goto <bb 5>;
+
+  <bb 7>:
+  # DEBUG D#53 => &D#54->_M_impl
+  # DEBUG D#51 => D#53
+  # DEBUG D#52 => D#55
+  # DEBUG __p => _3
+  # DEBUG __a => D#51
+  # DEBUG __n => D#52
+  # DEBUG D#50 => D#52
+  # DEBUG D#49 => D#51
+  # DEBUG D#47 => D#49
+  # DEBUG D#48 => D#50
+  # DEBUG __p => _3
+  # DEBUG this => D#47
+  # DEBUG D.36618 => D#48
+  operator delete (_3);
+
+  <bb 8>:
+  # DEBUG D#58 => &D#65->_M_impl
+  # DEBUG this => D#58
+  # DEBUG this => D#58
+  # DEBUG this => D#58
+  MEM[(struct  &)this_2(D) + 72] ={v} {CLOBBER};
+  # DEBUG D#69 => &D#118->_fullname
+  # DEBUG this => D#69
+  # DEBUG this => D#69
+  # DEBUG this => D#69
+  _10 = MEM[(char * *)this_2(D) + 40B];
+  # DEBUG D#1 => D#69
+  # DEBUG this => D#1
+  # DEBUG this => D#69
+  _11 = &MEM[(const struct basic_string *)this_2(D) + 40B].D.11539._M_local_buf;
+  if (_10 != _11)
+    goto <bb 9>;
+  else
+    goto <bb 10>;
+
+  <bb 9>:
+  # DEBUG D#45 => MEM[(struct basic_string *)D#69].D.11539._M_allocated_capacity
+  # DEBUG D#44 => D#45
+  # DEBUG this => D#69
+  # DEBUG __size => D#44
+  # DEBUG D#43 => D#44
+  # DEBUG D#1 => D#69
+  # DEBUG this => D#1
+  # DEBUG this => D#69
+  # DEBUG D#42 => &MEM[(struct basic_string *)D#69]._M_dataplus
+  # DEBUG D#40 => D#42
+  # DEBUG D#41 => D#43 + 1
+  # DEBUG __p => _10
+  # DEBUG __a => D#40
+  # DEBUG __n => D#41
+  # DEBUG D#39 => D#41
+  # DEBUG D#38 => D#40
+  # DEBUG D#36 => D#38
+  # DEBUG D#37 => D#39
+  # DEBUG __p => _10
+  # DEBUG this => D#36
+  # DEBUG D.36631 => D#37
+  operator delete (_10);
+
+  <bb 10>:
+  # DEBUG D#46 => &MEM[(struct basic_string *)D#69]._M_dataplus
+  # DEBUG this => D#46
+  # DEBUG this => D#46
+  # DEBUG this => D#46
+  MEM[(struct  &)this_2(D) + 40] ={v} {CLOBBER};
+  # DEBUG D#68 => &D#118->_name
+  # DEBUG this => D#68
+  # DEBUG this => D#68
+  # DEBUG this => D#68
+  _12 = MEM[(char * *)this_2(D) + 8B];
+  # DEBUG D#1 => D#68
+  # DEBUG this => D#1
+  # DEBUG this => D#68
+  _13 = &MEM[(const struct basic_string *)this_2(D) + 8B].D.11539._M_local_buf;
+  if (_12 != _13)
+    goto <bb 11>;
+  else
+    goto <bb 12>;
+
+  <bb 11>:
+  # DEBUG D#45 => MEM[(struct basic_string *)D#68].D.11539._M_allocated_capacity
+  # DEBUG D#44 => D#45
+  # DEBUG this => D#68
+  # DEBUG __size => D#44
+  # DEBUG D#43 => D#44
+  # DEBUG D#1 => D#68
+  # DEBUG this => D#1
+  # DEBUG this => D#68
+  # DEBUG D#42 => &MEM[(struct basic_string *)D#68]._M_dataplus
+  # DEBUG D#40 => D#42
+  # DEBUG D#41 => D#43 + 1
+  # DEBUG __p => _12
+  # DEBUG __a => D#40
+  # DEBUG __n => D#41
+  # DEBUG D#39 => D#41
+  # DEBUG D#38 => D#40
+  # DEBUG D#36 => D#38
+  # DEBUG D#37 => D#39
+  # DEBUG __p => _12
+  # DEBUG this => D#36
+  # DEBUG D.36646 => D#37
+  operator delete (_12);
+
+  <bb 12>:
+  # DEBUG D#46 => &MEM[(struct basic_string *)D#68]._M_dataplus
+  # DEBUG this => D#46
+  # DEBUG this => D#46
+  # DEBUG this => D#46
+  MEM[(struct  &)this_2(D)] ={v} {CLOBBER};
+  operator delete (this_2(D));
+  return;
+
+}
+
+
+
+;; Function PriorityArbiter::~PriorityArbiter() (_ZN15PriorityArbiterD2Ev, funcdef_no=1874, decl_uid=34714, cgraph_uid=546, symbol_order=548)
+
+Trying loop 1 as candidate
+loop 1 is innermost
+loop is not parallel according to graphite
+PriorityArbiter::~PriorityArbiter() (struct PriorityArbiter * const this)
+{
+  struct _Node * __tmp;
+  struct Module * * _18;
+  char * const _19;
+  const char * _20;
+  char * const _21;
+  const char * _22;
+  struct _List_node_base * _47;
+
+  <bb 2>:
+  this_2(D)->D.34729._vptr.Module = &MEM[(void *)&_ZTV15PriorityArbiter + 16B];
+  # DEBUG D#79 => &this_2(D)->_requests
+  # DEBUG this => D#79
+  # DEBUG D#78 => &D#79->D.34669
+  # DEBUG this => D#78
+  # DEBUG this => D#78
+  __tmp_8 = MEM[(struct _List_base *)this_2(D) + 104B]._M_impl._M_node.D.14630._M_next;
+  # DEBUG __cur => __tmp_8
+  # DEBUG __cur => __tmp_8
+  _47 = &MEM[(struct _List_base *)this_2(D) + 104B]._M_impl._M_node.D.14630;
+  if (__tmp_8 == _47)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  # DEBUG D#77 => &D#78->_M_impl
+  # DEBUG this => D#77
+  # DEBUG this => D#77
+  # DEBUG this => D#77
+  MEM[(struct  &)this_2(D) + 104] ={v} {CLOBBER};
+  # DEBUG D#119 => &this_2(D)->D.34729
+  # DEBUG this => D#119
+  MEM[(struct Module *)this_2(D)]._vptr.Module = &MEM[(void *)&_ZTV6Module + 16B];
+  # DEBUG D#70 => &D#119->_children
+  # DEBUG this => D#70
+  # DEBUG D#64 => &D#70->D.27711
+  # DEBUG this => D#64
+  # DEBUG D#67 => D#70->D.27711._M_impl._M_finish
+  # DEBUG D#66 => D#70->D.27711._M_impl._M_start
+  # DEBUG D#30 => D#66
+  # DEBUG D#31 => D#67
+  # DEBUG __first => D#30
+  # DEBUG __last => D#31
+  # DEBUG D.36175 => D#32
+  # DEBUG D#29 => D#31
+  # DEBUG D#28 => D#30
+  # DEBUG D#26 => D#28
+  # DEBUG D#27 => D#29
+  # DEBUG __first => D#26
+  # DEBUG __last => D#27
+  # DEBUG D#25 => D#27
+  # DEBUG D#24 => D#26
+  # DEBUG D#22 => D#24
+  # DEBUG D#23 => D#25
+  # DEBUG D.35980 => D#22
+  # DEBUG D.35979 => D#23
+  # DEBUG D#65 => &D#70->D.27711
+  # DEBUG this => D#65
+  # DEBUG D#63 => D#65->_M_impl._M_end_of_storage
+  # DEBUG D#62 => (long int) D#63
+  _18 = MEM[(struct _Vector_base *)this_2(D) + 72B]._M_impl._M_start;
+  # DEBUG D#61 => (long int) _18
+  # DEBUG D#60 => D#62 - D#61
+  # DEBUG D#59 => D#60 /[ex] 8
+  # DEBUG D#56 => D#65
+  # DEBUG D#57 => (long unsigned int) D#59
+  # DEBUG __p => _18
+  # DEBUG this => D#56
+  # DEBUG __n => D#57
+  # DEBUG D#55 => D#57
+  # DEBUG D#54 => D#56
+  if (_18 != 0B)
+    goto <bb 7>;
+  else
+    goto <bb 8>;
+
+  <bb 4>:
+
+  <bb 5>:
+  # __tmp_45 = PHI <__tmp_8(4), __tmp_11(6)>
+  # DEBUG __cur => __tmp_45
+  # DEBUG __tmp => __tmp_45
+  __tmp_11 = __tmp_45->D.35073._M_next;
+  # DEBUG __cur => __tmp_11
+  # DEBUG D#76 => &__tmp_45->_M_data
+  # DEBUG __r => D#76
+  # DEBUG D#75 => D#78
+  # DEBUG this => D#75
+  # DEBUG D#74 => D#75
+  # DEBUG this => D#74
+  # DEBUG this => NULL
+  # DEBUG D.36251 => NULL
+  # DEBUG this => NULL
+  # DEBUG this => D#17
+  # DEBUG __p => D#18
+  # DEBUG this => NULL
+  # DEBUG this => NULL
+  # DEBUG this => D#78
+  # DEBUG __p => __tmp_45
+  # DEBUG D#35 => &D#78->_M_impl
+  # DEBUG D#33 => D#35
+  # DEBUG D#34 => 1
+  # DEBUG __p => __tmp_45
+  # DEBUG this => D#33
+  # DEBUG D.36312 => D#34
+  operator delete (__tmp_45);
+  # DEBUG __cur => __tmp_11
+  if (__tmp_11 == _47)
+    goto <bb 3>;
+  else
+    goto <bb 6>;
+
+  <bb 6>:
+  goto <bb 5>;
+
+  <bb 7>:
+  # DEBUG D#53 => &D#54->_M_impl
+  # DEBUG D#51 => D#53
+  # DEBUG D#52 => D#55
+  # DEBUG __p => _18
+  # DEBUG __a => D#51
+  # DEBUG __n => D#52
+  # DEBUG D#50 => D#52
+  # DEBUG D#49 => D#51
+  # DEBUG D#47 => D#49
+  # DEBUG D#48 => D#50
+  # DEBUG __p => _18
+  # DEBUG this => D#47
+  # DEBUG D.36670 => D#48
+  operator delete (_18);
+
+  <bb 8>:
+  # DEBUG D#58 => &D#65->_M_impl
+  # DEBUG this => D#58
+  # DEBUG this => D#58
+  # DEBUG this => D#58
+  MEM[(struct  &)this_2(D) + 72] ={v} {CLOBBER};
+  # DEBUG D#69 => &D#119->_fullname
+  # DEBUG this => D#69
+  # DEBUG this => D#69
+  # DEBUG this => D#69
+  _19 = MEM[(char * *)this_2(D) + 40B];
+  # DEBUG D#1 => D#69
+  # DEBUG this => D#1
+  # DEBUG this => D#69
+  _20 = &MEM[(const struct basic_string *)this_2(D) + 40B].D.11539._M_local_buf;
+  if (_19 != _20)
+    goto <bb 9>;
+  else
+    goto <bb 10>;
+
+  <bb 9>:
+  # DEBUG D#45 => MEM[(struct basic_string *)D#69].D.11539._M_allocated_capacity
+  # DEBUG D#44 => D#45
+  # DEBUG this => D#69
+  # DEBUG __size => D#44
+  # DEBUG D#43 => D#44
+  # DEBUG D#1 => D#69
+  # DEBUG this => D#1
+  # DEBUG this => D#69
+  # DEBUG D#42 => &MEM[(struct basic_string *)D#69]._M_dataplus
+  # DEBUG D#40 => D#42
+  # DEBUG D#41 => D#43 + 1
+  # DEBUG __p => _19
+  # DEBUG __a => D#40
+  # DEBUG __n => D#41
+  # DEBUG D#39 => D#41
+  # DEBUG D#38 => D#40
+  # DEBUG D#36 => D#38
+  # DEBUG D#37 => D#39
+  # DEBUG __p => _19
+  # DEBUG this => D#36
+  # DEBUG D.36683 => D#37
+  operator delete (_19);
+
+  <bb 10>:
+  # DEBUG D#46 => &MEM[(struct basic_string *)D#69]._M_dataplus
+  # DEBUG this => D#46
+  # DEBUG this => D#46
+  # DEBUG this => D#46
+  MEM[(struct  &)this_2(D) + 40] ={v} {CLOBBER};
+  # DEBUG D#68 => &D#119->_name
+  # DEBUG this => D#68
+  # DEBUG this => D#68
+  # DEBUG this => D#68
+  _21 = MEM[(char * *)this_2(D) + 8B];
+  # DEBUG D#1 => D#68
+  # DEBUG this => D#1
+  # DEBUG this => D#68
+  _22 = &MEM[(const struct basic_string *)this_2(D) + 8B].D.11539._M_local_buf;
+  if (_21 != _22)
+    goto <bb 11>;
+  else
+    goto <bb 12>;
+
+  <bb 11>:
+  # DEBUG D#45 => MEM[(struct basic_string *)D#68].D.11539._M_allocated_capacity
+  # DEBUG D#44 => D#45
+  # DEBUG this => D#68
+  # DEBUG __size => D#44
+  # DEBUG D#43 => D#44
+  # DEBUG D#1 => D#68
+  # DEBUG this => D#1
+  # DEBUG this => D#68
+  # DEBUG D#42 => &MEM[(struct basic_string *)D#68]._M_dataplus
+  # DEBUG D#40 => D#42
+  # DEBUG D#41 => D#43 + 1
+  # DEBUG __p => _21
+  # DEBUG __a => D#40
+  # DEBUG __n => D#41
+  # DEBUG D#39 => D#41
+  # DEBUG D#38 => D#40
+  # DEBUG D#36 => D#38
+  # DEBUG D#37 => D#39
+  # DEBUG __p => _21
+  # DEBUG this => D#36
+  # DEBUG D.36698 => D#37
+  operator delete (_21);
+
+  <bb 12>:
+  # DEBUG D#46 => &MEM[(struct basic_string *)D#68]._M_dataplus
+  # DEBUG this => D#46
+  # DEBUG this => D#46
+  # DEBUG this => D#46
+  MEM[(struct  &)this_2(D)] ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function void PriorityArbiter::Clear() (_ZN15PriorityArbiter5ClearEv, funcdef_no=1743, decl_uid=34679, cgraph_uid=415, symbol_order=416)
+
+Trying loop 1 as candidate
+loop 1 is innermost
+loop is not parallel according to graphite
+void PriorityArbiter::Clear() (struct PriorityArbiter * const this)
+{
+  struct _Node * __tmp;
+  struct _List_node_base * _15;
+
+  <bb 2>:
+  # DEBUG D#82 => &this_1(D)->_requests
+  # DEBUG this => D#82
+  # DEBUG D#80 => &D#82->D.34669
+  # DEBUG this => D#80
+  __tmp_4 = MEM[(struct _List_base *)this_1(D) + 104B]._M_impl._M_node.D.14630._M_next;
+  # DEBUG __cur => __tmp_4
+  # DEBUG __cur => __tmp_4
+  _15 = &MEM[(struct _List_base *)this_1(D) + 104B]._M_impl._M_node.D.14630;
+  if (__tmp_4 == _15)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  # DEBUG D#81 => &D#82->D.34669
+  # DEBUG this => D#81
+  MEM[(struct _List_base *)this_1(D) + 104B]._M_impl._M_node.D.14630._M_next = _15;
+  MEM[(struct _List_base *)this_1(D) + 104B]._M_impl._M_node.D.14630._M_prev = _15;
+  # DEBUG D#19 => D#81
+  # DEBUG __n => 0
+  # DEBUG this => D#19
+  MEM[(long unsigned int *)this_1(D) + 120B] = 0;
+  return;
+
+  <bb 4>:
+
+  <bb 5>:
+  # __tmp_18 = PHI <__tmp_4(4), __tmp_7(6)>
+  # DEBUG __cur => __tmp_18
+  # DEBUG __tmp => __tmp_18
+  __tmp_7 = __tmp_18->D.35073._M_next;
+  # DEBUG __cur => __tmp_7
+  # DEBUG D#76 => &__tmp_18->_M_data
+  # DEBUG __r => D#76
+  # DEBUG D#75 => D#80
+  # DEBUG this => D#75
+  # DEBUG D#74 => D#75
+  # DEBUG this => D#74
+  # DEBUG this => NULL
+  # DEBUG D.36251 => NULL
+  # DEBUG this => NULL
+  # DEBUG this => D#17
+  # DEBUG __p => D#18
+  # DEBUG this => NULL
+  # DEBUG this => NULL
+  # DEBUG this => D#80
+  # DEBUG __p => __tmp_18
+  # DEBUG D#35 => &D#80->_M_impl
+  # DEBUG D#33 => D#35
+  # DEBUG D#34 => 1
+  # DEBUG __p => __tmp_18
+  # DEBUG this => D#33
+  # DEBUG D.36341 => D#34
+  operator delete (__tmp_18);
+  # DEBUG __cur => __tmp_7
+  if (__tmp_7 == _15)
+    goto <bb 3>;
+  else
+    goto <bb 6>;
+
+  <bb 6>:
+  goto <bb 5>;
+
+}
+
+
+
+;; Function void PriorityArbiter::AddRequest(int, int, int) (_ZN15PriorityArbiter10AddRequestEiii, funcdef_no=1744, decl_uid=34684, cgraph_uid=416, symbol_order=417)
+
+Trying loop 1 as candidate
+loop 1 is innermost
+loop is not parallel according to graphite
+void PriorityArbiter::AddRequest(int, int, int) (struct PriorityArbiter * const this, int in, int label, int pri)
+{
+  int r$pri;
+  int r$label;
+  int r$in;
+  struct iterator D.36738;
+  struct _List_node_base * SR.142;
+  struct iterator __position;
+  struct _List_node_base * insert_point$_M_node;
+  bool add;
+  bool del;
+  struct iterator insert_point;
+  struct sRequest r;
+  struct iterator D.34847;
+  struct _List_node_base * _1;
+  int _2;
+  int prephitmp_4;
+  int _16;
+  int _19;
+  int _26;
+  struct _List_node * _33;
+  struct _List_node_base * _36;
+  long unsigned int _37;
+  long unsigned int _38;
+
+  <bb 2>:
+  # DEBUG this => &insert_point
+  # DEBUG insert_point$_M_node => 0B
+  # DEBUG r$in => in_9(D)
+  # DEBUG r$label => label_11(D)
+  # DEBUG r$pri => pri_13(D)
+  # DEBUG D#108 => &this_15(D)->_requests
+  insert_point$_M_node_24 = MEM[(struct _List_node_base * *)this_15(D) + 104B];
+  # DEBUG D#3 => D#108
+  # DEBUG this => D#3
+  # DEBUG this => NULL
+  # DEBUG __x => insert_point$_M_node_24
+  # DEBUG insert_point$_M_node => insert_point$_M_node_24
+  # DEBUG insert_point$_M_node => insert_point$_M_node_24
+  # DEBUG D#109 => &this_15(D)->_requests
+  # DEBUG this => D#109
+  _1 = &MEM[(struct list *)this_15(D) + 104B].D.34669._M_impl._M_node.D.14630;
+  # DEBUG this => NULL
+  # DEBUG __x => _1
+  # DEBUG this => &insert_point
+  # DEBUG __x => &D.34842
+  if (_1 != insert_point$_M_node_24)
+    goto <bb 3>;
+  else
+    goto <bb 17>;
+
+  <bb 3>:
+  # DEBUG this => &insert_point
+  # DEBUG D#110 => &MEM[(struct _Node *)insert_point$_M_node_24]._M_data
+  # DEBUG __r => D#110
+  _2 = MEM[(struct sRequest *)insert_point$_M_node_24 + 16B].in;
+  if (_2 < in_9(D))
+    goto <bb 12>;
+  else
+    goto <bb 16>;
+
+  <bb 4>:
+  # DEBUG this => &insert_point
+  # DEBUG D#110 => &MEM[(struct _Node *)insert_point$_M_node_25]._M_data
+  # DEBUG __r => D#110
+  _16 = MEM[(struct sRequest *)insert_point$_M_node_25 + 16B].in;
+  if (in_9(D) > _16)
+    goto <bb 6>;
+  else
+    goto <bb 5>;
+
+  <bb 5>:
+  # _26 = PHI <_16(4)>
+  # insert_point$_M_node_27 = PHI <insert_point$_M_node_25(4)>
+  goto <bb 16>;
+
+  <bb 6>:
+  goto <bb 13>;
+
+  <bb 7>:
+  # del_21 = PHI <0(18), 1(15), 0(16)>
+  # insert_point$_M_node_53 = PHI <insert_point$_M_node_35(18), insert_point$_M_node_45(15), insert_point$_M_node_45(16)>
+  # DEBUG add => NULL
+  # DEBUG del => del_21
+  # DEBUG D#121 => &this_15(D)->_requests
+  # DEBUG this => D#121
+  # DEBUG __x => &r
+  # DEBUG D#106 => D#121
+  # DEBUG __x => &r
+  # DEBUG this => D#106
+  # DEBUG D#105 => D#106
+  # DEBUG D#104 => D#106
+  # DEBUG D#103 => &D#104->D.34669
+  # DEBUG D#101 => D#103
+  # DEBUG this => D#101
+  # DEBUG D#100 => D#101
+  # DEBUG D#99 => &D#100->_M_impl
+  # DEBUG D#97 => D#99
+  # DEBUG D#98 => 0B
+  # DEBUG __n => 1
+  # DEBUG this => D#97
+  # DEBUG D.36727 => D#98
+  # DEBUG D#96 => D#97
+  # DEBUG D#95 => D#96
+  # DEBUG this => D#95
+  _33 = operator new (32);
+  # DEBUG __p => _33
+  # DEBUG D#120 => &MEM[(struct _Node *)_33]._M_data
+  # DEBUG __r => D#120
+  # DEBUG D#102 => &D#105->D.34669
+  # DEBUG D#75 => D#102
+  # DEBUG this => D#75
+  # DEBUG D#74 => D#75
+  # DEBUG this => D#74
+  # DEBUG this => NULL
+  # DEBUG D.36251 => NULL
+  # DEBUG this => NULL
+  # DEBUG __p => NULL
+  # DEBUG __val => &r
+  # DEBUG this => D#20
+  # DEBUG D#2 => 12
+  # DEBUG __p => NULL
+  # DEBUG D.35946 => D#2
+  MEM[(struct sRequest *)_33 + 16B] = in_9(D);
+  MEM[(struct sRequest *)_33 + 20B] = label_11(D);
+  MEM[(struct sRequest *)_33 + 24B] = pri_13(D);
+  # DEBUG this => NULL
+  # DEBUG this => NULL
+  # DEBUG __tmp => _33
+  # DEBUG this => &__position
+  _36 = &MEM[(struct _Node *)_33].D.35073;
+  std::__detail::_List_node_base::_M_hook (_36, insert_point$_M_node_53);
+  # DEBUG D#107 => &D#121->D.34669
+  # DEBUG D#16 => D#107
+  # DEBUG __n => 1
+  # DEBUG this => D#16
+  _37 = MEM[(long unsigned int *)this_15(D) + 120B];
+  # DEBUG this => NULL
+  # DEBUG __x => _33
+  if (del_21 != 0)
+    goto <bb 10>;
+  else
+    goto <bb 8>;
+
+  <bb 8>:
+  _38 = _37 + 1;
+  MEM[(long unsigned int *)this_15(D) + 120B] = _38;
+
+  <bb 9>:
+
+  <bb 20>:
+  goto <bb 11>;
+
+  <bb 10>:
+  # DEBUG D#117 => &this_15(D)->_requests
+  # DEBUG this => D#117
+  # DEBUG __position$_M_node => insert_point$_M_node_53
+  # DEBUG D#116 => insert_point$_M_node_53->_M_next
+  # DEBUG this => &__ret
+  # DEBUG __x => D#116
+  # DEBUG __ret$_M_node => D#116
+  # DEBUG this => &__position
+  # DEBUG this => D#117
+  # DEBUG __position => insert_point$_M_node_53
+  # DEBUG __position$_M_node => insert_point$_M_node_53
+  # DEBUG D#83 => &D#117->D.34669
+  # DEBUG D#21 => D#83
+  # DEBUG __n => 1
+  # DEBUG this => D#21
+  MEM[(long unsigned int *)this_15(D) + 120B] = _37;
+  std::__detail::_List_node_base::_M_unhook (insert_point$_M_node_53);
+  # DEBUG __n => insert_point$_M_node_53
+  # DEBUG D#84 => &MEM[(struct _Node *)insert_point$_M_node_53]._M_data
+  # DEBUG __r => D#84
+  # DEBUG D#86 => &D#117->D.34669
+  # DEBUG D#75 => D#86
+  # DEBUG this => D#75
+  # DEBUG D#74 => D#75
+  # DEBUG this => D#74
+  # DEBUG this => NULL
+  # DEBUG D.36251 => NULL
+  # DEBUG this => NULL
+  # DEBUG this => D#17
+  # DEBUG __p => D#18
+  # DEBUG this => NULL
+  # DEBUG this => NULL
+  # DEBUG D#85 => &D#117->D.34669
+  # DEBUG this => D#85
+  # DEBUG __p => insert_point$_M_node_53
+  # DEBUG D#35 => &D#85->_M_impl
+  # DEBUG D#33 => D#35
+  # DEBUG D#34 => 1
+  # DEBUG __p => insert_point$_M_node_53
+  # DEBUG this => D#33
+  # DEBUG D.36573 => D#34
+  operator delete (insert_point$_M_node_53);
+  # DEBUG D#87 => {CLOBBER}
+  # DEBUG __ret$_M_node => D#87
+  # DEBUG D.36579 => D#116
+
+  <bb 11>:
+
+  <bb 19>:
+  # DEBUG D#122 => {CLOBBER}
+  # DEBUG r$in => D#122
+  # DEBUG D#123 => {CLOBBER}
+  # DEBUG r$label => D#123
+  # DEBUG D#124 => {CLOBBER}
+  # DEBUG r$pri => D#124
+  # DEBUG D#115 => {CLOBBER}
+  # DEBUG insert_point$_M_node => D#115
+  return;
+
+  <bb 12>:
+
+  <bb 13>:
+  # insert_point$_M_node_57 = PHI <insert_point$_M_node_24(12), insert_point$_M_node_25(6)>
+  # DEBUG insert_point$_M_node => insert_point$_M_node_57
+  # DEBUG D#109 => &this_15(D)->_requests
+  # DEBUG this => D#109
+  # DEBUG this => NULL
+  # DEBUG __x => _1
+  # DEBUG this => &insert_point
+  # DEBUG __x => &D.34842
+  # DEBUG this => &insert_point
+  # DEBUG D#110 => &MEM[(struct _Node *)insert_point$_M_node_57]._M_data
+  # DEBUG __r => D#110
+  # DEBUG this => &insert_point
+  insert_point$_M_node_25 = insert_point$_M_node_57->_M_next;
+  # DEBUG insert_point$_M_node => insert_point$_M_node_25
+  # DEBUG insert_point$_M_node => insert_point$_M_node_25
+  # DEBUG D#109 => &this_15(D)->_requests
+  # DEBUG this => D#109
+  # DEBUG this => NULL
+  # DEBUG __x => _1
+  # DEBUG this => &insert_point
+  # DEBUG __x => &D.34842
+  if (_1 != insert_point$_M_node_25)
+    goto <bb 4>;
+  else
+    goto <bb 14>;
+
+  <bb 14>:
+  # insert_point$_M_node_23 = PHI <insert_point$_M_node_25(13)>
+  goto <bb 17>;
+
+  <bb 15>:
+  # DEBUG this => &insert_point
+  # DEBUG D#113 => &MEM[(struct _Node *)insert_point$_M_node_45]._M_data
+  # DEBUG __r => D#113
+  _19 = MEM[(struct sRequest *)insert_point$_M_node_45 + 16B].pri;
+  if (pri_13(D) > _19)
+    goto <bb 7>;
+  else
+    goto <bb 9>;
+
+  <bb 16>:
+  # insert_point$_M_node_45 = PHI <insert_point$_M_node_24(3), insert_point$_M_node_27(5)>
+  # prephitmp_4 = PHI <_2(3), _26(5)>
+  # DEBUG del => 0
+  # DEBUG add => 1
+  # DEBUG D#111 => &this_15(D)->_requests
+  # DEBUG this => D#111
+  # DEBUG this => NULL
+  # DEBUG __x => _1
+  # DEBUG this => &insert_point
+  # DEBUG __x => &D.34845
+  # DEBUG del => 0
+  # DEBUG add => 1
+  # DEBUG D#111 => &this_15(D)->_requests
+  # DEBUG this => D#111
+  # DEBUG this => NULL
+  # DEBUG __x => _1
+  # DEBUG this => &insert_point
+  # DEBUG __x => &D.34845
+  # DEBUG this => &insert_point
+  # DEBUG D#112 => &MEM[(struct _Node *)insert_point$_M_node_45]._M_data
+  # DEBUG __r => D#112
+  if (prephitmp_4 == in_9(D))
+    goto <bb 15>;
+  else
+    goto <bb 7>;
+
+  <bb 17>:
+  # insert_point$_M_node_35 = PHI <insert_point$_M_node_24(2), insert_point$_M_node_23(14)>
+
+  <bb 18>:
+  # DEBUG del => 0
+  # DEBUG add => 1
+  # DEBUG D#111 => &this_15(D)->_requests
+  # DEBUG this => D#111
+  # DEBUG this => NULL
+  # DEBUG __x => NULL
+  # DEBUG this => &insert_point
+  # DEBUG __x => &D.34845
+  goto <bb 7>;
+
+}
+
+
+
+;; Function void PriorityArbiter::RemoveRequest(int, int) (_ZN15PriorityArbiter13RemoveRequestEii, funcdef_no=1745, decl_uid=34688, cgraph_uid=417, symbol_order=418)
+
+Trying loop 1 as candidate
+loop 1 is innermost
+loop is not parallel according to graphite
+void PriorityArbiter::RemoveRequest(int, int) (struct PriorityArbiter * const this, int in, int label)
+{
+  struct _List_node_base * erase_point$_M_node;
+  static const char __PRETTY_FUNCTION__[46] = "void PriorityArbiter::RemoveRequest(int, int)";
+  struct _List_node_base * _1;
+  int _6;
+  long unsigned int _13;
+  long unsigned int _14;
+  int _19;
+
+  <bb 2>:
+  # DEBUG this => &erase_point
+  # DEBUG erase_point$_M_node => 0B
+  # DEBUG D#88 => &this_4(D)->_requests
+  erase_point$_M_node_11 = MEM[(struct _List_node_base * *)this_4(D) + 104B];
+  # DEBUG D#3 => D#88
+  # DEBUG this => D#3
+  # DEBUG this => NULL
+  # DEBUG __x => erase_point$_M_node_11
+  # DEBUG erase_point$_M_node => erase_point$_M_node_11
+  # DEBUG erase_point$_M_node => erase_point$_M_node_11
+  # DEBUG D#89 => &this_4(D)->_requests
+  # DEBUG this => D#89
+  _1 = &MEM[(struct list *)this_4(D) + 104B].D.34669._M_impl._M_node.D.14630;
+  # DEBUG this => NULL
+  # DEBUG __x => _1
+  # DEBUG this => &erase_point
+  # DEBUG __x => &D.34859
+  if (_1 != erase_point$_M_node_11)
+    goto <bb 3>;
+  else
+    goto <bb 9>;
+
+  <bb 3>:
+  # DEBUG this => &erase_point
+  # DEBUG D#90 => &MEM[(struct _Node *)erase_point$_M_node_11]._M_data
+  # DEBUG __r => D#90
+  _19 = MEM[(struct sRequest *)erase_point$_M_node_11 + 16B].in;
+  if (in_7(D) > _19)
+    goto <bb 4>;
+  else
+    goto <bb 10>;
+
+  <bb 4>:
+  goto <bb 8>;
+
+  <bb 5>:
+  # DEBUG this => &erase_point
+  # DEBUG D#90 => &MEM[(struct _Node *)erase_point$_M_node_12]._M_data
+  # DEBUG __r => D#90
+  _6 = MEM[(struct sRequest *)erase_point$_M_node_12 + 16B].in;
+  if (_6 < in_7(D))
+    goto <bb 7>;
+  else
+    goto <bb 6>;
+
+  <bb 6>:
+  # erase_point$_M_node_27 = PHI <erase_point$_M_node_12(5)>
+  goto <bb 10>;
+
+  <bb 7>:
+
+  <bb 8>:
+  # erase_point$_M_node_25 = PHI <erase_point$_M_node_11(4), erase_point$_M_node_12(7)>
+  # DEBUG erase_point$_M_node => erase_point$_M_node_25
+  # DEBUG D#89 => &this_4(D)->_requests
+  # DEBUG this => D#89
+  # DEBUG this => NULL
+  # DEBUG __x => _1
+  # DEBUG this => &erase_point
+  # DEBUG __x => &D.34859
+  # DEBUG this => &erase_point
+  # DEBUG D#90 => &MEM[(struct _Node *)erase_point$_M_node_25]._M_data
+  # DEBUG __r => D#90
+  # DEBUG this => &erase_point
+  erase_point$_M_node_12 = erase_point$_M_node_25->_M_next;
+  # DEBUG erase_point$_M_node => erase_point$_M_node_12
+  # DEBUG erase_point$_M_node => erase_point$_M_node_12
+  # DEBUG D#89 => &this_4(D)->_requests
+  # DEBUG this => D#89
+  # DEBUG this => NULL
+  # DEBUG __x => _1
+  # DEBUG this => &erase_point
+  # DEBUG __x => &D.34859
+  if (_1 != erase_point$_M_node_12)
+    goto <bb 5>;
+  else
+    goto <bb 9>;
+
+  <bb 9>:
+  # DEBUG D#91 => &this_4(D)->_requests
+  # DEBUG this => D#91
+  # DEBUG this => NULL
+  # DEBUG __x => NULL
+  # DEBUG this => &erase_point
+  # DEBUG __x => &D.34860
+  # DEBUG D#91 => &this_4(D)->_requests
+  # DEBUG this => D#91
+  # DEBUG this => NULL
+  # DEBUG __x => NULL
+  # DEBUG this => &erase_point
+  # DEBUG __x => &D.34860
+  __assert_fail ("erase_point != _requests.end( )", "arbiters/prio_arb.cpp", 95, &__PRETTY_FUNCTION__);
+
+  <bb 10>:
+  # erase_point$_M_node_29 = PHI <erase_point$_M_node_11(3), erase_point$_M_node_27(6)>
+  # DEBUG D#91 => &this_4(D)->_requests
+  # DEBUG this => D#91
+  # DEBUG this => NULL
+  # DEBUG __x => _1
+  # DEBUG this => &erase_point
+  # DEBUG __x => &D.34860
+  # DEBUG D#91 => &this_4(D)->_requests
+  # DEBUG this => D#91
+  # DEBUG this => NULL
+  # DEBUG __x => _1
+  # DEBUG this => &erase_point
+  # DEBUG __x => &D.34860
+  # DEBUG D#94 => &this_4(D)->_requests
+  # DEBUG this => D#94
+  # DEBUG __position$_M_node => erase_point$_M_node_29
+  # DEBUG D#93 => erase_point$_M_node_29->_M_next
+  # DEBUG this => &__ret
+  # DEBUG __x => D#93
+  # DEBUG __ret$_M_node => D#93
+  # DEBUG this => &__position
+  # DEBUG this => D#94
+  # DEBUG __position => erase_point$_M_node_29
+  # DEBUG __position$_M_node => erase_point$_M_node_29
+  # DEBUG D#83 => &D#94->D.34669
+  # DEBUG D#21 => D#83
+  # DEBUG __n => 1
+  # DEBUG this => D#21
+  _13 = MEM[(long unsigned int *)this_4(D) + 120B];
+  _14 = _13 + 18446744073709551615;
+  MEM[(long unsigned int *)this_4(D) + 120B] = _14;
+  std::__detail::_List_node_base::_M_unhook (erase_point$_M_node_29);
+  # DEBUG __n => erase_point$_M_node_29
+  # DEBUG D#84 => &MEM[(struct _Node *)erase_point$_M_node_29]._M_data
+  # DEBUG __r => D#84
+  # DEBUG D#86 => &D#94->D.34669
+  # DEBUG D#75 => D#86
+  # DEBUG this => D#75
+  # DEBUG D#74 => D#75
+  # DEBUG this => D#74
+  # DEBUG this => NULL
+  # DEBUG D.36251 => NULL
+  # DEBUG this => NULL
+  # DEBUG this => D#17
+  # DEBUG __p => D#18
+  # DEBUG this => NULL
+  # DEBUG this => NULL
+  # DEBUG D#85 => &D#94->D.34669
+  # DEBUG this => D#85
+  # DEBUG __p => erase_point$_M_node_29
+  # DEBUG D#35 => &D#85->_M_impl
+  # DEBUG D#33 => D#35
+  # DEBUG D#34 => 1
+  # DEBUG __p => erase_point$_M_node_29
+  # DEBUG this => D#33
+  # DEBUG D.36423 => D#34
+  operator delete (erase_point$_M_node_29);
+  # DEBUG D#87 => {CLOBBER}
+  # DEBUG __ret$_M_node => D#87
+  # DEBUG D.36429 => D#93
+  # DEBUG D#92 => {CLOBBER}
+  # DEBUG erase_point$_M_node => D#92
+  return;
+
+}
+
+
+
+;; Function void PriorityArbiter::Arbitrate() (_ZN15PriorityArbiter9ArbitrateEv, funcdef_no=1747, decl_uid=34692, cgraph_uid=419, symbol_order=420)
+
+Trying loop 2 as candidate
+loop 2 is innermost
+loop is not parallel according to graphite
+Trying loop 1 as candidate
+loop 1 is innermost
+loop is not parallel according to graphite
+void PriorityArbiter::Arbitrate() (struct PriorityArbiter * const this)
+{
+  struct _List_node_base * p$_M_node;
+  bool wrapped;
+  int max_pri;
+  int max_index;
+  struct _List_node_base * _19;
+  int _20;
+  int _23;
+  int _28;
+  int _29;
+  int _30;
+  bool _33;
+  bool _41;
+  bool _42;
+  int pretmp_46;
+
+  <bb 2>:
+  # DEBUG this => &p
+  # DEBUG p$_M_node => 0B
+  # DEBUG D#4 => &this_18(D)->_requests
+  # DEBUG this => D#4
+  _19 = &MEM[(struct list *)this_18(D) + 104B].D.34669._M_impl._M_node.D.14630;
+  # DEBUG this => NULL
+  # DEBUG __x => _19
+  # DEBUG D#5 => &this_18(D)->_requests
+  p$_M_node_34 = MEM[(struct _List_node_base * *)this_18(D) + 104B];
+  # DEBUG D#3 => D#5
+  # DEBUG this => D#3
+  # DEBUG this => NULL
+  # DEBUG __x => p$_M_node_34
+  # DEBUG this => &D.34876
+  # DEBUG __x => &D.34877
+  if (_19 != p$_M_node_34)
+    goto <bb 3>;
+  else
+    goto <bb 14>;
+
+  <bb 3>:
+  pretmp_46 = this_18(D)->_rr_ptr;
+
+  <bb 4>:
+  # p$_M_node_14 = PHI <p$_M_node_34(3), p$_M_node_35(18)>
+  # DEBUG p$_M_node => p$_M_node_14
+  # DEBUG D#7 => &this_18(D)->_requests
+  # DEBUG this => D#7
+  # DEBUG this => NULL
+  # DEBUG __x => _19
+  # DEBUG this => &p
+  # DEBUG __x => &D.34879
+  # DEBUG this => &p
+  # DEBUG D#8 => &MEM[(struct _Node *)p$_M_node_14]._M_data
+  # DEBUG __r => D#8
+  _20 = MEM[(struct sRequest *)p$_M_node_14 + 16B].in;
+  if (_20 < pretmp_46)
+    goto <bb 16>;
+  else
+    goto <bb 19>;
+
+  <bb 5>:
+  # max_index_1 = PHI <-1(20), max_index_2(10)>
+  # max_pri_3 = PHI <0(20), max_pri_4(10)>
+  # wrapped_5 = PHI <0(20), wrapped_6(10)>
+  # p$_M_node_40 = PHI <p$_M_node_13(20), p$_M_node_36(10)>
+  # DEBUG p$_M_node => p$_M_node_40
+  # DEBUG wrapped => wrapped_5
+  # DEBUG max_pri => max_pri_3
+  # DEBUG max_index => max_index_1
+  if (wrapped_5 != 0)
+    goto <bb 6>;
+  else
+    goto <bb 21>;
+
+  <bb 6>:
+  # DEBUG this => &p
+  # DEBUG D#14 => &MEM[(struct _Node *)p$_M_node_40]._M_data
+  # DEBUG __r => D#14
+  _23 = MEM[(struct sRequest *)p$_M_node_40 + 16B].in;
+  if (_23 < pretmp_46)
+    goto <bb 23>;
+  else
+    goto <bb 11>;
+
+  <bb 7>:
+  if (wrapped_5 != 0)
+    goto <bb 8>;
+  else
+    goto <bb 9>;
+
+  <bb 8>:
+  # max_index_62 = PHI <max_index_1(7)>
+  goto <bb 12>;
+
+  <bb 9>:
+  # wrapped_6 = PHI <wrapped_5(21), 1(7), wrapped_5(23)>
+  # p$_M_node_39 = PHI <p$_M_node_40(21), p$_M_node_34(7), p$_M_node_40(23)>
+  # DEBUG p$_M_node => p$_M_node_39
+  # DEBUG wrapped => wrapped_6
+  # DEBUG this => &p
+  # DEBUG D#11 => &MEM[(struct _Node *)p$_M_node_39]._M_data
+  # DEBUG __r => D#11
+  max_pri_25 = MEM[(struct sRequest *)p$_M_node_39 + 16B].pri;
+  _41 = max_index_1 == -1;
+  _42 = max_pri_3 < max_pri_25;
+  _33 = _41 | _42;
+  if (_33 != 0)
+    goto <bb 22>;
+  else
+    goto <bb 10>;
+
+  <bb 10>:
+  # max_index_2 = PHI <max_index_1(9), max_index_26(22)>
+  # max_pri_4 = PHI <max_pri_3(9), max_pri_25(22)>
+  # DEBUG max_pri => max_pri_4
+  # DEBUG max_index => max_index_2
+  # DEBUG this => &p
+  p$_M_node_36 = p$_M_node_39->_M_next;
+  # DEBUG p$_M_node => p$_M_node_36
+  goto <bb 5>;
+
+  <bb 11>:
+  # max_index_66 = PHI <max_index_1(6)>
+
+  <bb 12>:
+  # max_index_43 = PHI <max_index_62(8), max_index_66(11), max_index_56(24)>
+  this_18(D)->_match = max_index_43;
+  if (max_index_43 != -1)
+    goto <bb 13>;
+  else
+    goto <bb 15>;
+
+  <bb 13>:
+  _28 = max_index_43 + 1;
+  _29 = this_18(D)->_inputs;
+  _30 = _28 % _29;
+  this_18(D)->_rr_ptr = _30;
+  goto <bb 15>;
+
+  <bb 14>:
+  this_18(D)->_match = -1;
+
+  <bb 15>:
+
+  <bb 25>:
+  # DEBUG D#15 => {CLOBBER}
+  # DEBUG p$_M_node => D#15
+  return;
+
+  <bb 16>:
+  # DEBUG this => &p
+  p$_M_node_35 = p$_M_node_14->_M_next;
+  # DEBUG p$_M_node => p$_M_node_35
+  # DEBUG p$_M_node => p$_M_node_35
+  # DEBUG D#7 => &this_18(D)->_requests
+  # DEBUG this => D#7
+  # DEBUG this => NULL
+  # DEBUG __x => _19
+  # DEBUG this => &p
+  # DEBUG __x => &D.34879
+  if (_19 != p$_M_node_35)
+    goto <bb 18>;
+  else
+    goto <bb 17>;
+
+  <bb 17>:
+  # p$_M_node_44 = PHI <p$_M_node_35(16)>
+  goto <bb 20>;
+
+  <bb 18>:
+  goto <bb 4>;
+
+  <bb 19>:
+  # p$_M_node_45 = PHI <p$_M_node_14(4)>
+
+  <bb 20>:
+  # p$_M_node_13 = PHI <p$_M_node_44(17), p$_M_node_45(19)>
+  goto <bb 5>;
+
+  <bb 21>:
+  # DEBUG D#9 => &this_18(D)->_requests
+  # DEBUG this => D#9
+  # DEBUG this => NULL
+  # DEBUG __x => _19
+  # DEBUG this => &p
+  # DEBUG __x => &D.34880
+  if (_19 == p$_M_node_40)
+    goto <bb 7>;
+  else
+    goto <bb 9>;
+
+  <bb 22>:
+  # DEBUG this => &p
+  # DEBUG D#12 => &MEM[(struct _Node *)p$_M_node_39]._M_data
+  # DEBUG __r => D#12
+  # DEBUG max_pri => max_pri_25
+  # DEBUG this => &p
+  # DEBUG D#13 => &MEM[(struct _Node *)p$_M_node_39]._M_data
+  # DEBUG __r => D#13
+  max_index_26 = MEM[(struct sRequest *)p$_M_node_39 + 16B].in;
+  # DEBUG max_index => max_index_26
+  goto <bb 10>;
+
+  <bb 23>:
+  # DEBUG D#9 => &this_18(D)->_requests
+  # DEBUG this => D#9
+  # DEBUG this => NULL
+  # DEBUG __x => _19
+  # DEBUG this => &p
+  # DEBUG __x => &D.34880
+  if (_19 == p$_M_node_40)
+    goto <bb 24>;
+  else
+    goto <bb 9>;
+
+  <bb 24>:
+  # max_index_56 = PHI <max_index_1(23)>
+  goto <bb 12>;
+
+}
+
+

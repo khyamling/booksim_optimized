@@ -1,0 +1,29 @@
+valgrind --tool=memcheck --leak-check=yes  --log-file=t7.txt --trace-signals=yes  ./booksim examples/mesh88_lat
+
+==4611== Memcheck, a memory error detector
+==4611== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==4611== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==4611== Command: ./booksim examples/mesh88_lat
+==4611== Parent PID: 2792
+==4611== 
+--4611-- Max kernel-supported signal is 64
+--4611-- sys_sigaction: sigNo 11, new 0x802f19ef0, old 0x0, new flags 0x0
+--4611-- sys_sigaction: sigNo 7, new 0x802f19ef0, old 0x0, new flags 0x0
+--4611-- sys_sigaction: sigNo 4, new 0x802f19ef0, old 0x0, new flags 0x0
+--4611-- sys_sigaction: sigNo 8, new 0x802f19ef0, old 0x0, new flags 0x0
+==4611== 
+==4611== HEAP SUMMARY:
+==4611==     in use at exit: 16,466 bytes in 3 blocks
+==4611==   total heap usage: 3,050,427 allocs, 3,050,424 frees, 178,407,650 bytes allocated
+==4611== 
+==4611== LEAK SUMMARY:
+==4611==    definitely lost: 0 bytes in 0 blocks
+==4611==    indirectly lost: 0 bytes in 0 blocks
+==4611==      possibly lost: 0 bytes in 0 blocks
+==4611==    still reachable: 16,466 bytes in 3 blocks
+==4611==         suppressed: 0 bytes in 0 blocks
+==4611== Reachable blocks (those to which a pointer was found) are not shown.
+==4611== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==4611== 
+==4611== For counts of detected and suppressed errors, rerun with: -v
+==4611== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

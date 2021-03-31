@@ -1,0 +1,636 @@
+
+;; Function yyparse (yyparse, funcdef_no=1, decl_uid=2260, symbol_order=14)
+
+Trying loop 1 as candidate
+loop 1 is not innermost
+loop is not parallel according to graphite
+Trying loop 2 as candidate
+loop 2 is innermost
+loop is not parallel according to graphite
+yyparse ()
+{
+  long unsigned int yynewbytes;
+  union yyalloc * yyptr;
+  long unsigned int yysize;
+  int yylen;
+  union YYSTYPE yyval;
+  int yytoken;
+  int yyresult;
+  int yyn;
+  long unsigned int yystacksize;
+  union YYSTYPE * yyvsp;
+  union YYSTYPE yyvsa[200];
+  yytype_int16 * yyssp;
+  yytype_int16 yyssa[200];
+  int yyerrstatus;
+  int yystate;
+  short int _44;
+  sizetype _47;
+  yytype_int16 * _48;
+  long int yyssp.0_49;
+  long int yyss.1_50;
+  long int _51;
+  long int _52;
+  long int _53;
+  long unsigned int _55;
+  long unsigned int _56;
+  long unsigned int _59;
+  long unsigned int _62;
+  long unsigned int _64;
+  long unsigned int _65;
+  long unsigned int _67;
+  sizetype _71;
+  sizetype _73;
+  sizetype _75;
+  yytype_int16 * _76;
+  signed char _78;
+  int yychar.2_80;
+  int yychar.3_82;
+  unsigned char _87;
+  unsigned int yyn.6_90;
+  signed char _91;
+  int _92;
+  unsigned char _93;
+  unsigned char _100;
+  int yynerrs.10_102;
+  int yynerrs.11_103;
+  int yychar.2_106;
+  short int _112;
+  unsigned int yyn.6_115;
+  signed char _116;
+  unsigned char _117;
+  unsigned char _122;
+  int _124;
+  long unsigned int _125;
+  long unsigned int _126;
+  union YYSTYPE * _127;
+  char * _129;
+  char * _130;
+  int _134;
+  char * _135;
+  double _138;
+  char * _139;
+  unsigned char _151;
+  int _153;
+  signed char _154;
+  int _155;
+  short int _156;
+  int _157;
+  unsigned int yystate.7_159;
+  signed char _160;
+  short int _161;
+  unsigned char _162;
+  signed char _164;
+  long unsigned int pretmp_246;
+  long unsigned int pretmp_247;
+  long unsigned int pretmp_248;
+  long unsigned int pretmp_249;
+  long unsigned int pretmp_251;
+  long unsigned int pretmp_252;
+  long unsigned int pretmp_253;
+  long unsigned int pretmp_254;
+  sizetype pretmp_256;
+  sizetype pretmp_257;
+  sizetype pretmp_258;
+  sizetype pretmp_259;
+  sizetype prephitmp_260;
+  long unsigned int pretmp_261;
+  long unsigned int pretmp_262;
+  long unsigned int pretmp_263;
+  long unsigned int pretmp_264;
+  sizetype pretmp_266;
+  sizetype pretmp_267;
+  sizetype pretmp_268;
+  sizetype pretmp_269;
+  sizetype prephitmp_270;
+  const yytype_int8 pretmp_276;
+  const yytype_int8 prephitmp_277;
+  int prephitmp_282;
+
+  <bb 2>:
+  # DEBUG yytoken => 0
+  # DEBUG yylen => 0
+  # DEBUG yyss => &yyssa
+  # DEBUG yyssp => &yyssa
+  # DEBUG yyvs => &yyvsa
+  # DEBUG yyvsp => &yyvsa
+  # DEBUG yystacksize => 200
+  # DEBUG yystate => 0
+  # DEBUG yyerrstatus => 0
+  yynerrs = 0;
+  yychar = -2;
+  goto <bb 5> (yysetstate);
+
+  # yystate_1 = PHI <yystate_94(27), yystate_165(37), yystate_274(53), yystate_163(36)>
+  # yyerrstatus_4 = PHI <yyerrstatus_6(27), yyerrstatus_5(37), 3(53), yyerrstatus_5(36)>
+  # yyssp_10 = PHI <yyssp_12(27), yyssp_148(37), yyssp_280(53), yyssp_148(36)>
+  # yyvsp_16 = PHI <yyvsp_97(27), yyvsp_149(37), yyvsp_119(53), yyvsp_149(36)>
+yynewstate:
+
+  <bb 4>:
+  # DEBUG yylen => 0
+  # DEBUG yyvsp => yyvsp_16
+  # DEBUG yyssp => yyssp_10
+  # DEBUG yyerrstatus => yyerrstatus_4
+  # DEBUG yystate => yystate_1
+  yyssp_166 = yyssp_10 + 2;
+  # DEBUG yyssp => yyssp_166
+
+  # yystate_2 = PHI <0(2), yystate_1(4)>
+  # yyerrstatus_5 = PHI <0(2), yyerrstatus_4(4)>
+  # yyssp_7 = PHI <&yyssa(2), yyssp_8(4)>
+  # yyssp_11 = PHI <&yyssa(2), yyssp_166(4)>
+  # yyvsp_14 = PHI <&yyvsa(2), yyvsp_15(4)>
+  # yyvsp_17 = PHI <&yyvsa(2), yyvsp_16(4)>
+  # yystacksize_20 = PHI <200(2), yystacksize_22(4)>
+yysetstate:
+  # DEBUG yylen => 0
+  # DEBUG yystacksize => yystacksize_20
+  # DEBUG yyvsp => yyvsp_17
+  # DEBUG yyvs => yyvsp_14
+  # DEBUG yyssp => yyssp_11
+  # DEBUG yyss => yyssp_7
+  # DEBUG yyerrstatus => yyerrstatus_5
+  # DEBUG yystate => yystate_2
+  _44 = (short int) yystate_2;
+  *yyssp_11 = _44;
+  yystacksize_46 = yystacksize_20 * 2;
+  _47 = yystacksize_46 + 18446744073709551614;
+  _48 = yyssp_7 + _47;
+  if (yyssp_11 >= _48)
+    goto <bb 6>;
+  else
+    goto <bb 13>;
+
+  <bb 6>:
+  yyssp.0_49 = (long int) yyssp_11;
+  yyss.1_50 = (long int) yyssp_7;
+  _51 = yyssp.0_49 - yyss.1_50;
+  _52 = _51 /[ex] 2;
+  _53 = _52 + 1;
+  yysize_54 = (long unsigned int) _53;
+  # DEBUG yysize => yysize_54
+  if (yystacksize_20 > 9999)
+    goto <bb 54>;
+  else
+    goto <bb 7>;
+
+  <bb 7>:
+  # DEBUG yystacksize => yystacksize_46
+  yystacksize_176 = MIN_EXPR <yystacksize_46, 10000>;
+  # DEBUG yystacksize => yystacksize_176
+  # DEBUG yyss1 => yyssp_7
+  _55 = yystacksize_176 * 10;
+  _56 = _55 + 7;
+  yyptr_58 = malloc (_56);
+  # DEBUG yyptr => yyptr_58
+  if (yyptr_58 == 0B)
+    goto <bb 8>;
+  else
+    goto <bb 9>;
+
+  <bb 8>:
+  # yyssp_285 = PHI <yyssp_7(7)>
+  goto <bb 55>;
+
+  <bb 9>:
+  _59 = yysize_54 * 2;
+  yyssp_60 = &yyptr_58->yyss_alloc;
+  __builtin_memcpy (yyssp_60, yyssp_7, _59);
+  # DEBUG yyss => yyssp_60
+  _62 = yystacksize_176 * 2;
+  yynewbytes_63 = _62 + 7;
+  # DEBUG yynewbytes => yynewbytes_63
+  _64 = yynewbytes_63 >> 3;
+  _65 = _64 * 8;
+  yyptr_66 = yyptr_58 + _65;
+  # DEBUG yyptr => yyptr_66
+  _67 = yysize_54 * 8;
+  yyvsp_68 = &yyptr_66->yyvs_alloc;
+  __builtin_memcpy (yyvsp_68, yyvsp_14, _67);
+  # DEBUG yyvs => yyvsp_68
+  # DEBUG D#7 => yystacksize_176 * 8
+  # DEBUG D#6 => D#7 + 7
+  # DEBUG yynewbytes => D#6
+  # DEBUG D#5 => D#6 / 8
+  # DEBUG D#4 => D#5 * 8
+  # DEBUG yyptr => yyptr_66 + D#4
+  if (&yyssa != yyssp_7)
+    goto <bb 10>;
+  else
+    goto <bb 11>;
+
+  <bb 10>:
+  free (yyssp_7);
+
+  <bb 11>:
+  _71 = _59 + 18446744073709551614;
+  yyssp_72 = yyssp_60 + _71;
+  # DEBUG yyssp => yyssp_72
+  _73 = _67 + 18446744073709551608;
+  yyvsp_74 = yyvsp_68 + _73;
+  # DEBUG yyvsp => yyvsp_74
+  _75 = _62 + 18446744073709551614;
+  _76 = yyssp_60 + _75;
+  if (yyssp_72 >= _76)
+    goto <bb 12>;
+  else
+    goto <bb 13>;
+
+  <bb 12>:
+  # yyssp_275 = PHI <yyssp_60(11)>
+  goto <bb 56> (yyacceptlab);
+
+  <bb 13>:
+  # yyssp_8 = PHI <yyssp_7(5), yyssp_60(11)>
+  # yyssp_12 = PHI <yyssp_11(5), yyssp_72(11)>
+  # yyvsp_15 = PHI <yyvsp_14(5), yyvsp_68(11)>
+  # yyvsp_18 = PHI <yyvsp_17(5), yyvsp_74(11)>
+  # yystacksize_22 = PHI <yystacksize_20(5), yystacksize_176(11)>
+  # DEBUG yystacksize => yystacksize_22
+  # DEBUG yyvsp => yyvsp_18
+  # DEBUG yyvs => yyvsp_15
+  # DEBUG yyssp => yyssp_12
+  # DEBUG yyss => yyssp_8
+  if (yystate_2 == 5)
+    goto <bb 14>;
+  else
+    goto <bb 15> (yybackup);
+
+  <bb 14>:
+  # yyssp_284 = PHI <yyssp_8(13)>
+  goto <bb 56> (yyacceptlab);
+
+yybackup:
+  _78 = yypact[yystate_2];
+  yyn_79 = (int) _78;
+  # DEBUG yyn => yyn_79
+  if (yyn_79 == -5)
+    goto <bb 28>;
+  else
+    goto <bb 16>;
+
+  <bb 16>:
+  yychar.2_80 = yychar;
+  if (yychar.2_80 == -2)
+    goto <bb 17>;
+  else
+    goto <bb 18>;
+
+  <bb 17>:
+  yychar.3_82 = yylex ();
+  yychar = yychar.3_82;
+
+  <bb 18>:
+  # prephitmp_282 = PHI <yychar.2_80(16), yychar.3_82(17)>
+  if (prephitmp_282 <= 0)
+    goto <bb 19>;
+  else
+    goto <bb 20>;
+
+  <bb 19>:
+  # DEBUG yytoken => 0
+  yychar = 0;
+  goto <bb 22>;
+
+  <bb 20>:
+  if (prephitmp_282 <= 260)
+    goto <bb 21>;
+  else
+    goto <bb 22>;
+
+  <bb 21>:
+  _87 = yytranslate[prephitmp_282];
+  yytoken_88 = (int) _87;
+
+  <bb 22>:
+  # yytoken_25 = PHI <0(19), 2(20), yytoken_88(21)>
+  # DEBUG yytoken => yytoken_25
+  yyn_89 = yyn_79 + yytoken_25;
+  # DEBUG yyn => yyn_89
+  yyn.6_90 = (unsigned int) yyn_89;
+  if (yyn.6_90 > 11)
+    goto <bb 28>;
+  else
+    goto <bb 23>;
+
+  <bb 23>:
+  _91 = yycheck[yyn_89];
+  _92 = (int) _91;
+  if (_92 != yytoken_25)
+    goto <bb 28>;
+  else
+    goto <bb 24>;
+
+  <bb 24>:
+  _93 = yytable[yyn_89];
+  yystate_94 = (int) _93;
+  # DEBUG yyn => yystate_94
+  if (yystate_94 == 0)
+    goto <bb 59>;
+  else
+    goto <bb 25>;
+
+  <bb 25>:
+  if (yyerrstatus_5 != 0)
+    goto <bb 26>;
+  else
+    goto <bb 27>;
+
+  <bb 26>:
+  yyerrstatus_95 = yyerrstatus_5 + -1;
+  # DEBUG yyerrstatus => yyerrstatus_95
+
+  <bb 27>:
+  # yyerrstatus_6 = PHI <0(25), yyerrstatus_95(26)>
+  # DEBUG yyerrstatus => yyerrstatus_6
+  yychar = -2;
+  # DEBUG yystate => yystate_94
+  yyvsp_97 = yyvsp_18 + 8;
+  # DEBUG yyvsp => yyvsp_97
+  MEM[(union YYSTYPE *)yyvsp_18 + 8B] = yylval;
+  goto <bb 3> (yynewstate);
+
+  <bb 28>:
+  # DEBUG yydefault => NULL
+  _100 = yydefact[yystate_2];
+  yyn_101 = (int) _100;
+  # DEBUG yyn => yyn_101
+  if (yyn_101 == 0)
+    goto <bb 38> (yyerrlab);
+  else
+    goto <bb 29> (yyreduce);
+
+yyreduce:
+  # DEBUG yyn => yyn_101
+  _122 = yyr2[yyn_101];
+  yylen_123 = (int) _122;
+  # DEBUG yylen => yylen_123
+  _124 = 1 - yylen_123;
+  _125 = (long unsigned int) _124;
+  _126 = _125 * 8;
+  _127 = yyvsp_18 + _126;
+  yyval = *_127;
+  switch (_100) <default: <L86>, case 4: <L32>, case 5: <L33>, case 6: <L34>>
+
+<L86>:
+  pretmp_249 = (long unsigned int) _122;
+  pretmp_254 = pretmp_249 * 8;
+  pretmp_259 = -pretmp_254;
+  pretmp_264 = pretmp_249 * 2;
+  pretmp_269 = -pretmp_264;
+  goto <bb 34> (<L85>);
+
+<L32>:
+  _129 = MEM[(union YYSTYPE *)yyvsp_18 + -8B].name;
+  _130 = MEM[(union YYSTYPE *)yyvsp_18 + -24B].name;
+  config_assign_string (_130, _129);
+  free (_130);
+  free (_129);
+  pretmp_246 = (long unsigned int) _122;
+  pretmp_251 = pretmp_246 * 8;
+  pretmp_256 = -pretmp_251;
+  pretmp_261 = pretmp_246 * 2;
+  pretmp_266 = -pretmp_261;
+  goto <bb 34> (<L85>);
+
+<L33>:
+  _134 = MEM[(union YYSTYPE *)yyvsp_18 + -8B].num;
+  _135 = MEM[(union YYSTYPE *)yyvsp_18 + -24B].name;
+  config_assign_int (_135, _134);
+  free (_135);
+  pretmp_247 = (long unsigned int) _122;
+  pretmp_252 = pretmp_247 * 8;
+  pretmp_257 = -pretmp_252;
+  pretmp_262 = pretmp_247 * 2;
+  pretmp_267 = -pretmp_262;
+  goto <bb 34> (<L85>);
+
+<L34>:
+  _138 = MEM[(union YYSTYPE *)yyvsp_18 + -8B].fnum;
+  _139 = MEM[(union YYSTYPE *)yyvsp_18 + -24B].name;
+  config_assign_float (_139, _138);
+  free (_139);
+  pretmp_248 = (long unsigned int) _122;
+  pretmp_253 = pretmp_248 * 8;
+  pretmp_258 = -pretmp_253;
+  pretmp_263 = pretmp_248 * 2;
+  pretmp_268 = -pretmp_263;
+
+  # yyn_177 = PHI <yyn_101(31), yyn_101(32), yyn_101(33), yyn_101(30), 0(59)>
+  # prephitmp_260 = PHI <pretmp_256(31), pretmp_257(32), pretmp_258(33), pretmp_259(30), 0(59)>
+  # prephitmp_270 = PHI <pretmp_266(31), pretmp_267(32), pretmp_268(33), pretmp_269(30), 0(59)>
+<L85>:
+  yyvsp_145 = yyvsp_18 + prephitmp_260;
+  # DEBUG yyvsp => yyvsp_145
+  yyssp_148 = yyssp_12 + prephitmp_270;
+  # DEBUG yyssp => yyssp_148
+  # DEBUG yylen => 0
+  yyvsp_149 = yyvsp_145 + 8;
+  # DEBUG yyvsp => yyvsp_149
+  MEM[(union YYSTYPE *)yyvsp_145 + 8B] = yyval;
+  _151 = yyr1[yyn_177];
+  yyn_152 = (int) _151;
+  # DEBUG yyn => yyn_152
+  _153 = yyn_152 + -8;
+  _154 = yypgoto[_153];
+  _155 = (int) _154;
+  _156 = *yyssp_148;
+  _157 = (int) _156;
+  yystate_158 = _155 + _157;
+  # DEBUG yystate => yystate_158
+  yystate.7_159 = (unsigned int) yystate_158;
+  if (yystate.7_159 <= 11)
+    goto <bb 35>;
+  else
+    goto <bb 37>;
+
+  <bb 35>:
+  _160 = yycheck[yystate_158];
+  _161 = (short int) _160;
+  if (_156 == _161)
+    goto <bb 36>;
+  else
+    goto <bb 37>;
+
+  <bb 36>:
+  _162 = yytable[yystate_158];
+  yystate_163 = (int) _162;
+  # DEBUG yystate => yystate_163
+  goto <bb 3> (yynewstate);
+
+  <bb 37>:
+  _164 = yydefgoto[_153];
+  yystate_165 = (int) _164;
+  # DEBUG yystate => yystate_165
+  goto <bb 3> (yynewstate);
+
+yyerrlab:
+  # DEBUG yytoken => -2
+  if (yyerrstatus_5 == 0)
+    goto <bb 39>;
+  else
+    goto <bb 40>;
+
+  <bb 39>:
+  yynerrs.10_102 = yynerrs;
+  yynerrs.11_103 = yynerrs.10_102 + 1;
+  yynerrs = yynerrs.11_103;
+  yyerror ("syntax error");
+  goto <bb 45> (yyerrlab1);
+
+  <bb 40>:
+  if (yyerrstatus_5 == 3)
+    goto <bb 41>;
+  else
+    goto <bb 45> (yyerrlab1);
+
+  <bb 41>:
+  yychar.2_106 = yychar;
+  if (yychar.2_106 <= 0)
+    goto <bb 42>;
+  else
+    goto <bb 44>;
+
+  <bb 42>:
+  if (yychar.2_106 == 0)
+    goto <bb 43>;
+  else
+    goto <bb 45> (yyerrlab1);
+
+  <bb 43>:
+  # yyssp_283 = PHI <yyssp_8(42)>
+  goto <bb 56> (yyacceptlab);
+
+  <bb 44>:
+  # DEBUG D#1 => "Error: discarding"
+  # DEBUG D#3 => &yylval
+  # DEBUG yymsg => D#1
+  # DEBUG yytype => D#2
+  # DEBUG yyvaluep => D#3
+  yychar = -2;
+
+yyerrlab1:
+  # DEBUG yyerrstatus => 3
+
+  <bb 46>:
+  # yyssp_13 = PHI <yyssp_12(45), yyssp_111(52)>
+  # yyvsp_19 = PHI <yyvsp_18(45), yyvsp_110(52)>
+  # prephitmp_277 = PHI <_78(45), pretmp_276(52)>
+  # DEBUG yyvsp => yyvsp_19
+  # DEBUG yyssp => yyssp_13
+  # DEBUG yystate => NULL
+  yyn_109 = (int) prephitmp_277;
+  # DEBUG yyn => yyn_109
+  if (yyn_109 != -5)
+    goto <bb 47>;
+  else
+    goto <bb 50>;
+
+  <bb 47>:
+  yyn_114 = yyn_109 + 1;
+  # DEBUG yyn => yyn_114
+  yyn.6_115 = (unsigned int) yyn_114;
+  if (yyn.6_115 <= 11)
+    goto <bb 48>;
+  else
+    goto <bb 50>;
+
+  <bb 48>:
+  _116 = yycheck[yyn_114];
+  if (_116 == 1)
+    goto <bb 49>;
+  else
+    goto <bb 50>;
+
+  <bb 49>:
+  _117 = yytable[yyn_114];
+  yystate_118 = (int) _117;
+  # DEBUG yyn => yystate_118
+  if (yystate_118 != 0)
+    goto <bb 53>;
+  else
+    goto <bb 50>;
+
+  <bb 50>:
+  if (yyssp_13 == yyssp_8)
+    goto <bb 51>;
+  else
+    goto <bb 52>;
+
+  <bb 51>:
+  # yyssp_281 = PHI <yyssp_8(50)>
+  goto <bb 56> (yyacceptlab);
+
+  <bb 52>:
+  # DEBUG D#1 => "Error: popping"
+  # DEBUG D#2 => (int) D#8
+  # DEBUG D#3 => yyvsp_19
+  # DEBUG yymsg => D#1
+  # DEBUG yytype => D#2
+  # DEBUG yyvaluep => D#3
+  yyvsp_110 = yyvsp_19 + 18446744073709551608;
+  # DEBUG yyvsp => yyvsp_110
+  yyssp_111 = yyssp_13 + 18446744073709551614;
+  # DEBUG yyssp => yyssp_111
+  _112 = *yyssp_111;
+  yystate_113 = (int) _112;
+  # DEBUG yystate => yystate_113
+  pretmp_276 = yypact[yystate_113];
+  goto <bb 46>;
+
+  <bb 53>:
+  # yyssp_280 = PHI <yyssp_13(49)>
+  # yyvsp_279 = PHI <yyvsp_19(49)>
+  # yystate_274 = PHI <yystate_118(49)>
+  yyvsp_119 = yyvsp_279 + 8;
+  # DEBUG yyvsp => yyvsp_119
+  MEM[(union YYSTYPE *)yyvsp_279 + 8B] = yylval;
+  # DEBUG yystate => yystate_274
+  goto <bb 3> (yynewstate);
+
+  <bb 54>:
+  # yyssp_286 = PHI <yyssp_7(6)>
+
+  <bb 55>:
+  # yyssp_273 = PHI <yyssp_286(54), yyssp_285(8)>
+  # DEBUG yyexhaustedlab => NULL
+  yyerror ("memory exhausted");
+  # DEBUG yyresult => 2
+
+  # yyssp_9 = PHI <yyssp_284(14), yyssp_283(43), yyssp_273(55), yyssp_275(12), yyssp_281(51)>
+  # yyresult_24 = PHI <0(14), 1(43), 2(55), 1(12), 1(51)>
+yyacceptlab:
+yyreturn:
+  # DEBUG yyresult => yyresult_24
+  # DEBUG yyvsp => NULL
+  # DEBUG yyssp => NULL
+  # DEBUG yyss => yyssp_9
+  # DEBUG yyvsp => NULL
+  # DEBUG yyssp => NULL
+  # DEBUG yyvsp => NULL
+  # DEBUG yyssp => NULL
+  if (&yyssa != yyssp_9)
+    goto <bb 57>;
+  else
+    goto <bb 58>;
+
+  <bb 57>:
+  free (yyssp_9);
+
+  <bb 58>:
+  yyssa ={v} {CLOBBER};
+  yyvsa ={v} {CLOBBER};
+  yyval ={v} {CLOBBER};
+  return yyresult_24;
+
+  <bb 59>:
+  # DEBUG yyn => 0
+  # DEBUG yyn => 0
+  # DEBUG yylen => 0
+  yyval = MEM[(union YYSTYPE *)yyvsp_18 + 8B];
+  goto <bb 34> (<L85>);
+
+}
+
+

@@ -1,0 +1,2389 @@
+
+;; Function virtual void KNFly::_BuildNet(const Configuration&) (_ZN5KNFly9_BuildNetERK13Configuration, funcdef_no=1997, decl_uid=44964, cgraph_uid=463, symbol_order=464)
+
+Trying loop 1 as candidate
+loop 1 is not innermost
+loop is not parallel according to graphite
+Trying loop 2 as candidate
+loop 2 is not innermost
+loop is not parallel according to graphite
+Trying loop 3 as candidate
+loop 3 is innermost
+loop is not parallel according to graphite
+virtual void KNFly::_BuildNet(const Configuration&) (struct KNFly * const this, const struct Configuration & config)
+{
+  int in_addr;
+  int in_port;
+  int shift;
+  int D.49897;
+  __size_type __len;
+  size_type __dnew;
+  const ptrdiff_t _Num;
+  struct TimedModule * * * D.49832;
+  const size_type __old_num_nodes;
+  const size_type __new_num_nodes;
+  struct TimedModule * * * __new_nstart;
+  size_type __new_map_size;
+  const ptrdiff_t _Num;
+  const ptrdiff_t _Num;
+  size_type __nodes_to_add;
+  size_type __dnew;
+  size_type __dnew;
+  struct __string_type D.49663;
+  struct __string_type D.49662;
+  int port;
+  int addr;
+  int stage;
+  int c;
+  int node;
+  int per_stage;
+  struct ostringstream router_name;
+  const struct __string_type D.45149;
+  struct TimedModule * const D.45146;
+  struct __string_type D.45145;
+  char * const _13;
+  int _15;
+  int _16;
+  int _17;
+  struct basic_ostream & _23;
+  long unsigned int _26;
+  int _28;
+  struct Module * _30;
+  struct Router * _33;
+  const void * prephitmp_38;
+  struct Channel * & _41;
+  char * const _44;
+  int _45;
+  int _46;
+  long unsigned int _48;
+  struct Router * _49;
+  int (*__vtbl_ptr_type) () * _50;
+  int (*__vtbl_ptr_type) () _51;
+  long unsigned int _52;
+  struct Channel * _53;
+  struct FlitChannel * & _54;
+  struct FlitChannel * _55;
+  struct Router * _59;
+  int (*__vtbl_ptr_type) () * _60;
+  int (*__vtbl_ptr_type) () _61;
+  long unsigned int _62;
+  struct Channel * _63;
+  char * const _64;
+  struct FlitChannel * _65;
+  struct Router * & _67;
+  struct FlitChannel * _68;
+  int _69;
+  int _70;
+  int _71;
+  int _72;
+  struct Router * _74;
+  int (*__vtbl_ptr_type) () * _75;
+  int (*__vtbl_ptr_type) () _76;
+  long unsigned int _77;
+  struct Channel * _78;
+  struct Router * & _79;
+  struct FlitChannel * _80;
+  long unsigned int _82;
+  struct Router * _83;
+  int (*__vtbl_ptr_type) () * _84;
+  int (*__vtbl_ptr_type) () _85;
+  long unsigned int _86;
+  struct Channel * _87;
+  struct FlitChannel * _88;
+  char * const _97;
+  char * const _100;
+  char * const _102;
+  struct FlitChannel * * _103;
+  struct FlitChannel * * _104;
+  struct FlitChannel * * _105;
+  struct FlitChannel * * _106;
+  struct FlitChannel * * _107;
+  struct Channel * * _108;
+  struct Channel * * _109;
+  struct Channel * * _110;
+  struct Channel * * _111;
+  struct Router * * _112;
+  struct Router * * _113;
+  struct Router * * _114;
+  struct Router * * _115;
+  struct Router * * _116;
+  struct Router * * _117;
+  struct Router * & _118;
+  struct FlitChannel * & _119;
+  long unsigned int _120;
+  struct Channel * & _121;
+  struct Router * & _122;
+  struct FlitChannel * & _126;
+  struct FlitChannel * & _127;
+  long unsigned int _128;
+  struct Channel * & _129;
+  struct Router * & _130;
+  struct FlitChannel * & _131;
+  long unsigned int _132;
+  struct Channel * & _133;
+  struct Router * & _134;
+  int _135;
+  int _136;
+  int _137;
+  int _138;
+  int _139;
+  int _140;
+  char * const _141;
+  const void * pretmp_145;
+  const void * pretmp_146;
+  const void * pretmp_147;
+  const void * pretmp_148;
+  int _149;
+  const void * pretmp_151;
+  const void * pretmp_152;
+  const void * prephitmp_153;
+  const void * pretmp_154;
+  struct TimedModule * * * prephitmp_166;
+  int (*__vtbl_ptr_type) () * iftmp.19_168;
+  long int _169;
+  sizetype iftmp.20_170;
+  struct basic_ios * _171;
+  int (*__vtbl_ptr_type) () * iftmp.21_172;
+  long int _181;
+  sizetype iftmp.26_182;
+  struct basic_ios * _183;
+  bool _185;
+  char_type * const _187;
+  char_type * const _188;
+  char_type * const _189;
+  char * const _190;
+  char_type * const _191;
+  char * const _192;
+  char * const _194;
+  char * const _195;
+  char * const _196;
+  long int __last.37_197;
+  long int __first.38_198;
+  difference_type _199;
+  long unsigned int __dnew.34_200;
+  char * _201;
+  long unsigned int __dnew.35_202;
+  const char_type _204;
+  char * _207;
+  long int __last.37_209;
+  long int __first.38_210;
+  difference_type _211;
+  long unsigned int __dnew.34_212;
+  char * _213;
+  long unsigned int __dnew.35_214;
+  const char_type _216;
+  char * _219;
+  struct TimedModule * * _220;
+  struct TimedModule * * _221;
+  struct TimedModule * * _222;
+  struct TimedModule * * _225;
+  struct TimedModule * * _226;
+  struct TimedModule * * _227;
+  struct TimedModule * * * _229;
+  struct TimedModule * * * _230;
+  struct TimedModule * * _231;
+  struct TimedModule * * _232;
+  long unsigned int _234;
+  struct TimedModule * * * _235;
+  long int _236;
+  struct TimedModule * * * _237;
+  long int _238;
+  long int _239;
+  long int _240;
+  long unsigned int _241;
+  long unsigned int _242;
+  long unsigned int _244;
+  struct TimedModule * * * _245;
+  long int _246;
+  long int _247;
+  long int _248;
+  long int _249;
+  char * const _253;
+  long unsigned int _254;
+  long unsigned int _256;
+  long unsigned int _257;
+  long unsigned int _258;
+  struct TimedModule * * * _263;
+  long int __last.49_264;
+  long int _265;
+  long unsigned int _267;
+  long unsigned int _268;
+  struct TimedModule * * * _270;
+  int _271;
+  int prephitmp_273;
+  long unsigned int _274;
+  long unsigned int _276;
+  struct TimedModule * * * _277;
+  long unsigned int _278;
+  long unsigned int _279;
+  long unsigned int _280;
+  struct TimedModule * * * _285;
+  struct TimedModule * * * _286;
+  struct TimedModule * * * _287;
+  long int __last.49_288;
+  long int __first.50_289;
+  long int _290;
+  long unsigned int _292;
+  struct TimedModule * * * _293;
+  struct TimedModule * * _295;
+  struct TimedModule * * _296;
+  sizetype _298;
+  struct TimedModule * * * _299;
+  struct TimedModule * * _300;
+  struct TimedModule * * _301;
+  long int __last.45_302;
+  long int _304;
+  long unsigned int _306;
+  struct TimedModule * * * _308;
+  const size_type _331;
+  _Ios_Openmode _332;
+  int __a.55_333;
+  int _334;
+  char * const _337;
+  int _339;
+  int _340;
+  char * const _341;
+  int _343;
+  int _344;
+  int _346;
+  int _347;
+  int _348;
+  int _350;
+  int _351;
+  int _352;
+  int _353;
+  int _354;
+  int _355;
+  long int _358;
+  sizetype iftmp.26_359;
+  struct basic_ios * _360;
+  long int _368;
+  sizetype iftmp.26_369;
+  struct basic_ios * _370;
+  bool _373;
+  int _389;
+  const void * pretmp_436;
+  const void * pretmp_437;
+  const void * pretmp_438;
+  const void * pretmp_439;
+  const void * pretmp_460;
+  const void * pretmp_461;
+  const void * pretmp_462;
+  const void * pretmp_463;
+  bool _500;
+  const void * pretmp_517;
+  const void * pretmp_518;
+  const void * pretmp_519;
+  const void * pretmp_523;
+  const void * pretmp_525;
+  const void * pretmp_530;
+  const void * pretmp_531;
+  const void * pretmp_537;
+  const void * pretmp_538;
+  const void * pretmp_542;
+  const void * pretmp_544;
+  const void * pretmp_549;
+  const void * pretmp_550;
+  const void * pretmp_553;
+  const void * pretmp_554;
+  const void * prephitmp_555;
+  const void * pretmp_559;
+  const void * prephitmp_561;
+  const void * pretmp_566;
+  int _569;
+  long unsigned int pretmp_582;
+  long unsigned int pretmp_583;
+  long unsigned int pretmp_584;
+  long unsigned int prephitmp_585;
+  struct TimedModule * * pretmp_588;
+  struct TimedModule * * prephitmp_589;
+  size_type pretmp_590;
+  size_type prephitmp_591;
+  char * const pretmp_592;
+  char * const prephitmp_593;
+  size_type pretmp_594;
+  size_type prephitmp_595;
+  char * const pretmp_596;
+  char * const prephitmp_597;
+  int pretmp_598;
+  int prephitmp_599;
+
+  <bb 2>:
+  # DEBUG this => &router_name
+  # DEBUG __mode => 16
+  # DEBUG D#48 => &router_name.D.26644
+  # DEBUG this => D#48
+  std::ios_base::ios_base (&MEM[(struct basic_ios *)&router_name + 112B].D.23348);
+  MEM[(struct basic_ios *)&router_name + 112B].D.23348._vptr.ios_base = &MEM[(void *)&_ZTVSt9basic_iosIcSt11char_traitsIcEE + 16B];
+  MEM[(struct basic_ios *)&router_name + 112B]._M_tie = 0B;
+  MEM[(struct basic_ios *)&router_name + 112B]._M_fill = 0;
+  MEM[(struct basic_ios *)&router_name + 112B]._M_fill_init = 0;
+  MEM[(struct basic_ios *)&router_name + 112B]._M_streambuf = 0B;
+  MEM[(struct basic_ios *)&router_name + 112B]._M_ctype = 0B;
+  MEM[(struct basic_ios *)&router_name + 112B]._M_num_put = 0B;
+  MEM[(struct basic_ios *)&router_name + 112B]._M_num_get = 0B;
+  # DEBUG this => &router_name.D.26641
+  # DEBUG __vtt_parm => &MEM[(void *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 8B]
+  iftmp.19_168 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 8B];
+  MEM[(struct basic_ostream *)&router_name]._vptr.basic_ostream = iftmp.19_168;
+  _169 = MEM[(long int *)iftmp.19_168 + -24B];
+  iftmp.20_170 = (sizetype) _169;
+  _171 = &router_name.D.26641 + iftmp.20_170;
+  iftmp.21_172 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 16B];
+  _171->D.23348._vptr.ios_base = iftmp.21_172;
+  std::basic_ios<char>::init (_171, 0B);
+
+  <bb 3>:
+  router_name.D.26641._vptr.basic_ostream = &MEM[(void *)&_ZTVNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 24B];
+  MEM[(struct basic_ios *)&router_name + 112B].D.23348._vptr.ios_base = &MEM[(void *)&_ZTVNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 64B];
+  # DEBUG __a => 16
+  # DEBUG __b => 16
+  # DEBUG D#46 => &router_name._M_stringbuf
+  # DEBUG this => D#46
+  # DEBUG __mode => NULL
+  # DEBUG D#32 => &MEM[(struct basic_stringbuf *)D#46].D.26491
+  # DEBUG this => D#32
+  MEM[(struct basic_streambuf *)&router_name + 8B]._vptr.basic_streambuf = &MEM[(void *)&_ZTVSt15basic_streambufIcSt11char_traitsIcEE + 16B];
+  MEM[(struct basic_streambuf *)&router_name + 8B]._M_in_beg = 0B;
+  MEM[(struct basic_streambuf *)&router_name + 8B]._M_in_cur = 0B;
+  MEM[(struct basic_streambuf *)&router_name + 8B]._M_in_end = 0B;
+  MEM[(struct basic_streambuf *)&router_name + 8B]._M_out_beg = 0B;
+  MEM[(struct basic_streambuf *)&router_name + 8B]._M_out_cur = 0B;
+  MEM[(struct basic_streambuf *)&router_name + 8B]._M_out_end = 0B;
+  std::locale::locale (&MEM[(struct basic_streambuf *)&router_name + 8B]._M_buf_locale);
+  MEM[(struct basic_stringbuf *)&router_name + 8B].D.26491._vptr.basic_streambuf = &MEM[(void *)&_ZTVNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEEE + 16B];
+  MEM[(struct basic_stringbuf *)&router_name + 8B]._M_mode = 16;
+  # DEBUG D#31 => &MEM[(struct basic_stringbuf *)D#46]._M_string
+  # DEBUG this => D#31
+  # DEBUG this => D#20
+  # DEBUG D#19 => D#20
+  # DEBUG this => D#19
+  # DEBUG this => D#31
+  # DEBUG D#30 => &MEM[(struct basic_string *)D#31]._M_dataplus
+  # DEBUG this => D#30
+  # DEBUG __dat => &MEM[(struct basic_string *)&router_name + 80B].D.11539._M_local_buf
+  # DEBUG __a => D#29
+  # DEBUG D#28 => D#29
+  # DEBUG D#26 => D#30
+  # DEBUG D#27 => D#28
+  # DEBUG this => D#26
+  # DEBUG __a => D#27
+  # DEBUG D#25 => D#27
+  # DEBUG D#24 => D#26
+  # DEBUG this => D#24
+  # DEBUG D.48004 => D#25
+  MEM[(struct _Alloc_hider *)&router_name + 80B]._M_p = &MEM[(struct basic_string *)&router_name + 80B].D.11539._M_local_buf;
+  # DEBUG this => NULL
+  # DEBUG this => NULL
+  # DEBUG this => D#31
+  # DEBUG __n => 0
+  # DEBUG D#9 => D#31
+  # DEBUG __length => 0
+  # DEBUG this => D#9
+  MEM[(size_type *)&router_name + 88B] = 0;
+  # DEBUG D#5 => D#31
+  # DEBUG this => D#5
+  # DEBUG __c1 => &MEM[(struct basic_string *)&router_name + 80B].D.11539._M_local_buf
+  # DEBUG __c2 => D#10
+  MEM[(char_type &)&router_name + 96] = 0;
+  std::basic_ios<char>::init (&MEM[(void *)&router_name + 112B], &router_name._M_stringbuf.D.26491);
+  goto <bb 11>;
+
+<L22>:
+  # DEBUG this => &router_name._M_stringbuf
+  MEM[(struct basic_stringbuf *)&router_name + 8B].D.26491._vptr.basic_streambuf = &MEM[(void *)&_ZTVNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEEE + 16B];
+  # DEBUG D#45 => &MEM[(struct basic_stringbuf *)&router_name + 8B]._M_string
+  # DEBUG this => D#45
+  # DEBUG this => D#45
+  # DEBUG this => D#45
+  _13 = MEM[(char * *)&router_name + 80B];
+  # DEBUG D#5 => D#45
+  # DEBUG this => D#5
+  # DEBUG this => D#45
+  if (&MEM[(const struct basic_string *)&router_name + 80B].D.11539._M_local_buf != _13)
+    goto <bb 5>;
+  else
+    goto <bb 6>;
+
+  <bb 5>:
+  # DEBUG D#42 => MEM[(struct basic_string *)D#45].D.11539._M_allocated_capacity
+  # DEBUG D#41 => D#42
+  # DEBUG this => D#45
+  # DEBUG __size => D#41
+  # DEBUG D#40 => D#41
+  # DEBUG D#5 => D#45
+  # DEBUG this => D#5
+  # DEBUG this => D#45
+  # DEBUG D#39 => &MEM[(struct basic_string *)D#45]._M_dataplus
+  # DEBUG D#37 => D#39
+  # DEBUG D#38 => D#40 + 1
+  # DEBUG __p => _13
+  # DEBUG __a => D#37
+  # DEBUG __n => D#38
+  # DEBUG D#36 => D#38
+  # DEBUG D#35 => D#37
+  # DEBUG D#33 => D#35
+  # DEBUG D#34 => D#36
+  # DEBUG __p => _13
+  # DEBUG this => D#33
+  # DEBUG D.49520 => D#34
+  operator delete (_13);
+
+  <bb 6>:
+  # DEBUG D#43 => &MEM[(struct basic_string *)D#45]._M_dataplus
+  # DEBUG this => D#43
+  # DEBUG this => D#43
+  # DEBUG this => D#43
+  MEM[(struct  &)&router_name + 80] ={v} {CLOBBER};
+  # DEBUG D#44 => &MEM[(struct basic_stringbuf *)&router_name + 8B].D.26491
+  # DEBUG this => D#44
+  MEM[(struct basic_streambuf *)&router_name + 8B]._vptr.basic_streambuf = &MEM[(void *)&_ZTVSt15basic_streambufIcSt11char_traitsIcEE + 16B];
+  std::locale::~locale (&MEM[(struct basic_streambuf *)&router_name + 8B]._M_buf_locale);
+  MEM[(struct  &)&router_name + 8] ={v} {CLOBBER};
+  resx 17
+
+<L23>:
+  # DEBUG this => &router_name.D.26641
+  # DEBUG __vtt_parm => &MEM[(void *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 8B]
+  _181 = MEM[(long int *)iftmp.19_168 + -24B];
+  iftmp.26_182 = (sizetype) _181;
+  _183 = &router_name.D.26641 + iftmp.26_182;
+  _183->D.23348._vptr.ios_base = iftmp.21_172;
+  MEM[(struct  &)&router_name] ={v} {CLOBBER};
+  resx 16
+
+<L29>:
+  goto <bb 10> (<L24>);
+
+<L28>:
+
+<L24>:
+  # DEBUG D#47 => &router_name.D.26644
+  # DEBUG this => D#47
+  MEM[(struct basic_ios *)&router_name + 112B].D.23348._vptr.ios_base = &MEM[(void *)&_ZTVSt9basic_iosIcSt11char_traitsIcEE + 16B];
+  std::ios_base::~ios_base (&MEM[(struct basic_ios *)&router_name + 112B].D.23348);
+  resx 15
+
+  <bb 11>:
+  _15 = this_14(D)->_n;
+  _16 = _15 + -1;
+  _17 = this_14(D)->_k;
+  per_stage_19 = powi (_17, _16);
+
+  <bb 12>:
+  # DEBUG stage => 0
+  # DEBUG node => 0
+  _389 = this_14(D)->_n;
+  if (_389 <= 0)
+    goto <bb 123>;
+  else
+    goto <bb 13>;
+
+  <bb 13>:
+
+  <bb 14>:
+  # node_184 = PHI <0(13), node_310(121)>
+  # stage_311 = PHI <0(13), stage_99(121)>
+  # prephitmp_273 = PHI <_389(13), prephitmp_599(121)>
+  # DEBUG stage => stage_311
+  # DEBUG node => 0
+  # DEBUG addr => 0
+  # DEBUG node => node_184
+  if (per_stage_19 <= 0)
+    goto <bb 120>;
+  else
+    goto <bb 15>;
+
+  <bb 15>:
+
+  <bb 16>:
+  # node_309 = PHI <node_184(15), node_91(102)>
+  # addr_208 = PHI <0(15), addr_92(102)>
+  # DEBUG addr => addr_208
+  # DEBUG node => node_309
+  # DEBUG __out => &router_name.D.26641
+  # DEBUG __s => "router_"
+  # DEBUG __s => "router_"
+  std::__ostream_insert<char, std::char_traits<char> > (&router_name.D.26641, "router_", 7);
+  goto <bb 18>;
+
+<L31>:
+  pretmp_537 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 8B];
+  pretmp_154 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 16B];
+  goto <bb 136> (<L19>);
+
+  <bb 18>:
+  _23 = std::basic_ostream<char>::operator<< (&router_name.D.26641, stage_311);
+  goto <bb 20>;
+
+<L32>:
+  pretmp_538 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 8B];
+  pretmp_145 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 16B];
+  goto <bb 136> (<L19>);
+
+  <bb 20>:
+  # DEBUG __out => _23
+  # DEBUG __s => "_"
+  # DEBUG __s => "_"
+  std::__ostream_insert<char, std::char_traits<char> > (_23, "_", 1);
+  goto <bb 22>;
+
+<L33>:
+  pretmp_542 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 8B];
+  pretmp_146 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 16B];
+  goto <bb 136> (<L19>);
+
+  <bb 22>:
+  std::basic_ostream<char>::operator<< (_23, addr_208);
+  goto <bb 24>;
+
+<L34>:
+  pretmp_544 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 8B];
+  pretmp_147 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 16B];
+  goto <bb 136> (<L19>);
+
+  <bb 24>:
+  _26 = (long unsigned int) node_309;
+  # DEBUG D#117 => &this_14(D)->D.45007._routers
+  _112 = MEM[(struct Router * * *)this_14(D) + 112B];
+  # DEBUG D#18 => D#117
+  # DEBUG __n => _26
+  # DEBUG this => D#18
+  _82 = _26 * 8;
+  _79 = _112 + _82;
+  _28 = this_14(D)->_k;
+  # DEBUG this => &router_name
+  # DEBUG this => &router_name._M_stringbuf
+  # DEBUG this => &D.45145
+  # DEBUG this => D#20
+  # DEBUG D#19 => D#20
+  # DEBUG this => D#19
+  # DEBUG this => &D.45145
+  # DEBUG D#30 => &D.45145._M_dataplus
+  # DEBUG this => D#30
+  # DEBUG __dat => &D.45145.D.11539._M_local_buf
+  # DEBUG __a => D#29
+  # DEBUG D#28 => D#29
+  # DEBUG D#26 => D#30
+  # DEBUG D#27 => D#28
+  # DEBUG this => D#26
+  # DEBUG __a => D#27
+  # DEBUG D#25 => D#27
+  # DEBUG D#24 => D#26
+  # DEBUG this => D#24
+  # DEBUG D.48004 => D#25
+  MEM[(struct _Alloc_hider *)&D.45145]._M_p = &D.45145.D.11539._M_local_buf;
+  # DEBUG this => NULL
+  # DEBUG this => NULL
+  # DEBUG this => &D.45145
+  # DEBUG __n => 0
+  # DEBUG D#9 => &D.45145
+  # DEBUG __length => 0
+  # DEBUG this => D#9
+  MEM[(size_type *)&D.45145 + 8B] = 0;
+  # DEBUG D#5 => &D.45145
+  # DEBUG this => D#5
+  # DEBUG __c1 => &D.45145.D.11539._M_local_buf
+  # DEBUG __c2 => D#10
+  MEM[(char_type &)&D.45145 + 16] = 0;
+  # DEBUG D#80 => &MEM[(const struct basic_stringbuf *)&router_name + 8B].D.26491
+  _187 = MEM[(char_type * *)&router_name + 48B];
+  # DEBUG D#2 => D#80
+  # DEBUG this => D#2
+  if (_187 != 0B)
+    goto <bb 25>;
+  else
+    goto <bb 47>;
+
+  <bb 25>:
+  # DEBUG D#81 => &MEM[(const struct basic_stringbuf *)&router_name + 8B].D.26491
+  # DEBUG D#2 => D#81
+  # DEBUG this => D#2
+  # DEBUG D#82 => &MEM[(const struct basic_stringbuf *)&router_name + 8B].D.26491
+  _188 = MEM[(char_type * *)&router_name + 32B];
+  # DEBUG D#3 => D#82
+  # DEBUG this => D#3
+  if (_187 > _188)
+    goto <bb 26>;
+  else
+    goto <bb 36>;
+
+  <bb 26>:
+  # DEBUG this => D#20
+  # DEBUG D#19 => D#20
+  # DEBUG this => D#19
+  # DEBUG D#85 => &MEM[(const struct basic_stringbuf *)&router_name + 8B].D.26491
+  # DEBUG D#2 => D#85
+  # DEBUG this => D#2
+  # DEBUG D#86 => &MEM[(const struct basic_stringbuf *)&router_name + 8B].D.26491
+  _189 = MEM[(char_type * *)&router_name + 40B];
+  # DEBUG D#4 => D#86
+  # DEBUG this => D#4
+  # DEBUG this => &D.49663
+  # DEBUG __beg => _189
+  # DEBUG __end => _187
+  # DEBUG __a => NULL
+  # DEBUG this => &D.49663
+  # DEBUG D#78 => &D.49663._M_dataplus
+  # DEBUG this => D#78
+  # DEBUG __dat => &D.49663.D.11539._M_local_buf
+  # DEBUG __a => D#29
+  # DEBUG D#28 => D#29
+  # DEBUG D#26 => D#78
+  # DEBUG D#27 => D#28
+  # DEBUG this => D#26
+  # DEBUG __a => D#27
+  # DEBUG D#25 => D#27
+  # DEBUG D#24 => D#26
+  # DEBUG this => D#24
+  # DEBUG D.48004 => D#25
+  MEM[(struct _Alloc_hider *)&D.49663]._M_p = &D.49663.D.11539._M_local_buf;
+  # DEBUG this => &D.49663
+  # DEBUG __beg => _189
+  # DEBUG __end => _187
+  # DEBUG this => &D.49663
+  # DEBUG __beg => _189
+  # DEBUG __end => _187
+  # DEBUG this => &D.49663
+  # DEBUG __beg => _189
+  # DEBUG __end => _187
+  # DEBUG __ptr => _189
+  if (_189 == 0B)
+    goto <bb 139>;
+  else
+    goto <bb 141>;
+
+  <bb 27>:
+  _201 = std::__cxx11::basic_string<char>::_M_create (&D.49663, &__dnew, 0);
+
+  <bb 28>:
+  # DEBUG D#7 => &D.49663
+  # DEBUG __p => _201
+  # DEBUG this => D#7
+  MEM[(char * *)&D.49663] = _201;
+  __dnew.35_202 = __dnew;
+  # DEBUG D#8 => &D.49663
+  # DEBUG __capacity => __dnew.35_202
+  # DEBUG this => D#8
+  MEM[(size_type *)&D.49663 + 16B] = __dnew.35_202;
+  # DEBUG D#5 => &D.49663
+  # DEBUG this => D#5
+  # DEBUG __p => _201
+  # DEBUG __k1 => _189
+  # DEBUG __k2 => _187
+  # DEBUG __d => _201
+  # DEBUG __s => _189
+  # DEBUG __n => __dnew.34_200
+  goto <bb 31>;
+
+  <bb 29>:
+  # DEBUG D#5 => &D.49663
+  # DEBUG this => D#5
+  # DEBUG __p => &D.49663.D.11539._M_local_buf
+  # DEBUG __k1 => _189
+  # DEBUG __k2 => _187
+  # DEBUG __d => &D.49663.D.11539._M_local_buf
+  # DEBUG __s => _189
+  # DEBUG __n => __dnew.34_200
+  if (__dnew.34_200 == 1)
+    goto <bb 30>;
+  else
+    goto <bb 31>;
+
+  <bb 30>:
+  _204 = MEM[(const char_type &)_189];
+  # DEBUG D#10 => _189
+  # DEBUG __c1 => &D.49663.D.11539._M_local_buf
+  # DEBUG __c2 => D#10
+  MEM[(char_type &)&D.49663 + 16] = _204;
+  goto <bb 32>;
+
+  <bb 31>:
+  # _341 = PHI <&D.49663.D.11539._M_local_buf(29), _201(28)>
+  # DEBUG D#5 => &D.49663
+  # DEBUG this => D#5
+  # DEBUG __p => _341
+  # DEBUG __k1 => _189
+  # DEBUG __k2 => _187
+  # DEBUG __d => _341
+  # DEBUG __s => _189
+  # DEBUG __n => __dnew.34_200
+  # DEBUG __s1 => _341
+  # DEBUG __s2 => _189
+  # DEBUG __n => __dnew.34_200
+  __builtin_memcpy (_341, _189, __dnew.34_200);
+  pretmp_594 = __dnew;
+  pretmp_596 = MEM[(char * *)&D.49663];
+
+  <bb 32>:
+  # prephitmp_595 = PHI <__dnew.34_200(30), pretmp_594(31)>
+  # prephitmp_597 = PHI <&D.49663.D.11539._M_local_buf(30), pretmp_596(31)>
+  # DEBUG D#138 => __dnew
+  # DEBUG this => &D.49663
+  # DEBUG __n => D#138
+  # DEBUG D#9 => &D.49663
+  # DEBUG __length => D#138
+  # DEBUG this => D#9
+  MEM[(size_type *)&D.49663 + 8B] = prephitmp_595;
+  # DEBUG D#5 => &D.49663
+  # DEBUG this => D#5
+  _207 = prephitmp_597 + prephitmp_595;
+  # DEBUG __c1 => _207
+  # DEBUG __c2 => D#10
+  MEM[(char_type &)_207] = 0;
+  __dnew ={v} {CLOBBER};
+  # DEBUG this => &D.45145
+  # DEBUG __str => &D.49663
+  # DEBUG this => &D.45145
+  # DEBUG __str => &D.49663
+  std::__cxx11::basic_string<char>::_M_assign (&D.45145, &D.49663);
+
+  <bb 33>:
+  # DEBUG this => &D.49663
+  # DEBUG this => &D.49663
+  # DEBUG this => &D.49663
+  _190 = MEM[(char * *)&D.49663];
+  # DEBUG D#5 => &D.49663
+  # DEBUG this => D#5
+  # DEBUG this => &D.49663
+  if (&D.49663.D.11539._M_local_buf != _190)
+    goto <bb 34>;
+  else
+    goto <bb 35>;
+
+  <bb 34>:
+  # DEBUG D#42 => D.49663.D.11539._M_allocated_capacity
+  # DEBUG D#41 => D#42
+  # DEBUG this => &D.49663
+  # DEBUG __size => D#41
+  # DEBUG D#40 => D#41
+  # DEBUG D#5 => &D.49663
+  # DEBUG this => D#5
+  # DEBUG this => &D.49663
+  # DEBUG D#39 => &D.49663._M_dataplus
+  # DEBUG D#37 => D#39
+  # DEBUG D#38 => D#40 + 1
+  # DEBUG __p => _190
+  # DEBUG __a => D#37
+  # DEBUG __n => D#38
+  # DEBUG D#36 => D#38
+  # DEBUG D#35 => D#37
+  # DEBUG D#33 => D#35
+  # DEBUG D#34 => D#36
+  # DEBUG __p => _190
+  # DEBUG this => D#33
+  # DEBUG D.49622 => D#34
+  operator delete (_190);
+
+  <bb 35>:
+  # DEBUG D#43 => &D.49663._M_dataplus
+  # DEBUG this => D#43
+  # DEBUG this => D#43
+  # DEBUG this => D#43
+  D.49663 ={v} {CLOBBER};
+  # DEBUG this => NULL
+  # DEBUG this => NULL
+  goto <bb 62>;
+
+  <bb 36>:
+  # DEBUG this => D#20
+  # DEBUG D#19 => D#20
+  # DEBUG this => D#19
+  # DEBUG D#83 => &MEM[(const struct basic_stringbuf *)&router_name + 8B].D.26491
+  # DEBUG D#3 => D#83
+  # DEBUG this => D#3
+  # DEBUG D#84 => &MEM[(const struct basic_stringbuf *)&router_name + 8B].D.26491
+  _191 = MEM[(char_type * *)&router_name + 40B];
+  # DEBUG D#4 => D#84
+  # DEBUG this => D#4
+  # DEBUG this => &D.49662
+  # DEBUG __beg => _191
+  # DEBUG __end => _188
+  # DEBUG __a => NULL
+  # DEBUG this => &D.49662
+  # DEBUG D#78 => &D.49662._M_dataplus
+  # DEBUG this => D#78
+  # DEBUG __dat => &D.49662.D.11539._M_local_buf
+  # DEBUG __a => D#29
+  # DEBUG D#28 => D#29
+  # DEBUG D#26 => D#78
+  # DEBUG D#27 => D#28
+  # DEBUG this => D#26
+  # DEBUG __a => D#27
+  # DEBUG D#25 => D#27
+  # DEBUG D#24 => D#26
+  # DEBUG this => D#24
+  # DEBUG D.48004 => D#25
+  MEM[(struct _Alloc_hider *)&D.49662]._M_p = &D.49662.D.11539._M_local_buf;
+  # DEBUG this => &D.49662
+  # DEBUG __beg => _191
+  # DEBUG __end => _188
+  # DEBUG this => &D.49662
+  # DEBUG __beg => _191
+  # DEBUG __end => _188
+  # DEBUG this => &D.49662
+  # DEBUG __beg => _191
+  # DEBUG __end => _188
+  # DEBUG __ptr => _191
+  _500 = _188 != 0B;
+  _185 = _191 == 0B;
+  _373 = _185 & _500;
+  if (_373 != 0)
+    goto <bb 142>;
+  else
+    goto <bb 144>;
+
+  <bb 37>:
+  _213 = std::__cxx11::basic_string<char>::_M_create (&D.49662, &__dnew, 0);
+  goto <bb 39>;
+
+<L36>:
+  goto <bb 58> (<L27>);
+
+  <bb 39>:
+  # DEBUG D#7 => &D.49662
+  # DEBUG __p => _213
+  # DEBUG this => D#7
+  MEM[(char * *)&D.49662] = _213;
+  __dnew.35_214 = __dnew;
+  # DEBUG D#8 => &D.49662
+  # DEBUG __capacity => __dnew.35_214
+  # DEBUG this => D#8
+  MEM[(size_type *)&D.49662 + 16B] = __dnew.35_214;
+  # DEBUG D#5 => &D.49662
+  # DEBUG this => D#5
+  # DEBUG __p => _213
+  # DEBUG __k1 => _191
+  # DEBUG __k2 => _188
+  # DEBUG __d => _213
+  # DEBUG __s => _191
+  # DEBUG __n => __dnew.34_212
+  goto <bb 42>;
+
+  <bb 40>:
+  # DEBUG D#5 => &D.49662
+  # DEBUG this => D#5
+  # DEBUG __p => &D.49662.D.11539._M_local_buf
+  # DEBUG __k1 => _191
+  # DEBUG __k2 => _188
+  # DEBUG __d => &D.49662.D.11539._M_local_buf
+  # DEBUG __s => _191
+  # DEBUG __n => __dnew.34_212
+  if (__dnew.34_212 == 1)
+    goto <bb 41>;
+  else
+    goto <bb 42>;
+
+  <bb 41>:
+  _216 = MEM[(const char_type &)_191];
+  # DEBUG D#10 => _191
+  # DEBUG __c1 => &D.49662.D.11539._M_local_buf
+  # DEBUG __c2 => D#10
+  MEM[(char_type &)&D.49662 + 16] = _216;
+  goto <bb 43>;
+
+  <bb 42>:
+  # _253 = PHI <&D.49662.D.11539._M_local_buf(40), _213(39)>
+  # DEBUG D#5 => &D.49662
+  # DEBUG this => D#5
+  # DEBUG __p => _253
+  # DEBUG __k1 => _191
+  # DEBUG __k2 => _188
+  # DEBUG __d => _253
+  # DEBUG __s => _191
+  # DEBUG __n => __dnew.34_212
+  # DEBUG __s1 => _253
+  # DEBUG __s2 => _191
+  # DEBUG __n => __dnew.34_212
+  __builtin_memcpy (_253, _191, __dnew.34_212);
+  pretmp_590 = __dnew;
+  pretmp_592 = MEM[(char * *)&D.49662];
+
+  <bb 43>:
+  # prephitmp_591 = PHI <__dnew.34_212(41), pretmp_590(42)>
+  # prephitmp_593 = PHI <&D.49662.D.11539._M_local_buf(41), pretmp_592(42)>
+  # DEBUG D#139 => __dnew
+  # DEBUG this => &D.49662
+  # DEBUG __n => D#139
+  # DEBUG D#9 => &D.49662
+  # DEBUG __length => D#139
+  # DEBUG this => D#9
+  MEM[(size_type *)&D.49662 + 8B] = prephitmp_591;
+  # DEBUG D#5 => &D.49662
+  # DEBUG this => D#5
+  _219 = prephitmp_593 + prephitmp_591;
+  # DEBUG __c1 => _219
+  # DEBUG __c2 => D#10
+  MEM[(char_type &)_219] = 0;
+  __dnew ={v} {CLOBBER};
+  # DEBUG this => &D.45145
+  # DEBUG __str => &D.49662
+  # DEBUG this => &D.45145
+  # DEBUG __str => &D.49662
+  std::__cxx11::basic_string<char>::_M_assign (&D.45145, &D.49662);
+
+  <bb 44>:
+  # DEBUG this => &D.49662
+  # DEBUG this => &D.49662
+  # DEBUG this => &D.49662
+  _192 = MEM[(char * *)&D.49662];
+  # DEBUG D#5 => &D.49662
+  # DEBUG this => D#5
+  # DEBUG this => &D.49662
+  if (&D.49662.D.11539._M_local_buf != _192)
+    goto <bb 45>;
+  else
+    goto <bb 46>;
+
+  <bb 45>:
+  # DEBUG D#42 => D.49662.D.11539._M_allocated_capacity
+  # DEBUG D#41 => D#42
+  # DEBUG this => &D.49662
+  # DEBUG __size => D#41
+  # DEBUG D#40 => D#41
+  # DEBUG D#5 => &D.49662
+  # DEBUG this => D#5
+  # DEBUG this => &D.49662
+  # DEBUG D#39 => &D.49662._M_dataplus
+  # DEBUG D#37 => D#39
+  # DEBUG D#38 => D#40 + 1
+  # DEBUG __p => _192
+  # DEBUG __a => D#37
+  # DEBUG __n => D#38
+  # DEBUG D#36 => D#38
+  # DEBUG D#35 => D#37
+  # DEBUG D#33 => D#35
+  # DEBUG D#34 => D#36
+  # DEBUG __p => _192
+  # DEBUG this => D#33
+  # DEBUG D.49585 => D#34
+  operator delete (_192);
+
+  <bb 46>:
+  # DEBUG D#43 => &D.49662._M_dataplus
+  # DEBUG this => D#43
+  # DEBUG this => D#43
+  # DEBUG this => D#43
+  D.49662 ={v} {CLOBBER};
+  # DEBUG this => NULL
+  # DEBUG this => NULL
+  goto <bb 62>;
+
+  <bb 47>:
+  # DEBUG this => &D.45145
+  # DEBUG __str => &MEM[(const struct basic_stringbuf *)&router_name + 8B]._M_string
+  # DEBUG this => &D.45145
+  # DEBUG __str => &MEM[(const struct basic_stringbuf *)&router_name + 8B]._M_string
+  std::__cxx11::basic_string<char>::_M_assign (&D.45145, &MEM[(const struct basic_stringbuf *)&router_name + 8B]._M_string);
+  goto <bb 62>;
+
+<L37>:
+  goto <bb 58> (<L27>);
+
+<L25>:
+  # DEBUG this => &D.49663
+  # DEBUG this => &D.49663
+  # DEBUG this => &D.49663
+  _194 = MEM[(char * *)&D.49663];
+  # DEBUG D#5 => &D.49663
+  # DEBUG this => D#5
+  # DEBUG this => &D.49663
+  if (&D.49663.D.11539._M_local_buf != _194)
+    goto <bb 50>;
+  else
+    goto <bb 51>;
+
+  <bb 50>:
+  # DEBUG D#42 => D.49663.D.11539._M_allocated_capacity
+  # DEBUG D#41 => D#42
+  # DEBUG this => &D.49663
+  # DEBUG __size => D#41
+  # DEBUG D#40 => D#41
+  # DEBUG D#5 => &D.49663
+  # DEBUG this => D#5
+  # DEBUG this => &D.49663
+  # DEBUG D#39 => &D.49663._M_dataplus
+  # DEBUG D#37 => D#39
+  # DEBUG D#38 => D#40 + 1
+  # DEBUG __p => _194
+  # DEBUG __a => D#37
+  # DEBUG __n => D#38
+  # DEBUG D#36 => D#38
+  # DEBUG D#35 => D#37
+  # DEBUG D#33 => D#35
+  # DEBUG D#34 => D#36
+  # DEBUG __p => _194
+  # DEBUG this => D#33
+  # DEBUG D.49566 => D#34
+  operator delete (_194);
+
+  <bb 51>:
+  # DEBUG D#43 => &D.49663._M_dataplus
+  # DEBUG this => D#43
+  # DEBUG this => D#43
+  # DEBUG this => D#43
+  D.49663 ={v} {CLOBBER};
+  resx 20
+
+<L38>:
+  goto <bb 58> (<L27>);
+
+<L26>:
+  # DEBUG this => &D.49662
+  # DEBUG this => &D.49662
+  # DEBUG this => &D.49662
+  _195 = MEM[(char * *)&D.49662];
+  # DEBUG D#5 => &D.49662
+  # DEBUG this => D#5
+  # DEBUG this => &D.49662
+  if (&D.49662.D.11539._M_local_buf != _195)
+    goto <bb 54>;
+  else
+    goto <bb 55>;
+
+  <bb 54>:
+  # DEBUG D#42 => D.49662.D.11539._M_allocated_capacity
+  # DEBUG D#41 => D#42
+  # DEBUG this => &D.49662
+  # DEBUG __size => D#41
+  # DEBUG D#40 => D#41
+  # DEBUG D#5 => &D.49662
+  # DEBUG this => D#5
+  # DEBUG this => &D.49662
+  # DEBUG D#39 => &D.49662._M_dataplus
+  # DEBUG D#37 => D#39
+  # DEBUG D#38 => D#40 + 1
+  # DEBUG __p => _195
+  # DEBUG __a => D#37
+  # DEBUG __n => D#38
+  # DEBUG D#36 => D#38
+  # DEBUG D#35 => D#37
+  # DEBUG D#33 => D#35
+  # DEBUG D#34 => D#36
+  # DEBUG __p => _195
+  # DEBUG this => D#33
+  # DEBUG D.49550 => D#34
+  operator delete (_195);
+
+  <bb 55>:
+  # DEBUG D#43 => &D.49662._M_dataplus
+  # DEBUG this => D#43
+  # DEBUG this => D#43
+  # DEBUG this => D#43
+  D.49662 ={v} {CLOBBER};
+  resx 19
+
+<L39>:
+  goto <bb 58> (<L27>);
+
+<L35>:
+
+<L27>:
+  # DEBUG this => &D.45145
+  # DEBUG this => &D.45145
+  # DEBUG this => &D.45145
+  _196 = MEM[(char * *)&D.45145];
+  # DEBUG D#5 => &D.45145
+  # DEBUG this => D#5
+  # DEBUG this => &D.45145
+  if (&D.45145.D.11539._M_local_buf != _196)
+    goto <bb 59>;
+  else
+    goto <bb 60>;
+
+  <bb 59>:
+  # DEBUG D#42 => D.45145.D.11539._M_allocated_capacity
+  # DEBUG D#41 => D#42
+  # DEBUG this => &D.45145
+  # DEBUG __size => D#41
+  # DEBUG D#40 => D#41
+  # DEBUG D#5 => &D.45145
+  # DEBUG this => D#5
+  # DEBUG this => &D.45145
+  # DEBUG D#39 => &D.45145._M_dataplus
+  # DEBUG D#37 => D#39
+  # DEBUG D#38 => D#40 + 1
+  # DEBUG __p => _196
+  # DEBUG __a => D#37
+  # DEBUG __n => D#38
+  # DEBUG D#36 => D#38
+  # DEBUG D#35 => D#37
+  # DEBUG D#33 => D#35
+  # DEBUG D#34 => D#36
+  # DEBUG __p => _196
+  # DEBUG this => D#33
+  # DEBUG D.49539 => D#34
+  operator delete (_196);
+
+  <bb 60>:
+  # DEBUG D#43 => &D.45145._M_dataplus
+  # DEBUG this => D#43
+  # DEBUG this => D#43
+  # DEBUG this => D#43
+  resx 18
+
+<L40>:
+  pretmp_549 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 8B];
+  pretmp_148 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 16B];
+  goto <bb 136> (<L19>);
+
+  <bb 62>:
+  _30 = &this_14(D)->D.45007.D.44919.D.33681;
+  _33 = Router::NewRouter (config_31(D), _30, &D.45145, node_309, _28, _28);
+
+  <bb 63>:
+  *_79 = _33;
+  # DEBUG this => &D.45145
+  # DEBUG this => &D.45145
+  # DEBUG this => &D.45145
+  _64 = MEM[(char * *)&D.45145];
+  # DEBUG D#5 => &D.45145
+  # DEBUG this => D#5
+  # DEBUG this => &D.45145
+  if (&D.45145.D.11539._M_local_buf != _64)
+    goto <bb 64>;
+  else
+    goto <bb 65>;
+
+  <bb 64>:
+  # DEBUG D#42 => D.45145.D.11539._M_allocated_capacity
+  # DEBUG D#41 => D#42
+  # DEBUG this => &D.45145
+  # DEBUG __size => D#41
+  # DEBUG D#40 => D#41
+  # DEBUG D#5 => &D.45145
+  # DEBUG this => D#5
+  # DEBUG this => &D.45145
+  # DEBUG D#39 => &D.45145._M_dataplus
+  # DEBUG D#37 => D#39
+  # DEBUG D#38 => D#40 + 1
+  # DEBUG __p => _64
+  # DEBUG __a => D#37
+  # DEBUG __n => D#38
+  # DEBUG D#36 => D#38
+  # DEBUG D#35 => D#37
+  # DEBUG D#33 => D#35
+  # DEBUG D#34 => D#36
+  # DEBUG __p => _64
+  # DEBUG this => D#33
+  # DEBUG D.49199 => D#34
+  operator delete (_64);
+
+  <bb 65>:
+  # DEBUG D#43 => &D.45145._M_dataplus
+  # DEBUG this => D#43
+  # DEBUG this => D#43
+  # DEBUG this => D#43
+  D.45145 ={v} {CLOBBER};
+  # DEBUG D#118 => &this_14(D)->D.45007._routers
+  _113 = MEM[(struct Router * * *)this_14(D) + 112B];
+  # DEBUG D#18 => D#118
+  # DEBUG __n => _26
+  # DEBUG this => D#18
+  _67 = _113 + _82;
+  _36 = *_67;
+  # DEBUG D#136 => &this_14(D)->D.45007._timed_modules
+  # DEBUG this => D#136
+  # DEBUG __x => &D.45146
+  _220 = MEM[(struct deque *)this_14(D) + 280B].D.44805._M_impl._M_finish._M_cur;
+  _221 = MEM[(struct deque *)this_14(D) + 280B].D.44805._M_impl._M_finish._M_last;
+  _222 = _221 + 18446744073709551608;
+  if (_220 != _222)
+    goto <bb 66>;
+  else
+    goto <bb 69>;
+
+  <bb 66>:
+  # DEBUG D#115 => &D#136->D.44805._M_impl
+  # DEBUG D#23 => D#115
+  # DEBUG __p => _220
+  # DEBUG __arg => &D.45146
+  # DEBUG __a => D#23
+  # DEBUG D#22 => D#23
+  # DEBUG D#21 => D#22
+  # DEBUG __p => _220
+  # DEBUG __val => &D.45146
+  # DEBUG this => D#21
+  # DEBUG D#11 => 8
+  # DEBUG __p => _220
+  # DEBUG D.47977 => D#11
+  if (_220 != 0B)
+    goto <bb 67>;
+  else
+    goto <bb 68>;
+
+  <bb 67>:
+  *_220 = _36;
+  pretmp_588 = MEM[(struct deque *)this_14(D) + 280B].D.44805._M_impl._M_finish._M_cur;
+
+  <bb 68>:
+  # prephitmp_589 = PHI <_220(66), pretmp_588(67)>
+  _225 = prephitmp_589 + 8;
+  MEM[(struct deque *)this_14(D) + 280B].D.44805._M_impl._M_finish._M_cur = _225;
+  goto <bb 93>;
+
+  <bb 69>:
+  # DEBUG this => D#136
+  # DEBUG __t => &D.45146
+  # DEBUG this => D#136
+  # DEBUG __nodes_to_add => 1
+  _234 = MEM[(struct deque *)this_14(D) + 280B].D.44805._M_impl._M_map_size;
+  _235 = MEM[(struct deque *)this_14(D) + 280B].D.44805._M_impl._M_finish._M_node;
+  _236 = (long int) _235;
+  _237 = MEM[(struct deque *)this_14(D) + 280B].D.44805._M_impl._M_map;
+  _238 = (long int) _237;
+  _239 = _236 - _238;
+  _240 = _239 /[ex] -8;
+  _241 = (long unsigned int) _240;
+  _242 = _234 + _241;
+  if (_242 <= 1)
+    goto <bb 70>;
+  else
+    goto <bb 88>;
+
+  <bb 70>:
+  # DEBUG this => D#136
+  # DEBUG __nodes_to_add => 1
+  # DEBUG __nodes_to_add => 1
+  # DEBUG __add_at_front => 0
+  _245 = MEM[(struct deque *)this_14(D) + 280B].D.44805._M_impl._M_start._M_node;
+  _246 = (long int) _245;
+  _247 = _236 - _246;
+  _248 = _247 /[ex] 8;
+  _249 = _248 + 1;
+  __old_num_nodes_250 = (const size_type) _249;
+  # DEBUG __old_num_nodes => __old_num_nodes_250
+  __new_num_nodes_252 = __old_num_nodes_250 + 1;
+  # DEBUG __new_num_nodes => __new_num_nodes_252
+  _254 = __new_num_nodes_252 * 2;
+  if (_234 > _254)
+    goto <bb 71>;
+  else
+    goto <bb 78>;
+
+  <bb 71>:
+  _256 = _234 - __new_num_nodes_252;
+  _257 = _256 >> 1;
+  _258 = _257 * 8;
+  __new_nstart_262 = _237 + _258;
+  # DEBUG __new_nstart => __new_nstart_262
+  if (_245 > __new_nstart_262)
+    goto <bb 72>;
+  else
+    goto <bb 75>;
+
+  <bb 72>:
+  _263 = _235 + 8;
+  # DEBUG __first => _245
+  # DEBUG __last => _263
+  # DEBUG __result => __new_nstart_262
+  # DEBUG __it => _263
+  # DEBUG __it => _263
+  # DEBUG __it => _245
+  # DEBUG __it => _245
+  # DEBUG __first => _245
+  # DEBUG __last => _263
+  # DEBUG __result => __new_nstart_262
+  # DEBUG __it => __new_nstart_262
+  # DEBUG __it => __new_nstart_262
+  # DEBUG __it => _263
+  # DEBUG __it => _263
+  # DEBUG __it => _245
+  # DEBUG __it => _245
+  # DEBUG __first => NULL
+  # DEBUG __last => NULL
+  # DEBUG __result => NULL
+  # DEBUG __simple => 1
+  # DEBUG __first => NULL
+  # DEBUG __last => NULL
+  # DEBUG __result => NULL
+  __last.49_264 = (long int) _263;
+  _265 = __last.49_264 - _246;
+  _Num_266 = _265 /[ex] 8;
+  # DEBUG _Num => _Num_266
+  if (_Num_266 != 0)
+    goto <bb 74>;
+  else
+    goto <bb 73>;
+
+  <bb 73>:
+  pretmp_584 = __old_num_nodes_250 * 8;
+  goto <bb 87>;
+
+  <bb 74>:
+  _267 = (long unsigned int) _265;
+  __builtin_memmove (__new_nstart_262, _245, _267);
+  pretmp_582 = __old_num_nodes_250 * 8;
+  goto <bb 87>;
+
+  <bb 75>:
+  _268 = __old_num_nodes_250 * 8;
+  # DEBUG D#140 => __new_nstart_262 + _268
+  _270 = _235 + 8;
+  # DEBUG __first => _245
+  # DEBUG __last => _270
+  # DEBUG __result => D#140
+  # DEBUG __it => _270
+  # DEBUG __it => _270
+  # DEBUG __it => _245
+  # DEBUG __it => _245
+  # DEBUG __first => _245
+  # DEBUG __last => _270
+  # DEBUG __result => D#140
+  # DEBUG __it => D#140
+  # DEBUG __it => D#140
+  # DEBUG __it => _270
+  # DEBUG __it => _270
+  # DEBUG __it => _245
+  # DEBUG __it => _245
+  # DEBUG __first => NULL
+  # DEBUG __last => NULL
+  # DEBUG __result => NULL
+  # DEBUG __simple => 1
+  # DEBUG __first => NULL
+  # DEBUG __last => NULL
+  # DEBUG __result => NULL
+  __last.45_302 = (long int) _270;
+  _304 = __last.45_302 - _246;
+  _Num_305 = _304 /[ex] 8;
+  # DEBUG _Num => _Num_305
+  if (_Num_305 != 0)
+    goto <bb 76>;
+  else
+    goto <bb 77>;
+
+  <bb 76>:
+  _306 = (long unsigned int) _304;
+  _244 = _268 - _306;
+  _308 = __new_nstart_262 + _244;
+  __builtin_memmove (_308, _245, _306);
+
+  <bb 77>:
+  goto <bb 87>;
+
+  <bb 78>:
+  # DEBUG D#135 => &MEM[(struct deque *)this_14(D) + 280B].D.44805._M_impl._M_map_size
+  # DEBUG __a => D#135
+  # DEBUG __b => &__nodes_to_add
+  if (_234 == 0)
+    goto <bb 145>;
+  else
+    goto <bb 79>;
+
+  <bb 79>:
+  _274 = _234 + _234;
+  __new_map_size_275 = _274 + 2;
+  # DEBUG __new_map_size => __new_map_size_275
+  # DEBUG D#109 => &D#136->D.44805
+  # DEBUG D#106 => D#109
+  # DEBUG __n => __new_map_size_275
+  # DEBUG this => D#106
+  # DEBUG D#105 => D#106
+  # DEBUG D#94 => D#105
+  # DEBUG this => D#94
+  # DEBUG D#93 => D#94
+  # DEBUG this => D#93
+  # DEBUG this => NULL
+  # DEBUG D.48983 => NULL
+  # DEBUG this => NULL
+  # DEBUG D#104 => &__map_alloc
+  # DEBUG __n => __new_map_size_275
+  # DEBUG __a => D#104
+  # DEBUG D#103 => D#104
+  # DEBUG D#101 => D#103
+  # DEBUG D#102 => 0B
+  # DEBUG __n => __new_map_size_275
+  # DEBUG this => D#101
+  # DEBUG D.49813 => D#102
+  # DEBUG D#100 => D#101
+  # DEBUG D#99 => D#100
+  # DEBUG this => D#99
+  if (__new_map_size_275 > 2305843009213693951)
+    goto <bb 80>;
+  else
+    goto <bb 82>;
+
+  <bb 80>:
+  std::__throw_bad_alloc ();
+
+<L41>:
+  pretmp_523 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 8B];
+  pretmp_460 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 16B];
+  goto <bb 136> (<L19>);
+
+  <bb 82>:
+  # __new_map_size_388 = PHI <__new_map_size_275(79), __new_map_size_228(145)>
+  # DEBUG __new_map_size => __new_map_size_388
+  # DEBUG D#109 => &D#136->D.44805
+  # DEBUG D#106 => D#109
+  # DEBUG __n => __new_map_size_388
+  # DEBUG this => D#106
+  # DEBUG D#105 => D#106
+  # DEBUG D#94 => D#105
+  # DEBUG this => D#94
+  # DEBUG D#93 => D#94
+  # DEBUG this => D#93
+  # DEBUG this => NULL
+  # DEBUG D.48983 => NULL
+  # DEBUG this => NULL
+  # DEBUG D#104 => &__map_alloc
+  # DEBUG __n => __new_map_size_388
+  # DEBUG __a => D#104
+  # DEBUG D#103 => D#104
+  # DEBUG D#101 => D#103
+  # DEBUG D#102 => 0B
+  # DEBUG __n => __new_map_size_388
+  # DEBUG this => D#101
+  # DEBUG D.49813 => D#102
+  # DEBUG D#100 => D#101
+  # DEBUG D#99 => D#100
+  # DEBUG this => D#99
+  _276 = __new_map_size_388 * 8;
+  _277 = operator new (_276);
+  goto <bb 84>;
+
+<L42>:
+  pretmp_152 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 8B];
+  pretmp_554 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 16B];
+  goto <bb 136> (<L19>);
+
+  <bb 84>:
+  # DEBUG this => &__map_alloc
+  # DEBUG this => &__map_alloc
+  # DEBUG __new_map => _277
+  _278 = __new_map_size_388 - __new_num_nodes_252;
+  _279 = _278 >> 1;
+  _280 = _279 * 8;
+  __new_nstart_284 = _277 + _280;
+  # DEBUG __new_nstart => __new_nstart_284
+  _285 = MEM[(struct deque *)this_14(D) + 280B].D.44805._M_impl._M_finish._M_node;
+  _286 = _285 + 8;
+  _287 = MEM[(struct deque *)this_14(D) + 280B].D.44805._M_impl._M_start._M_node;
+  # DEBUG __first => _287
+  # DEBUG __last => _286
+  # DEBUG __result => __new_nstart_284
+  # DEBUG __it => _286
+  # DEBUG __it => _286
+  # DEBUG __it => _287
+  # DEBUG __it => _287
+  # DEBUG __first => _287
+  # DEBUG __last => _286
+  # DEBUG __result => __new_nstart_284
+  # DEBUG __it => __new_nstart_284
+  # DEBUG __it => __new_nstart_284
+  # DEBUG __it => _286
+  # DEBUG __it => _286
+  # DEBUG __it => _287
+  # DEBUG __it => _287
+  # DEBUG __first => NULL
+  # DEBUG __last => NULL
+  # DEBUG __result => NULL
+  # DEBUG __simple => 1
+  # DEBUG __first => NULL
+  # DEBUG __last => NULL
+  # DEBUG __result => NULL
+  __last.49_288 = (long int) _286;
+  __first.50_289 = (long int) _287;
+  _290 = __last.49_288 - __first.50_289;
+  _Num_291 = _290 /[ex] 8;
+  # DEBUG _Num => _Num_291
+  if (_Num_291 != 0)
+    goto <bb 85>;
+  else
+    goto <bb 86>;
+
+  <bb 85>:
+  _292 = (long unsigned int) _290;
+  __builtin_memmove (__new_nstart_284, _287, _292);
+
+  <bb 86>:
+  # DEBUG D#108 => D#136->D.44805._M_impl._M_map_size
+  _293 = MEM[(struct deque *)this_14(D) + 280B].D.44805._M_impl._M_map;
+  # DEBUG D#107 => &D#136->D.44805
+  # DEBUG D#97 => D#107
+  # DEBUG D#98 => D#108
+  # DEBUG __p => _293
+  # DEBUG this => D#97
+  # DEBUG __n => D#98
+  # DEBUG D#96 => D#98
+  # DEBUG D#95 => D#97
+  # DEBUG D#94 => D#95
+  # DEBUG this => D#94
+  # DEBUG D#93 => D#94
+  # DEBUG this => D#93
+  # DEBUG this => NULL
+  # DEBUG D.48983 => NULL
+  # DEBUG this => NULL
+  # DEBUG D#91 => &__map_alloc
+  # DEBUG D#92 => D#96
+  # DEBUG __p => _293
+  # DEBUG __a => D#91
+  # DEBUG __n => D#92
+  # DEBUG D#90 => D#92
+  # DEBUG D#89 => D#91
+  # DEBUG D#87 => D#89
+  # DEBUG D#88 => D#90
+  # DEBUG __p => _293
+  # DEBUG this => D#87
+  # DEBUG D.49803 => D#88
+  operator delete (_293);
+  # DEBUG this => &__map_alloc
+  # DEBUG this => &__map_alloc
+  MEM[(struct deque *)this_14(D) + 280B].D.44805._M_impl._M_map = _277;
+  MEM[(struct deque *)this_14(D) + 280B].D.44805._M_impl._M_map_size = __new_map_size_388;
+  pretmp_583 = __old_num_nodes_250 * 8;
+
+  <bb 87>:
+  # __new_nstart_294 = PHI <__new_nstart_262(74), __new_nstart_262(77), __new_nstart_284(86), __new_nstart_262(73)>
+  # prephitmp_585 = PHI <pretmp_582(74), _268(77), pretmp_583(86), pretmp_584(73)>
+  # DEBUG __new_nstart => __new_nstart_294
+  # DEBUG D#111 => &D#136->D.44805._M_impl._M_start
+  # DEBUG this => D#111
+  # DEBUG __new_node => __new_nstart_294
+  MEM[(struct _Deque_iterator *)this_14(D) + 296B]._M_node = __new_nstart_294;
+  _295 = *__new_nstart_294;
+  MEM[(struct _Deque_iterator *)this_14(D) + 296B]._M_first = _295;
+  # DEBUG __size => 8
+  _296 = _295 + 512;
+  MEM[(struct _Deque_iterator *)this_14(D) + 296B]._M_last = _296;
+  _298 = prephitmp_585 + 18446744073709551608;
+  _299 = __new_nstart_294 + _298;
+  # DEBUG D#110 => &D#136->D.44805._M_impl._M_finish
+  # DEBUG this => D#110
+  # DEBUG __new_node => _299
+  MEM[(struct _Deque_iterator *)this_14(D) + 328B]._M_node = _299;
+  _300 = *_299;
+  MEM[(struct _Deque_iterator *)this_14(D) + 328B]._M_first = _300;
+  # DEBUG __size => 8
+  _301 = _300 + 512;
+  MEM[(struct _Deque_iterator *)this_14(D) + 328B]._M_last = _301;
+
+  <bb 88>:
+  # prephitmp_166 = PHI <_299(87), _235(69)>
+  # DEBUG D#114 => &D#136->D.44805
+  # DEBUG D#73 => D#114
+  # DEBUG this => D#73
+  # DEBUG D#72 => D#73
+  # DEBUG __size => 8
+  # DEBUG D#71 => &D#72->_M_impl
+  # DEBUG D#70 => D#71
+  # DEBUG __n => NULL
+  # DEBUG __a => D#70
+  # DEBUG D#69 => D#70
+  # DEBUG D#67 => D#69
+  # DEBUG D#68 => 0B
+  # DEBUG __n => NULL
+  # DEBUG this => D#67
+  # DEBUG D.49740 => D#68
+  # DEBUG D#66 => D#67
+  # DEBUG D#65 => D#66
+  # DEBUG this => D#65
+  _226 = operator new (512);
+  goto <bb 90>;
+
+<L43>:
+  pretmp_151 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 8B];
+  pretmp_553 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 16B];
+  goto <bb 136> (<L19>);
+
+  <bb 90>:
+  MEM[(struct TimedModule * * *)prephitmp_166 + 8B] = _226;
+  _227 = MEM[(struct deque *)this_14(D) + 280B].D.44805._M_impl._M_finish._M_cur;
+  # DEBUG D#113 => &D#136->D.44805._M_impl
+  # DEBUG D#21 => D#113
+  # DEBUG __p => _227
+  # DEBUG __val => &D.45146
+  # DEBUG this => D#21
+  # DEBUG D#11 => 8
+  # DEBUG __p => _227
+  # DEBUG D.47977 => D#11
+  if (_227 != 0B)
+    goto <bb 91>;
+  else
+    goto <bb 92>;
+
+  <bb 91>:
+  *_227 = _36;
+
+  <bb 92>:
+  _229 = MEM[(struct deque *)this_14(D) + 280B].D.44805._M_impl._M_finish._M_node;
+  _230 = _229 + 8;
+  # DEBUG D#112 => &D#136->D.44805._M_impl._M_finish
+  # DEBUG this => D#112
+  # DEBUG __new_node => _230
+  MEM[(struct _Deque_iterator *)this_14(D) + 328B]._M_node = _230;
+  _231 = MEM[(struct TimedModule * * *)_229 + 8B];
+  MEM[(struct _Deque_iterator *)this_14(D) + 328B]._M_first = _231;
+  # DEBUG __size => 8
+  _232 = _231 + 512;
+  MEM[(struct _Deque_iterator *)this_14(D) + 328B]._M_last = _232;
+  MEM[(struct deque *)this_14(D) + 280B].D.44805._M_impl._M_finish._M_cur = _231;
+
+  <bb 93>:
+  # DEBUG D#20 => &D.45148
+  # DEBUG this => D#20
+  # DEBUG D#19 => D#20
+  # DEBUG this => D#19
+  # DEBUG D#64 => &D.45148
+  # DEBUG this => &D.45149
+  # DEBUG __s => ""
+  # DEBUG __a => D#64
+  # DEBUG D#63 => D#64
+  # DEBUG this => &D.45149
+  # DEBUG D#61 => &D.45149._M_dataplus
+  # DEBUG D#29 => D#63
+  # DEBUG this => D#61
+  # DEBUG __dat => &D.45149.D.11539._M_local_buf
+  # DEBUG __a => D#29
+  # DEBUG D#28 => D#29
+  # DEBUG D#26 => D#61
+  # DEBUG D#27 => D#28
+  # DEBUG this => D#26
+  # DEBUG __a => D#27
+  # DEBUG D#25 => D#27
+  # DEBUG D#24 => D#26
+  # DEBUG this => D#24
+  # DEBUG D.48004 => D#25
+  MEM[(struct _Alloc_hider *)&D.45149]._M_p = &D.45149.D.11539._M_local_buf;
+  # DEBUG __s => ""
+  # DEBUG this => &D.45149
+  # DEBUG __beg => ""
+  # DEBUG __end => ""
+  # DEBUG this => &D.45149
+  # DEBUG __beg => ""
+  # DEBUG __end => ""
+  # DEBUG this => &D.45149
+  # DEBUG __beg => ""
+  # DEBUG __end => ""
+  # DEBUG __ptr => ""
+  # DEBUG __first => ""
+  # DEBUG __last => ""
+  # DEBUG D#74 => &__first
+  # DEBUG D.48568 => D#74
+  # DEBUG __first => ""
+  # DEBUG __last => ""
+  # DEBUG __dnew => 0
+  # DEBUG D#141 => MEM[(char * *)&D.45149]
+  # DEBUG D#5 => &D.45149
+  # DEBUG this => D#5
+  # DEBUG __p => D#141
+  # DEBUG __k1 => ""
+  # DEBUG __k2 => ""
+  # DEBUG __d => D#141
+  # DEBUG __s => ""
+  # DEBUG __n => 0
+  # DEBUG __s1 => D#141
+  # DEBUG __s2 => ""
+  # DEBUG __n => 0
+  # DEBUG this => &D.45149
+  # DEBUG __n => 0
+  # DEBUG D#9 => &D.45149
+  # DEBUG __length => 0
+  # DEBUG this => D#9
+  MEM[(size_type *)&D.45149 + 8B] = 0;
+  # DEBUG D#5 => &D.45149
+  # DEBUG this => D#5
+  # DEBUG __c1 => &D.45149.D.11539._M_local_buf
+  # DEBUG __c2 => D#10
+  MEM[(char_type &)&D.45149 + 16] = 0;
+  # DEBUG D#137 => {CLOBBER}
+  # DEBUG __dnew => D#137
+  # DEBUG this => &router_name
+  # DEBUG __s => &D.45149
+  # DEBUG this => &router_name._M_stringbuf
+  # DEBUG __s => &D.45149
+  # DEBUG D#6 => &D.45149
+  # DEBUG this => D#6
+  # DEBUG this => &D.45149
+  # DEBUG D#5 => &D.45149
+  # DEBUG this => D#5
+  # DEBUG this => &MEM[(struct basic_stringbuf *)&router_name + 8B]._M_string
+  # DEBUG __s => &D.45149.D.11539._M_local_buf
+  # DEBUG __n => 0
+  _331 = MEM[(long unsigned int *)&router_name + 88B];
+  # DEBUG D#6 => &MEM[(struct basic_stringbuf *)&router_name + 8B]._M_string
+  # DEBUG this => D#6
+  std::__cxx11::basic_string<char>::_M_replace (&MEM[(struct basic_stringbuf *)&router_name + 8B]._M_string, 0, _331, &D.45149.D.11539._M_local_buf, 0);
+
+  <bb 94>:
+  _332 = MEM[(struct basic_stringbuf *)&router_name + 8B]._M_mode;
+  # DEBUG this => &router_name._M_stringbuf
+  # DEBUG __mode => _332
+  # DEBUG __len => 0
+  # DEBUG __a => 2
+  # DEBUG __b => 1
+  # DEBUG __a => _332
+  # DEBUG __b => NULL
+  __a.55_333 = (int) _332;
+  _334 = __a.55_333 & 3;
+  if (_334 != 0)
+    goto <bb 95>;
+  else
+    goto <bb 96>;
+
+  <bb 95>:
+  # DEBUG D#12 => &MEM[(struct basic_stringbuf *)&router_name + 8B]._M_string
+  __len_336 = MEM[(long unsigned int *)&router_name + 88B];
+  # DEBUG D#6 => D#12
+  # DEBUG this => D#6
+  # DEBUG __len => __len_336
+
+  <bb 96>:
+  # __len_338 = PHI <0(94), __len_336(95)>
+  # DEBUG __len => __len_338
+  # DEBUG D#13 => &MEM[(struct basic_stringbuf *)&router_name + 8B]._M_string
+  # DEBUG this => D#13
+  _337 = MEM[(char * *)&router_name + 80B];
+  # DEBUG D#5 => D#13
+  # DEBUG this => D#5
+  std::__cxx11::basic_stringbuf<char>::_M_sync (&router_name._M_stringbuf, _337, 0, __len_338);
+  goto <bb 98>;
+
+<L45>:
+  goto <bb 131> (<L17>);
+
+  <bb 98>:
+  # DEBUG this => &D.45149
+  # DEBUG this => &D.45149
+  # DEBUG this => &D.45149
+  _44 = MEM[(char * *)&D.45149];
+  # DEBUG D#5 => &D.45149
+  # DEBUG this => D#5
+  # DEBUG this => &D.45149
+  if (&D.45149.D.11539._M_local_buf != _44)
+    goto <bb 99>;
+  else
+    goto <bb 100>;
+
+  <bb 99>:
+  # DEBUG D#42 => D.45149.D.11539._M_allocated_capacity
+  # DEBUG D#41 => D#42
+  # DEBUG this => &D.45149
+  # DEBUG __size => D#41
+  # DEBUG D#40 => D#41
+  # DEBUG D#5 => &D.45149
+  # DEBUG this => D#5
+  # DEBUG this => &D.45149
+  # DEBUG D#39 => &D.45149._M_dataplus
+  # DEBUG D#37 => D#39
+  # DEBUG D#38 => D#40 + 1
+  # DEBUG __p => _44
+  # DEBUG __a => D#37
+  # DEBUG __n => D#38
+  # DEBUG D#36 => D#38
+  # DEBUG D#35 => D#37
+  # DEBUG D#33 => D#35
+  # DEBUG D#34 => D#36
+  # DEBUG __p => _44
+  # DEBUG this => D#33
+  # DEBUG D.49219 => D#34
+  operator delete (_44);
+
+  <bb 100>:
+  # DEBUG D#43 => &D.45149._M_dataplus
+  # DEBUG this => D#43
+  # DEBUG this => D#43
+  # DEBUG this => D#43
+  D.45149 ={v} {CLOBBER};
+  # DEBUG this => &D.45148
+  # DEBUG this => &D.45148
+  # DEBUG port => 0
+  # DEBUG port => 0
+  _271 = this_14(D)->_k;
+  if (_271 <= 0)
+    goto <bb 101>;
+  else
+    goto <bb 103>;
+
+  <bb 101>:
+  node_91 = node_309 + 1;
+  # DEBUG node => node_91
+  addr_92 = addr_208 + 1;
+  # DEBUG addr => addr_92
+  # DEBUG addr => addr_92
+  # DEBUG node => node_91
+  if (per_stage_19 <= addr_92)
+    goto <bb 119>;
+  else
+    goto <bb 102>;
+
+  <bb 102>:
+  goto <bb 16>;
+
+  <bb 103>:
+
+  <bb 104>:
+  # port_143 = PHI <0(103), port_90(115)>
+  # _569 = PHI <_271(103), _45(115)>
+  # DEBUG port => port_143
+  if (stage_311 == 0)
+    goto <bb 105>;
+  else
+    goto <bb 107>;
+
+  <bb 105>:
+  _46 = addr_208 * _569;
+  c_47 = _46 + port_143;
+  # DEBUG c => c_47
+  # DEBUG D#119 => &this_14(D)->D.45007._routers
+  _114 = MEM[(struct Router * * *)this_14(D) + 112B];
+  # DEBUG D#18 => D#119
+  # DEBUG __n => _26
+  # DEBUG this => D#18
+  _118 = _114 + _82;
+  _49 = *_118;
+  _50 = _49->D.43102.D.33681._vptr.Module;
+  _51 = MEM[(int (*__vtbl_ptr_type) () *)_50 + 56B];
+  _52 = (long unsigned int) c_47;
+  # DEBUG D#120 => &this_14(D)->D.45007._inject_cred
+  _108 = MEM[(struct Channel * * *)this_14(D) + 160B];
+  # DEBUG D#17 => D#120
+  # DEBUG __n => _52
+  # DEBUG this => D#17
+  _48 = _52 * 8;
+  _41 = _108 + _48;
+  _53 = *_41;
+  # DEBUG D#121 => &this_14(D)->D.45007._inject
+  _103 = MEM[(struct FlitChannel * * *)this_14(D) + 136B];
+  # DEBUG D#16 => D#121
+  # DEBUG __n => _52
+  # DEBUG this => D#16
+  _54 = _103 + _48;
+  _55 = *_54;
+  OBJ_TYPE_REF(_51;(struct Router)_49->7) (_49, _55, _53);
+  goto <bb 112>;
+
+<L46>:
+  pretmp_517 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 8B];
+  pretmp_437 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 16B];
+  goto <bb 136> (<L19>);
+
+  <bb 107>:
+  # DEBUG this => this_14(D)
+  # DEBUG stage => stage_311
+  # DEBUG addr => addr_208
+  # DEBUG port => port_143
+  _149 = MEM[(const struct KNFly *)this_14(D)]._n;
+  _339 = _149 - stage_311;
+  _340 = _339 + -1;
+  shift_342 = powi (_569, _340);
+  goto <bb 109>;
+
+<L47>:
+  pretmp_518 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 8B];
+  pretmp_438 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 16B];
+  goto <bb 136> (<L19>);
+
+  <bb 109>:
+  # DEBUG shift => shift_342
+  # DEBUG last_digit => port_143
+  _343 = addr_208 / shift_342;
+  _344 = MEM[(const struct KNFly *)this_14(D)]._k;
+  in_port_345 = _343 % _344;
+  # DEBUG zero_digit => in_port_345
+  _346 = shift_342 * in_port_345;
+  _347 = addr_208 - _346;
+  _348 = port_143 * shift_342;
+  in_addr_349 = _347 + _348;
+  # DEBUG in_addr => in_addr_349
+  # DEBUG in_port => in_port_345
+  _350 = stage_311 + -1;
+  _351 = MEM[(const struct KNFly *)this_14(D)].D.45007._nodes;
+  _352 = _350 * _351;
+  _353 = _344 * in_addr_349;
+  _354 = _352 + _353;
+  _355 = in_port_345 + _354;
+  # DEBUG c => NULL
+  # DEBUG D#122 => &this_14(D)->D.45007._routers
+  _115 = MEM[(struct Router * * *)this_14(D) + 112B];
+  # DEBUG D#18 => D#122
+  # DEBUG __n => _26
+  # DEBUG this => D#18
+  _122 = _115 + _82;
+  _59 = *_122;
+  _60 = _59->D.43102.D.33681._vptr.Module;
+  _61 = MEM[(int (*__vtbl_ptr_type) () *)_60 + 56B];
+  _62 = (long unsigned int) _355;
+  # DEBUG D#123 => &this_14(D)->D.45007._chan_cred
+  _109 = MEM[(struct Channel * * *)this_14(D) + 256B];
+  # DEBUG D#17 => D#123
+  # DEBUG __n => _62
+  # DEBUG this => D#17
+  _120 = _62 * 8;
+  _121 = _109 + _120;
+  _63 = *_121;
+  # DEBUG D#124 => &this_14(D)->D.45007._chan
+  _104 = MEM[(struct FlitChannel * * *)this_14(D) + 232B];
+  # DEBUG D#16 => D#124
+  # DEBUG __n => _62
+  # DEBUG this => D#16
+  _119 = _104 + _120;
+  _65 = *_119;
+  OBJ_TYPE_REF(_61;(struct Router)_59->7) (_59, _65, _63);
+  goto <bb 111>;
+
+<L48>:
+  pretmp_519 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 8B];
+  pretmp_439 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 16B];
+  goto <bb 136> (<L19>);
+
+  <bb 111>:
+  # DEBUG D#125 => &this_14(D)->D.45007._chan
+  _105 = MEM[(struct FlitChannel * * *)this_14(D) + 232B];
+  # DEBUG D#16 => D#125
+  # DEBUG __n => _62
+  # DEBUG this => D#16
+  _126 = _105 + _120;
+  _68 = *_126;
+  # DEBUG D#126 => &_68->D.35808
+  # DEBUG this => D#126
+  # DEBUG cycles => 1
+  MEM[(struct Channel *)_68]._delay = 1;
+
+  <bb 112>:
+  _69 = this_14(D)->_n;
+  _70 = _69 + -1;
+  if (_70 == stage_311)
+    goto <bb 113>;
+  else
+    goto <bb 117>;
+
+  <bb 113>:
+  _71 = this_14(D)->_k;
+  _72 = _71 * addr_208;
+  c_73 = _72 + port_143;
+  # DEBUG c => c_73
+  # DEBUG D#127 => &this_14(D)->D.45007._routers
+  _116 = MEM[(struct Router * * *)this_14(D) + 112B];
+  # DEBUG D#18 => D#127
+  # DEBUG __n => _26
+  # DEBUG this => D#18
+  _130 = _116 + _82;
+  _74 = *_130;
+  _75 = _74->D.43102.D.33681._vptr.Module;
+  _76 = MEM[(int (*__vtbl_ptr_type) () *)_75 + 64B];
+  _77 = (long unsigned int) c_73;
+  # DEBUG D#128 => &this_14(D)->D.45007._eject_cred
+  _110 = MEM[(struct Channel * * *)this_14(D) + 208B];
+  # DEBUG D#17 => D#128
+  # DEBUG __n => _77
+  # DEBUG this => D#17
+  _128 = _77 * 8;
+  _129 = _110 + _128;
+  _78 = *_129;
+  # DEBUG D#129 => &this_14(D)->D.45007._eject
+  _106 = MEM[(struct FlitChannel * * *)this_14(D) + 184B];
+  # DEBUG D#16 => D#129
+  # DEBUG __n => _77
+  # DEBUG this => D#16
+  _127 = _106 + _128;
+  _80 = *_127;
+  OBJ_TYPE_REF(_76;(struct Router)_74->8) (_74, _80, _78);
+
+  <bb 114>:
+  port_90 = port_143 + 1;
+  # DEBUG port => port_90
+  # DEBUG port => port_90
+  _45 = this_14(D)->_k;
+  if (_45 <= port_90)
+    goto <bb 101>;
+  else
+    goto <bb 115>;
+
+  <bb 115>:
+  goto <bb 104>;
+
+<L49>:
+  pretmp_525 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 8B];
+  pretmp_461 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 16B];
+  goto <bb 136> (<L19>);
+
+  <bb 117>:
+  # DEBUG this => this_14(D)
+  # DEBUG stage => stage_311
+  # DEBUG addr => addr_208
+  # DEBUG port => port_143
+  _135 = MEM[(const struct KNFly *)this_14(D)].D.45007._nodes;
+  _136 = _135 * stage_311;
+  _137 = MEM[(const struct KNFly *)this_14(D)]._k;
+  _138 = _137 * addr_208;
+  _139 = _136 + _138;
+  _140 = _139 + port_143;
+  # DEBUG c => NULL
+  # DEBUG D#130 => &this_14(D)->D.45007._routers
+  _117 = MEM[(struct Router * * *)this_14(D) + 112B];
+  # DEBUG D#18 => D#130
+  # DEBUG __n => _26
+  # DEBUG this => D#18
+  _134 = _117 + _82;
+  _83 = *_134;
+  _84 = _83->D.43102.D.33681._vptr.Module;
+  _85 = MEM[(int (*__vtbl_ptr_type) () *)_84 + 64B];
+  _86 = (long unsigned int) _140;
+  # DEBUG D#131 => &this_14(D)->D.45007._chan_cred
+  _111 = MEM[(struct Channel * * *)this_14(D) + 256B];
+  # DEBUG D#17 => D#131
+  # DEBUG __n => _86
+  # DEBUG this => D#17
+  _132 = _86 * 8;
+  _133 = _111 + _132;
+  _87 = *_133;
+  # DEBUG D#132 => &this_14(D)->D.45007._chan
+  _107 = MEM[(struct FlitChannel * * *)this_14(D) + 232B];
+  # DEBUG D#16 => D#132
+  # DEBUG __n => _86
+  # DEBUG this => D#16
+  _131 = _107 + _132;
+  _88 = *_131;
+  OBJ_TYPE_REF(_85;(struct Router)_83->8) (_83, _88, _87);
+  goto <bb 114>;
+
+<L50>:
+  pretmp_530 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 8B];
+  pretmp_462 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 16B];
+  goto <bb 136> (<L19>);
+
+  <bb 119>:
+  # node_573 = PHI <node_91(101)>
+  pretmp_598 = this_14(D)->_n;
+
+  <bb 120>:
+  # node_310 = PHI <node_573(119), node_184(14)>
+  # prephitmp_599 = PHI <pretmp_598(119), prephitmp_273(14)>
+  stage_99 = stage_311 + 1;
+  # DEBUG stage => stage_99
+  # DEBUG stage => stage_99
+  # DEBUG node => node_310
+  if (stage_99 >= prephitmp_599)
+    goto <bb 122>;
+  else
+    goto <bb 121>;
+
+  <bb 121>:
+  goto <bb 14>;
+
+  <bb 122>:
+  pretmp_559 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 8B];
+  pretmp_566 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 16B];
+
+  <bb 123>:
+  # prephitmp_561 = PHI <pretmp_559(122), iftmp.19_168(12)>
+  # prephitmp_38 = PHI <pretmp_566(122), iftmp.21_172(12)>
+  # DEBUG this => &router_name
+  router_name.D.26641._vptr.basic_ostream = &MEM[(void *)&_ZTVNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 24B];
+  MEM[(struct basic_ios *)&router_name + 112B].D.23348._vptr.ios_base = &MEM[(void *)&_ZTVNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 64B];
+  # DEBUG this => &router_name._M_stringbuf
+  MEM[(struct basic_stringbuf *)&router_name + 8B].D.26491._vptr.basic_streambuf = &MEM[(void *)&_ZTVNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEEE + 16B];
+  # DEBUG D#45 => &MEM[(struct basic_stringbuf *)&router_name + 8B]._M_string
+  # DEBUG this => D#45
+  # DEBUG this => D#45
+  # DEBUG this => D#45
+  _100 = MEM[(char * *)&router_name + 80B];
+  # DEBUG D#5 => D#45
+  # DEBUG this => D#5
+  # DEBUG this => D#45
+  if (&MEM[(const struct basic_string *)&router_name + 80B].D.11539._M_local_buf != _100)
+    goto <bb 124>;
+  else
+    goto <bb 125>;
+
+  <bb 124>:
+  # DEBUG D#42 => MEM[(struct basic_string *)D#45].D.11539._M_allocated_capacity
+  # DEBUG D#41 => D#42
+  # DEBUG this => D#45
+  # DEBUG __size => D#41
+  # DEBUG D#40 => D#41
+  # DEBUG D#5 => D#45
+  # DEBUG this => D#5
+  # DEBUG this => D#45
+  # DEBUG D#39 => &MEM[(struct basic_string *)D#45]._M_dataplus
+  # DEBUG D#37 => D#39
+  # DEBUG D#38 => D#40 + 1
+  # DEBUG __p => _100
+  # DEBUG __a => D#37
+  # DEBUG __n => D#38
+  # DEBUG D#36 => D#38
+  # DEBUG D#35 => D#37
+  # DEBUG D#33 => D#35
+  # DEBUG D#34 => D#36
+  # DEBUG __p => _100
+  # DEBUG this => D#33
+  # DEBUG D.49911 => D#34
+  operator delete (_100);
+
+  <bb 125>:
+  # DEBUG D#43 => &MEM[(struct basic_string *)D#45]._M_dataplus
+  # DEBUG this => D#43
+  # DEBUG this => D#43
+  # DEBUG this => D#43
+  MEM[(struct  &)&router_name + 80] ={v} {CLOBBER};
+  # DEBUG D#44 => &MEM[(struct basic_stringbuf *)&router_name + 8B].D.26491
+  # DEBUG this => D#44
+  MEM[(struct basic_streambuf *)&router_name + 8B]._vptr.basic_streambuf = &MEM[(void *)&_ZTVSt15basic_streambufIcSt11char_traitsIcEE + 16B];
+  std::locale::~locale (&MEM[(struct basic_streambuf *)&router_name + 8B]._M_buf_locale);
+  MEM[(struct  &)&router_name + 8] ={v} {CLOBBER};
+  # DEBUG this => &router_name.D.26641
+  # DEBUG __vtt_parm => &MEM[(void *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 8B]
+  _358 = MEM[(long int *)prephitmp_561 + -24B];
+  iftmp.26_359 = (sizetype) _358;
+  _360 = &router_name.D.26641 + iftmp.26_359;
+  _360->D.23348._vptr.ios_base = prephitmp_38;
+  MEM[(struct  &)&router_name] ={v} {CLOBBER};
+  # DEBUG D#49 => &router_name.D.26644
+  # DEBUG this => D#49
+  MEM[(struct basic_ios *)&router_name + 112B].D.23348._vptr.ios_base = &MEM[(void *)&_ZTVSt9basic_iosIcSt11char_traitsIcEE + 16B];
+  std::ios_base::~ios_base (&MEM[(struct basic_ios *)&router_name + 112B].D.23348);
+  router_name ={v} {CLOBBER};
+  return;
+
+<L15>:
+  # DEBUG this => &D.45145
+  # DEBUG this => &D.45145
+  # DEBUG this => &D.45145
+  _141 = MEM[(char * *)&D.45145];
+  # DEBUG D#5 => &D.45145
+  # DEBUG this => D#5
+  # DEBUG this => &D.45145
+  if (&D.45145.D.11539._M_local_buf != _141)
+    goto <bb 127>;
+  else
+    goto <bb 128>;
+
+  <bb 127>:
+  # DEBUG D#42 => D.45145.D.11539._M_allocated_capacity
+  # DEBUG D#41 => D#42
+  # DEBUG this => &D.45145
+  # DEBUG __size => D#41
+  # DEBUG D#40 => D#41
+  # DEBUG D#5 => &D.45145
+  # DEBUG this => D#5
+  # DEBUG this => &D.45145
+  # DEBUG D#39 => &D.45145._M_dataplus
+  # DEBUG D#37 => D#39
+  # DEBUG D#38 => D#40 + 1
+  # DEBUG __p => _141
+  # DEBUG __a => D#37
+  # DEBUG __n => D#38
+  # DEBUG D#36 => D#38
+  # DEBUG D#35 => D#37
+  # DEBUG D#33 => D#35
+  # DEBUG D#34 => D#36
+  # DEBUG __p => _141
+  # DEBUG this => D#33
+  # DEBUG D.49328 => D#34
+  operator delete (_141);
+
+  <bb 128>:
+  # DEBUG D#43 => &D.45145._M_dataplus
+  # DEBUG this => D#43
+  # DEBUG this => D#43
+  # DEBUG this => D#43
+  D.45145 ={v} {CLOBBER};
+  resx 3
+
+<L51>:
+  pretmp_531 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 8B];
+  pretmp_463 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 16B];
+  goto <bb 136> (<L19>);
+
+<L44>:
+
+<L17>:
+  # DEBUG this => &D.45149
+  # DEBUG this => &D.45149
+  # DEBUG this => &D.45149
+  _97 = MEM[(char * *)&D.45149];
+  # DEBUG D#5 => &D.45149
+  # DEBUG this => D#5
+  # DEBUG this => &D.45149
+  if (&D.45149.D.11539._M_local_buf != _97)
+    goto <bb 132>;
+  else
+    goto <bb 133>;
+
+  <bb 132>:
+  # DEBUG D#42 => D.45149.D.11539._M_allocated_capacity
+  # DEBUG D#41 => D#42
+  # DEBUG this => &D.45149
+  # DEBUG __size => D#41
+  # DEBUG D#40 => D#41
+  # DEBUG D#5 => &D.45149
+  # DEBUG this => D#5
+  # DEBUG this => &D.45149
+  # DEBUG D#39 => &D.45149._M_dataplus
+  # DEBUG D#37 => D#39
+  # DEBUG D#38 => D#40 + 1
+  # DEBUG __p => _97
+  # DEBUG __a => D#37
+  # DEBUG __n => D#38
+  # DEBUG D#36 => D#38
+  # DEBUG D#35 => D#37
+  # DEBUG D#33 => D#35
+  # DEBUG D#34 => D#36
+  # DEBUG __p => _97
+  # DEBUG this => D#33
+  # DEBUG D.49343 => D#34
+  operator delete (_97);
+
+  <bb 133>:
+  # DEBUG D#43 => &D.45149._M_dataplus
+  # DEBUG this => D#43
+  # DEBUG this => D#43
+  # DEBUG this => D#43
+  D.45149 ={v} {CLOBBER};
+  resx 8
+
+<L52>:
+  pretmp_550 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 8B];
+  pretmp_436 = MEM[(const void * *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 16B];
+  goto <bb 136> (<L19>);
+
+<L30>:
+
+  # prephitmp_153 = PHI <iftmp.19_168(135), pretmp_537(17), pretmp_538(19), pretmp_542(21), pretmp_544(23), pretmp_549(61), pretmp_550(134), pretmp_517(106), pretmp_518(108), pretmp_519(110), pretmp_523(81), pretmp_525(116), pretmp_530(118), pretmp_531(129), pretmp_151(89), pretmp_152(83)>
+  # prephitmp_555 = PHI <iftmp.21_172(135), pretmp_154(17), pretmp_145(19), pretmp_146(21), pretmp_147(23), pretmp_148(61), pretmp_436(134), pretmp_437(106), pretmp_438(108), pretmp_439(110), pretmp_460(81), pretmp_461(116), pretmp_462(118), pretmp_463(129), pretmp_553(89), pretmp_554(83)>
+<L19>:
+  # DEBUG this => &router_name
+  router_name.D.26641._vptr.basic_ostream = &MEM[(void *)&_ZTVNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 24B];
+  MEM[(struct basic_ios *)&router_name + 112B].D.23348._vptr.ios_base = &MEM[(void *)&_ZTVNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 64B];
+  # DEBUG this => &router_name._M_stringbuf
+  MEM[(struct basic_stringbuf *)&router_name + 8B].D.26491._vptr.basic_streambuf = &MEM[(void *)&_ZTVNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEEE + 16B];
+  # DEBUG D#45 => &MEM[(struct basic_stringbuf *)&router_name + 8B]._M_string
+  # DEBUG this => D#45
+  # DEBUG this => D#45
+  # DEBUG this => D#45
+  _102 = MEM[(char * *)&router_name + 80B];
+  # DEBUG D#5 => D#45
+  # DEBUG this => D#5
+  # DEBUG this => D#45
+  if (&MEM[(const struct basic_string *)&router_name + 80B].D.11539._M_local_buf != _102)
+    goto <bb 137>;
+  else
+    goto <bb 138>;
+
+  <bb 137>:
+  # DEBUG D#42 => MEM[(struct basic_string *)D#45].D.11539._M_allocated_capacity
+  # DEBUG D#41 => D#42
+  # DEBUG this => D#45
+  # DEBUG __size => D#41
+  # DEBUG D#40 => D#41
+  # DEBUG D#5 => D#45
+  # DEBUG this => D#5
+  # DEBUG this => D#45
+  # DEBUG D#39 => &MEM[(struct basic_string *)D#45]._M_dataplus
+  # DEBUG D#37 => D#39
+  # DEBUG D#38 => D#40 + 1
+  # DEBUG __p => _102
+  # DEBUG __a => D#37
+  # DEBUG __n => D#38
+  # DEBUG D#36 => D#38
+  # DEBUG D#35 => D#37
+  # DEBUG D#33 => D#35
+  # DEBUG D#34 => D#36
+  # DEBUG __p => _102
+  # DEBUG this => D#33
+  # DEBUG D.49932 => D#34
+  operator delete (_102);
+
+  <bb 138>:
+  # DEBUG D#43 => &MEM[(struct basic_string *)D#45]._M_dataplus
+  # DEBUG this => D#43
+  # DEBUG this => D#43
+  # DEBUG this => D#43
+  MEM[(struct  &)&router_name + 80] ={v} {CLOBBER};
+  # DEBUG D#44 => &MEM[(struct basic_stringbuf *)&router_name + 8B].D.26491
+  # DEBUG this => D#44
+  MEM[(struct basic_streambuf *)&router_name + 8B]._vptr.basic_streambuf = &MEM[(void *)&_ZTVSt15basic_streambufIcSt11char_traitsIcEE + 16B];
+  std::locale::~locale (&MEM[(struct basic_streambuf *)&router_name + 8B]._M_buf_locale);
+  MEM[(struct  &)&router_name + 8] ={v} {CLOBBER};
+  # DEBUG this => &router_name.D.26641
+  # DEBUG __vtt_parm => &MEM[(void *)&_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE + 8B]
+  _368 = MEM[(long int *)prephitmp_153 + -24B];
+  iftmp.26_369 = (sizetype) _368;
+  _370 = &router_name.D.26641 + iftmp.26_369;
+  _370->D.23348._vptr.ios_base = prephitmp_555;
+  MEM[(struct  &)&router_name] ={v} {CLOBBER};
+  # DEBUG D#49 => &router_name.D.26644
+  # DEBUG this => D#49
+  MEM[(struct basic_ios *)&router_name + 112B].D.23348._vptr.ios_base = &MEM[(void *)&_ZTVSt9basic_iosIcSt11char_traitsIcEE + 16B];
+  std::ios_base::~ios_base (&MEM[(struct basic_ios *)&router_name + 112B].D.23348);
+  resx 2
+
+  <bb 139>:
+  std::__throw_logic_error ("basic_string::_M_construct null not valid");
+
+<L53>:
+  goto <bb 58> (<L27>);
+
+  <bb 141>:
+  # DEBUG __first => _189
+  # DEBUG __last => _187
+  # DEBUG D#74 => &__first
+  # DEBUG D.48568 => D#74
+  # DEBUG __first => _189
+  # DEBUG __last => _187
+  __last.37_197 = (long int) _187;
+  __first.38_198 = (long int) _189;
+  _199 = __last.37_197 - __first.38_198;
+  __dnew.34_200 = (long unsigned int) _199;
+  __dnew = __dnew.34_200;
+  if (__dnew.34_200 > 15)
+    goto <bb 27>;
+  else
+    goto <bb 29>;
+
+  <bb 142>:
+  std::__throw_logic_error ("basic_string::_M_construct null not valid");
+
+<L54>:
+  goto <bb 58> (<L27>);
+
+  <bb 144>:
+  # DEBUG __first => _191
+  # DEBUG __last => _188
+  # DEBUG D#74 => &__first
+  # DEBUG D.48568 => D#74
+  # DEBUG __first => _191
+  # DEBUG __last => _188
+  __last.37_209 = (long int) _188;
+  __first.38_210 = (long int) _191;
+  _211 = __last.37_209 - __first.38_210;
+  __dnew.34_212 = (long unsigned int) _211;
+  __dnew = __dnew.34_212;
+  if (__dnew.34_212 > 15)
+    goto <bb 37>;
+  else
+    goto <bb 40>;
+
+  <bb 145>:
+  __new_map_size_228 = _234 + 3;
+  # DEBUG __new_map_size => __new_map_size_228
+  # DEBUG D#109 => &D#136->D.44805
+  # DEBUG D#106 => D#109
+  # DEBUG __n => __new_map_size_228
+  # DEBUG this => D#106
+  # DEBUG D#105 => D#106
+  # DEBUG D#94 => D#105
+  # DEBUG this => D#94
+  # DEBUG D#93 => D#94
+  # DEBUG this => D#93
+  # DEBUG this => NULL
+  # DEBUG D.48983 => NULL
+  # DEBUG this => NULL
+  # DEBUG D#104 => &__map_alloc
+  # DEBUG __n => __new_map_size_228
+  # DEBUG __a => D#104
+  # DEBUG D#103 => D#104
+  # DEBUG D#101 => D#103
+  # DEBUG D#102 => 0B
+  # DEBUG __n => __new_map_size_228
+  # DEBUG this => D#101
+  # DEBUG D.49813 => D#102
+  # DEBUG D#100 => D#101
+  # DEBUG D#99 => D#100
+  # DEBUG this => D#99
+  goto <bb 82>;
+
+}
+
+

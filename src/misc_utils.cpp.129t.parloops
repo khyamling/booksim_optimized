@@ -1,0 +1,139 @@
+
+;; Function int powi(int, int) (_Z4powiii, funcdef_no=675, decl_uid=14416, cgraph_uid=201, symbol_order=201)
+
+Trying loop 2 as candidate
+loop 2 is innermost
+loop is not parallel according to graphite
+int powi(int, int) (int x, int y)
+{
+  bool Close_Phi.5_I_lsm.11;
+  int Close_Phi.5_I_lsm.10;
+  bool phi_out_of_ssa.4_I_lsm.9;
+  int phi_out_of_ssa.4_I_lsm.8;
+  signed long graphite_IV.7;
+  int Cross_BB_scalar_dependence.6[1];
+  int D.14450;
+  int D.14449;
+  int D.14448;
+  int Close_Phi.5[1];
+  int phi_out_of_ssa.4[1];
+  int i;
+  int r;
+  bool _21;
+  signed long _22;
+  signed long _23;
+
+  <bb 2>:
+  # DEBUG r => 1
+  # DEBUG i => 0
+  # DEBUG i => 0
+  # DEBUG r => 1
+  if (y_3(D) <= 0)
+    goto <bb 9>;
+  else
+    goto <bb 3>;
+
+  <bb 3>:
+  phi_out_of_ssa.4[0] = 1;
+  _21 = y_3(D) > 0;
+  if (_21 != 0)
+    goto <bb 4>;
+  else
+    goto <bb 8>;
+
+  <bb 4>:
+  _22 = (signed long) y_3(D);
+  _23 = _22 + -1;
+  phi_out_of_ssa.4_I_lsm.8_20 = phi_out_of_ssa.4[0];
+
+  <bb 5>:
+  # graphite_IV.7_24 = PHI <0(4), graphite_IV.7_25(6)>
+  # phi_out_of_ssa.4_I_lsm.8_29 = PHI <phi_out_of_ssa.4_I_lsm.8_20(4), r_27(6)>
+  # DEBUG i => NULL
+  # DEBUG r => NULL
+  r_27 = x_4(D) * phi_out_of_ssa.4_I_lsm.8_29;
+  # DEBUG r => NULL
+  # DEBUG i => NULL
+  # DEBUG i => NULL
+  # DEBUG r => NULL
+  graphite_IV.7_25 = graphite_IV.7_24 + 1;
+  if (graphite_IV.7_24 < _23)
+    goto <bb 6>;
+  else
+    goto <bb 7>;
+
+  <bb 6>:
+  goto <bb 5>;
+
+  <bb 7>:
+  # Close_Phi.5_I_lsm.10_34 = PHI <r_27(5)>
+  Close_Phi.5[0] = Close_Phi.5_I_lsm.10_34;
+
+  <bb 8>:
+  r_32 = Close_Phi.5[0];
+  Cross_BB_scalar_dependence.6[0] = r_32;
+  r_18 = Cross_BB_scalar_dependence.6[0];
+
+  <bb 9>:
+  # r_11 = PHI <r_18(8), 1(2)>
+  return r_11;
+
+}
+
+
+
+;; Function int log_two(int) (_Z7log_twoi, funcdef_no=676, decl_uid=14413, cgraph_uid=202, symbol_order=202)
+
+Trying loop 1 as candidate
+loop 1 is innermost
+loop is not parallel according to graphite
+int log_two(int) (int x)
+{
+  int r;
+
+  <bb 2>:
+  # DEBUG r => 0
+  x_4 = x_3(D) >> 1;
+  # DEBUG x => x_4
+  # DEBUG r => 0
+  # DEBUG x => x_4
+  if (x_4 == 0)
+    goto <bb 7>;
+  else
+    goto <bb 3>;
+
+  <bb 3>:
+
+  <bb 4>:
+  # x_10 = PHI <x_4(3), x_6(5)>
+  # r_11 = PHI <0(3), r_5(5)>
+  # DEBUG r => r_11
+  # DEBUG x => x_10
+  r_5 = r_11 + 1;
+  # DEBUG r => r_5
+  x_6 = x_10 >> 1;
+  # DEBUG x => x_6
+  # DEBUG r => r_5
+  # DEBUG x => x_6
+  if (x_6 == 0)
+    goto <bb 6>;
+  else
+    goto <bb 5>;
+
+  <bb 5>:
+  goto <bb 4>;
+
+  <bb 6>:
+  # r_2 = PHI <r_5(4)>
+
+  <bb 8>:
+
+  <bb 7>:
+  # r_12 = PHI <r_2(8), 0(2)>
+
+  <bb 9>:
+  return r_12;
+
+}
+
+

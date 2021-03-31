@@ -1,0 +1,1166 @@
+
+;; Function void Module::DisplayHierarchy(int, std::ostream&) const (_ZNK6Module16DisplayHierarchyEiRSo, funcdef_no=1364, decl_uid=26784, cgraph_uid=376, symbol_order=377)
+
+
+Pass statistics:
+----------------
+
+void Module::DisplayHierarchy(int, std::ostream&) const (const struct ModuleD.26017 * const thisD.26863, intD.9 levelD.26860, struct ostreamD.3834 & osD.26861)
+{
+  char_typeD.16738 D.30485;
+  charD.10 __cD.30484;
+  char_typeD.16738 D.30482;
+  charD.10 __cD.30481;
+  char_typeD.19817 D.30479;
+  struct basic_ostreamD.3833 & D.30473;
+  struct basic_ostreamD.3833 & D.30470;
+  struct ModuleD.26017 * const * mod_iter$_M_currentD.29016;
+  intD.9 lD.26968;
+  intD.9 pretmp_1;
+  intD.9 prephitmp_2;
+  const size_typeD.11502 _5;
+  intD.9 (*__vtbl_ptr_typeD.2760) () * _8;
+  charD.10 * const _11;
+  long intD.12 _13;
+  struct ModuleD.26017 * _14;
+  struct ModuleD.26017 * * const _19;
+  struct basic_ostreamD.3833 & _20;
+  const struct __ctype_typeD.19822 * _23;
+  long intD.12 _26;
+  sizetype _27;
+  struct basic_iosD.3827 * _28;
+  struct basic_ostreamD.3833 & _31;
+  intD.9 pretmp_32;
+  charD.10 _33;
+  char_typeD.16738 _36;
+  struct ModuleD.26017 * * const _38;
+  intD.9 (*__vtbl_ptr_typeD.2760) () * _41;
+  intD.9 (*__vtbl_ptr_typeD.2760) () _42;
+  voidD.45 * PROF_46;
+  char_typeD.16738 _48;
+  intD.9 pretmp_57;
+
+;;   basic block 2, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 0, next block 3, flags: (NEW, REACHABLE)
+;;    pred:       ENTRY [100.0%]  (FALLTHRU,EXECUTABLE)
+  # DEBUG thisD.28993 => &mod_iterD.26865
+  # DEBUG mod_iter$_M_currentD.29016 => 0B
+  # DEBUG lD.26968 => 0
+  # DEBUG lD.26968 => 0
+  if (level_6(D) <= 0)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+;;    succ:       3 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                4 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 3, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 2, next block 4, flags: (NEW, REACHABLE)
+;;    pred:       2 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                6 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_58 = PHI <.MEM_4(D)(2), .MEM_39(6)>
+  # DEBUG D#18ptD.0 => &this_10(D)->_nameD.26019
+  # DEBUG __osD.28994 => os_7(D)
+  # DEBUG __strD.28995 => D#18ptD.0
+  # VUSE <.MEM_58>
+  _5 = MEM[(long unsigned intD.14 *)this_10(D) + 16B];
+  # DEBUG D#1ptD.0 => D#18ptD.0
+  # DEBUG thisD.28807 => D#1ptD.0
+  _13 = (long intD.12) _5;
+  # DEBUG thisD.28804 => D#18ptD.0
+  # VUSE <.MEM_58>
+  # PT = nonlocal escaped 
+  _11 = MEM[(charD.10 * *)this_10(D) + 8B];
+  # DEBUG D#3ptD.0 => D#18ptD.0
+  # DEBUG thisD.28749 => D#3ptD.0
+  # .MEM_22 = VDEF <.MEM_58>
+  # PT = nonlocal escaped 
+  # USE = nonlocal { D.22587 } (nonlocal, escaped)
+  # CLB = nonlocal { D.22587 } (nonlocal, escaped)
+  _20 = _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_lD.8800 (os_7(D), _11, _13);
+  # DEBUG thisD.28997 => _20
+  # DEBUG __pfD.28998 => _ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_D.20645
+  # DEBUG __osD.30471 => _20
+  # VUSE <.MEM_22>
+  # PT = nonlocal escaped { D.22587 } (nonlocal, escaped)
+  _8 = _20->_vptr.basic_ostreamD.20605;
+  # VUSE <.MEM_22>
+  _26 = MEM[(long intD.12 *)_8 + -24B];
+  # RANGE [0, 18446744073709551615]
+  _27 = (sizetype) _26;
+  # PT = nonlocal escaped 
+  _28 = _20 + _27;
+  # DEBUG thisD.30474 => _28
+  # DEBUG __cD.30475 => 10
+  # VUSE <.MEM_22>
+  # PT = nonlocal escaped 
+  _23 = MEM[(const struct basic_iosD.3827 *)_28]._M_ctypeD.19829;
+  # DEBUG __fD.30476 => _23
+  if (_23 == 0B)
+    goto <bb 8>;
+  else
+    goto <bb 9>;
+;;    succ:       8 [0.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                9 [100.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 4, loop depth 0, count 0, freq 819, maybe hot
+;;    prev block 3, next block 5, flags: (NEW)
+;;    pred:       2 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+;;    succ:       5 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 5, loop depth 1, count 0, freq 9100, maybe hot
+;;    prev block 4, next block 6, flags: (NEW)
+;;    pred:       4 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                7 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # l_53 = PHI <0(4), l_9(7)>
+  # .MEM_44 = PHI <.MEM_4(D)(4), .MEM_52(7)>
+  # DEBUG lD.26968 => l_53
+  # DEBUG __outD.30467 => os_7(D)
+  # DEBUG __sD.30468 => "  "
+  # DEBUG __sD.30469 => "  "
+  # .MEM_52 = VDEF <.MEM_44>
+  # USE = nonlocal { D.22587 } (nonlocal, escaped)
+  # CLB = nonlocal { D.22587 } (nonlocal, escaped)
+  _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_lD.8800 (os_7(D), "  ", 2);
+  l_9 = l_53 + 1;
+  # DEBUG lD.26968 => l_9
+  # DEBUG lD.26968 => l_9
+  if (level_6(D) <= l_9)
+    goto <bb 6>;
+  else
+    goto <bb 7>;
+;;    succ:       6 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                7 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 6, loop depth 0, count 0, freq 819, maybe hot
+;;    prev block 5, next block 7, flags: (NEW)
+;;    pred:       5 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+  # .MEM_39 = PHI <.MEM_52(5)>
+  goto <bb 3>;
+;;    succ:       3 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 7, loop depth 1, count 0, freq 8281, maybe hot
+;;    prev block 6, next block 8, flags: (NEW)
+;;    pred:       5 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+  goto <bb 5>;
+;;    succ:       5 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 8, loop depth 0, count 0, freq 0, maybe hot
+;;    prev block 7, next block 9, flags: (NEW, REACHABLE)
+;;    pred:       3 [0.0%]  (TRUE_VALUE,EXECUTABLE)
+  # .MEM_62 = VDEF <.MEM_22>
+  # USE = nonlocal { D.22587 } (nonlocal, escaped)
+  # CLB = nonlocal { D.22587 } (nonlocal, escaped)
+  _ZSt16__throw_bad_castvD.3958 ();
+;;    succ:      
+
+;;   basic block 9, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 8, next block 10, flags: (NEW, REACHABLE)
+;;    pred:       3 [100.0%]  (FALSE_VALUE,EXECUTABLE)
+  # DEBUG thisD.30478 => _23
+  # DEBUG __cD.30477 => 10
+  # VUSE <.MEM_22>
+  _33 = MEM[(const struct ctypeD.7063 *)_23]._M_widen_okD.16744;
+  if (_33 != 0)
+    goto <bb 10>;
+  else
+    goto <bb 11>;
+;;    succ:       10 [61.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                11 [39.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 10, loop depth 0, count 0, freq 549, maybe hot
+;;    prev block 9, next block 11, flags: (NEW, REACHABLE)
+;;    pred:       9 [61.0%]  (TRUE_VALUE,EXECUTABLE)
+  # VUSE <.MEM_22>
+  _36 = MEM[(const struct ctypeD.7063 *)_23]._M_widenD.16745[10];
+  pretmp_32 = (intD.9) _36;
+  goto <bb 13>;
+;;    succ:       13 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 11, loop depth 0, count 0, freq 351, maybe hot
+;;    prev block 10, next block 12, flags: (NEW, REACHABLE)
+;;    pred:       9 [39.0%]  (FALSE_VALUE,EXECUTABLE)
+  # DEBUG thisD.30480 => _23
+  # DEBUG __cD.30481 => 10
+  # .MEM_54 = VDEF <.MEM_22>
+  # USE = nonlocal { D.22587 } (nonlocal, escaped)
+  # CLB = nonlocal { D.22587 } (nonlocal, escaped)
+  _ZNKSt5ctypeIcE13_M_widen_initEvD.16852 (_23);
+  # VUSE <.MEM_54>
+  # PT = nonlocal escaped 
+  _41 = MEM[(const struct ctypeD.7063 *)_23].D.16885._vptr.facetD.13503;
+  # VUSE <.MEM_54>
+  # PT = nonlocal escaped 
+  _42 = MEM[(intD.9 (*__vtbl_ptr_typeD.2760) () *)_41 + 48B];
+  # PT = anything 
+  PROF_46 = [obj_type_ref] OBJ_TYPE_REF(_42;(const struct ctypeD.7063)_23->6);
+  if (PROF_46 == _ZNKSt5ctypeIcE8do_widenEcD.16833)
+    goto <bb 13>;
+  else
+    goto <bb 12>;
+;;    succ:       13 [80.2%]  (TRUE_VALUE,EXECUTABLE)
+;;                12 [19.9%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 12, loop depth 0, count 0, freq 70, maybe hot
+;;    prev block 11, next block 13, flags: (NEW, REACHABLE)
+;;    pred:       11 [19.9%]  (FALSE_VALUE,EXECUTABLE)
+  # .MEM_55 = VDEF <.MEM_54>
+  # USE = nonlocal { D.22587 } (nonlocal, escaped)
+  # CLB = nonlocal { D.22587 } (nonlocal, escaped)
+  _48 = OBJ_TYPE_REF(_42;(const struct ctypeD.7063)_23->6) (_23, 10);
+  pretmp_57 = (intD.9) _48;
+;;    succ:       13 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 13, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 12, next block 14, flags: (NEW, REACHABLE)
+;;    pred:       10 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                11 [80.2%]  (TRUE_VALUE,EXECUTABLE)
+;;                12 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_51 = PHI <.MEM_22(10), .MEM_54(11), .MEM_55(12)>
+  # RANGE [-128, 127]
+  # prephitmp_2 = PHI <pretmp_32(10), 10(11), pretmp_57(12)>
+  # .MEM_59 = VDEF <.MEM_51>
+  # PT = nonlocal escaped 
+  # USE = nonlocal { D.22587 } (nonlocal, escaped)
+  # CLB = nonlocal { D.22587 } (nonlocal, escaped)
+  _31 = _ZNSo3putEcD.20540 (_20, prephitmp_2);
+  # DEBUG __osD.30472 => _31
+  # .MEM_60 = VDEF <.MEM_59>
+  # USE = nonlocal { D.22587 } (nonlocal, escaped)
+  # CLB = nonlocal { D.22587 } (nonlocal, escaped)
+  _ZNSo5flushEvD.20551 (_31);
+  # DEBUG D#19ptD.0 => &this_10(D)->_childrenD.26767
+  # VUSE <.MEM_60>
+  # PT = nonlocal escaped 
+  mod_iter$_M_current_18 = MEM[(struct ModuleD.26017 * * *)this_10(D) + 72B];
+  # DEBUG D#15ptD.0 => D#19ptD.0
+  # DEBUG thisD.29001 => D#15ptD.0
+  # DEBUG thisD.28947 => NULL
+  # DEBUG __iD.28946 => NULL
+  # DEBUG mod_iter$_M_currentD.29016 => mod_iter$_M_current_18
+  # DEBUG mod_iter$_M_currentD.29016 => mod_iter$_M_current_18
+  # DEBUG D#20ptD.0 => &this_10(D)->_childrenD.26767
+  # VUSE <.MEM_60>
+  # PT = nonlocal escaped 
+  _38 = MEM[(struct ModuleD.26017 * * *)this_10(D) + 80B];
+  # DEBUG D#16ptD.0 => D#20ptD.0
+  # DEBUG thisD.29008 => D#16ptD.0
+  # DEBUG thisD.28963 => NULL
+  # DEBUG __iD.28962 => NULL
+  # DEBUG __lhsD.29004 => &mod_iterD.26865
+  # DEBUG __rhsD.29005 => &D.26973
+  # DEBUG thisD.28990 => &mod_iterD.26865
+  # DEBUG thisD.28988 => &D.26973
+  if (mod_iter$_M_current_18 != _38)
+    goto <bb 15>;
+  else
+    goto <bb 14>;
+;;    succ:       15 [91.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                14 [9.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 14, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 13, next block 15, flags: (NEW, REACHABLE)
+;;    pred:       13 [9.0%]  (FALSE_VALUE,EXECUTABLE)
+;;                16 [9.0%]  (FALSE_VALUE,EXECUTABLE)
+  # .MEM_17 = PHI <.MEM_60(13), .MEM_15(16)>
+  # DEBUG D#21ptD.0 => {CLOBBER}
+  # DEBUG mod_iter$_M_currentD.29016 => D#21ptD.0
+  # VUSE <.MEM_17>
+  return;
+;;    succ:       EXIT [100.0%] 
+
+;;   basic block 15, loop depth 0, count 0, freq 819, maybe hot
+;;    prev block 14, next block 16, flags: (NEW)
+;;    pred:       13 [91.0%]  (TRUE_VALUE,EXECUTABLE)
+  pretmp_1 = level_6(D) + 1;
+;;    succ:       16 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 16, loop depth 1, count 0, freq 9096, maybe hot
+;;    prev block 15, next block 17, flags: (NEW)
+;;    pred:       15 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                17 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_61 = PHI <.MEM_60(15), .MEM_15(17)>
+  # PT = nonlocal escaped 
+  # mod_iter$_M_current_25 = PHI <mod_iter$_M_current_18(15), mod_iter$_M_current_21(17)>
+  # DEBUG mod_iter$_M_currentD.29016 => mod_iter$_M_current_25
+  # DEBUG D#20ptD.0 => &this_10(D)->_childrenD.26767
+  # DEBUG D#16ptD.0 => D#20ptD.0
+  # DEBUG thisD.29008 => D#16ptD.0
+  # DEBUG thisD.28963 => NULL
+  # DEBUG __iD.28962 => NULL
+  # DEBUG __lhsD.29004 => &mod_iterD.26865
+  # DEBUG __rhsD.29005 => &D.26973
+  # DEBUG thisD.28990 => &mod_iterD.26865
+  # DEBUG thisD.28988 => &D.26973
+  # DEBUG thisD.29011 => &mod_iterD.26865
+  # VUSE <.MEM_61>
+  # PT = nonlocal escaped 
+  _14 = *mod_iter$_M_current_25;
+  # .MEM_15 = VDEF <.MEM_61>
+  # USE = nonlocal { D.22587 } (nonlocal, escaped)
+  # CLB = nonlocal { D.22587 } (nonlocal, escaped)
+  _ZNK6Module16DisplayHierarchyEiRSoD.26784 (_14, pretmp_1, &_ZSt4coutD.22587);
+  # DEBUG D#17ptD.0 => 0
+  # DEBUG thisD.29013 => &mod_iterD.26865
+  # DEBUG D.29014 => D#17ptD.0
+  # PT = nonlocal escaped 
+  mod_iter$_M_current_21 = mod_iter$_M_current_25 + 8;
+  # DEBUG mod_iter$_M_currentD.29016 => mod_iter$_M_current_21
+  # DEBUG thisD.28980 => NULL
+  # DEBUG __iD.28979 => NULL
+  # DEBUG D.29018 => mod_iter$_M_current_25
+  # DEBUG mod_iter$_M_currentD.29016 => mod_iter$_M_current_21
+  # DEBUG D#20ptD.0 => &this_10(D)->_childrenD.26767
+  # VUSE <.MEM_15>
+  # PT = nonlocal escaped 
+  _19 = MEM[(struct ModuleD.26017 * * *)this_10(D) + 80B];
+  # DEBUG D#16ptD.0 => D#20ptD.0
+  # DEBUG thisD.29008 => D#16ptD.0
+  # DEBUG thisD.28963 => NULL
+  # DEBUG __iD.28962 => NULL
+  # DEBUG __lhsD.29004 => &mod_iterD.26865
+  # DEBUG __rhsD.29005 => &D.26973
+  # DEBUG thisD.28990 => &mod_iterD.26865
+  # DEBUG thisD.28988 => &D.26973
+  if (_19 != mod_iter$_M_current_21)
+    goto <bb 17>;
+  else
+    goto <bb 14>;
+;;    succ:       17 [91.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                14 [9.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 17, loop depth 1, count 0, freq 8277, maybe hot
+;;    prev block 16, next block 1, flags: (NEW)
+;;    pred:       16 [91.0%]  (TRUE_VALUE,EXECUTABLE)
+  goto <bb 16>;
+;;    succ:       16 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+}
+
+
+
+Updating SSA:
+Registering new PHI nodes in block #16
+Updating SSA information for statement Module::DisplayHierarchy (_14, pretmp_1, &cout);
+Updating SSA information for statement _19 = MEM[(struct Module * * *)this_10(D) + 80B];
+Registering new PHI nodes in block #17
+Registering new PHI nodes in block #18
+
+DFA Statistics for void Module::DisplayHierarchy(int, std::ostream&) const
+
+---------------------------------------------------------
+                                Number of        Memory
+                                instances         used 
+---------------------------------------------------------
+USE operands                             70        560b
+DEF operands                             25        200b
+VUSE operands                            22        176b
+VDEF operands                             8         64b
+PHI nodes                                10       1040b
+PHI arguments                            20        960b
+---------------------------------------------------------
+Total memory used by DFA/SSA data                 3000b
+---------------------------------------------------------
+
+Average number of arguments per PHI node: 2.0 (max: 3)
+
+
+SSA replacement table
+N_i -> { O_1 ... O_j } means that N_i replaces O_1, ..., O_j
+
+.MEM_45 -> { .MEM_15 }
+Incremental SSA update started at block: 16
+Number of blocks in CFG: 20
+Number of blocks to update: 3 ( 15%)
+Affected blocks: 16 17 18
+
+
+Analyzing # of iterations of loop 1
+  exit condition [1, + , 1](no_overflow) < level_6(D)
+  bounds on difference of bases: 0 ... 2147483646
+  result:
+    # of iterations (unsigned int) level_6(D) + 4294967295, bounded by 2147483646
+Analyzing # of iterations of loop 1
+  exit condition [1, + , 1](no_overflow) < level_6(D)
+  bounds on difference of bases: 0 ... 2147483646
+  result:
+    # of iterations (unsigned int) level_6(D) + 4294967295, bounded by 2147483646
+Analyzing # of iterations of loop 1
+  exit condition [1, + , 1](no_overflow) < level_6(D)
+  bounds on difference of bases: 0 ... 2147483646
+  result:
+    # of iterations (unsigned int) level_6(D) + 4294967295, bounded by 2147483646
+Creating dr for MEM[(long unsigned int *)this_10(D) + 16B]
+analyze_innermost: success.
+	base_address: this_10(D)
+	offset from base address: 0
+	constant offset from base address: 16
+	step: 0
+	aligned to: 256
+	base_object: MEM[(long unsigned int *)this_10(D) + 16B]
+Creating dr for MEM[(char * *)this_10(D) + 8B]
+analyze_innermost: success.
+	base_address: this_10(D)
+	offset from base address: 0
+	constant offset from base address: 8
+	step: 0
+	aligned to: 256
+	base_object: MEM[(char * *)this_10(D) + 8B]
+Creating dr for MEM[(const struct ctype *)_23]._M_widen_ok
+analyze_innermost: success.
+	base_address: _23
+	offset from base address: 0
+	constant offset from base address: 56
+	step: 0
+	aligned to: 256
+	base_object: MEM[(const struct ctype *)_23]
+	Access function 0: 448
+Creating dr for MEM[(const struct ctype *)_23]._M_widen[10]
+analyze_innermost: success.
+	base_address: _23
+	offset from base address: 0
+	constant offset from base address: 67
+	step: 0
+	aligned to: 256
+	base_object: MEM[(const struct ctype *)_23]
+	Access function 0: 10
+	Access function 1: 456
+Creating dr for *mod_iter$_M_current_25
+analyze_innermost: success.
+	base_address: mod_iter$_M_current_18
+	offset from base address: 0
+	constant offset from base address: 0
+	step: 8
+	aligned to: 256
+	base_object: *mod_iter$_M_current_18
+	Access function 0: {0B, +, 8}_2
+Creating dr for *mod_iter$_M_current_25
+analyze_innermost: success.
+	base_address: mod_iter$_M_current_18
+	offset from base address: 0
+	constant offset from base address: 0
+	step: 8
+	aligned to: 256
+	base_object: *mod_iter$_M_current_18
+	Access function 0: {0B, +, 8}_2
+Creating dr for *mod_iter$_M_current_25
+analyze_innermost: success.
+	base_address: mod_iter$_M_current_18
+	offset from base address: 0
+	constant offset from base address: 0
+	step: 8
+	aligned to: 256
+	base_object: *mod_iter$_M_current_18
+	Access function 0: {0B, +, 8}_2
+Creating dr for *mod_iter$_M_current_25
+analyze_innermost: success.
+	base_address: mod_iter$_M_current_18
+	offset from base address: 0
+	constant offset from base address: 0
+	step: 8
+	aligned to: 256
+	base_object: *mod_iter$_M_current_18
+	Access function 0: {0B, +, 8}_2
+Creating dr for *mod_iter$_M_current_25
+analyze_innermost: success.
+	base_address: mod_iter$_M_current_18
+	offset from base address: 0
+	constant offset from base address: 0
+	step: 8
+	aligned to: 256
+	base_object: *mod_iter$_M_current_18
+	Access function 0: {0B, +, 8}_2
+Creating dr for *mod_iter$_M_current_25
+analyze_innermost: success.
+	base_address: mod_iter$_M_current_18
+	offset from base address: 0
+	constant offset from base address: 0
+	step: 8
+	aligned to: 256
+	base_object: *mod_iter$_M_current_18
+	Access function 0: {0B, +, 8}_2
+Creating dr for *mod_iter$_M_current_25
+analyze_innermost: success.
+	base_address: mod_iter$_M_current_18
+	offset from base address: 0
+	constant offset from base address: 0
+	step: 8
+	aligned to: 256
+	base_object: *mod_iter$_M_current_18
+	Access function 0: {0B, +, 8}_2
+Creating dr for *mod_iter$_M_current_25
+analyze_innermost: success.
+	base_address: mod_iter$_M_current_18
+	offset from base address: 0
+	constant offset from base address: 0
+	step: 8
+	aligned to: 256
+	base_object: *mod_iter$_M_current_18
+	Access function 0: {0B, +, 8}_2
+
+Before limit_scops SCoP statistics (BBS:1, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP statistics (BBS:1, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP statistics (BBS:2, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP statistics (BBS:1, LOOPS:0, CONDITIONS:0, STMTS:2)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP statistics (BBS:1, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP statistics (BBS:1, LOOPS:0, CONDITIONS:0, STMTS:1)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP statistics (BBS:1, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP statistics (BBS:1, LOOPS:0, CONDITIONS:0, STMTS:3)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+number of SCoPs: 0
+
+Global statistics (BBS:21, LOOPS:2, CONDITIONS:7, STMTS:113)
+
+Global profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+loop_0 (header = 0, latch = 1, niter = )
+{
+  bb_2 (preds = {bb_0 }, succs = {bb_3 bb_4 })
+  {
+    <bb 2>:
+    # DEBUG this => &mod_iter
+    # DEBUG mod_iter$_M_current => 0B
+    # DEBUG l => 0
+    # DEBUG l => 0
+    if (level_6(D) <= 0)
+      goto <bb 3>;
+    else
+      goto <bb 4>;
+
+  }
+  bb_3 (preds = {bb_2 bb_19 }, succs = {bb_8 bb_9 })
+  {
+    <bb 3>:
+    # .MEM_58 = PHI <.MEM_4(D)(2), .MEM_39(19)>
+    # DEBUG D#18 => &this_10(D)->_name
+    # DEBUG __os => os_7(D)
+    # DEBUG __str => D#18
+    # VUSE <.MEM_58>
+    _5 = MEM[(long unsigned int *)this_10(D) + 16B];
+    # DEBUG D#1 => D#18
+    # DEBUG this => D#1
+    _13 = (long int) _5;
+    # DEBUG this => D#18
+    # VUSE <.MEM_58>
+    _11 = MEM[(char * *)this_10(D) + 8B];
+    # DEBUG D#3 => D#18
+    # DEBUG this => D#3
+    # .MEM_22 = VDEF <.MEM_58>
+    _20 = std::__ostream_insert<char, std::char_traits<char> > (os_7(D), _11, _13);
+    # DEBUG this => _20
+    # DEBUG __pf => endl
+    # DEBUG __os => _20
+    # VUSE <.MEM_22>
+    _8 = _20->_vptr.basic_ostream;
+    # VUSE <.MEM_22>
+    _26 = MEM[(long int *)_8 + -24B];
+    _27 = (sizetype) _26;
+    _28 = _20 + _27;
+    # DEBUG this => _28
+    # DEBUG __c => 10
+    # VUSE <.MEM_22>
+    _23 = MEM[(const struct basic_ios *)_28]._M_ctype;
+    # DEBUG __f => _23
+    if (_23 == 0B)
+      goto <bb 8>;
+    else
+      goto <bb 9>;
+
+  }
+  bb_4 (preds = {bb_2 }, succs = {bb_5 })
+  {
+    <bb 4>:
+
+  }
+  bb_6 (preds = {bb_5 }, succs = {bb_19 })
+  {
+    <bb 6>:
+    # .MEM_39 = PHI <.MEM_52(5)>
+
+  }
+  bb_19 (preds = {bb_6 }, succs = {bb_3 })
+  {
+    <bb 19>:
+    goto <bb 3>;
+
+  }
+  bb_8 (preds = {bb_3 }, succs = {})
+  {
+    <bb 8>:
+    # .MEM_62 = VDEF <.MEM_22>
+    std::__throw_bad_cast ();
+
+  }
+  bb_9 (preds = {bb_3 }, succs = {bb_10 bb_11 })
+  {
+    <bb 9>:
+    # DEBUG this => _23
+    # DEBUG __c => 10
+    # VUSE <.MEM_22>
+    _33 = MEM[(const struct ctype *)_23]._M_widen_ok;
+    if (_33 != 0)
+      goto <bb 10>;
+    else
+      goto <bb 11>;
+
+  }
+  bb_10 (preds = {bb_9 }, succs = {bb_13 })
+  {
+    <bb 10>:
+    # VUSE <.MEM_22>
+    _36 = MEM[(const struct ctype *)_23]._M_widen[10];
+    pretmp_32 = (int) _36;
+    goto <bb 13>;
+
+  }
+  bb_11 (preds = {bb_9 }, succs = {bb_13 bb_12 })
+  {
+    <bb 11>:
+    # DEBUG this => _23
+    # DEBUG __c => 10
+    # .MEM_54 = VDEF <.MEM_22>
+    std::ctype<char>::_M_widen_init (_23);
+    # VUSE <.MEM_54>
+    _41 = MEM[(const struct ctype *)_23].D.16885._vptr.facet;
+    # VUSE <.MEM_54>
+    _42 = MEM[(int (*__vtbl_ptr_type) () *)_41 + 48B];
+    PROF_46 = [obj_type_ref] OBJ_TYPE_REF(_42;(const struct ctype)_23->6);
+    if (PROF_46 == do_widen)
+      goto <bb 13>;
+    else
+      goto <bb 12>;
+
+  }
+  bb_12 (preds = {bb_11 }, succs = {bb_13 })
+  {
+    <bb 12>:
+    # .MEM_55 = VDEF <.MEM_54>
+    _48 = OBJ_TYPE_REF(_42;(const struct ctype)_23->6) (_23, 10);
+    pretmp_57 = (int) _48;
+
+  }
+  bb_13 (preds = {bb_10 bb_11 bb_12 }, succs = {bb_15 bb_14 })
+  {
+    <bb 13>:
+    # .MEM_51 = PHI <.MEM_22(10), .MEM_54(11), .MEM_55(12)>
+    # prephitmp_2 = PHI <pretmp_32(10), 10(11), pretmp_57(12)>
+    # .MEM_59 = VDEF <.MEM_51>
+    _31 = std::basic_ostream<char>::put (_20, prephitmp_2);
+    # DEBUG __os => _31
+    # .MEM_60 = VDEF <.MEM_59>
+    std::basic_ostream<char>::flush (_31);
+    # DEBUG D#19 => &this_10(D)->_children
+    # VUSE <.MEM_60>
+    mod_iter$_M_current_18 = MEM[(struct Module * * *)this_10(D) + 72B];
+    # DEBUG D#15 => D#19
+    # DEBUG this => D#15
+    # DEBUG this => NULL
+    # DEBUG __i => NULL
+    # DEBUG mod_iter$_M_current => mod_iter$_M_current_18
+    # DEBUG mod_iter$_M_current => mod_iter$_M_current_18
+    # DEBUG D#20 => &this_10(D)->_children
+    # VUSE <.MEM_60>
+    _38 = MEM[(struct Module * * *)this_10(D) + 80B];
+    # DEBUG D#16 => D#20
+    # DEBUG this => D#16
+    # DEBUG this => NULL
+    # DEBUG __i => NULL
+    # DEBUG __lhs => &mod_iter
+    # DEBUG __rhs => &D.26973
+    # DEBUG this => &mod_iter
+    # DEBUG this => &D.26973
+    if (mod_iter$_M_current_18 != _38)
+      goto <bb 15>;
+    else
+      goto <bb 14>;
+
+  }
+  bb_14 (preds = {bb_13 bb_18 }, succs = {bb_20 })
+  {
+    <bb 14>:
+    # .MEM_17 = PHI <.MEM_60(13), .MEM_45(18)>
+
+  }
+  bb_20 (preds = {bb_14 }, succs = {bb_1 })
+  {
+    <bb 20>:
+    # DEBUG D#21 => {CLOBBER}
+    # DEBUG mod_iter$_M_current => D#21
+    # VUSE <.MEM_17>
+    return;
+
+  }
+  bb_15 (preds = {bb_13 }, succs = {bb_16 })
+  {
+    <bb 15>:
+    pretmp_1 = level_6(D) + 1;
+
+  }
+  bb_18 (preds = {bb_16 }, succs = {bb_14 })
+  {
+    <bb 18>:
+    # .MEM_45 = PHI <.MEM_15(16)>
+    goto <bb 14>;
+
+  }
+  loop_2 (header = 16, latch = 17, niter = )
+  {
+    bb_16 (preds = {bb_15 bb_17 }, succs = {bb_17 bb_18 })
+    {
+      <bb 16>:
+      # .MEM_61 = PHI <.MEM_60(15), .MEM_15(17)>
+      # mod_iter$_M_current_25 = PHI <mod_iter$_M_current_18(15), mod_iter$_M_current_21(17)>
+      # DEBUG mod_iter$_M_current => mod_iter$_M_current_25
+      # DEBUG D#20 => &this_10(D)->_children
+      # DEBUG D#16 => D#20
+      # DEBUG this => D#16
+      # DEBUG this => NULL
+      # DEBUG __i => NULL
+      # DEBUG __lhs => &mod_iter
+      # DEBUG __rhs => &D.26973
+      # DEBUG this => &mod_iter
+      # DEBUG this => &D.26973
+      # DEBUG this => &mod_iter
+      # VUSE <.MEM_61>
+      _14 = *mod_iter$_M_current_25;
+      # .MEM_15 = VDEF <.MEM_61>
+      Module::DisplayHierarchy (_14, pretmp_1, &cout);
+      # DEBUG D#17 => 0
+      # DEBUG this => &mod_iter
+      # DEBUG D.29014 => D#17
+      mod_iter$_M_current_21 = mod_iter$_M_current_25 + 8;
+      # DEBUG mod_iter$_M_current => mod_iter$_M_current_21
+      # DEBUG this => NULL
+      # DEBUG __i => NULL
+      # DEBUG D.29018 => mod_iter$_M_current_25
+      # DEBUG mod_iter$_M_current => mod_iter$_M_current_21
+      # DEBUG D#20 => &this_10(D)->_children
+      # VUSE <.MEM_15>
+      _19 = MEM[(struct Module * * *)this_10(D) + 80B];
+      # DEBUG D#16 => D#20
+      # DEBUG this => D#16
+      # DEBUG this => NULL
+      # DEBUG __i => NULL
+      # DEBUG __lhs => &mod_iter
+      # DEBUG __rhs => &D.26973
+      # DEBUG this => &mod_iter
+      # DEBUG this => &D.26973
+      if (_19 != mod_iter$_M_current_21)
+        goto <bb 17>;
+      else
+        goto <bb 18>;
+
+    }
+    bb_17 (preds = {bb_16 }, succs = {bb_16 })
+    {
+      <bb 17>:
+      goto <bb 16>;
+
+    }
+  }
+  loop_1 (header = 5, latch = 7, niter = (unsigned int) level_6(D) + 4294967295, upper_bound = 2147483646)
+  {
+    bb_5 (preds = {bb_4 bb_7 }, succs = {bb_6 bb_7 })
+    {
+      <bb 5>:
+      # l_53 = PHI <0(4), l_9(7)>
+      # .MEM_44 = PHI <.MEM_4(D)(4), .MEM_52(7)>
+      # DEBUG l => l_53
+      # DEBUG __out => os_7(D)
+      # DEBUG __s => "  "
+      # DEBUG __s => "  "
+      # .MEM_52 = VDEF <.MEM_44>
+      std::__ostream_insert<char, std::char_traits<char> > (os_7(D), "  ", 2);
+      l_9 = l_53 + 1;
+      # DEBUG l => l_9
+      # DEBUG l => l_9
+      if (level_6(D) <= l_9)
+        goto <bb 6>;
+      else
+        goto <bb 7>;
+
+    }
+    bb_7 (preds = {bb_5 }, succs = {bb_5 })
+    {
+      <bb 7>:
+      goto <bb 5>;
+
+    }
+  }
+}
+
+Pass statistics:
+----------------
+
+void Module::DisplayHierarchy(int, std::ostream&) const (const struct ModuleD.26017 * const thisD.26863, intD.9 levelD.26860, struct ostreamD.3834 & osD.26861)
+{
+  char_typeD.16738 D.30485;
+  charD.10 __cD.30484;
+  char_typeD.16738 D.30482;
+  charD.10 __cD.30481;
+  char_typeD.19817 D.30479;
+  struct basic_ostreamD.3833 & D.30473;
+  struct basic_ostreamD.3833 & D.30470;
+  struct ModuleD.26017 * const * mod_iter$_M_currentD.29016;
+  intD.9 lD.26968;
+  intD.9 pretmp_1;
+  intD.9 prephitmp_2;
+  const size_typeD.11502 _5;
+  intD.9 (*__vtbl_ptr_typeD.2760) () * _8;
+  charD.10 * const _11;
+  long intD.12 _13;
+  struct ModuleD.26017 * _14;
+  struct ModuleD.26017 * * const _19;
+  struct basic_ostreamD.3833 & _20;
+  const struct __ctype_typeD.19822 * _23;
+  long intD.12 _26;
+  sizetype _27;
+  struct basic_iosD.3827 * _28;
+  struct basic_ostreamD.3833 & _31;
+  intD.9 pretmp_32;
+  charD.10 _33;
+  char_typeD.16738 _36;
+  struct ModuleD.26017 * * const _38;
+  intD.9 (*__vtbl_ptr_typeD.2760) () * _41;
+  intD.9 (*__vtbl_ptr_typeD.2760) () _42;
+  voidD.45 * PROF_46;
+  char_typeD.16738 _48;
+  intD.9 pretmp_57;
+
+;;   basic block 2, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 0, next block 3, flags: (NEW, REACHABLE)
+;;    pred:       ENTRY [100.0%]  (FALLTHRU,EXECUTABLE)
+  # DEBUG thisD.28993 => &mod_iterD.26865
+  # DEBUG mod_iter$_M_currentD.29016 => 0B
+  # DEBUG lD.26968 => 0
+  # DEBUG lD.26968 => 0
+  if (level_6(D) <= 0)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+;;    succ:       3 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                4 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 3, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 2, next block 4, flags: (NEW, REACHABLE)
+;;    pred:       2 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                19 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_58 = PHI <.MEM_4(D)(2), .MEM_39(19)>
+  # DEBUG D#18ptD.0 => &this_10(D)->_nameD.26019
+  # DEBUG __osD.28994 => os_7(D)
+  # DEBUG __strD.28995 => D#18ptD.0
+  # VUSE <.MEM_58>
+  _5 = MEM[(long unsigned intD.14 *)this_10(D) + 16B];
+  # DEBUG D#1ptD.0 => D#18ptD.0
+  # DEBUG thisD.28807 => D#1ptD.0
+  _13 = (long intD.12) _5;
+  # DEBUG thisD.28804 => D#18ptD.0
+  # VUSE <.MEM_58>
+  # PT = nonlocal escaped 
+  _11 = MEM[(charD.10 * *)this_10(D) + 8B];
+  # DEBUG D#3ptD.0 => D#18ptD.0
+  # DEBUG thisD.28749 => D#3ptD.0
+  # .MEM_22 = VDEF <.MEM_58>
+  # PT = nonlocal escaped 
+  # USE = nonlocal { D.22587 } (nonlocal, escaped)
+  # CLB = nonlocal { D.22587 } (nonlocal, escaped)
+  _20 = _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_lD.8800 (os_7(D), _11, _13);
+  # DEBUG thisD.28997 => _20
+  # DEBUG __pfD.28998 => _ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_D.20645
+  # DEBUG __osD.30471 => _20
+  # VUSE <.MEM_22>
+  # PT = nonlocal escaped { D.22587 } (nonlocal, escaped)
+  _8 = _20->_vptr.basic_ostreamD.20605;
+  # VUSE <.MEM_22>
+  _26 = MEM[(long intD.12 *)_8 + -24B];
+  # RANGE [0, 18446744073709551615]
+  _27 = (sizetype) _26;
+  # PT = nonlocal escaped 
+  _28 = _20 + _27;
+  # DEBUG thisD.30474 => _28
+  # DEBUG __cD.30475 => 10
+  # VUSE <.MEM_22>
+  # PT = nonlocal escaped 
+  _23 = MEM[(const struct basic_iosD.3827 *)_28]._M_ctypeD.19829;
+  # DEBUG __fD.30476 => _23
+  if (_23 == 0B)
+    goto <bb 8>;
+  else
+    goto <bb 9>;
+;;    succ:       8 [0.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                9 [100.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 4, loop depth 0, count 0, freq 819, maybe hot
+;;    prev block 3, next block 5, flags: (NEW)
+;;    pred:       2 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+;;    succ:       5 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 5, loop depth 1, count 0, freq 9100, maybe hot
+;;    prev block 4, next block 6, flags: (NEW)
+;;    pred:       4 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                7 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # l_53 = PHI <0(4), l_9(7)>
+  # .MEM_44 = PHI <.MEM_4(D)(4), .MEM_52(7)>
+  # DEBUG lD.26968 => l_53
+  # DEBUG __outD.30467 => os_7(D)
+  # DEBUG __sD.30468 => "  "
+  # DEBUG __sD.30469 => "  "
+  # .MEM_52 = VDEF <.MEM_44>
+  # USE = nonlocal { D.22587 } (nonlocal, escaped)
+  # CLB = nonlocal { D.22587 } (nonlocal, escaped)
+  _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_lD.8800 (os_7(D), "  ", 2);
+  l_9 = l_53 + 1;
+  # DEBUG lD.26968 => l_9
+  # DEBUG lD.26968 => l_9
+  if (level_6(D) <= l_9)
+    goto <bb 6>;
+  else
+    goto <bb 7>;
+;;    succ:       6 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                7 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 6, loop depth 0, count 0, freq 819, maybe hot
+;;    prev block 5, next block 19, flags: (NEW)
+;;    pred:       5 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+  # .MEM_39 = PHI <.MEM_52(5)>
+;;    succ:       19 [100.0%]  (FALLTHRU)
+
+;;   basic block 19, loop depth 0, count 0, freq 819, maybe hot
+;;    prev block 6, next block 7, flags: (NEW)
+;;    pred:       6 [100.0%]  (FALLTHRU)
+  goto <bb 3>;
+;;    succ:       3 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 7, loop depth 1, count 0, freq 8281, maybe hot
+;;    prev block 19, next block 8, flags: (NEW)
+;;    pred:       5 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+  goto <bb 5>;
+;;    succ:       5 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 8, loop depth 0, count 0, freq 0, maybe hot
+;;    prev block 7, next block 9, flags: (NEW, REACHABLE)
+;;    pred:       3 [0.0%]  (TRUE_VALUE,EXECUTABLE)
+  # .MEM_62 = VDEF <.MEM_22>
+  # USE = nonlocal { D.22587 } (nonlocal, escaped)
+  # CLB = nonlocal { D.22587 } (nonlocal, escaped)
+  _ZSt16__throw_bad_castvD.3958 ();
+;;    succ:      
+
+;;   basic block 9, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 8, next block 10, flags: (NEW, REACHABLE)
+;;    pred:       3 [100.0%]  (FALSE_VALUE,EXECUTABLE)
+  # DEBUG thisD.30478 => _23
+  # DEBUG __cD.30477 => 10
+  # VUSE <.MEM_22>
+  _33 = MEM[(const struct ctypeD.7063 *)_23]._M_widen_okD.16744;
+  if (_33 != 0)
+    goto <bb 10>;
+  else
+    goto <bb 11>;
+;;    succ:       10 [61.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                11 [39.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 10, loop depth 0, count 0, freq 549, maybe hot
+;;    prev block 9, next block 11, flags: (NEW, REACHABLE)
+;;    pred:       9 [61.0%]  (TRUE_VALUE,EXECUTABLE)
+  # VUSE <.MEM_22>
+  _36 = MEM[(const struct ctypeD.7063 *)_23]._M_widenD.16745[10];
+  pretmp_32 = (intD.9) _36;
+  goto <bb 13>;
+;;    succ:       13 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 11, loop depth 0, count 0, freq 351, maybe hot
+;;    prev block 10, next block 12, flags: (NEW, REACHABLE)
+;;    pred:       9 [39.0%]  (FALSE_VALUE,EXECUTABLE)
+  # DEBUG thisD.30480 => _23
+  # DEBUG __cD.30481 => 10
+  # .MEM_54 = VDEF <.MEM_22>
+  # USE = nonlocal { D.22587 } (nonlocal, escaped)
+  # CLB = nonlocal { D.22587 } (nonlocal, escaped)
+  _ZNKSt5ctypeIcE13_M_widen_initEvD.16852 (_23);
+  # VUSE <.MEM_54>
+  # PT = nonlocal escaped 
+  _41 = MEM[(const struct ctypeD.7063 *)_23].D.16885._vptr.facetD.13503;
+  # VUSE <.MEM_54>
+  # PT = nonlocal escaped 
+  _42 = MEM[(intD.9 (*__vtbl_ptr_typeD.2760) () *)_41 + 48B];
+  # PT = anything 
+  PROF_46 = [obj_type_ref] OBJ_TYPE_REF(_42;(const struct ctypeD.7063)_23->6);
+  if (PROF_46 == _ZNKSt5ctypeIcE8do_widenEcD.16833)
+    goto <bb 13>;
+  else
+    goto <bb 12>;
+;;    succ:       13 [80.2%]  (TRUE_VALUE,EXECUTABLE)
+;;                12 [19.9%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 12, loop depth 0, count 0, freq 70, maybe hot
+;;    prev block 11, next block 13, flags: (NEW, REACHABLE)
+;;    pred:       11 [19.9%]  (FALSE_VALUE,EXECUTABLE)
+  # .MEM_55 = VDEF <.MEM_54>
+  # USE = nonlocal { D.22587 } (nonlocal, escaped)
+  # CLB = nonlocal { D.22587 } (nonlocal, escaped)
+  _48 = OBJ_TYPE_REF(_42;(const struct ctypeD.7063)_23->6) (_23, 10);
+  pretmp_57 = (intD.9) _48;
+;;    succ:       13 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 13, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 12, next block 14, flags: (NEW, REACHABLE)
+;;    pred:       10 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                11 [80.2%]  (TRUE_VALUE,EXECUTABLE)
+;;                12 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_51 = PHI <.MEM_22(10), .MEM_54(11), .MEM_55(12)>
+  # RANGE [-128, 127]
+  # prephitmp_2 = PHI <pretmp_32(10), 10(11), pretmp_57(12)>
+  # .MEM_59 = VDEF <.MEM_51>
+  # PT = nonlocal escaped 
+  # USE = nonlocal { D.22587 } (nonlocal, escaped)
+  # CLB = nonlocal { D.22587 } (nonlocal, escaped)
+  _31 = _ZNSo3putEcD.20540 (_20, prephitmp_2);
+  # DEBUG __osD.30472 => _31
+  # .MEM_60 = VDEF <.MEM_59>
+  # USE = nonlocal { D.22587 } (nonlocal, escaped)
+  # CLB = nonlocal { D.22587 } (nonlocal, escaped)
+  _ZNSo5flushEvD.20551 (_31);
+  # DEBUG D#19ptD.0 => &this_10(D)->_childrenD.26767
+  # VUSE <.MEM_60>
+  # PT = nonlocal escaped 
+  mod_iter$_M_current_18 = MEM[(struct ModuleD.26017 * * *)this_10(D) + 72B];
+  # DEBUG D#15ptD.0 => D#19ptD.0
+  # DEBUG thisD.29001 => D#15ptD.0
+  # DEBUG thisD.28947 => NULL
+  # DEBUG __iD.28946 => NULL
+  # DEBUG mod_iter$_M_currentD.29016 => mod_iter$_M_current_18
+  # DEBUG mod_iter$_M_currentD.29016 => mod_iter$_M_current_18
+  # DEBUG D#20ptD.0 => &this_10(D)->_childrenD.26767
+  # VUSE <.MEM_60>
+  # PT = nonlocal escaped 
+  _38 = MEM[(struct ModuleD.26017 * * *)this_10(D) + 80B];
+  # DEBUG D#16ptD.0 => D#20ptD.0
+  # DEBUG thisD.29008 => D#16ptD.0
+  # DEBUG thisD.28963 => NULL
+  # DEBUG __iD.28962 => NULL
+  # DEBUG __lhsD.29004 => &mod_iterD.26865
+  # DEBUG __rhsD.29005 => &D.26973
+  # DEBUG thisD.28990 => &mod_iterD.26865
+  # DEBUG thisD.28988 => &D.26973
+  if (mod_iter$_M_current_18 != _38)
+    goto <bb 15>;
+  else
+    goto <bb 14>;
+;;    succ:       15 [91.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                14 [9.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 14, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 13, next block 20, flags: (NEW, REACHABLE)
+;;    pred:       13 [9.0%]  (FALSE_VALUE,EXECUTABLE)
+;;                18 [100.0%]  (FALLTHRU)
+  # .MEM_17 = PHI <.MEM_60(13), .MEM_45(18)>
+;;    succ:       20 [100.0%]  (FALLTHRU)
+
+;;   basic block 20, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 14, next block 15, flags: (NEW)
+;;    pred:       14 [100.0%]  (FALLTHRU)
+  # DEBUG D#21ptD.0 => {CLOBBER}
+  # DEBUG mod_iter$_M_currentD.29016 => D#21ptD.0
+  # VUSE <.MEM_17>
+  return;
+;;    succ:       EXIT [100.0%] 
+
+;;   basic block 15, loop depth 0, count 0, freq 819, maybe hot
+;;    prev block 20, next block 16, flags: (NEW)
+;;    pred:       13 [91.0%]  (TRUE_VALUE,EXECUTABLE)
+  pretmp_1 = level_6(D) + 1;
+;;    succ:       16 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 16, loop depth 1, count 0, freq 9096, maybe hot
+;;    prev block 15, next block 18, flags: (NEW)
+;;    pred:       15 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                17 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_61 = PHI <.MEM_60(15), .MEM_15(17)>
+  # PT = nonlocal escaped 
+  # mod_iter$_M_current_25 = PHI <mod_iter$_M_current_18(15), mod_iter$_M_current_21(17)>
+  # DEBUG mod_iter$_M_currentD.29016 => mod_iter$_M_current_25
+  # DEBUG D#20ptD.0 => &this_10(D)->_childrenD.26767
+  # DEBUG D#16ptD.0 => D#20ptD.0
+  # DEBUG thisD.29008 => D#16ptD.0
+  # DEBUG thisD.28963 => NULL
+  # DEBUG __iD.28962 => NULL
+  # DEBUG __lhsD.29004 => &mod_iterD.26865
+  # DEBUG __rhsD.29005 => &D.26973
+  # DEBUG thisD.28990 => &mod_iterD.26865
+  # DEBUG thisD.28988 => &D.26973
+  # DEBUG thisD.29011 => &mod_iterD.26865
+  # VUSE <.MEM_61>
+  # PT = nonlocal escaped 
+  _14 = *mod_iter$_M_current_25;
+  # .MEM_15 = VDEF <.MEM_61>
+  # USE = nonlocal { D.22587 } (nonlocal, escaped)
+  # CLB = nonlocal { D.22587 } (nonlocal, escaped)
+  _ZNK6Module16DisplayHierarchyEiRSoD.26784 (_14, pretmp_1, &_ZSt4coutD.22587);
+  # DEBUG D#17ptD.0 => 0
+  # DEBUG thisD.29013 => &mod_iterD.26865
+  # DEBUG D.29014 => D#17ptD.0
+  # PT = nonlocal escaped 
+  mod_iter$_M_current_21 = mod_iter$_M_current_25 + 8;
+  # DEBUG mod_iter$_M_currentD.29016 => mod_iter$_M_current_21
+  # DEBUG thisD.28980 => NULL
+  # DEBUG __iD.28979 => NULL
+  # DEBUG D.29018 => mod_iter$_M_current_25
+  # DEBUG mod_iter$_M_currentD.29016 => mod_iter$_M_current_21
+  # DEBUG D#20ptD.0 => &this_10(D)->_childrenD.26767
+  # VUSE <.MEM_15>
+  # PT = nonlocal escaped 
+  _19 = MEM[(struct ModuleD.26017 * * *)this_10(D) + 80B];
+  # DEBUG D#16ptD.0 => D#20ptD.0
+  # DEBUG thisD.29008 => D#16ptD.0
+  # DEBUG thisD.28963 => NULL
+  # DEBUG __iD.28962 => NULL
+  # DEBUG __lhsD.29004 => &mod_iterD.26865
+  # DEBUG __rhsD.29005 => &D.26973
+  # DEBUG thisD.28990 => &mod_iterD.26865
+  # DEBUG thisD.28988 => &D.26973
+  if (_19 != mod_iter$_M_current_21)
+    goto <bb 17>;
+  else
+    goto <bb 18>;
+;;    succ:       17 [91.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                18 [9.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 18, loop depth 0, count 0, freq 819, maybe hot
+;;    prev block 16, next block 17, flags: (NEW)
+;;    pred:       16 [9.0%]  (FALSE_VALUE,EXECUTABLE)
+  # .MEM_45 = PHI <.MEM_15(16)>
+  goto <bb 14>;
+;;    succ:       14 [100.0%]  (FALLTHRU)
+
+;;   basic block 17, loop depth 1, count 0, freq 8277, maybe hot
+;;    prev block 18, next block 1, flags: (NEW)
+;;    pred:       16 [91.0%]  (TRUE_VALUE,EXECUTABLE)
+  goto <bb 16>;
+;;    succ:       16 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+}
+
+

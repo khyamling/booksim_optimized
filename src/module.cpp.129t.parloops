@@ -1,0 +1,217 @@
+
+;; Function void Module::DisplayHierarchy(int, std::ostream&) const (_ZNK6Module16DisplayHierarchyEiRSo, funcdef_no=1364, decl_uid=26784, cgraph_uid=376, symbol_order=377)
+
+Trying loop 2 as candidate
+loop 2 is innermost
+loop is not parallel according to graphite
+Trying loop 1 as candidate
+loop 1 is innermost
+loop is not parallel according to graphite
+void Module::DisplayHierarchy(int, std::ostream&) const (const struct Module * const this, int level, struct ostream & os)
+{
+  char_type D.30485;
+  char __c;
+  char_type D.30482;
+  char __c;
+  char_type D.30479;
+  struct basic_ostream & D.30473;
+  struct basic_ostream & D.30470;
+  struct Module * const * mod_iter$_M_current;
+  int l;
+  int pretmp_1;
+  int prephitmp_2;
+  const size_type _5;
+  int (*__vtbl_ptr_type) () * _8;
+  char * const _11;
+  long int _13;
+  struct Module * _14;
+  struct Module * * const _19;
+  struct basic_ostream & _20;
+  const struct __ctype_type * _23;
+  long int _26;
+  sizetype _27;
+  struct basic_ios * _28;
+  struct basic_ostream & _31;
+  int pretmp_32;
+  char _33;
+  char_type _36;
+  struct Module * * const _38;
+  int (*__vtbl_ptr_type) () * _41;
+  int (*__vtbl_ptr_type) () _42;
+  void * PROF_46;
+  char_type _48;
+  int pretmp_57;
+
+  <bb 2>:
+  # DEBUG this => &mod_iter
+  # DEBUG mod_iter$_M_current => 0B
+  # DEBUG l => 0
+  # DEBUG l => 0
+  if (level_6(D) <= 0)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  # DEBUG D#18 => &this_10(D)->_name
+  # DEBUG __os => os_7(D)
+  # DEBUG __str => D#18
+  _5 = MEM[(long unsigned int *)this_10(D) + 16B];
+  # DEBUG D#1 => D#18
+  # DEBUG this => D#1
+  _13 = (long int) _5;
+  # DEBUG this => D#18
+  _11 = MEM[(char * *)this_10(D) + 8B];
+  # DEBUG D#3 => D#18
+  # DEBUG this => D#3
+  _20 = std::__ostream_insert<char, std::char_traits<char> > (os_7(D), _11, _13);
+  # DEBUG this => _20
+  # DEBUG __pf => endl
+  # DEBUG __os => _20
+  _8 = _20->_vptr.basic_ostream;
+  _26 = MEM[(long int *)_8 + -24B];
+  _27 = (sizetype) _26;
+  _28 = _20 + _27;
+  # DEBUG this => _28
+  # DEBUG __c => 10
+  _23 = MEM[(const struct basic_ios *)_28]._M_ctype;
+  # DEBUG __f => _23
+  if (_23 == 0B)
+    goto <bb 7>;
+  else
+    goto <bb 8>;
+
+  <bb 4>:
+
+  <bb 5>:
+  # l_53 = PHI <0(4), l_9(6)>
+  # DEBUG l => l_53
+  # DEBUG __out => os_7(D)
+  # DEBUG __s => "  "
+  # DEBUG __s => "  "
+  std::__ostream_insert<char, std::char_traits<char> > (os_7(D), "  ", 2);
+  l_9 = l_53 + 1;
+  # DEBUG l => l_9
+  # DEBUG l => l_9
+  if (level_6(D) <= l_9)
+    goto <bb 3>;
+  else
+    goto <bb 6>;
+
+  <bb 6>:
+  goto <bb 5>;
+
+  <bb 7>:
+  std::__throw_bad_cast ();
+
+  <bb 8>:
+  # DEBUG this => _23
+  # DEBUG __c => 10
+  _33 = MEM[(const struct ctype *)_23]._M_widen_ok;
+  if (_33 != 0)
+    goto <bb 9>;
+  else
+    goto <bb 10>;
+
+  <bb 9>:
+  _36 = MEM[(const struct ctype *)_23]._M_widen[10];
+  pretmp_32 = (int) _36;
+  goto <bb 12>;
+
+  <bb 10>:
+  # DEBUG this => _23
+  # DEBUG __c => 10
+  std::ctype<char>::_M_widen_init (_23);
+  _41 = MEM[(const struct ctype *)_23].D.16885._vptr.facet;
+  _42 = MEM[(int (*__vtbl_ptr_type) () *)_41 + 48B];
+  PROF_46 = [obj_type_ref] OBJ_TYPE_REF(_42;(const struct ctype)_23->6);
+  if (PROF_46 == do_widen)
+    goto <bb 12>;
+  else
+    goto <bb 11>;
+
+  <bb 11>:
+  _48 = OBJ_TYPE_REF(_42;(const struct ctype)_23->6) (_23, 10);
+  pretmp_57 = (int) _48;
+
+  <bb 12>:
+  # prephitmp_2 = PHI <pretmp_32(9), 10(10), pretmp_57(11)>
+  _31 = std::basic_ostream<char>::put (_20, prephitmp_2);
+  # DEBUG __os => _31
+  std::basic_ostream<char>::flush (_31);
+  # DEBUG D#19 => &this_10(D)->_children
+  mod_iter$_M_current_18 = MEM[(struct Module * * *)this_10(D) + 72B];
+  # DEBUG D#15 => D#19
+  # DEBUG this => D#15
+  # DEBUG this => NULL
+  # DEBUG __i => NULL
+  # DEBUG mod_iter$_M_current => mod_iter$_M_current_18
+  # DEBUG mod_iter$_M_current => mod_iter$_M_current_18
+  # DEBUG D#20 => &this_10(D)->_children
+  _38 = MEM[(struct Module * * *)this_10(D) + 80B];
+  # DEBUG D#16 => D#20
+  # DEBUG this => D#16
+  # DEBUG this => NULL
+  # DEBUG __i => NULL
+  # DEBUG __lhs => &mod_iter
+  # DEBUG __rhs => &D.26973
+  # DEBUG this => &mod_iter
+  # DEBUG this => &D.26973
+  if (mod_iter$_M_current_18 != _38)
+    goto <bb 14>;
+  else
+    goto <bb 13>;
+
+  <bb 13>:
+  # DEBUG D#21 => {CLOBBER}
+  # DEBUG mod_iter$_M_current => D#21
+  return;
+
+  <bb 14>:
+  pretmp_1 = level_6(D) + 1;
+
+  <bb 15>:
+  # mod_iter$_M_current_25 = PHI <mod_iter$_M_current_18(14), mod_iter$_M_current_21(16)>
+  # DEBUG mod_iter$_M_current => mod_iter$_M_current_25
+  # DEBUG D#20 => &this_10(D)->_children
+  # DEBUG D#16 => D#20
+  # DEBUG this => D#16
+  # DEBUG this => NULL
+  # DEBUG __i => NULL
+  # DEBUG __lhs => &mod_iter
+  # DEBUG __rhs => &D.26973
+  # DEBUG this => &mod_iter
+  # DEBUG this => &D.26973
+  # DEBUG this => &mod_iter
+  _14 = *mod_iter$_M_current_25;
+  Module::DisplayHierarchy (_14, pretmp_1, &cout);
+  # DEBUG D#17 => 0
+  # DEBUG this => &mod_iter
+  # DEBUG D.29014 => D#17
+  mod_iter$_M_current_21 = mod_iter$_M_current_25 + 8;
+  # DEBUG mod_iter$_M_current => mod_iter$_M_current_21
+  # DEBUG this => NULL
+  # DEBUG __i => NULL
+  # DEBUG D.29018 => mod_iter$_M_current_25
+  # DEBUG mod_iter$_M_current => mod_iter$_M_current_21
+  # DEBUG D#20 => &this_10(D)->_children
+  _19 = MEM[(struct Module * * *)this_10(D) + 80B];
+  # DEBUG D#16 => D#20
+  # DEBUG this => D#16
+  # DEBUG this => NULL
+  # DEBUG __i => NULL
+  # DEBUG __lhs => &mod_iter
+  # DEBUG __rhs => &D.26973
+  # DEBUG this => &mod_iter
+  # DEBUG this => &D.26973
+  if (_19 != mod_iter$_M_current_21)
+    goto <bb 16>;
+  else
+    goto <bb 13>;
+
+  <bb 16>:
+  goto <bb 15>;
+
+}
+
+

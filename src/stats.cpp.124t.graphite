@@ -1,0 +1,5603 @@
+
+;; Function virtual void Stats::Display(std::ostream&) const (_ZNK5Stats7DisplayERSo, funcdef_no=1676, decl_uid=31752, cgraph_uid=613, symbol_order=614)
+
+
+Pass statistics:
+----------------
+
+virtual void Stats::Display(std::ostream&) const (const struct StatsD.30964 * const thisD.31863, struct ostreamD.7362 & osD.31861)
+{
+  char_typeD.17868 D.34408;
+  charD.10 __cD.34407;
+  char_typeD.17868 D.34405;
+  charD.10 __cD.34404;
+  char_typeD.20947 D.34402;
+  struct basic_ostreamD.7361 & D.34396;
+  struct basic_ostreamD.7361 & D.34392;
+  struct basic_ostreamD.7361 & D.34388;
+  size_tD.5382 iD.34379;
+  struct ostreamD.7362 & D.34384;
+  struct basic_ostreamD.7361 & D.34375;
+  intD.9 prephitmp_4;
+  long intD.12 _5;
+  intD.9 * const _6;
+  intD.9 (*__vtbl_ptr_typeD.2760) () * _7;
+  long intD.12 _8;
+  sizetype _9;
+  struct basic_iosD.7355 * _10;
+  struct basic_ostreamD.7361 & _13;
+  intD.9 pretmp_14;
+  intD.9 * const _15;
+  long intD.12 _16;
+  long intD.12 _17;
+  long intD.12 _18;
+  long intD.12 _19;
+  size_typeD.31293 _20;
+  long unsigned intD.14 _22;
+  const intD.9 & _23;
+  intD.9 _24;
+  struct basic_ostreamD.7361 & _25;
+  const struct __ctype_typeD.20952 * _32;
+  charD.10 _33;
+  char_typeD.17868 _36;
+  intD.9 * const _38;
+  intD.9 (*__vtbl_ptr_typeD.2760) () * _41;
+  intD.9 (*__vtbl_ptr_typeD.2760) () _42;
+  long intD.12 _44;
+  intD.9 pretmp_45;
+  voidD.45 * PROF_46;
+  char_typeD.17868 _48;
+  intD.9 * const _51;
+  intD.9 * const _54;
+  long intD.12 _59;
+  long intD.12 _60;
+
+;;   basic block 2, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 0, next block 3, flags: (NEW, REACHABLE)
+;;    pred:       ENTRY [100.0%]  (FALLTHRU,EXECUTABLE)
+  # DEBUG osD.34376 => os_2(D)
+  # DEBUG sD.34377 => this_3(D)
+  # DEBUG D#9ptD.0 => &this_3(D)->_histD.31719
+  # DEBUG vD.34378 => D#9ptD.0
+  # DEBUG __outD.34385 => os_2(D)
+  # DEBUG __sD.34386 => "[ "
+  # DEBUG __sD.34387 => "[ "
+  # .MEM_53 = VDEF <.MEM_1(D)>
+  # USE = nonlocal 
+  # CLB = nonlocal 
+  _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_lD.7824 (os_2(D), "[ ", 2);
+  # DEBUG iD.34379 => 0
+  # VUSE <.MEM_53>
+  # PT = nonlocal escaped 
+  _51 = MEM[(intD.9 * *)this_3(D) + 152B];
+  # DEBUG D#7ptD.0 => D#9ptD.0
+  # VUSE <.MEM_53>
+  # PT = nonlocal escaped 
+  _54 = MEM[(intD.9 * *)this_3(D) + 160B];
+  # DEBUG D#7ptD.0 => D#9ptD.0
+  # DEBUG thisD.34382 => D#7ptD.0
+  # DEBUG thisD.34383 => D#7ptD.0
+  _44 = (long intD.12) _54;
+  _59 = (long intD.12) _51;
+  _60 = _44 - _59;
+  # RANGE [-2305843009213693952, 2305843009213693951]
+  _5 = _60 /[ex] 4;
+  if (_5 != 0)
+    goto <bb 4>;
+  else
+    goto <bb 3>;
+;;    succ:       4 [91.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                3 [9.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 3, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 2, next block 4, flags: (NEW, REACHABLE)
+;;    pred:       2 [9.0%]  (FALSE_VALUE,EXECUTABLE)
+;;                5 [9.0%]  (FALSE_VALUE,EXECUTABLE)
+  # .MEM_64 = PHI <.MEM_53(2), .MEM_56(5)>
+  # DEBUG __outD.34393 => os_2(D)
+  # DEBUG __sD.34394 => "]"
+  # DEBUG __sD.34395 => "]"
+  # .MEM_58 = VDEF <.MEM_64>
+  # USE = nonlocal 
+  # CLB = nonlocal 
+  _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_lD.7824 (os_2(D), "]", 1);
+  # DEBUG thisD.33130 => NULL
+  # DEBUG __pfD.33131 => _ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_D.21775
+  # DEBUG __osD.34373 => NULL
+  # VUSE <.MEM_58>
+  # PT = nonlocal escaped 
+  _7 = MEM[(struct basic_ostreamD.7361 *)os_2(D)]._vptr.basic_ostreamD.21735;
+  # VUSE <.MEM_58>
+  _8 = MEM[(long intD.12 *)_7 + -24B];
+  # RANGE [0, 18446744073709551615]
+  _9 = (sizetype) _8;
+  # PT = nonlocal 
+  _10 = os_2(D) + _9;
+  # DEBUG thisD.34397 => _10
+  # DEBUG __cD.34398 => 10
+  # VUSE <.MEM_58>
+  # PT = nonlocal escaped 
+  _32 = MEM[(const struct basic_iosD.7355 *)_10]._M_ctypeD.20959;
+  # DEBUG __fD.34399 => _32
+  if (_32 == 0B)
+    goto <bb 7>;
+  else
+    goto <bb 8>;
+;;    succ:       7 [0.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                8 [100.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 4, loop depth 0, count 0, freq 819, maybe hot
+;;    prev block 3, next block 5, flags: (NEW)
+;;    pred:       2 [91.0%]  (TRUE_VALUE,EXECUTABLE)
+;;    succ:       5 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 5, loop depth 1, count 0, freq 9100, maybe hot
+;;    prev block 4, next block 6, flags: (NEW)
+;;    pred:       4 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                6 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # PT = nonlocal escaped 
+  # _38 = PHI <_51(4), _6(6)>
+  # RANGE [0, 18446744073709551615]
+  # i_65 = PHI <0(4), i_26(6)>
+  # .MEM_11 = PHI <.MEM_53(4), .MEM_56(6)>
+  # DEBUG iD.34379 => i_65
+  # DEBUG D#7ptD.0 => D#9ptD.0
+  # DEBUG thisD.34382 => D#7ptD.0
+  # DEBUG thisD.34383 => D#7ptD.0
+  # DEBUG D#8ptD.0 => D#9ptD.0
+  # DEBUG __nD.34381 => i_65
+  # DEBUG thisD.34380 => D#8ptD.0
+  # RANGE [0, 18446744073709551615] NONZERO 18446744073709551612
+  _22 = i_65 * 4;
+  # PT = nonlocal escaped 
+  _23 = _38 + _22;
+  # VUSE <.MEM_11>
+  _24 = *_23;
+  # .MEM_55 = VDEF <.MEM_11>
+  # PT = nonlocal escaped 
+  # USE = nonlocal 
+  # CLB = nonlocal 
+  _25 = _ZNSolsEiD.21643 (os_2(D), _24);
+  # DEBUG __outD.34389 => _25
+  # DEBUG __sD.34390 => " "
+  # DEBUG __sD.34391 => " "
+  # .MEM_56 = VDEF <.MEM_55>
+  # USE = nonlocal 
+  # CLB = nonlocal 
+  _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_lD.7824 (_25, " ", 1);
+  # RANGE [0, 18446744073709551615]
+  i_26 = i_65 + 1;
+  # DEBUG iD.34379 => i_26
+  # DEBUG iD.34379 => i_26
+  # VUSE <.MEM_56>
+  # PT = nonlocal escaped 
+  _6 = MEM[(intD.9 * *)this_3(D) + 152B];
+  # DEBUG D#7ptD.0 => D#9ptD.0
+  # VUSE <.MEM_56>
+  # PT = nonlocal escaped 
+  _15 = MEM[(intD.9 * *)this_3(D) + 160B];
+  # DEBUG D#7ptD.0 => D#9ptD.0
+  # DEBUG thisD.34382 => D#7ptD.0
+  # DEBUG thisD.34383 => D#7ptD.0
+  _16 = (long intD.12) _15;
+  _17 = (long intD.12) _6;
+  _18 = _16 - _17;
+  # RANGE [-2305843009213693952, 2305843009213693951]
+  _19 = _18 /[ex] 4;
+  # RANGE ~[2305843009213693952, 16140901064495857663]
+  _20 = (size_typeD.31293) _19;
+  if (_20 > i_26)
+    goto <bb 6>;
+  else
+    goto <bb 3>;
+;;    succ:       6 [91.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                3 [9.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 6, loop depth 1, count 0, freq 8281, maybe hot
+;;    prev block 5, next block 7, flags: (NEW)
+;;    pred:       5 [91.0%]  (TRUE_VALUE,EXECUTABLE)
+  goto <bb 5>;
+;;    succ:       5 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 7, loop depth 0, count 0, freq 0, maybe hot
+;;    prev block 6, next block 8, flags: (NEW, REACHABLE)
+;;    pred:       3 [0.0%]  (TRUE_VALUE,EXECUTABLE)
+  # .MEM_69 = VDEF <.MEM_58>
+  # USE = nonlocal 
+  # CLB = nonlocal 
+  _ZSt16__throw_bad_castvD.2851 ();
+;;    succ:      
+
+;;   basic block 8, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 7, next block 9, flags: (NEW, REACHABLE)
+;;    pred:       3 [100.0%]  (FALSE_VALUE,EXECUTABLE)
+  # DEBUG thisD.34401 => _32
+  # DEBUG __cD.34400 => 10
+  # VUSE <.MEM_58>
+  _33 = MEM[(const struct ctypeD.7662 *)_32]._M_widen_okD.17874;
+  if (_33 != 0)
+    goto <bb 9>;
+  else
+    goto <bb 10>;
+;;    succ:       9 [61.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                10 [39.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 9, loop depth 0, count 0, freq 549, maybe hot
+;;    prev block 8, next block 10, flags: (NEW, REACHABLE)
+;;    pred:       8 [61.0%]  (TRUE_VALUE,EXECUTABLE)
+  # VUSE <.MEM_58>
+  _36 = MEM[(const struct ctypeD.7662 *)_32]._M_widenD.17875[10];
+  pretmp_45 = (intD.9) _36;
+  goto <bb 12>;
+;;    succ:       12 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 10, loop depth 0, count 0, freq 351, maybe hot
+;;    prev block 9, next block 11, flags: (NEW, REACHABLE)
+;;    pred:       8 [39.0%]  (FALSE_VALUE,EXECUTABLE)
+  # DEBUG thisD.34403 => _32
+  # DEBUG __cD.34404 => 10
+  # .MEM_61 = VDEF <.MEM_58>
+  # USE = nonlocal 
+  # CLB = nonlocal 
+  _ZNKSt5ctypeIcE13_M_widen_initEvD.17982 (_32);
+  # VUSE <.MEM_61>
+  # PT = nonlocal escaped 
+  _41 = MEM[(const struct ctypeD.7662 *)_32].D.18015._vptr.facetD.14633;
+  # VUSE <.MEM_61>
+  # PT = nonlocal escaped 
+  _42 = MEM[(intD.9 (*__vtbl_ptr_typeD.2760) () *)_41 + 48B];
+  # PT = anything 
+  PROF_46 = [obj_type_ref] OBJ_TYPE_REF(_42;(const struct ctypeD.7662)_32->6);
+  if (PROF_46 == _ZNKSt5ctypeIcE8do_widenEcD.17963)
+    goto <bb 12>;
+  else
+    goto <bb 11>;
+;;    succ:       12 [80.2%]  (TRUE_VALUE,EXECUTABLE)
+;;                11 [19.8%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 11, loop depth 0, count 0, freq 69, maybe hot
+;;    prev block 10, next block 12, flags: (NEW, REACHABLE)
+;;    pred:       10 [19.8%]  (FALSE_VALUE,EXECUTABLE)
+  # .MEM_62 = VDEF <.MEM_61>
+  # USE = nonlocal 
+  # CLB = nonlocal 
+  _48 = OBJ_TYPE_REF(_42;(const struct ctypeD.7662)_32->6) (_32, 10);
+  pretmp_14 = (intD.9) _48;
+;;    succ:       12 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 12, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 11, next block 1, flags: (NEW, REACHABLE)
+;;    pred:       9 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                10 [80.2%]  (TRUE_VALUE,EXECUTABLE)
+;;                11 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_52 = PHI <.MEM_58(9), .MEM_61(10), .MEM_62(11)>
+  # RANGE [-128, 127]
+  # prephitmp_4 = PHI <pretmp_45(9), 10(10), pretmp_14(11)>
+  # .MEM_66 = VDEF <.MEM_52>
+  # PT = nonlocal escaped 
+  # USE = nonlocal 
+  # CLB = nonlocal 
+  _13 = _ZNSo3putEcD.21670 (os_2(D), prephitmp_4);
+  # DEBUG __osD.34374 => _13
+  # .MEM_67 = VDEF <.MEM_66>
+  # USE = nonlocal 
+  # CLB = nonlocal 
+  _ZNSo5flushEvD.21681 (_13);
+  # VUSE <.MEM_67>
+  return;
+;;    succ:       EXIT [100.0%] 
+
+}
+
+
+
+Updating SSA:
+Registering new PHI nodes in block #5
+Updating SSA information for statement std::__ostream_insert<char, std::char_traits<char> > (_25, " ", 1);
+Updating SSA information for statement _6 = MEM[(int * *)this_3(D) + 152B];
+Updating SSA information for statement _15 = MEM[(int * *)this_3(D) + 160B];
+Registering new PHI nodes in block #6
+Registering new PHI nodes in block #13
+
+DFA Statistics for virtual void Stats::Display(std::ostream&) const
+
+---------------------------------------------------------
+                                Number of        Memory
+                                instances         used 
+---------------------------------------------------------
+USE operands                             67        536b
+DEF operands                             32        256b
+VUSE operands                            22        176b
+VDEF operands                             9         72b
+PHI nodes                                 7        728b
+PHI arguments                            15        720b
+---------------------------------------------------------
+Total memory used by DFA/SSA data                 2488b
+---------------------------------------------------------
+
+Average number of arguments per PHI node: 2.1 (max: 3)
+
+
+SSA replacement table
+N_i -> { O_1 ... O_j } means that N_i replaces O_1, ..., O_j
+
+.MEM_39 -> { .MEM_56 }
+Incremental SSA update started at block: 5
+Number of blocks in CFG: 14
+Number of blocks to update: 3 ( 21%)
+Affected blocks: 5 6 13
+
+
+Creating dr for *_23
+analyze_innermost: failed: evolution of base is not affine.
+	base_address: 
+	offset from base address: 
+	constant offset from base address: 
+	step: 
+	aligned to: 
+	base_object: *_23
+Creating dr for *_23
+analyze_innermost: failed: evolution of base is not affine.
+	base_address: 
+	offset from base address: 
+	constant offset from base address: 
+	step: 
+	aligned to: 
+	base_object: *_23
+Creating dr for *_23
+analyze_innermost: failed: evolution of base is not affine.
+	base_address: 
+	offset from base address: 
+	constant offset from base address: 
+	step: 
+	aligned to: 
+	base_object: *_23
+Creating dr for *_23
+analyze_innermost: failed: evolution of base is not affine.
+	base_address: 
+	offset from base address: 
+	constant offset from base address: 
+	step: 
+	aligned to: 
+	base_object: *_23
+Creating dr for *_23
+analyze_innermost: failed: evolution of base is not affine.
+	base_address: 
+	offset from base address: 
+	constant offset from base address: 
+	step: 
+	aligned to: 
+	base_object: *_23
+Creating dr for *_23
+analyze_innermost: failed: evolution of base is not affine.
+	base_address: 
+	offset from base address: 
+	constant offset from base address: 
+	step: 
+	aligned to: 
+	base_object: *_23
+Creating dr for *_23
+analyze_innermost: failed: evolution of base is not affine.
+	base_address: 
+	offset from base address: 
+	constant offset from base address: 
+	step: 
+	aligned to: 
+	base_object: *_23
+Creating dr for *_23
+analyze_innermost: failed: evolution of base is not affine.
+	base_address: 
+	offset from base address: 
+	constant offset from base address: 
+	step: 
+	aligned to: 
+	base_object: *_23
+Creating dr for MEM[(const struct ctype *)_32]._M_widen_ok
+analyze_innermost: success.
+	base_address: _32
+	offset from base address: 0
+	constant offset from base address: 56
+	step: 0
+	aligned to: 256
+	base_object: MEM[(const struct ctype *)_32]
+	Access function 0: 448
+Creating dr for MEM[(const struct ctype *)_32]._M_widen[10]
+analyze_innermost: success.
+	base_address: _32
+	offset from base address: 0
+	constant offset from base address: 67
+	step: 0
+	aligned to: 256
+	base_object: MEM[(const struct ctype *)_32]
+	Access function 0: 10
+	Access function 1: 456
+
+Before limit_scops SCoP statistics (BBS:1, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP statistics (BBS:1, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP statistics (BBS:1, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP statistics (BBS:1, LOOPS:0, CONDITIONS:0, STMTS:2)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+number of SCoPs: 0
+
+Global statistics (BBS:14, LOOPS:1, CONDITIONS:5, STMTS:86)
+
+Global profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+loop_0 (header = 0, latch = 1, niter = )
+{
+  bb_2 (preds = {bb_0 }, succs = {bb_4 bb_3 })
+  {
+    <bb 2>:
+    # DEBUG os => os_2(D)
+    # DEBUG s => this_3(D)
+    # DEBUG D#9 => &this_3(D)->_hist
+    # DEBUG v => D#9
+    # DEBUG __out => os_2(D)
+    # DEBUG __s => "[ "
+    # DEBUG __s => "[ "
+    # .MEM_53 = VDEF <.MEM_1(D)>
+    std::__ostream_insert<char, std::char_traits<char> > (os_2(D), "[ ", 2);
+    # DEBUG i => 0
+    # VUSE <.MEM_53>
+    _51 = MEM[(int * *)this_3(D) + 152B];
+    # DEBUG D#7 => D#9
+    # VUSE <.MEM_53>
+    _54 = MEM[(int * *)this_3(D) + 160B];
+    # DEBUG D#7 => D#9
+    # DEBUG this => D#7
+    # DEBUG this => D#7
+    _44 = (long int) _54;
+    _59 = (long int) _51;
+    _60 = _44 - _59;
+    _5 = _60 /[ex] 4;
+    if (_5 != 0)
+      goto <bb 4>;
+    else
+      goto <bb 3>;
+
+  }
+  bb_3 (preds = {bb_2 bb_13 }, succs = {bb_7 bb_8 })
+  {
+    <bb 3>:
+    # .MEM_64 = PHI <.MEM_53(2), .MEM_39(13)>
+    # DEBUG __out => os_2(D)
+    # DEBUG __s => "]"
+    # DEBUG __s => "]"
+    # .MEM_58 = VDEF <.MEM_64>
+    std::__ostream_insert<char, std::char_traits<char> > (os_2(D), "]", 1);
+    # DEBUG this => NULL
+    # DEBUG __pf => endl
+    # DEBUG __os => NULL
+    # VUSE <.MEM_58>
+    _7 = MEM[(struct basic_ostream *)os_2(D)]._vptr.basic_ostream;
+    # VUSE <.MEM_58>
+    _8 = MEM[(long int *)_7 + -24B];
+    _9 = (sizetype) _8;
+    _10 = os_2(D) + _9;
+    # DEBUG this => _10
+    # DEBUG __c => 10
+    # VUSE <.MEM_58>
+    _32 = MEM[(const struct basic_ios *)_10]._M_ctype;
+    # DEBUG __f => _32
+    if (_32 == 0B)
+      goto <bb 7>;
+    else
+      goto <bb 8>;
+
+  }
+  bb_4 (preds = {bb_2 }, succs = {bb_5 })
+  {
+    <bb 4>:
+
+  }
+  bb_13 (preds = {bb_5 }, succs = {bb_3 })
+  {
+    <bb 13>:
+    # .MEM_39 = PHI <.MEM_56(5)>
+    goto <bb 3>;
+
+  }
+  bb_7 (preds = {bb_3 }, succs = {})
+  {
+    <bb 7>:
+    # .MEM_69 = VDEF <.MEM_58>
+    std::__throw_bad_cast ();
+
+  }
+  bb_8 (preds = {bb_3 }, succs = {bb_9 bb_10 })
+  {
+    <bb 8>:
+    # DEBUG this => _32
+    # DEBUG __c => 10
+    # VUSE <.MEM_58>
+    _33 = MEM[(const struct ctype *)_32]._M_widen_ok;
+    if (_33 != 0)
+      goto <bb 9>;
+    else
+      goto <bb 10>;
+
+  }
+  bb_9 (preds = {bb_8 }, succs = {bb_12 })
+  {
+    <bb 9>:
+    # VUSE <.MEM_58>
+    _36 = MEM[(const struct ctype *)_32]._M_widen[10];
+    pretmp_45 = (int) _36;
+    goto <bb 12>;
+
+  }
+  bb_10 (preds = {bb_8 }, succs = {bb_12 bb_11 })
+  {
+    <bb 10>:
+    # DEBUG this => _32
+    # DEBUG __c => 10
+    # .MEM_61 = VDEF <.MEM_58>
+    std::ctype<char>::_M_widen_init (_32);
+    # VUSE <.MEM_61>
+    _41 = MEM[(const struct ctype *)_32].D.18015._vptr.facet;
+    # VUSE <.MEM_61>
+    _42 = MEM[(int (*__vtbl_ptr_type) () *)_41 + 48B];
+    PROF_46 = [obj_type_ref] OBJ_TYPE_REF(_42;(const struct ctype)_32->6);
+    if (PROF_46 == do_widen)
+      goto <bb 12>;
+    else
+      goto <bb 11>;
+
+  }
+  bb_11 (preds = {bb_10 }, succs = {bb_12 })
+  {
+    <bb 11>:
+    # .MEM_62 = VDEF <.MEM_61>
+    _48 = OBJ_TYPE_REF(_42;(const struct ctype)_32->6) (_32, 10);
+    pretmp_14 = (int) _48;
+
+  }
+  bb_12 (preds = {bb_9 bb_10 bb_11 }, succs = {bb_1 })
+  {
+    <bb 12>:
+    # .MEM_52 = PHI <.MEM_58(9), .MEM_61(10), .MEM_62(11)>
+    # prephitmp_4 = PHI <pretmp_45(9), 10(10), pretmp_14(11)>
+    # .MEM_66 = VDEF <.MEM_52>
+    _13 = std::basic_ostream<char>::put (os_2(D), prephitmp_4);
+    # DEBUG __os => _13
+    # .MEM_67 = VDEF <.MEM_66>
+    std::basic_ostream<char>::flush (_13);
+    # VUSE <.MEM_67>
+    return;
+
+  }
+  loop_1 (header = 5, latch = 6, niter = )
+  {
+    bb_5 (preds = {bb_4 bb_6 }, succs = {bb_6 bb_13 })
+    {
+      <bb 5>:
+      # _38 = PHI <_51(4), _6(6)>
+      # i_65 = PHI <0(4), i_26(6)>
+      # .MEM_11 = PHI <.MEM_53(4), .MEM_56(6)>
+      # DEBUG i => i_65
+      # DEBUG D#7 => D#9
+      # DEBUG this => D#7
+      # DEBUG this => D#7
+      # DEBUG D#8 => D#9
+      # DEBUG __n => i_65
+      # DEBUG this => D#8
+      _22 = i_65 * 4;
+      _23 = _38 + _22;
+      # VUSE <.MEM_11>
+      _24 = *_23;
+      # .MEM_55 = VDEF <.MEM_11>
+      _25 = std::basic_ostream<char>::operator<< (os_2(D), _24);
+      # DEBUG __out => _25
+      # DEBUG __s => " "
+      # DEBUG __s => " "
+      # .MEM_56 = VDEF <.MEM_55>
+      std::__ostream_insert<char, std::char_traits<char> > (_25, " ", 1);
+      i_26 = i_65 + 1;
+      # DEBUG i => i_26
+      # DEBUG i => i_26
+      # VUSE <.MEM_56>
+      _6 = MEM[(int * *)this_3(D) + 152B];
+      # DEBUG D#7 => D#9
+      # VUSE <.MEM_56>
+      _15 = MEM[(int * *)this_3(D) + 160B];
+      # DEBUG D#7 => D#9
+      # DEBUG this => D#7
+      # DEBUG this => D#7
+      _16 = (long int) _15;
+      _17 = (long int) _6;
+      _18 = _16 - _17;
+      _19 = _18 /[ex] 4;
+      _20 = (size_type) _19;
+      if (_20 > i_26)
+        goto <bb 6>;
+      else
+        goto <bb 13>;
+
+    }
+    bb_6 (preds = {bb_5 }, succs = {bb_5 })
+    {
+      <bb 6>:
+      goto <bb 5>;
+
+    }
+  }
+}
+
+Pass statistics:
+----------------
+
+virtual void Stats::Display(std::ostream&) const (const struct StatsD.30964 * const thisD.31863, struct ostreamD.7362 & osD.31861)
+{
+  char_typeD.17868 D.34408;
+  charD.10 __cD.34407;
+  char_typeD.17868 D.34405;
+  charD.10 __cD.34404;
+  char_typeD.20947 D.34402;
+  struct basic_ostreamD.7361 & D.34396;
+  struct basic_ostreamD.7361 & D.34392;
+  struct basic_ostreamD.7361 & D.34388;
+  size_tD.5382 iD.34379;
+  struct ostreamD.7362 & D.34384;
+  struct basic_ostreamD.7361 & D.34375;
+  intD.9 prephitmp_4;
+  long intD.12 _5;
+  intD.9 * const _6;
+  intD.9 (*__vtbl_ptr_typeD.2760) () * _7;
+  long intD.12 _8;
+  sizetype _9;
+  struct basic_iosD.7355 * _10;
+  struct basic_ostreamD.7361 & _13;
+  intD.9 pretmp_14;
+  intD.9 * const _15;
+  long intD.12 _16;
+  long intD.12 _17;
+  long intD.12 _18;
+  long intD.12 _19;
+  size_typeD.31293 _20;
+  long unsigned intD.14 _22;
+  const intD.9 & _23;
+  intD.9 _24;
+  struct basic_ostreamD.7361 & _25;
+  const struct __ctype_typeD.20952 * _32;
+  charD.10 _33;
+  char_typeD.17868 _36;
+  intD.9 * const _38;
+  intD.9 (*__vtbl_ptr_typeD.2760) () * _41;
+  intD.9 (*__vtbl_ptr_typeD.2760) () _42;
+  long intD.12 _44;
+  intD.9 pretmp_45;
+  voidD.45 * PROF_46;
+  char_typeD.17868 _48;
+  intD.9 * const _51;
+  intD.9 * const _54;
+  long intD.12 _59;
+  long intD.12 _60;
+
+;;   basic block 2, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 0, next block 3, flags: (NEW, REACHABLE)
+;;    pred:       ENTRY [100.0%]  (FALLTHRU,EXECUTABLE)
+  # DEBUG osD.34376 => os_2(D)
+  # DEBUG sD.34377 => this_3(D)
+  # DEBUG D#9ptD.0 => &this_3(D)->_histD.31719
+  # DEBUG vD.34378 => D#9ptD.0
+  # DEBUG __outD.34385 => os_2(D)
+  # DEBUG __sD.34386 => "[ "
+  # DEBUG __sD.34387 => "[ "
+  # .MEM_53 = VDEF <.MEM_1(D)>
+  # USE = nonlocal 
+  # CLB = nonlocal 
+  _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_lD.7824 (os_2(D), "[ ", 2);
+  # DEBUG iD.34379 => 0
+  # VUSE <.MEM_53>
+  # PT = nonlocal escaped 
+  _51 = MEM[(intD.9 * *)this_3(D) + 152B];
+  # DEBUG D#7ptD.0 => D#9ptD.0
+  # VUSE <.MEM_53>
+  # PT = nonlocal escaped 
+  _54 = MEM[(intD.9 * *)this_3(D) + 160B];
+  # DEBUG D#7ptD.0 => D#9ptD.0
+  # DEBUG thisD.34382 => D#7ptD.0
+  # DEBUG thisD.34383 => D#7ptD.0
+  _44 = (long intD.12) _54;
+  _59 = (long intD.12) _51;
+  _60 = _44 - _59;
+  # RANGE [-2305843009213693952, 2305843009213693951]
+  _5 = _60 /[ex] 4;
+  if (_5 != 0)
+    goto <bb 4>;
+  else
+    goto <bb 3>;
+;;    succ:       4 [91.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                3 [9.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 3, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 2, next block 4, flags: (NEW, REACHABLE)
+;;    pred:       2 [9.0%]  (FALSE_VALUE,EXECUTABLE)
+;;                13 [100.0%]  (FALLTHRU)
+  # .MEM_64 = PHI <.MEM_53(2), .MEM_39(13)>
+  # DEBUG __outD.34393 => os_2(D)
+  # DEBUG __sD.34394 => "]"
+  # DEBUG __sD.34395 => "]"
+  # .MEM_58 = VDEF <.MEM_64>
+  # USE = nonlocal 
+  # CLB = nonlocal 
+  _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_lD.7824 (os_2(D), "]", 1);
+  # DEBUG thisD.33130 => NULL
+  # DEBUG __pfD.33131 => _ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_D.21775
+  # DEBUG __osD.34373 => NULL
+  # VUSE <.MEM_58>
+  # PT = nonlocal escaped 
+  _7 = MEM[(struct basic_ostreamD.7361 *)os_2(D)]._vptr.basic_ostreamD.21735;
+  # VUSE <.MEM_58>
+  _8 = MEM[(long intD.12 *)_7 + -24B];
+  # RANGE [0, 18446744073709551615]
+  _9 = (sizetype) _8;
+  # PT = nonlocal 
+  _10 = os_2(D) + _9;
+  # DEBUG thisD.34397 => _10
+  # DEBUG __cD.34398 => 10
+  # VUSE <.MEM_58>
+  # PT = nonlocal escaped 
+  _32 = MEM[(const struct basic_iosD.7355 *)_10]._M_ctypeD.20959;
+  # DEBUG __fD.34399 => _32
+  if (_32 == 0B)
+    goto <bb 7>;
+  else
+    goto <bb 8>;
+;;    succ:       7 [0.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                8 [100.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 4, loop depth 0, count 0, freq 819, maybe hot
+;;    prev block 3, next block 5, flags: (NEW)
+;;    pred:       2 [91.0%]  (TRUE_VALUE,EXECUTABLE)
+;;    succ:       5 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 5, loop depth 1, count 0, freq 9100, maybe hot
+;;    prev block 4, next block 13, flags: (NEW)
+;;    pred:       4 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                6 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # PT = nonlocal escaped 
+  # _38 = PHI <_51(4), _6(6)>
+  # RANGE [0, 18446744073709551615]
+  # i_65 = PHI <0(4), i_26(6)>
+  # .MEM_11 = PHI <.MEM_53(4), .MEM_56(6)>
+  # DEBUG iD.34379 => i_65
+  # DEBUG D#7ptD.0 => D#9ptD.0
+  # DEBUG thisD.34382 => D#7ptD.0
+  # DEBUG thisD.34383 => D#7ptD.0
+  # DEBUG D#8ptD.0 => D#9ptD.0
+  # DEBUG __nD.34381 => i_65
+  # DEBUG thisD.34380 => D#8ptD.0
+  # RANGE [0, 18446744073709551615] NONZERO 18446744073709551612
+  _22 = i_65 * 4;
+  # PT = nonlocal escaped 
+  _23 = _38 + _22;
+  # VUSE <.MEM_11>
+  _24 = *_23;
+  # .MEM_55 = VDEF <.MEM_11>
+  # PT = nonlocal escaped 
+  # USE = nonlocal 
+  # CLB = nonlocal 
+  _25 = _ZNSolsEiD.21643 (os_2(D), _24);
+  # DEBUG __outD.34389 => _25
+  # DEBUG __sD.34390 => " "
+  # DEBUG __sD.34391 => " "
+  # .MEM_56 = VDEF <.MEM_55>
+  # USE = nonlocal 
+  # CLB = nonlocal 
+  _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_lD.7824 (_25, " ", 1);
+  # RANGE [0, 18446744073709551615]
+  i_26 = i_65 + 1;
+  # DEBUG iD.34379 => i_26
+  # DEBUG iD.34379 => i_26
+  # VUSE <.MEM_56>
+  # PT = nonlocal escaped 
+  _6 = MEM[(intD.9 * *)this_3(D) + 152B];
+  # DEBUG D#7ptD.0 => D#9ptD.0
+  # VUSE <.MEM_56>
+  # PT = nonlocal escaped 
+  _15 = MEM[(intD.9 * *)this_3(D) + 160B];
+  # DEBUG D#7ptD.0 => D#9ptD.0
+  # DEBUG thisD.34382 => D#7ptD.0
+  # DEBUG thisD.34383 => D#7ptD.0
+  _16 = (long intD.12) _15;
+  _17 = (long intD.12) _6;
+  _18 = _16 - _17;
+  # RANGE [-2305843009213693952, 2305843009213693951]
+  _19 = _18 /[ex] 4;
+  # RANGE ~[2305843009213693952, 16140901064495857663]
+  _20 = (size_typeD.31293) _19;
+  if (_20 > i_26)
+    goto <bb 6>;
+  else
+    goto <bb 13>;
+;;    succ:       6 [91.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                13 [9.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 13, loop depth 0, count 0, freq 819, maybe hot
+;;    prev block 5, next block 6, flags: (NEW)
+;;    pred:       5 [9.0%]  (FALSE_VALUE,EXECUTABLE)
+  # .MEM_39 = PHI <.MEM_56(5)>
+  goto <bb 3>;
+;;    succ:       3 [100.0%]  (FALLTHRU)
+
+;;   basic block 6, loop depth 1, count 0, freq 8281, maybe hot
+;;    prev block 13, next block 7, flags: (NEW)
+;;    pred:       5 [91.0%]  (TRUE_VALUE,EXECUTABLE)
+  goto <bb 5>;
+;;    succ:       5 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 7, loop depth 0, count 0, freq 0, maybe hot
+;;    prev block 6, next block 8, flags: (NEW, REACHABLE)
+;;    pred:       3 [0.0%]  (TRUE_VALUE,EXECUTABLE)
+  # .MEM_69 = VDEF <.MEM_58>
+  # USE = nonlocal 
+  # CLB = nonlocal 
+  _ZSt16__throw_bad_castvD.2851 ();
+;;    succ:      
+
+;;   basic block 8, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 7, next block 9, flags: (NEW, REACHABLE)
+;;    pred:       3 [100.0%]  (FALSE_VALUE,EXECUTABLE)
+  # DEBUG thisD.34401 => _32
+  # DEBUG __cD.34400 => 10
+  # VUSE <.MEM_58>
+  _33 = MEM[(const struct ctypeD.7662 *)_32]._M_widen_okD.17874;
+  if (_33 != 0)
+    goto <bb 9>;
+  else
+    goto <bb 10>;
+;;    succ:       9 [61.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                10 [39.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 9, loop depth 0, count 0, freq 549, maybe hot
+;;    prev block 8, next block 10, flags: (NEW, REACHABLE)
+;;    pred:       8 [61.0%]  (TRUE_VALUE,EXECUTABLE)
+  # VUSE <.MEM_58>
+  _36 = MEM[(const struct ctypeD.7662 *)_32]._M_widenD.17875[10];
+  pretmp_45 = (intD.9) _36;
+  goto <bb 12>;
+;;    succ:       12 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 10, loop depth 0, count 0, freq 351, maybe hot
+;;    prev block 9, next block 11, flags: (NEW, REACHABLE)
+;;    pred:       8 [39.0%]  (FALSE_VALUE,EXECUTABLE)
+  # DEBUG thisD.34403 => _32
+  # DEBUG __cD.34404 => 10
+  # .MEM_61 = VDEF <.MEM_58>
+  # USE = nonlocal 
+  # CLB = nonlocal 
+  _ZNKSt5ctypeIcE13_M_widen_initEvD.17982 (_32);
+  # VUSE <.MEM_61>
+  # PT = nonlocal escaped 
+  _41 = MEM[(const struct ctypeD.7662 *)_32].D.18015._vptr.facetD.14633;
+  # VUSE <.MEM_61>
+  # PT = nonlocal escaped 
+  _42 = MEM[(intD.9 (*__vtbl_ptr_typeD.2760) () *)_41 + 48B];
+  # PT = anything 
+  PROF_46 = [obj_type_ref] OBJ_TYPE_REF(_42;(const struct ctypeD.7662)_32->6);
+  if (PROF_46 == _ZNKSt5ctypeIcE8do_widenEcD.17963)
+    goto <bb 12>;
+  else
+    goto <bb 11>;
+;;    succ:       12 [80.2%]  (TRUE_VALUE,EXECUTABLE)
+;;                11 [19.8%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 11, loop depth 0, count 0, freq 69, maybe hot
+;;    prev block 10, next block 12, flags: (NEW, REACHABLE)
+;;    pred:       10 [19.8%]  (FALSE_VALUE,EXECUTABLE)
+  # .MEM_62 = VDEF <.MEM_61>
+  # USE = nonlocal 
+  # CLB = nonlocal 
+  _48 = OBJ_TYPE_REF(_42;(const struct ctypeD.7662)_32->6) (_32, 10);
+  pretmp_14 = (intD.9) _48;
+;;    succ:       12 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 12, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 11, next block 1, flags: (NEW, REACHABLE)
+;;    pred:       9 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                10 [80.2%]  (TRUE_VALUE,EXECUTABLE)
+;;                11 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_52 = PHI <.MEM_58(9), .MEM_61(10), .MEM_62(11)>
+  # RANGE [-128, 127]
+  # prephitmp_4 = PHI <pretmp_45(9), 10(10), pretmp_14(11)>
+  # .MEM_66 = VDEF <.MEM_52>
+  # PT = nonlocal escaped 
+  # USE = nonlocal 
+  # CLB = nonlocal 
+  _13 = _ZNSo3putEcD.21670 (os_2(D), prephitmp_4);
+  # DEBUG __osD.34374 => _13
+  # .MEM_67 = VDEF <.MEM_66>
+  # USE = nonlocal 
+  # CLB = nonlocal 
+  _ZNSo5flushEvD.21681 (_13);
+  # VUSE <.MEM_67>
+  return;
+;;    succ:       EXIT [100.0%] 
+
+}
+
+
+
+;; Function Stats::Stats(Module*, const string&, double, int) (_ZN5StatsC2EP6ModuleRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEdi, funcdef_no=1665, decl_uid=31775, cgraph_uid=602, symbol_order=603)
+
+
+Pass statistics:
+----------------
+
+Stats::Stats(Module*, const string&, double, int) (struct StatsD.30964 * const thisD.31776, struct ModuleD.30151 * parentD.31777, const struct stringD.2845 & nameD.31778, doubleD.39 bin_sizeD.31779, intD.9 num_binsD.31780)
+Eh tree:
+   1 cleanup land:{1,<L1>}
+     2 cleanup land:{3,<L2>},{2,<L3>}
+{
+  intD.9 * D.34625;
+  intD.9 * __firstD.34600;
+  size_typeD.31293 __nD.34583;
+  intD.9 * __tmpD.34544;
+  intD.9 * __tmpD.34541;
+  intD.9 * __tmpD.34538;
+  struct vectorD.30974 __tmpD.34533;
+  long unsigned intD.14 __nD.34456;
+  intD.9 * __firstD.34457;
+  intD.9 * __firstD.34452;
+  intD.9 * __firstD.34439;
+  size_tD.2818 __nD.34435;
+  intD.9 __valD.34200;
+  struct ModuleD.30151 * _2;
+  intD.9 * _12;
+  long unsigned intD.14 _28;
+  sizetype _29;
+  sizetype _30;
+  intD.9 * _60;
+  intD.9 * _67;
+  long unsigned intD.14 _73;
+  struct ModuleD.30151 * * _76;
+  charD.10 * const _77;
+  const charD.10 * _78;
+  charD.10 * const _79;
+  const charD.10 * _80;
+  long unsigned intD.14 _95;
+
+;;   basic block 2, loop depth 0, count 0, freq 2535, maybe hot
+;;    prev block 0, next block 3, flags: (NEW, REACHABLE)
+;;    pred:       ENTRY [100.0%]  (FALLTHRU,EXECUTABLE)
+  # PT = nonlocal 
+  _2 = &this_1(D)->D.31781;
+  # .MEM_6 = VDEF <.MEM_3(D)>
+  # USE = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  # CLB = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  _ZN6ModuleC2EPS_RKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEED.30933 (_2, parent_4(D), name_5(D));
+  # .MEM_7 = VDEF <.MEM_6>
+  this_1(D)->D.31781._vptr.ModuleD.30946 = &MEM[(voidD.45 *)&_ZTV5StatsD.31791 + 16B];
+  # .MEM_9 = VDEF <.MEM_7>
+  this_1(D)->_num_binsD.30971 = num_bins_8(D);
+  # .MEM_11 = VDEF <.MEM_9>
+  this_1(D)->_bin_sizeD.30972 = bin_size_10(D);
+  # DEBUG D#139ptD.0 => &this_1(D)->_histD.31719
+  # DEBUG thisD.34203 => D#139ptD.0
+  # DEBUG D#73ptD.0 => &D#139ptD.0->D.31717
+  # DEBUG thisD.34204 => D#73ptD.0
+  # DEBUG D#72ptD.0 => &D#73ptD.0->_M_implD.31208
+  # DEBUG thisD.34205 => D#72ptD.0
+  # DEBUG thisD.33463 => D#72ptD.0
+  # DEBUG thisD.33461 => D#72ptD.0
+  # .MEM_13 = VDEF <.MEM_11>
+  MEM[(struct _Vector_implD.31185 *)this_1(D) + 152B]._M_startD.31210 = 0B;
+  # .MEM_18 = VDEF <.MEM_13>
+  MEM[(struct _Vector_implD.31185 *)this_1(D) + 152B]._M_finishD.31211 = 0B;
+  # .MEM_19 = VDEF <.MEM_18>
+  MEM[(struct _Vector_implD.31185 *)this_1(D) + 152B]._M_end_of_storageD.31212 = 0B;
+  # DEBUG thisD.34195 => this_1(D)
+  # .MEM_20 = VDEF <.MEM_19>
+  this_1(D)->_num_samplesD.30966 = 0;
+  # .MEM_21 = VDEF <.MEM_20>
+  this_1(D)->_sample_sumD.30967 = 0.0;
+  # .MEM_22 = VDEF <.MEM_21>
+  this_1(D)->_sample_squared_sumD.30968 = 0.0;
+  # DEBUG D#143ptD.0 => &this_1(D)->_histD.31719
+  # DEBUG thisD.34198 => D#143ptD.0
+  # DEBUG __firstD.34197 => num_bins_8(D)
+  # DEBUG __lastD.34196 => 0
+  # DEBUG thisD.34202 => D#143ptD.0
+  # DEBUG __nD.34201 => num_bins_8(D)
+  # DEBUG __valD.34200 => 0
+  # DEBUG __valD.34200 => 0
+  # RANGE ~[2147483648, 18446744071562067967]
+  __n_17 = (size_tD.2818) num_bins_8(D);
+  # DEBUG thisD.34434 => D#143ptD.0
+  # DEBUG __nD.34435 => __n_17
+  # DEBUG __valD.34436 => &__valD.34200
+  # DEBUG D#32ptD.0 => D#143ptD.0
+  # DEBUG D#32ptD.0 => D#143ptD.0
+  # DEBUG thisD.34476 => D#32ptD.0
+  # DEBUG thisD.34477 => D#32ptD.0
+  if (__n_17 != 0)
+    goto <bb 3>;
+  else
+    goto <bb 13>;
+;;    succ:       3 [29.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                13 [71.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 3, loop depth 0, count 0, freq 735, maybe hot
+;;    prev block 2, next block 4, flags: (NEW, REACHABLE)
+;;    pred:       2 [29.0%]  (TRUE_VALUE,EXECUTABLE)
+  # DEBUG thisD.34480 => D#143ptD.0
+  # DEBUG __nD.34481 => __n_17
+  # DEBUG __valD.34482 => &__valD.34200
+  # DEBUG D#134ptD.0 => &D#143ptD.0->D.31717
+  # DEBUG thisD.34560 => D#134ptD.0
+  # DEBUG D#142ptD.0 => &MEM[(struct _Vector_baseD.30975 *)this_1(D) + 152B]._M_implD.31208
+  # DEBUG thisD.34582 => &__tmpD.34533
+  # DEBUG __nD.34583 => __n_17
+  # DEBUG __valueD.34584 => &__valD.34200
+  # DEBUG __aD.34585 => D#142ptD.0
+  # DEBUG D#133ptD.0 => &__tmpD.34533.D.31717
+  # DEBUG thisD.34588 => D#133ptD.0
+  # DEBUG __nD.34587 => __n_17
+  # DEBUG __aD.34586 => D#142ptD.0
+  # DEBUG D#132ptD.0 => &D#133ptD.0->_M_implD.31208
+  # DEBUG thisD.34590 => D#132ptD.0
+  # DEBUG __aD.34589 => D#142ptD.0
+  # DEBUG thisD.33857 => D#132ptD.0
+  # DEBUG __aD.33858 => D#142ptD.0
+  # DEBUG thisD.33854 => D#132ptD.0
+  # DEBUG D.33855 => D#142ptD.0
+  # DEBUG thisD.34592 => D#133ptD.0
+  # DEBUG __nD.34591 => __n_17
+  # DEBUG D#130ptD.0 => D#133ptD.0
+  # DEBUG __nD.34617 => __n_17
+  # DEBUG thisD.34618 => D#130ptD.0
+  # DEBUG D#129ptD.0 => D#130ptD.0
+  # DEBUG D#128ptD.0 => &D#129ptD.0->_M_implD.31208
+  # DEBUG D#127ptD.0 => D#128ptD.0
+  # DEBUG __nD.34621 => __n_17
+  # DEBUG __aD.34620 => D#127ptD.0
+  # DEBUG D#126ptD.0 => D#127ptD.0
+  # DEBUG D#124ptD.0 => D#126ptD.0
+  # DEBUG D#125ptD.0 => 0B
+  # DEBUG __nD.34624 => __n_17
+  # DEBUG thisD.34622 => D#124ptD.0
+  # DEBUG D.34623 => D#125ptD.0
+  # DEBUG D#123ptD.0 => D#124ptD.0
+  # DEBUG D#122ptD.0 => D#123ptD.0
+  # DEBUG thisD.33866 => D#122ptD.0
+  if (__n_17 > 4611686018427387903)
+    goto <bb 4>;
+  else
+    goto <bb 5>;
+;;    succ:       4 [0.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                5 [100.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 4, loop depth 0, count 0, freq 0
+;;   Invalid sum of outgoing probabilities 0.0%
+;;    prev block 3, next block 5, flags: (NEW, REACHABLE)
+;;    pred:       3 [0.0%]  (TRUE_VALUE,EXECUTABLE)
+  [LP 3] # .MEM_100 = VDEF <.MEM_22>
+  # USE = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  # CLB = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  _ZSt17__throw_bad_allocvD.2850 ();
+;;    succ:       14 (EH,EXECUTABLE)
+
+;;   basic block 5, loop depth 0, count 0, freq 661, maybe hot
+;;    prev block 4, next block 6, flags: (NEW, REACHABLE)
+;;    pred:       3 [100.0%]  (FALSE_VALUE,EXECUTABLE)
+  # RANGE [4, 18446744073709551612] NONZERO 18446744073709551612
+  _73 = __n_17 * 4;
+  [LP 2] # .MEM_99 = VDEF <.MEM_22>
+  # PT = { D.34676 } (escaped heap)
+  # USE = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  # CLB = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  __first_74 = _ZnwmD.2764 (_73);
+  goto <bb 7>;
+;;    succ:       7 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                6 (EH,EXECUTABLE)
+
+;;   basic block 6, loop depth 0, count 0, freq 0
+;;    prev block 5, next block 7, flags: (NEW)
+;;    pred:       5 (EH,EXECUTABLE)
+<L3>: [LP 2]
+  goto <bb 15> (<L0>);
+;;    succ:       15 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 7, loop depth 0, count 0, freq 735, maybe hot
+;;   Invalid sum of outgoing probabilities 9.9%
+;;    prev block 6, next block 10, flags: (NEW, REACHABLE)
+;;    pred:       5 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # PT = { D.34676 } (escaped heap)
+  _67 = __first_74 + _73;
+  # DEBUG D#118ptD.0 => &__tmpD.34533
+  # DEBUG D#118ptD.0 => &__tmpD.34533
+  # DEBUG D#119ptD.0 => &__valD.34200
+  # DEBUG __nD.34596 => __n_17
+  # DEBUG D#116ptD.0 => D#118ptD.0
+  # DEBUG thisD.34593 => D#116ptD.0
+  # DEBUG thisD.34594 => D#118ptD.0
+  # DEBUG D#117ptD.0 => D#119ptD.0
+  # DEBUG __valueD.34595 => D#117ptD.0
+  # DEBUG D#115ptD.0 => &D#116ptD.0->D.31717
+  # DEBUG thisD.33777 => D#115ptD.0
+  # DEBUG D#113ptD.0 => D#117ptD.0
+  # DEBUG __firstD.34600 => NULL
+  # DEBUG __nD.34599 => __n_17
+  # DEBUG D#112ptD.0 => D#113ptD.0
+  # DEBUG __xD.34597 => D#112ptD.0
+  # DEBUG D.34598 => D#114ptD.0
+  # DEBUG D#111ptD.0 => D#112ptD.0
+  # DEBUG __firstD.34603 => NULL
+  # DEBUG __nD.34602 => __n_17
+  # DEBUG D#110ptD.0 => D#111ptD.0
+  # DEBUG __xD.34601 => D#110ptD.0
+  # DEBUG __assignableD.34605 => 1
+  # DEBUG D#109ptD.0 => D#110ptD.0
+  # DEBUG __firstD.34608 => NULL
+  # DEBUG __nD.34607 => __n_17
+  # DEBUG D#108ptD.0 => D#109ptD.0
+  # DEBUG __xD.34606 => D#108ptD.0
+  # DEBUG D#107ptD.0 => D#108ptD.0
+  # DEBUG __firstD.34611 => NULL
+  # DEBUG __nD.34610 => __n_17
+  # DEBUG D#106ptD.0 => D#107ptD.0
+  # DEBUG __valueD.34609 => D#106ptD.0
+  # DEBUG __itD.33619 => NULL
+  # DEBUG __itD.33609 => NULL
+  # DEBUG D#105ptD.0 => D#106ptD.0
+  # DEBUG __firstD.34614 => NULL
+  # DEBUG __nD.34613 => __n_17
+  # DEBUG __valueD.34612 => D#105ptD.0
+  # DEBUG __tmpD.34615 => 0
+  # DEBUG __niterD.34616 => __n_17
+  # DEBUG __niterD.34616 => __n_17
+  # DEBUG __firstD.34614 => __first_74
+  _29 = (sizetype) num_bins_8(D);
+  _30 = _29 * 4;
+  # .MEM_65 = VDEF <.MEM_99>
+  # USE = anything 
+  # CLB = anything 
+  memsetD.1001 (__first_74, 0, _30);
+;;    succ:       10 [9.9%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 10, loop depth 0, count 0, freq 735, maybe hot
+;;   Invalid sum of incoming frequencies 73, should be 735
+;;    prev block 7, next block 11, flags: (NEW, REACHABLE)
+;;    pred:       7 [9.9%]  (FALLTHRU,EXECUTABLE)
+  _28 = (long unsigned intD.14) num_bins_8(D);
+  _95 = _28 * 4;
+  # PT = { D.34676 } (escaped heap)
+  __first_66 = __first_74 + _95;
+  # DEBUG D#136ptD.0 => &D#143ptD.0->D.31717._M_implD.31208
+  # DEBUG thisD.34535 => &__tmpD.34533.D.31717._M_implD.31208
+  # DEBUG __xD.34534 => D#136ptD.0
+  # DEBUG D#101ptD.0 => &D#136ptD.0->_M_startD.31210
+  # DEBUG D#100ptD.0 => &MEM[(struct _Vector_implD.31185 *)&__tmpD.34533]._M_startD.31210
+  # DEBUG __aD.34537 => D#100ptD.0
+  # DEBUG __bD.34536 => D#101ptD.0
+  # DEBUG __tmpD.34538 => __first_74
+  # VUSE <.MEM_65>
+  # PT = nonlocal escaped 
+  _60 = MEM[(intD.9 * &)this_1(D) + 152];
+  # .MEM_126 = VDEF <.MEM_65>
+  MEM[(intD.9 * &)this_1(D) + 152] = __first_74;
+  # DEBUG D#99ptD.0 => &D#136ptD.0->_M_finishD.31211
+  # DEBUG D#98ptD.0 => &MEM[(struct _Vector_implD.31185 *)&__tmpD.34533]._M_finishD.31211
+  # DEBUG __aD.34540 => D#98ptD.0
+  # DEBUG __bD.34539 => D#99ptD.0
+  # DEBUG __tmpD.34541 => __first_66
+  # .MEM_128 = VDEF <.MEM_126>
+  MEM[(intD.9 * &)this_1(D) + 160] = __first_66;
+  # DEBUG D#97ptD.0 => &D#136ptD.0->_M_end_of_storageD.31212
+  # DEBUG D#96ptD.0 => &MEM[(struct _Vector_implD.31185 *)&__tmpD.34533]._M_end_of_storageD.31212
+  # DEBUG __aD.34543 => D#96ptD.0
+  # DEBUG __bD.34542 => D#97ptD.0
+  # DEBUG __tmpD.34544 => _67
+  # .MEM_130 = VDEF <.MEM_128>
+  MEM[(intD.9 * &)this_1(D) + 168] = _67;
+  # DEBUG thisD.34545 => &__tmpD.34533
+  # DEBUG D#91ptD.0 => &__tmpD.34533.D.31717
+  # DEBUG thisD.33547 => D#91ptD.0
+  # DEBUG D#94ptD.0 => __tmpD.34533.D.31717._M_implD.31208._M_finishD.31211
+  # DEBUG D#93ptD.0 => __tmpD.34533.D.31717._M_implD.31208._M_startD.31210
+  # DEBUG D#29ptD.0 => D#93ptD.0
+  # DEBUG D#30ptD.0 => D#94ptD.0
+  # DEBUG __firstD.33546 => D#29ptD.0
+  # DEBUG __lastD.33545 => D#30ptD.0
+  # DEBUG D.33544 => D#31ptD.0
+  # DEBUG D#28ptD.0 => D#30ptD.0
+  # DEBUG D#27ptD.0 => D#29ptD.0
+  # DEBUG D#25ptD.0 => D#27ptD.0
+  # DEBUG D#26ptD.0 => D#28ptD.0
+  # DEBUG __firstD.33216 => D#25ptD.0
+  # DEBUG __lastD.33215 => D#26ptD.0
+  # DEBUG D#24ptD.0 => D#26ptD.0
+  # DEBUG D#23ptD.0 => D#25ptD.0
+  # DEBUG D#21ptD.0 => D#23ptD.0
+  # DEBUG D#22ptD.0 => D#24ptD.0
+  # DEBUG D.33205 => D#21ptD.0
+  # DEBUG D.33204 => D#22ptD.0
+  # DEBUG D#92ptD.0 => &__tmpD.34533.D.31717
+  # DEBUG thisD.34546 => D#92ptD.0
+  # DEBUG D#90ptD.0 => D#92ptD.0->_M_implD.31208._M_end_of_storageD.31212
+  # DEBUG D#89ptD.0 => (long intD.12) D#90ptD.0
+  # DEBUG D#88ptD.0 => (long intD.12) _60
+  # DEBUG D#87ptD.0 => D#89ptD.0 - D#88ptD.0
+  # DEBUG D#86ptD.0 => D#87ptD.0 /[ex] 4
+  # DEBUG D#83ptD.0 => D#92ptD.0
+  # DEBUG D#84ptD.0 => (long unsigned intD.14) D#86ptD.0
+  # DEBUG __pD.34549 => _60
+  # DEBUG thisD.34547 => D#83ptD.0
+  # DEBUG __nD.34548 => D#84ptD.0
+  # DEBUG D#82ptD.0 => D#84ptD.0
+  # DEBUG D#81ptD.0 => D#83ptD.0
+  if (_60 != 0B)
+    goto <bb 11>;
+  else
+    goto <bb 12>;
+;;    succ:       11 [78.3%]  (TRUE_VALUE,EXECUTABLE)
+;;                12 [21.6%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 11, loop depth 0, count 0, freq 576, maybe hot
+;;    prev block 10, next block 12, flags: (NEW, REACHABLE)
+;;    pred:       10 [78.3%]  (TRUE_VALUE,EXECUTABLE)
+  # DEBUG D#80ptD.0 => &D#81ptD.0->_M_implD.31208
+  # DEBUG D#78ptD.0 => D#80ptD.0
+  # DEBUG D#79ptD.0 => D#82ptD.0
+  # DEBUG __pD.34553 => _60
+  # DEBUG __aD.34551 => D#78ptD.0
+  # DEBUG __nD.34552 => D#79ptD.0
+  # DEBUG D#77ptD.0 => D#79ptD.0
+  # DEBUG D#76ptD.0 => D#78ptD.0
+  # DEBUG D#74ptD.0 => D#76ptD.0
+  # DEBUG D#75ptD.0 => D#77ptD.0
+  # DEBUG __pD.34556 => _60
+  # DEBUG thisD.34554 => D#74ptD.0
+  # DEBUG D.34555 => D#75ptD.0
+  # .MEM_131 = VDEF <.MEM_130>
+  # USE = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  # CLB = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  _ZdlPvD.2766 (_60);
+;;    succ:       12 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 12, loop depth 0, count 0, freq 735, maybe hot
+;;    prev block 11, next block 13, flags: (NEW, REACHABLE)
+;;    pred:       10 [21.6%]  (FALSE_VALUE,EXECUTABLE)
+;;                11 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_82 = PHI <.MEM_130(10), .MEM_131(11)>
+  # DEBUG D#85ptD.0 => &D#92ptD.0->_M_implD.31208
+  # DEBUG thisD.34557 => D#85ptD.0
+  # DEBUG thisD.34558 => D#85ptD.0
+  # DEBUG thisD.34559 => D#85ptD.0
+  # .MEM_137 = VDEF <.MEM_82>
+  __tmpD.34533 ={v} {CLOBBER};
+;;    succ:       13 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 13, loop depth 0, count 0, freq 2535, maybe hot
+;;    prev block 12, next block 14, flags: (NEW, REACHABLE)
+;;    pred:       2 [71.0%]  (FALSE_VALUE,EXECUTABLE)
+;;                12 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_86 = PHI <.MEM_22(2), .MEM_137(12)>
+  # .MEM_25 = VDEF <.MEM_86>
+  this_1(D)->_minD.30969 =  Nan;
+  # .MEM_26 = VDEF <.MEM_25>
+  this_1(D)->_maxD.30970 =  Nan;
+  # VUSE <.MEM_26>
+  return;
+;;    succ:       EXIT [100.0%] 
+
+;;   basic block 14, loop depth 0, count 0, freq 0
+;;    prev block 13, next block 15, flags: (NEW)
+;;    pred:       4 (EH,EXECUTABLE)
+<L2>: [LP 3]
+;;    succ:       15 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 15, loop depth 0, count 0, freq 0
+;;    prev block 14, next block 16, flags: (NEW, REACHABLE)
+;;    pred:       6 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                14 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_87 = PHI <.MEM_99(6), .MEM_100(14)>
+<L0>:
+  # DEBUG D#138ptD.0 => &this_1(D)->_histD.31719
+  # DEBUG thisD.34206 => D#138ptD.0
+  # DEBUG D#91ptD.0 => &D#138ptD.0->D.31717
+  # DEBUG thisD.33547 => D#91ptD.0
+  # DEBUG D#94ptD.0 => D#138ptD.0->D.31717._M_implD.31208._M_finishD.31211
+  # DEBUG D#93ptD.0 => D#138ptD.0->D.31717._M_implD.31208._M_startD.31210
+  # DEBUG D#29ptD.0 => D#93ptD.0
+  # DEBUG D#30ptD.0 => D#94ptD.0
+  # DEBUG __firstD.33546 => D#29ptD.0
+  # DEBUG __lastD.33545 => D#30ptD.0
+  # DEBUG D.33544 => D#31ptD.0
+  # DEBUG D#28ptD.0 => D#30ptD.0
+  # DEBUG D#27ptD.0 => D#29ptD.0
+  # DEBUG D#25ptD.0 => D#27ptD.0
+  # DEBUG D#26ptD.0 => D#28ptD.0
+  # DEBUG __firstD.33216 => D#25ptD.0
+  # DEBUG __lastD.33215 => D#26ptD.0
+  # DEBUG D#24ptD.0 => D#26ptD.0
+  # DEBUG D#23ptD.0 => D#25ptD.0
+  # DEBUG D#21ptD.0 => D#23ptD.0
+  # DEBUG D#22ptD.0 => D#24ptD.0
+  # DEBUG D.33205 => D#21ptD.0
+  # DEBUG D.33204 => D#22ptD.0
+  # DEBUG D#92ptD.0 => &D#138ptD.0->D.31717
+  # DEBUG thisD.34207 => D#92ptD.0
+  # DEBUG D#90ptD.0 => D#92ptD.0->_M_implD.31208._M_end_of_storageD.31212
+  # DEBUG D#89ptD.0 => (long intD.12) D#90ptD.0
+  # VUSE <.MEM_87>
+  # PT = nonlocal escaped 
+  _12 = MEM[(struct _Vector_baseD.30975 *)this_1(D) + 152B]._M_implD.31208._M_startD.31210;
+  # DEBUG D#88ptD.0 => (long intD.12) _12
+  # DEBUG D#87ptD.0 => D#89ptD.0 - D#88ptD.0
+  # DEBUG D#86ptD.0 => D#87ptD.0 /[ex] 4
+  # DEBUG D#83ptD.0 => D#92ptD.0
+  # DEBUG D#84ptD.0 => (long unsigned intD.14) D#86ptD.0
+  # DEBUG __pD.34210 => _12
+  # DEBUG thisD.34208 => D#83ptD.0
+  # DEBUG __nD.34209 => D#84ptD.0
+  # DEBUG D#82ptD.0 => D#84ptD.0
+  # DEBUG D#81ptD.0 => D#83ptD.0
+  if (_12 != 0B)
+    goto <bb 16>;
+  else
+    goto <bb 17>;
+;;    succ:       16 [69.8%]  (TRUE_VALUE,EXECUTABLE)
+;;                17 [30.2%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 16, loop depth 0, count 0, freq 0
+;;    prev block 15, next block 17, flags: (NEW, REACHABLE)
+;;    pred:       15 [69.8%]  (TRUE_VALUE,EXECUTABLE)
+  # DEBUG D#80ptD.0 => &D#81ptD.0->_M_implD.31208
+  # DEBUG D#78ptD.0 => D#80ptD.0
+  # DEBUG D#79ptD.0 => D#82ptD.0
+  # DEBUG __pD.34214 => _12
+  # DEBUG __aD.34212 => D#78ptD.0
+  # DEBUG __nD.34213 => D#79ptD.0
+  # DEBUG D#77ptD.0 => D#79ptD.0
+  # DEBUG D#76ptD.0 => D#78ptD.0
+  # DEBUG D#74ptD.0 => D#76ptD.0
+  # DEBUG D#75ptD.0 => D#77ptD.0
+  # DEBUG __pD.34217 => _12
+  # DEBUG thisD.34215 => D#74ptD.0
+  # DEBUG D.34216 => D#75ptD.0
+  # .MEM_27 = VDEF <.MEM_87>
+  # USE = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  # CLB = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  _ZdlPvD.2766 (_12);
+;;    succ:       17 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 17, loop depth 0, count 0, freq 0
+;;   Invalid sum of outgoing probabilities 0.0%
+;;    prev block 16, next block 18, flags: (NEW, REACHABLE)
+;;    pred:       15 [30.2%]  (FALSE_VALUE,EXECUTABLE)
+;;                16 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_14 = PHI <.MEM_87(15), .MEM_27(16)>
+  # DEBUG D#85ptD.0 => &D#92ptD.0->_M_implD.31208
+  # DEBUG thisD.34218 => D#85ptD.0
+  # DEBUG thisD.34219 => D#85ptD.0
+  # DEBUG thisD.34220 => D#85ptD.0
+  # .MEM_32 = VDEF <.MEM_14>
+  MEM[(struct  &)this_1(D) + 152] ={v} {CLOBBER};
+  [LP 1] resx 2
+;;    succ:       18 (EH,EXECUTABLE)
+
+;;   basic block 18, loop depth 0, count 0, freq 0
+;;    prev block 17, next block 19, flags: (NEW, REACHABLE)
+;;    pred:       17 (EH,EXECUTABLE)
+<L1>: [LP 1]
+  # DEBUG thisD.34626 => _2
+  # .MEM_101 = VDEF <.MEM_32>
+  MEM[(struct ModuleD.30151 *)this_1(D)]._vptr.ModuleD.30946 = &MEM[(voidD.45 *)&_ZTV6ModuleD.30951 + 16B];
+  # DEBUG D#71ptD.0 => &_2->_childrenD.30901
+  # DEBUG thisD.34627 => D#71ptD.0
+  # DEBUG D#65ptD.0 => &D#71ptD.0->D.30899
+  # DEBUG thisD.33410 => D#65ptD.0
+  # DEBUG D#68ptD.0 => D#71ptD.0->D.30899._M_implD.30390._M_finishD.30393
+  # DEBUG D#67ptD.0 => D#71ptD.0->D.30899._M_implD.30390._M_startD.30392
+  # DEBUG D#18ptD.0 => D#67ptD.0
+  # DEBUG D#19ptD.0 => D#68ptD.0
+  # DEBUG __firstD.33409 => D#18ptD.0
+  # DEBUG __lastD.33408 => D#19ptD.0
+  # DEBUG D.33407 => D#20ptD.0
+  # DEBUG D#17ptD.0 => D#19ptD.0
+  # DEBUG D#16ptD.0 => D#18ptD.0
+  # DEBUG D#14ptD.0 => D#16ptD.0
+  # DEBUG D#15ptD.0 => D#17ptD.0
+  # DEBUG __firstD.33178 => D#14ptD.0
+  # DEBUG __lastD.33177 => D#15ptD.0
+  # DEBUG D#13ptD.0 => D#15ptD.0
+  # DEBUG D#12ptD.0 => D#14ptD.0
+  # DEBUG D#10ptD.0 => D#12ptD.0
+  # DEBUG D#11ptD.0 => D#13ptD.0
+  # DEBUG D.33167 => D#10ptD.0
+  # DEBUG D.33166 => D#11ptD.0
+  # DEBUG D#66ptD.0 => &D#71ptD.0->D.30899
+  # DEBUG thisD.34628 => D#66ptD.0
+  # DEBUG D#64ptD.0 => D#66ptD.0->_M_implD.30390._M_end_of_storageD.30394
+  # DEBUG D#63ptD.0 => (long intD.12) D#64ptD.0
+  # VUSE <.MEM_101>
+  # PT = nonlocal escaped 
+  _76 = MEM[(struct _Vector_baseD.30157 *)this_1(D) + 72B]._M_implD.30390._M_startD.30392;
+  # DEBUG D#62ptD.0 => (long intD.12) _76
+  # DEBUG D#61ptD.0 => D#63ptD.0 - D#62ptD.0
+  # DEBUG D#60ptD.0 => D#61ptD.0 /[ex] 8
+  # DEBUG D#57ptD.0 => D#66ptD.0
+  # DEBUG D#58ptD.0 => (long unsigned intD.14) D#60ptD.0
+  # DEBUG __pD.34631 => _76
+  # DEBUG thisD.34629 => D#57ptD.0
+  # DEBUG __nD.34630 => D#58ptD.0
+  # DEBUG D#56ptD.0 => D#58ptD.0
+  # DEBUG D#55ptD.0 => D#57ptD.0
+  if (_76 != 0B)
+    goto <bb 19>;
+  else
+    goto <bb 20>;
+;;    succ:       19 [69.8%]  (TRUE_VALUE,EXECUTABLE)
+;;                20 [30.2%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 19, loop depth 0, count 0, freq 0
+;;    prev block 18, next block 20, flags: (NEW, REACHABLE)
+;;    pred:       18 [69.8%]  (TRUE_VALUE,EXECUTABLE)
+  # DEBUG D#54ptD.0 => &D#55ptD.0->_M_implD.30390
+  # DEBUG D#52ptD.0 => D#54ptD.0
+  # DEBUG D#53ptD.0 => D#56ptD.0
+  # DEBUG __pD.34635 => _76
+  # DEBUG __aD.34633 => D#52ptD.0
+  # DEBUG __nD.34634 => D#53ptD.0
+  # DEBUG D#51ptD.0 => D#53ptD.0
+  # DEBUG D#50ptD.0 => D#52ptD.0
+  # DEBUG D#48ptD.0 => D#50ptD.0
+  # DEBUG D#49ptD.0 => D#51ptD.0
+  # DEBUG __pD.34638 => _76
+  # DEBUG thisD.34636 => D#48ptD.0
+  # DEBUG D.34637 => D#49ptD.0
+  # .MEM_102 = VDEF <.MEM_101>
+  # USE = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  # CLB = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  _ZdlPvD.2766 (_76);
+;;    succ:       20 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 20, loop depth 0, count 0, freq 0
+;;    prev block 19, next block 21, flags: (NEW, REACHABLE)
+;;    pred:       18 [30.2%]  (FALSE_VALUE,EXECUTABLE)
+;;                19 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_88 = PHI <.MEM_101(18), .MEM_102(19)>
+  # DEBUG D#59ptD.0 => &D#66ptD.0->_M_implD.30390
+  # DEBUG thisD.34639 => D#59ptD.0
+  # DEBUG thisD.34640 => D#59ptD.0
+  # DEBUG thisD.34641 => D#59ptD.0
+  # .MEM_107 = VDEF <.MEM_88>
+  MEM[(struct  &)this_1(D) + 72] ={v} {CLOBBER};
+  # DEBUG D#70ptD.0 => &_2->_fullnameD.30154
+  # DEBUG thisD.34642 => D#70ptD.0
+  # DEBUG thisD.34643 => D#70ptD.0
+  # DEBUG thisD.34652 => D#70ptD.0
+  # VUSE <.MEM_107>
+  # PT = nonlocal escaped 
+  _77 = MEM[(charD.10 * *)this_1(D) + 40B];
+  # DEBUG D#2ptD.0 => D#70ptD.0
+  # DEBUG thisD.33042 => D#2ptD.0
+  # DEBUG thisD.34653 => D#70ptD.0
+  # PT = nonlocal 
+  _78 = &MEM[(const struct basic_stringD.2844 *)this_1(D) + 40B].D.11539._M_local_bufD.11541;
+  if (_77 != _78)
+    goto <bb 21>;
+  else
+    goto <bb 22>;
+;;    succ:       21 [69.8%]  (TRUE_VALUE,EXECUTABLE)
+;;                22 [30.2%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 21, loop depth 0, count 0, freq 0
+;;    prev block 20, next block 22, flags: (NEW, REACHABLE)
+;;    pred:       20 [69.8%]  (TRUE_VALUE,EXECUTABLE)
+  # DEBUG D#46ptD.0 => MEM[(struct basic_stringD.2844 *)D#70ptD.0].D.11539._M_allocated_capacityD.11542
+  # DEBUG D#45ptD.0 => D#46ptD.0
+  # DEBUG thisD.34645 => D#70ptD.0
+  # DEBUG __sizeD.34644 => D#45ptD.0
+  # DEBUG D#44ptD.0 => D#45ptD.0
+  # DEBUG D#2ptD.0 => D#70ptD.0
+  # DEBUG thisD.33292 => D#2ptD.0
+  # DEBUG thisD.33293 => D#70ptD.0
+  # DEBUG D#43ptD.0 => &MEM[(struct basic_stringD.2844 *)D#70ptD.0]._M_dataplusD.11519
+  # DEBUG D#41ptD.0 => D#43ptD.0
+  # DEBUG D#42ptD.0 => D#44ptD.0 + 1
+  # DEBUG __pD.34648 => _77
+  # DEBUG __aD.34646 => D#41ptD.0
+  # DEBUG __nD.34647 => D#42ptD.0
+  # DEBUG D#40ptD.0 => D#42ptD.0
+  # DEBUG D#39ptD.0 => D#41ptD.0
+  # DEBUG D#37ptD.0 => D#39ptD.0
+  # DEBUG D#38ptD.0 => D#40ptD.0
+  # DEBUG __pD.34651 => _77
+  # DEBUG thisD.34649 => D#37ptD.0
+  # DEBUG D.34650 => D#38ptD.0
+  # .MEM_108 = VDEF <.MEM_107>
+  # USE = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  # CLB = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  _ZdlPvD.2766 (_77);
+;;    succ:       22 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 22, loop depth 0, count 0, freq 0
+;;    prev block 21, next block 23, flags: (NEW, REACHABLE)
+;;    pred:       20 [30.2%]  (FALSE_VALUE,EXECUTABLE)
+;;                21 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_89 = PHI <.MEM_107(20), .MEM_108(21)>
+  # DEBUG D#47ptD.0 => &MEM[(struct basic_stringD.2844 *)D#70ptD.0]._M_dataplusD.11519
+  # DEBUG thisD.34654 => D#47ptD.0
+  # DEBUG thisD.34655 => D#47ptD.0
+  # DEBUG thisD.34656 => D#47ptD.0
+  # .MEM_112 = VDEF <.MEM_89>
+  MEM[(struct  &)this_1(D) + 40] ={v} {CLOBBER};
+  # DEBUG D#69ptD.0 => &_2->_nameD.30153
+  # DEBUG thisD.34657 => D#69ptD.0
+  # DEBUG thisD.34658 => D#69ptD.0
+  # DEBUG thisD.34667 => D#69ptD.0
+  # VUSE <.MEM_112>
+  # PT = nonlocal escaped 
+  _79 = MEM[(charD.10 * *)this_1(D) + 8B];
+  # DEBUG D#2ptD.0 => D#69ptD.0
+  # DEBUG thisD.33042 => D#2ptD.0
+  # DEBUG thisD.34668 => D#69ptD.0
+  # PT = nonlocal 
+  _80 = &MEM[(const struct basic_stringD.2844 *)this_1(D) + 8B].D.11539._M_local_bufD.11541;
+  if (_79 != _80)
+    goto <bb 23>;
+  else
+    goto <bb 24>;
+;;    succ:       23 [78.3%]  (TRUE_VALUE,EXECUTABLE)
+;;                24 [21.6%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 23, loop depth 0, count 0, freq 0
+;;    prev block 22, next block 24, flags: (NEW, REACHABLE)
+;;    pred:       22 [78.3%]  (TRUE_VALUE,EXECUTABLE)
+  # DEBUG D#46ptD.0 => MEM[(struct basic_stringD.2844 *)D#69ptD.0].D.11539._M_allocated_capacityD.11542
+  # DEBUG D#45ptD.0 => D#46ptD.0
+  # DEBUG thisD.34660 => D#69ptD.0
+  # DEBUG __sizeD.34659 => D#45ptD.0
+  # DEBUG D#44ptD.0 => D#45ptD.0
+  # DEBUG D#2ptD.0 => D#69ptD.0
+  # DEBUG thisD.33292 => D#2ptD.0
+  # DEBUG thisD.33293 => D#69ptD.0
+  # DEBUG D#43ptD.0 => &MEM[(struct basic_stringD.2844 *)D#69ptD.0]._M_dataplusD.11519
+  # DEBUG D#41ptD.0 => D#43ptD.0
+  # DEBUG D#42ptD.0 => D#44ptD.0 + 1
+  # DEBUG __pD.34663 => _79
+  # DEBUG __aD.34661 => D#41ptD.0
+  # DEBUG __nD.34662 => D#42ptD.0
+  # DEBUG D#40ptD.0 => D#42ptD.0
+  # DEBUG D#39ptD.0 => D#41ptD.0
+  # DEBUG D#37ptD.0 => D#39ptD.0
+  # DEBUG D#38ptD.0 => D#40ptD.0
+  # DEBUG __pD.34666 => _79
+  # DEBUG thisD.34664 => D#37ptD.0
+  # DEBUG D.34665 => D#38ptD.0
+  # .MEM_113 = VDEF <.MEM_112>
+  # USE = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  # CLB = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  _ZdlPvD.2766 (_79);
+;;    succ:       24 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 24, loop depth 0, count 0, freq 0
+;;    prev block 23, next block 1, flags: (NEW, REACHABLE)
+;;    pred:       22 [21.6%]  (FALSE_VALUE,EXECUTABLE)
+;;                23 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_90 = PHI <.MEM_112(22), .MEM_113(23)>
+  # DEBUG D#47ptD.0 => &MEM[(struct basic_stringD.2844 *)D#69ptD.0]._M_dataplusD.11519
+  # DEBUG thisD.34669 => D#47ptD.0
+  # DEBUG thisD.34670 => D#47ptD.0
+  # DEBUG thisD.34671 => D#47ptD.0
+  # .MEM_118 = VDEF <.MEM_90>
+  MEM[(struct  &)this_1(D)] ={v} {CLOBBER};
+  resx 1
+;;    succ:      
+
+}
+
+
+Creating dr for MEM[(int * &)this_1(D) + 152]
+analyze_innermost: success.
+	base_address: this_1(D)
+	offset from base address: 0
+	constant offset from base address: 152
+	step: 0
+	aligned to: 256
+	base_object: MEM[(int * &)this_1(D) + 152]
+Creating dr for MEM[(int * &)this_1(D) + 152]
+analyze_innermost: success.
+	base_address: this_1(D)
+	offset from base address: 0
+	constant offset from base address: 152
+	step: 0
+	aligned to: 256
+	base_object: MEM[(int * &)this_1(D) + 152]
+Creating dr for MEM[(int * &)this_1(D) + 160]
+analyze_innermost: success.
+	base_address: this_1(D)
+	offset from base address: 0
+	constant offset from base address: 160
+	step: 0
+	aligned to: 256
+	base_object: MEM[(int * &)this_1(D) + 160]
+Creating dr for MEM[(int * &)this_1(D) + 168]
+analyze_innermost: success.
+	base_address: this_1(D)
+	offset from base address: 0
+	constant offset from base address: 168
+	step: 0
+	aligned to: 256
+	base_object: MEM[(int * &)this_1(D) + 168]
+Creating dr for MEM[(struct _Vector_base *)this_1(D) + 152B]._M_impl._M_start
+analyze_innermost: success.
+	base_address: this_1(D)
+	offset from base address: 0
+	constant offset from base address: 152
+	step: 0
+	aligned to: 256
+	base_object: MEM[(struct _Vector_base *)this_1(D) + 152B]
+	Access function 0: 0
+	Access function 1: 0
+Creating dr for MEM[(struct Module *)this_1(D)]._vptr.Module
+analyze_innermost: success.
+	base_address: this_1(D)
+	offset from base address: 0
+	constant offset from base address: 0
+	step: 0
+	aligned to: 256
+	base_object: MEM[(struct Module *)this_1(D)]
+	Access function 0: 0
+Creating dr for MEM[(struct _Vector_base *)this_1(D) + 72B]._M_impl._M_start
+analyze_innermost: success.
+	base_address: this_1(D)
+	offset from base address: 0
+	constant offset from base address: 72
+	step: 0
+	aligned to: 256
+	base_object: MEM[(struct _Vector_base *)this_1(D) + 72B]
+	Access function 0: 0
+	Access function 1: 0
+Creating dr for this_1(D)->_min
+analyze_innermost: success.
+	base_address: this_1(D)
+	offset from base address: 0
+	constant offset from base address: 120
+	step: 0
+	aligned to: 256
+	base_object: *this_1(D)
+	Access function 0: 960
+Creating dr for this_1(D)->_max
+analyze_innermost: success.
+	base_address: this_1(D)
+	offset from base address: 0
+	constant offset from base address: 128
+	step: 0
+	aligned to: 256
+	base_object: *this_1(D)
+	Access function 0: 1024
+
+Before limit_scops SCoP statistics (BBS:1, LOOPS:0, CONDITIONS:0, STMTS:1)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP statistics (BBS:1, LOOPS:0, CONDITIONS:0, STMTS:1)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP statistics (BBS:1, LOOPS:0, CONDITIONS:0, STMTS:3)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+number of SCoPs: 0
+
+Global statistics (BBS:24, LOOPS:0, CONDITIONS:8, STMTS:410)
+
+Global profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+loop_0 (header = 0, latch = 1, niter = )
+{
+  bb_2 (preds = {bb_0 }, succs = {bb_3 bb_13 })
+  {
+    <bb 2>:
+    _2 = &this_1(D)->D.31781;
+    # .MEM_6 = VDEF <.MEM_3(D)>
+    Module::Module (_2, parent_4(D), name_5(D));
+    # .MEM_7 = VDEF <.MEM_6>
+    this_1(D)->D.31781._vptr.Module = &MEM[(void *)&_ZTV5Stats + 16B];
+    # .MEM_9 = VDEF <.MEM_7>
+    this_1(D)->_num_bins = num_bins_8(D);
+    # .MEM_11 = VDEF <.MEM_9>
+    this_1(D)->_bin_size = bin_size_10(D);
+    # DEBUG D#139 => &this_1(D)->_hist
+    # DEBUG this => D#139
+    # DEBUG D#73 => &D#139->D.31717
+    # DEBUG this => D#73
+    # DEBUG D#72 => &D#73->_M_impl
+    # DEBUG this => D#72
+    # DEBUG this => D#72
+    # DEBUG this => D#72
+    # .MEM_13 = VDEF <.MEM_11>
+    MEM[(struct _Vector_impl *)this_1(D) + 152B]._M_start = 0B;
+    # .MEM_18 = VDEF <.MEM_13>
+    MEM[(struct _Vector_impl *)this_1(D) + 152B]._M_finish = 0B;
+    # .MEM_19 = VDEF <.MEM_18>
+    MEM[(struct _Vector_impl *)this_1(D) + 152B]._M_end_of_storage = 0B;
+    # DEBUG this => this_1(D)
+    # .MEM_20 = VDEF <.MEM_19>
+    this_1(D)->_num_samples = 0;
+    # .MEM_21 = VDEF <.MEM_20>
+    this_1(D)->_sample_sum = 0.0;
+    # .MEM_22 = VDEF <.MEM_21>
+    this_1(D)->_sample_squared_sum = 0.0;
+    # DEBUG D#143 => &this_1(D)->_hist
+    # DEBUG this => D#143
+    # DEBUG __first => num_bins_8(D)
+    # DEBUG __last => 0
+    # DEBUG this => D#143
+    # DEBUG __n => num_bins_8(D)
+    # DEBUG __val => 0
+    # DEBUG __val => 0
+    __n_17 = (size_t) num_bins_8(D);
+    # DEBUG this => D#143
+    # DEBUG __n => __n_17
+    # DEBUG __val => &__val
+    # DEBUG D#32 => D#143
+    # DEBUG D#32 => D#143
+    # DEBUG this => D#32
+    # DEBUG this => D#32
+    if (__n_17 != 0)
+      goto <bb 3>;
+    else
+      goto <bb 13>;
+
+  }
+  bb_3 (preds = {bb_2 }, succs = {bb_4 bb_5 })
+  {
+    <bb 3>:
+    # DEBUG this => D#143
+    # DEBUG __n => __n_17
+    # DEBUG __val => &__val
+    # DEBUG D#134 => &D#143->D.31717
+    # DEBUG this => D#134
+    # DEBUG D#142 => &MEM[(struct _Vector_base *)this_1(D) + 152B]._M_impl
+    # DEBUG this => &__tmp
+    # DEBUG __n => __n_17
+    # DEBUG __value => &__val
+    # DEBUG __a => D#142
+    # DEBUG D#133 => &__tmp.D.31717
+    # DEBUG this => D#133
+    # DEBUG __n => __n_17
+    # DEBUG __a => D#142
+    # DEBUG D#132 => &D#133->_M_impl
+    # DEBUG this => D#132
+    # DEBUG __a => D#142
+    # DEBUG this => D#132
+    # DEBUG __a => D#142
+    # DEBUG this => D#132
+    # DEBUG D.33855 => D#142
+    # DEBUG this => D#133
+    # DEBUG __n => __n_17
+    # DEBUG D#130 => D#133
+    # DEBUG __n => __n_17
+    # DEBUG this => D#130
+    # DEBUG D#129 => D#130
+    # DEBUG D#128 => &D#129->_M_impl
+    # DEBUG D#127 => D#128
+    # DEBUG __n => __n_17
+    # DEBUG __a => D#127
+    # DEBUG D#126 => D#127
+    # DEBUG D#124 => D#126
+    # DEBUG D#125 => 0B
+    # DEBUG __n => __n_17
+    # DEBUG this => D#124
+    # DEBUG D.34623 => D#125
+    # DEBUG D#123 => D#124
+    # DEBUG D#122 => D#123
+    # DEBUG this => D#122
+    if (__n_17 > 4611686018427387903)
+      goto <bb 4>;
+    else
+      goto <bb 5>;
+
+  }
+  bb_4 (preds = {bb_3 }, succs = {bb_14 })
+  {
+    <bb 4>:
+    # .MEM_100 = VDEF <.MEM_22>
+    std::__throw_bad_alloc ();
+
+  }
+  bb_5 (preds = {bb_3 }, succs = {bb_7 bb_6 })
+  {
+    <bb 5>:
+    _73 = __n_17 * 4;
+    # .MEM_99 = VDEF <.MEM_22>
+    __first_74 = operator new (_73);
+    goto <bb 7>;
+
+  }
+  bb_6 (preds = {bb_5 }, succs = {bb_15 })
+  {
+  <L3>:
+    goto <bb 15> (<L0>);
+
+  }
+  bb_7 (preds = {bb_5 }, succs = {bb_10 })
+  {
+    <bb 7>:
+    _67 = __first_74 + _73;
+    # DEBUG D#118 => &__tmp
+    # DEBUG D#118 => &__tmp
+    # DEBUG D#119 => &__val
+    # DEBUG __n => __n_17
+    # DEBUG D#116 => D#118
+    # DEBUG this => D#116
+    # DEBUG this => D#118
+    # DEBUG D#117 => D#119
+    # DEBUG __value => D#117
+    # DEBUG D#115 => &D#116->D.31717
+    # DEBUG this => D#115
+    # DEBUG D#113 => D#117
+    # DEBUG __first => NULL
+    # DEBUG __n => __n_17
+    # DEBUG D#112 => D#113
+    # DEBUG __x => D#112
+    # DEBUG D.34598 => D#114
+    # DEBUG D#111 => D#112
+    # DEBUG __first => NULL
+    # DEBUG __n => __n_17
+    # DEBUG D#110 => D#111
+    # DEBUG __x => D#110
+    # DEBUG __assignable => 1
+    # DEBUG D#109 => D#110
+    # DEBUG __first => NULL
+    # DEBUG __n => __n_17
+    # DEBUG D#108 => D#109
+    # DEBUG __x => D#108
+    # DEBUG D#107 => D#108
+    # DEBUG __first => NULL
+    # DEBUG __n => __n_17
+    # DEBUG D#106 => D#107
+    # DEBUG __value => D#106
+    # DEBUG __it => NULL
+    # DEBUG __it => NULL
+    # DEBUG D#105 => D#106
+    # DEBUG __first => NULL
+    # DEBUG __n => __n_17
+    # DEBUG __value => D#105
+    # DEBUG __tmp => 0
+    # DEBUG __niter => __n_17
+    # DEBUG __niter => __n_17
+    # DEBUG __first => __first_74
+    _29 = (sizetype) num_bins_8(D);
+    _30 = _29 * 4;
+    # .MEM_65 = VDEF <.MEM_99>
+    __builtin_memset (__first_74, 0, _30);
+
+  }
+  bb_10 (preds = {bb_7 }, succs = {bb_11 bb_12 })
+  {
+    <bb 10>:
+    _28 = (long unsigned int) num_bins_8(D);
+    _95 = _28 * 4;
+    __first_66 = __first_74 + _95;
+    # DEBUG D#136 => &D#143->D.31717._M_impl
+    # DEBUG this => &__tmp.D.31717._M_impl
+    # DEBUG __x => D#136
+    # DEBUG D#101 => &D#136->_M_start
+    # DEBUG D#100 => &MEM[(struct _Vector_impl *)&__tmp]._M_start
+    # DEBUG __a => D#100
+    # DEBUG __b => D#101
+    # DEBUG __tmp => __first_74
+    # VUSE <.MEM_65>
+    _60 = MEM[(int * &)this_1(D) + 152];
+    # .MEM_126 = VDEF <.MEM_65>
+    MEM[(int * &)this_1(D) + 152] = __first_74;
+    # DEBUG D#99 => &D#136->_M_finish
+    # DEBUG D#98 => &MEM[(struct _Vector_impl *)&__tmp]._M_finish
+    # DEBUG __a => D#98
+    # DEBUG __b => D#99
+    # DEBUG __tmp => __first_66
+    # .MEM_128 = VDEF <.MEM_126>
+    MEM[(int * &)this_1(D) + 160] = __first_66;
+    # DEBUG D#97 => &D#136->_M_end_of_storage
+    # DEBUG D#96 => &MEM[(struct _Vector_impl *)&__tmp]._M_end_of_storage
+    # DEBUG __a => D#96
+    # DEBUG __b => D#97
+    # DEBUG __tmp => _67
+    # .MEM_130 = VDEF <.MEM_128>
+    MEM[(int * &)this_1(D) + 168] = _67;
+    # DEBUG this => &__tmp
+    # DEBUG D#91 => &__tmp.D.31717
+    # DEBUG this => D#91
+    # DEBUG D#94 => __tmp.D.31717._M_impl._M_finish
+    # DEBUG D#93 => __tmp.D.31717._M_impl._M_start
+    # DEBUG D#29 => D#93
+    # DEBUG D#30 => D#94
+    # DEBUG __first => D#29
+    # DEBUG __last => D#30
+    # DEBUG D.33544 => D#31
+    # DEBUG D#28 => D#30
+    # DEBUG D#27 => D#29
+    # DEBUG D#25 => D#27
+    # DEBUG D#26 => D#28
+    # DEBUG __first => D#25
+    # DEBUG __last => D#26
+    # DEBUG D#24 => D#26
+    # DEBUG D#23 => D#25
+    # DEBUG D#21 => D#23
+    # DEBUG D#22 => D#24
+    # DEBUG D.33205 => D#21
+    # DEBUG D.33204 => D#22
+    # DEBUG D#92 => &__tmp.D.31717
+    # DEBUG this => D#92
+    # DEBUG D#90 => D#92->_M_impl._M_end_of_storage
+    # DEBUG D#89 => (long int) D#90
+    # DEBUG D#88 => (long int) _60
+    # DEBUG D#87 => D#89 - D#88
+    # DEBUG D#86 => D#87 /[ex] 4
+    # DEBUG D#83 => D#92
+    # DEBUG D#84 => (long unsigned int) D#86
+    # DEBUG __p => _60
+    # DEBUG this => D#83
+    # DEBUG __n => D#84
+    # DEBUG D#82 => D#84
+    # DEBUG D#81 => D#83
+    if (_60 != 0B)
+      goto <bb 11>;
+    else
+      goto <bb 12>;
+
+  }
+  bb_11 (preds = {bb_10 }, succs = {bb_12 })
+  {
+    <bb 11>:
+    # DEBUG D#80 => &D#81->_M_impl
+    # DEBUG D#78 => D#80
+    # DEBUG D#79 => D#82
+    # DEBUG __p => _60
+    # DEBUG __a => D#78
+    # DEBUG __n => D#79
+    # DEBUG D#77 => D#79
+    # DEBUG D#76 => D#78
+    # DEBUG D#74 => D#76
+    # DEBUG D#75 => D#77
+    # DEBUG __p => _60
+    # DEBUG this => D#74
+    # DEBUG D.34555 => D#75
+    # .MEM_131 = VDEF <.MEM_130>
+    operator delete (_60);
+
+  }
+  bb_12 (preds = {bb_10 bb_11 }, succs = {bb_13 })
+  {
+    <bb 12>:
+    # .MEM_82 = PHI <.MEM_130(10), .MEM_131(11)>
+    # DEBUG D#85 => &D#92->_M_impl
+    # DEBUG this => D#85
+    # DEBUG this => D#85
+    # DEBUG this => D#85
+    # .MEM_137 = VDEF <.MEM_82>
+    __tmp ={v} {CLOBBER};
+
+  }
+  bb_13 (preds = {bb_2 bb_12 }, succs = {bb_25 })
+  {
+    <bb 13>:
+    # .MEM_86 = PHI <.MEM_22(2), .MEM_137(12)>
+
+  }
+  bb_25 (preds = {bb_13 }, succs = {bb_1 })
+  {
+    <bb 25>:
+    # .MEM_25 = VDEF <.MEM_86>
+    this_1(D)->_min =  Nan;
+    # .MEM_26 = VDEF <.MEM_25>
+    this_1(D)->_max =  Nan;
+    # VUSE <.MEM_26>
+    return;
+
+  }
+  bb_14 (preds = {bb_4 }, succs = {bb_15 })
+  {
+  <L2>:
+
+  }
+  bb_15 (preds = {bb_6 bb_14 }, succs = {bb_16 bb_17 })
+  {
+    # .MEM_87 = PHI <.MEM_99(6), .MEM_100(14)>
+  <L0>:
+    # DEBUG D#138 => &this_1(D)->_hist
+    # DEBUG this => D#138
+    # DEBUG D#91 => &D#138->D.31717
+    # DEBUG this => D#91
+    # DEBUG D#94 => D#138->D.31717._M_impl._M_finish
+    # DEBUG D#93 => D#138->D.31717._M_impl._M_start
+    # DEBUG D#29 => D#93
+    # DEBUG D#30 => D#94
+    # DEBUG __first => D#29
+    # DEBUG __last => D#30
+    # DEBUG D.33544 => D#31
+    # DEBUG D#28 => D#30
+    # DEBUG D#27 => D#29
+    # DEBUG D#25 => D#27
+    # DEBUG D#26 => D#28
+    # DEBUG __first => D#25
+    # DEBUG __last => D#26
+    # DEBUG D#24 => D#26
+    # DEBUG D#23 => D#25
+    # DEBUG D#21 => D#23
+    # DEBUG D#22 => D#24
+    # DEBUG D.33205 => D#21
+    # DEBUG D.33204 => D#22
+    # DEBUG D#92 => &D#138->D.31717
+    # DEBUG this => D#92
+    # DEBUG D#90 => D#92->_M_impl._M_end_of_storage
+    # DEBUG D#89 => (long int) D#90
+    # VUSE <.MEM_87>
+    _12 = MEM[(struct _Vector_base *)this_1(D) + 152B]._M_impl._M_start;
+    # DEBUG D#88 => (long int) _12
+    # DEBUG D#87 => D#89 - D#88
+    # DEBUG D#86 => D#87 /[ex] 4
+    # DEBUG D#83 => D#92
+    # DEBUG D#84 => (long unsigned int) D#86
+    # DEBUG __p => _12
+    # DEBUG this => D#83
+    # DEBUG __n => D#84
+    # DEBUG D#82 => D#84
+    # DEBUG D#81 => D#83
+    if (_12 != 0B)
+      goto <bb 16>;
+    else
+      goto <bb 17>;
+
+  }
+  bb_16 (preds = {bb_15 }, succs = {bb_17 })
+  {
+    <bb 16>:
+    # DEBUG D#80 => &D#81->_M_impl
+    # DEBUG D#78 => D#80
+    # DEBUG D#79 => D#82
+    # DEBUG __p => _12
+    # DEBUG __a => D#78
+    # DEBUG __n => D#79
+    # DEBUG D#77 => D#79
+    # DEBUG D#76 => D#78
+    # DEBUG D#74 => D#76
+    # DEBUG D#75 => D#77
+    # DEBUG __p => _12
+    # DEBUG this => D#74
+    # DEBUG D.34216 => D#75
+    # .MEM_27 = VDEF <.MEM_87>
+    operator delete (_12);
+
+  }
+  bb_17 (preds = {bb_15 bb_16 }, succs = {bb_18 })
+  {
+    <bb 17>:
+    # .MEM_14 = PHI <.MEM_87(15), .MEM_27(16)>
+    # DEBUG D#85 => &D#92->_M_impl
+    # DEBUG this => D#85
+    # DEBUG this => D#85
+    # DEBUG this => D#85
+    # .MEM_32 = VDEF <.MEM_14>
+    MEM[(struct  &)this_1(D) + 152] ={v} {CLOBBER};
+    resx 2
+
+  }
+  bb_18 (preds = {bb_17 }, succs = {bb_19 bb_20 })
+  {
+  <L1>:
+    # DEBUG this => _2
+    # .MEM_101 = VDEF <.MEM_32>
+    MEM[(struct Module *)this_1(D)]._vptr.Module = &MEM[(void *)&_ZTV6Module + 16B];
+    # DEBUG D#71 => &_2->_children
+    # DEBUG this => D#71
+    # DEBUG D#65 => &D#71->D.30899
+    # DEBUG this => D#65
+    # DEBUG D#68 => D#71->D.30899._M_impl._M_finish
+    # DEBUG D#67 => D#71->D.30899._M_impl._M_start
+    # DEBUG D#18 => D#67
+    # DEBUG D#19 => D#68
+    # DEBUG __first => D#18
+    # DEBUG __last => D#19
+    # DEBUG D.33407 => D#20
+    # DEBUG D#17 => D#19
+    # DEBUG D#16 => D#18
+    # DEBUG D#14 => D#16
+    # DEBUG D#15 => D#17
+    # DEBUG __first => D#14
+    # DEBUG __last => D#15
+    # DEBUG D#13 => D#15
+    # DEBUG D#12 => D#14
+    # DEBUG D#10 => D#12
+    # DEBUG D#11 => D#13
+    # DEBUG D.33167 => D#10
+    # DEBUG D.33166 => D#11
+    # DEBUG D#66 => &D#71->D.30899
+    # DEBUG this => D#66
+    # DEBUG D#64 => D#66->_M_impl._M_end_of_storage
+    # DEBUG D#63 => (long int) D#64
+    # VUSE <.MEM_101>
+    _76 = MEM[(struct _Vector_base *)this_1(D) + 72B]._M_impl._M_start;
+    # DEBUG D#62 => (long int) _76
+    # DEBUG D#61 => D#63 - D#62
+    # DEBUG D#60 => D#61 /[ex] 8
+    # DEBUG D#57 => D#66
+    # DEBUG D#58 => (long unsigned int) D#60
+    # DEBUG __p => _76
+    # DEBUG this => D#57
+    # DEBUG __n => D#58
+    # DEBUG D#56 => D#58
+    # DEBUG D#55 => D#57
+    if (_76 != 0B)
+      goto <bb 19>;
+    else
+      goto <bb 20>;
+
+  }
+  bb_19 (preds = {bb_18 }, succs = {bb_20 })
+  {
+    <bb 19>:
+    # DEBUG D#54 => &D#55->_M_impl
+    # DEBUG D#52 => D#54
+    # DEBUG D#53 => D#56
+    # DEBUG __p => _76
+    # DEBUG __a => D#52
+    # DEBUG __n => D#53
+    # DEBUG D#51 => D#53
+    # DEBUG D#50 => D#52
+    # DEBUG D#48 => D#50
+    # DEBUG D#49 => D#51
+    # DEBUG __p => _76
+    # DEBUG this => D#48
+    # DEBUG D.34637 => D#49
+    # .MEM_102 = VDEF <.MEM_101>
+    operator delete (_76);
+
+  }
+  bb_20 (preds = {bb_18 bb_19 }, succs = {bb_21 bb_22 })
+  {
+    <bb 20>:
+    # .MEM_88 = PHI <.MEM_101(18), .MEM_102(19)>
+    # DEBUG D#59 => &D#66->_M_impl
+    # DEBUG this => D#59
+    # DEBUG this => D#59
+    # DEBUG this => D#59
+    # .MEM_107 = VDEF <.MEM_88>
+    MEM[(struct  &)this_1(D) + 72] ={v} {CLOBBER};
+    # DEBUG D#70 => &_2->_fullname
+    # DEBUG this => D#70
+    # DEBUG this => D#70
+    # DEBUG this => D#70
+    # VUSE <.MEM_107>
+    _77 = MEM[(char * *)this_1(D) + 40B];
+    # DEBUG D#2 => D#70
+    # DEBUG this => D#2
+    # DEBUG this => D#70
+    _78 = &MEM[(const struct basic_string *)this_1(D) + 40B].D.11539._M_local_buf;
+    if (_77 != _78)
+      goto <bb 21>;
+    else
+      goto <bb 22>;
+
+  }
+  bb_21 (preds = {bb_20 }, succs = {bb_22 })
+  {
+    <bb 21>:
+    # DEBUG D#46 => MEM[(struct basic_string *)D#70].D.11539._M_allocated_capacity
+    # DEBUG D#45 => D#46
+    # DEBUG this => D#70
+    # DEBUG __size => D#45
+    # DEBUG D#44 => D#45
+    # DEBUG D#2 => D#70
+    # DEBUG this => D#2
+    # DEBUG this => D#70
+    # DEBUG D#43 => &MEM[(struct basic_string *)D#70]._M_dataplus
+    # DEBUG D#41 => D#43
+    # DEBUG D#42 => D#44 + 1
+    # DEBUG __p => _77
+    # DEBUG __a => D#41
+    # DEBUG __n => D#42
+    # DEBUG D#40 => D#42
+    # DEBUG D#39 => D#41
+    # DEBUG D#37 => D#39
+    # DEBUG D#38 => D#40
+    # DEBUG __p => _77
+    # DEBUG this => D#37
+    # DEBUG D.34650 => D#38
+    # .MEM_108 = VDEF <.MEM_107>
+    operator delete (_77);
+
+  }
+  bb_22 (preds = {bb_20 bb_21 }, succs = {bb_23 bb_24 })
+  {
+    <bb 22>:
+    # .MEM_89 = PHI <.MEM_107(20), .MEM_108(21)>
+    # DEBUG D#47 => &MEM[(struct basic_string *)D#70]._M_dataplus
+    # DEBUG this => D#47
+    # DEBUG this => D#47
+    # DEBUG this => D#47
+    # .MEM_112 = VDEF <.MEM_89>
+    MEM[(struct  &)this_1(D) + 40] ={v} {CLOBBER};
+    # DEBUG D#69 => &_2->_name
+    # DEBUG this => D#69
+    # DEBUG this => D#69
+    # DEBUG this => D#69
+    # VUSE <.MEM_112>
+    _79 = MEM[(char * *)this_1(D) + 8B];
+    # DEBUG D#2 => D#69
+    # DEBUG this => D#2
+    # DEBUG this => D#69
+    _80 = &MEM[(const struct basic_string *)this_1(D) + 8B].D.11539._M_local_buf;
+    if (_79 != _80)
+      goto <bb 23>;
+    else
+      goto <bb 24>;
+
+  }
+  bb_23 (preds = {bb_22 }, succs = {bb_24 })
+  {
+    <bb 23>:
+    # DEBUG D#46 => MEM[(struct basic_string *)D#69].D.11539._M_allocated_capacity
+    # DEBUG D#45 => D#46
+    # DEBUG this => D#69
+    # DEBUG __size => D#45
+    # DEBUG D#44 => D#45
+    # DEBUG D#2 => D#69
+    # DEBUG this => D#2
+    # DEBUG this => D#69
+    # DEBUG D#43 => &MEM[(struct basic_string *)D#69]._M_dataplus
+    # DEBUG D#41 => D#43
+    # DEBUG D#42 => D#44 + 1
+    # DEBUG __p => _79
+    # DEBUG __a => D#41
+    # DEBUG __n => D#42
+    # DEBUG D#40 => D#42
+    # DEBUG D#39 => D#41
+    # DEBUG D#37 => D#39
+    # DEBUG D#38 => D#40
+    # DEBUG __p => _79
+    # DEBUG this => D#37
+    # DEBUG D.34665 => D#38
+    # .MEM_113 = VDEF <.MEM_112>
+    operator delete (_79);
+
+  }
+  bb_24 (preds = {bb_22 bb_23 }, succs = {})
+  {
+    <bb 24>:
+    # .MEM_90 = PHI <.MEM_112(22), .MEM_113(23)>
+    # DEBUG D#47 => &MEM[(struct basic_string *)D#69]._M_dataplus
+    # DEBUG this => D#47
+    # DEBUG this => D#47
+    # DEBUG this => D#47
+    # .MEM_118 = VDEF <.MEM_90>
+    MEM[(struct  &)this_1(D)] ={v} {CLOBBER};
+    resx 1
+
+  }
+}
+
+Pass statistics:
+----------------
+
+Stats::Stats(Module*, const string&, double, int) (struct StatsD.30964 * const thisD.31776, struct ModuleD.30151 * parentD.31777, const struct stringD.2845 & nameD.31778, doubleD.39 bin_sizeD.31779, intD.9 num_binsD.31780)
+Eh tree:
+   1 cleanup land:{1,<L1>}
+     2 cleanup land:{3,<L2>},{2,<L3>}
+{
+  intD.9 * D.34625;
+  intD.9 * __firstD.34600;
+  size_typeD.31293 __nD.34583;
+  intD.9 * __tmpD.34544;
+  intD.9 * __tmpD.34541;
+  intD.9 * __tmpD.34538;
+  struct vectorD.30974 __tmpD.34533;
+  long unsigned intD.14 __nD.34456;
+  intD.9 * __firstD.34457;
+  intD.9 * __firstD.34452;
+  intD.9 * __firstD.34439;
+  size_tD.2818 __nD.34435;
+  intD.9 __valD.34200;
+  struct ModuleD.30151 * _2;
+  intD.9 * _12;
+  long unsigned intD.14 _28;
+  sizetype _29;
+  sizetype _30;
+  intD.9 * _60;
+  intD.9 * _67;
+  long unsigned intD.14 _73;
+  struct ModuleD.30151 * * _76;
+  charD.10 * const _77;
+  const charD.10 * _78;
+  charD.10 * const _79;
+  const charD.10 * _80;
+  long unsigned intD.14 _95;
+
+;;   basic block 2, loop depth 0, count 0, freq 2535, maybe hot
+;;    prev block 0, next block 3, flags: (NEW, REACHABLE)
+;;    pred:       ENTRY [100.0%]  (FALLTHRU,EXECUTABLE)
+  # PT = nonlocal 
+  _2 = &this_1(D)->D.31781;
+  # .MEM_6 = VDEF <.MEM_3(D)>
+  # USE = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  # CLB = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  _ZN6ModuleC2EPS_RKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEED.30933 (_2, parent_4(D), name_5(D));
+  # .MEM_7 = VDEF <.MEM_6>
+  this_1(D)->D.31781._vptr.ModuleD.30946 = &MEM[(voidD.45 *)&_ZTV5StatsD.31791 + 16B];
+  # .MEM_9 = VDEF <.MEM_7>
+  this_1(D)->_num_binsD.30971 = num_bins_8(D);
+  # .MEM_11 = VDEF <.MEM_9>
+  this_1(D)->_bin_sizeD.30972 = bin_size_10(D);
+  # DEBUG D#139ptD.0 => &this_1(D)->_histD.31719
+  # DEBUG thisD.34203 => D#139ptD.0
+  # DEBUG D#73ptD.0 => &D#139ptD.0->D.31717
+  # DEBUG thisD.34204 => D#73ptD.0
+  # DEBUG D#72ptD.0 => &D#73ptD.0->_M_implD.31208
+  # DEBUG thisD.34205 => D#72ptD.0
+  # DEBUG thisD.33463 => D#72ptD.0
+  # DEBUG thisD.33461 => D#72ptD.0
+  # .MEM_13 = VDEF <.MEM_11>
+  MEM[(struct _Vector_implD.31185 *)this_1(D) + 152B]._M_startD.31210 = 0B;
+  # .MEM_18 = VDEF <.MEM_13>
+  MEM[(struct _Vector_implD.31185 *)this_1(D) + 152B]._M_finishD.31211 = 0B;
+  # .MEM_19 = VDEF <.MEM_18>
+  MEM[(struct _Vector_implD.31185 *)this_1(D) + 152B]._M_end_of_storageD.31212 = 0B;
+  # DEBUG thisD.34195 => this_1(D)
+  # .MEM_20 = VDEF <.MEM_19>
+  this_1(D)->_num_samplesD.30966 = 0;
+  # .MEM_21 = VDEF <.MEM_20>
+  this_1(D)->_sample_sumD.30967 = 0.0;
+  # .MEM_22 = VDEF <.MEM_21>
+  this_1(D)->_sample_squared_sumD.30968 = 0.0;
+  # DEBUG D#143ptD.0 => &this_1(D)->_histD.31719
+  # DEBUG thisD.34198 => D#143ptD.0
+  # DEBUG __firstD.34197 => num_bins_8(D)
+  # DEBUG __lastD.34196 => 0
+  # DEBUG thisD.34202 => D#143ptD.0
+  # DEBUG __nD.34201 => num_bins_8(D)
+  # DEBUG __valD.34200 => 0
+  # DEBUG __valD.34200 => 0
+  # RANGE ~[2147483648, 18446744071562067967]
+  __n_17 = (size_tD.2818) num_bins_8(D);
+  # DEBUG thisD.34434 => D#143ptD.0
+  # DEBUG __nD.34435 => __n_17
+  # DEBUG __valD.34436 => &__valD.34200
+  # DEBUG D#32ptD.0 => D#143ptD.0
+  # DEBUG D#32ptD.0 => D#143ptD.0
+  # DEBUG thisD.34476 => D#32ptD.0
+  # DEBUG thisD.34477 => D#32ptD.0
+  if (__n_17 != 0)
+    goto <bb 3>;
+  else
+    goto <bb 13>;
+;;    succ:       3 [29.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                13 [71.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 3, loop depth 0, count 0, freq 735, maybe hot
+;;    prev block 2, next block 4, flags: (NEW, REACHABLE)
+;;    pred:       2 [29.0%]  (TRUE_VALUE,EXECUTABLE)
+  # DEBUG thisD.34480 => D#143ptD.0
+  # DEBUG __nD.34481 => __n_17
+  # DEBUG __valD.34482 => &__valD.34200
+  # DEBUG D#134ptD.0 => &D#143ptD.0->D.31717
+  # DEBUG thisD.34560 => D#134ptD.0
+  # DEBUG D#142ptD.0 => &MEM[(struct _Vector_baseD.30975 *)this_1(D) + 152B]._M_implD.31208
+  # DEBUG thisD.34582 => &__tmpD.34533
+  # DEBUG __nD.34583 => __n_17
+  # DEBUG __valueD.34584 => &__valD.34200
+  # DEBUG __aD.34585 => D#142ptD.0
+  # DEBUG D#133ptD.0 => &__tmpD.34533.D.31717
+  # DEBUG thisD.34588 => D#133ptD.0
+  # DEBUG __nD.34587 => __n_17
+  # DEBUG __aD.34586 => D#142ptD.0
+  # DEBUG D#132ptD.0 => &D#133ptD.0->_M_implD.31208
+  # DEBUG thisD.34590 => D#132ptD.0
+  # DEBUG __aD.34589 => D#142ptD.0
+  # DEBUG thisD.33857 => D#132ptD.0
+  # DEBUG __aD.33858 => D#142ptD.0
+  # DEBUG thisD.33854 => D#132ptD.0
+  # DEBUG D.33855 => D#142ptD.0
+  # DEBUG thisD.34592 => D#133ptD.0
+  # DEBUG __nD.34591 => __n_17
+  # DEBUG D#130ptD.0 => D#133ptD.0
+  # DEBUG __nD.34617 => __n_17
+  # DEBUG thisD.34618 => D#130ptD.0
+  # DEBUG D#129ptD.0 => D#130ptD.0
+  # DEBUG D#128ptD.0 => &D#129ptD.0->_M_implD.31208
+  # DEBUG D#127ptD.0 => D#128ptD.0
+  # DEBUG __nD.34621 => __n_17
+  # DEBUG __aD.34620 => D#127ptD.0
+  # DEBUG D#126ptD.0 => D#127ptD.0
+  # DEBUG D#124ptD.0 => D#126ptD.0
+  # DEBUG D#125ptD.0 => 0B
+  # DEBUG __nD.34624 => __n_17
+  # DEBUG thisD.34622 => D#124ptD.0
+  # DEBUG D.34623 => D#125ptD.0
+  # DEBUG D#123ptD.0 => D#124ptD.0
+  # DEBUG D#122ptD.0 => D#123ptD.0
+  # DEBUG thisD.33866 => D#122ptD.0
+  if (__n_17 > 4611686018427387903)
+    goto <bb 4>;
+  else
+    goto <bb 5>;
+;;    succ:       4 [0.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                5 [100.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 4, loop depth 0, count 0, freq 0
+;;   Invalid sum of outgoing probabilities 0.0%
+;;    prev block 3, next block 5, flags: (NEW, REACHABLE)
+;;    pred:       3 [0.0%]  (TRUE_VALUE,EXECUTABLE)
+  [LP 3] # .MEM_100 = VDEF <.MEM_22>
+  # USE = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  # CLB = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  _ZSt17__throw_bad_allocvD.2850 ();
+;;    succ:       14 (EH,EXECUTABLE)
+
+;;   basic block 5, loop depth 0, count 0, freq 661, maybe hot
+;;    prev block 4, next block 6, flags: (NEW, REACHABLE)
+;;    pred:       3 [100.0%]  (FALSE_VALUE,EXECUTABLE)
+  # RANGE [4, 18446744073709551612] NONZERO 18446744073709551612
+  _73 = __n_17 * 4;
+  [LP 2] # .MEM_99 = VDEF <.MEM_22>
+  # PT = { D.34676 } (escaped heap)
+  # USE = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  # CLB = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  __first_74 = _ZnwmD.2764 (_73);
+  goto <bb 7>;
+;;    succ:       7 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                6 (EH,EXECUTABLE)
+
+;;   basic block 6, loop depth 0, count 0, freq 0
+;;    prev block 5, next block 7, flags: (NEW)
+;;    pred:       5 (EH,EXECUTABLE)
+<L3>: [LP 2]
+  goto <bb 15> (<L0>);
+;;    succ:       15 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 7, loop depth 0, count 0, freq 735, maybe hot
+;;   Invalid sum of outgoing probabilities 9.9%
+;;    prev block 6, next block 10, flags: (NEW, REACHABLE)
+;;    pred:       5 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # PT = { D.34676 } (escaped heap)
+  _67 = __first_74 + _73;
+  # DEBUG D#118ptD.0 => &__tmpD.34533
+  # DEBUG D#118ptD.0 => &__tmpD.34533
+  # DEBUG D#119ptD.0 => &__valD.34200
+  # DEBUG __nD.34596 => __n_17
+  # DEBUG D#116ptD.0 => D#118ptD.0
+  # DEBUG thisD.34593 => D#116ptD.0
+  # DEBUG thisD.34594 => D#118ptD.0
+  # DEBUG D#117ptD.0 => D#119ptD.0
+  # DEBUG __valueD.34595 => D#117ptD.0
+  # DEBUG D#115ptD.0 => &D#116ptD.0->D.31717
+  # DEBUG thisD.33777 => D#115ptD.0
+  # DEBUG D#113ptD.0 => D#117ptD.0
+  # DEBUG __firstD.34600 => NULL
+  # DEBUG __nD.34599 => __n_17
+  # DEBUG D#112ptD.0 => D#113ptD.0
+  # DEBUG __xD.34597 => D#112ptD.0
+  # DEBUG D.34598 => D#114ptD.0
+  # DEBUG D#111ptD.0 => D#112ptD.0
+  # DEBUG __firstD.34603 => NULL
+  # DEBUG __nD.34602 => __n_17
+  # DEBUG D#110ptD.0 => D#111ptD.0
+  # DEBUG __xD.34601 => D#110ptD.0
+  # DEBUG __assignableD.34605 => 1
+  # DEBUG D#109ptD.0 => D#110ptD.0
+  # DEBUG __firstD.34608 => NULL
+  # DEBUG __nD.34607 => __n_17
+  # DEBUG D#108ptD.0 => D#109ptD.0
+  # DEBUG __xD.34606 => D#108ptD.0
+  # DEBUG D#107ptD.0 => D#108ptD.0
+  # DEBUG __firstD.34611 => NULL
+  # DEBUG __nD.34610 => __n_17
+  # DEBUG D#106ptD.0 => D#107ptD.0
+  # DEBUG __valueD.34609 => D#106ptD.0
+  # DEBUG __itD.33619 => NULL
+  # DEBUG __itD.33609 => NULL
+  # DEBUG D#105ptD.0 => D#106ptD.0
+  # DEBUG __firstD.34614 => NULL
+  # DEBUG __nD.34613 => __n_17
+  # DEBUG __valueD.34612 => D#105ptD.0
+  # DEBUG __tmpD.34615 => 0
+  # DEBUG __niterD.34616 => __n_17
+  # DEBUG __niterD.34616 => __n_17
+  # DEBUG __firstD.34614 => __first_74
+  _29 = (sizetype) num_bins_8(D);
+  _30 = _29 * 4;
+  # .MEM_65 = VDEF <.MEM_99>
+  # USE = anything 
+  # CLB = anything 
+  memsetD.1001 (__first_74, 0, _30);
+;;    succ:       10 [9.9%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 10, loop depth 0, count 0, freq 735, maybe hot
+;;   Invalid sum of incoming frequencies 73, should be 735
+;;    prev block 7, next block 11, flags: (NEW, REACHABLE)
+;;    pred:       7 [9.9%]  (FALLTHRU,EXECUTABLE)
+  _28 = (long unsigned intD.14) num_bins_8(D);
+  _95 = _28 * 4;
+  # PT = { D.34676 } (escaped heap)
+  __first_66 = __first_74 + _95;
+  # DEBUG D#136ptD.0 => &D#143ptD.0->D.31717._M_implD.31208
+  # DEBUG thisD.34535 => &__tmpD.34533.D.31717._M_implD.31208
+  # DEBUG __xD.34534 => D#136ptD.0
+  # DEBUG D#101ptD.0 => &D#136ptD.0->_M_startD.31210
+  # DEBUG D#100ptD.0 => &MEM[(struct _Vector_implD.31185 *)&__tmpD.34533]._M_startD.31210
+  # DEBUG __aD.34537 => D#100ptD.0
+  # DEBUG __bD.34536 => D#101ptD.0
+  # DEBUG __tmpD.34538 => __first_74
+  # VUSE <.MEM_65>
+  # PT = nonlocal escaped 
+  _60 = MEM[(intD.9 * &)this_1(D) + 152];
+  # .MEM_126 = VDEF <.MEM_65>
+  MEM[(intD.9 * &)this_1(D) + 152] = __first_74;
+  # DEBUG D#99ptD.0 => &D#136ptD.0->_M_finishD.31211
+  # DEBUG D#98ptD.0 => &MEM[(struct _Vector_implD.31185 *)&__tmpD.34533]._M_finishD.31211
+  # DEBUG __aD.34540 => D#98ptD.0
+  # DEBUG __bD.34539 => D#99ptD.0
+  # DEBUG __tmpD.34541 => __first_66
+  # .MEM_128 = VDEF <.MEM_126>
+  MEM[(intD.9 * &)this_1(D) + 160] = __first_66;
+  # DEBUG D#97ptD.0 => &D#136ptD.0->_M_end_of_storageD.31212
+  # DEBUG D#96ptD.0 => &MEM[(struct _Vector_implD.31185 *)&__tmpD.34533]._M_end_of_storageD.31212
+  # DEBUG __aD.34543 => D#96ptD.0
+  # DEBUG __bD.34542 => D#97ptD.0
+  # DEBUG __tmpD.34544 => _67
+  # .MEM_130 = VDEF <.MEM_128>
+  MEM[(intD.9 * &)this_1(D) + 168] = _67;
+  # DEBUG thisD.34545 => &__tmpD.34533
+  # DEBUG D#91ptD.0 => &__tmpD.34533.D.31717
+  # DEBUG thisD.33547 => D#91ptD.0
+  # DEBUG D#94ptD.0 => __tmpD.34533.D.31717._M_implD.31208._M_finishD.31211
+  # DEBUG D#93ptD.0 => __tmpD.34533.D.31717._M_implD.31208._M_startD.31210
+  # DEBUG D#29ptD.0 => D#93ptD.0
+  # DEBUG D#30ptD.0 => D#94ptD.0
+  # DEBUG __firstD.33546 => D#29ptD.0
+  # DEBUG __lastD.33545 => D#30ptD.0
+  # DEBUG D.33544 => D#31ptD.0
+  # DEBUG D#28ptD.0 => D#30ptD.0
+  # DEBUG D#27ptD.0 => D#29ptD.0
+  # DEBUG D#25ptD.0 => D#27ptD.0
+  # DEBUG D#26ptD.0 => D#28ptD.0
+  # DEBUG __firstD.33216 => D#25ptD.0
+  # DEBUG __lastD.33215 => D#26ptD.0
+  # DEBUG D#24ptD.0 => D#26ptD.0
+  # DEBUG D#23ptD.0 => D#25ptD.0
+  # DEBUG D#21ptD.0 => D#23ptD.0
+  # DEBUG D#22ptD.0 => D#24ptD.0
+  # DEBUG D.33205 => D#21ptD.0
+  # DEBUG D.33204 => D#22ptD.0
+  # DEBUG D#92ptD.0 => &__tmpD.34533.D.31717
+  # DEBUG thisD.34546 => D#92ptD.0
+  # DEBUG D#90ptD.0 => D#92ptD.0->_M_implD.31208._M_end_of_storageD.31212
+  # DEBUG D#89ptD.0 => (long intD.12) D#90ptD.0
+  # DEBUG D#88ptD.0 => (long intD.12) _60
+  # DEBUG D#87ptD.0 => D#89ptD.0 - D#88ptD.0
+  # DEBUG D#86ptD.0 => D#87ptD.0 /[ex] 4
+  # DEBUG D#83ptD.0 => D#92ptD.0
+  # DEBUG D#84ptD.0 => (long unsigned intD.14) D#86ptD.0
+  # DEBUG __pD.34549 => _60
+  # DEBUG thisD.34547 => D#83ptD.0
+  # DEBUG __nD.34548 => D#84ptD.0
+  # DEBUG D#82ptD.0 => D#84ptD.0
+  # DEBUG D#81ptD.0 => D#83ptD.0
+  if (_60 != 0B)
+    goto <bb 11>;
+  else
+    goto <bb 12>;
+;;    succ:       11 [78.3%]  (TRUE_VALUE,EXECUTABLE)
+;;                12 [21.6%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 11, loop depth 0, count 0, freq 576, maybe hot
+;;    prev block 10, next block 12, flags: (NEW, REACHABLE)
+;;    pred:       10 [78.3%]  (TRUE_VALUE,EXECUTABLE)
+  # DEBUG D#80ptD.0 => &D#81ptD.0->_M_implD.31208
+  # DEBUG D#78ptD.0 => D#80ptD.0
+  # DEBUG D#79ptD.0 => D#82ptD.0
+  # DEBUG __pD.34553 => _60
+  # DEBUG __aD.34551 => D#78ptD.0
+  # DEBUG __nD.34552 => D#79ptD.0
+  # DEBUG D#77ptD.0 => D#79ptD.0
+  # DEBUG D#76ptD.0 => D#78ptD.0
+  # DEBUG D#74ptD.0 => D#76ptD.0
+  # DEBUG D#75ptD.0 => D#77ptD.0
+  # DEBUG __pD.34556 => _60
+  # DEBUG thisD.34554 => D#74ptD.0
+  # DEBUG D.34555 => D#75ptD.0
+  # .MEM_131 = VDEF <.MEM_130>
+  # USE = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  # CLB = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  _ZdlPvD.2766 (_60);
+;;    succ:       12 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 12, loop depth 0, count 0, freq 735, maybe hot
+;;    prev block 11, next block 13, flags: (NEW, REACHABLE)
+;;    pred:       10 [21.6%]  (FALSE_VALUE,EXECUTABLE)
+;;                11 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_82 = PHI <.MEM_130(10), .MEM_131(11)>
+  # DEBUG D#85ptD.0 => &D#92ptD.0->_M_implD.31208
+  # DEBUG thisD.34557 => D#85ptD.0
+  # DEBUG thisD.34558 => D#85ptD.0
+  # DEBUG thisD.34559 => D#85ptD.0
+  # .MEM_137 = VDEF <.MEM_82>
+  __tmpD.34533 ={v} {CLOBBER};
+;;    succ:       13 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 13, loop depth 0, count 0, freq 2535, maybe hot
+;;    prev block 12, next block 25, flags: (NEW, REACHABLE)
+;;    pred:       2 [71.0%]  (FALSE_VALUE,EXECUTABLE)
+;;                12 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_86 = PHI <.MEM_22(2), .MEM_137(12)>
+;;    succ:       25 [100.0%]  (FALLTHRU)
+
+;;   basic block 25, loop depth 0, count 0, freq 2535, maybe hot
+;;    prev block 13, next block 14, flags: (NEW)
+;;    pred:       13 [100.0%]  (FALLTHRU)
+  # .MEM_25 = VDEF <.MEM_86>
+  this_1(D)->_minD.30969 =  Nan;
+  # .MEM_26 = VDEF <.MEM_25>
+  this_1(D)->_maxD.30970 =  Nan;
+  # VUSE <.MEM_26>
+  return;
+;;    succ:       EXIT [100.0%] 
+
+;;   basic block 14, loop depth 0, count 0, freq 0
+;;    prev block 25, next block 15, flags: (NEW)
+;;    pred:       4 (EH,EXECUTABLE)
+<L2>: [LP 3]
+;;    succ:       15 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 15, loop depth 0, count 0, freq 0
+;;    prev block 14, next block 16, flags: (NEW, REACHABLE)
+;;    pred:       6 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                14 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_87 = PHI <.MEM_99(6), .MEM_100(14)>
+<L0>:
+  # DEBUG D#138ptD.0 => &this_1(D)->_histD.31719
+  # DEBUG thisD.34206 => D#138ptD.0
+  # DEBUG D#91ptD.0 => &D#138ptD.0->D.31717
+  # DEBUG thisD.33547 => D#91ptD.0
+  # DEBUG D#94ptD.0 => D#138ptD.0->D.31717._M_implD.31208._M_finishD.31211
+  # DEBUG D#93ptD.0 => D#138ptD.0->D.31717._M_implD.31208._M_startD.31210
+  # DEBUG D#29ptD.0 => D#93ptD.0
+  # DEBUG D#30ptD.0 => D#94ptD.0
+  # DEBUG __firstD.33546 => D#29ptD.0
+  # DEBUG __lastD.33545 => D#30ptD.0
+  # DEBUG D.33544 => D#31ptD.0
+  # DEBUG D#28ptD.0 => D#30ptD.0
+  # DEBUG D#27ptD.0 => D#29ptD.0
+  # DEBUG D#25ptD.0 => D#27ptD.0
+  # DEBUG D#26ptD.0 => D#28ptD.0
+  # DEBUG __firstD.33216 => D#25ptD.0
+  # DEBUG __lastD.33215 => D#26ptD.0
+  # DEBUG D#24ptD.0 => D#26ptD.0
+  # DEBUG D#23ptD.0 => D#25ptD.0
+  # DEBUG D#21ptD.0 => D#23ptD.0
+  # DEBUG D#22ptD.0 => D#24ptD.0
+  # DEBUG D.33205 => D#21ptD.0
+  # DEBUG D.33204 => D#22ptD.0
+  # DEBUG D#92ptD.0 => &D#138ptD.0->D.31717
+  # DEBUG thisD.34207 => D#92ptD.0
+  # DEBUG D#90ptD.0 => D#92ptD.0->_M_implD.31208._M_end_of_storageD.31212
+  # DEBUG D#89ptD.0 => (long intD.12) D#90ptD.0
+  # VUSE <.MEM_87>
+  # PT = nonlocal escaped 
+  _12 = MEM[(struct _Vector_baseD.30975 *)this_1(D) + 152B]._M_implD.31208._M_startD.31210;
+  # DEBUG D#88ptD.0 => (long intD.12) _12
+  # DEBUG D#87ptD.0 => D#89ptD.0 - D#88ptD.0
+  # DEBUG D#86ptD.0 => D#87ptD.0 /[ex] 4
+  # DEBUG D#83ptD.0 => D#92ptD.0
+  # DEBUG D#84ptD.0 => (long unsigned intD.14) D#86ptD.0
+  # DEBUG __pD.34210 => _12
+  # DEBUG thisD.34208 => D#83ptD.0
+  # DEBUG __nD.34209 => D#84ptD.0
+  # DEBUG D#82ptD.0 => D#84ptD.0
+  # DEBUG D#81ptD.0 => D#83ptD.0
+  if (_12 != 0B)
+    goto <bb 16>;
+  else
+    goto <bb 17>;
+;;    succ:       16 [69.8%]  (TRUE_VALUE,EXECUTABLE)
+;;                17 [30.2%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 16, loop depth 0, count 0, freq 0
+;;    prev block 15, next block 17, flags: (NEW, REACHABLE)
+;;    pred:       15 [69.8%]  (TRUE_VALUE,EXECUTABLE)
+  # DEBUG D#80ptD.0 => &D#81ptD.0->_M_implD.31208
+  # DEBUG D#78ptD.0 => D#80ptD.0
+  # DEBUG D#79ptD.0 => D#82ptD.0
+  # DEBUG __pD.34214 => _12
+  # DEBUG __aD.34212 => D#78ptD.0
+  # DEBUG __nD.34213 => D#79ptD.0
+  # DEBUG D#77ptD.0 => D#79ptD.0
+  # DEBUG D#76ptD.0 => D#78ptD.0
+  # DEBUG D#74ptD.0 => D#76ptD.0
+  # DEBUG D#75ptD.0 => D#77ptD.0
+  # DEBUG __pD.34217 => _12
+  # DEBUG thisD.34215 => D#74ptD.0
+  # DEBUG D.34216 => D#75ptD.0
+  # .MEM_27 = VDEF <.MEM_87>
+  # USE = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  # CLB = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  _ZdlPvD.2766 (_12);
+;;    succ:       17 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 17, loop depth 0, count 0, freq 0
+;;   Invalid sum of outgoing probabilities 0.0%
+;;    prev block 16, next block 18, flags: (NEW, REACHABLE)
+;;    pred:       15 [30.2%]  (FALSE_VALUE,EXECUTABLE)
+;;                16 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_14 = PHI <.MEM_87(15), .MEM_27(16)>
+  # DEBUG D#85ptD.0 => &D#92ptD.0->_M_implD.31208
+  # DEBUG thisD.34218 => D#85ptD.0
+  # DEBUG thisD.34219 => D#85ptD.0
+  # DEBUG thisD.34220 => D#85ptD.0
+  # .MEM_32 = VDEF <.MEM_14>
+  MEM[(struct  &)this_1(D) + 152] ={v} {CLOBBER};
+  [LP 1] resx 2
+;;    succ:       18 (EH,EXECUTABLE)
+
+;;   basic block 18, loop depth 0, count 0, freq 0
+;;    prev block 17, next block 19, flags: (NEW, REACHABLE)
+;;    pred:       17 (EH,EXECUTABLE)
+<L1>: [LP 1]
+  # DEBUG thisD.34626 => _2
+  # .MEM_101 = VDEF <.MEM_32>
+  MEM[(struct ModuleD.30151 *)this_1(D)]._vptr.ModuleD.30946 = &MEM[(voidD.45 *)&_ZTV6ModuleD.30951 + 16B];
+  # DEBUG D#71ptD.0 => &_2->_childrenD.30901
+  # DEBUG thisD.34627 => D#71ptD.0
+  # DEBUG D#65ptD.0 => &D#71ptD.0->D.30899
+  # DEBUG thisD.33410 => D#65ptD.0
+  # DEBUG D#68ptD.0 => D#71ptD.0->D.30899._M_implD.30390._M_finishD.30393
+  # DEBUG D#67ptD.0 => D#71ptD.0->D.30899._M_implD.30390._M_startD.30392
+  # DEBUG D#18ptD.0 => D#67ptD.0
+  # DEBUG D#19ptD.0 => D#68ptD.0
+  # DEBUG __firstD.33409 => D#18ptD.0
+  # DEBUG __lastD.33408 => D#19ptD.0
+  # DEBUG D.33407 => D#20ptD.0
+  # DEBUG D#17ptD.0 => D#19ptD.0
+  # DEBUG D#16ptD.0 => D#18ptD.0
+  # DEBUG D#14ptD.0 => D#16ptD.0
+  # DEBUG D#15ptD.0 => D#17ptD.0
+  # DEBUG __firstD.33178 => D#14ptD.0
+  # DEBUG __lastD.33177 => D#15ptD.0
+  # DEBUG D#13ptD.0 => D#15ptD.0
+  # DEBUG D#12ptD.0 => D#14ptD.0
+  # DEBUG D#10ptD.0 => D#12ptD.0
+  # DEBUG D#11ptD.0 => D#13ptD.0
+  # DEBUG D.33167 => D#10ptD.0
+  # DEBUG D.33166 => D#11ptD.0
+  # DEBUG D#66ptD.0 => &D#71ptD.0->D.30899
+  # DEBUG thisD.34628 => D#66ptD.0
+  # DEBUG D#64ptD.0 => D#66ptD.0->_M_implD.30390._M_end_of_storageD.30394
+  # DEBUG D#63ptD.0 => (long intD.12) D#64ptD.0
+  # VUSE <.MEM_101>
+  # PT = nonlocal escaped 
+  _76 = MEM[(struct _Vector_baseD.30157 *)this_1(D) + 72B]._M_implD.30390._M_startD.30392;
+  # DEBUG D#62ptD.0 => (long intD.12) _76
+  # DEBUG D#61ptD.0 => D#63ptD.0 - D#62ptD.0
+  # DEBUG D#60ptD.0 => D#61ptD.0 /[ex] 8
+  # DEBUG D#57ptD.0 => D#66ptD.0
+  # DEBUG D#58ptD.0 => (long unsigned intD.14) D#60ptD.0
+  # DEBUG __pD.34631 => _76
+  # DEBUG thisD.34629 => D#57ptD.0
+  # DEBUG __nD.34630 => D#58ptD.0
+  # DEBUG D#56ptD.0 => D#58ptD.0
+  # DEBUG D#55ptD.0 => D#57ptD.0
+  if (_76 != 0B)
+    goto <bb 19>;
+  else
+    goto <bb 20>;
+;;    succ:       19 [69.8%]  (TRUE_VALUE,EXECUTABLE)
+;;                20 [30.2%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 19, loop depth 0, count 0, freq 0
+;;    prev block 18, next block 20, flags: (NEW, REACHABLE)
+;;    pred:       18 [69.8%]  (TRUE_VALUE,EXECUTABLE)
+  # DEBUG D#54ptD.0 => &D#55ptD.0->_M_implD.30390
+  # DEBUG D#52ptD.0 => D#54ptD.0
+  # DEBUG D#53ptD.0 => D#56ptD.0
+  # DEBUG __pD.34635 => _76
+  # DEBUG __aD.34633 => D#52ptD.0
+  # DEBUG __nD.34634 => D#53ptD.0
+  # DEBUG D#51ptD.0 => D#53ptD.0
+  # DEBUG D#50ptD.0 => D#52ptD.0
+  # DEBUG D#48ptD.0 => D#50ptD.0
+  # DEBUG D#49ptD.0 => D#51ptD.0
+  # DEBUG __pD.34638 => _76
+  # DEBUG thisD.34636 => D#48ptD.0
+  # DEBUG D.34637 => D#49ptD.0
+  # .MEM_102 = VDEF <.MEM_101>
+  # USE = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  # CLB = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  _ZdlPvD.2766 (_76);
+;;    succ:       20 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 20, loop depth 0, count 0, freq 0
+;;    prev block 19, next block 21, flags: (NEW, REACHABLE)
+;;    pred:       18 [30.2%]  (FALSE_VALUE,EXECUTABLE)
+;;                19 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_88 = PHI <.MEM_101(18), .MEM_102(19)>
+  # DEBUG D#59ptD.0 => &D#66ptD.0->_M_implD.30390
+  # DEBUG thisD.34639 => D#59ptD.0
+  # DEBUG thisD.34640 => D#59ptD.0
+  # DEBUG thisD.34641 => D#59ptD.0
+  # .MEM_107 = VDEF <.MEM_88>
+  MEM[(struct  &)this_1(D) + 72] ={v} {CLOBBER};
+  # DEBUG D#70ptD.0 => &_2->_fullnameD.30154
+  # DEBUG thisD.34642 => D#70ptD.0
+  # DEBUG thisD.34643 => D#70ptD.0
+  # DEBUG thisD.34652 => D#70ptD.0
+  # VUSE <.MEM_107>
+  # PT = nonlocal escaped 
+  _77 = MEM[(charD.10 * *)this_1(D) + 40B];
+  # DEBUG D#2ptD.0 => D#70ptD.0
+  # DEBUG thisD.33042 => D#2ptD.0
+  # DEBUG thisD.34653 => D#70ptD.0
+  # PT = nonlocal 
+  _78 = &MEM[(const struct basic_stringD.2844 *)this_1(D) + 40B].D.11539._M_local_bufD.11541;
+  if (_77 != _78)
+    goto <bb 21>;
+  else
+    goto <bb 22>;
+;;    succ:       21 [69.8%]  (TRUE_VALUE,EXECUTABLE)
+;;                22 [30.2%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 21, loop depth 0, count 0, freq 0
+;;    prev block 20, next block 22, flags: (NEW, REACHABLE)
+;;    pred:       20 [69.8%]  (TRUE_VALUE,EXECUTABLE)
+  # DEBUG D#46ptD.0 => MEM[(struct basic_stringD.2844 *)D#70ptD.0].D.11539._M_allocated_capacityD.11542
+  # DEBUG D#45ptD.0 => D#46ptD.0
+  # DEBUG thisD.34645 => D#70ptD.0
+  # DEBUG __sizeD.34644 => D#45ptD.0
+  # DEBUG D#44ptD.0 => D#45ptD.0
+  # DEBUG D#2ptD.0 => D#70ptD.0
+  # DEBUG thisD.33292 => D#2ptD.0
+  # DEBUG thisD.33293 => D#70ptD.0
+  # DEBUG D#43ptD.0 => &MEM[(struct basic_stringD.2844 *)D#70ptD.0]._M_dataplusD.11519
+  # DEBUG D#41ptD.0 => D#43ptD.0
+  # DEBUG D#42ptD.0 => D#44ptD.0 + 1
+  # DEBUG __pD.34648 => _77
+  # DEBUG __aD.34646 => D#41ptD.0
+  # DEBUG __nD.34647 => D#42ptD.0
+  # DEBUG D#40ptD.0 => D#42ptD.0
+  # DEBUG D#39ptD.0 => D#41ptD.0
+  # DEBUG D#37ptD.0 => D#39ptD.0
+  # DEBUG D#38ptD.0 => D#40ptD.0
+  # DEBUG __pD.34651 => _77
+  # DEBUG thisD.34649 => D#37ptD.0
+  # DEBUG D.34650 => D#38ptD.0
+  # .MEM_108 = VDEF <.MEM_107>
+  # USE = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  # CLB = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  _ZdlPvD.2766 (_77);
+;;    succ:       22 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 22, loop depth 0, count 0, freq 0
+;;    prev block 21, next block 23, flags: (NEW, REACHABLE)
+;;    pred:       20 [30.2%]  (FALSE_VALUE,EXECUTABLE)
+;;                21 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_89 = PHI <.MEM_107(20), .MEM_108(21)>
+  # DEBUG D#47ptD.0 => &MEM[(struct basic_stringD.2844 *)D#70ptD.0]._M_dataplusD.11519
+  # DEBUG thisD.34654 => D#47ptD.0
+  # DEBUG thisD.34655 => D#47ptD.0
+  # DEBUG thisD.34656 => D#47ptD.0
+  # .MEM_112 = VDEF <.MEM_89>
+  MEM[(struct  &)this_1(D) + 40] ={v} {CLOBBER};
+  # DEBUG D#69ptD.0 => &_2->_nameD.30153
+  # DEBUG thisD.34657 => D#69ptD.0
+  # DEBUG thisD.34658 => D#69ptD.0
+  # DEBUG thisD.34667 => D#69ptD.0
+  # VUSE <.MEM_112>
+  # PT = nonlocal escaped 
+  _79 = MEM[(charD.10 * *)this_1(D) + 8B];
+  # DEBUG D#2ptD.0 => D#69ptD.0
+  # DEBUG thisD.33042 => D#2ptD.0
+  # DEBUG thisD.34668 => D#69ptD.0
+  # PT = nonlocal 
+  _80 = &MEM[(const struct basic_stringD.2844 *)this_1(D) + 8B].D.11539._M_local_bufD.11541;
+  if (_79 != _80)
+    goto <bb 23>;
+  else
+    goto <bb 24>;
+;;    succ:       23 [78.3%]  (TRUE_VALUE,EXECUTABLE)
+;;                24 [21.6%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 23, loop depth 0, count 0, freq 0
+;;    prev block 22, next block 24, flags: (NEW, REACHABLE)
+;;    pred:       22 [78.3%]  (TRUE_VALUE,EXECUTABLE)
+  # DEBUG D#46ptD.0 => MEM[(struct basic_stringD.2844 *)D#69ptD.0].D.11539._M_allocated_capacityD.11542
+  # DEBUG D#45ptD.0 => D#46ptD.0
+  # DEBUG thisD.34660 => D#69ptD.0
+  # DEBUG __sizeD.34659 => D#45ptD.0
+  # DEBUG D#44ptD.0 => D#45ptD.0
+  # DEBUG D#2ptD.0 => D#69ptD.0
+  # DEBUG thisD.33292 => D#2ptD.0
+  # DEBUG thisD.33293 => D#69ptD.0
+  # DEBUG D#43ptD.0 => &MEM[(struct basic_stringD.2844 *)D#69ptD.0]._M_dataplusD.11519
+  # DEBUG D#41ptD.0 => D#43ptD.0
+  # DEBUG D#42ptD.0 => D#44ptD.0 + 1
+  # DEBUG __pD.34663 => _79
+  # DEBUG __aD.34661 => D#41ptD.0
+  # DEBUG __nD.34662 => D#42ptD.0
+  # DEBUG D#40ptD.0 => D#42ptD.0
+  # DEBUG D#39ptD.0 => D#41ptD.0
+  # DEBUG D#37ptD.0 => D#39ptD.0
+  # DEBUG D#38ptD.0 => D#40ptD.0
+  # DEBUG __pD.34666 => _79
+  # DEBUG thisD.34664 => D#37ptD.0
+  # DEBUG D.34665 => D#38ptD.0
+  # .MEM_113 = VDEF <.MEM_112>
+  # USE = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  # CLB = nonlocal null { D.30951 D.31791 D.34676 } (nonlocal, escaped)
+  _ZdlPvD.2766 (_79);
+;;    succ:       24 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 24, loop depth 0, count 0, freq 0
+;;    prev block 23, next block 1, flags: (NEW, REACHABLE)
+;;    pred:       22 [21.6%]  (FALSE_VALUE,EXECUTABLE)
+;;                23 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_90 = PHI <.MEM_112(22), .MEM_113(23)>
+  # DEBUG D#47ptD.0 => &MEM[(struct basic_stringD.2844 *)D#69ptD.0]._M_dataplusD.11519
+  # DEBUG thisD.34669 => D#47ptD.0
+  # DEBUG thisD.34670 => D#47ptD.0
+  # DEBUG thisD.34671 => D#47ptD.0
+  # .MEM_118 = VDEF <.MEM_90>
+  MEM[(struct  &)this_1(D)] ={v} {CLOBBER};
+  resx 1
+;;    succ:      
+
+}
+
+
+
+;; Function void Stats::Clear() (_ZN5Stats5ClearEv, funcdef_no=1667, decl_uid=31726, cgraph_uid=604, symbol_order=605)
+
+
+Pass statistics:
+----------------
+
+void Stats::Clear() (struct StatsD.30964 * const thisD.31826)
+{
+  intD.9 * D.34880;
+  intD.9 * __firstD.34855;
+  size_typeD.31293 __nD.34838;
+  intD.9 * __tmpD.34799;
+  intD.9 * __tmpD.34796;
+  intD.9 * __tmpD.34793;
+  struct vectorD.30974 __tmpD.34788;
+  long unsigned intD.14 __nD.34711;
+  intD.9 * __firstD.34712;
+  intD.9 * __firstD.34707;
+  intD.9 * __firstD.34694;
+  size_tD.2818 __nD.34690;
+  intD.9 __valD.34191;
+  intD.9 _6;
+  sizetype _9;
+  intD.9 * const _14;
+  long intD.12 _15;
+  long intD.12 _16;
+  long intD.12 _17;
+  long intD.12 _18;
+  size_typeD.31293 _19;
+  long intD.12 _21;
+  long intD.12 _22;
+  long intD.12 _23;
+  size_typeD.31293 _24;
+  sizetype _25;
+  sizetype _26;
+  long unsigned intD.14 _30;
+  unsigned long _32;
+  sizetype _33;
+  intD.9 * _36;
+  sizetype _42;
+  intD.9 * _43;
+  intD.9 * _49;
+  long unsigned intD.14 _50;
+  long unsigned intD.14 _53;
+  intD.9 * _54;
+  sizetype _59;
+  unsigned long _64;
+  sizetype _78;
+  long unsigned intD.14 _79;
+  long unsigned intD.14 _86;
+  long unsigned intD.14 _87;
+  long unsigned intD.14 _89;
+  intD.9 * pretmp_90;
+  unsigned long _101;
+  intD.9 * _105;
+  unsigned long _106;
+  sizetype _107;
+  intD.9 * prephitmp_108;
+
+;;   basic block 2, loop depth 0, count 0, freq 2535, maybe hot
+;;    prev block 0, next block 3, flags: (NEW, REACHABLE)
+;;    pred:       ENTRY [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_3 = VDEF <.MEM_1(D)>
+  this_2(D)->_num_samplesD.30966 = 0;
+  # .MEM_4 = VDEF <.MEM_3>
+  this_2(D)->_sample_sumD.30967 = 0.0;
+  # .MEM_5 = VDEF <.MEM_4>
+  this_2(D)->_sample_squared_sumD.30968 = 0.0;
+  # VUSE <.MEM_5>
+  _6 = this_2(D)->_num_binsD.30971;
+  # DEBUG D#147ptD.0 => &this_2(D)->_histD.31719
+  # DEBUG thisD.34187 => D#147ptD.0
+  # DEBUG __firstD.34188 => _6
+  # DEBUG __lastD.34189 => 0
+  # DEBUG thisD.34193 => D#147ptD.0
+  # DEBUG __nD.34192 => _6
+  # DEBUG __valD.34191 => 0
+  # DEBUG __valD.34191 => 0
+  # RANGE ~[2147483648, 18446744071562067967]
+  __n_11 = (size_tD.2818) _6;
+  # DEBUG thisD.34689 => D#147ptD.0
+  # DEBUG __nD.34690 => __n_11
+  # DEBUG __valD.34691 => &__valD.34191
+  # VUSE <.MEM_5>
+  # PT = nonlocal escaped 
+  __first_13 = MEM[(intD.9 * *)this_2(D) + 152B];
+  # DEBUG D#32ptD.0 => D#147ptD.0
+  # VUSE <.MEM_5>
+  # PT = nonlocal escaped 
+  _14 = MEM[(intD.9 * *)this_2(D) + 168B];
+  # DEBUG D#32ptD.0 => D#147ptD.0
+  # DEBUG thisD.34731 => D#32ptD.0
+  # DEBUG thisD.34732 => D#32ptD.0
+  _15 = (long intD.12) _14;
+  _16 = (long intD.12) __first_13;
+  _17 = _15 - _16;
+  # RANGE [-2305843009213693952, 2305843009213693951]
+  _18 = _17 /[ex] 4;
+  # RANGE ~[2305843009213693952, 16140901064495857663]
+  _19 = (size_typeD.31293) _18;
+  if (__n_11 > _19)
+    goto <bb 3>;
+  else
+    goto <bb 13>;
+;;    succ:       3 [29.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                13 [71.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 3, loop depth 0, count 0, freq 735, maybe hot
+;;    prev block 2, next block 4, flags: (NEW, REACHABLE)
+;;    pred:       2 [29.0%]  (TRUE_VALUE,EXECUTABLE)
+  # DEBUG thisD.34735 => D#147ptD.0
+  # DEBUG __nD.34736 => __n_11
+  # DEBUG __valD.34737 => &__valD.34191
+  # DEBUG D#134ptD.0 => &D#147ptD.0->D.31717
+  # DEBUG thisD.34815 => D#134ptD.0
+  # DEBUG D#146ptD.0 => &MEM[(struct _Vector_baseD.30975 *)this_2(D) + 152B]._M_implD.31208
+  # DEBUG thisD.34837 => &__tmpD.34788
+  # DEBUG __nD.34838 => __n_11
+  # DEBUG __valueD.34839 => &__valD.34191
+  # DEBUG __aD.34840 => D#146ptD.0
+  # DEBUG D#133ptD.0 => &__tmpD.34788.D.31717
+  # DEBUG thisD.34843 => D#133ptD.0
+  # DEBUG __nD.34842 => __n_11
+  # DEBUG __aD.34841 => D#146ptD.0
+  # DEBUG D#132ptD.0 => &D#133ptD.0->_M_implD.31208
+  # DEBUG thisD.34845 => D#132ptD.0
+  # DEBUG __aD.34844 => D#146ptD.0
+  # DEBUG thisD.33857 => D#132ptD.0
+  # DEBUG __aD.33858 => D#146ptD.0
+  # DEBUG thisD.33854 => D#132ptD.0
+  # DEBUG D.33855 => D#146ptD.0
+  # DEBUG thisD.34847 => D#133ptD.0
+  # DEBUG __nD.34846 => __n_11
+  # DEBUG D#130ptD.0 => D#133ptD.0
+  # DEBUG __nD.34872 => __n_11
+  # DEBUG thisD.34873 => D#130ptD.0
+  # DEBUG D#129ptD.0 => D#130ptD.0
+  if (__n_11 != 0)
+    goto <bb 4>;
+  else
+    goto <bb 30>;
+;;    succ:       4 [90.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                30 [10.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 4, loop depth 0, count 0, freq 662, maybe hot
+;;    prev block 3, next block 5, flags: (NEW, REACHABLE)
+;;    pred:       3 [90.0%]  (TRUE_VALUE,EXECUTABLE)
+  # DEBUG D#128ptD.0 => &D#129ptD.0->_M_implD.31208
+  # DEBUG D#127ptD.0 => D#128ptD.0
+  # DEBUG __nD.34876 => __n_11
+  # DEBUG __aD.34875 => D#127ptD.0
+  # DEBUG D#126ptD.0 => D#127ptD.0
+  # DEBUG D#124ptD.0 => D#126ptD.0
+  # DEBUG D#125ptD.0 => 0B
+  # DEBUG __nD.34879 => __n_11
+  # DEBUG thisD.34877 => D#124ptD.0
+  # DEBUG D.34878 => D#125ptD.0
+  # DEBUG D#123ptD.0 => D#124ptD.0
+  # DEBUG D#122ptD.0 => D#123ptD.0
+  # DEBUG thisD.33866 => D#122ptD.0
+  if (__n_11 > 4611686018427387903)
+    goto <bb 5>;
+  else
+    goto <bb 6>;
+;;    succ:       5 [0.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                6 [100.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 5, loop depth 0, count 0, freq 0
+;;    prev block 4, next block 6, flags: (NEW, REACHABLE)
+;;    pred:       4 [0.0%]  (TRUE_VALUE,EXECUTABLE)
+  # .MEM_72 = VDEF <.MEM_5>
+  # USE = nonlocal null { D.34883 } (escaped heap)
+  # CLB = nonlocal null { D.34883 } (escaped heap)
+  _ZSt17__throw_bad_allocvD.2850 ();
+;;    succ:      
+
+;;   basic block 6, loop depth 0, count 0, freq 669, maybe hot
+;;   Invalid sum of outgoing probabilities 9.0%
+;;    prev block 5, next block 9, flags: (NEW, REACHABLE)
+;;    pred:       4 [100.0%]  (FALSE_VALUE,EXECUTABLE)
+  # RANGE [4, 18446744073709551612] NONZERO 18446744073709551612
+  _53 = __n_11 * 4;
+  # .MEM_71 = VDEF <.MEM_5>
+  # PT = { D.34883 } (escaped heap)
+  # USE = nonlocal null { D.34883 } (escaped heap)
+  # CLB = nonlocal null { D.34883 } (escaped heap)
+  _54 = _ZnwmD.2764 (_53);
+  # PT = { D.34883 } (escaped heap)
+  _49 = _54 + _53;
+  # DEBUG D#118ptD.0 => &__tmpD.34788
+  # DEBUG D#118ptD.0 => &__tmpD.34788
+  # DEBUG D#119ptD.0 => &__valD.34191
+  # DEBUG __nD.34851 => __n_11
+  # DEBUG D#116ptD.0 => D#118ptD.0
+  # DEBUG thisD.34848 => D#116ptD.0
+  # DEBUG thisD.34849 => D#118ptD.0
+  # DEBUG D#117ptD.0 => D#119ptD.0
+  # DEBUG __valueD.34850 => D#117ptD.0
+  # DEBUG D#115ptD.0 => &D#116ptD.0->D.31717
+  # DEBUG thisD.33777 => D#115ptD.0
+  # DEBUG D#113ptD.0 => D#117ptD.0
+  # DEBUG __firstD.34855 => NULL
+  # DEBUG __nD.34854 => __n_11
+  # DEBUG D#112ptD.0 => D#113ptD.0
+  # DEBUG __xD.34852 => D#112ptD.0
+  # DEBUG D.34853 => D#114ptD.0
+  # DEBUG D#111ptD.0 => D#112ptD.0
+  # DEBUG __firstD.34858 => NULL
+  # DEBUG __nD.34857 => __n_11
+  # DEBUG D#110ptD.0 => D#111ptD.0
+  # DEBUG __xD.34856 => D#110ptD.0
+  # DEBUG __assignableD.34860 => 1
+  # DEBUG D#109ptD.0 => D#110ptD.0
+  # DEBUG __firstD.34863 => NULL
+  # DEBUG __nD.34862 => __n_11
+  # DEBUG D#108ptD.0 => D#109ptD.0
+  # DEBUG __xD.34861 => D#108ptD.0
+  # DEBUG D#107ptD.0 => D#108ptD.0
+  # DEBUG __firstD.34866 => NULL
+  # DEBUG __nD.34865 => __n_11
+  # DEBUG D#106ptD.0 => D#107ptD.0
+  # DEBUG __valueD.34864 => D#106ptD.0
+  # DEBUG __itD.33619 => NULL
+  # DEBUG __itD.33609 => NULL
+  # DEBUG D#105ptD.0 => D#106ptD.0
+  # DEBUG __firstD.34869 => NULL
+  # DEBUG __nD.34868 => __n_11
+  # DEBUG __valueD.34867 => D#105ptD.0
+  # DEBUG __tmpD.34870 => 0
+  # DEBUG __niterD.34871 => __n_11
+  # DEBUG __niterD.34871 => __n_11
+  # DEBUG __firstD.34869 => _54
+  # DEBUG D#118ptD.0 => &__tmpD.34788
+  # DEBUG D#119ptD.0 => &__valD.34191
+  # DEBUG __nD.34851 => __n_11
+  # DEBUG D#116ptD.0 => D#118ptD.0
+  # DEBUG thisD.34848 => D#116ptD.0
+  # DEBUG thisD.34849 => D#118ptD.0
+  # DEBUG D#117ptD.0 => D#119ptD.0
+  # DEBUG __valueD.34850 => D#117ptD.0
+  # DEBUG D#115ptD.0 => &D#116ptD.0->D.31717
+  # DEBUG thisD.33777 => D#115ptD.0
+  # DEBUG D#113ptD.0 => D#117ptD.0
+  # DEBUG __firstD.34855 => NULL
+  # DEBUG __nD.34854 => __n_11
+  # DEBUG D#112ptD.0 => D#113ptD.0
+  # DEBUG __xD.34852 => D#112ptD.0
+  # DEBUG D.34853 => D#114ptD.0
+  # DEBUG D#111ptD.0 => D#112ptD.0
+  # DEBUG __firstD.34858 => NULL
+  # DEBUG __nD.34857 => __n_11
+  # DEBUG D#110ptD.0 => D#111ptD.0
+  # DEBUG __xD.34856 => D#110ptD.0
+  # DEBUG __assignableD.34860 => 1
+  # DEBUG D#109ptD.0 => D#110ptD.0
+  # DEBUG __firstD.34863 => NULL
+  # DEBUG __nD.34862 => __n_11
+  # DEBUG D#108ptD.0 => D#109ptD.0
+  # DEBUG __xD.34861 => D#108ptD.0
+  # DEBUG D#107ptD.0 => D#108ptD.0
+  # DEBUG __firstD.34866 => NULL
+  # DEBUG __nD.34865 => __n_11
+  # DEBUG D#106ptD.0 => D#107ptD.0
+  # DEBUG __valueD.34864 => D#106ptD.0
+  # DEBUG __itD.33619 => NULL
+  # DEBUG __itD.33609 => NULL
+  # DEBUG D#105ptD.0 => D#106ptD.0
+  # DEBUG __nD.34868 => __n_11
+  # DEBUG __valueD.34867 => D#105ptD.0
+  # DEBUG __tmpD.34870 => 0
+  # DEBUG __niterD.34871 => __n_11
+  # DEBUG __firstD.34869 => _54
+  _42 = (sizetype) _6;
+  _9 = _42 * 4;
+  # .MEM_77 = VDEF <.MEM_71>
+  # USE = anything 
+  # CLB = anything 
+  memsetD.1001 (_54, 0, _9);
+;;    succ:       9 [9.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 9, loop depth 0, count 0, freq 669, maybe hot
+;;   Invalid sum of incoming frequencies 60, should be 669
+;;    prev block 6, next block 10, flags: (NEW)
+;;    pred:       6 [9.0%]  (FALLTHRU,EXECUTABLE)
+  _86 = (long unsigned intD.14) _6;
+  _89 = _86 * 4;
+  # PT = { D.34883 } (escaped heap)
+  __first_31 = _54 + _89;
+  # VUSE <.MEM_77>
+  pretmp_90 = MEM[(intD.9 * &)this_2(D) + 152];
+;;    succ:       10 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 10, loop depth 0, count 0, freq 735, maybe hot
+;;    prev block 9, next block 11, flags: (NEW, REACHABLE)
+;;    pred:       9 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                30 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # PT = null { D.34883 } (escaped heap)
+  # __first_74 = PHI <__first_31(9), 0B(30)>
+  # .MEM_76 = PHI <.MEM_77(9), .MEM_5(30)>
+  # PT = nonlocal escaped { D.34883 } (escaped heap)
+  # _36 = PHI <_49(9), _43(30)>
+  # PT = null { D.34883 } (escaped heap)
+  # __first_35 = PHI <_54(9), 0B(30)>
+  # PT = nonlocal escaped 
+  # prephitmp_108 = PHI <pretmp_90(9), __first_13(30)>
+  # DEBUG D#136ptD.0 => &D#147ptD.0->D.31717._M_implD.31208
+  # DEBUG thisD.34790 => &__tmpD.34788.D.31717._M_implD.31208
+  # DEBUG __xD.34789 => D#136ptD.0
+  # DEBUG D#101ptD.0 => &D#136ptD.0->_M_startD.31210
+  # DEBUG D#100ptD.0 => &MEM[(struct _Vector_implD.31185 *)&__tmpD.34788]._M_startD.31210
+  # DEBUG __aD.34792 => D#100ptD.0
+  # DEBUG __bD.34791 => D#101ptD.0
+  # DEBUG __tmpD.34793 => __first_35
+  # DEBUG D#148ptD.0 => MEM[(intD.9 * &)this_2(D) + 152]
+  # .MEM_80 = VDEF <.MEM_76>
+  MEM[(intD.9 * &)this_2(D) + 152] = __first_35;
+  # DEBUG D#99ptD.0 => &D#136ptD.0->_M_finishD.31211
+  # DEBUG D#98ptD.0 => &MEM[(struct _Vector_implD.31185 *)&__tmpD.34788]._M_finishD.31211
+  # DEBUG __aD.34795 => D#98ptD.0
+  # DEBUG __bD.34794 => D#99ptD.0
+  # DEBUG __tmpD.34796 => __first_74
+  # .MEM_82 = VDEF <.MEM_80>
+  MEM[(intD.9 * &)this_2(D) + 160] = __first_74;
+  # DEBUG D#97ptD.0 => &D#136ptD.0->_M_end_of_storageD.31212
+  # DEBUG D#96ptD.0 => &MEM[(struct _Vector_implD.31185 *)&__tmpD.34788]._M_end_of_storageD.31212
+  # DEBUG __aD.34798 => D#96ptD.0
+  # DEBUG __bD.34797 => D#97ptD.0
+  # DEBUG __tmpD.34799 => _36
+  # .MEM_84 = VDEF <.MEM_82>
+  MEM[(intD.9 * &)this_2(D) + 168] = _36;
+  # DEBUG thisD.34800 => &__tmpD.34788
+  # DEBUG D#91ptD.0 => &__tmpD.34788.D.31717
+  # DEBUG thisD.33547 => D#91ptD.0
+  # DEBUG D#94ptD.0 => __tmpD.34788.D.31717._M_implD.31208._M_finishD.31211
+  # DEBUG D#93ptD.0 => __tmpD.34788.D.31717._M_implD.31208._M_startD.31210
+  # DEBUG D#29ptD.0 => D#93ptD.0
+  # DEBUG D#30ptD.0 => D#94ptD.0
+  # DEBUG __firstD.33546 => D#29ptD.0
+  # DEBUG __lastD.33545 => D#30ptD.0
+  # DEBUG D.33544 => D#31ptD.0
+  # DEBUG D#28ptD.0 => D#30ptD.0
+  # DEBUG D#27ptD.0 => D#29ptD.0
+  # DEBUG D#25ptD.0 => D#27ptD.0
+  # DEBUG D#26ptD.0 => D#28ptD.0
+  # DEBUG __firstD.33216 => D#25ptD.0
+  # DEBUG __lastD.33215 => D#26ptD.0
+  # DEBUG D#24ptD.0 => D#26ptD.0
+  # DEBUG D#23ptD.0 => D#25ptD.0
+  # DEBUG D#21ptD.0 => D#23ptD.0
+  # DEBUG D#22ptD.0 => D#24ptD.0
+  # DEBUG D.33205 => D#21ptD.0
+  # DEBUG D.33204 => D#22ptD.0
+  # DEBUG D#92ptD.0 => &__tmpD.34788.D.31717
+  # DEBUG thisD.34801 => D#92ptD.0
+  # DEBUG D#90ptD.0 => D#92ptD.0->_M_implD.31208._M_end_of_storageD.31212
+  # DEBUG D#89ptD.0 => (long intD.12) D#90ptD.0
+  # DEBUG D#88ptD.0 => (long intD.12) D#148ptD.0
+  # DEBUG D#87ptD.0 => D#89ptD.0 - D#88ptD.0
+  # DEBUG D#86ptD.0 => D#87ptD.0 /[ex] 4
+  # DEBUG D#83ptD.0 => D#92ptD.0
+  # DEBUG D#84ptD.0 => (long unsigned intD.14) D#86ptD.0
+  # DEBUG __pD.34804 => D#148ptD.0
+  # DEBUG thisD.34802 => D#83ptD.0
+  # DEBUG __nD.34803 => D#84ptD.0
+  # DEBUG D#82ptD.0 => D#84ptD.0
+  # DEBUG D#81ptD.0 => D#83ptD.0
+  if (prephitmp_108 != 0B)
+    goto <bb 11>;
+  else
+    goto <bb 12>;
+;;    succ:       11 [78.3%]  (TRUE_VALUE,EXECUTABLE)
+;;                12 [21.6%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 11, loop depth 0, count 0, freq 576, maybe hot
+;;    prev block 10, next block 12, flags: (NEW, REACHABLE)
+;;    pred:       10 [78.3%]  (TRUE_VALUE,EXECUTABLE)
+  # DEBUG D#80ptD.0 => &D#81ptD.0->_M_implD.31208
+  # DEBUG D#78ptD.0 => D#80ptD.0
+  # DEBUG D#79ptD.0 => D#82ptD.0
+  # DEBUG __pD.34808 => D#148ptD.0
+  # DEBUG __aD.34806 => D#78ptD.0
+  # DEBUG __nD.34807 => D#79ptD.0
+  # DEBUG D#77ptD.0 => D#79ptD.0
+  # DEBUG D#76ptD.0 => D#78ptD.0
+  # DEBUG D#74ptD.0 => D#76ptD.0
+  # DEBUG D#75ptD.0 => D#77ptD.0
+  # DEBUG __pD.34811 => D#148ptD.0
+  # DEBUG thisD.34809 => D#74ptD.0
+  # DEBUG D.34810 => D#75ptD.0
+  # .MEM_85 = VDEF <.MEM_84>
+  # USE = nonlocal null { D.34883 } (escaped heap)
+  # CLB = nonlocal null { D.34883 } (escaped heap)
+  _ZdlPvD.2766 (prephitmp_108);
+;;    succ:       12 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 12, loop depth 0, count 0, freq 735, maybe hot
+;;    prev block 11, next block 13, flags: (NEW, REACHABLE)
+;;    pred:       10 [21.6%]  (FALSE_VALUE,EXECUTABLE)
+;;                11 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_58 = PHI <.MEM_84(10), .MEM_85(11)>
+  # DEBUG D#85ptD.0 => &D#92ptD.0->_M_implD.31208
+  # DEBUG thisD.34812 => D#85ptD.0
+  # DEBUG thisD.34813 => D#85ptD.0
+  # DEBUG thisD.34814 => D#85ptD.0
+  # .MEM_91 = VDEF <.MEM_58>
+  __tmpD.34788 ={v} {CLOBBER};
+  goto <bb 29>;
+;;    succ:       29 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 13, loop depth 0, count 0, freq 1800, maybe hot
+;;    prev block 12, next block 14, flags: (NEW, REACHABLE)
+;;    pred:       2 [71.0%]  (FALSE_VALUE,EXECUTABLE)
+  # DEBUG D#7ptD.0 => D#147ptD.0
+  # VUSE <.MEM_5>
+  # PT = nonlocal escaped 
+  __first_20 = MEM[(intD.9 * *)this_2(D) + 160B];
+  # DEBUG D#7ptD.0 => D#147ptD.0
+  # DEBUG thisD.34729 => D#7ptD.0
+  # DEBUG thisD.34730 => D#7ptD.0
+  _21 = (long intD.12) __first_20;
+  _22 = _21 - _16;
+  # RANGE [-2305843009213693952, 2305843009213693951]
+  _23 = _22 /[ex] 4;
+  # RANGE ~[2305843009213693952, 16140901064495857663]
+  _24 = (size_typeD.31293) _23;
+  if (__n_11 > _24)
+    goto <bb 15>;
+  else
+    goto <bb 14>;
+;;    succ:       15 [50.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                14 [50.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 14, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 13, next block 15, flags: (NEW, REACHABLE)
+;;    pred:       13 [50.0%]  (FALSE_VALUE,EXECUTABLE)
+  # DEBUG __niterD.34699 => __n_11
+  # DEBUG __firstD.34697 => __first_13
+  if (__n_11 == 0)
+    goto <bb 28>;
+  else
+    goto <bb 24>;
+;;    succ:       28 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                24 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 15, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 14, next block 16, flags: (NEW, REACHABLE)
+;;    pred:       13 [50.0%]  (TRUE_VALUE,EXECUTABLE)
+  # DEBUG __firstD.34707 => __first_13
+  if (__first_13 == __first_20)
+    goto <bb 16>;
+  else
+    goto <bb 17>;
+;;    succ:       16 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                17 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 16, loop depth 0, count 0, freq 900, maybe hot
+;;   Invalid sum of outgoing probabilities 9.9%
+;;    prev block 15, next block 17, flags: (NEW, REACHABLE)
+;;    pred:       15 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                19 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_93 = PHI <.MEM_5(15), .MEM_88(19)>
+  # DEBUG D#135ptD.0 => &D#147ptD.0->D.31717
+  # DEBUG thisD.34026 => D#135ptD.0
+  # DEBUG D#7ptD.0 => D#147ptD.0
+  # DEBUG D#7ptD.0 => D#147ptD.0
+  # DEBUG thisD.34024 => D#7ptD.0
+  # DEBUG thisD.34023 => D#7ptD.0
+  # RANGE [1, 18446744073709551615]
+  __n_28 = __n_11 - _24;
+  # DEBUG D#113ptD.0 => &__valD.34191
+  # DEBUG __firstD.34712 => __first_20
+  # DEBUG __nD.34711 => __n_28
+  # DEBUG D#112ptD.0 => D#113ptD.0
+  # DEBUG __xD.34709 => D#112ptD.0
+  # DEBUG D.34710 => D#114ptD.0
+  # DEBUG D#111ptD.0 => D#112ptD.0
+  # DEBUG __firstD.34715 => __first_20
+  # DEBUG __nD.34714 => __n_28
+  # DEBUG D#110ptD.0 => D#111ptD.0
+  # DEBUG __xD.34713 => D#110ptD.0
+  # DEBUG __assignableD.34717 => 1
+  # DEBUG D#109ptD.0 => D#110ptD.0
+  # DEBUG __firstD.34720 => __first_20
+  # DEBUG __nD.34719 => __n_28
+  # DEBUG D#108ptD.0 => D#109ptD.0
+  # DEBUG __xD.34718 => D#108ptD.0
+  # DEBUG D#107ptD.0 => D#108ptD.0
+  # DEBUG __firstD.34723 => __first_20
+  # DEBUG __nD.34722 => __n_28
+  # DEBUG D#106ptD.0 => D#107ptD.0
+  # DEBUG __valueD.34721 => D#106ptD.0
+  # DEBUG __itD.33619 => __first_20
+  # DEBUG __itD.33609 => __first_20
+  # DEBUG D#105ptD.0 => D#106ptD.0
+  # DEBUG __firstD.34726 => __first_20
+  # DEBUG __nD.34725 => __n_28
+  # DEBUG __valueD.34724 => D#105ptD.0
+  # DEBUG __tmpD.34727 => 0
+  # DEBUG __niterD.34728 => __n_28
+  # DEBUG __niterD.34728 => __n_28
+  # DEBUG __firstD.34726 => __first_20
+  _26 = __n_28 * 4;
+  # .MEM_70 = VDEF <.MEM_93>
+  # USE = anything 
+  # CLB = anything 
+  memsetD.1001 (__first_20, 0, _26);
+  goto <bb 23>;
+;;    succ:       23 [9.9%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 17, loop depth 0, count 0, freq 819, maybe hot
+;;   Invalid sum of outgoing probabilities 9.0%
+;;    prev block 16, next block 19, flags: (NEW, REACHABLE)
+;;    pred:       15 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+  _101 = (unsigned long) __first_20;
+  _105 = __first_13 + 4;
+  _106 = (unsigned long) _105;
+  _64 = _101 - _106;
+  _32 = _64 /[ex] 4;
+  _33 = _32 & 4611686018427387903;
+  _59 = _33 + 1;
+  _107 = _59 * 4;
+  # .MEM_75 = VDEF <.MEM_5>
+  # USE = anything 
+  # CLB = anything 
+  memsetD.1001 (__first_13, 0, _107);
+;;    succ:       19 [9.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 19, loop depth 0, count 0, freq 819, maybe hot
+;;   Invalid sum of incoming frequencies 74, should be 819
+;;    prev block 17, next block 23, flags: (NEW)
+;;    pred:       17 [9.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_88 = PHI <.MEM_75(17)>
+  goto <bb 16>;
+;;    succ:       16 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 23, loop depth 0, count 0, freq 900, maybe hot
+;;   Invalid sum of incoming frequencies 89, should be 900
+;;    prev block 19, next block 24, flags: (NEW, REACHABLE)
+;;    pred:       16 [9.9%]  (FALLTHRU,EXECUTABLE)
+  _79 = __n_28 * 4;
+  # PT = nonlocal escaped 
+  __first_57 = __first_20 + _79;
+  # .MEM_65 = VDEF <.MEM_70>
+  MEM[(struct vectorD.30974 *)this_2(D) + 152B].D.31717._M_implD.31208._M_finishD.31211 = __first_57;
+  goto <bb 29>;
+;;    succ:       29 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 24, loop depth 0, count 0, freq 819, maybe hot
+;;   Invalid sum of outgoing probabilities 9.0%
+;;    prev block 23, next block 26, flags: (NEW, REACHABLE)
+;;    pred:       14 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+  _78 = (sizetype) _6;
+  _25 = _78 * 4;
+  # .MEM_69 = VDEF <.MEM_5>
+  # USE = anything 
+  # CLB = anything 
+  memsetD.1001 (__first_13, 0, _25);
+;;    succ:       26 [9.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 26, loop depth 0, count 0, freq 819, maybe hot
+;;   Invalid sum of incoming frequencies 74, should be 819
+;;    prev block 24, next block 28, flags: (NEW)
+;;    pred:       24 [9.0%]  (FALLTHRU,EXECUTABLE)
+  _87 = (long unsigned intD.14) _6;
+  _50 = _87 * 4;
+  # PT = nonlocal escaped 
+  __first_40 = __first_13 + _50;
+;;    succ:       28 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 28, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 26, next block 29, flags: (NEW, REACHABLE)
+;;    pred:       26 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                14 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+  # PT = nonlocal escaped 
+  # __first_68 = PHI <__first_40(26), __first_13(14)>
+  # .MEM_81 = PHI <.MEM_69(26), .MEM_5(14)>
+  # DEBUG D#36ptD.0 => D#147ptD.0
+  # DEBUG __posD.34701 => __first_68
+  # DEBUG D#35ptD.0 => D#36ptD.0
+  # DEBUG thisD.34700 => D#35ptD.0
+  # DEBUG D#33ptD.0 => &D#35ptD.0->D.31717
+  # DEBUG thisD.33247 => D#33ptD.0
+  # DEBUG D#34ptD.0 => D#35ptD.0->D.31717._M_implD.31208._M_finishD.31211
+  # DEBUG D#29ptD.0 => __first_68
+  # DEBUG D#30ptD.0 => D#34ptD.0
+  # DEBUG __firstD.33239 => D#29ptD.0
+  # DEBUG __lastD.33238 => D#30ptD.0
+  # DEBUG D.33237 => D#31ptD.0
+  # DEBUG D#28ptD.0 => D#30ptD.0
+  # DEBUG D#27ptD.0 => D#29ptD.0
+  # DEBUG D#25ptD.0 => D#27ptD.0
+  # DEBUG D#26ptD.0 => D#28ptD.0
+  # DEBUG __firstD.33216 => D#25ptD.0
+  # DEBUG __lastD.33215 => D#26ptD.0
+  # DEBUG D#24ptD.0 => D#26ptD.0
+  # DEBUG D#23ptD.0 => D#25ptD.0
+  # DEBUG D#21ptD.0 => D#23ptD.0
+  # DEBUG D#22ptD.0 => D#24ptD.0
+  # DEBUG D.33205 => D#21ptD.0
+  # DEBUG D.33204 => D#22ptD.0
+  # .MEM_67 = VDEF <.MEM_81>
+  MEM[(intD.9 * *)this_2(D) + 160B] = __first_68;
+;;    succ:       29 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 29, loop depth 0, count 0, freq 2535, maybe hot
+;;    prev block 28, next block 30, flags: (NEW, REACHABLE)
+;;    pred:       23 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                12 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                28 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_62 = PHI <.MEM_65(23), .MEM_91(12), .MEM_67(28)>
+  # .MEM_10 = VDEF <.MEM_62>
+  this_2(D)->_minD.30969 =  Nan;
+  # .MEM_12 = VDEF <.MEM_10>
+  this_2(D)->_maxD.30970 =  Nan;
+  # VUSE <.MEM_12>
+  return;
+;;    succ:       EXIT [100.0%] 
+
+;;   basic block 30, loop depth 0, count 0, freq 74, maybe hot
+;;    prev block 29, next block 1, flags: (NEW, REACHABLE)
+;;    pred:       3 [10.0%]  (FALSE_VALUE,EXECUTABLE)
+  # RANGE [0, 18446744073709551615] NONZERO 18446744073709551612
+  _30 = __n_11 * 4;
+  # PT = nonlocal escaped 
+  # ALIGN = 4, MISALIGN = 0
+  _43 = (intD.9 *) _30;
+  # DEBUG D#118ptD.0 => &__tmpD.34788
+  # DEBUG D#118ptD.0 => &__tmpD.34788
+  # DEBUG D#119ptD.0 => &__valD.34191
+  # DEBUG __nD.34851 => __n_11
+  # DEBUG D#116ptD.0 => D#118ptD.0
+  # DEBUG thisD.34848 => D#116ptD.0
+  # DEBUG thisD.34849 => D#118ptD.0
+  # DEBUG D#117ptD.0 => D#119ptD.0
+  # DEBUG __valueD.34850 => D#117ptD.0
+  # DEBUG D#115ptD.0 => &D#116ptD.0->D.31717
+  # DEBUG thisD.33777 => D#115ptD.0
+  # DEBUG D#113ptD.0 => D#117ptD.0
+  # DEBUG __firstD.34855 => NULL
+  # DEBUG __nD.34854 => __n_11
+  # DEBUG D#112ptD.0 => D#113ptD.0
+  # DEBUG __xD.34852 => D#112ptD.0
+  # DEBUG D.34853 => D#114ptD.0
+  # DEBUG D#111ptD.0 => D#112ptD.0
+  # DEBUG __firstD.34858 => NULL
+  # DEBUG __nD.34857 => __n_11
+  # DEBUG D#110ptD.0 => D#111ptD.0
+  # DEBUG __xD.34856 => D#110ptD.0
+  # DEBUG __assignableD.34860 => 1
+  # DEBUG D#109ptD.0 => D#110ptD.0
+  # DEBUG __firstD.34863 => NULL
+  # DEBUG __nD.34862 => __n_11
+  # DEBUG D#108ptD.0 => D#109ptD.0
+  # DEBUG __xD.34861 => D#108ptD.0
+  # DEBUG D#107ptD.0 => D#108ptD.0
+  # DEBUG __firstD.34866 => NULL
+  # DEBUG __nD.34865 => __n_11
+  # DEBUG D#106ptD.0 => D#107ptD.0
+  # DEBUG __valueD.34864 => D#106ptD.0
+  # DEBUG __itD.33619 => NULL
+  # DEBUG __itD.33609 => NULL
+  # DEBUG D#105ptD.0 => D#106ptD.0
+  # DEBUG __firstD.34869 => NULL
+  # DEBUG __nD.34868 => __n_11
+  # DEBUG __valueD.34867 => D#105ptD.0
+  # DEBUG __tmpD.34870 => 0
+  # DEBUG __niterD.34871 => __n_11
+  # DEBUG __niterD.34871 => __n_11
+  # DEBUG __firstD.34869 => 0B
+  goto <bb 10>;
+;;    succ:       10 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+}
+
+
+Creating dr for this_2(D)->_num_samples
+analyze_innermost: success.
+	base_address: this_2(D)
+	offset from base address: 0
+	constant offset from base address: 96
+	step: 0
+	aligned to: 256
+	base_object: *this_2(D)
+	Access function 0: 768
+Creating dr for this_2(D)->_sample_sum
+analyze_innermost: success.
+	base_address: this_2(D)
+	offset from base address: 0
+	constant offset from base address: 104
+	step: 0
+	aligned to: 256
+	base_object: *this_2(D)
+	Access function 0: 832
+Creating dr for this_2(D)->_sample_squared_sum
+analyze_innermost: success.
+	base_address: this_2(D)
+	offset from base address: 0
+	constant offset from base address: 112
+	step: 0
+	aligned to: 256
+	base_object: *this_2(D)
+	Access function 0: 896
+Creating dr for this_2(D)->_num_bins
+analyze_innermost: success.
+	base_address: this_2(D)
+	offset from base address: 0
+	constant offset from base address: 136
+	step: 0
+	aligned to: 256
+	base_object: *this_2(D)
+	Access function 0: 1088
+Creating dr for MEM[(int * *)this_2(D) + 152B]
+analyze_innermost: success.
+	base_address: this_2(D)
+	offset from base address: 0
+	constant offset from base address: 152
+	step: 0
+	aligned to: 256
+	base_object: MEM[(int * *)this_2(D) + 152B]
+Creating dr for MEM[(int * *)this_2(D) + 168B]
+analyze_innermost: success.
+	base_address: this_2(D)
+	offset from base address: 0
+	constant offset from base address: 168
+	step: 0
+	aligned to: 256
+	base_object: MEM[(int * *)this_2(D) + 168B]
+Creating dr for MEM[(int * &)this_2(D) + 152]
+analyze_innermost: success.
+	base_address: this_2(D)
+	offset from base address: 0
+	constant offset from base address: 152
+	step: 0
+	aligned to: 256
+	base_object: MEM[(int * &)this_2(D) + 152]
+Creating dr for MEM[(int * &)this_2(D) + 152]
+analyze_innermost: success.
+	base_address: this_2(D)
+	offset from base address: 0
+	constant offset from base address: 152
+	step: 0
+	aligned to: 256
+	base_object: MEM[(int * &)this_2(D) + 152]
+Creating dr for MEM[(int * &)this_2(D) + 160]
+analyze_innermost: success.
+	base_address: this_2(D)
+	offset from base address: 0
+	constant offset from base address: 160
+	step: 0
+	aligned to: 256
+	base_object: MEM[(int * &)this_2(D) + 160]
+Creating dr for MEM[(int * &)this_2(D) + 168]
+analyze_innermost: success.
+	base_address: this_2(D)
+	offset from base address: 0
+	constant offset from base address: 168
+	step: 0
+	aligned to: 256
+	base_object: MEM[(int * &)this_2(D) + 168]
+Creating dr for MEM[(int * *)this_2(D) + 160B]
+analyze_innermost: success.
+	base_address: this_2(D)
+	offset from base address: 0
+	constant offset from base address: 160
+	step: 0
+	aligned to: 256
+	base_object: MEM[(int * *)this_2(D) + 160B]
+Creating dr for MEM[(struct vector *)this_2(D) + 152B].D.31717._M_impl._M_finish
+analyze_innermost: success.
+	base_address: this_2(D)
+	offset from base address: 0
+	constant offset from base address: 160
+	step: 0
+	aligned to: 256
+	base_object: MEM[(struct vector *)this_2(D) + 152B]
+	Access function 0: 64
+	Access function 1: 0
+	Access function 2: 0
+Creating dr for MEM[(int * *)this_2(D) + 160B]
+analyze_innermost: success.
+	base_address: this_2(D)
+	offset from base address: 0
+	constant offset from base address: 160
+	step: 0
+	aligned to: 256
+	base_object: MEM[(int * *)this_2(D) + 160B]
+Creating dr for this_2(D)->_min
+analyze_innermost: success.
+	base_address: this_2(D)
+	offset from base address: 0
+	constant offset from base address: 120
+	step: 0
+	aligned to: 256
+	base_object: *this_2(D)
+	Access function 0: 960
+Creating dr for this_2(D)->_max
+analyze_innermost: success.
+	base_address: this_2(D)
+	offset from base address: 0
+	constant offset from base address: 128
+	step: 0
+	aligned to: 256
+	base_object: *this_2(D)
+	Access function 0: 1024
+
+Before limit_scops SCoP statistics (BBS:1, LOOPS:0, CONDITIONS:0, STMTS:4)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP statistics (BBS:1, LOOPS:0, CONDITIONS:0, STMTS:45)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP statistics (BBS:1, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP statistics (BBS:1, LOOPS:0, CONDITIONS:0, STMTS:3)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP statistics (BBS:1, LOOPS:0, CONDITIONS:0, STMTS:3)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP statistics (BBS:1, LOOPS:0, CONDITIONS:0, STMTS:25)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP statistics (BBS:1, LOOPS:0, CONDITIONS:0, STMTS:3)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+number of SCoPs: 0
+
+Global statistics (BBS:25, LOOPS:0, CONDITIONS:7, STMTS:389)
+
+Global profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+loop_0 (header = 0, latch = 1, niter = )
+{
+  bb_2 (preds = {bb_0 }, succs = {bb_3 bb_13 })
+  {
+    <bb 2>:
+    # .MEM_3 = VDEF <.MEM_1(D)>
+    this_2(D)->_num_samples = 0;
+    # .MEM_4 = VDEF <.MEM_3>
+    this_2(D)->_sample_sum = 0.0;
+    # .MEM_5 = VDEF <.MEM_4>
+    this_2(D)->_sample_squared_sum = 0.0;
+    # VUSE <.MEM_5>
+    _6 = this_2(D)->_num_bins;
+    # DEBUG D#147 => &this_2(D)->_hist
+    # DEBUG this => D#147
+    # DEBUG __first => _6
+    # DEBUG __last => 0
+    # DEBUG this => D#147
+    # DEBUG __n => _6
+    # DEBUG __val => 0
+    # DEBUG __val => 0
+    __n_11 = (size_t) _6;
+    # DEBUG this => D#147
+    # DEBUG __n => __n_11
+    # DEBUG __val => &__val
+    # VUSE <.MEM_5>
+    __first_13 = MEM[(int * *)this_2(D) + 152B];
+    # DEBUG D#32 => D#147
+    # VUSE <.MEM_5>
+    _14 = MEM[(int * *)this_2(D) + 168B];
+    # DEBUG D#32 => D#147
+    # DEBUG this => D#32
+    # DEBUG this => D#32
+    _15 = (long int) _14;
+    _16 = (long int) __first_13;
+    _17 = _15 - _16;
+    _18 = _17 /[ex] 4;
+    _19 = (size_type) _18;
+    if (__n_11 > _19)
+      goto <bb 3>;
+    else
+      goto <bb 13>;
+
+  }
+  bb_3 (preds = {bb_2 }, succs = {bb_4 bb_30 })
+  {
+    <bb 3>:
+    # DEBUG this => D#147
+    # DEBUG __n => __n_11
+    # DEBUG __val => &__val
+    # DEBUG D#134 => &D#147->D.31717
+    # DEBUG this => D#134
+    # DEBUG D#146 => &MEM[(struct _Vector_base *)this_2(D) + 152B]._M_impl
+    # DEBUG this => &__tmp
+    # DEBUG __n => __n_11
+    # DEBUG __value => &__val
+    # DEBUG __a => D#146
+    # DEBUG D#133 => &__tmp.D.31717
+    # DEBUG this => D#133
+    # DEBUG __n => __n_11
+    # DEBUG __a => D#146
+    # DEBUG D#132 => &D#133->_M_impl
+    # DEBUG this => D#132
+    # DEBUG __a => D#146
+    # DEBUG this => D#132
+    # DEBUG __a => D#146
+    # DEBUG this => D#132
+    # DEBUG D.33855 => D#146
+    # DEBUG this => D#133
+    # DEBUG __n => __n_11
+    # DEBUG D#130 => D#133
+    # DEBUG __n => __n_11
+    # DEBUG this => D#130
+    # DEBUG D#129 => D#130
+    if (__n_11 != 0)
+      goto <bb 4>;
+    else
+      goto <bb 30>;
+
+  }
+  bb_4 (preds = {bb_3 }, succs = {bb_5 bb_6 })
+  {
+    <bb 4>:
+    # DEBUG D#128 => &D#129->_M_impl
+    # DEBUG D#127 => D#128
+    # DEBUG __n => __n_11
+    # DEBUG __a => D#127
+    # DEBUG D#126 => D#127
+    # DEBUG D#124 => D#126
+    # DEBUG D#125 => 0B
+    # DEBUG __n => __n_11
+    # DEBUG this => D#124
+    # DEBUG D.34878 => D#125
+    # DEBUG D#123 => D#124
+    # DEBUG D#122 => D#123
+    # DEBUG this => D#122
+    if (__n_11 > 4611686018427387903)
+      goto <bb 5>;
+    else
+      goto <bb 6>;
+
+  }
+  bb_5 (preds = {bb_4 }, succs = {})
+  {
+    <bb 5>:
+    # .MEM_72 = VDEF <.MEM_5>
+    std::__throw_bad_alloc ();
+
+  }
+  bb_6 (preds = {bb_4 }, succs = {bb_9 })
+  {
+    <bb 6>:
+    _53 = __n_11 * 4;
+    # .MEM_71 = VDEF <.MEM_5>
+    _54 = operator new (_53);
+    _49 = _54 + _53;
+    # DEBUG D#118 => &__tmp
+    # DEBUG D#118 => &__tmp
+    # DEBUG D#119 => &__val
+    # DEBUG __n => __n_11
+    # DEBUG D#116 => D#118
+    # DEBUG this => D#116
+    # DEBUG this => D#118
+    # DEBUG D#117 => D#119
+    # DEBUG __value => D#117
+    # DEBUG D#115 => &D#116->D.31717
+    # DEBUG this => D#115
+    # DEBUG D#113 => D#117
+    # DEBUG __first => NULL
+    # DEBUG __n => __n_11
+    # DEBUG D#112 => D#113
+    # DEBUG __x => D#112
+    # DEBUG D.34853 => D#114
+    # DEBUG D#111 => D#112
+    # DEBUG __first => NULL
+    # DEBUG __n => __n_11
+    # DEBUG D#110 => D#111
+    # DEBUG __x => D#110
+    # DEBUG __assignable => 1
+    # DEBUG D#109 => D#110
+    # DEBUG __first => NULL
+    # DEBUG __n => __n_11
+    # DEBUG D#108 => D#109
+    # DEBUG __x => D#108
+    # DEBUG D#107 => D#108
+    # DEBUG __first => NULL
+    # DEBUG __n => __n_11
+    # DEBUG D#106 => D#107
+    # DEBUG __value => D#106
+    # DEBUG __it => NULL
+    # DEBUG __it => NULL
+    # DEBUG D#105 => D#106
+    # DEBUG __first => NULL
+    # DEBUG __n => __n_11
+    # DEBUG __value => D#105
+    # DEBUG __tmp => 0
+    # DEBUG __niter => __n_11
+    # DEBUG __niter => __n_11
+    # DEBUG __first => _54
+    # DEBUG D#118 => &__tmp
+    # DEBUG D#119 => &__val
+    # DEBUG __n => __n_11
+    # DEBUG D#116 => D#118
+    # DEBUG this => D#116
+    # DEBUG this => D#118
+    # DEBUG D#117 => D#119
+    # DEBUG __value => D#117
+    # DEBUG D#115 => &D#116->D.31717
+    # DEBUG this => D#115
+    # DEBUG D#113 => D#117
+    # DEBUG __first => NULL
+    # DEBUG __n => __n_11
+    # DEBUG D#112 => D#113
+    # DEBUG __x => D#112
+    # DEBUG D.34853 => D#114
+    # DEBUG D#111 => D#112
+    # DEBUG __first => NULL
+    # DEBUG __n => __n_11
+    # DEBUG D#110 => D#111
+    # DEBUG __x => D#110
+    # DEBUG __assignable => 1
+    # DEBUG D#109 => D#110
+    # DEBUG __first => NULL
+    # DEBUG __n => __n_11
+    # DEBUG D#108 => D#109
+    # DEBUG __x => D#108
+    # DEBUG D#107 => D#108
+    # DEBUG __first => NULL
+    # DEBUG __n => __n_11
+    # DEBUG D#106 => D#107
+    # DEBUG __value => D#106
+    # DEBUG __it => NULL
+    # DEBUG __it => NULL
+    # DEBUG D#105 => D#106
+    # DEBUG __n => __n_11
+    # DEBUG __value => D#105
+    # DEBUG __tmp => 0
+    # DEBUG __niter => __n_11
+    # DEBUG __first => _54
+    _42 = (sizetype) _6;
+    _9 = _42 * 4;
+    # .MEM_77 = VDEF <.MEM_71>
+    __builtin_memset (_54, 0, _9);
+
+  }
+  bb_9 (preds = {bb_6 }, succs = {bb_10 })
+  {
+    <bb 9>:
+    _86 = (long unsigned int) _6;
+    _89 = _86 * 4;
+    __first_31 = _54 + _89;
+    # VUSE <.MEM_77>
+    pretmp_90 = MEM[(int * &)this_2(D) + 152];
+
+  }
+  bb_10 (preds = {bb_9 bb_30 }, succs = {bb_11 bb_12 })
+  {
+    <bb 10>:
+    # __first_74 = PHI <__first_31(9), 0B(30)>
+    # .MEM_76 = PHI <.MEM_77(9), .MEM_5(30)>
+    # _36 = PHI <_49(9), _43(30)>
+    # __first_35 = PHI <_54(9), 0B(30)>
+    # prephitmp_108 = PHI <pretmp_90(9), __first_13(30)>
+    # DEBUG D#136 => &D#147->D.31717._M_impl
+    # DEBUG this => &__tmp.D.31717._M_impl
+    # DEBUG __x => D#136
+    # DEBUG D#101 => &D#136->_M_start
+    # DEBUG D#100 => &MEM[(struct _Vector_impl *)&__tmp]._M_start
+    # DEBUG __a => D#100
+    # DEBUG __b => D#101
+    # DEBUG __tmp => __first_35
+    # DEBUG D#148 => MEM[(int * &)this_2(D) + 152]
+    # .MEM_80 = VDEF <.MEM_76>
+    MEM[(int * &)this_2(D) + 152] = __first_35;
+    # DEBUG D#99 => &D#136->_M_finish
+    # DEBUG D#98 => &MEM[(struct _Vector_impl *)&__tmp]._M_finish
+    # DEBUG __a => D#98
+    # DEBUG __b => D#99
+    # DEBUG __tmp => __first_74
+    # .MEM_82 = VDEF <.MEM_80>
+    MEM[(int * &)this_2(D) + 160] = __first_74;
+    # DEBUG D#97 => &D#136->_M_end_of_storage
+    # DEBUG D#96 => &MEM[(struct _Vector_impl *)&__tmp]._M_end_of_storage
+    # DEBUG __a => D#96
+    # DEBUG __b => D#97
+    # DEBUG __tmp => _36
+    # .MEM_84 = VDEF <.MEM_82>
+    MEM[(int * &)this_2(D) + 168] = _36;
+    # DEBUG this => &__tmp
+    # DEBUG D#91 => &__tmp.D.31717
+    # DEBUG this => D#91
+    # DEBUG D#94 => __tmp.D.31717._M_impl._M_finish
+    # DEBUG D#93 => __tmp.D.31717._M_impl._M_start
+    # DEBUG D#29 => D#93
+    # DEBUG D#30 => D#94
+    # DEBUG __first => D#29
+    # DEBUG __last => D#30
+    # DEBUG D.33544 => D#31
+    # DEBUG D#28 => D#30
+    # DEBUG D#27 => D#29
+    # DEBUG D#25 => D#27
+    # DEBUG D#26 => D#28
+    # DEBUG __first => D#25
+    # DEBUG __last => D#26
+    # DEBUG D#24 => D#26
+    # DEBUG D#23 => D#25
+    # DEBUG D#21 => D#23
+    # DEBUG D#22 => D#24
+    # DEBUG D.33205 => D#21
+    # DEBUG D.33204 => D#22
+    # DEBUG D#92 => &__tmp.D.31717
+    # DEBUG this => D#92
+    # DEBUG D#90 => D#92->_M_impl._M_end_of_storage
+    # DEBUG D#89 => (long int) D#90
+    # DEBUG D#88 => (long int) D#148
+    # DEBUG D#87 => D#89 - D#88
+    # DEBUG D#86 => D#87 /[ex] 4
+    # DEBUG D#83 => D#92
+    # DEBUG D#84 => (long unsigned int) D#86
+    # DEBUG __p => D#148
+    # DEBUG this => D#83
+    # DEBUG __n => D#84
+    # DEBUG D#82 => D#84
+    # DEBUG D#81 => D#83
+    if (prephitmp_108 != 0B)
+      goto <bb 11>;
+    else
+      goto <bb 12>;
+
+  }
+  bb_11 (preds = {bb_10 }, succs = {bb_12 })
+  {
+    <bb 11>:
+    # DEBUG D#80 => &D#81->_M_impl
+    # DEBUG D#78 => D#80
+    # DEBUG D#79 => D#82
+    # DEBUG __p => D#148
+    # DEBUG __a => D#78
+    # DEBUG __n => D#79
+    # DEBUG D#77 => D#79
+    # DEBUG D#76 => D#78
+    # DEBUG D#74 => D#76
+    # DEBUG D#75 => D#77
+    # DEBUG __p => D#148
+    # DEBUG this => D#74
+    # DEBUG D.34810 => D#75
+    # .MEM_85 = VDEF <.MEM_84>
+    operator delete (prephitmp_108);
+
+  }
+  bb_12 (preds = {bb_10 bb_11 }, succs = {bb_29 })
+  {
+    <bb 12>:
+    # .MEM_58 = PHI <.MEM_84(10), .MEM_85(11)>
+    # DEBUG D#85 => &D#92->_M_impl
+    # DEBUG this => D#85
+    # DEBUG this => D#85
+    # DEBUG this => D#85
+    # .MEM_91 = VDEF <.MEM_58>
+    __tmp ={v} {CLOBBER};
+    goto <bb 29>;
+
+  }
+  bb_13 (preds = {bb_2 }, succs = {bb_15 bb_14 })
+  {
+    <bb 13>:
+    # DEBUG D#7 => D#147
+    # VUSE <.MEM_5>
+    __first_20 = MEM[(int * *)this_2(D) + 160B];
+    # DEBUG D#7 => D#147
+    # DEBUG this => D#7
+    # DEBUG this => D#7
+    _21 = (long int) __first_20;
+    _22 = _21 - _16;
+    _23 = _22 /[ex] 4;
+    _24 = (size_type) _23;
+    if (__n_11 > _24)
+      goto <bb 15>;
+    else
+      goto <bb 14>;
+
+  }
+  bb_14 (preds = {bb_13 }, succs = {bb_28 bb_24 })
+  {
+    <bb 14>:
+    # DEBUG __niter => __n_11
+    # DEBUG __first => __first_13
+    if (__n_11 == 0)
+      goto <bb 28>;
+    else
+      goto <bb 24>;
+
+  }
+  bb_15 (preds = {bb_13 }, succs = {bb_16 bb_17 })
+  {
+    <bb 15>:
+    # DEBUG __first => __first_13
+    if (__first_13 == __first_20)
+      goto <bb 16>;
+    else
+      goto <bb 17>;
+
+  }
+  bb_16 (preds = {bb_15 bb_19 }, succs = {bb_23 })
+  {
+    <bb 16>:
+    # .MEM_93 = PHI <.MEM_5(15), .MEM_88(19)>
+    # DEBUG D#135 => &D#147->D.31717
+    # DEBUG this => D#135
+    # DEBUG D#7 => D#147
+    # DEBUG D#7 => D#147
+    # DEBUG this => D#7
+    # DEBUG this => D#7
+    __n_28 = __n_11 - _24;
+    # DEBUG D#113 => &__val
+    # DEBUG __first => __first_20
+    # DEBUG __n => __n_28
+    # DEBUG D#112 => D#113
+    # DEBUG __x => D#112
+    # DEBUG D.34710 => D#114
+    # DEBUG D#111 => D#112
+    # DEBUG __first => __first_20
+    # DEBUG __n => __n_28
+    # DEBUG D#110 => D#111
+    # DEBUG __x => D#110
+    # DEBUG __assignable => 1
+    # DEBUG D#109 => D#110
+    # DEBUG __first => __first_20
+    # DEBUG __n => __n_28
+    # DEBUG D#108 => D#109
+    # DEBUG __x => D#108
+    # DEBUG D#107 => D#108
+    # DEBUG __first => __first_20
+    # DEBUG __n => __n_28
+    # DEBUG D#106 => D#107
+    # DEBUG __value => D#106
+    # DEBUG __it => __first_20
+    # DEBUG __it => __first_20
+    # DEBUG D#105 => D#106
+    # DEBUG __first => __first_20
+    # DEBUG __n => __n_28
+    # DEBUG __value => D#105
+    # DEBUG __tmp => 0
+    # DEBUG __niter => __n_28
+    # DEBUG __niter => __n_28
+    # DEBUG __first => __first_20
+    _26 = __n_28 * 4;
+    # .MEM_70 = VDEF <.MEM_93>
+    __builtin_memset (__first_20, 0, _26);
+    goto <bb 23>;
+
+  }
+  bb_17 (preds = {bb_15 }, succs = {bb_19 })
+  {
+    <bb 17>:
+    _101 = (unsigned long) __first_20;
+    _105 = __first_13 + 4;
+    _106 = (unsigned long) _105;
+    _64 = _101 - _106;
+    _32 = _64 /[ex] 4;
+    _33 = _32 & 4611686018427387903;
+    _59 = _33 + 1;
+    _107 = _59 * 4;
+    # .MEM_75 = VDEF <.MEM_5>
+    __builtin_memset (__first_13, 0, _107);
+
+  }
+  bb_19 (preds = {bb_17 }, succs = {bb_16 })
+  {
+    <bb 19>:
+    # .MEM_88 = PHI <.MEM_75(17)>
+    goto <bb 16>;
+
+  }
+  bb_23 (preds = {bb_16 }, succs = {bb_29 })
+  {
+    <bb 23>:
+    _79 = __n_28 * 4;
+    __first_57 = __first_20 + _79;
+    # .MEM_65 = VDEF <.MEM_70>
+    MEM[(struct vector *)this_2(D) + 152B].D.31717._M_impl._M_finish = __first_57;
+    goto <bb 29>;
+
+  }
+  bb_24 (preds = {bb_14 }, succs = {bb_26 })
+  {
+    <bb 24>:
+    _78 = (sizetype) _6;
+    _25 = _78 * 4;
+    # .MEM_69 = VDEF <.MEM_5>
+    __builtin_memset (__first_13, 0, _25);
+
+  }
+  bb_26 (preds = {bb_24 }, succs = {bb_28 })
+  {
+    <bb 26>:
+    _87 = (long unsigned int) _6;
+    _50 = _87 * 4;
+    __first_40 = __first_13 + _50;
+
+  }
+  bb_28 (preds = {bb_26 bb_14 }, succs = {bb_31 })
+  {
+    <bb 28>:
+    # __first_68 = PHI <__first_40(26), __first_13(14)>
+    # .MEM_81 = PHI <.MEM_69(26), .MEM_5(14)>
+
+  }
+  bb_31 (preds = {bb_28 }, succs = {bb_29 })
+  {
+    <bb 31>:
+    # DEBUG D#36 => D#147
+    # DEBUG __pos => __first_68
+    # DEBUG D#35 => D#36
+    # DEBUG this => D#35
+    # DEBUG D#33 => &D#35->D.31717
+    # DEBUG this => D#33
+    # DEBUG D#34 => D#35->D.31717._M_impl._M_finish
+    # DEBUG D#29 => __first_68
+    # DEBUG D#30 => D#34
+    # DEBUG __first => D#29
+    # DEBUG __last => D#30
+    # DEBUG D.33237 => D#31
+    # DEBUG D#28 => D#30
+    # DEBUG D#27 => D#29
+    # DEBUG D#25 => D#27
+    # DEBUG D#26 => D#28
+    # DEBUG __first => D#25
+    # DEBUG __last => D#26
+    # DEBUG D#24 => D#26
+    # DEBUG D#23 => D#25
+    # DEBUG D#21 => D#23
+    # DEBUG D#22 => D#24
+    # DEBUG D.33205 => D#21
+    # DEBUG D.33204 => D#22
+    # .MEM_67 = VDEF <.MEM_81>
+    MEM[(int * *)this_2(D) + 160B] = __first_68;
+
+  }
+  bb_29 (preds = {bb_23 bb_12 bb_31 }, succs = {bb_32 })
+  {
+    <bb 29>:
+    # .MEM_62 = PHI <.MEM_65(23), .MEM_91(12), .MEM_67(31)>
+
+  }
+  bb_32 (preds = {bb_29 }, succs = {bb_1 })
+  {
+    <bb 32>:
+    # .MEM_10 = VDEF <.MEM_62>
+    this_2(D)->_min =  Nan;
+    # .MEM_12 = VDEF <.MEM_10>
+    this_2(D)->_max =  Nan;
+    # VUSE <.MEM_12>
+    return;
+
+  }
+  bb_30 (preds = {bb_3 }, succs = {bb_10 })
+  {
+    <bb 30>:
+    _30 = __n_11 * 4;
+    _43 = (int *) _30;
+    # DEBUG D#118 => &__tmp
+    # DEBUG D#118 => &__tmp
+    # DEBUG D#119 => &__val
+    # DEBUG __n => __n_11
+    # DEBUG D#116 => D#118
+    # DEBUG this => D#116
+    # DEBUG this => D#118
+    # DEBUG D#117 => D#119
+    # DEBUG __value => D#117
+    # DEBUG D#115 => &D#116->D.31717
+    # DEBUG this => D#115
+    # DEBUG D#113 => D#117
+    # DEBUG __first => NULL
+    # DEBUG __n => __n_11
+    # DEBUG D#112 => D#113
+    # DEBUG __x => D#112
+    # DEBUG D.34853 => D#114
+    # DEBUG D#111 => D#112
+    # DEBUG __first => NULL
+    # DEBUG __n => __n_11
+    # DEBUG D#110 => D#111
+    # DEBUG __x => D#110
+    # DEBUG __assignable => 1
+    # DEBUG D#109 => D#110
+    # DEBUG __first => NULL
+    # DEBUG __n => __n_11
+    # DEBUG D#108 => D#109
+    # DEBUG __x => D#108
+    # DEBUG D#107 => D#108
+    # DEBUG __first => NULL
+    # DEBUG __n => __n_11
+    # DEBUG D#106 => D#107
+    # DEBUG __value => D#106
+    # DEBUG __it => NULL
+    # DEBUG __it => NULL
+    # DEBUG D#105 => D#106
+    # DEBUG __first => NULL
+    # DEBUG __n => __n_11
+    # DEBUG __value => D#105
+    # DEBUG __tmp => 0
+    # DEBUG __niter => __n_11
+    # DEBUG __niter => __n_11
+    # DEBUG __first => 0B
+    goto <bb 10>;
+
+  }
+}
+
+Pass statistics:
+----------------
+
+void Stats::Clear() (struct StatsD.30964 * const thisD.31826)
+{
+  intD.9 * D.34880;
+  intD.9 * __firstD.34855;
+  size_typeD.31293 __nD.34838;
+  intD.9 * __tmpD.34799;
+  intD.9 * __tmpD.34796;
+  intD.9 * __tmpD.34793;
+  struct vectorD.30974 __tmpD.34788;
+  long unsigned intD.14 __nD.34711;
+  intD.9 * __firstD.34712;
+  intD.9 * __firstD.34707;
+  intD.9 * __firstD.34694;
+  size_tD.2818 __nD.34690;
+  intD.9 __valD.34191;
+  intD.9 _6;
+  sizetype _9;
+  intD.9 * const _14;
+  long intD.12 _15;
+  long intD.12 _16;
+  long intD.12 _17;
+  long intD.12 _18;
+  size_typeD.31293 _19;
+  long intD.12 _21;
+  long intD.12 _22;
+  long intD.12 _23;
+  size_typeD.31293 _24;
+  sizetype _25;
+  sizetype _26;
+  long unsigned intD.14 _30;
+  unsigned long _32;
+  sizetype _33;
+  intD.9 * _36;
+  sizetype _42;
+  intD.9 * _43;
+  intD.9 * _49;
+  long unsigned intD.14 _50;
+  long unsigned intD.14 _53;
+  intD.9 * _54;
+  sizetype _59;
+  unsigned long _64;
+  sizetype _78;
+  long unsigned intD.14 _79;
+  long unsigned intD.14 _86;
+  long unsigned intD.14 _87;
+  long unsigned intD.14 _89;
+  intD.9 * pretmp_90;
+  unsigned long _101;
+  intD.9 * _105;
+  unsigned long _106;
+  sizetype _107;
+  intD.9 * prephitmp_108;
+
+;;   basic block 2, loop depth 0, count 0, freq 2535, maybe hot
+;;    prev block 0, next block 3, flags: (NEW, REACHABLE)
+;;    pred:       ENTRY [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_3 = VDEF <.MEM_1(D)>
+  this_2(D)->_num_samplesD.30966 = 0;
+  # .MEM_4 = VDEF <.MEM_3>
+  this_2(D)->_sample_sumD.30967 = 0.0;
+  # .MEM_5 = VDEF <.MEM_4>
+  this_2(D)->_sample_squared_sumD.30968 = 0.0;
+  # VUSE <.MEM_5>
+  _6 = this_2(D)->_num_binsD.30971;
+  # DEBUG D#147ptD.0 => &this_2(D)->_histD.31719
+  # DEBUG thisD.34187 => D#147ptD.0
+  # DEBUG __firstD.34188 => _6
+  # DEBUG __lastD.34189 => 0
+  # DEBUG thisD.34193 => D#147ptD.0
+  # DEBUG __nD.34192 => _6
+  # DEBUG __valD.34191 => 0
+  # DEBUG __valD.34191 => 0
+  # RANGE ~[2147483648, 18446744071562067967]
+  __n_11 = (size_tD.2818) _6;
+  # DEBUG thisD.34689 => D#147ptD.0
+  # DEBUG __nD.34690 => __n_11
+  # DEBUG __valD.34691 => &__valD.34191
+  # VUSE <.MEM_5>
+  # PT = nonlocal escaped 
+  __first_13 = MEM[(intD.9 * *)this_2(D) + 152B];
+  # DEBUG D#32ptD.0 => D#147ptD.0
+  # VUSE <.MEM_5>
+  # PT = nonlocal escaped 
+  _14 = MEM[(intD.9 * *)this_2(D) + 168B];
+  # DEBUG D#32ptD.0 => D#147ptD.0
+  # DEBUG thisD.34731 => D#32ptD.0
+  # DEBUG thisD.34732 => D#32ptD.0
+  _15 = (long intD.12) _14;
+  _16 = (long intD.12) __first_13;
+  _17 = _15 - _16;
+  # RANGE [-2305843009213693952, 2305843009213693951]
+  _18 = _17 /[ex] 4;
+  # RANGE ~[2305843009213693952, 16140901064495857663]
+  _19 = (size_typeD.31293) _18;
+  if (__n_11 > _19)
+    goto <bb 3>;
+  else
+    goto <bb 13>;
+;;    succ:       3 [29.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                13 [71.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 3, loop depth 0, count 0, freq 735, maybe hot
+;;    prev block 2, next block 4, flags: (NEW, REACHABLE)
+;;    pred:       2 [29.0%]  (TRUE_VALUE,EXECUTABLE)
+  # DEBUG thisD.34735 => D#147ptD.0
+  # DEBUG __nD.34736 => __n_11
+  # DEBUG __valD.34737 => &__valD.34191
+  # DEBUG D#134ptD.0 => &D#147ptD.0->D.31717
+  # DEBUG thisD.34815 => D#134ptD.0
+  # DEBUG D#146ptD.0 => &MEM[(struct _Vector_baseD.30975 *)this_2(D) + 152B]._M_implD.31208
+  # DEBUG thisD.34837 => &__tmpD.34788
+  # DEBUG __nD.34838 => __n_11
+  # DEBUG __valueD.34839 => &__valD.34191
+  # DEBUG __aD.34840 => D#146ptD.0
+  # DEBUG D#133ptD.0 => &__tmpD.34788.D.31717
+  # DEBUG thisD.34843 => D#133ptD.0
+  # DEBUG __nD.34842 => __n_11
+  # DEBUG __aD.34841 => D#146ptD.0
+  # DEBUG D#132ptD.0 => &D#133ptD.0->_M_implD.31208
+  # DEBUG thisD.34845 => D#132ptD.0
+  # DEBUG __aD.34844 => D#146ptD.0
+  # DEBUG thisD.33857 => D#132ptD.0
+  # DEBUG __aD.33858 => D#146ptD.0
+  # DEBUG thisD.33854 => D#132ptD.0
+  # DEBUG D.33855 => D#146ptD.0
+  # DEBUG thisD.34847 => D#133ptD.0
+  # DEBUG __nD.34846 => __n_11
+  # DEBUG D#130ptD.0 => D#133ptD.0
+  # DEBUG __nD.34872 => __n_11
+  # DEBUG thisD.34873 => D#130ptD.0
+  # DEBUG D#129ptD.0 => D#130ptD.0
+  if (__n_11 != 0)
+    goto <bb 4>;
+  else
+    goto <bb 30>;
+;;    succ:       4 [90.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                30 [10.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 4, loop depth 0, count 0, freq 662, maybe hot
+;;    prev block 3, next block 5, flags: (NEW, REACHABLE)
+;;    pred:       3 [90.0%]  (TRUE_VALUE,EXECUTABLE)
+  # DEBUG D#128ptD.0 => &D#129ptD.0->_M_implD.31208
+  # DEBUG D#127ptD.0 => D#128ptD.0
+  # DEBUG __nD.34876 => __n_11
+  # DEBUG __aD.34875 => D#127ptD.0
+  # DEBUG D#126ptD.0 => D#127ptD.0
+  # DEBUG D#124ptD.0 => D#126ptD.0
+  # DEBUG D#125ptD.0 => 0B
+  # DEBUG __nD.34879 => __n_11
+  # DEBUG thisD.34877 => D#124ptD.0
+  # DEBUG D.34878 => D#125ptD.0
+  # DEBUG D#123ptD.0 => D#124ptD.0
+  # DEBUG D#122ptD.0 => D#123ptD.0
+  # DEBUG thisD.33866 => D#122ptD.0
+  if (__n_11 > 4611686018427387903)
+    goto <bb 5>;
+  else
+    goto <bb 6>;
+;;    succ:       5 [0.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                6 [100.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 5, loop depth 0, count 0, freq 0
+;;    prev block 4, next block 6, flags: (NEW, REACHABLE)
+;;    pred:       4 [0.0%]  (TRUE_VALUE,EXECUTABLE)
+  # .MEM_72 = VDEF <.MEM_5>
+  # USE = nonlocal null { D.34883 } (escaped heap)
+  # CLB = nonlocal null { D.34883 } (escaped heap)
+  _ZSt17__throw_bad_allocvD.2850 ();
+;;    succ:      
+
+;;   basic block 6, loop depth 0, count 0, freq 669, maybe hot
+;;   Invalid sum of outgoing probabilities 9.0%
+;;    prev block 5, next block 9, flags: (NEW, REACHABLE)
+;;    pred:       4 [100.0%]  (FALSE_VALUE,EXECUTABLE)
+  # RANGE [4, 18446744073709551612] NONZERO 18446744073709551612
+  _53 = __n_11 * 4;
+  # .MEM_71 = VDEF <.MEM_5>
+  # PT = { D.34883 } (escaped heap)
+  # USE = nonlocal null { D.34883 } (escaped heap)
+  # CLB = nonlocal null { D.34883 } (escaped heap)
+  _54 = _ZnwmD.2764 (_53);
+  # PT = { D.34883 } (escaped heap)
+  _49 = _54 + _53;
+  # DEBUG D#118ptD.0 => &__tmpD.34788
+  # DEBUG D#118ptD.0 => &__tmpD.34788
+  # DEBUG D#119ptD.0 => &__valD.34191
+  # DEBUG __nD.34851 => __n_11
+  # DEBUG D#116ptD.0 => D#118ptD.0
+  # DEBUG thisD.34848 => D#116ptD.0
+  # DEBUG thisD.34849 => D#118ptD.0
+  # DEBUG D#117ptD.0 => D#119ptD.0
+  # DEBUG __valueD.34850 => D#117ptD.0
+  # DEBUG D#115ptD.0 => &D#116ptD.0->D.31717
+  # DEBUG thisD.33777 => D#115ptD.0
+  # DEBUG D#113ptD.0 => D#117ptD.0
+  # DEBUG __firstD.34855 => NULL
+  # DEBUG __nD.34854 => __n_11
+  # DEBUG D#112ptD.0 => D#113ptD.0
+  # DEBUG __xD.34852 => D#112ptD.0
+  # DEBUG D.34853 => D#114ptD.0
+  # DEBUG D#111ptD.0 => D#112ptD.0
+  # DEBUG __firstD.34858 => NULL
+  # DEBUG __nD.34857 => __n_11
+  # DEBUG D#110ptD.0 => D#111ptD.0
+  # DEBUG __xD.34856 => D#110ptD.0
+  # DEBUG __assignableD.34860 => 1
+  # DEBUG D#109ptD.0 => D#110ptD.0
+  # DEBUG __firstD.34863 => NULL
+  # DEBUG __nD.34862 => __n_11
+  # DEBUG D#108ptD.0 => D#109ptD.0
+  # DEBUG __xD.34861 => D#108ptD.0
+  # DEBUG D#107ptD.0 => D#108ptD.0
+  # DEBUG __firstD.34866 => NULL
+  # DEBUG __nD.34865 => __n_11
+  # DEBUG D#106ptD.0 => D#107ptD.0
+  # DEBUG __valueD.34864 => D#106ptD.0
+  # DEBUG __itD.33619 => NULL
+  # DEBUG __itD.33609 => NULL
+  # DEBUG D#105ptD.0 => D#106ptD.0
+  # DEBUG __firstD.34869 => NULL
+  # DEBUG __nD.34868 => __n_11
+  # DEBUG __valueD.34867 => D#105ptD.0
+  # DEBUG __tmpD.34870 => 0
+  # DEBUG __niterD.34871 => __n_11
+  # DEBUG __niterD.34871 => __n_11
+  # DEBUG __firstD.34869 => _54
+  # DEBUG D#118ptD.0 => &__tmpD.34788
+  # DEBUG D#119ptD.0 => &__valD.34191
+  # DEBUG __nD.34851 => __n_11
+  # DEBUG D#116ptD.0 => D#118ptD.0
+  # DEBUG thisD.34848 => D#116ptD.0
+  # DEBUG thisD.34849 => D#118ptD.0
+  # DEBUG D#117ptD.0 => D#119ptD.0
+  # DEBUG __valueD.34850 => D#117ptD.0
+  # DEBUG D#115ptD.0 => &D#116ptD.0->D.31717
+  # DEBUG thisD.33777 => D#115ptD.0
+  # DEBUG D#113ptD.0 => D#117ptD.0
+  # DEBUG __firstD.34855 => NULL
+  # DEBUG __nD.34854 => __n_11
+  # DEBUG D#112ptD.0 => D#113ptD.0
+  # DEBUG __xD.34852 => D#112ptD.0
+  # DEBUG D.34853 => D#114ptD.0
+  # DEBUG D#111ptD.0 => D#112ptD.0
+  # DEBUG __firstD.34858 => NULL
+  # DEBUG __nD.34857 => __n_11
+  # DEBUG D#110ptD.0 => D#111ptD.0
+  # DEBUG __xD.34856 => D#110ptD.0
+  # DEBUG __assignableD.34860 => 1
+  # DEBUG D#109ptD.0 => D#110ptD.0
+  # DEBUG __firstD.34863 => NULL
+  # DEBUG __nD.34862 => __n_11
+  # DEBUG D#108ptD.0 => D#109ptD.0
+  # DEBUG __xD.34861 => D#108ptD.0
+  # DEBUG D#107ptD.0 => D#108ptD.0
+  # DEBUG __firstD.34866 => NULL
+  # DEBUG __nD.34865 => __n_11
+  # DEBUG D#106ptD.0 => D#107ptD.0
+  # DEBUG __valueD.34864 => D#106ptD.0
+  # DEBUG __itD.33619 => NULL
+  # DEBUG __itD.33609 => NULL
+  # DEBUG D#105ptD.0 => D#106ptD.0
+  # DEBUG __nD.34868 => __n_11
+  # DEBUG __valueD.34867 => D#105ptD.0
+  # DEBUG __tmpD.34870 => 0
+  # DEBUG __niterD.34871 => __n_11
+  # DEBUG __firstD.34869 => _54
+  _42 = (sizetype) _6;
+  _9 = _42 * 4;
+  # .MEM_77 = VDEF <.MEM_71>
+  # USE = anything 
+  # CLB = anything 
+  memsetD.1001 (_54, 0, _9);
+;;    succ:       9 [9.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 9, loop depth 0, count 0, freq 669, maybe hot
+;;   Invalid sum of incoming frequencies 60, should be 669
+;;    prev block 6, next block 10, flags: (NEW)
+;;    pred:       6 [9.0%]  (FALLTHRU,EXECUTABLE)
+  _86 = (long unsigned intD.14) _6;
+  _89 = _86 * 4;
+  # PT = { D.34883 } (escaped heap)
+  __first_31 = _54 + _89;
+  # VUSE <.MEM_77>
+  pretmp_90 = MEM[(intD.9 * &)this_2(D) + 152];
+;;    succ:       10 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 10, loop depth 0, count 0, freq 735, maybe hot
+;;    prev block 9, next block 11, flags: (NEW, REACHABLE)
+;;    pred:       9 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                30 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # PT = null { D.34883 } (escaped heap)
+  # __first_74 = PHI <__first_31(9), 0B(30)>
+  # .MEM_76 = PHI <.MEM_77(9), .MEM_5(30)>
+  # PT = nonlocal escaped { D.34883 } (escaped heap)
+  # _36 = PHI <_49(9), _43(30)>
+  # PT = null { D.34883 } (escaped heap)
+  # __first_35 = PHI <_54(9), 0B(30)>
+  # PT = nonlocal escaped 
+  # prephitmp_108 = PHI <pretmp_90(9), __first_13(30)>
+  # DEBUG D#136ptD.0 => &D#147ptD.0->D.31717._M_implD.31208
+  # DEBUG thisD.34790 => &__tmpD.34788.D.31717._M_implD.31208
+  # DEBUG __xD.34789 => D#136ptD.0
+  # DEBUG D#101ptD.0 => &D#136ptD.0->_M_startD.31210
+  # DEBUG D#100ptD.0 => &MEM[(struct _Vector_implD.31185 *)&__tmpD.34788]._M_startD.31210
+  # DEBUG __aD.34792 => D#100ptD.0
+  # DEBUG __bD.34791 => D#101ptD.0
+  # DEBUG __tmpD.34793 => __first_35
+  # DEBUG D#148ptD.0 => MEM[(intD.9 * &)this_2(D) + 152]
+  # .MEM_80 = VDEF <.MEM_76>
+  MEM[(intD.9 * &)this_2(D) + 152] = __first_35;
+  # DEBUG D#99ptD.0 => &D#136ptD.0->_M_finishD.31211
+  # DEBUG D#98ptD.0 => &MEM[(struct _Vector_implD.31185 *)&__tmpD.34788]._M_finishD.31211
+  # DEBUG __aD.34795 => D#98ptD.0
+  # DEBUG __bD.34794 => D#99ptD.0
+  # DEBUG __tmpD.34796 => __first_74
+  # .MEM_82 = VDEF <.MEM_80>
+  MEM[(intD.9 * &)this_2(D) + 160] = __first_74;
+  # DEBUG D#97ptD.0 => &D#136ptD.0->_M_end_of_storageD.31212
+  # DEBUG D#96ptD.0 => &MEM[(struct _Vector_implD.31185 *)&__tmpD.34788]._M_end_of_storageD.31212
+  # DEBUG __aD.34798 => D#96ptD.0
+  # DEBUG __bD.34797 => D#97ptD.0
+  # DEBUG __tmpD.34799 => _36
+  # .MEM_84 = VDEF <.MEM_82>
+  MEM[(intD.9 * &)this_2(D) + 168] = _36;
+  # DEBUG thisD.34800 => &__tmpD.34788
+  # DEBUG D#91ptD.0 => &__tmpD.34788.D.31717
+  # DEBUG thisD.33547 => D#91ptD.0
+  # DEBUG D#94ptD.0 => __tmpD.34788.D.31717._M_implD.31208._M_finishD.31211
+  # DEBUG D#93ptD.0 => __tmpD.34788.D.31717._M_implD.31208._M_startD.31210
+  # DEBUG D#29ptD.0 => D#93ptD.0
+  # DEBUG D#30ptD.0 => D#94ptD.0
+  # DEBUG __firstD.33546 => D#29ptD.0
+  # DEBUG __lastD.33545 => D#30ptD.0
+  # DEBUG D.33544 => D#31ptD.0
+  # DEBUG D#28ptD.0 => D#30ptD.0
+  # DEBUG D#27ptD.0 => D#29ptD.0
+  # DEBUG D#25ptD.0 => D#27ptD.0
+  # DEBUG D#26ptD.0 => D#28ptD.0
+  # DEBUG __firstD.33216 => D#25ptD.0
+  # DEBUG __lastD.33215 => D#26ptD.0
+  # DEBUG D#24ptD.0 => D#26ptD.0
+  # DEBUG D#23ptD.0 => D#25ptD.0
+  # DEBUG D#21ptD.0 => D#23ptD.0
+  # DEBUG D#22ptD.0 => D#24ptD.0
+  # DEBUG D.33205 => D#21ptD.0
+  # DEBUG D.33204 => D#22ptD.0
+  # DEBUG D#92ptD.0 => &__tmpD.34788.D.31717
+  # DEBUG thisD.34801 => D#92ptD.0
+  # DEBUG D#90ptD.0 => D#92ptD.0->_M_implD.31208._M_end_of_storageD.31212
+  # DEBUG D#89ptD.0 => (long intD.12) D#90ptD.0
+  # DEBUG D#88ptD.0 => (long intD.12) D#148ptD.0
+  # DEBUG D#87ptD.0 => D#89ptD.0 - D#88ptD.0
+  # DEBUG D#86ptD.0 => D#87ptD.0 /[ex] 4
+  # DEBUG D#83ptD.0 => D#92ptD.0
+  # DEBUG D#84ptD.0 => (long unsigned intD.14) D#86ptD.0
+  # DEBUG __pD.34804 => D#148ptD.0
+  # DEBUG thisD.34802 => D#83ptD.0
+  # DEBUG __nD.34803 => D#84ptD.0
+  # DEBUG D#82ptD.0 => D#84ptD.0
+  # DEBUG D#81ptD.0 => D#83ptD.0
+  if (prephitmp_108 != 0B)
+    goto <bb 11>;
+  else
+    goto <bb 12>;
+;;    succ:       11 [78.3%]  (TRUE_VALUE,EXECUTABLE)
+;;                12 [21.6%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 11, loop depth 0, count 0, freq 576, maybe hot
+;;    prev block 10, next block 12, flags: (NEW, REACHABLE)
+;;    pred:       10 [78.3%]  (TRUE_VALUE,EXECUTABLE)
+  # DEBUG D#80ptD.0 => &D#81ptD.0->_M_implD.31208
+  # DEBUG D#78ptD.0 => D#80ptD.0
+  # DEBUG D#79ptD.0 => D#82ptD.0
+  # DEBUG __pD.34808 => D#148ptD.0
+  # DEBUG __aD.34806 => D#78ptD.0
+  # DEBUG __nD.34807 => D#79ptD.0
+  # DEBUG D#77ptD.0 => D#79ptD.0
+  # DEBUG D#76ptD.0 => D#78ptD.0
+  # DEBUG D#74ptD.0 => D#76ptD.0
+  # DEBUG D#75ptD.0 => D#77ptD.0
+  # DEBUG __pD.34811 => D#148ptD.0
+  # DEBUG thisD.34809 => D#74ptD.0
+  # DEBUG D.34810 => D#75ptD.0
+  # .MEM_85 = VDEF <.MEM_84>
+  # USE = nonlocal null { D.34883 } (escaped heap)
+  # CLB = nonlocal null { D.34883 } (escaped heap)
+  _ZdlPvD.2766 (prephitmp_108);
+;;    succ:       12 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 12, loop depth 0, count 0, freq 735, maybe hot
+;;    prev block 11, next block 13, flags: (NEW, REACHABLE)
+;;    pred:       10 [21.6%]  (FALSE_VALUE,EXECUTABLE)
+;;                11 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_58 = PHI <.MEM_84(10), .MEM_85(11)>
+  # DEBUG D#85ptD.0 => &D#92ptD.0->_M_implD.31208
+  # DEBUG thisD.34812 => D#85ptD.0
+  # DEBUG thisD.34813 => D#85ptD.0
+  # DEBUG thisD.34814 => D#85ptD.0
+  # .MEM_91 = VDEF <.MEM_58>
+  __tmpD.34788 ={v} {CLOBBER};
+  goto <bb 29>;
+;;    succ:       29 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 13, loop depth 0, count 0, freq 1800, maybe hot
+;;    prev block 12, next block 14, flags: (NEW, REACHABLE)
+;;    pred:       2 [71.0%]  (FALSE_VALUE,EXECUTABLE)
+  # DEBUG D#7ptD.0 => D#147ptD.0
+  # VUSE <.MEM_5>
+  # PT = nonlocal escaped 
+  __first_20 = MEM[(intD.9 * *)this_2(D) + 160B];
+  # DEBUG D#7ptD.0 => D#147ptD.0
+  # DEBUG thisD.34729 => D#7ptD.0
+  # DEBUG thisD.34730 => D#7ptD.0
+  _21 = (long intD.12) __first_20;
+  _22 = _21 - _16;
+  # RANGE [-2305843009213693952, 2305843009213693951]
+  _23 = _22 /[ex] 4;
+  # RANGE ~[2305843009213693952, 16140901064495857663]
+  _24 = (size_typeD.31293) _23;
+  if (__n_11 > _24)
+    goto <bb 15>;
+  else
+    goto <bb 14>;
+;;    succ:       15 [50.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                14 [50.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 14, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 13, next block 15, flags: (NEW, REACHABLE)
+;;    pred:       13 [50.0%]  (FALSE_VALUE,EXECUTABLE)
+  # DEBUG __niterD.34699 => __n_11
+  # DEBUG __firstD.34697 => __first_13
+  if (__n_11 == 0)
+    goto <bb 28>;
+  else
+    goto <bb 24>;
+;;    succ:       28 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                24 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 15, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 14, next block 16, flags: (NEW, REACHABLE)
+;;    pred:       13 [50.0%]  (TRUE_VALUE,EXECUTABLE)
+  # DEBUG __firstD.34707 => __first_13
+  if (__first_13 == __first_20)
+    goto <bb 16>;
+  else
+    goto <bb 17>;
+;;    succ:       16 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                17 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 16, loop depth 0, count 0, freq 900, maybe hot
+;;   Invalid sum of outgoing probabilities 9.9%
+;;    prev block 15, next block 17, flags: (NEW, REACHABLE)
+;;    pred:       15 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                19 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_93 = PHI <.MEM_5(15), .MEM_88(19)>
+  # DEBUG D#135ptD.0 => &D#147ptD.0->D.31717
+  # DEBUG thisD.34026 => D#135ptD.0
+  # DEBUG D#7ptD.0 => D#147ptD.0
+  # DEBUG D#7ptD.0 => D#147ptD.0
+  # DEBUG thisD.34024 => D#7ptD.0
+  # DEBUG thisD.34023 => D#7ptD.0
+  # RANGE [1, 18446744073709551615]
+  __n_28 = __n_11 - _24;
+  # DEBUG D#113ptD.0 => &__valD.34191
+  # DEBUG __firstD.34712 => __first_20
+  # DEBUG __nD.34711 => __n_28
+  # DEBUG D#112ptD.0 => D#113ptD.0
+  # DEBUG __xD.34709 => D#112ptD.0
+  # DEBUG D.34710 => D#114ptD.0
+  # DEBUG D#111ptD.0 => D#112ptD.0
+  # DEBUG __firstD.34715 => __first_20
+  # DEBUG __nD.34714 => __n_28
+  # DEBUG D#110ptD.0 => D#111ptD.0
+  # DEBUG __xD.34713 => D#110ptD.0
+  # DEBUG __assignableD.34717 => 1
+  # DEBUG D#109ptD.0 => D#110ptD.0
+  # DEBUG __firstD.34720 => __first_20
+  # DEBUG __nD.34719 => __n_28
+  # DEBUG D#108ptD.0 => D#109ptD.0
+  # DEBUG __xD.34718 => D#108ptD.0
+  # DEBUG D#107ptD.0 => D#108ptD.0
+  # DEBUG __firstD.34723 => __first_20
+  # DEBUG __nD.34722 => __n_28
+  # DEBUG D#106ptD.0 => D#107ptD.0
+  # DEBUG __valueD.34721 => D#106ptD.0
+  # DEBUG __itD.33619 => __first_20
+  # DEBUG __itD.33609 => __first_20
+  # DEBUG D#105ptD.0 => D#106ptD.0
+  # DEBUG __firstD.34726 => __first_20
+  # DEBUG __nD.34725 => __n_28
+  # DEBUG __valueD.34724 => D#105ptD.0
+  # DEBUG __tmpD.34727 => 0
+  # DEBUG __niterD.34728 => __n_28
+  # DEBUG __niterD.34728 => __n_28
+  # DEBUG __firstD.34726 => __first_20
+  _26 = __n_28 * 4;
+  # .MEM_70 = VDEF <.MEM_93>
+  # USE = anything 
+  # CLB = anything 
+  memsetD.1001 (__first_20, 0, _26);
+  goto <bb 23>;
+;;    succ:       23 [9.9%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 17, loop depth 0, count 0, freq 819, maybe hot
+;;   Invalid sum of outgoing probabilities 9.0%
+;;    prev block 16, next block 19, flags: (NEW, REACHABLE)
+;;    pred:       15 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+  _101 = (unsigned long) __first_20;
+  _105 = __first_13 + 4;
+  _106 = (unsigned long) _105;
+  _64 = _101 - _106;
+  _32 = _64 /[ex] 4;
+  _33 = _32 & 4611686018427387903;
+  _59 = _33 + 1;
+  _107 = _59 * 4;
+  # .MEM_75 = VDEF <.MEM_5>
+  # USE = anything 
+  # CLB = anything 
+  memsetD.1001 (__first_13, 0, _107);
+;;    succ:       19 [9.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 19, loop depth 0, count 0, freq 819, maybe hot
+;;   Invalid sum of incoming frequencies 74, should be 819
+;;    prev block 17, next block 23, flags: (NEW)
+;;    pred:       17 [9.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_88 = PHI <.MEM_75(17)>
+  goto <bb 16>;
+;;    succ:       16 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 23, loop depth 0, count 0, freq 900, maybe hot
+;;   Invalid sum of incoming frequencies 89, should be 900
+;;    prev block 19, next block 24, flags: (NEW, REACHABLE)
+;;    pred:       16 [9.9%]  (FALLTHRU,EXECUTABLE)
+  _79 = __n_28 * 4;
+  # PT = nonlocal escaped 
+  __first_57 = __first_20 + _79;
+  # .MEM_65 = VDEF <.MEM_70>
+  MEM[(struct vectorD.30974 *)this_2(D) + 152B].D.31717._M_implD.31208._M_finishD.31211 = __first_57;
+  goto <bb 29>;
+;;    succ:       29 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 24, loop depth 0, count 0, freq 819, maybe hot
+;;   Invalid sum of outgoing probabilities 9.0%
+;;    prev block 23, next block 26, flags: (NEW, REACHABLE)
+;;    pred:       14 [91.0%]  (FALSE_VALUE,EXECUTABLE)
+  _78 = (sizetype) _6;
+  _25 = _78 * 4;
+  # .MEM_69 = VDEF <.MEM_5>
+  # USE = anything 
+  # CLB = anything 
+  memsetD.1001 (__first_13, 0, _25);
+;;    succ:       26 [9.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 26, loop depth 0, count 0, freq 819, maybe hot
+;;   Invalid sum of incoming frequencies 74, should be 819
+;;    prev block 24, next block 28, flags: (NEW)
+;;    pred:       24 [9.0%]  (FALLTHRU,EXECUTABLE)
+  _87 = (long unsigned intD.14) _6;
+  _50 = _87 * 4;
+  # PT = nonlocal escaped 
+  __first_40 = __first_13 + _50;
+;;    succ:       28 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 28, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 26, next block 31, flags: (NEW, REACHABLE)
+;;    pred:       26 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                14 [9.0%]  (TRUE_VALUE,EXECUTABLE)
+  # PT = nonlocal escaped 
+  # __first_68 = PHI <__first_40(26), __first_13(14)>
+  # .MEM_81 = PHI <.MEM_69(26), .MEM_5(14)>
+;;    succ:       31 [100.0%]  (FALLTHRU)
+
+;;   basic block 31, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 28, next block 29, flags: (NEW)
+;;    pred:       28 [100.0%]  (FALLTHRU)
+  # DEBUG D#36ptD.0 => D#147ptD.0
+  # DEBUG __posD.34701 => __first_68
+  # DEBUG D#35ptD.0 => D#36ptD.0
+  # DEBUG thisD.34700 => D#35ptD.0
+  # DEBUG D#33ptD.0 => &D#35ptD.0->D.31717
+  # DEBUG thisD.33247 => D#33ptD.0
+  # DEBUG D#34ptD.0 => D#35ptD.0->D.31717._M_implD.31208._M_finishD.31211
+  # DEBUG D#29ptD.0 => __first_68
+  # DEBUG D#30ptD.0 => D#34ptD.0
+  # DEBUG __firstD.33239 => D#29ptD.0
+  # DEBUG __lastD.33238 => D#30ptD.0
+  # DEBUG D.33237 => D#31ptD.0
+  # DEBUG D#28ptD.0 => D#30ptD.0
+  # DEBUG D#27ptD.0 => D#29ptD.0
+  # DEBUG D#25ptD.0 => D#27ptD.0
+  # DEBUG D#26ptD.0 => D#28ptD.0
+  # DEBUG __firstD.33216 => D#25ptD.0
+  # DEBUG __lastD.33215 => D#26ptD.0
+  # DEBUG D#24ptD.0 => D#26ptD.0
+  # DEBUG D#23ptD.0 => D#25ptD.0
+  # DEBUG D#21ptD.0 => D#23ptD.0
+  # DEBUG D#22ptD.0 => D#24ptD.0
+  # DEBUG D.33205 => D#21ptD.0
+  # DEBUG D.33204 => D#22ptD.0
+  # .MEM_67 = VDEF <.MEM_81>
+  MEM[(intD.9 * *)this_2(D) + 160B] = __first_68;
+;;    succ:       29 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 29, loop depth 0, count 0, freq 2535, maybe hot
+;;    prev block 31, next block 32, flags: (NEW, REACHABLE)
+;;    pred:       23 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                12 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                31 [100.0%]  (FALLTHRU,EXECUTABLE)
+  # .MEM_62 = PHI <.MEM_65(23), .MEM_91(12), .MEM_67(31)>
+;;    succ:       32 [100.0%]  (FALLTHRU)
+
+;;   basic block 32, loop depth 0, count 0, freq 2535, maybe hot
+;;    prev block 29, next block 30, flags: (NEW)
+;;    pred:       29 [100.0%]  (FALLTHRU)
+  # .MEM_10 = VDEF <.MEM_62>
+  this_2(D)->_minD.30969 =  Nan;
+  # .MEM_12 = VDEF <.MEM_10>
+  this_2(D)->_maxD.30970 =  Nan;
+  # VUSE <.MEM_12>
+  return;
+;;    succ:       EXIT [100.0%] 
+
+;;   basic block 30, loop depth 0, count 0, freq 74, maybe hot
+;;    prev block 32, next block 1, flags: (NEW, REACHABLE)
+;;    pred:       3 [10.0%]  (FALSE_VALUE,EXECUTABLE)
+  # RANGE [0, 18446744073709551615] NONZERO 18446744073709551612
+  _30 = __n_11 * 4;
+  # PT = nonlocal escaped 
+  # ALIGN = 4, MISALIGN = 0
+  _43 = (intD.9 *) _30;
+  # DEBUG D#118ptD.0 => &__tmpD.34788
+  # DEBUG D#118ptD.0 => &__tmpD.34788
+  # DEBUG D#119ptD.0 => &__valD.34191
+  # DEBUG __nD.34851 => __n_11
+  # DEBUG D#116ptD.0 => D#118ptD.0
+  # DEBUG thisD.34848 => D#116ptD.0
+  # DEBUG thisD.34849 => D#118ptD.0
+  # DEBUG D#117ptD.0 => D#119ptD.0
+  # DEBUG __valueD.34850 => D#117ptD.0
+  # DEBUG D#115ptD.0 => &D#116ptD.0->D.31717
+  # DEBUG thisD.33777 => D#115ptD.0
+  # DEBUG D#113ptD.0 => D#117ptD.0
+  # DEBUG __firstD.34855 => NULL
+  # DEBUG __nD.34854 => __n_11
+  # DEBUG D#112ptD.0 => D#113ptD.0
+  # DEBUG __xD.34852 => D#112ptD.0
+  # DEBUG D.34853 => D#114ptD.0
+  # DEBUG D#111ptD.0 => D#112ptD.0
+  # DEBUG __firstD.34858 => NULL
+  # DEBUG __nD.34857 => __n_11
+  # DEBUG D#110ptD.0 => D#111ptD.0
+  # DEBUG __xD.34856 => D#110ptD.0
+  # DEBUG __assignableD.34860 => 1
+  # DEBUG D#109ptD.0 => D#110ptD.0
+  # DEBUG __firstD.34863 => NULL
+  # DEBUG __nD.34862 => __n_11
+  # DEBUG D#108ptD.0 => D#109ptD.0
+  # DEBUG __xD.34861 => D#108ptD.0
+  # DEBUG D#107ptD.0 => D#108ptD.0
+  # DEBUG __firstD.34866 => NULL
+  # DEBUG __nD.34865 => __n_11
+  # DEBUG D#106ptD.0 => D#107ptD.0
+  # DEBUG __valueD.34864 => D#106ptD.0
+  # DEBUG __itD.33619 => NULL
+  # DEBUG __itD.33609 => NULL
+  # DEBUG D#105ptD.0 => D#106ptD.0
+  # DEBUG __firstD.34869 => NULL
+  # DEBUG __nD.34868 => __n_11
+  # DEBUG __valueD.34867 => D#105ptD.0
+  # DEBUG __tmpD.34870 => 0
+  # DEBUG __niterD.34871 => __n_11
+  # DEBUG __niterD.34871 => __n_11
+  # DEBUG __firstD.34869 => 0B
+  goto <bb 10>;
+;;    succ:       10 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+}
+
+
+
+;; Function std::ostream& operator<<(std::ostream&, const Stats&) (_ZlsRSoRK5Stats, funcdef_no=1677, decl_uid=31756, cgraph_uid=614, symbol_order=615)
+
+
+Pass statistics:
+----------------
+
+std::ostream& operator<<(std::ostream&, const Stats&) (struct ostreamD.7362 & osD.31865, const struct StatsD.30964 & sD.31866)
+{
+  struct basic_ostreamD.7361 & D.34942;
+  struct basic_ostreamD.7361 & D.34938;
+  struct basic_ostreamD.7361 & D.34934;
+  size_tD.5382 iD.31870;
+  long intD.12 _6;
+  long intD.12 _7;
+  intD.9 _8;
+  struct basic_ostreamD.7361 & _10;
+  long intD.12 _11;
+  intD.9 * const _14;
+  intD.9 * const _15;
+  long intD.12 _16;
+  long intD.12 _17;
+  long intD.12 _18;
+  size_typeD.31293 _19;
+  long unsigned intD.14 _20;
+  const intD.9 & _21;
+  intD.9 * const _22;
+  long intD.12 _23;
+  long intD.12 _24;
+  intD.9 * const _30;
+  intD.9 * const _34;
+
+;;   basic block 2, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 0, next block 3, flags: (NEW, REACHABLE)
+;;    pred:       ENTRY [100.0%]  (FALLTHRU,EXECUTABLE)
+  # DEBUG D#9ptD.0 => &s_3(D)->_histD.31719
+  # DEBUG vD.31869 => D#9ptD.0
+  # DEBUG __outD.34931 => os_5(D)
+  # DEBUG __sD.34932 => "[ "
+  # DEBUG __sD.34933 => "[ "
+  # .MEM_13 = VDEF <.MEM_4(D)>
+  # USE = nonlocal 
+  # CLB = nonlocal 
+  _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_lD.7824 (os_5(D), "[ ", 2);
+  # DEBUG iD.31870 => 0
+  # VUSE <.MEM_13>
+  # PT = nonlocal escaped 
+  _30 = MEM[(intD.9 * *)s_3(D) + 152B];
+  # DEBUG D#7ptD.0 => D#9ptD.0
+  # VUSE <.MEM_13>
+  # PT = nonlocal escaped 
+  _22 = MEM[(intD.9 * *)s_3(D) + 160B];
+  # DEBUG D#7ptD.0 => D#9ptD.0
+  # DEBUG thisD.33123 => D#7ptD.0
+  # DEBUG thisD.33122 => D#7ptD.0
+  _23 = (long intD.12) _22;
+  _6 = (long intD.12) _30;
+  _24 = _23 - _6;
+  # RANGE [-2305843009213693952, 2305843009213693951]
+  _11 = _24 /[ex] 4;
+  if (_11 != 0)
+    goto <bb 4>;
+  else
+    goto <bb 3>;
+;;    succ:       4 [91.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                3 [9.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 3, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 2, next block 4, flags: (NEW, REACHABLE)
+;;    pred:       2 [9.0%]  (FALSE_VALUE,EXECUTABLE)
+;;                5 [9.0%]  (FALSE_VALUE,EXECUTABLE)
+  # .MEM_28 = PHI <.MEM_13(2), .MEM_27(5)>
+  # DEBUG __outD.34939 => os_5(D)
+  # DEBUG __sD.34940 => "]"
+  # DEBUG __sD.34941 => "]"
+  # .MEM_29 = VDEF <.MEM_28>
+  # USE = nonlocal 
+  # CLB = nonlocal 
+  _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_lD.7824 (os_5(D), "]", 1);
+  # VUSE <.MEM_29>
+  return os_5(D);
+;;    succ:       EXIT [100.0%] 
+
+;;   basic block 4, loop depth 0, count 0, freq 819, maybe hot
+;;    prev block 3, next block 5, flags: (NEW)
+;;    pred:       2 [91.0%]  (TRUE_VALUE,EXECUTABLE)
+;;    succ:       5 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 5, loop depth 1, count 0, freq 9100, maybe hot
+;;    prev block 4, next block 6, flags: (NEW)
+;;    pred:       4 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                6 [100.0%]  (FALLTHRU,DFS_BACK,EXECUTABLE)
+  # RANGE [0, 18446744073709551615]
+  # i_31 = PHI <0(4), i_12(6)>
+  # .MEM_32 = PHI <.MEM_13(4), .MEM_27(6)>
+  # PT = nonlocal escaped 
+  # _34 = PHI <_30(4), _14(6)>
+  # DEBUG iD.31870 => i_31
+  # DEBUG D#7ptD.0 => D#9ptD.0
+  # DEBUG thisD.33123 => D#7ptD.0
+  # DEBUG thisD.33122 => D#7ptD.0
+  # DEBUG D#8ptD.0 => D#9ptD.0
+  # DEBUG __nD.33126 => i_31
+  # DEBUG thisD.33127 => D#8ptD.0
+  # RANGE [0, 18446744073709551615] NONZERO 18446744073709551612
+  _20 = i_31 * 4;
+  # PT = nonlocal escaped 
+  _21 = _34 + _20;
+  # VUSE <.MEM_32>
+  _8 = *_21;
+  # .MEM_9 = VDEF <.MEM_32>
+  # PT = nonlocal escaped 
+  # USE = nonlocal 
+  # CLB = nonlocal 
+  _10 = _ZNSolsEiD.21643 (os_5(D), _8);
+  # DEBUG __outD.34935 => _10
+  # DEBUG __sD.34936 => " "
+  # DEBUG __sD.34937 => " "
+  # .MEM_27 = VDEF <.MEM_9>
+  # USE = nonlocal 
+  # CLB = nonlocal 
+  _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_lD.7824 (_10, " ", 1);
+  # RANGE [0, 18446744073709551615]
+  i_12 = i_31 + 1;
+  # DEBUG iD.31870 => i_12
+  # DEBUG iD.31870 => i_12
+  # VUSE <.MEM_27>
+  # PT = nonlocal escaped 
+  _14 = MEM[(intD.9 * *)s_3(D) + 152B];
+  # DEBUG D#7ptD.0 => D#9ptD.0
+  # VUSE <.MEM_27>
+  # PT = nonlocal escaped 
+  _15 = MEM[(intD.9 * *)s_3(D) + 160B];
+  # DEBUG D#7ptD.0 => D#9ptD.0
+  # DEBUG thisD.33123 => D#7ptD.0
+  # DEBUG thisD.33122 => D#7ptD.0
+  _7 = (long intD.12) _15;
+  _16 = (long intD.12) _14;
+  _17 = _7 - _16;
+  # RANGE [-2305843009213693952, 2305843009213693951]
+  _18 = _17 /[ex] 4;
+  # RANGE ~[2305843009213693952, 16140901064495857663]
+  _19 = (size_typeD.31293) _18;
+  if (i_12 < _19)
+    goto <bb 6>;
+  else
+    goto <bb 3>;
+;;    succ:       6 [91.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                3 [9.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 6, loop depth 1, count 0, freq 8281, maybe hot
+;;    prev block 5, next block 1, flags: (NEW)
+;;    pred:       5 [91.0%]  (TRUE_VALUE,EXECUTABLE)
+  goto <bb 5>;
+;;    succ:       5 [100.0%]  (FALLTHRU,DFS_BACK,EXECUTABLE)
+
+}
+
+
+
+Updating SSA:
+Registering new PHI nodes in block #5
+Updating SSA information for statement std::__ostream_insert<char, std::char_traits<char> > (_10, " ", 1);
+Updating SSA information for statement _14 = MEM[(int * *)s_3(D) + 152B];
+Updating SSA information for statement _15 = MEM[(int * *)s_3(D) + 160B];
+Registering new PHI nodes in block #6
+Registering new PHI nodes in block #7
+
+DFA Statistics for std::ostream& operator<<(std::ostream&, const Stats&)
+
+---------------------------------------------------------
+                                Number of        Memory
+                                instances         used 
+---------------------------------------------------------
+USE operands                             37        296b
+DEF operands                             18        144b
+VUSE operands                            10         80b
+VDEF operands                             4         32b
+PHI nodes                                 5        520b
+PHI arguments                             9        432b
+---------------------------------------------------------
+Total memory used by DFA/SSA data                 1504b
+---------------------------------------------------------
+
+Average number of arguments per PHI node: 1.8 (max: 2)
+
+
+SSA replacement table
+N_i -> { O_1 ... O_j } means that N_i replaces O_1, ..., O_j
+
+.MEM_33 -> { .MEM_27 }
+Incremental SSA update started at block: 5
+Number of blocks in CFG: 8
+Number of blocks to update: 3 ( 38%)
+Affected blocks: 5 6 7
+
+
+Creating dr for *_21
+analyze_innermost: failed: evolution of base is not affine.
+	base_address: 
+	offset from base address: 
+	constant offset from base address: 
+	step: 
+	aligned to: 
+	base_object: *_21
+Creating dr for *_21
+analyze_innermost: failed: evolution of base is not affine.
+	base_address: 
+	offset from base address: 
+	constant offset from base address: 
+	step: 
+	aligned to: 
+	base_object: *_21
+Creating dr for *_21
+analyze_innermost: failed: evolution of base is not affine.
+	base_address: 
+	offset from base address: 
+	constant offset from base address: 
+	step: 
+	aligned to: 
+	base_object: *_21
+Creating dr for *_21
+analyze_innermost: failed: evolution of base is not affine.
+	base_address: 
+	offset from base address: 
+	constant offset from base address: 
+	step: 
+	aligned to: 
+	base_object: *_21
+Creating dr for *_21
+analyze_innermost: failed: evolution of base is not affine.
+	base_address: 
+	offset from base address: 
+	constant offset from base address: 
+	step: 
+	aligned to: 
+	base_object: *_21
+Creating dr for *_21
+analyze_innermost: failed: evolution of base is not affine.
+	base_address: 
+	offset from base address: 
+	constant offset from base address: 
+	step: 
+	aligned to: 
+	base_object: *_21
+Creating dr for *_21
+analyze_innermost: failed: evolution of base is not affine.
+	base_address: 
+	offset from base address: 
+	constant offset from base address: 
+	step: 
+	aligned to: 
+	base_object: *_21
+Creating dr for *_21
+analyze_innermost: failed: evolution of base is not affine.
+	base_address: 
+	offset from base address: 
+	constant offset from base address: 
+	step: 
+	aligned to: 
+	base_object: *_21
+
+Before limit_scops SCoP statistics (BBS:1, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP statistics (BBS:1, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP statistics (BBS:1, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+Before limit_scops SCoP profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+
+number of SCoPs: 0
+
+Global statistics (BBS:8, LOOPS:1, CONDITIONS:2, STMTS:53)
+
+Global profiling statistics (BBS:0, LOOPS:0, CONDITIONS:0, STMTS:0)
+loop_0 (header = 0, latch = 1, niter = )
+{
+  bb_2 (preds = {bb_0 }, succs = {bb_4 bb_3 })
+  {
+    <bb 2>:
+    # DEBUG D#9 => &s_3(D)->_hist
+    # DEBUG v => D#9
+    # DEBUG __out => os_5(D)
+    # DEBUG __s => "[ "
+    # DEBUG __s => "[ "
+    # .MEM_13 = VDEF <.MEM_4(D)>
+    std::__ostream_insert<char, std::char_traits<char> > (os_5(D), "[ ", 2);
+    # DEBUG i => 0
+    # VUSE <.MEM_13>
+    _30 = MEM[(int * *)s_3(D) + 152B];
+    # DEBUG D#7 => D#9
+    # VUSE <.MEM_13>
+    _22 = MEM[(int * *)s_3(D) + 160B];
+    # DEBUG D#7 => D#9
+    # DEBUG this => D#7
+    # DEBUG this => D#7
+    _23 = (long int) _22;
+    _6 = (long int) _30;
+    _24 = _23 - _6;
+    _11 = _24 /[ex] 4;
+    if (_11 != 0)
+      goto <bb 4>;
+    else
+      goto <bb 3>;
+
+  }
+  bb_3 (preds = {bb_2 bb_7 }, succs = {bb_1 })
+  {
+    <bb 3>:
+    # .MEM_28 = PHI <.MEM_13(2), .MEM_33(7)>
+    # DEBUG __out => os_5(D)
+    # DEBUG __s => "]"
+    # DEBUG __s => "]"
+    # .MEM_29 = VDEF <.MEM_28>
+    std::__ostream_insert<char, std::char_traits<char> > (os_5(D), "]", 1);
+    # VUSE <.MEM_29>
+    return os_5(D);
+
+  }
+  bb_4 (preds = {bb_2 }, succs = {bb_5 })
+  {
+    <bb 4>:
+
+  }
+  bb_7 (preds = {bb_5 }, succs = {bb_3 })
+  {
+    <bb 7>:
+    # .MEM_33 = PHI <.MEM_27(5)>
+    goto <bb 3>;
+
+  }
+  loop_1 (header = 5, latch = 6, niter = )
+  {
+    bb_5 (preds = {bb_4 bb_6 }, succs = {bb_6 bb_7 })
+    {
+      <bb 5>:
+      # i_31 = PHI <0(4), i_12(6)>
+      # .MEM_32 = PHI <.MEM_13(4), .MEM_27(6)>
+      # _34 = PHI <_30(4), _14(6)>
+      # DEBUG i => i_31
+      # DEBUG D#7 => D#9
+      # DEBUG this => D#7
+      # DEBUG this => D#7
+      # DEBUG D#8 => D#9
+      # DEBUG __n => i_31
+      # DEBUG this => D#8
+      _20 = i_31 * 4;
+      _21 = _34 + _20;
+      # VUSE <.MEM_32>
+      _8 = *_21;
+      # .MEM_9 = VDEF <.MEM_32>
+      _10 = std::basic_ostream<char>::operator<< (os_5(D), _8);
+      # DEBUG __out => _10
+      # DEBUG __s => " "
+      # DEBUG __s => " "
+      # .MEM_27 = VDEF <.MEM_9>
+      std::__ostream_insert<char, std::char_traits<char> > (_10, " ", 1);
+      i_12 = i_31 + 1;
+      # DEBUG i => i_12
+      # DEBUG i => i_12
+      # VUSE <.MEM_27>
+      _14 = MEM[(int * *)s_3(D) + 152B];
+      # DEBUG D#7 => D#9
+      # VUSE <.MEM_27>
+      _15 = MEM[(int * *)s_3(D) + 160B];
+      # DEBUG D#7 => D#9
+      # DEBUG this => D#7
+      # DEBUG this => D#7
+      _7 = (long int) _15;
+      _16 = (long int) _14;
+      _17 = _7 - _16;
+      _18 = _17 /[ex] 4;
+      _19 = (size_type) _18;
+      if (i_12 < _19)
+        goto <bb 6>;
+      else
+        goto <bb 7>;
+
+    }
+    bb_6 (preds = {bb_5 }, succs = {bb_5 })
+    {
+      <bb 6>:
+      goto <bb 5>;
+
+    }
+  }
+}
+
+Pass statistics:
+----------------
+
+std::ostream& operator<<(std::ostream&, const Stats&) (struct ostreamD.7362 & osD.31865, const struct StatsD.30964 & sD.31866)
+{
+  struct basic_ostreamD.7361 & D.34942;
+  struct basic_ostreamD.7361 & D.34938;
+  struct basic_ostreamD.7361 & D.34934;
+  size_tD.5382 iD.31870;
+  long intD.12 _6;
+  long intD.12 _7;
+  intD.9 _8;
+  struct basic_ostreamD.7361 & _10;
+  long intD.12 _11;
+  intD.9 * const _14;
+  intD.9 * const _15;
+  long intD.12 _16;
+  long intD.12 _17;
+  long intD.12 _18;
+  size_typeD.31293 _19;
+  long unsigned intD.14 _20;
+  const intD.9 & _21;
+  intD.9 * const _22;
+  long intD.12 _23;
+  long intD.12 _24;
+  intD.9 * const _30;
+  intD.9 * const _34;
+
+;;   basic block 2, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 0, next block 3, flags: (NEW, REACHABLE)
+;;    pred:       ENTRY [100.0%]  (FALLTHRU,EXECUTABLE)
+  # DEBUG D#9ptD.0 => &s_3(D)->_histD.31719
+  # DEBUG vD.31869 => D#9ptD.0
+  # DEBUG __outD.34931 => os_5(D)
+  # DEBUG __sD.34932 => "[ "
+  # DEBUG __sD.34933 => "[ "
+  # .MEM_13 = VDEF <.MEM_4(D)>
+  # USE = nonlocal 
+  # CLB = nonlocal 
+  _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_lD.7824 (os_5(D), "[ ", 2);
+  # DEBUG iD.31870 => 0
+  # VUSE <.MEM_13>
+  # PT = nonlocal escaped 
+  _30 = MEM[(intD.9 * *)s_3(D) + 152B];
+  # DEBUG D#7ptD.0 => D#9ptD.0
+  # VUSE <.MEM_13>
+  # PT = nonlocal escaped 
+  _22 = MEM[(intD.9 * *)s_3(D) + 160B];
+  # DEBUG D#7ptD.0 => D#9ptD.0
+  # DEBUG thisD.33123 => D#7ptD.0
+  # DEBUG thisD.33122 => D#7ptD.0
+  _23 = (long intD.12) _22;
+  _6 = (long intD.12) _30;
+  _24 = _23 - _6;
+  # RANGE [-2305843009213693952, 2305843009213693951]
+  _11 = _24 /[ex] 4;
+  if (_11 != 0)
+    goto <bb 4>;
+  else
+    goto <bb 3>;
+;;    succ:       4 [91.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                3 [9.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 3, loop depth 0, count 0, freq 900, maybe hot
+;;    prev block 2, next block 4, flags: (NEW, REACHABLE)
+;;    pred:       2 [9.0%]  (FALSE_VALUE,EXECUTABLE)
+;;                7 [100.0%]  (FALLTHRU)
+  # .MEM_28 = PHI <.MEM_13(2), .MEM_33(7)>
+  # DEBUG __outD.34939 => os_5(D)
+  # DEBUG __sD.34940 => "]"
+  # DEBUG __sD.34941 => "]"
+  # .MEM_29 = VDEF <.MEM_28>
+  # USE = nonlocal 
+  # CLB = nonlocal 
+  _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_lD.7824 (os_5(D), "]", 1);
+  # VUSE <.MEM_29>
+  return os_5(D);
+;;    succ:       EXIT [100.0%] 
+
+;;   basic block 4, loop depth 0, count 0, freq 819, maybe hot
+;;    prev block 3, next block 5, flags: (NEW)
+;;    pred:       2 [91.0%]  (TRUE_VALUE,EXECUTABLE)
+;;    succ:       5 [100.0%]  (FALLTHRU,EXECUTABLE)
+
+;;   basic block 5, loop depth 1, count 0, freq 9100, maybe hot
+;;    prev block 4, next block 7, flags: (NEW)
+;;    pred:       4 [100.0%]  (FALLTHRU,EXECUTABLE)
+;;                6 [100.0%]  (FALLTHRU,DFS_BACK,EXECUTABLE)
+  # RANGE [0, 18446744073709551615]
+  # i_31 = PHI <0(4), i_12(6)>
+  # .MEM_32 = PHI <.MEM_13(4), .MEM_27(6)>
+  # PT = nonlocal escaped 
+  # _34 = PHI <_30(4), _14(6)>
+  # DEBUG iD.31870 => i_31
+  # DEBUG D#7ptD.0 => D#9ptD.0
+  # DEBUG thisD.33123 => D#7ptD.0
+  # DEBUG thisD.33122 => D#7ptD.0
+  # DEBUG D#8ptD.0 => D#9ptD.0
+  # DEBUG __nD.33126 => i_31
+  # DEBUG thisD.33127 => D#8ptD.0
+  # RANGE [0, 18446744073709551615] NONZERO 18446744073709551612
+  _20 = i_31 * 4;
+  # PT = nonlocal escaped 
+  _21 = _34 + _20;
+  # VUSE <.MEM_32>
+  _8 = *_21;
+  # .MEM_9 = VDEF <.MEM_32>
+  # PT = nonlocal escaped 
+  # USE = nonlocal 
+  # CLB = nonlocal 
+  _10 = _ZNSolsEiD.21643 (os_5(D), _8);
+  # DEBUG __outD.34935 => _10
+  # DEBUG __sD.34936 => " "
+  # DEBUG __sD.34937 => " "
+  # .MEM_27 = VDEF <.MEM_9>
+  # USE = nonlocal 
+  # CLB = nonlocal 
+  _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_lD.7824 (_10, " ", 1);
+  # RANGE [0, 18446744073709551615]
+  i_12 = i_31 + 1;
+  # DEBUG iD.31870 => i_12
+  # DEBUG iD.31870 => i_12
+  # VUSE <.MEM_27>
+  # PT = nonlocal escaped 
+  _14 = MEM[(intD.9 * *)s_3(D) + 152B];
+  # DEBUG D#7ptD.0 => D#9ptD.0
+  # VUSE <.MEM_27>
+  # PT = nonlocal escaped 
+  _15 = MEM[(intD.9 * *)s_3(D) + 160B];
+  # DEBUG D#7ptD.0 => D#9ptD.0
+  # DEBUG thisD.33123 => D#7ptD.0
+  # DEBUG thisD.33122 => D#7ptD.0
+  _7 = (long intD.12) _15;
+  _16 = (long intD.12) _14;
+  _17 = _7 - _16;
+  # RANGE [-2305843009213693952, 2305843009213693951]
+  _18 = _17 /[ex] 4;
+  # RANGE ~[2305843009213693952, 16140901064495857663]
+  _19 = (size_typeD.31293) _18;
+  if (i_12 < _19)
+    goto <bb 6>;
+  else
+    goto <bb 7>;
+;;    succ:       6 [91.0%]  (TRUE_VALUE,EXECUTABLE)
+;;                7 [9.0%]  (FALSE_VALUE,EXECUTABLE)
+
+;;   basic block 7, loop depth 0, count 0, freq 819, maybe hot
+;;    prev block 5, next block 6, flags: (NEW)
+;;    pred:       5 [9.0%]  (FALSE_VALUE,EXECUTABLE)
+  # .MEM_33 = PHI <.MEM_27(5)>
+  goto <bb 3>;
+;;    succ:       3 [100.0%]  (FALLTHRU)
+
+;;   basic block 6, loop depth 1, count 0, freq 8281, maybe hot
+;;    prev block 7, next block 1, flags: (NEW)
+;;    pred:       5 [91.0%]  (TRUE_VALUE,EXECUTABLE)
+  goto <bb 5>;
+;;    succ:       5 [100.0%]  (FALLTHRU,DFS_BACK,EXECUTABLE)
+
+}
+
+

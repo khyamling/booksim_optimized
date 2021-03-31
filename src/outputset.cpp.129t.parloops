@@ -1,0 +1,2130 @@
+
+;; Function void OutputSet::Add(int, int, int) (_ZN9OutputSet3AddEiii, funcdef_no=895, decl_uid=16382, cgraph_uid=207, symbol_order=207)
+
+Trying loop 1 as candidate
+loop 1 is innermost
+loop is not parallel according to graphite
+void OutputSet::Add(int, int, int) (struct OutputSet * const this, int output_port, int vc, int pri)
+{
+  struct _Rb_tree_node_base * SR.157;
+  struct _Rb_tree_node_base * SR.156;
+  struct _Rb_tree_node_base * __res$8;
+  struct _Rb_tree_node_base * __res;
+  int s$output_port;
+  int s$pri;
+  int s$vc_end;
+  int s$vc_start;
+  bool __insert_left;
+  struct iterator D.19418;
+  struct pair D.19391;
+  bool __comp;
+  struct _Rb_tree_node_base * const __j$_M_node;
+  struct pair D.19362;
+  struct iterator D.19361;
+  struct pair __res;
+  struct _Rb_tree_node_base * __res$first;
+  struct _Rb_tree_node_base * __res$second;
+  struct _Rb_tree_node_base * SR.135;
+  struct sSetElement s;
+  struct pair __p;
+  struct _Rb_tree_node_base * _11;
+  const int _20;
+  const int _21;
+  struct _Rb_tree_node_base * _22;
+  struct _Rb_tree_node_base * _23;
+  struct _Rb_tree_node_base * _25;
+  struct _Rb_tree_node_base * const _31;
+  const int _36;
+  struct _Rb_tree_node * _37;
+  long unsigned int _42;
+  long unsigned int _43;
+  const int prephitmp_50;
+  const int pretmp_51;
+  int prephitmp_52;
+  int pretmp_53;
+
+  <bb 2>:
+  # DEBUG this => this_2(D)
+  # DEBUG output_port => output_port_3(D)
+  # DEBUG vc_start => vc_4(D)
+  # DEBUG vc_end => vc_4(D)
+  # DEBUG pri => pri_5(D)
+  # DEBUG s$vc_start => vc_4(D)
+  # DEBUG s$vc_end => vc_4(D)
+  # DEBUG s$pri => pri_5(D)
+  # DEBUG s$output_port => output_port_3(D)
+  # DEBUG D#93 => &this_2(D)->_outputs
+  # DEBUG this => D#93
+  # DEBUG __x => &s
+  # DEBUG D#98 => &MEM[(struct set *)this_2(D)]._M_t
+  # DEBUG this => D#98
+  # DEBUG __v => &s
+  # DEBUG __x => &s
+  # DEBUG this => D#5
+  # DEBUG this => D#98
+  # DEBUG __k => &s
+  _11 = MEM[(struct _Rb_tree_node_base * *)this_2(D) + 16B];
+  # DEBUG D#4 => D#98
+  # DEBUG this => D#4
+  # DEBUG __x => NULL
+  # DEBUG this => D#98
+  __j$_M_node_17 = &MEM[(struct _Rb_tree *)this_2(D)]._M_impl._M_header;
+  # DEBUG __y => NULL
+  # DEBUG __comp => 1
+  # DEBUG __comp => 1
+  # DEBUG __y => __j$_M_node_17
+  # DEBUG __x => _11
+  if (_11 == 0B)
+    goto <bb 10>;
+  else
+    goto <bb 5>;
+
+  <bb 3>:
+  # _31 = PHI <_22(7), _23(8)>
+  # DEBUG __comp => pri_5(D) > _20
+  # DEBUG __y => __j$_M_node_63
+  # DEBUG __x => _31
+  if (_31 == 0B)
+    goto <bb 9>;
+  else
+    goto <bb 4>;
+
+  <bb 4>:
+  goto <bb 6>;
+
+  <bb 5>:
+
+  <bb 6>:
+  # __j$_M_node_63 = PHI <_11(5), _31(4)>
+  # DEBUG __comp => 1
+  # DEBUG __x => __j$_M_node_63
+  # DEBUG __y => __j$_M_node_63
+  # DEBUG __x => __j$_M_node_63
+  # DEBUG __x => __j$_M_node_63
+  # DEBUG this => __j$_M_node_63
+  # DEBUG D#41 => &MEM[(const struct _Rb_tree_node *)__j$_M_node_63]._M_value_field
+  # DEBUG __r => D#41
+  # DEBUG __x => D#41
+  # DEBUG this => D#5
+  # DEBUG D#45 => &MEM[(struct _Rb_tree *)D#98]._M_impl._M_key_compare
+  # DEBUG D#39 => D#45
+  # DEBUG __x => &s
+  # DEBUG __y => D#41
+  # DEBUG this => D#39
+  # DEBUG D#2 => &s
+  _20 = MEM[(int *)__j$_M_node_63 + 40B];
+  # DEBUG D#3 => D#41
+  # DEBUG se1 => D#2
+  # DEBUG se2 => D#3
+  # DEBUG __comp => NULL
+  if (pri_5(D) > _20)
+    goto <bb 7>;
+  else
+    goto <bb 8>;
+
+  <bb 7>:
+  _22 = MEM[(struct _Rb_tree_node_base * *)__j$_M_node_63 + 16B];
+  # DEBUG D#38 => __j$_M_node_63
+  # DEBUG __x => D#38
+  goto <bb 3>;
+
+  <bb 8>:
+  _23 = MEM[(struct _Rb_tree_node_base * *)__j$_M_node_63 + 24B];
+  # DEBUG D#37 => __j$_M_node_63
+  # DEBUG __x => D#37
+  goto <bb 3>;
+
+  <bb 9>:
+  # _21 = PHI <_20(3)>
+  # __j$_M_node_19 = PHI <__j$_M_node_63(3)>
+
+  <bb 18>:
+  # DEBUG this => &__j
+  # DEBUG __x => __j$_M_node_19
+  # DEBUG __j$_M_node => __j$_M_node_19
+  if (pri_5(D) > _21)
+    goto <bb 10>;
+  else
+    goto <bb 12>;
+
+  <bb 10>:
+  # __j$_M_node_69 = PHI <__j$_M_node_19(18), __j$_M_node_17(2)>
+  # DEBUG this => &__j
+  # DEBUG __x => __j$_M_node_69
+  # DEBUG __j$_M_node => __j$_M_node_69
+  _25 = MEM[(struct _Rb_tree_node_base * *)this_2(D) + 24B];
+  # DEBUG D#40 => D#98
+  # DEBUG this => D#40
+  # DEBUG this => NULL
+  # DEBUG __x => _25
+  # DEBUG this => &__j
+  # DEBUG __x => NULL
+  if (_25 == __j$_M_node_69)
+    goto <bb 13>;
+  else
+    goto <bb 11>;
+
+  <bb 11>:
+  # DEBUG this => &__j
+  __j$_M_node_27 = std::_Rb_tree_decrement (__j$_M_node_69);
+  # DEBUG __j$_M_node => __j$_M_node_27
+  pretmp_51 = MEM[(int *)__j$_M_node_27 + 40B];
+
+  <bb 12>:
+  # __j$_M_node_33 = PHI <__j$_M_node_19(18), __j$_M_node_69(11)>
+  # prephitmp_50 = PHI <_21(18), pretmp_51(11)>
+  # DEBUG __j$_M_node => NULL
+  # DEBUG __x => NULL
+  # DEBUG __x => NULL
+  # DEBUG this => NULL
+  # DEBUG __r => D#42
+  # DEBUG __x => D#42
+  # DEBUG this => D#5
+  # DEBUG D#44 => &MEM[(struct _Rb_tree *)D#98]._M_impl._M_key_compare
+  # DEBUG D#39 => D#44
+  # DEBUG __x => D#42
+  # DEBUG __y => &s
+  # DEBUG this => D#39
+  # DEBUG D#2 => D#42
+  # DEBUG D#3 => &s
+  # DEBUG se1 => D#2
+  # DEBUG se2 => D#3
+  if (pri_5(D) < prephitmp_50)
+    goto <bb 13>;
+  else
+    goto <bb 17>;
+
+  <bb 13>:
+  # __res$8_55 = PHI <_25(10), __j$_M_node_33(12)>
+  # DEBUG D#43 => {CLOBBER}
+  # DEBUG __j$_M_node => D#43
+  # DEBUG __res => 0B
+  # DEBUG __res$8 => __res$8_55
+  # DEBUG __res$first => 0B
+  # DEBUG __res$second => __res$8_55
+  if (__res$8_55 != 0B)
+    goto <bb 14>;
+  else
+    goto <bb 17>;
+
+  <bb 14>:
+  # DEBUG this => &__an
+  # DEBUG __t => D#98
+  # DEBUG __an$_M_t => D#98
+  # DEBUG D#88 => &__an
+  # DEBUG this => D#98
+  # DEBUG __x => 0B
+  # DEBUG __p => __res$8_55
+  # DEBUG __v => &s
+  # DEBUG __node_gen => D#88
+  # DEBUG D#87 => D#88
+  # DEBUG this => D#98
+  if (__j$_M_node_17 == __res$8_55)
+    goto <bb 16>;
+  else
+    goto <bb 15>;
+
+  <bb 15>:
+  # DEBUG __x => __res$8_55
+  # DEBUG __x => __res$8_55
+  # DEBUG this => __res$8_55
+  # DEBUG D#85 => &MEM[(const struct _Rb_tree_node *)__res$8_55]._M_value_field
+  # DEBUG __r => D#85
+  # DEBUG __x => D#85
+  # DEBUG this => D#5
+  # DEBUG __x => &s
+  # DEBUG this => D#5
+  # DEBUG D#86 => &MEM[(struct _Rb_tree *)D#98]._M_impl._M_key_compare
+  # DEBUG D#39 => D#86
+  # DEBUG __x => NULL
+  # DEBUG __y => D#85
+  # DEBUG this => D#39
+  _36 = MEM[(int *)__res$8_55 + 40B];
+  # DEBUG D#3 => D#85
+  # DEBUG se1 => D#2
+  # DEBUG se2 => D#3
+  __insert_left_16 = pri_5(D) > _36;
+  pretmp_53 = (int) __insert_left_16;
+
+  <bb 16>:
+  # prephitmp_52 = PHI <pretmp_53(15), 1(14)>
+  # DEBUG __insert_left => NULL
+  # DEBUG D#84 => D#87
+  # DEBUG __arg => &s
+  # DEBUG this => D#84
+  # DEBUG D#83 => D#84
+  # DEBUG D#82 => D#83->_M_t
+  # DEBUG D#81 => D#82
+  # DEBUG __x => &s
+  # DEBUG this => D#81
+  # DEBUG D#80 => D#81
+  # DEBUG D#79 => D#81
+  # DEBUG D#78 => D#79
+  # DEBUG this => D#78
+  # DEBUG D#77 => D#78
+  # DEBUG this => D#77
+  # DEBUG __n => 1
+  # DEBUG __a => D#76
+  # DEBUG D#75 => D#76
+  # DEBUG D#73 => D#75
+  # DEBUG D#74 => 0B
+  # DEBUG __n => 1
+  # DEBUG this => D#73
+  # DEBUG D.19408 => D#74
+  # DEBUG D#72 => D#73
+  # DEBUG D#71 => D#72
+  # DEBUG this => D#71
+  _37 = operator new (48);
+  # DEBUG __tmp => _37
+  # DEBUG D#70 => D#80
+  # DEBUG __node => _37
+  # DEBUG __x => &s
+  # DEBUG this => D#70
+  # DEBUG D#69 => D#70
+  # DEBUG this => _37
+  # DEBUG D#97 => &_37->_M_value_field
+  # DEBUG __r => D#97
+  # DEBUG D#56 => D#69
+  # DEBUG this => D#56
+  # DEBUG D#55 => D#56
+  # DEBUG this => D#55
+  # DEBUG this => NULL
+  # DEBUG D.18955 => NULL
+  # DEBUG this => NULL
+  # DEBUG __p => D#97
+  # DEBUG __val => &s
+  # DEBUG this => D#54
+  # DEBUG D#1 => 16
+  # DEBUG __p => D#97
+  # DEBUG D.18940 => D#1
+  MEM[(struct sSetElement *)_37 + 32B] = vc_4(D);
+  MEM[(struct sSetElement *)_37 + 36B] = vc_4(D);
+  MEM[(struct sSetElement *)_37 + 40B] = pri_5(D);
+  MEM[(struct sSetElement *)_37 + 44B] = output_port_3(D);
+  # DEBUG this => NULL
+  # DEBUG this => NULL
+  # DEBUG __z => _37
+  std::_Rb_tree_insert_and_rebalance (prephitmp_52, _37, __res$8_55, __j$_M_node_17);
+  _42 = MEM[(struct _Rb_tree *)this_2(D)]._M_impl._M_node_count;
+  _43 = _42 + 1;
+  MEM[(struct _Rb_tree *)this_2(D)]._M_impl._M_node_count = _43;
+  # DEBUG this => NULL
+  # DEBUG __x => _37
+  # DEBUG this => NULL
+  # DEBUG __a => &D.19361
+  # DEBUG __b => NULL
+  D.19361 ={v} {CLOBBER};
+
+  <bb 17>:
+  # DEBUG D#91 => {CLOBBER}
+  # DEBUG __res$first => D#91
+  # DEBUG D#92 => {CLOBBER}
+  # DEBUG __res$second => D#92
+  # DEBUG this => NULL
+  # DEBUG __it => &__p.first
+  # DEBUG D#96 => MEM[(const struct iterator &)&__p]._M_node
+  # DEBUG this => NULL
+  # DEBUG __a => NULL
+  # DEBUG __b => &__p.second
+  # DEBUG D#95 => MEM[(const bool &)&__p + 8]
+  # DEBUG D#94 => VIEW_CONVERT_EXPR<unsigned char>(D#95)
+  __p ={v} {CLOBBER};
+  # DEBUG D.19328 => D#96
+  # DEBUG D.19329 => D#94
+  # DEBUG D#99 => {CLOBBER}
+  # DEBUG s$vc_start => D#99
+  # DEBUG D#100 => {CLOBBER}
+  # DEBUG s$vc_end => D#100
+  # DEBUG D#101 => {CLOBBER}
+  # DEBUG s$pri => D#101
+  # DEBUG D#102 => {CLOBBER}
+  # DEBUG s$output_port => D#102
+  return;
+
+}
+
+
+
+;; Function void OutputSet::AddRange(int, int, int, int) (_ZN9OutputSet8AddRangeEiiii, funcdef_no=896, decl_uid=16388, cgraph_uid=208, symbol_order=208)
+
+Trying loop 1 as candidate
+loop 1 is innermost
+loop is not parallel according to graphite
+void OutputSet::AddRange(int, int, int, int) (struct OutputSet * const this, int output_port, int vc_start, int vc_end, int pri)
+{
+  struct _Rb_tree_node_base * SR.167;
+  struct _Rb_tree_node_base * SR.166;
+  struct _Rb_tree_node_base * __res$8;
+  struct _Rb_tree_node_base * __res;
+  int s$output_port;
+  int s$pri;
+  int s$vc_end;
+  int s$vc_start;
+  bool __insert_left;
+  struct iterator D.19512;
+  struct pair D.19485;
+  bool __comp;
+  struct _Rb_tree_node_base * const __j$_M_node;
+  struct pair D.19456;
+  struct iterator D.19455;
+  struct pair __res;
+  struct _Rb_tree_node_base * __res$first;
+  struct _Rb_tree_node_base * __res$second;
+  struct _Rb_tree_node_base * SR.135;
+  struct pair __p;
+  struct sSetElement s;
+  struct _Rb_tree_node_base * _11;
+  const int _21;
+  const int _22;
+  struct _Rb_tree_node_base * _23;
+  struct _Rb_tree_node_base * _24;
+  struct _Rb_tree_node_base * _26;
+  struct _Rb_tree_node_base * const _32;
+  const int _37;
+  struct _Rb_tree_node * _38;
+  long unsigned int _43;
+  long unsigned int _44;
+  const int prephitmp_51;
+  const int pretmp_52;
+  int prephitmp_53;
+  int pretmp_54;
+
+  <bb 2>:
+  # DEBUG s$vc_start => vc_start_2(D)
+  # DEBUG s$vc_end => vc_end_4(D)
+  # DEBUG s$pri => pri_6(D)
+  # DEBUG s$output_port => output_port_8(D)
+  # DEBUG D#93 => &this_10(D)->_outputs
+  # DEBUG this => D#93
+  # DEBUG __x => &s
+  # DEBUG D#105 => &MEM[(struct set *)this_10(D)]._M_t
+  # DEBUG this => D#105
+  # DEBUG __v => &s
+  # DEBUG __x => &s
+  # DEBUG this => D#5
+  # DEBUG this => D#105
+  # DEBUG __k => &s
+  _11 = MEM[(struct _Rb_tree_node_base * *)this_10(D) + 16B];
+  # DEBUG D#4 => D#105
+  # DEBUG this => D#4
+  # DEBUG __x => NULL
+  # DEBUG this => D#105
+  __j$_M_node_18 = &MEM[(struct _Rb_tree *)this_10(D)]._M_impl._M_header;
+  # DEBUG __y => NULL
+  # DEBUG __comp => 1
+  # DEBUG __comp => 1
+  # DEBUG __y => __j$_M_node_18
+  # DEBUG __x => _11
+  if (_11 == 0B)
+    goto <bb 10>;
+  else
+    goto <bb 5>;
+
+  <bb 3>:
+  # _32 = PHI <_23(7), _24(8)>
+  # DEBUG __comp => pri_6(D) > _21
+  # DEBUG __y => __j$_M_node_64
+  # DEBUG __x => _32
+  if (_32 == 0B)
+    goto <bb 9>;
+  else
+    goto <bb 4>;
+
+  <bb 4>:
+  goto <bb 6>;
+
+  <bb 5>:
+
+  <bb 6>:
+  # __j$_M_node_64 = PHI <_11(5), _32(4)>
+  # DEBUG __comp => 1
+  # DEBUG __x => __j$_M_node_64
+  # DEBUG __y => __j$_M_node_64
+  # DEBUG __x => __j$_M_node_64
+  # DEBUG __x => __j$_M_node_64
+  # DEBUG this => __j$_M_node_64
+  # DEBUG D#41 => &MEM[(const struct _Rb_tree_node *)__j$_M_node_64]._M_value_field
+  # DEBUG __r => D#41
+  # DEBUG __x => D#41
+  # DEBUG this => D#5
+  # DEBUG D#45 => &MEM[(struct _Rb_tree *)D#105]._M_impl._M_key_compare
+  # DEBUG D#39 => D#45
+  # DEBUG __x => &s
+  # DEBUG __y => D#41
+  # DEBUG this => D#39
+  # DEBUG D#2 => &s
+  _21 = MEM[(int *)__j$_M_node_64 + 40B];
+  # DEBUG D#3 => D#41
+  # DEBUG se1 => D#2
+  # DEBUG se2 => D#3
+  # DEBUG __comp => NULL
+  if (pri_6(D) > _21)
+    goto <bb 7>;
+  else
+    goto <bb 8>;
+
+  <bb 7>:
+  _23 = MEM[(struct _Rb_tree_node_base * *)__j$_M_node_64 + 16B];
+  # DEBUG D#38 => __j$_M_node_64
+  # DEBUG __x => D#38
+  goto <bb 3>;
+
+  <bb 8>:
+  _24 = MEM[(struct _Rb_tree_node_base * *)__j$_M_node_64 + 24B];
+  # DEBUG D#37 => __j$_M_node_64
+  # DEBUG __x => D#37
+  goto <bb 3>;
+
+  <bb 9>:
+  # _22 = PHI <_21(3)>
+  # __j$_M_node_20 = PHI <__j$_M_node_64(3)>
+
+  <bb 18>:
+  # DEBUG this => &__j
+  # DEBUG __x => __j$_M_node_20
+  # DEBUG __j$_M_node => __j$_M_node_20
+  if (pri_6(D) > _22)
+    goto <bb 10>;
+  else
+    goto <bb 12>;
+
+  <bb 10>:
+  # __j$_M_node_70 = PHI <__j$_M_node_20(18), __j$_M_node_18(2)>
+  # DEBUG this => &__j
+  # DEBUG __x => __j$_M_node_70
+  # DEBUG __j$_M_node => __j$_M_node_70
+  _26 = MEM[(struct _Rb_tree_node_base * *)this_10(D) + 24B];
+  # DEBUG D#40 => D#105
+  # DEBUG this => D#40
+  # DEBUG this => NULL
+  # DEBUG __x => _26
+  # DEBUG this => &__j
+  # DEBUG __x => NULL
+  if (_26 == __j$_M_node_70)
+    goto <bb 13>;
+  else
+    goto <bb 11>;
+
+  <bb 11>:
+  # DEBUG this => &__j
+  __j$_M_node_28 = std::_Rb_tree_decrement (__j$_M_node_70);
+  # DEBUG __j$_M_node => __j$_M_node_28
+  pretmp_52 = MEM[(int *)__j$_M_node_28 + 40B];
+
+  <bb 12>:
+  # __j$_M_node_34 = PHI <__j$_M_node_20(18), __j$_M_node_70(11)>
+  # prephitmp_51 = PHI <_22(18), pretmp_52(11)>
+  # DEBUG __j$_M_node => NULL
+  # DEBUG __x => NULL
+  # DEBUG __x => NULL
+  # DEBUG this => NULL
+  # DEBUG __r => D#42
+  # DEBUG __x => D#42
+  # DEBUG this => D#5
+  # DEBUG D#44 => &MEM[(struct _Rb_tree *)D#105]._M_impl._M_key_compare
+  # DEBUG D#39 => D#44
+  # DEBUG __x => D#42
+  # DEBUG __y => &s
+  # DEBUG this => D#39
+  # DEBUG D#2 => D#42
+  # DEBUG D#3 => &s
+  # DEBUG se1 => D#2
+  # DEBUG se2 => D#3
+  if (pri_6(D) < prephitmp_51)
+    goto <bb 13>;
+  else
+    goto <bb 17>;
+
+  <bb 13>:
+  # __res$8_56 = PHI <_26(10), __j$_M_node_34(12)>
+  # DEBUG D#43 => {CLOBBER}
+  # DEBUG __j$_M_node => D#43
+  # DEBUG __res => 0B
+  # DEBUG __res$8 => __res$8_56
+  # DEBUG __res$first => 0B
+  # DEBUG __res$second => __res$8_56
+  if (__res$8_56 != 0B)
+    goto <bb 14>;
+  else
+    goto <bb 17>;
+
+  <bb 14>:
+  # DEBUG this => &__an
+  # DEBUG __t => D#105
+  # DEBUG __an$_M_t => D#105
+  # DEBUG D#88 => &__an
+  # DEBUG this => D#105
+  # DEBUG __x => 0B
+  # DEBUG __p => __res$8_56
+  # DEBUG __v => &s
+  # DEBUG __node_gen => D#88
+  # DEBUG D#87 => D#88
+  # DEBUG this => D#105
+  if (__j$_M_node_18 == __res$8_56)
+    goto <bb 16>;
+  else
+    goto <bb 15>;
+
+  <bb 15>:
+  # DEBUG __x => __res$8_56
+  # DEBUG __x => __res$8_56
+  # DEBUG this => __res$8_56
+  # DEBUG D#85 => &MEM[(const struct _Rb_tree_node *)__res$8_56]._M_value_field
+  # DEBUG __r => D#85
+  # DEBUG __x => D#85
+  # DEBUG this => D#5
+  # DEBUG __x => &s
+  # DEBUG this => D#5
+  # DEBUG D#86 => &MEM[(struct _Rb_tree *)D#105]._M_impl._M_key_compare
+  # DEBUG D#39 => D#86
+  # DEBUG __x => NULL
+  # DEBUG __y => D#85
+  # DEBUG this => D#39
+  _37 = MEM[(int *)__res$8_56 + 40B];
+  # DEBUG D#3 => D#85
+  # DEBUG se1 => D#2
+  # DEBUG se2 => D#3
+  __insert_left_17 = pri_6(D) > _37;
+  pretmp_54 = (int) __insert_left_17;
+
+  <bb 16>:
+  # prephitmp_53 = PHI <pretmp_54(15), 1(14)>
+  # DEBUG __insert_left => NULL
+  # DEBUG D#84 => D#87
+  # DEBUG __arg => &s
+  # DEBUG this => D#84
+  # DEBUG D#83 => D#84
+  # DEBUG D#82 => D#83->_M_t
+  # DEBUG D#81 => D#82
+  # DEBUG __x => &s
+  # DEBUG this => D#81
+  # DEBUG D#80 => D#81
+  # DEBUG D#79 => D#81
+  # DEBUG D#78 => D#79
+  # DEBUG this => D#78
+  # DEBUG D#77 => D#78
+  # DEBUG this => D#77
+  # DEBUG __n => 1
+  # DEBUG __a => D#76
+  # DEBUG D#75 => D#76
+  # DEBUG D#73 => D#75
+  # DEBUG D#74 => 0B
+  # DEBUG __n => 1
+  # DEBUG this => D#73
+  # DEBUG D.19502 => D#74
+  # DEBUG D#72 => D#73
+  # DEBUG D#71 => D#72
+  # DEBUG this => D#71
+  _38 = operator new (48);
+  # DEBUG __tmp => _38
+  # DEBUG D#70 => D#80
+  # DEBUG __node => _38
+  # DEBUG __x => &s
+  # DEBUG this => D#70
+  # DEBUG D#69 => D#70
+  # DEBUG this => _38
+  # DEBUG D#104 => &_38->_M_value_field
+  # DEBUG __r => D#104
+  # DEBUG D#56 => D#69
+  # DEBUG this => D#56
+  # DEBUG D#55 => D#56
+  # DEBUG this => D#55
+  # DEBUG this => NULL
+  # DEBUG D.18955 => NULL
+  # DEBUG this => NULL
+  # DEBUG __p => D#104
+  # DEBUG __val => &s
+  # DEBUG this => D#54
+  # DEBUG D#1 => 16
+  # DEBUG __p => D#104
+  # DEBUG D.18940 => D#1
+  MEM[(struct sSetElement *)_38 + 32B] = vc_start_2(D);
+  MEM[(struct sSetElement *)_38 + 36B] = vc_end_4(D);
+  MEM[(struct sSetElement *)_38 + 40B] = pri_6(D);
+  MEM[(struct sSetElement *)_38 + 44B] = output_port_8(D);
+  # DEBUG this => NULL
+  # DEBUG this => NULL
+  # DEBUG __z => _38
+  std::_Rb_tree_insert_and_rebalance (prephitmp_53, _38, __res$8_56, __j$_M_node_18);
+  _43 = MEM[(struct _Rb_tree *)this_10(D)]._M_impl._M_node_count;
+  _44 = _43 + 1;
+  MEM[(struct _Rb_tree *)this_10(D)]._M_impl._M_node_count = _44;
+  # DEBUG this => NULL
+  # DEBUG __x => _38
+  # DEBUG this => NULL
+  # DEBUG __a => &D.19455
+  # DEBUG __b => NULL
+  D.19455 ={v} {CLOBBER};
+
+  <bb 17>:
+  # DEBUG D#91 => {CLOBBER}
+  # DEBUG __res$first => D#91
+  # DEBUG D#92 => {CLOBBER}
+  # DEBUG __res$second => D#92
+  # DEBUG this => NULL
+  # DEBUG __it => &__p.first
+  # DEBUG D#96 => MEM[(const struct iterator &)&__p]._M_node
+  # DEBUG this => NULL
+  # DEBUG __a => NULL
+  # DEBUG __b => &__p.second
+  # DEBUG D#95 => MEM[(const bool &)&__p + 8]
+  # DEBUG D#94 => VIEW_CONVERT_EXPR<unsigned char>(D#95)
+  __p ={v} {CLOBBER};
+  # DEBUG D.19328 => D#96
+  # DEBUG D.19329 => D#94
+  # DEBUG D#106 => {CLOBBER}
+  # DEBUG s$vc_start => D#106
+  # DEBUG D#107 => {CLOBBER}
+  # DEBUG s$vc_end => D#107
+  # DEBUG D#108 => {CLOBBER}
+  # DEBUG s$pri => D#108
+  # DEBUG D#109 => {CLOBBER}
+  # DEBUG s$output_port => D#109
+  return;
+
+}
+
+
+
+;; Function int OutputSet::NumVCs(int) const (_ZNK9OutputSet6NumVCsEi, funcdef_no=897, decl_uid=16394, cgraph_uid=209, symbol_order=209)
+
+Trying loop 1 as candidate
+loop 1 is innermost
+loop is not parallel according to graphite
+int OutputSet::NumVCs(int) const (const struct OutputSet * const this, int output_port)
+{
+  const struct _Rb_tree_node_base * const i$_M_node;
+  int total;
+  int _8;
+  int _10;
+  int _12;
+  int _13;
+  int _14;
+  const struct _Rb_tree_node_base * _19;
+
+  <bb 2>:
+  # DEBUG total => 0
+  # DEBUG D#9 => &this_4(D)->_outputs
+  # DEBUG this => D#9
+  # DEBUG D#7 => &D#9->_M_t
+  i$_M_node_11 = MEM[(struct _Rb_tree_node_base * *)this_4(D) + 24B];
+  # DEBUG D#6 => D#7
+  # DEBUG this => D#6
+  # DEBUG this => NULL
+  # DEBUG __x => i$_M_node_11
+  # DEBUG i$_M_node => i$_M_node_11
+  # DEBUG i$_M_node => i$_M_node_11
+  # DEBUG total => 0
+  # DEBUG D#13 => &this_4(D)->_outputs
+  # DEBUG this => D#13
+  # DEBUG D#8 => &D#13->_M_t
+  # DEBUG this => D#8
+  _19 = &MEM[(const struct _Rb_tree *)this_4(D)]._M_impl._M_header;
+  # DEBUG this => NULL
+  # DEBUG __x => _19
+  # DEBUG this => &i
+  # DEBUG __x => &D.17660
+  if (i$_M_node_11 != _19)
+    goto <bb 3>;
+  else
+    goto <bb 9>;
+
+  <bb 3>:
+
+  <bb 4>:
+  # total_22 = PHI <0(3), total_2(7)>
+  # i$_M_node_26 = PHI <i$_M_node_11(3), i$_M_node_17(7)>
+  # DEBUG i$_M_node => i$_M_node_26
+  # DEBUG total => total_22
+  # DEBUG D#13 => &this_4(D)->_outputs
+  # DEBUG this => D#13
+  # DEBUG D#8 => &D#13->_M_t
+  # DEBUG this => D#8
+  # DEBUG this => NULL
+  # DEBUG __x => _19
+  # DEBUG this => &i
+  # DEBUG __x => &D.17660
+  # DEBUG this => &i
+  # DEBUG this => i$_M_node_26
+  # DEBUG D#10 => &MEM[(const struct _Rb_tree_node *)i$_M_node_26]._M_value_field
+  # DEBUG __r => D#10
+  _8 = MEM[(const struct sSetElement *)i$_M_node_26 + 32B].output_port;
+  if (_8 == output_port_9(D))
+    goto <bb 5>;
+  else
+    goto <bb 6>;
+
+  <bb 5>:
+  # DEBUG this => &i
+  # DEBUG this => i$_M_node_26
+  # DEBUG D#11 => &MEM[(const struct _Rb_tree_node *)i$_M_node_26]._M_value_field
+  # DEBUG __r => D#11
+  _10 = MEM[(const struct sSetElement *)i$_M_node_26 + 32B].vc_end;
+  # DEBUG this => &i
+  # DEBUG this => i$_M_node_26
+  # DEBUG D#12 => &MEM[(const struct _Rb_tree_node *)i$_M_node_26]._M_value_field
+  # DEBUG __r => D#12
+  _12 = MEM[(const struct sSetElement *)i$_M_node_26 + 32B].vc_start;
+  _13 = _10 - _12;
+  _14 = _13 + 1;
+  total_15 = _14 + total_22;
+  # DEBUG total => total_15
+
+  <bb 6>:
+  # total_2 = PHI <total_22(4), total_15(5)>
+  # DEBUG total => total_2
+  # DEBUG this => &i
+  i$_M_node_17 = std::_Rb_tree_increment (i$_M_node_26);
+  # DEBUG i$_M_node => i$_M_node_17
+  # DEBUG i$_M_node => i$_M_node_17
+  # DEBUG total => total_2
+  # DEBUG D#13 => &this_4(D)->_outputs
+  # DEBUG this => D#13
+  # DEBUG D#8 => &D#13->_M_t
+  # DEBUG this => D#8
+  # DEBUG this => NULL
+  # DEBUG __x => _19
+  # DEBUG this => &i
+  # DEBUG __x => &D.17660
+  if (i$_M_node_17 != _19)
+    goto <bb 7>;
+  else
+    goto <bb 8>;
+
+  <bb 7>:
+  goto <bb 4>;
+
+  <bb 8>:
+  # total_25 = PHI <total_2(6)>
+
+  <bb 10>:
+
+  <bb 9>:
+  # total_23 = PHI <total_25(10), 0(2)>
+
+  <bb 11>:
+  # DEBUG D#14 => {CLOBBER}
+  # DEBUG i$_M_node => D#14
+  return total_23;
+
+}
+
+
+
+;; Function bool OutputSet::OutputEmpty(int) const (_ZNK9OutputSet11OutputEmptyEi, funcdef_no=898, decl_uid=16391, cgraph_uid=210, symbol_order=210)
+
+Trying loop 1 as candidate
+loop 1 is innermost
+loop is not parallel according to graphite
+bool OutputSet::OutputEmpty(int) const (const struct OutputSet * const this, int output_port)
+{
+  const struct _Rb_tree_node_base * const i$_M_node;
+  bool _1;
+  int _6;
+  const struct _Rb_tree_node_base * _12;
+  int _15;
+
+  <bb 2>:
+  # DEBUG D#15 => &this_3(D)->_outputs
+  # DEBUG this => D#15
+  # DEBUG D#7 => &D#15->_M_t
+  i$_M_node_5 = MEM[(struct _Rb_tree_node_base * *)this_3(D) + 24B];
+  # DEBUG D#6 => D#7
+  # DEBUG this => D#6
+  # DEBUG this => NULL
+  # DEBUG __x => i$_M_node_5
+  # DEBUG i$_M_node => i$_M_node_5
+  # DEBUG i$_M_node => i$_M_node_5
+  # DEBUG D#16 => &this_3(D)->_outputs
+  # DEBUG this => D#16
+  # DEBUG D#8 => &D#16->_M_t
+  # DEBUG this => D#8
+  _12 = &MEM[(const struct _Rb_tree *)this_3(D)]._M_impl._M_header;
+  # DEBUG this => NULL
+  # DEBUG __x => _12
+  # DEBUG this => &i
+  # DEBUG __x => &D.17670
+  if (i$_M_node_5 != _12)
+    goto <bb 3>;
+  else
+    goto <bb 8>;
+
+  <bb 3>:
+  # DEBUG this => &i
+  # DEBUG this => i$_M_node_5
+  # DEBUG D#17 => &MEM[(const struct _Rb_tree_node *)i$_M_node_5]._M_value_field
+  # DEBUG __r => D#17
+  _15 = MEM[(const struct sSetElement *)i$_M_node_5 + 32B].output_port;
+  if (output_port_7(D) == _15)
+    goto <bb 8>;
+  else
+    goto <bb 4>;
+
+  <bb 4>:
+  goto <bb 7>;
+
+  <bb 5>:
+  # DEBUG this => &i
+  # DEBUG this => i$_M_node_11
+  # DEBUG D#17 => &MEM[(const struct _Rb_tree_node *)i$_M_node_11]._M_value_field
+  # DEBUG __r => D#17
+  _6 = MEM[(const struct sSetElement *)i$_M_node_11 + 32B].output_port;
+  if (_6 == output_port_7(D))
+    goto <bb 8>;
+  else
+    goto <bb 6>;
+
+  <bb 6>:
+
+  <bb 7>:
+  # i$_M_node_18 = PHI <i$_M_node_5(4), i$_M_node_11(6)>
+  # DEBUG i$_M_node => i$_M_node_18
+  # DEBUG D#16 => &this_3(D)->_outputs
+  # DEBUG this => D#16
+  # DEBUG D#8 => &D#16->_M_t
+  # DEBUG this => D#8
+  # DEBUG this => NULL
+  # DEBUG __x => _12
+  # DEBUG this => &i
+  # DEBUG __x => &D.17670
+  # DEBUG this => &i
+  # DEBUG this => i$_M_node_18
+  # DEBUG D#17 => &MEM[(const struct _Rb_tree_node *)i$_M_node_18]._M_value_field
+  # DEBUG __r => D#17
+  # DEBUG this => &i
+  i$_M_node_11 = std::_Rb_tree_increment (i$_M_node_18);
+  # DEBUG i$_M_node => i$_M_node_11
+  # DEBUG i$_M_node => i$_M_node_11
+  # DEBUG D#16 => &this_3(D)->_outputs
+  # DEBUG this => D#16
+  # DEBUG D#8 => &D#16->_M_t
+  # DEBUG this => D#8
+  # DEBUG this => NULL
+  # DEBUG __x => _12
+  # DEBUG this => &i
+  # DEBUG __x => &D.17670
+  if (i$_M_node_11 != _12)
+    goto <bb 5>;
+  else
+    goto <bb 8>;
+
+  <bb 8>:
+  # _1 = PHI <1(7), 0(5), 1(2), 0(3)>
+
+  <bb 9>:
+  # DEBUG D#18 => {CLOBBER}
+  # DEBUG i$_M_node => D#18
+  return _1;
+
+}
+
+
+
+;; Function int OutputSet::GetVC(int, int, int*) const (_ZNK9OutputSet5GetVCEiiPi, funcdef_no=900, decl_uid=16404, cgraph_uid=212, symbol_order=212)
+
+Trying loop 1 as candidate
+loop 1 is innermost
+loop is not parallel according to graphite
+int OutputSet::GetVC(int, int, int*) const (const struct OutputSet * const this, int output_port, int vc_index, int * pri)
+{
+  const struct _Rb_tree_node_base * const i$_M_node;
+  int vc;
+  int range;
+  int _12;
+  int _15;
+  int _16;
+  int _17;
+  int _22;
+  const struct _Rb_tree_node_base * _32;
+  int _36;
+
+  <bb 2>:
+  # DEBUG remaining => vc_index_7(D)
+  # DEBUG vc => -1
+  if (pri_8(D) != 0B)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  *pri_8(D) = -1;
+
+  <bb 4>:
+  # DEBUG D#19 => &this_11(D)->_outputs
+  # DEBUG this => D#19
+  # DEBUG D#7 => &D#19->_M_t
+  i$_M_node_21 = MEM[(struct _Rb_tree_node_base * *)this_11(D) + 24B];
+  # DEBUG D#6 => D#7
+  # DEBUG this => D#6
+  # DEBUG this => NULL
+  # DEBUG __x => i$_M_node_21
+  # DEBUG i$_M_node => i$_M_node_21
+  # DEBUG i$_M_node => i$_M_node_21
+  # DEBUG remaining => vc_index_7(D)
+  # DEBUG D#23 => &this_11(D)->_outputs
+  # DEBUG this => D#23
+  # DEBUG D#8 => &D#23->_M_t
+  # DEBUG this => D#8
+  _32 = &MEM[(const struct _Rb_tree *)this_11(D)]._M_impl._M_header;
+  # DEBUG this => NULL
+  # DEBUG __x => _32
+  # DEBUG this => &i
+  # DEBUG __x => &D.17687
+  if (i$_M_node_21 != _32)
+    goto <bb 5>;
+  else
+    goto <bb 13>;
+
+  <bb 5>:
+
+  <bb 6>:
+  # vc_index_31 = PHI <vc_index_7(D)(5), vc_index_2(12)>
+  # i$_M_node_30 = PHI <i$_M_node_21(5), i$_M_node_26(12)>
+  # DEBUG i$_M_node => i$_M_node_30
+  # DEBUG remaining => vc_index_31
+  # DEBUG D#23 => &this_11(D)->_outputs
+  # DEBUG this => D#23
+  # DEBUG D#8 => &D#23->_M_t
+  # DEBUG this => D#8
+  # DEBUG this => NULL
+  # DEBUG __x => _32
+  # DEBUG this => &i
+  # DEBUG __x => &D.17687
+  # DEBUG this => &i
+  # DEBUG this => i$_M_node_30
+  # DEBUG D#20 => &MEM[(const struct _Rb_tree_node *)i$_M_node_30]._M_value_field
+  # DEBUG __r => D#20
+  _12 = MEM[(const struct sSetElement *)i$_M_node_30 + 32B].output_port;
+  if (_12 == output_port_13(D))
+    goto <bb 7>;
+  else
+    goto <bb 11>;
+
+  <bb 7>:
+  # DEBUG this => &i
+  # DEBUG this => i$_M_node_30
+  # DEBUG D#21 => &MEM[(const struct _Rb_tree_node *)i$_M_node_30]._M_value_field
+  # DEBUG __r => D#21
+  _15 = MEM[(const struct sSetElement *)i$_M_node_30 + 32B].vc_end;
+  # DEBUG this => &i
+  # DEBUG this => i$_M_node_30
+  # DEBUG D#22 => &MEM[(const struct _Rb_tree_node *)i$_M_node_30]._M_value_field
+  # DEBUG __r => D#22
+  _16 = MEM[(const struct sSetElement *)i$_M_node_30 + 32B].vc_start;
+  _17 = _15 - _16;
+  range_18 = _17 + 1;
+  # DEBUG range => range_18
+  if (range_18 <= vc_index_31)
+    goto <bb 8>;
+  else
+    goto <bb 9>;
+
+  <bb 8>:
+  vc_index_19 = vc_index_31 - range_18;
+  # DEBUG remaining => vc_index_19
+  goto <bb 11>;
+
+  <bb 9>:
+  # _36 = PHI <_16(7)>
+  # i$_M_node_14 = PHI <i$_M_node_30(7)>
+  # vc_index_5 = PHI <vc_index_31(7)>
+  # DEBUG this => &i
+  # DEBUG this => i$_M_node_14
+  # DEBUG D#24 => &MEM[(const struct _Rb_tree_node *)i$_M_node_14]._M_value_field
+  # DEBUG __r => D#24
+  vc_20 = _36 + vc_index_5;
+  # DEBUG vc => vc_20
+  if (pri_8(D) != 0B)
+    goto <bb 10>;
+  else
+    goto <bb 13>;
+
+  <bb 10>:
+  # DEBUG this => &i
+  # DEBUG this => i$_M_node_14
+  # DEBUG D#25 => &MEM[(const struct _Rb_tree_node *)i$_M_node_14]._M_value_field
+  # DEBUG __r => D#25
+  _22 = MEM[(const struct sSetElement *)i$_M_node_14 + 32B].pri;
+  *pri_8(D) = _22;
+  goto <bb 13>;
+
+  <bb 11>:
+  # vc_index_2 = PHI <vc_index_31(6), vc_index_19(8)>
+  # DEBUG remaining => vc_index_2
+  # DEBUG this => &i
+  i$_M_node_26 = std::_Rb_tree_increment (i$_M_node_30);
+  # DEBUG i$_M_node => i$_M_node_26
+  # DEBUG i$_M_node => i$_M_node_26
+  # DEBUG remaining => vc_index_2
+  # DEBUG D#23 => &this_11(D)->_outputs
+  # DEBUG this => D#23
+  # DEBUG D#8 => &D#23->_M_t
+  # DEBUG this => D#8
+  # DEBUG this => NULL
+  # DEBUG __x => _32
+  # DEBUG this => &i
+  # DEBUG __x => &D.17687
+  if (i$_M_node_26 != _32)
+    goto <bb 12>;
+  else
+    goto <bb 13>;
+
+  <bb 12>:
+  goto <bb 6>;
+
+  <bb 13>:
+  # vc_3 = PHI <-1(11), vc_20(10), vc_20(9), -1(4)>
+
+  <bb 14>:
+  # DEBUG vc => vc_3
+  # DEBUG D#26 => {CLOBBER}
+  # DEBUG i$_M_node => D#26
+  return vc_3;
+
+}
+
+
+
+;; Function bool OutputSet::GetPortVC(int*, int*) const (_ZNK9OutputSet9GetPortVCEPiS0_, funcdef_no=901, decl_uid=16408, cgraph_uid=213, symbol_order=213)
+
+Trying loop 1 as candidate
+loop 1 is innermost
+loop is not parallel according to graphite
+bool OutputSet::GetPortVC(int*, int*) const (const struct OutputSet * const this, int * out_port, int * out_vc)
+{
+  const struct _Rb_tree_node_base * const i$_M_node;
+  int used_outputs;
+  bool single_output;
+  int _3;
+  int _12;
+  const struct _Rb_tree_node_base * _13;
+  int _14;
+  int _17;
+  int _20;
+  int _23;
+  int _27;
+  int _28;
+
+  <bb 2>:
+  # DEBUG single_output => 0
+  # DEBUG used_outputs => 0
+  # DEBUG D#27 => &this_6(D)->_outputs
+  # DEBUG this => D#27
+  # DEBUG D#7 => &D#27->_M_t
+  i$_M_node_8 = MEM[(struct _Rb_tree_node_base * *)this_6(D) + 24B];
+  # DEBUG D#6 => D#7
+  # DEBUG this => D#6
+  # DEBUG this => NULL
+  # DEBUG __x => i$_M_node_8
+  # DEBUG i$_M_node => i$_M_node_8
+  # DEBUG D#28 => &this_6(D)->_outputs
+  # DEBUG this => D#28
+  # DEBUG D#8 => &D#28->_M_t
+  # DEBUG this => D#8
+  _13 = &MEM[(const struct _Rb_tree *)this_6(D)]._M_impl._M_header;
+  # DEBUG this => NULL
+  # DEBUG __x => _13
+  # DEBUG this => &i
+  # DEBUG __x => &D.17699
+  if (i$_M_node_8 != _13)
+    goto <bb 4>;
+  else
+    goto <bb 3>;
+
+  <bb 3>:
+
+  <bb 13>:
+  goto <bb 11>;
+
+  <bb 4>:
+  # DEBUG this => &i
+  # DEBUG this => i$_M_node_8
+  # DEBUG D#29 => &MEM[(const struct _Rb_tree_node *)i$_M_node_8]._M_value_field
+  # DEBUG __r => D#29
+  used_outputs_9 = MEM[(const struct sSetElement *)i$_M_node_8 + 32B].output_port;
+  # DEBUG used_outputs => used_outputs_9
+  # DEBUG i$_M_node => i$_M_node_8
+  # DEBUG used_outputs => used_outputs_9
+  # DEBUG single_output => 0
+  # DEBUG D#35 => &this_6(D)->_outputs
+  # DEBUG this => D#35
+  # DEBUG D#8 => &D#35->_M_t
+  # DEBUG this => D#8
+  # DEBUG this => NULL
+  # DEBUG __x => _13
+  # DEBUG this => &i
+  # DEBUG __x => &D.17700
+  # DEBUG i$_M_node => i$_M_node_8
+  # DEBUG used_outputs => used_outputs_9
+  # DEBUG single_output => 0
+  # DEBUG D#35 => &this_6(D)->_outputs
+  # DEBUG this => D#35
+  # DEBUG D#8 => &D#35->_M_t
+  # DEBUG this => D#8
+  # DEBUG this => NULL
+  # DEBUG __x => _13
+  # DEBUG this => &i
+  # DEBUG __x => &D.17700
+  # DEBUG this => &i
+  # DEBUG this => i$_M_node_8
+  # DEBUG D#30 => &MEM[(const struct _Rb_tree_node *)i$_M_node_8]._M_value_field
+  # DEBUG __r => D#30
+  _3 = MEM[(const struct sSetElement *)i$_M_node_8 + 32B].vc_start;
+  # DEBUG this => &i
+  # DEBUG this => i$_M_node_8
+  # DEBUG D#31 => &MEM[(const struct _Rb_tree_node *)i$_M_node_8]._M_value_field
+  # DEBUG __r => D#31
+  _27 = MEM[(const struct sSetElement *)i$_M_node_8 + 32B].vc_end;
+  if (_3 == _27)
+    goto <bb 5>;
+  else
+    goto <bb 3>;
+
+  <bb 5>:
+  # DEBUG this => &i
+  # DEBUG this => i$_M_node_8
+  # DEBUG D#32 => &MEM[(const struct _Rb_tree_node *)i$_M_node_8]._M_value_field
+  # DEBUG __r => D#32
+  *out_vc_15(D) = _3;
+  # DEBUG this => &i
+  # DEBUG this => i$_M_node_8
+  # DEBUG D#33 => &MEM[(const struct _Rb_tree_node *)i$_M_node_8]._M_value_field
+  # DEBUG __r => D#33
+  _28 = MEM[(const struct sSetElement *)i$_M_node_8 + 32B].output_port;
+  *out_port_18(D) = _28;
+  # DEBUG single_output => 1
+  # DEBUG this => &i
+  # DEBUG this => i$_M_node_8
+  # DEBUG D#34 => &MEM[(const struct _Rb_tree_node *)i$_M_node_8]._M_value_field
+  # DEBUG __r => D#34
+  _23 = MEM[(const struct sSetElement *)i$_M_node_8 + 32B].output_port;
+  if (used_outputs_9 != _23)
+    goto <bb 3>;
+  else
+    goto <bb 6>;
+
+  <bb 6>:
+  goto <bb 10>;
+
+  <bb 7>:
+  # DEBUG this => &i
+  # DEBUG this => i$_M_node_22
+  # DEBUG D#30 => &MEM[(const struct _Rb_tree_node *)i$_M_node_22]._M_value_field
+  # DEBUG __r => D#30
+  _12 = MEM[(const struct sSetElement *)i$_M_node_22 + 32B].vc_start;
+  # DEBUG this => &i
+  # DEBUG this => i$_M_node_22
+  # DEBUG D#31 => &MEM[(const struct _Rb_tree_node *)i$_M_node_22]._M_value_field
+  # DEBUG __r => D#31
+  _14 = MEM[(const struct sSetElement *)i$_M_node_22 + 32B].vc_end;
+  if (_12 == _14)
+    goto <bb 8>;
+  else
+    goto <bb 11>;
+
+  <bb 8>:
+  # DEBUG this => &i
+  # DEBUG this => i$_M_node_22
+  # DEBUG D#32 => &MEM[(const struct _Rb_tree_node *)i$_M_node_22]._M_value_field
+  # DEBUG __r => D#32
+  *out_vc_15(D) = _12;
+  # DEBUG this => &i
+  # DEBUG this => i$_M_node_22
+  # DEBUG D#33 => &MEM[(const struct _Rb_tree_node *)i$_M_node_22]._M_value_field
+  # DEBUG __r => D#33
+  _17 = MEM[(const struct sSetElement *)i$_M_node_22 + 32B].output_port;
+  *out_port_18(D) = _17;
+  # DEBUG single_output => 1
+  # DEBUG this => &i
+  # DEBUG this => i$_M_node_22
+  # DEBUG D#34 => &MEM[(const struct _Rb_tree_node *)i$_M_node_22]._M_value_field
+  # DEBUG __r => D#34
+  _20 = MEM[(const struct sSetElement *)i$_M_node_22 + 32B].output_port;
+  if (used_outputs_9 != _20)
+    goto <bb 3>;
+  else
+    goto <bb 9>;
+
+  <bb 9>:
+
+  <bb 10>:
+  # i$_M_node_32 = PHI <i$_M_node_8(6), i$_M_node_22(9)>
+  # DEBUG i$_M_node => i$_M_node_32
+  # DEBUG used_outputs => used_outputs_9
+  # DEBUG D#35 => &this_6(D)->_outputs
+  # DEBUG this => D#35
+  # DEBUG D#8 => &D#35->_M_t
+  # DEBUG this => D#8
+  # DEBUG this => NULL
+  # DEBUG __x => _13
+  # DEBUG this => &i
+  # DEBUG __x => &D.17700
+  # DEBUG this => &i
+  # DEBUG this => i$_M_node_32
+  # DEBUG D#30 => &MEM[(const struct _Rb_tree_node *)i$_M_node_32]._M_value_field
+  # DEBUG this => &i
+  # DEBUG this => i$_M_node_32
+  # DEBUG D#31 => &MEM[(const struct _Rb_tree_node *)i$_M_node_32]._M_value_field
+  # DEBUG this => &i
+  # DEBUG this => i$_M_node_32
+  # DEBUG D#32 => &MEM[(const struct _Rb_tree_node *)i$_M_node_32]._M_value_field
+  # DEBUG this => &i
+  # DEBUG this => i$_M_node_32
+  # DEBUG D#33 => &MEM[(const struct _Rb_tree_node *)i$_M_node_32]._M_value_field
+  # DEBUG single_output => 1
+  # DEBUG this => &i
+  # DEBUG this => i$_M_node_32
+  # DEBUG D#34 => &MEM[(const struct _Rb_tree_node *)i$_M_node_32]._M_value_field
+  # DEBUG __r => D#34
+  # DEBUG this => &i
+  i$_M_node_22 = std::_Rb_tree_increment (i$_M_node_32);
+  # DEBUG i$_M_node => i$_M_node_22
+  # DEBUG i$_M_node => i$_M_node_22
+  # DEBUG used_outputs => used_outputs_9
+  # DEBUG single_output => 1
+  # DEBUG D#35 => &this_6(D)->_outputs
+  # DEBUG this => D#35
+  # DEBUG D#8 => &D#35->_M_t
+  # DEBUG this => D#8
+  # DEBUG this => NULL
+  # DEBUG __x => _13
+  # DEBUG this => &i
+  # DEBUG __x => &D.17700
+  if (_13 != i$_M_node_22)
+    goto <bb 7>;
+  else
+    goto <bb 11>;
+
+  <bb 11>:
+  # single_output_2 = PHI <0(13), 1(10), 1(7)>
+
+  <bb 12>:
+  # DEBUG single_output => single_output_2
+  # DEBUG D#36 => {CLOBBER}
+  # DEBUG i$_M_node => D#36
+  return single_output_2;
+
+}
+
+
+
+;; Function void std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_erase(std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_Link_type) [with _Key = OutputSet::sSetElement; _Val = OutputSet::sSetElement; _KeyOfValue = std::_Identity<OutputSet::sSetElement>; _Compare = std::less<OutputSet::sSetElement>; _Alloc = std::allocator<OutputSet::sSetElement>; std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_Link_type = std::_Rb_tree_node<OutputSet::sSetElement>*] (_ZNSt8_Rb_treeIN9OutputSet11sSetElementES1_St9_IdentityIS1_ESt4lessIS1_ESaIS1_EE8_M_eraseEPSt13_Rb_tree_nodeIS1_E, funcdef_no=920, decl_uid=16998, cgraph_uid=232, symbol_order=232)
+
+Trying loop 1 as candidate
+loop 1 is not innermost
+loop is not parallel according to graphite
+Trying loop 2 as candidate
+loop 2 is not innermost
+loop is not parallel according to graphite
+Trying loop 3 as candidate
+loop 3 is not innermost
+loop is not parallel according to graphite
+Trying loop 4 as candidate
+loop 4 is not innermost
+loop is not parallel according to graphite
+Trying loop 5 as candidate
+loop 5 is not innermost
+loop is not parallel according to graphite
+Trying loop 6 as candidate
+loop 6 is not innermost
+loop is not parallel according to graphite
+Trying loop 7 as candidate
+loop 7 is not innermost
+loop is not parallel according to graphite
+Trying loop 8 as candidate
+loop 8 is not innermost
+loop is not parallel according to graphite
+Trying loop 9 as candidate
+loop 9 is innermost
+loop is not parallel according to graphite
+void std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_erase(std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_Link_type) [with _Key = OutputSet::sSetElement; _Val = OutputSet::sSetElement; _KeyOfValue = std::_Identity<OutputSet::sSetElement>; _Compare = std::less<OutputSet::sSetElement>; _Alloc = std::allocator<OutputSet::sSetElement>; std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_Link_type = std::_Rb_tree_node<OutputSet::sSetElement>*] (struct _Rb_tree * const this, struct _Rb_tree_node * __x)
+{
+  struct _Rb_tree_node * __x;
+  struct _Rb_tree_node * __x;
+  struct _Rb_tree_node * __x;
+  struct _Rb_tree_node * __x;
+  struct _Rb_tree_node * __x;
+  struct _Rb_tree_node * __x;
+  struct _Rb_tree_node * __x;
+  struct _Rb_tree_node * __x;
+  struct _Rb_tree_node_base * _39;
+
+  <bb 2>:
+  # DEBUG __x => __x_3(D)
+  if (__x_3(D) == 0B)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  return;
+
+  <bb 4>:
+
+  <bb 5>:
+  # __x_68 = PHI <__x_3(D)(4), __x_9(38)>
+  # DEBUG __x => __x_68
+  __x_8 = MEM[(struct _Rb_tree_node_base * *)__x_68 + 24B];
+  # DEBUG D#37 => __x_68
+  # DEBUG __x => D#37
+  # DEBUG this => this_6(D)
+  # DEBUG __x => __x_8
+  # DEBUG __x => __x_8
+  if (__x_8 == 0B)
+    goto <bb 6>;
+  else
+    goto <bb 7>;
+
+  <bb 6>:
+  __x_9 = MEM[(struct _Rb_tree_node_base * *)__x_68 + 16B];
+  # DEBUG D#38 => __x_68
+  # DEBUG __x => D#38
+  # DEBUG __y => NULL
+  # DEBUG D#66 => this_6(D)
+  # DEBUG __p => __x_68
+  # DEBUG this => D#66
+  # DEBUG D#65 => D#66
+  # DEBUG D#64 => D#66
+  # DEBUG D#63 => D#66
+  # DEBUG D#61 => D#63
+  # DEBUG D#62 => __x_68
+  # DEBUG this => D#61
+  # DEBUG __p => D#62
+  # DEBUG D#60 => D#61
+  # DEBUG D#59 => D#62
+  # DEBUG D#58 => D#62
+  # DEBUG this => D#58
+  # DEBUG D#57 => &D#59->_M_value_field
+  # DEBUG __r => D#57
+  # DEBUG D#56 => D#60
+  # DEBUG this => D#56
+  # DEBUG D#55 => D#56
+  # DEBUG this => D#55
+  # DEBUG this => NULL
+  # DEBUG D.18955 => NULL
+  # DEBUG this => NULL
+  # DEBUG D#47 => D#57
+  # DEBUG this => D#46
+  # DEBUG __p => D#47
+  # DEBUG this => NULL
+  # DEBUG this => NULL
+  # DEBUG this => D#64
+  # DEBUG __p => __x_68
+  # DEBUG this => D#65
+  # DEBUG D#53 => 1
+  # DEBUG __p => __x_68
+  # DEBUG __a => D#52
+  # DEBUG __n => D#53
+  # DEBUG D#51 => D#53
+  # DEBUG D#50 => D#52
+  # DEBUG D#48 => D#50
+  # DEBUG D#49 => D#51
+  # DEBUG __p => __x_68
+  # DEBUG this => D#48
+  # DEBUG D.19017 => D#49
+  operator delete (__x_68);
+  # DEBUG __x => __x_9
+  # DEBUG __x => __x_9
+  if (__x_9 == 0B)
+    goto <bb 3>;
+  else
+    goto <bb 38>;
+
+  <bb 7>:
+
+  <bb 8>:
+  # __x_72 = PHI <__x_8(7), __x_13(37)>
+  # DEBUG __x => __x_72
+  __x_12 = MEM[(struct _Rb_tree_node_base * *)__x_72 + 24B];
+  # DEBUG D#37 => __x_72
+  # DEBUG __x => D#37
+  # DEBUG this => this_6(D)
+  # DEBUG __x => __x_12
+  # DEBUG __x => __x_12
+  if (__x_12 == 0B)
+    goto <bb 9>;
+  else
+    goto <bb 10>;
+
+  <bb 9>:
+  __x_13 = MEM[(struct _Rb_tree_node_base * *)__x_72 + 16B];
+  # DEBUG D#38 => __x_72
+  # DEBUG __x => D#38
+  # DEBUG __y => NULL
+  # DEBUG D#66 => this_6(D)
+  # DEBUG __p => __x_72
+  # DEBUG this => D#66
+  # DEBUG D#65 => D#66
+  # DEBUG D#64 => D#66
+  # DEBUG D#63 => D#66
+  # DEBUG D#61 => D#63
+  # DEBUG D#62 => __x_72
+  # DEBUG this => D#61
+  # DEBUG __p => D#62
+  # DEBUG D#60 => D#61
+  # DEBUG D#59 => D#62
+  # DEBUG D#58 => D#62
+  # DEBUG this => D#58
+  # DEBUG D#57 => &D#59->_M_value_field
+  # DEBUG __r => D#57
+  # DEBUG D#56 => D#60
+  # DEBUG this => D#56
+  # DEBUG D#55 => D#56
+  # DEBUG this => D#55
+  # DEBUG this => NULL
+  # DEBUG D.18955 => NULL
+  # DEBUG this => NULL
+  # DEBUG D#47 => D#57
+  # DEBUG this => D#46
+  # DEBUG __p => D#47
+  # DEBUG this => NULL
+  # DEBUG this => NULL
+  # DEBUG this => D#64
+  # DEBUG __p => __x_72
+  # DEBUG this => D#65
+  # DEBUG D#53 => 1
+  # DEBUG __p => __x_72
+  # DEBUG __a => D#52
+  # DEBUG __n => D#53
+  # DEBUG D#51 => D#53
+  # DEBUG D#50 => D#52
+  # DEBUG D#48 => D#50
+  # DEBUG D#49 => D#51
+  # DEBUG __p => __x_72
+  # DEBUG this => D#48
+  # DEBUG D.19577 => D#49
+  operator delete (__x_72);
+  # DEBUG __x => __x_13
+  # DEBUG __x => __x_13
+  if (__x_13 == 0B)
+    goto <bb 6>;
+  else
+    goto <bb 37>;
+
+  <bb 10>:
+
+  <bb 11>:
+  # __x_71 = PHI <__x_12(10), __x_16(36)>
+  # DEBUG __x => __x_71
+  __x_15 = MEM[(struct _Rb_tree_node_base * *)__x_71 + 24B];
+  # DEBUG D#37 => __x_71
+  # DEBUG __x => D#37
+  # DEBUG this => this_6(D)
+  # DEBUG __x => __x_15
+  # DEBUG __x => __x_15
+  if (__x_15 == 0B)
+    goto <bb 12>;
+  else
+    goto <bb 13>;
+
+  <bb 12>:
+  __x_16 = MEM[(struct _Rb_tree_node_base * *)__x_71 + 16B];
+  # DEBUG D#38 => __x_71
+  # DEBUG __x => D#38
+  # DEBUG __y => NULL
+  # DEBUG D#66 => this_6(D)
+  # DEBUG __p => __x_71
+  # DEBUG this => D#66
+  # DEBUG D#65 => D#66
+  # DEBUG D#64 => D#66
+  # DEBUG D#63 => D#66
+  # DEBUG D#61 => D#63
+  # DEBUG D#62 => __x_71
+  # DEBUG this => D#61
+  # DEBUG __p => D#62
+  # DEBUG D#60 => D#61
+  # DEBUG D#59 => D#62
+  # DEBUG D#58 => D#62
+  # DEBUG this => D#58
+  # DEBUG D#57 => &D#59->_M_value_field
+  # DEBUG __r => D#57
+  # DEBUG D#56 => D#60
+  # DEBUG this => D#56
+  # DEBUG D#55 => D#56
+  # DEBUG this => D#55
+  # DEBUG this => NULL
+  # DEBUG D.18955 => NULL
+  # DEBUG this => NULL
+  # DEBUG D#47 => D#57
+  # DEBUG this => D#46
+  # DEBUG __p => D#47
+  # DEBUG this => NULL
+  # DEBUG this => NULL
+  # DEBUG this => D#64
+  # DEBUG __p => __x_71
+  # DEBUG this => D#65
+  # DEBUG D#53 => 1
+  # DEBUG __p => __x_71
+  # DEBUG __a => D#52
+  # DEBUG __n => D#53
+  # DEBUG D#51 => D#53
+  # DEBUG D#50 => D#52
+  # DEBUG D#48 => D#50
+  # DEBUG D#49 => D#51
+  # DEBUG __p => __x_71
+  # DEBUG this => D#48
+  # DEBUG D.19590 => D#49
+  operator delete (__x_71);
+  # DEBUG __x => __x_16
+  # DEBUG __x => __x_16
+  if (__x_16 == 0B)
+    goto <bb 9>;
+  else
+    goto <bb 36>;
+
+  <bb 13>:
+
+  <bb 14>:
+  # __x_77 = PHI <__x_15(13), __x_20(35)>
+  # DEBUG __x => __x_77
+  __x_19 = MEM[(struct _Rb_tree_node_base * *)__x_77 + 24B];
+  # DEBUG D#37 => __x_77
+  # DEBUG __x => D#37
+  # DEBUG this => this_6(D)
+  # DEBUG __x => __x_19
+  # DEBUG __x => __x_19
+  if (__x_19 == 0B)
+    goto <bb 15>;
+  else
+    goto <bb 16>;
+
+  <bb 15>:
+  __x_20 = MEM[(struct _Rb_tree_node_base * *)__x_77 + 16B];
+  # DEBUG D#38 => __x_77
+  # DEBUG __x => D#38
+  # DEBUG __y => NULL
+  # DEBUG D#66 => this_6(D)
+  # DEBUG __p => __x_77
+  # DEBUG this => D#66
+  # DEBUG D#65 => D#66
+  # DEBUG D#64 => D#66
+  # DEBUG D#63 => D#66
+  # DEBUG D#61 => D#63
+  # DEBUG D#62 => __x_77
+  # DEBUG this => D#61
+  # DEBUG __p => D#62
+  # DEBUG D#60 => D#61
+  # DEBUG D#59 => D#62
+  # DEBUG D#58 => D#62
+  # DEBUG this => D#58
+  # DEBUG D#57 => &D#59->_M_value_field
+  # DEBUG __r => D#57
+  # DEBUG D#56 => D#60
+  # DEBUG this => D#56
+  # DEBUG D#55 => D#56
+  # DEBUG this => D#55
+  # DEBUG this => NULL
+  # DEBUG D.18955 => NULL
+  # DEBUG this => NULL
+  # DEBUG D#47 => D#57
+  # DEBUG this => D#46
+  # DEBUG __p => D#47
+  # DEBUG this => NULL
+  # DEBUG this => NULL
+  # DEBUG this => D#64
+  # DEBUG __p => __x_77
+  # DEBUG this => D#65
+  # DEBUG D#53 => 1
+  # DEBUG __p => __x_77
+  # DEBUG __a => D#52
+  # DEBUG __n => D#53
+  # DEBUG D#51 => D#53
+  # DEBUG D#50 => D#52
+  # DEBUG D#48 => D#50
+  # DEBUG D#49 => D#51
+  # DEBUG __p => __x_77
+  # DEBUG this => D#48
+  # DEBUG D.19603 => D#49
+  operator delete (__x_77);
+  # DEBUG __x => __x_20
+  # DEBUG __x => __x_20
+  if (__x_20 == 0B)
+    goto <bb 12>;
+  else
+    goto <bb 35>;
+
+  <bb 16>:
+
+  <bb 17>:
+  # __x_80 = PHI <__x_19(16), __x_24(34)>
+  # DEBUG __x => __x_80
+  __x_23 = MEM[(struct _Rb_tree_node_base * *)__x_80 + 24B];
+  # DEBUG D#37 => __x_80
+  # DEBUG __x => D#37
+  # DEBUG this => this_6(D)
+  # DEBUG __x => __x_23
+  # DEBUG __x => __x_23
+  if (__x_23 == 0B)
+    goto <bb 18>;
+  else
+    goto <bb 19>;
+
+  <bb 18>:
+  __x_24 = MEM[(struct _Rb_tree_node_base * *)__x_80 + 16B];
+  # DEBUG D#38 => __x_80
+  # DEBUG __x => D#38
+  # DEBUG __y => NULL
+  # DEBUG D#66 => this_6(D)
+  # DEBUG __p => __x_80
+  # DEBUG this => D#66
+  # DEBUG D#65 => D#66
+  # DEBUG D#64 => D#66
+  # DEBUG D#63 => D#66
+  # DEBUG D#61 => D#63
+  # DEBUG D#62 => __x_80
+  # DEBUG this => D#61
+  # DEBUG __p => D#62
+  # DEBUG D#60 => D#61
+  # DEBUG D#59 => D#62
+  # DEBUG D#58 => D#62
+  # DEBUG this => D#58
+  # DEBUG D#57 => &D#59->_M_value_field
+  # DEBUG __r => D#57
+  # DEBUG D#56 => D#60
+  # DEBUG this => D#56
+  # DEBUG D#55 => D#56
+  # DEBUG this => D#55
+  # DEBUG this => NULL
+  # DEBUG D.18955 => NULL
+  # DEBUG this => NULL
+  # DEBUG D#47 => D#57
+  # DEBUG this => D#46
+  # DEBUG __p => D#47
+  # DEBUG this => NULL
+  # DEBUG this => NULL
+  # DEBUG this => D#64
+  # DEBUG __p => __x_80
+  # DEBUG this => D#65
+  # DEBUG D#53 => 1
+  # DEBUG __p => __x_80
+  # DEBUG __a => D#52
+  # DEBUG __n => D#53
+  # DEBUG D#51 => D#53
+  # DEBUG D#50 => D#52
+  # DEBUG D#48 => D#50
+  # DEBUG D#49 => D#51
+  # DEBUG __p => __x_80
+  # DEBUG this => D#48
+  # DEBUG D.19616 => D#49
+  operator delete (__x_80);
+  # DEBUG __x => __x_24
+  # DEBUG __x => __x_24
+  if (__x_24 == 0B)
+    goto <bb 15>;
+  else
+    goto <bb 34>;
+
+  <bb 19>:
+
+  <bb 20>:
+  # __x_83 = PHI <__x_23(19), __x_28(33)>
+  # DEBUG __x => __x_83
+  __x_27 = MEM[(struct _Rb_tree_node_base * *)__x_83 + 24B];
+  # DEBUG D#37 => __x_83
+  # DEBUG __x => D#37
+  # DEBUG this => this_6(D)
+  # DEBUG __x => __x_27
+  # DEBUG __x => __x_27
+  if (__x_27 == 0B)
+    goto <bb 21>;
+  else
+    goto <bb 22>;
+
+  <bb 21>:
+  __x_28 = MEM[(struct _Rb_tree_node_base * *)__x_83 + 16B];
+  # DEBUG D#38 => __x_83
+  # DEBUG __x => D#38
+  # DEBUG __y => NULL
+  # DEBUG D#66 => this_6(D)
+  # DEBUG __p => __x_83
+  # DEBUG this => D#66
+  # DEBUG D#65 => D#66
+  # DEBUG D#64 => D#66
+  # DEBUG D#63 => D#66
+  # DEBUG D#61 => D#63
+  # DEBUG D#62 => __x_83
+  # DEBUG this => D#61
+  # DEBUG __p => D#62
+  # DEBUG D#60 => D#61
+  # DEBUG D#59 => D#62
+  # DEBUG D#58 => D#62
+  # DEBUG this => D#58
+  # DEBUG D#57 => &D#59->_M_value_field
+  # DEBUG __r => D#57
+  # DEBUG D#56 => D#60
+  # DEBUG this => D#56
+  # DEBUG D#55 => D#56
+  # DEBUG this => D#55
+  # DEBUG this => NULL
+  # DEBUG D.18955 => NULL
+  # DEBUG this => NULL
+  # DEBUG D#47 => D#57
+  # DEBUG this => D#46
+  # DEBUG __p => D#47
+  # DEBUG this => NULL
+  # DEBUG this => NULL
+  # DEBUG this => D#64
+  # DEBUG __p => __x_83
+  # DEBUG this => D#65
+  # DEBUG D#53 => 1
+  # DEBUG __p => __x_83
+  # DEBUG __a => D#52
+  # DEBUG __n => D#53
+  # DEBUG D#51 => D#53
+  # DEBUG D#50 => D#52
+  # DEBUG D#48 => D#50
+  # DEBUG D#49 => D#51
+  # DEBUG __p => __x_83
+  # DEBUG this => D#48
+  # DEBUG D.19629 => D#49
+  operator delete (__x_83);
+  # DEBUG __x => __x_28
+  # DEBUG __x => __x_28
+  if (__x_28 == 0B)
+    goto <bb 18>;
+  else
+    goto <bb 33>;
+
+  <bb 22>:
+
+  <bb 23>:
+  # __x_86 = PHI <__x_27(22), __x_32(32)>
+  # DEBUG __x => __x_86
+  __x_31 = MEM[(struct _Rb_tree_node_base * *)__x_86 + 24B];
+  # DEBUG D#37 => __x_86
+  # DEBUG __x => D#37
+  # DEBUG this => this_6(D)
+  # DEBUG __x => __x_31
+  # DEBUG __x => __x_31
+  if (__x_31 == 0B)
+    goto <bb 24>;
+  else
+    goto <bb 25>;
+
+  <bb 24>:
+  __x_32 = MEM[(struct _Rb_tree_node_base * *)__x_86 + 16B];
+  # DEBUG D#38 => __x_86
+  # DEBUG __x => D#38
+  # DEBUG __y => NULL
+  # DEBUG D#66 => this_6(D)
+  # DEBUG __p => __x_86
+  # DEBUG this => D#66
+  # DEBUG D#65 => D#66
+  # DEBUG D#64 => D#66
+  # DEBUG D#63 => D#66
+  # DEBUG D#61 => D#63
+  # DEBUG D#62 => __x_86
+  # DEBUG this => D#61
+  # DEBUG __p => D#62
+  # DEBUG D#60 => D#61
+  # DEBUG D#59 => D#62
+  # DEBUG D#58 => D#62
+  # DEBUG this => D#58
+  # DEBUG D#57 => &D#59->_M_value_field
+  # DEBUG __r => D#57
+  # DEBUG D#56 => D#60
+  # DEBUG this => D#56
+  # DEBUG D#55 => D#56
+  # DEBUG this => D#55
+  # DEBUG this => NULL
+  # DEBUG D.18955 => NULL
+  # DEBUG this => NULL
+  # DEBUG D#47 => D#57
+  # DEBUG this => D#46
+  # DEBUG __p => D#47
+  # DEBUG this => NULL
+  # DEBUG this => NULL
+  # DEBUG this => D#64
+  # DEBUG __p => __x_86
+  # DEBUG this => D#65
+  # DEBUG D#53 => 1
+  # DEBUG __p => __x_86
+  # DEBUG __a => D#52
+  # DEBUG __n => D#53
+  # DEBUG D#51 => D#53
+  # DEBUG D#50 => D#52
+  # DEBUG D#48 => D#50
+  # DEBUG D#49 => D#51
+  # DEBUG __p => __x_86
+  # DEBUG this => D#48
+  # DEBUG D.19642 => D#49
+  operator delete (__x_86);
+  # DEBUG __x => __x_32
+  # DEBUG __x => __x_32
+  if (__x_32 == 0B)
+    goto <bb 21>;
+  else
+    goto <bb 32>;
+
+  <bb 25>:
+
+  <bb 26>:
+  # __x_89 = PHI <__x_31(25), __x_36(31)>
+  # DEBUG __x => __x_89
+  __x_35 = MEM[(struct _Rb_tree_node_base * *)__x_89 + 24B];
+  # DEBUG D#37 => __x_89
+  # DEBUG __x => D#37
+  # DEBUG this => this_6(D)
+  # DEBUG __x => __x_35
+  # DEBUG __x => __x_35
+  if (__x_35 == 0B)
+    goto <bb 27>;
+  else
+    goto <bb 28>;
+
+  <bb 27>:
+  __x_36 = MEM[(struct _Rb_tree_node_base * *)__x_89 + 16B];
+  # DEBUG D#38 => __x_89
+  # DEBUG __x => D#38
+  # DEBUG __y => NULL
+  # DEBUG D#66 => this_6(D)
+  # DEBUG __p => __x_89
+  # DEBUG this => D#66
+  # DEBUG D#65 => D#66
+  # DEBUG D#64 => D#66
+  # DEBUG D#63 => D#66
+  # DEBUG D#61 => D#63
+  # DEBUG D#62 => __x_89
+  # DEBUG this => D#61
+  # DEBUG __p => D#62
+  # DEBUG D#60 => D#61
+  # DEBUG D#59 => D#62
+  # DEBUG D#58 => D#62
+  # DEBUG this => D#58
+  # DEBUG D#57 => &D#59->_M_value_field
+  # DEBUG __r => D#57
+  # DEBUG D#56 => D#60
+  # DEBUG this => D#56
+  # DEBUG D#55 => D#56
+  # DEBUG this => D#55
+  # DEBUG this => NULL
+  # DEBUG D.18955 => NULL
+  # DEBUG this => NULL
+  # DEBUG D#47 => D#57
+  # DEBUG this => D#46
+  # DEBUG __p => D#47
+  # DEBUG this => NULL
+  # DEBUG this => NULL
+  # DEBUG this => D#64
+  # DEBUG __p => __x_89
+  # DEBUG this => D#65
+  # DEBUG D#53 => 1
+  # DEBUG __p => __x_89
+  # DEBUG __a => D#52
+  # DEBUG __n => D#53
+  # DEBUG D#51 => D#53
+  # DEBUG D#50 => D#52
+  # DEBUG D#48 => D#50
+  # DEBUG D#49 => D#51
+  # DEBUG __p => __x_89
+  # DEBUG this => D#48
+  # DEBUG D.19655 => D#49
+  operator delete (__x_89);
+  # DEBUG __x => __x_36
+  # DEBUG __x => __x_36
+  if (__x_36 == 0B)
+    goto <bb 24>;
+  else
+    goto <bb 31>;
+
+  <bb 28>:
+
+  <bb 29>:
+  # __x_92 = PHI <__x_35(28), __x_40(30)>
+  # DEBUG __x => __x_92
+  _39 = MEM[(struct _Rb_tree_node_base * *)__x_92 + 24B];
+  # DEBUG D#37 => __x_92
+  # DEBUG __x => D#37
+  std::_Rb_tree<OutputSet::sSetElement, OutputSet::sSetElement, std::_Identity<OutputSet::sSetElement>, std::less<OutputSet::sSetElement>, std::allocator<OutputSet::sSetElement> >::_M_erase (this_6(D), _39);
+  __x_40 = MEM[(struct _Rb_tree_node_base * *)__x_92 + 16B];
+  # DEBUG D#38 => __x_92
+  # DEBUG __x => D#38
+  # DEBUG __y => NULL
+  # DEBUG D#66 => this_6(D)
+  # DEBUG __p => __x_92
+  # DEBUG this => D#66
+  # DEBUG D#65 => D#66
+  # DEBUG D#64 => D#66
+  # DEBUG D#63 => D#66
+  # DEBUG D#61 => D#63
+  # DEBUG D#62 => __x_92
+  # DEBUG this => D#61
+  # DEBUG __p => D#62
+  # DEBUG D#60 => D#61
+  # DEBUG D#59 => D#62
+  # DEBUG D#58 => D#62
+  # DEBUG this => D#58
+  # DEBUG D#57 => &D#59->_M_value_field
+  # DEBUG __r => D#57
+  # DEBUG D#56 => D#60
+  # DEBUG this => D#56
+  # DEBUG D#55 => D#56
+  # DEBUG this => D#55
+  # DEBUG this => NULL
+  # DEBUG D.18955 => NULL
+  # DEBUG this => NULL
+  # DEBUG D#47 => D#57
+  # DEBUG this => D#46
+  # DEBUG __p => D#47
+  # DEBUG this => NULL
+  # DEBUG this => NULL
+  # DEBUG this => D#64
+  # DEBUG __p => __x_92
+  # DEBUG this => D#65
+  # DEBUG D#53 => 1
+  # DEBUG __p => __x_92
+  # DEBUG __a => D#52
+  # DEBUG __n => D#53
+  # DEBUG D#51 => D#53
+  # DEBUG D#50 => D#52
+  # DEBUG D#48 => D#50
+  # DEBUG D#49 => D#51
+  # DEBUG __p => __x_92
+  # DEBUG this => D#48
+  # DEBUG D.19668 => D#49
+  operator delete (__x_92);
+  # DEBUG __x => __x_40
+  # DEBUG __x => __x_40
+  if (__x_40 == 0B)
+    goto <bb 27>;
+  else
+    goto <bb 30>;
+
+  <bb 30>:
+  goto <bb 29>;
+
+  <bb 31>:
+  goto <bb 26>;
+
+  <bb 32>:
+  goto <bb 23>;
+
+  <bb 33>:
+  goto <bb 20>;
+
+  <bb 34>:
+  goto <bb 17>;
+
+  <bb 35>:
+  goto <bb 14>;
+
+  <bb 36>:
+  goto <bb 11>;
+
+  <bb 37>:
+  goto <bb 8>;
+
+  <bb 38>:
+  goto <bb 5>;
+
+}
+
+
+
+;; Function void OutputSet::Clear() (_ZN9OutputSet5ClearEv, funcdef_no=894, decl_uid=16377, cgraph_uid=206, symbol_order=206)
+
+Trying loop 1 as candidate
+loop 1 is innermost
+loop is not parallel according to graphite
+void OutputSet::Clear() (struct OutputSet * const this)
+{
+  struct _Rb_tree_node * __x;
+  struct _Rep_type * _4;
+  struct _Rb_tree_node_base * _6;
+  struct _Rb_tree_node_base * _12;
+
+  <bb 2>:
+  # DEBUG D#68 => &this_1(D)->_outputs
+  # DEBUG this => D#68
+  _4 = &MEM[(struct set *)this_1(D)]._M_t;
+  # DEBUG this => _4
+  __x_5 = MEM[(struct _Rb_tree_node_base * *)this_1(D) + 16B];
+  # DEBUG D#4 => _4
+  # DEBUG this => D#4
+  # DEBUG this => _4
+  # DEBUG __x => __x_5
+  # DEBUG __x => __x_5
+  if (__x_5 == 0B)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  # DEBUG D#67 => &MEM[(struct _Rb_tree *)_4]._M_impl
+  # DEBUG this => D#67
+  MEM[(struct _Rb_tree_impl *)this_1(D)]._M_header._M_parent = 0B;
+  _6 = &MEM[(struct _Rb_tree_impl *)this_1(D)]._M_header;
+  MEM[(struct _Rb_tree_impl *)this_1(D)]._M_header._M_left = _6;
+  MEM[(struct _Rb_tree_impl *)this_1(D)]._M_header._M_right = _6;
+  MEM[(struct _Rb_tree_impl *)this_1(D)]._M_node_count = 0;
+  return;
+
+  <bb 4>:
+
+  <bb 5>:
+  # __x_18 = PHI <__x_5(4), __x_13(6)>
+  # DEBUG __x => __x_18
+  _12 = MEM[(struct _Rb_tree_node_base * *)__x_18 + 24B];
+  # DEBUG D#37 => __x_18
+  # DEBUG __x => D#37
+  std::_Rb_tree<OutputSet::sSetElement, OutputSet::sSetElement, std::_Identity<OutputSet::sSetElement>, std::less<OutputSet::sSetElement>, std::allocator<OutputSet::sSetElement> >::_M_erase (_4, _12);
+  __x_13 = MEM[(struct _Rb_tree_node_base * *)__x_18 + 16B];
+  # DEBUG D#38 => __x_18
+  # DEBUG __x => D#38
+  # DEBUG __y => NULL
+  # DEBUG D#66 => _4
+  # DEBUG __p => __x_18
+  # DEBUG this => D#66
+  # DEBUG D#65 => D#66
+  # DEBUG D#64 => D#66
+  # DEBUG D#63 => D#66
+  # DEBUG D#61 => D#63
+  # DEBUG D#62 => __x_18
+  # DEBUG this => D#61
+  # DEBUG __p => D#62
+  # DEBUG D#60 => D#61
+  # DEBUG D#59 => D#62
+  # DEBUG D#58 => D#62
+  # DEBUG this => D#58
+  # DEBUG D#57 => &D#59->_M_value_field
+  # DEBUG __r => D#57
+  # DEBUG D#56 => D#60
+  # DEBUG this => D#56
+  # DEBUG D#55 => D#56
+  # DEBUG this => D#55
+  # DEBUG this => NULL
+  # DEBUG D.18955 => NULL
+  # DEBUG this => NULL
+  # DEBUG D#47 => D#57
+  # DEBUG this => D#46
+  # DEBUG __p => D#47
+  # DEBUG this => NULL
+  # DEBUG this => NULL
+  # DEBUG this => D#64
+  # DEBUG __p => __x_18
+  # DEBUG this => D#65
+  # DEBUG D#53 => 1
+  # DEBUG __p => __x_18
+  # DEBUG __a => D#52
+  # DEBUG __n => D#53
+  # DEBUG D#51 => D#53
+  # DEBUG D#50 => D#52
+  # DEBUG D#48 => D#50
+  # DEBUG D#49 => D#51
+  # DEBUG __p => __x_18
+  # DEBUG this => D#48
+  # DEBUG D.19684 => D#49
+  operator delete (__x_18);
+  # DEBUG __x => __x_13
+  # DEBUG __x => __x_13
+  if (__x_13 == 0B)
+    goto <bb 3>;
+  else
+    goto <bb 6>;
+
+  <bb 6>:
+  goto <bb 5>;
+
+}
+
+
